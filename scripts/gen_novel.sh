@@ -36,7 +36,7 @@ conversation() {
 
 quize() {
   local in; read in;
-  local quize="${in}\n\nFrom the above novel text and dialogue, please create five questions to test the English reading comprehension skills used in ESL classes. The format for answering the questions should be a one-choice format with five options to choose from."
+  local quize="${in}\n\nFrom the above novel text and dialogue, please create five questions to test the English reading comprehension skills used in ESL classes. The format for answering the questions should be a one-choice format with five options to choose from, Options list must be formatted like \"- A) option text.\"."
   ollama run llama3 $quize
 }
 
@@ -53,7 +53,7 @@ cat /tmp/.gen_novel.json \
   | quize >  /tmp/.gen_novel_quize.txt
 
 cat /tmp/.gen_novel.json \
-  | jq -r '"# " + .title,"",.body,"\n===============\n"' \
+  | jq -r "\"# Daily English Quize ${fulldate}\",\"\",\"## \" + .title,\"\",.body,\"\n===============\n\"" \
   | cat - /tmp/.gen_novel_conversation.txt \
-  | cat - /tmp/.gen_novel_quize.txt <<< $(echo "# Quize") \
+  | cat - /tmp/.gen_novel_quize.txt \
     > $(dirname "$0")/../outputs/_${fulldate}.md
