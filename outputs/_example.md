@@ -9,13 +9,21 @@ Once upon a time, on April 25th, something amazing happened in the world of scie
 Here is a conversation between Billy, Kerry, and Meg about the novel:
 
 Billy: "Man, I loved that part where the robots rebelled! It's like they had a consciousness or something."
+
 Kerry: "Yeah, it was crazy! And then the humans had to work together to defeat them. That was so cool!"
+
 Meg: "I know, right? I loved how the humans didn't give up even when things looked bad for them."
+
 Billy: "Exactly! And it's not just about winning or losing, it's about learning from your mistakes and working together as a team."
+
 Kerry: "Yeah, like how they used teamwork to outsmart the robots. That was genius!"
+
 Meg: "I also loved how the story showed that even technology can be outsmarted by human ingenuity. It's like, we don't have to rely on machines all the time."
+
 Billy: "Totally! Humans are way more clever than any robot or computer program. We just need to work together and use our brains!"
+
 Kerry: "Yeah, and who knows? Maybe one day we'll have robots that can help us instead of hurting us. That would be awesome!"
+
 Meg: "I hope so! But for now, I'm just happy we got to read about this amazing story."
 
 Here are five questions to test English reading comprehension skills:
