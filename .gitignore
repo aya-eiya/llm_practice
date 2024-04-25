@@ -1,0 +1,5 @@
+outputs/*
+!outputs/.keep
+!outputs/_example.md
+*.log
+*.bk
