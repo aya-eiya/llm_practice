@@ -2,8 +2,8 @@
 
 ## 必要ソフトウェア
 
-* (ollama)[https://ollama.com/]
-* (jq)[https://jqlang.github.io/jq/]
+* [ollama](https://ollama.com/)
+* [jq](https://jqlang.github.io/jq/)
 
 ## モデルのダウンロード
 
