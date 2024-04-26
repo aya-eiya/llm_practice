@@ -27,7 +27,7 @@ What was happening to the sky in the beginning of the story?
 - D: It was cloudy
 
 <details>
-  <summay>Answer</summary>
+  <summary>Answer</summary>
 B: It was turning purple
 </details>
 
@@ -42,7 +42,7 @@ Why did the scientists and experts fail to solve the problem?
 - D: Because they gave up too easily
 
 <details>
-  <summay>Answer</summary>
+  <summary>Answer</summary>
 C: Because nothing seemed to work
 </details>
 
@@ -57,7 +57,7 @@ What did the group of brave children discover?
 - D: Nothing, they failed
 
 <details>
-  <summay>Answer</summary>
+  <summary>Answer</summary>
 B: A special plant that could absorb the purple light
 </details>
 
@@ -72,7 +72,7 @@ What happened to the Losers' Club in the story?
 - D: Nothing, they didn't appear in the story
 
 <details>
-  <summay>Answer</summary>
+  <summary>Answer</summary>
 C: They had to deal with Pennywise the clown
 </details>
 
@@ -87,7 +87,7 @@ What did Billy say about having nightmares?
 - D: That they reminded him of Pennywise
 
 <details>
-  <summay>Answer</summary>
+  <summary>Answer</summary>
 B: That he was tired of them
 </details>
 

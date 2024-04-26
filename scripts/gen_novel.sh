@@ -6,7 +6,7 @@ fulldate=$(date +"%Y-%m-%d")
 date=$(date +"%b-%dth")
 
 try_gen_novel() {
-  local novel="create JSON as single line. Research an event in sience history that happened on the same month and day as ${date} and create a short SF novel for children that is after the day and be written with adout 180 words and that output is a JSON formatted as { \"event\": string, \"title\": string, \"body\": string} ,newline in the string should be escaped by \\n. and output only JSON part."
+  local novel="create JSON as single line. Research an event in sience history that happened on the same month and day as ${date} and create a short SF novel for children that is after the day and be written with adout 180 words and that output is a JSON formatted as { \"event\": string, \"title\": string, \"body\": string, \"word count\": number } ,newline in the string should be escaped by \\n. and output only JSON part."
   ollama run llava $novel \
   | tr -d '\n' \
   | sed -n -e 's/^.*\({.*}\).*$/\1/p' \
