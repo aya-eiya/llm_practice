@@ -102,7 +102,7 @@ jq -r "
       ) | join(\"\n\")) \
     + \"\n\n\" \
     + \"<details>\n\" \
-    + \"  <summay>Answer</summary>\n\" \
+    + \"  <summary>Answer</summary>\n\" \
     + ([.value.answer + 65] | implode) + \": \" + .value.options[.value.answer] + \"\n\" \
     + \"</details>\n\" \
   ) | join(\"\n\n\"))" $(dirname "$0")/../outputs/${fulldate}.json > $(dirname "$0")/../outputs/${fulldate}.md
