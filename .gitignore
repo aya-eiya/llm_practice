@@ -1,5 +1,5 @@
 outputs/*
 !outputs/.keep
-!outputs/_example.md
+!outputs/example.md
 *.log
 *.bk
