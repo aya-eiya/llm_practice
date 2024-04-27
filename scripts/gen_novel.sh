@@ -81,7 +81,7 @@ jq -s -r '"# " + .[0].title + "\n\n" + .[0].body + "\n\n" + (.[1].dialog | map(k
 jq -s '.[0] * .[1] * .[2]' /tmp/.gen_novel.json /tmp/.gen_novel_conversation.json /tmp/.gen_novel_quiz.json > $(dirname "$0")/../outputs/${fulldate}.json
 
 jq -r "
-  \"# Daily English quiz ${fulldate} (AI generated)\n\n\" \
+  \"# Daily English Quiz ${fulldate} (AI generated)\n\n\" \
   + \"## \" \
   + .title \
   + \"\n\n\" \
