@@ -59,21 +59,21 @@ gen_quiz() {
   done
 }
 
-# gen_novel > /tmp/.gen_novel.json
-# 
-# if [ $? -ne 0 ]; then
-#   echo "Failed to generate novel."
-#   exit 1
-# fi
-# 
-# cat /tmp/.gen_novel.json \
-#   | jq -r '.body' \
-#   | gen_conversation > /tmp/.gen_novel_conversation.json
-# 
-# if [ $? -ne 0 ]; then
-#   echo "Failed to generate conversation."
-#   exit 1
-# fi
+gen_novel > /tmp/.gen_novel.json
+
+if [ $? -ne 0 ]; then
+  echo "Failed to generate novel."
+  exit 1
+fi
+
+cat /tmp/.gen_novel.json \
+  | jq -r '.body' \
+  | gen_conversation > /tmp/.gen_novel_conversation.json
+
+if [ $? -ne 0 ]; then
+  echo "Failed to generate conversation."
+  exit 1
+fi
 
 jq -s -r '"# " + .[0].title + "\n\n" + .[0].body + "\n\n" + (.[1].dialog | map(keys[0] + ": " + .[keys[0]]) | "## Dialog\n\n" + join("\n"))' /tmp/.gen_novel.json /tmp/.gen_novel_conversation.json \
   | gen_quiz >  /tmp/.gen_novel_quiz.json
