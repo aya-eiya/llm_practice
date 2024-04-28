@@ -7,7 +7,7 @@ import * as $_app from "./routes/_app.tsx";
 import * as $api_dailyQuiz from "./routes/api/dailyQuiz.ts";
 import * as $index from "./routes/index.tsx";
 import * as $pages_date_ from "./routes/pages/[date].tsx";
-
+import * as $LazyLoadOGP from "./islands/LazyLoadOGP.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -18,7 +18,9 @@ const manifest = {
     "./routes/index.tsx": $index,
     "./routes/pages/[date].tsx": $pages_date_,
   },
-  islands: {},
+  islands: {
+    "./islands/LazyLoadOGP.tsx": $LazyLoadOGP,
+  },
   baseUrl: import.meta.url,
 } satisfies Manifest;
 

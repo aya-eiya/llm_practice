@@ -3,8 +3,18 @@ import Footer from "./parts/Footer.tsx";
 import Header from "./parts/Header.tsx";
 import SideNavi from "./parts/SideNavi.tsx";
 import Quiz, { QuizData } from "./parts/Quiz.tsx";
+import { dates } from "../data/index.ts";
+import { containsKey } from "../data/index.ts";
 
 export default function Main({ data }: { data: QuizData }) {
+  const next = containsKey(data.date) &&
+      dates.indexOf(data.date) !== dates.length - 1
+    ? dates[dates.indexOf(data.date) + 1]
+    : undefined;
+  const prev = containsKey(data.date) &&
+      dates.indexOf(data.date) !== 0
+    ? dates[dates.indexOf(data.date) - 1]
+    : undefined;
   return (
     <>
       <Header />
@@ -44,7 +54,11 @@ export default function Main({ data }: { data: QuizData }) {
                 it. Read the novel and dialogue and try to check your
                 understanding of the novel through a series of questions.
               </p>
-              <Quiz data={data} />
+              <Quiz
+                data={data}
+                prev={prev}
+                next={next}
+              />
             </Partial>
           </main>
         </div>

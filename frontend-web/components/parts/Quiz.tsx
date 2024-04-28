@@ -22,7 +22,11 @@ export type QuizData = {
   }[];
 };
 
-export default function Quiz({ data }: { data: QuizData }) {
+export default function Quiz(
+  { data, next, prev }: { data: QuizData } & { next?: QuizData["date"] } & {
+    prev?: QuizData["date"];
+  },
+) {
   return (
     <>
       <section id="quiz.example">
@@ -75,65 +79,85 @@ export default function Quiz({ data }: { data: QuizData }) {
             ))}
         </div>
         <div
-          className={"flex flex-row justify-between items-center w-full px-8 sticky bottom-0 bg-slate-200 h-16 border-slate-500"}
+          className={"w-full px-8 sticky bottom-0 bg-slate-200 border-slate-500"}
         >
-          {data.quiz && data.quiz
-            .map((quiz, qIdx) => {
-              return (
-                <div
-                  key={`q${qIdx}`}
-                  className={"w-1/6 h-8 border border-slate-500 items-center flex flex-row"}
-                >
+          <div
+            className={"flex flex-row justify-between items-center w-full h-16"}
+          >
+            {data.quiz && data.quiz
+              .map((quiz, qIdx) => {
+                return (
                   <div
-                    className={"border-r border-slate-500 flex px-2 items-center h-full"}
+                    key={`q${qIdx}`}
+                    className={"w-1/6 h-8 border border-slate-500 items-center flex flex-row"}
                   >
-                    <div>Q{qIdx + 1}</div>
-                  </div>
-                  <div className={"w-full h-full flex items-center"}>
-                    {quiz.options.map((_, oIdx) => {
-                      return (
-                        <>
-                          <input
-                            type="radio"
-                            key={`q${qIdx}-o${oIdx}-input`}
-                            id={`select-q${qIdx}-o${oIdx}`}
-                            radioGroup={`select-q${qIdx}`}
-                            name={`select-q${qIdx}`}
-                            value={oIdx}
-                            className={"appearance-none hidden " + ([
-                              `peer/0`,
-                              `peer/1`,
-                              `peer/2`,
-                              `peer/3`,
-                              `peer/4`,
-                            ][oIdx])}
-                          />
-                          <div
-                            key={`q${qIdx}-o${oIdx}-label`}
-                            className={"hidden w-full h-full justify-center items-center " +
-                              ([
-                                "peer-checked/0:flex ",
-                                "peer-checked/1:flex ",
-                                "peer-checked/2:flex ",
-                                "peer-checked/3:flex ",
-                                "peer-checked/4:flex ",
-                              ][oIdx]) +
-                              (quiz.answer === oIdx
-                                ? "bg-blue-400"
-                                : "bg-red-400")}
-                          >
-                            <div>
-                              {String.fromCharCode(oIdx + 65)}
+                    <div
+                      className={"border-r border-slate-500 flex px-2 items-center h-full"}
+                    >
+                      <div>Q{qIdx + 1}</div>
+                    </div>
+                    <div className={"w-full h-full flex items-center"}>
+                      {quiz.options.map((_, oIdx) => {
+                        return (
+                          <>
+                            <input
+                              type="radio"
+                              key={`q${qIdx}-o${oIdx}-input`}
+                              id={`select-q${qIdx}-o${oIdx}`}
+                              radioGroup={`select-q${qIdx}`}
+                              name={`select-q${qIdx}`}
+                              value={oIdx}
+                              className={"appearance-none hidden " + ([
+                                `peer/0`,
+                                `peer/1`,
+                                `peer/2`,
+                                `peer/3`,
+                                `peer/4`,
+                              ][oIdx])}
+                            />
+                            <div
+                              key={`q${qIdx}-o${oIdx}-label`}
+                              className={"hidden w-full h-full justify-center items-center " +
+                                ([
+                                  "peer-checked/0:flex ",
+                                  "peer-checked/1:flex ",
+                                  "peer-checked/2:flex ",
+                                  "peer-checked/3:flex ",
+                                  "peer-checked/4:flex ",
+                                ][oIdx]) +
+                                (quiz.answer === oIdx
+                                  ? "bg-blue-400"
+                                  : "bg-red-400")}
+                            >
+                              <div>
+                                {String.fromCharCode(oIdx + 65)}
+                              </div>
                             </div>
-                          </div>
-                        </>
-                      );
-                    })}
+                          </>
+                        );
+                      })}
+                    </div>
                   </div>
-                </div>
-              );
-            })
-            .flat()}
+                );
+              })
+              .flat()}
+          </div>
+          <div className={"flex flex-row justify-evenly pb-2"} f-client-nav>
+            <a
+              href={prev && `/pages/${prev}`}
+              className={"border border-slate-400 px-8 rounded h-8 select-none" +
+                (prev ? "" : " invisible")}
+            >
+              Prev
+            </a>
+            <a
+              href={next && `/pages/${next}`}
+              className={"border border-slate-400 px-8 rounded h-8 select-none" +
+                (next ? "" : " invisible")}
+            >
+              Next
+            </a>
+          </div>
         </div>
       </section>
     </>
