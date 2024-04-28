@@ -66,9 +66,22 @@ export default function Quiz(
                   <dd>
                     <ul>
                       {question.options.map((option, oIdx) => (
-                        <li key={oIdx} className={"px-8"}>
-                          <label htmlFor={`select-q${qIdx}-o${oIdx}`}>
-                            {String.fromCharCode(oIdx + 65)}) {option}
+                        <li
+                          key={oIdx}
+                          className={"mx-8 pl-1 " +
+                            ([
+                              "marker:content-['A)']",
+                              "marker:content-['B)']",
+                              "marker:content-['C)']",
+                              "marker:content-['D)']",
+                              "marker:content-['E)']",
+                            ][oIdx])}
+                        >
+                          <label
+                            htmlFor={`select-q${qIdx}-o${oIdx}`}
+                            className={"cursor-pointer"}
+                          >
+                            {option}
                           </label>
                         </li>
                       ))}

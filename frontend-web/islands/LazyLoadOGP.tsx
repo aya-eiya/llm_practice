@@ -15,6 +15,7 @@ export function LazyLoadOGP(
     const doc = parser.parseFromString(html, "text/html");
     const ogp = doc.querySelector("meta[property='og:image']");
     if (ogp) {
+      // TODO convert to base64 string data
       pr.image = ogp.getAttribute("content") ?? undefined;
     }
   });
