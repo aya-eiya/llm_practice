@@ -25,7 +25,7 @@ try_gen_novel() {
   | jq -s "{\"date\": \"${fulldate}\"} * .[0]"
 
   if [ $? -ne 0 ]; then
-    cat /tmp/.gen_novel.raw.txt
+    cat /tmp/.gen_novel.raw.txt \
     | tr -d '\n' \
     | sed -e 's/```json/```/g' \
     | sed -n -e 's/^.*```\s*\({.*}\)```.*$/\1/p' \
