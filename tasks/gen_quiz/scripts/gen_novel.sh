@@ -17,18 +17,16 @@ meg="Meg, a 12-year-old with an insatiable love for books and boundless imaginat
 lui="Lui, a veteran educator with over 20 years of experience teaching social studies and history. At 42, known for his strictness and attention to detail, Lui instills values of honesty and hard work in his students. Despite his tough exterior, he's a trusted mentor and friend, inspiring a love of learning beyond the classroom."
 
 try_gen_novel() {
-  local novel="create JSON as single line. Research an event in ${theme} history that happened on the same month and day as ${date} and create a short ${flavor} novel for children that is after the day and be written with adout 180 words and that output is a JSON formatted as { \"event\": string, \"title\": string, \"body\": string, \"word count\": number } ,newline in the string should be escaped by \\n. and output only JSON part."
+  local novel="create JSON as single line. Research an event in ${theme} history that happened on the same month and day as ${date} and create a short ${flavor} novel for children that is after the day and be written with adout 180 words and that output is a JSON formatted as { \"event\": string, \"title\": string, \"body\": string } ,newline in the string should be escaped by \\n. and output only JSON part."
   ollama run llava $novel \
   | tee /tmp/.gen_novel.raw.txt \
   | tr -d '\n' \
-  | sed -e 's/`Word Count:\s*[0-9]+/g' \
   | sed -n -e 's/^.*\({.*}\).*$/\1/p' \
   | jq -s "{\"date\": \"${fulldate}\"} * .[0]"
 
   if [ $? -ne 0 ]; then
     cat /tmp/.gen_novel.raw.txt
     | tr -d '\n' \
-    | sed -e 's/`Word Count:\s*[0-9]+/g' \
     | sed -e 's/```json/```/g' \
     | sed -n -e 's/^.*```\s*\({.*}\)```.*$/\1/p' \
     | jq -s "{\"date\": \"${fulldate}\"} * .[0]"
@@ -114,7 +112,8 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-jq -s '.[0] * .[1] * .[2]' /tmp/.gen_novel.json /tmp/.gen_novel_conversation.json /tmp/.gen_novel_quiz.json > $(dirname "$0")/../outputs/${fulldate}.json
+words=$(jq -r '.body' /tmp/.gen_novel.json | wc -w | tr -d ' ')
+jq -s ".[0] * { "word count": ${words} } * .[1] * .[2]" /tmp/.gen_novel.json /tmp/.gen_novel_conversation.json /tmp/.gen_novel_quiz.json > $(dirname "$0")/../outputs/${fulldate}.json
 
 jq -r "
   \"# Daily English Quiz ${fulldate} (AI generated)\n\n\" \
