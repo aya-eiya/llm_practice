@@ -28,6 +28,7 @@ import data20240427 from "./2024-04-27.ts";
 import data20240428 from "./2024-04-28.ts";
 import data20240429 from "./2024-04-29.ts";
 import data20240430 from "./2024-04-30.ts";
+import data20240501 from "./2024-05-01.ts";
 
 const dailyData = {
   "2024-04-01": data20240401,
@@ -62,6 +63,7 @@ const dailyData = {
   "2024-04-28": data20240428,
   "2024-04-29": data20240429,
   "2024-04-30": data20240430,
+  "2024-05-01": data20240501,
 };
 export const dates = Object.keys(dailyData).toSorted() as Array<
   keyof typeof dailyData
