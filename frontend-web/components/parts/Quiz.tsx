@@ -96,7 +96,7 @@ export default function Quiz(
             ))}
         </div>
         <div
-          className={"w-full px-8 sticky bottom-0 bg-slate-200 border-slate-500"}
+          className={"w-full px-2 sm:px-8 sticky bottom-0 bg-slate-200 border-slate-500"}
         >
           <div
             className={"flex flex-row justify-between items-center w-full h-16"}
