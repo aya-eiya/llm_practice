@@ -1,93 +1,93 @@
-# Daily English quiz 2024-04-27 (AI generated)
+# Daily English Quiz 2024-04-30 (AI generated)
 
-## The Day the Sun Disappeared
+## A Tragic Turning Point in History
 
-It was a bright and sunny day on April 27th, until suddenly, the sun disappeared! At first, everyone thought it was just a cloud blocking the sun, but as the hours passed, the sky grew darker and darker. Panic set in as people realized that the sun wasn't coming back. Scientists scrambled to figure out what had happened, while governments around the world worked on emergency plans. But despite their efforts, no one could find an answer. The world was plunged into darkness, and it seemed like life on Earth would never be the same again. 
-
-But a group of brave explorers refused to give up hope. They built giant machines that could harness the power of the stars and keep the Earth lit. With their determination and ingenuity, they managed to save the day and restore light to the world.
+Once upon a time, in the summer of 1914, Archduke Franz Ferdinand of Austria was visiting Sarajevo. He was on his way to see his wife and son when he was shot and killed by a member of the Bosnian nationalist group.   The world was shocked by the news of the assassination. It was hard to believe that such an important person had been murdered in broad daylight. People all over Europe mourned the loss of Archduke Franz Ferdinand, who was known for his love of peace and his desire to bring happiness to others.   The event marked the end of the Austro-Hungarian Empire and the beginning of World War I, one of the most devastating conflicts in human history. The assassination also brought about the rise of nationalism and the decline of empires. It is a reminder that individual actions can have far-reaching consequences.
 
 ## Dialog
 
-Billy: I don't get why they had to use giant machines to harness star power to light up the Earth. Can't we just use electricity or something?<br />
-Kerry: But Billy, it's not just about finding a solution, it's about the journey! Those explorers showed so much courage and determination in the face of darkness.<br />
-Meg: I love how they didn't give up hope. Even when everything seemed lost, they kept trying to find a way to restore light. It's so inspiring!<br />
-Billy: Yeah, I guess you're right. But what about the consequences? Did they consider how using star power could affect the environment or something?<br />
-Kerry: Good point, Billy! I didn't think about that. Maybe we should read more to find out how it all turned out.<br />
-Meg: Ooh, yeah! Let's keep reading and see what happens next!
+Billy: I love how the author blended science and history in this novel. It's so cool to see how the characters use their knowledge of astronomy to solve mysteries.<br />
+Kerry: Totally agree, Billy! I was on the edge of my seat when they figured out the solar eclipse was a sign from the gods. It's like, whoa, science is amazing!<br />
+Meg: I know, right? The way the author wove together mythology and real events is incredible. And I loved how the characters had to use their imaginations to decipher the clues.<br />
+Lui: Well said, Meg. I was impressed by the author's ability to balance fact and fiction. As a history teacher, it's always exciting to see students engaged with historical events in a new way.<br />
+Billy: Yeah, and I loved how the characters used their curiosity to drive the plot forward. It's such an important lesson for us all – never stop asking questions!<br />
+Kerry: Preach, Billy! And I think that's one of the things I love about this novel – it shows that even ordinary people can make a difference when they use their unique skills and perspectives.<br />
+Meg: Exactly! The characters in 'Once' are so relatable because they're not superheroes or anything. They're just regular kids who happen to be really smart and resourceful.<br />
+Lui: That's a great point, Meg. I think that's one of the reasons why this novel has resonated with so many readers – it's an inspiration story, but it's also grounded in reality.
 
 ## quiz
 
 ### Question.1
 
-What happened on April 27th?
+What event occurred in 1914 that had far-reaching consequences?
 
-- A) The sun disappeared
-- B) A new star was born
-- C) It started raining
-- D) A big storm hit
+- A) The rise of nationalism
+- B) The decline of empires
+- C) The assassination of Archduke Franz Ferdinand
+- D) The beginning of World War I
 
 <details>
   <summary>Answer</summary>
-A) The sun disappeared
+D) The beginning of World War I
 </details>
 
 
 ### Question.2
 
-Why did the scientists scramble to figure out what had happened?
+How did the author blend science and history in the novel?
 
-- A) Because they were bored
-- B) Because no one knew what happened
-- C) Because it was a national emergency
-- D) Because the sun disappeared
+- A) By using astronomy to solve mysteries
+- B) By incorporating mythology into historical events
+- C) By creating fictional characters with real-world skills
+- D) None of the above
 
 <details>
   <summary>Answer</summary>
-D) Because the sun disappeared
+B) By incorporating mythology into historical events
 </details>
 
 
 ### Question.3
 
-What did the group of brave explorers do to save the day?
+What is an important lesson that can be learned from the novel?
 
-- A) They built giant machines that could harness star power
-- B) They used electricity to light up the Earth
-- C) They sent a message to the moon for help
-- D) They gave up and accepted the darkness
+- A) The importance of imagination
+- B) The power of curiosity
+- C) The value of resourcefulness
+- D) The need for superheroes
 
 <details>
   <summary>Answer</summary>
-A) They built giant machines that could harness star power
+B) The power of curiosity
 </details>
 
 
 ### Question.4
 
-What was Billy concerned about?
+Why has the novel resonated with many readers according to Lui?
 
-- A) The environmental impact of using star power
-- B) The journey taken by the explorers
-- C) The lack of electricity on Earth
-- D) The sudden disappearance of the sun
+- A) Because it's an inspiration story
+- B) Because it's grounded in reality
+- C) Because it's a thriller
+- D) Because it's about history
 
 <details>
   <summary>Answer</summary>
-A) The environmental impact of using star power
+A) Because it's an inspiration story
 </details>
 
 
 ### Question.5
 
-Why did Kerry think it was important to read more about what happened?
+What was Archduke Franz Ferdinand known for, according to the novel?
 
-- A) Because she wanted to learn more about the journey
-- B) Because she was curious about the consequences of using star power
-- C) Because she loved reading about science
-- D) Because she just liked reading
+- A) His love of war and desire to bring destruction
+- B) His love of peace and desire to bring happiness
+- C) His interest in astronomy and mathematics
+- D) His skill in solving mysteries
 
 <details>
   <summary>Answer</summary>
-B) Because she was curious about the consequences of using star power
+B) His love of peace and desire to bring happiness
 </details>
 
