@@ -14,6 +14,9 @@ export type QuizData = {
     | {
       Meg: string;
     }
+    | {
+      Lui: string;
+    }
   )[];
   quiz: {
     question: string;
