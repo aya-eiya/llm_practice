@@ -22,9 +22,16 @@ export default function DailyQuiz(
     <>
       <Head>
         <title>
-          Daily AI-Generated English Novels & Learning Test Questions:{" "}
-          {data.title}
+          Daily AI-Generated Novels & Quiz: {data.title}
         </title>
+        <meta
+          property="og:title"
+          content={data.title}
+        />
+        <meta
+          name="twitter:title"
+          content={data.title}
+        />
       </Head>
       <MainLayout data={data} />
     </>
