@@ -4,7 +4,7 @@ export default {
   "title": "The Aliens of April 21st",
   "body":
     "Once upon a time, on a cold and dark April night, something strange happened. The children of the small town of Greenville woke up to find their homes invaded by strange creatures from another world. These aliens were not like any other creatures they had ever seen before. They had long, thin fingers that they used to reach through walls and snatch people out of bed. The children were terrified and didn't know what to do. But then, a group of brave adults came together to fight off the invaders. With bravery and determination, they managed to chase the aliens back to their spaceship and save the town. From that day on, no one dared to speak of the aliens again, and life went back to normal in Greenville.",
-  "word count": 180,
+  "word count": 129,
   "dialog": [
     {
       "Billy":

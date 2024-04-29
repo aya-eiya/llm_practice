@@ -4,7 +4,7 @@ export default {
   "title": "DNA Structure Discovery",
   "body":
     "On April 6th, 1953, James Watson and Francis Crick made a groundbreaking discovery in biology history when they published their research on the structure of DNA. They had spent years studying the molecule, and their work revolutionized our understanding of genetics. The double helix structure of DNA, which they proposed, is still widely recognized as the most accurate model for how DNA works. This discovery has led to countless advancements in biology, medicine, and technology.",
-  "word count": 180,
+  "word count": 75,
   "dialog": [
     {
       "Billy":

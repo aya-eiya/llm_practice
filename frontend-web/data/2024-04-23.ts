@@ -4,7 +4,7 @@ export default {
   "title": "The Flames of Fate",
   "body":
     "Once upon a time, on April 23rd, the people of London were enjoying a beautiful day. The sun was shining, and birds were singing in the trees. Suddenly, without warning, flames began to spread from a bakery on Pudding Lane. The people rushed to put out the fire, but it quickly grew out of control. As the flames reached higher and higher, the people realized that their beloved city was in danger. They tried everything they could think of, but nothing seemed to stop the fire. Just when all hope seemed lost, a miracle happened: it started to rain. The rain helped put out the fire, and the people of London were saved. From that day on, the people of London made sure to always have water handy, just in case another fire broke out.",
-  "word count": 180,
+  "word count": 135,
   "dialog": [
     {
       "Billy":

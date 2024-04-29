@@ -4,7 +4,7 @@ export default {
   "title": "A Day in the Life of a Web Surfer",
   "body":
     "It was a beautiful day on April 18th. The sun was shining brightly, and the birds were singing their sweet melodies. I woke up feeling happy and excited about what the day had in store for me.I rushed to my computer and turned it on. As the screen lit up, I felt a thrill of anticipation. Today was a special day - the World Wide Web had been launched just one year ago! I couldn't wait to see all the new things that had been added since then.I clicked on my web browser and waited for it to load. Suddenly, a whole new world opened up before me - a world of information at my fingertips. I could learn about anything I wanted, from the latest news to the most obscure facts.As I navigated through the web, I came across all sorts of interesting things. I saw pictures of beautiful places around the world, read articles about the latest discoveries in science and technology, and even found a recipe for my favorite dessert.The more I explored, the more amazed I was by everything that was available on the web. It was like having a library at my fingertips! As I clicked from one link to another, I couldn't help but feel grateful for this incredible invention.But as the day drew to a close, I realized that there was still so much left to discover. The World Wide Web was just getting started, and who knew what exciting new things would be added tomorrow? As I closed my computer and went to bed, I felt happy knowing that I had a whole world of knowledge at my fingertips, waiting for me to explore whenever I wanted.",
-  "word count": 287,
+  "word count": 285,
   "dialog": [
     {
       "Billy":

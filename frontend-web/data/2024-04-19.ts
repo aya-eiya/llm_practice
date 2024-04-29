@@ -3,8 +3,8 @@ export default {
   "event": "April 19th - The discovery of DNA double helix structure",
   "title": "The Mysterious Double Helix",
   "body":
-    "\n\nOnce upon a time, in a small lab far, far away, there was a brilliant scientist named James Watson. He was always curious and loved to figure out the secrets of life. One day, he made a groundbreaking discovery that would change the world forever - the double helix structure of DNA!Watson spent many long hours in his lab, carefully studying the tiny molecules that make up our genes. With the help of his friend Francis Crick, they were able to create a model of the double helix, which showed that DNA is made up of two intertwined strands.This discovery was so important because it helped us understand how our cells grow and reproduce. It also opened up new ways to study and treat diseases like cancer.So, on this day, April 19th, we celebrate the incredible discovery of the double helix structure of DNA. And who knows what amazing discoveries the future will bring?",
-  "word count": 237,
+    "Once upon a time, in a small lab far, far away, there was a brilliant scientist named James Watson. He was always curious and loved to figure out the secrets of life. One day, he made a groundbreaking discovery that would change the world forever - the double helix structure of DNA!Watson spent many long hours in his lab, carefully studying the tiny molecules that make up our genes. With the help of his friend Francis Crick, they were able to create a model of the double helix, which showed that DNA is made up of two intertwined strands.This discovery was so important because it helped us understand how our cells grow and reproduce. It also opened up new ways to study and treat diseases like cancer.So, on this day, April 19th, we celebrate the incredible discovery of the double helix structure of DNA. And who knows what amazing discoveries the future will bring?",
+  "word count": 154,
   "dialog": [
     {
       "Billy":

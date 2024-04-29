@@ -4,7 +4,7 @@ export default {
   "title": "The Birthday Wish",
   "body":
     "Once upon a time in Cupertino, California, there was a little boy named Adam. He lived with his family in a small house next to an apple orchard. Every day after school, Adam would ride his bike to the orchard and sit under the big tree to do his homework. One day, while he was sitting there, he heard a strange noise coming from a nearby building. Curious, he went to investigate and found himself in front of a small company called Apple Inc. The sign above the door read 'Apple Computer'. Adam walked inside and asked the person at the reception if he could meet Steve Jobs, the founder of the company. The receptionist smiled and said, 'Sure, I'll take you to his office.' When Adam met Steve Jobs, he was amazed by all the computers and gadgets around him. He asked Steve about his work and Steve told him about his dream to make computers more accessible to everyone. That day, Adam made a wish that one day, he would create something as cool as Apple Computers. From that day on, Adam worked hard in school and saved up all his allowance to buy an Apple computer. On his 18th birthday, Adam's parents surprised him with a brand new Macintosh. He sat down at the desk and turned it on. Suddenly, a message appeared on the screen that said, 'Happy Birthday, Adam! From Steve Jobs.' Adam was thrilled and knew that his dream had come true. From that day on, Adam worked for Apple and helped make their computers even more accessible to everyone.",
-  "word count": 265,
+  "word count": 266,
   "dialog": [
     {
       "Billy":

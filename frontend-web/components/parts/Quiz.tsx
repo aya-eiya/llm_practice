@@ -35,14 +35,70 @@ export default function Quiz(
       <section id="quiz.example">
         <div className={"px-4"}>
           <h2 className={"text-3xl"}>{data.title}</h2>
-          <p className={"text-sm text-right mb-4"}>generated at {data.date}</p>
+          <div className={"flex flex-row justify-end px-4"}>
+            <aside className={"mr-4"}>
+              <input
+                key={data.date}
+                type="checkbox"
+                id={"reportProblem"}
+                className={"hidden peer/reportProblem"}
+              />
+              <label htmlFor={"reportProblem"} className={"cursor-pointer"}>
+                📢
+              </label>
+              <ul
+                className={"hidden peer-checked/reportProblem:block md:text-xs absolute bg-slate-50 border border-slate-400 p-2"}
+              >
+                <caption className={"font-bold"}>
+                  <label htmlFor={"reportProblem"} className={"cursor-pointer"}>
+                    [x]&nbsp;&nbsp;&nbsp;Report Problem
+                  </label>
+                </caption>
+                <li className={"mt-2 mb-1"}>
+                  <a
+                    className={"underline py-1"}
+                    target={"_blank"}
+                    href={`./report?page=/pages/${data.date}&reason=page%20broken`}
+                  >
+                    Broken page
+                  </a>
+                </li>
+                <li className={"mb-1"}>
+                  <a
+                    className={"underline py-1"}
+                    target={"_blank"}
+                    href={`./report?page=/pages/${data.date}&reason=meaningless%20content`}
+                  >
+                    Meaningless Content
+                  </a>
+                </li>
+                <li className={"mb-1"}>
+                  <a
+                    className={"underline py-1"}
+                    target={"_blank"}
+                    href={`./report?page=/pages/${data.date}&reason=inappropriate%20content`}
+                  >
+                    Inappropriate Content
+                  </a>
+                </li>
+                <li className={"mb-1"}>
+                  <a
+                    className={"underline py-1"}
+                    href={`./report?page=/pages/${data.date}&reason=copyright%20violation`}
+                    target={"_blank"}
+                  >
+                    Copyright Violation
+                  </a>
+                </li>
+              </ul>
+            </aside>
+            <p className={"text-sm text-right mb-4"}>
+              generated at {data.date}
+            </p>
+          </div>
           <pre className={"whitespace-pre-wrap px-4"}>{data.body}</pre>
           <p className={"px-8 text-right"}>
-            (Word Count: {
-              /* AI does not get correct wc */
-              // data["word count"]
-              data.body.trim().split(/\s+/).length
-            })
+            (Word Count: {data["word count"]})
           </p>
           <h3 className={"mb-2 text-lg"}>[Dialog]</h3>
           <ul className={"px-4 mb-4"}>

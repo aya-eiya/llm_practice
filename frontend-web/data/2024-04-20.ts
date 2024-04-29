@@ -4,7 +4,7 @@ export default {
   "title": "The Adventure of the Computer Whiz Kids",
   "body":
     "Once upon a time, in a world filled with beeps and clicks, there were three children who loved computers. They spent every waking moment tinkering and programming their trusty Apple Macintoshes. One day, they heard about a new computer that was going to change the world. It was called the Macintosh Plus, and it was supposed to be the ultimate machine for any computer whiz kid. The children couldn't wait to get their hands on one. They saved up their allowance and begged their parents to buy them a Macintosh Plus. Finally, the day arrived when they could finally pick up their new machine from the store. As soon as they got it home, they started to explore all the amazing features of their new toy. They spent hours playing games, creating art, and writing programs. The children were so excited about their new computer that they didn't even notice when the sun went down and the stars came out. They worked through the night, trying out every single feature of their Macintosh Plus. In the end, they had created something truly magical - a program that could create its own world inside the computer! The children were overjoyed and couldn't wait to show off their creation to their friends. And from that day on, they were known as the computer whiz kids of the neighborhood. The end. ",
-  "word count": 180,
+  "word count": 228,
   "dialog": [
     {
       "Billy":

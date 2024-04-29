@@ -4,7 +4,7 @@ export default {
   "title": "A Tick of Time",
   "body":
     "In a world where time was everything, a young inventor named Kael set out to create the perfect timekeeping device. After months of hard work and countless failed attempts, he finally succeeded in creating a 24-hour clock that could keep track of time more accurately than ever before. With his new invention, people could now tell the exact time at any given moment. The world was forever changed by this simple yet revolutionary invention.",
-  "word count": 180,
+  "word count": 74,
   "dialog": [
     {
       "Kerry":

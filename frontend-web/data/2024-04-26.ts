@@ -4,7 +4,7 @@ export default {
   "title": "The Secret of Life",
   "body":
     "Once upon a time, there was a curious scientist named Watson. He spent all his days in the lab trying to figure out how life works. One day, he made a breakthrough and discovered the secret of life: the DNA structure! But little did Watson know, the DNA was not just a code for life, but also a key to something much darker... \n\nWatson decided to share his discovery with the world. However, as soon as he announced it, strange things started to happen in the lab. The test tubes began to glow with an eerie light, and the beakers filled with mysterious liquids bubbled over. \n\nSuddenly, a shadowy figure emerged from one of the beakers, its eyes glowing like the test tubes. It was the DNA monster! With each experiment Watson performed, the DNA monster grew stronger and more sinister. \n\nWatson knew he had to stop the DNA monster before it was too late. He raced through the lab, dodging test tubes and beakers that were now filled with the monster's deadly brew. Finally, he reached the final experiment, a giant Petri dish filled with the purest form of DNA. \n\nWatson had to be careful not to let the DNA monster escape into the world. He took a deep breath, closed his eyes, and focused all his energy on the DNA structure within the dish. Suddenly, the DNA monster let out a loud roar and dissipated into thin air! \n\nWatson was exhausted but triumphant. He had saved the world from the dangers of the DNA monster. From that day forward, he never forgot the importance of responsible scientific exploration.",
-  "word count": 356,
+  "word count": 270,
   "dialog": [
     {
       "Billy":

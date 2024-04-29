@@ -4,7 +4,7 @@ export default {
   "title": "The Day The Internet Came Alive!",
   "body":
     "It was a typical day in April, but little did anyone know that something extraordinary was about to happen. As the clock struck midnight, a young computer scientist named Tim Berners-Lee flipped a switch and sent the first message over the newly created World Wide Web. Suddenly, the computer screens around the world lit up with a bright blue glow. People gasped in amazement as they saw their emails, websites, and chats for the first time. From that day on, the web quickly became an integral part of our daily lives. We could now communicate with people all over the world, share information instantly, and even shop online from the comfort of our own homes. The World Wide Web had changed everything. It was a new era of connectedness and global communication that would forever alter the way we live, work, and interact with one another.",
-  "word count": 203,
+  "word count": 146,
   "dialog": [
     {
       "Billy":

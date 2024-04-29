@@ -4,7 +4,7 @@ export default {
   "title": "Gauss' Birthday Adventure",
   "body":
     "Once upon a time, in a small town far away, lived a young boy named Johann. He was born on April 15th, the same day as the famous mathematician, Gauss. Unlike Gauss, who was known for his incredible intelligence and mathematical prowess, Johann struggled with math at first. But one day, he discovered a new way of looking at numbers that changed everything. With this new perspective, he began to excel in math and quickly became known as the greatest mathematician of all time. And so, on his birthday, April 15th, we celebrate Johann's incredible journey and the impact he had on the world of mathematics.",
-  "word count": 180,
+  "word count": 107,
   "dialog": [
     {
       "Billy":

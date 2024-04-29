@@ -4,7 +4,7 @@ export default {
   "title": "The X-ray Mystery",
   "body":
     "Once upon a time, on a beautiful spring day in April, a young scientist named Marie and her assistant Pierre were working in their laboratory. They had been experimenting with electricity for weeks, trying to understand how it worked.One day, as they were adjusting some equipment, they noticed something strange happening to a piece of paper. It was glowing with an eerie blue light!Marie and Pierre quickly realized that they had stumbled upon something incredible - the ability to see inside objects without cutting them open. They called this new discovery X-rays, and it changed the world forever!From then on, Marie and Pierre became famous for their discovery, and they continued to work together, making many more important discoveries in the field of science. The end.",
-  "word count": 180,
+  "word count": 126,
   "dialog": [
     {
       "Billy":

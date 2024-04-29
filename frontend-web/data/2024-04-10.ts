@@ -4,7 +4,7 @@ export default {
   "title": "The Magical Dragon's Treasure",
   "body":
     "In a faraway kingdom, there was a magical dragon named Zephyr who guarded a treasure that held the power to make anyone rich and powerful. But one day, the wicked king tried to steal the treasure for himself. The villagers were in despair until a brave young knight named Sir Cedric stepped forward to save them.On his quest, Sir Cedric met a wise old wizard who gave him a magical sword that could defeat any enemy. With the sword in hand, Sir Cedric battled through the treacherous forests and dark caves until he reached Zephyr's lair. The battle was fierce, but Sir Cedric emerged victorious. He took the treasure and returned it to the kingdom, where it was used for good deeds and the kingdom prospered.From that day on, Sir Cedric was hailed as a hero, and the villagers lived in peace and happiness.",
-  "word count": 180,
+  "word count": 144,
   "dialog": [
     {
       "Billy":

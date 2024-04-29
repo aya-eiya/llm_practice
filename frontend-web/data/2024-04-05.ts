@@ -4,7 +4,7 @@ export default {
   "title": "The Magic Pill",
   "body":
     "In a world where illnesses were rampant and deadly, the discovery of penicillin changed everything. On April 5th, a humble scientist named Alexander Fleming made a remarkable discovery in his laboratory. He noticed that a mold growing on one of his petri dishes was killing bacteria, which he later identified as penicillin. The news of this discovery spread like wildfire and people started to wonder if it could be used to cure diseases.As the days passed, the world began to change. Doctors and scientists worked tirelessly to find new ways to use this miracle drug. Hospitals were filled with patients who had once been deemed incurable. Families rejoiced as their loved ones were cured of deadly illnesses.The magic pill had finally arrived! And so, on April 5th, the world celebrated the discovery of penicillin and the hope it brought for a healthier future.",
-  "word count": 231,
+  "word count": 143,
   "dialog": [
     {
       "Billy":

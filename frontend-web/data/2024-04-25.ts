@@ -4,7 +4,7 @@ export default {
   "title": "The Ninja who saved Japan",
   "body":
     "One sunny morning in April, a young ninja named Akira set out on a mission. He had heard that the famous samurai lord, Tokugawa Ieyasu, was planning to attack his village. Akira knew he had to stop him before it was too late.Akira snuck into Tokugawa's camp and saw that he had an army of thousands of soldiers. But Akira was not afraid. He had trained for years to be a ninja, and he was ready for anything.He sneaked around the camp, avoiding the guards at all costs. Finally, he reached Tokugawa's tent. Inside, he saw that Tokugawa was planning to attack the village that very day. Akira knew he had to stop him.Akira quickly grabbed a sword and charged at Tokugawa. The two fought for hours, neither of them giving an inch. But in the end, Akira's quick thinking and ninja skills won out.Tokugawa was defeated, and the village was saved. Akira had done it. He was hailed as a hero and his name would be remembered in Japanese history.",
-  "word count": 180,
+  "word count": 171,
   "dialog": [
     {
       "Billy":

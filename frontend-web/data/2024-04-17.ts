@@ -4,7 +4,7 @@ export default {
   "title": "The Secret Treasure",
   "body":
     "Once upon a time, in a small town called Boston, there lived a brave little girl named Sarah. She was known for her love of tea and her courage to speak her mind. One day, while wandering through the streets, she heard rumors of a hidden treasure buried somewhere in the town. Without hesitation, Sarah embarked on a journey to find the treasure, determined to uncover its secrets. Along the way, she met a group of rebels who were fighting for their freedom from the oppressive British rule. They joined forces and together they discovered the treasure, which was not just a pile of gold and jewels, but a symbol of hope and independence. With her new friends by her side, Sarah realized that true treasure is found in the bonds of friendship and the courage to stand up for what you believe in.",
-  "word count": 180,
+  "word count": 285,
   "dialog": [
     {
       "Billy":

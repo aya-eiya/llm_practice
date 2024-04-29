@@ -5,7 +5,7 @@ export default {
   "title": "The Mysterious Note",
   "body":
     "In the quiet corner of his study, Pierre sat at his desk, engrossed in thought. He had been reading through Diophantus' \"Arithmeticae practicae\", a text that had captivated mathematicians for centuries. As he turned to a particularly challenging problem, something clicked in Pierre's mind. A problem so intriguing, so elusive, that he knew he must solve it. And so, with a flourish of his quill, he jotted down a note in the margins of the book, a note that would change the course of mathematics forever.",
-  "word count": 180,
+  "word count": 86,
   "dialog": [
     {
       "Billy":

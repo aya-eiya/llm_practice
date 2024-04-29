@@ -4,7 +4,7 @@ export default {
   "title": "The Secret of Life",
   "body":
     "In a small village deep in the countryside, there lived a curious boy named Max. He loved to explore the world around him and always asked questions about everything he saw. One day, while wandering through the woods, Max stumbled upon an old book that was hidden among the trees. It was a book about science and the wonders of the natural world. As Max flipped through the pages, his eyes landed on a chapter about DNA - the building blocks of all living things. He read on to learn more about this mysterious structure that held the key to life itself. With newfound excitement, Max set out on a quest to uncover the secrets of DNA and how it worked. He scoured the village for information and even traveled to distant places to meet with scientists who were studying DNA. After many months of research, Max finally cracked the code and discovered that DNA was the key to unlocking the mysteries of life. The villagers celebrated Max's discovery and he became a hero in the eyes of all. From that day on, Max dedicated his life to sharing his knowledge with others and inspiring the next generation of scientists to explore the wonders of the natural world.",
-  "word count": 180,
+  "word count": 208,
   "dialog": [
     {
       "Billy":

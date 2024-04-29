@@ -4,7 +4,7 @@ export default {
   "title": "The Great Tea Sale",
   "body":
     "In this fun and exciting adventure, a group of young rebels discover that the king has been stealing their tea and decide to take action. With the help of some magical creatures, they set out on a journey to stop the tea theft once and for all! But will they be able to save their beloved tea from being stolen again? Find out in this exciting adventure!",
-  "word count": 180,
+  "word count": 67,
   "dialog": [
     {
       "Billy":

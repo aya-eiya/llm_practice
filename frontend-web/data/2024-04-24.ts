@@ -5,7 +5,7 @@ export default {
   "title": "The Terror of TB",
   "body":
     "It was a dark and stormy night. The wind howled through the trees as twelve-year-old Tommy lay in bed, tossing and turning with fever. He had been sick for weeks, and his parents were getting worried. Suddenly, a loud knock came at the door. Tommy's dad went to answer it, but when he opened the door, he saw nothing. It was as if someone or something had vanished into thin air.As the days passed, more and more people in town fell sick with a strange fever. The doctors couldn't figure out what was causing it. Some said it was the water, others blamed the air quality. But Tommy knew the truth. He remembered hearing his dad talk about Robert Koch and how he had isolated the bacterium that caused tuberculosis. Tommy realized that something similar must be happening in their town.With a flashlight in hand, Tommy set out to find the source of the illness. As he walked through the streets, he noticed a strange odor. It was as if someone had been burning something foul. He followed his nose until he came upon an old abandoned warehouse. The door was open, and inside, Tommy found what he had feared: a giant vat filled with a bubbling liquid. He knew that whatever was in that vat must be causing the illness.Tommy quickly ran back to his house and told his parents everything. They were skeptical at first, but when they saw how sick their son was getting, they decided to believe him. Together, they went back to the warehouse and found the source of the illness: a giant vat filled with the bacteria that caused tuberculosis. They destroyed the vat, and soon after, the fever in town subsided.The end.",
-  "word count": 180,
+  "word count": 289,
   "dialog": [
     {
       "Billy":

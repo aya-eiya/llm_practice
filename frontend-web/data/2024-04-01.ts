@@ -4,7 +4,7 @@ export default {
   "title": "The Day of the Great Invention",
   "body":
     "It was a bright and sunny day, with everyone outside enjoying the beautiful weather. But little did they know, something incredible was about to happen! Suddenly, the sky turned a deep shade of blue and a strange machine appeared in the distance. As it got closer, everyone could see that it was unlike anything they had ever seen before. It was a magnificent invention, capable of doing things that no one had ever imagined possible. The people were amazed and excited to see what it could do! And as they watched, the machine began to change their lives forever. From that day on, everything was different - the world had been transformed by the power of this incredible invention.",
-  "word count": 170,
+  "word count": 119,
   "dialog": [
     {
       "Billy":

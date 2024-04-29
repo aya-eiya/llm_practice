@@ -4,6 +4,7 @@ export default {
   "title": "The Secret of Life",
   "body":
     "In a world where humans had long forgotten their origins, a young girl named Mia stumbled upon an ancient text that spoke of the building blocks of life. As she read the words on the old scroll, her mind raced with the possibilities. With the help of her best friend and a team of scientists, they set out to unravel the mysteries of the DNA strands that lay within each cell.As they worked tirelessly in the lab, Mia's imagination soared. She envisioned a world where diseases were eradicated, and life was perfected. The excitement was palpable as they made breakthrough after breakthrough.But as the days passed, Mia realized that their discoveries had fallen into the wrong hands. A rogue organization sought to use the knowledge for nefarious purposes. It was up to Mia and her friends to save the world from a dark fate. With courage and determination, they fought off the villains and saved the day.Mia's discovery changed the course of history, and she went on to become one of the most celebrated scientists of all time. Her legacy lived on, inspiring generations to come.",
+  "word count": 186,
   "dialog": [
     {
       "Billy":

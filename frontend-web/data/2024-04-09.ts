@@ -4,7 +4,7 @@ export default {
   "title": "The Sword of Olympus",
   "body":
     "Once upon a time, in a land far, far away, there lived a young prince named Leo. He was the bravest and kindest of all the princes in the kingdom. One day, while out riding his horse, he stumbled upon an ancient sword buried deep in the forest. As soon as he touched it, the sword began to glow with a bright blue light. Leo pulled the sword from the ground and felt its power surge through him. He knew that he was meant to be the hero who would save the kingdom from the wicked sorcerer who had taken control of the throne. With his new sword in hand, Leo set out on his quest to defeat the sorcerer and bring peace back to the kingdom. Along the way, he met a wise old wizard who taught him how to use the sword's magic to control the elements. Together, they battled fierce dragons and treacherous goblins, but nothing could prepare them for the final showdown with the sorcerer himself. In the end, Leo and his friends emerged victorious, and the kingdom was saved once again.",
-  "word count": 180,
+  "word count": 186,
   "dialog": [
     {
       "Billy":

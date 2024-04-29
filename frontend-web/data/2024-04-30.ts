@@ -4,7 +4,7 @@ export default {
   "title": "The Knights of the Round Table",
   "body":
     "Once upon a time, after Sir Thomas Malory died on April 30th, the kingdom was in chaos. King Arthur's reign was over and no one could take his place as king. The knights of the round table were scattered throughout the land, trying to protect the kingdom from invaders. One day, Sir Lancelot decided it was time for the knights to come together and choose a new king. They gathered in Camelot and held a tournament to see who would be the next king. After many battles and tests of strength, Sir Galahad emerged as the winner. He was crowned King of England and led the kingdom to greatness. The knights continued to fight for justice and protect the kingdom, even after King Galahad's death. They remained loyal to each other and the ideals they stood for.",
-  "word count": 180,
+  "word count": 137,
   "dialog": [
     {
       "Billy":

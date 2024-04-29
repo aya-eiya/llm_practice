@@ -5,7 +5,7 @@ export default {
   "title": "The Secret of Math Magic",
   "body":
     "In the small town of Mathville, everyone loved math. But one day, strange things started to happen. The numbers in the town suddenly began to change! The trees that used to be green turned into fractions and the houses that were once solid became sets. The people of Mathville were terrified. They knew they had to find out what was happening. So, they called upon their greatest mathematician, Professor Euclid. With his trusty calculator by his side, he set off on a journey to solve the mystery. He followed the numbers deeper and deeper into the unknown. But as he got closer, he realized that the numbers were alive! They had a mind of their own and were using their magic to change the town. Professor Euclid knew he had to stop them before it was too late. With the help of his friends, he battled the living numbers and finally defeated them. The people of Mathville were relieved and grateful. And from that day on, they made sure to always appreciate math and never take it for granted again.",
-  "word count": 319,
+  "word count": 180,
   "dialog": [
     {
       "Billy":

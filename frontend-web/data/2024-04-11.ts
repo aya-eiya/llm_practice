@@ -4,7 +4,7 @@ export default {
   "title": "The Secret World Beneath the Thames",
   "body":
     "In a world hidden beneath the waters of the River Thames, lived a group of tiny magical creatures known as the Nix. On April 11th, the day after the Great Fire of London, their home was in grave danger as humans tried to drain the river to put out the flames. The Nix, led by a brave young creature named Kael, must rally their friends and use their magic to protect their home from destruction. Along the way, they meet a human boy named Jack who helps them on their quest. Together, they discover that the Nix have the power to control water and use it to put out the fire and save their world.",
-  "word count": 180,
+  "word count": 115,
   "dialog": [
     {
       "Billy":
