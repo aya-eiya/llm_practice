@@ -1,3 +1,5 @@
+import { Printer } from "../../islands/Printer.tsx";
+
 export type QuizData = {
   date: string;
   event: string;
@@ -36,7 +38,12 @@ export default function Quiz(
         <div className={"px-4"}>
           <h2 className={"text-3xl"}>{data.title}</h2>
           <div className={"flex flex-row justify-end px-4"}>
-            <aside className={"mr-4"}>
+            <aside className={"mr-4 hidden md:flex print:hidden"}>
+              <div>
+                <Printer />
+              </div>
+            </aside>
+            <aside className={"mr-4 print:hidden"}>
               <input
                 key={data.date}
                 type="checkbox"
@@ -155,7 +162,7 @@ export default function Quiz(
             ))}
         </div>
         <div
-          className={"w-full px-2 sm:px-8 sticky bottom-0 bg-slate-200 border-slate-500"}
+          className={"w-full px-2 sm:px-8 sticky print:relative bottom-0 bg-slate-200 border-slate-500"}
         >
           <div
             className={"flex flex-row justify-between items-center w-full h-16"}
@@ -193,7 +200,7 @@ export default function Quiz(
                             />
                             <div
                               key={`q${qIdx}-o${oIdx}-label`}
-                              className={"hidden w-full h-full justify-center items-center " +
+                              className={"hidden w-full h-full justify-center items-center print:invisible " +
                                 ([
                                   "peer-checked/0:flex ",
                                   "peer-checked/1:flex ",
@@ -218,7 +225,10 @@ export default function Quiz(
               })
               .flat()}
           </div>
-          <div className={"flex flex-row justify-evenly pb-2"} f-client-nav>
+          <div
+            className={"flex flex-row justify-evenly pb-2 print:hidden"}
+            f-client-nav
+          >
             <a
               href={prev ? `/pages/${prev}` : "/"}
               className={"border border-slate-400 px-8 rounded h-8 select-none" +

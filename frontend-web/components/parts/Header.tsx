@@ -1,8 +1,8 @@
 export default function Header() {
   return (
     <header id="mainHeader">
-      <div className={"px-4 py-2 text-center md:text-left"}>
-        <h1 className={"text-4xl"}>
+      <div className={"px-4 py-4 text-center md:text-left"}>
+        <h1 className={"text-4xl mb-4"}>
           <a href="/">
             Daily AI-Generated English Novels & Learning Test Questions
           </a>

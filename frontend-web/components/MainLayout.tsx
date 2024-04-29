@@ -27,25 +27,25 @@ export default function Main({ data }: { data: QuizData }) {
         />
         <label
           htmlFor="menuToggle"
-          className={"absolute top-2 px-2 text-xs md:left-[18.5vw] hidden md:block md:peer-checked/sideMenuToggle:hidden border bg-slate-200 rounded-full"}
+          className={"absolute top-2 px-2 text-xs md:left-[18.5vw] hidden md:block md:peer-checked/sideMenuToggle:hidden border bg-slate-200 rounded-full md:print:hidden"}
         >
           {"<<<"}
         </label>
         <label
           htmlFor="menuToggle"
-          className={"absolute top-2 px-2 text-xs md:left-[12px] hidden md:peer-checked/sideMenuToggle:block border bg-slate-200 rounded-full"}
+          className={"absolute top-2 px-2 text-xs md:left-[12px] hidden md:peer-checked/sideMenuToggle:block border bg-slate-200 rounded-full md:print:peer-checked/sideMenuToggle:hidden"}
         >
           {">>>"}
         </label>
         <div
           id="sideMenu"
-          className={"hidden bg-slate-100 md:flex md:w-1/5 md:peer-checked/sideMenuToggle:hidden border-r border-slate-400"}
+          className={"hidden bg-slate-100 md:flex md:w-1/5 md:peer-checked/sideMenuToggle:hidden md:print:hidden border-r border-slate-400"}
         >
           <SideNavi />
         </div>
         <div
           id="mainContent"
-          className={"flex w-full bg-slate-100 md:w-4/5 md:peer-checked/sideMenuToggle:w-full pt-8"}
+          className={"flex w-full bg-slate-100 md:w-4/5 md:print:w-full md:peer-checked/sideMenuToggle:w-full pt-8"}
         >
           <main>
             <Partial name="content">

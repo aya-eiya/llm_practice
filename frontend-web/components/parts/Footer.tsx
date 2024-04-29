@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer id="mainFooter" className={"bg-slate-900 text-slate-50"}>
-      <nav>
+      <nav className={"print:hidden"}>
         <ul
           className={"flex flex-row justify-evenly md:justify-center pt-4 mb-2"}
         >

@@ -9,6 +9,7 @@ import * as $index from "./routes/index.tsx";
 import * as $pages_date_ from "./routes/pages/[date].tsx";
 import * as $pages_report from "./routes/pages/report.tsx";
 import * as $LazyLoadOGP from "./islands/LazyLoadOGP.tsx";
+import * as $Printer from "./islands/Printer.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -22,6 +23,7 @@ const manifest = {
   },
   islands: {
     "./islands/LazyLoadOGP.tsx": $LazyLoadOGP,
+    "./islands/Printer.tsx": $Printer,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
