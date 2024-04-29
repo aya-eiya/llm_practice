@@ -5,7 +5,42 @@ export default function App({ Component }: PageProps) {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Daily English Quiz</title>
+        <meta
+          name="description"
+          content="Daily AI-generated English novels and learning-focused test questions to improve English proficiency."
+        />
+        <meta
+          name="keywords"
+          content="English novels, AI-generated novels, English learning, test questions, English proficiency, daily novels, learning tools"
+        />
+        <meta name="author" content="AY.LLC" />
+        <meta name="robots" content="index, follow" />
+        <title>
+          Daily AI-Generated English Novels & Learning Test Questions
+        </title>
+        <link rel="canonical" href="https://example.com" />
+        <meta
+          property="og:title"
+          content="Daily AI-Generated English Novels & Learning Test Questions"
+        />
+        <meta
+          property="og:description"
+          content="Daily AI-generated English novels and learning-focused test questions to improve English proficiency."
+        />
+        <meta property="og:url" content="https://example.com" />
+        <meta property="og:site_name" content="Your Site Name" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://example.com/image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Daily AI-Generated English Novels & Learning Test Questions"
+        />
+        <meta
+          name="twitter:description"
+          content="Daily AI-generated English novels and learning-focused test questions to improve English proficiency."
+        />
+        <meta name="twitter:image" content="https://example.com/image.jpg" />
         <link
           rel="icon"
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>"

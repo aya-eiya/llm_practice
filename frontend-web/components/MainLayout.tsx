@@ -50,9 +50,9 @@ export default function Main({ data }: { data: QuizData }) {
           <main>
             <Partial name="content">
               <p className={"text-lg px-4 mb-4"}>
-                A daily quiz is based on a AI generated novel and dialog about
-                it. Read the novel and dialogue and try to check your
-                understanding of the novel through a series of questions.
+                Explore a daily quiz inspired by an AI-generated novel and its
+                accompanying dialogue. Immerse yourself in the story and engage
+                with a series of questions to test your comprehension.
               </p>
               <Quiz
                 data={data}
