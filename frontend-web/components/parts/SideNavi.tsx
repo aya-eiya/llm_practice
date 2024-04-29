@@ -43,6 +43,7 @@ export default function SideNavi() {
                 {pr.image && (
                   <a
                     href={pr.url}
+                    target={"_blank"}
                   >
                     <img
                       src={pr.image}
@@ -54,6 +55,7 @@ export default function SideNavi() {
                 )}
                 <a
                   href={pr.url}
+                  target={"_blank"}
                   className={"text-xs underline max-w-full inline-block text-nowrap text-ellipsis overflow-hidden"}
                 >
                   {pr.title}
