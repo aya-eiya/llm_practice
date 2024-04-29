@@ -35,7 +35,11 @@ export default function Quiz(
           <p className={"text-sm text-right mb-4"}>generated at {data.date}</p>
           <pre className={"whitespace-pre-wrap px-4"}>{data.body}</pre>
           <p className={"px-8 text-right"}>
-            (Word Count: {data["word count"]})
+            (Word Count: {
+              /* AI does not get correct wc */
+              // data["word count"]
+              data.body.trim().split(/\s+/).length
+            })
           </p>
           <h3 className={"mb-2 text-lg"}>[Dialog]</h3>
           <ul className={"px-4 mb-4"}>
