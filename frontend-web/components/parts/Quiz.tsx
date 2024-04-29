@@ -119,7 +119,7 @@ export default function Quiz(
                           <>
                             <input
                               type="radio"
-                              key={`q${qIdx}-o${oIdx}-input`}
+                              key={`q${data.date}-${qIdx}-o${oIdx}-input`}
                               id={`select-q${qIdx}-o${oIdx}`}
                               radioGroup={`select-q${qIdx}`}
                               name={`select-q${qIdx}`}
