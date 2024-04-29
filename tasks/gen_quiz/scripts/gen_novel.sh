@@ -18,7 +18,8 @@ lui="Lui, a veteran educator with over 20 years of experience teaching social st
 
 try_gen_novel() {
   local novel="create JSON as single line. Research an event in ${theme} history that happened on the same month and day as ${date} and create a short ${flavor} novel for children that is after the day and be written with adout 180 words and that output is a JSON formatted as { \"event\": string, \"title\": string, \"body\": string } ,newline in the string should be escaped by \\n. and output only JSON part."
-  ollama run llava $novel \
+  echo "${novel}" > /tmp/.gen_novel.prompt
+  ollama run llava "$novel" \
   | tee /tmp/.gen_novel.raw.txt \
   | tr -d '\n' \
   | sed -n -e 's/^.*\({.*}\).*$/\1/p' \
@@ -50,8 +51,9 @@ gen_novel() {
 }
 
 try_gen_conversation() {
-  local conversation="Novel:\```${1}\```\n\nCharacters:\"${billy}\n${kerry}\n${meg}\n${lui}\"\n\n\ncreate conversation of Billy, Kerry, Meg, Lui about the novel, and the order of the statements of the three conversations should be swapped so that they are random.. the output must be formatted as JSON like ```{ \"dialog\": [ { \"Billy\": string }, { \"Kerry\": string }, ... ] }```, \"dialog\" is the array of conversation objects that is formatted as the speaker name is the key of object and the speaker's line is its value."
-  ollama run llama3 $conversation \
+  local conversation="Novel:\`\`\`${1}\`\`\`\n\nCharacters:\"${billy}\n${kerry}\n${meg}\n${lui}\"\n\n\ncreate conversation of Billy, Kerry, Meg, Lui about the novel, and the order of the statements of the three conversations should be swapped so that they are random.. the output must be formatted as JSON like \`\`\`{ \"dialog\": [ { \"Billy\": string }, { \"Kerry\": string }, ... ] }\`\`\`, \"dialog\" is the array of conversation objects that is formatted as the speaker name is the key of object and the speaker's line is its value."
+  echo "${conversation}" > /tmp/.gen_conversation.prompt
+  ollama run llama3 "$conversation" \
   | tr -d '\n' \
   | sed -e 's/```json/```/g' \
   | sed -n -e 's/^.*```\s*\({.*}\)```.*$/\1/p' \
@@ -60,17 +62,19 @@ try_gen_conversation() {
 
 gen_conversation() {
   local cnt=0
-  local in; read in;
+  local input=('')
+  local in; while read -r in; do input+=("${in}" '\n') ;done
   while true; do
-    try_gen_conversation "${in}" 2> /dev/null && break
+    try_gen_conversation "${input[*]}" 2> /dev/null && break
     cnt=$((cnt + 1))
     if [ $cnt -eq 5 ]; then return 1; fi
   done
 }
 
 try_gen_quiz() {
-  local quiz="${1}\n\nFrom the above novel text and dialogue, create five questions to test the English reading comprehension skills used in ESL classes. The format for answering the questions should be a one-choice format with five options to choose from, the output must be formatted as JSON like ```{ \"quiz\": [ { \"question\": string, "options": [ string, string, ... ], "answer": number  } ] }```, \"quiz\" is root of the object and it is the array of question objects that format is \"question\" as string and \"options\" as string array and \"answer\" as index of correct choice in options."
-  ollama run llama3 $quiz \
+  local quiz="${1}\n\nFrom the above novel text and dialogue, create five questions to test the English reading comprehension skills used in ESL classes. The format for answering the questions should be a one-choice format with five options to choose from, the output must be formatted as JSON like \`\`\`{ \"quiz\": [ { \"question\": string, "options": [ string, string, ... ], "answer": number  } ] }\`\`\`, \"quiz\" is root of the object and it is the array of question objects that format is \"question\" as string and \"options\" as string array and \"answer\" as index of correct choice in options."
+  echo "${quiz}" > /tmp/.gen_quiz.prompt
+  ollama run llama3 "${quiz}" \
   | tee /tmp/.gen_novel_quiz.raw.txt \
   | tr -d '\n' \
   | sed -e 's/```json/```/g' \
@@ -80,12 +84,40 @@ try_gen_quiz() {
 
 gen_quiz() {
   local cnt=0
-  local in; read in;
+  local input=('')
+  local in; while read -r in; do input+=("${in}" '\n') ;done
   while true; do
-    try_gen_quiz "${in}" 2> /dev/null && break
+    try_gen_quiz "${input[*]}" 2> /dev/null && break
     cnt=$((cnt + 1))
     if [ $cnt -eq 5 ]; then return 1; fi
   done
+}
+
+save_prompt() {
+  local n=$(cat /tmp/.gen_novel.prompt | sed -e 's/```/\\`\\`\\`/g')
+  local c=$(cat /tmp/.gen_conversation.prompt | sed -e 's/```/\\`\\`\\`/g')
+  local q=$(cat /tmp/.gen_quiz.prompt | sed -e 's/```/\\`\\`\\`/g')
+  # to markdown
+  cat <<MARKDOWN
+# Prompt
+generate for ${fulldate}
+
+## Generate Novel
+
+\`\`\`raw
+${n}
+\`\`\`
+## Generate Conversation
+
+\`\`\`raw
+${c}
+\`\`\`
+## Generate Quiz
+
+\`\`\`raw
+${q}
+\`\`\`
+MARKDOWN
 }
 
 gen_novel > /tmp/.gen_novel.json
@@ -140,3 +172,5 @@ jq -r "
     + ([.value.answer + 65] | implode) + \") \" + .value.options[.value.answer] + \"\n\" \
     + \"</details>\n\" \
   ) | join(\"\n\n\"))" $(dirname "$0")/../outputs/${fulldate}.json > $(dirname "$0")/../outputs/${fulldate}.md
+
+save_prompt > $(dirname "$0")/../outputs/${fulldate}.prompt.md
