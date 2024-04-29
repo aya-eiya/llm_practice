@@ -27,8 +27,8 @@ import data20240426 from "./2024-04-26.ts";
 import data20240427 from "./2024-04-27.ts";
 import data20240428 from "./2024-04-28.ts";
 import data20240429 from "./2024-04-29.ts";
+import data20240430 from "./2024-04-30.ts";
 
-// TODO auto-generate this file
 const dailyData = {
   "2024-04-01": data20240401,
   "2024-04-02": data20240402,
@@ -61,6 +61,7 @@ const dailyData = {
   "2024-04-27": data20240427,
   "2024-04-28": data20240428,
   "2024-04-29": data20240429,
+  "2024-04-30": data20240430,
 };
 export const dates = Object.keys(dailyData).toSorted() as Array<
   keyof typeof dailyData
