@@ -34,7 +34,7 @@ gen_novel() {
 }
 
 try_gen_conversation() {
-  local conversation="Novel:\```${1}\```\n\nCharacters:\"${billy}\n${kerry}\n${meg}\n${lui}\"\n\n\ncreate conversation of Billy, Kerry, Meg, Lui about the novel. the output must be formatted as JSON like ```{ \"dialog\": [ { \"Billy\": string }, { \"Kerry\": string }, ... ] }```, \"dialog\" is the array of conversation objects that is formatted as the speaker name is the key of object and the speaker's line is its value."
+  local conversation="Novel:\```${1}\```\n\nCharacters:\"${billy}\n${kerry}\n${meg}\n${lui}\"\n\n\ncreate conversation of Billy, Kerry, Meg, Lui about the novel, and the order of the statements of the three conversations should be swapped so that they are random.. the output must be formatted as JSON like ```{ \"dialog\": [ { \"Billy\": string }, { \"Kerry\": string }, ... ] }```, \"dialog\" is the array of conversation objects that is formatted as the speaker name is the key of object and the speaker's line is its value."
   ollama run llama3 $conversation \
   | tr -d '\n' \
   | sed -e 's/```json/```/g' \
