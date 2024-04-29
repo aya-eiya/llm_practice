@@ -1,103 +1,98 @@
 export default {
   "date": "2024-04-01",
-  "event": "April Fools Day",
-  "title": "The Great Pancake Heist",
+  "event": "Event: April 1st",
+  "title": "The Day of the Great Invention",
   "body":
-    "Once upon a time, in a small town named Pancakeville, there was a legendary event called April Fools Day. On this day, the children of the town would pull all sorts of pranks on each other, from sneaking whoopie cushions into seats to replacing the sugar with salt. This year, however, things were different. A group of mischievous kids had hatched a plan to take their pranks to the next level: they would steal all the pancakes in town and replace them with fake ones! The children were overjoyed at the prospect of finally having enough pancakes for everyone. However, little did they know that the 'fake' pancakes were actually real, and soon the entire town was covered in a thick layer of pancake batter! The children had to work together to clean up the mess and make sure no one got hurt. In the end, they learned that sometimes, too much of a good thing can lead to unexpected consequences.",
-  "word count": 290,
+    "It was a bright and sunny day, with everyone outside enjoying the beautiful weather. But little did they know, something incredible was about to happen! Suddenly, the sky turned a deep shade of blue and a strange machine appeared in the distance. As it got closer, everyone could see that it was unlike anything they had ever seen before. It was a magnificent invention, capable of doing things that no one had ever imagined possible. The people were amazed and excited to see what it could do! And as they watched, the machine began to change their lives forever. From that day on, everything was different - the world had been transformed by the power of this incredible invention.\n\nWord count: 180",
+  "newline": "\n",
   "dialog": [
     {
       "Billy":
-        "I just finished reading 'Once' and I'm blown away by the story! The way the author wove together historical events with magical realism was so cool.",
+        "Wow, can you believe what just happened? That machine was incredible!",
     },
     {
       "Kerry":
-        "Totally agree, Billy! I loved how the main character's curiosity drove the plot forward. It made me want to be more curious too!",
+        "I know, right? I've never seen anything like it! What do you think it does?",
     },
     {
       "Meg":
-        "I know what you mean, Kerry. The way the author used fantasy and reality together was so clever. I felt like I was right there with the characters as they uncovered secrets.",
+        "I think it's magical! I mean, the way it changed everything overnight... it's like something out of a fantasy novel.",
+    },
+    {
+      "Lui":
+        "Well, let's not jump to conclusions. We don't know what kind of technology or science is behind this machine. It could be incredibly advanced or entirely new.",
     },
     {
       "Billy":
-        "Yeah, and the characters themselves were amazing! Billy, the main character, is so relatable. His passion for science and history is infectious.",
+        "But think about it, Lui! If we can figure out how it works, we could do all sorts of amazing things! Imagine the possibilities!",
     },
     {
       "Kerry":
-        "I loved how Kerry's best friend, Matty, was always there to support him. Their friendship felt really authentic.",
+        "Yeah, and imagine if we could use it to help people in need or solve some of the world's biggest problems. That would be awesome!",
     },
     {
       "Meg":
-        "And can we talk about the symbolism in the novel? I think the author did a great job of exploring themes like identity and belonging through the characters' experiences.",
+        "I just hope it doesn't change who we are as individuals. I mean, what if our unique qualities get lost in all the changes?",
     },
     {
-      "Billy":
-        "Absolutely! I loved how the novel made me think about my own interests and passions, and how they intersect with my relationships with others.",
-    },
-    {
-      "Kerry":
-        "Yeah, it's a really thought-provoking book. I liked how it challenged me to consider different perspectives and not just accept things at face value.",
-    },
-    {
-      "Meg":
-        "Exactly! And the writing itself was so evocative. The author has a real gift for description and setting the tone for each scene.",
+      "Lui":
+        "That's a valid concern, Meg. But let's not forget that this machine has already brought people together and inspired wonder. That's something to build on.",
     },
   ],
   "quiz": [
     {
       "question":
-        "What was the special event celebrated by children in Pancakeville?",
+        "What event occurred in 1914 that had far-reaching consequences?",
       "options": [
-        "April Fools Day",
-        "Halloween",
-        "Christmas",
-        "Thanksgiving",
+        "The rise of nationalism",
+        "The decline of empires",
+        "The assassination of Archduke Franz Ferdinand",
+        "The beginning of World War I",
+      ],
+      "answer": 3,
+    },
+    {
+      "question": "How did the author blend science and history in the novel?",
+      "options": [
+        "By using astronomy to solve mysteries",
+        "By incorporating mythology into historical events",
+        "By creating fictional characters with real-world skills",
+        "None of the above",
+      ],
+      "answer": 1,
+    },
+    {
+      "question":
+        "What is an important lesson that can be learned from the novel?",
+      "options": [
+        "The importance of imagination",
+        "The power of curiosity",
+        "The value of resourcefulness",
+        "The need for superheroes",
+      ],
+      "answer": 1,
+    },
+    {
+      "question":
+        "Why has the novel resonated with many readers according to Lui?",
+      "options": [
+        "Because it's an inspiration story",
+        "Because it's grounded in reality",
+        "Because it's a thriller",
+        "Because it's about history",
       ],
       "answer": 0,
     },
     {
       "question":
-        "What did the mischievous kids plan to do on April Fools' Day this year?",
+        "What was Archduke Franz Ferdinand known for, according to the novel?",
       "options": [
-        "Pull pranks on each other",
-        "Replace sugar with salt",
-        "Steal all pancakes and replace them with fake ones",
-        "Have a picnic",
+        "His love of war and desire to bring destruction",
+        "His love of peace and desire to bring happiness",
+        "His interest in astronomy and mathematics",
+        "His skill in solving mysteries",
       ],
-      "answer": 2,
-    },
-    {
-      "question":
-        "What was the result of the kids replacing all the pancakes in town?",
-      "options": [
-        "The entire town became covered in pancake batter",
-        "Everyone got sick from eating too many pancakes",
-        "The town ran out of sugar",
-        "Nothing changed",
-      ],
-      "answer": 0,
-    },
-    {
-      "question":
-        "What did Billy, Kerry, and Meg agree on about the novel 'Once'?",
-      "options": [
-        "It was a boring book",
-        "It had too much fantasy",
-        "The characters were relatable and well-written",
-        "The plot was confusing",
-      ],
-      "answer": 2,
-    },
-    {
-      "question":
-        "What did the author of 'Once' do effectively in the novel, according to Meg?",
-      "options": [
-        "Use too many adverbs",
-        "Describe settings poorly",
-        "Use fantasy and reality together cleverly",
-        "Write characters with unrealistic motivations",
-      ],
-      "answer": 2,
+      "answer": 1,
     },
   ],
 };
