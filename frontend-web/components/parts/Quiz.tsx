@@ -106,7 +106,7 @@ export default function Quiz(
                 return (
                   <div
                     key={`q${qIdx}`}
-                    className={"w-1/6 h-2 sm:h-8 border border-slate-500 items-center flex flex-row"}
+                    className={"w-1/6 h-8 border border-slate-500 items-center flex flex-row"}
                   >
                     <div
                       className={"border-r border-slate-500 flex px-1 sm:px-2 items-center h-full"}
@@ -119,7 +119,7 @@ export default function Quiz(
                           <>
                             <input
                               type="radio"
-                              key={`q${data.date}-${qIdx}-o${oIdx}-input`}
+                              key={`q${qIdx}-o${oIdx}-input`}
                               id={`select-q${qIdx}-o${oIdx}`}
                               radioGroup={`select-q${qIdx}`}
                               name={`select-q${qIdx}`}
