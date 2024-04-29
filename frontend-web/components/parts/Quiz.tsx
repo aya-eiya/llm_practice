@@ -161,14 +161,14 @@ export default function Quiz(
           </div>
           <div className={"flex flex-row justify-evenly pb-2"} f-client-nav>
             <a
-              href={prev && `/pages/${prev}`}
+              href={prev ? `/pages/${prev}` : "/"}
               className={"border border-slate-400 px-8 rounded h-8 select-none" +
                 (prev ? "" : " invisible")}
             >
               Prev
             </a>
             <a
-              href={next && `/pages/${next}`}
+              href={next ? `/pages/${next}` : "/"}
               className={"border border-slate-400 px-8 rounded h-8 select-none" +
                 (next ? "" : " invisible")}
             >
