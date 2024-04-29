@@ -19,17 +19,36 @@ lui="Lui, a veteran educator with over 20 years of experience teaching social st
 try_gen_novel() {
   local novel="create JSON as single line. Research an event in ${theme} history that happened on the same month and day as ${date} and create a short ${flavor} novel for children that is after the day and be written with adout 180 words and that output is a JSON formatted as { \"event\": string, \"title\": string, \"body\": string, \"word count\": number } ,newline in the string should be escaped by \\n. and output only JSON part."
   ollama run llava $novel \
+  | tee /tmp/.gen_novel.raw.txt \
   | tr -d '\n' \
+  | sed -e 's/`Word Count:\s*[0-9]+/g' \
   | sed -n -e 's/^.*\({.*}\).*$/\1/p' \
   | jq -s "{\"date\": \"${fulldate}\"} * .[0]"
+
+  if [ $? -ne 0 ]; then
+    cat /tmp/.gen_novel.raw.txt
+    | tr -d '\n' \
+    | sed -e 's/`Word Count:\s*[0-9]+/g' \
+    | sed -e 's/```json/```/g' \
+    | sed -n -e 's/^.*```\s*\({.*}\)```.*$/\1/p' \
+    | jq -s "{\"date\": \"${fulldate}\"} * .[0]"
+  else
+    return 1
+  fi
 }
 
 gen_novel() {
   local cnt=0
   while true; do
-    try_gen_novel 2> /dev/null && break
-    cnt=$((cnt + 1))
-    if [ $cnt -eq 5 ]; then return 1; fi
+    try_gen_novel 2> /dev/null
+    if [ $? -ne 0 ]; then
+      break
+    else
+      cnt=$((cnt + 1))
+      if [ $cnt -eq 5 ];
+        then return 1;
+      fi
+    fi
   done
 }
 
@@ -89,6 +108,11 @@ fi
 
 jq -s -r '"# " + .[0].title + "\n\n" + .[0].body + "\n\n" + (.[1].dialog | map(keys[0] + ": " + .[keys[0]]) | "## Dialog\n\n" + join("\n"))' /tmp/.gen_novel.json /tmp/.gen_novel_conversation.json \
   | gen_quiz >  /tmp/.gen_novel_quiz.json
+
+if [ $? -ne 0 ]; then
+  echo "Failed to generate quiz."
+  exit 1
+fi
 
 jq -s '.[0] * .[1] * .[2]' /tmp/.gen_novel.json /tmp/.gen_novel_conversation.json /tmp/.gen_novel_quiz.json > $(dirname "$0")/../outputs/${fulldate}.json
 
