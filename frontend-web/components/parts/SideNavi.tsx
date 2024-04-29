@@ -46,6 +46,8 @@ export default function SideNavi() {
                   >
                     <img
                       src={pr.image}
+                      alt={pr.title}
+                      aria-label={"book image:" + pr.title}
                       className={"max-h-16"}
                     />
                   </a>
