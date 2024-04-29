@@ -1,99 +1,96 @@
 export default {
   "date": "2024-04-30",
-  "event": "April 30th",
-  "title": "The Knights of the Round Table",
+  "event": "The Battle of Hastings",
+  "title": "Knight's Quest: The Battle of Hastings",
   "body":
-    "Once upon a time, after Sir Thomas Malory died on April 30th, the kingdom was in chaos. King Arthur's reign was over and no one could take his place as king. The knights of the round table were scattered throughout the land, trying to protect the kingdom from invaders. One day, Sir Lancelot decided it was time for the knights to come together and choose a new king. They gathered in Camelot and held a tournament to see who would be the next king. After many battles and tests of strength, Sir Galahad emerged as the winner. He was crowned King of England and led the kingdom to greatness. The knights continued to fight for justice and protect the kingdom, even after King Galahad's death. They remained loyal to each other and the ideals they stood for.",
-  "word count": 137,
+    "Once upon a time, in a kingdom far, far away, there lived a brave knight named Sir Thomas. He was the bravest of all the knights in the kingdom and was loved by all his friends and people. One day, he received a letter from King Harold inviting him to join the battle against the invading Normans led by William the Conqueror. \nSir Thomas accepted the invitation with enthusiasm and set off for Hastings, where the final battle was taking place. As he rode through the countryside, he met many brave knights and warriors who joined him in his quest for victory. \nWhen they arrived at the battlefield, they saw that the Normans were greatly outnumbered, but their leader, William the Conqueror, was a great tactician and had devised a plan to crush the English army. The two armies clashed on a fateful day in October, on the fields of Hastings. \nThe battle raged for hours, with both sides suffering heavy losses. Finally, as the sun began to set, King Harold was struck down by an arrow from one of William's archers. Without their leader, the English army started to fall apart, and the Normans emerged victorious. \nSir Thomas and his friends were saddened by the loss of their king, but they knew that they had done their duty and fought bravely for their kingdom. And so, they rode back to their homes, with their heads held high.",
+  "word count": 238,
   "dialog": [
     {
       "Billy":
-        "I never knew King Arthur's kingdom had a new king after he died. I thought it was just a myth!",
-    },
-    {
-      "Lui":
-        "Well, Billy, you're not entirely wrong. The legend of King Arthur has been passed down for centuries, but the story is based on real historical events. Sir Thomas Malory wrote about the Round Table and King Arthur's reign.",
-    },
-    {
-      "Meg":
-        "I love how the knights came together to choose a new king! It's like they were searching for their own 'Arthur' again. Do you think Galahad was the right choice?",
+        "I think Sir Thomas was really brave to join the battle even though they were outnumbered.",
     },
     {
       "Kerry":
-        "Hold up, isn't King Arthur just a bunch of old stories? I mean, who was he really? Some dude with a sword and a crown?",
+        "Yeah, but can you imagine being in a situation where you're fighting for your king's life? That must have been intense!",
+    },
+    {
+      "Meg":
+        "I loved how the novel described the battlefield as 'a sea of chaos' - it really puts you right there with Sir Thomas and his friends.",
+    },
+    {
+      "Lui":
+        "Indeed, Meg. The vivid descriptions in this novel make it easy to imagine the action unfolding before your eyes. But let's not forget the importance of King Harold's leadership in that battle...",
     },
     {
       "Billy":
-        "Actually, Kerry, King Arthur is based on a real figure, possibly a Roman leader or a British warlord. The stories were exaggerated over time to make him more legendary.",
-    },
-    {
-      "Lui":
-        "That's right, Billy! The legend of King Arthur has been shaped by oral tradition and written accounts. It's a fascinating example of how history can be distorted or embellished over time.",
-    },
-    {
-      "Meg":
-        "I wish we could have a tournament like the knights did to choose our own leader! That would be so cool!",
+        "Yeah, I think King Harold was a great leader, but Sir Thomas and his friends really showed their bravery by fighting so hard even when they were losing.",
     },
     {
       "Kerry":
-        "Ha! Yeah, and maybe we could have some crazy obstacles to overcome too. Like, instead of jousting, we'd have to solve math problems or something!",
+        "And what about William the Conqueror? He seemed like a pretty clever guy to come up with that plan to defeat the English army...",
+    },
+    {
+      "Meg":
+        "I think it's interesting how the novel portrays both sides of the battle - you can't help but feel sorry for King Harold and his men, even though they were defeated.",
+    },
+    {
+      "Lui":
+        "Exactly, Meg. The novel does a great job of showing that war is never simple or straightforward. Both sides had their strengths and weaknesses...",
     },
   ],
   "quiz": [
     {
-      "question": "What was Mrs. Bennet's main concern about her daughters?",
+      "question": "Why did Sir Thomas accept King Harold's invitation?",
       "options": [
-        "Their education",
-        "Their marriages",
-        "Their careers",
-        "Their health",
-        "Their social status",
+        "To join a noble quest",
+        "To escape the kingdom's troubles",
+        "To fight against the Normans",
+        "To help his friends",
+      ],
+      "answer": 2,
+    },
+    {
+      "question":
+        "What was William the Conqueror's strategy to defeat the English army?",
+      "options": [
+        "He had more soldiers",
+        "He used a clever plan",
+        "He was a great swordsman",
+        "He relied on luck",
       ],
       "answer": 1,
     },
     {
-      "question": "Who was the first person to propose to Elizabeth?",
+      "question": "How did the battle of Hastings end?",
       "options": [
-        "Mr. Collins",
-        "Mr. Darcy",
-        "Mr. Wickham",
-        "Colonel Fitzwilliam",
-        "Wentworth",
-      ],
-      "answer": 0,
-    },
-    {
-      "question": "Why did Jane go to Netherfield Park?",
-      "options": [
-        "To attend a ball",
-        "To visit her sister",
-        "To stay with the Bingleys",
-        "To look for a job",
-        "To meet new people",
+        "The English won",
+        "The Normans won",
+        "It ended in a draw",
+        "King Harold escaped",
       ],
       "answer": 2,
     },
     {
-      "question": "What was Mr. Darcy's initial impression of Elizabeth?",
+      "question": "What was Sir Thomas's attitude towards the battle?",
       "options": [
-        "He thought she was intelligent and kind",
-        "He thought she was beautiful but vain",
-        "He thought she was silly and foolish",
-        "He thought she was clever and witty",
-        "He thought she was rude and impertinent",
+        "He was hesitant",
+        "He was scared",
+        "He fought bravely",
+        "He didn't care",
       ],
       "answer": 2,
     },
     {
-      "question": "What did Elizabeth find in the garden at Pemberley?",
+      "question":
+        "What did Meg mean by saying 'a sea of chaos' when describing the battlefield?",
       "options": [
-        "A letter from Mr. Darcy",
-        "A book about nature",
-        "A hidden path",
-        "A beautiful statue",
-        "A group of wild animals",
+        "It meant a peaceful scene",
+        "It referred to the number of soldiers",
+        "It described the confusing situation on the battlefield",
+        "It mentioned the use of magic",
       ],
-      "answer": 0,
+      "answer": 2,
     },
   ],
 };

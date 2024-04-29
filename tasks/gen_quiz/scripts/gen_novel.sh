@@ -24,28 +24,27 @@ try_gen_novel() {
   | sed -n -e 's/^.*\({.*}\).*$/\1/p' \
   | jq -s "{\"date\": \"${fulldate}\"} * .[0]"
 
-  if [ $? -ne 0 ]; then
-    cat /tmp/.gen_novel.raw.txt \
-    | tr -d '\n' \
-    | sed -e 's/```json/```/g' \
-    | sed -n -e 's/^.*```\s*\({.*}\)```.*$/\1/p' \
-    | jq -s "{\"date\": \"${fulldate}\"} * .[0]"
-  else
-    return 1
+  if [ $? -eq 0 ]; then
+    return 0
   fi
+
+  cat /tmp/.gen_novel.raw.txt \
+  | tr -d '\n' \
+  | sed -e 's/```json/```/g' \
+  | sed -n -e 's/^.*```\s*\({.*}\)```.*$/\1/p' \
+  | jq -s "{\"date\": \"${fulldate}\"} * .[0]"
 }
 
 gen_novel() {
   local cnt=0
   while true; do
     try_gen_novel 2> /dev/null
-    if [ $? -ne 0 ]; then
+    if [ $? -eq 0 ]; then
       break
-    else
-      cnt=$((cnt + 1))
-      if [ $cnt -eq 5 ];
-        then return 1;
-      fi
+    fi
+    cnt=$((cnt + 1))
+    if [ $cnt -eq 5 ];
+      then return 1;
     fi
   done
 }
@@ -113,7 +112,7 @@ if [ $? -ne 0 ]; then
 fi
 
 words=$(jq -r '.body' /tmp/.gen_novel.json | wc -w | tr -d ' ')
-jq -s ".[0] * { "word count": ${words} } * .[1] * .[2]" /tmp/.gen_novel.json /tmp/.gen_novel_conversation.json /tmp/.gen_novel_quiz.json > $(dirname "$0")/../outputs/${fulldate}.json
+jq -s ".[0] * { \"word count\": ${words} } * .[1] * .[2]" /tmp/.gen_novel.json /tmp/.gen_novel_conversation.json /tmp/.gen_novel_quiz.json > $(dirname "$0")/../outputs/${fulldate}.json
 
 jq -r "
   \"# Daily English Quiz ${fulldate} (AI generated)\n\n\" \
