@@ -8,8 +8,8 @@ LANG=en_US.UTF-8
 fulldate=${1}
 date=${2}
 
-theme="world"
-flavor="non-fiction"
+theme=${3}
+flavor=${4}
 
 billy="Billy, an 11-year-old boy of intelligence and curiosity. His passion for science, math, and history is palpable, sparking animated discussions and insightful questions. Despite his age, Billy effortlessly navigates complex concepts and loves tinkering in his bedroom laboratory."
 kerry="Kerry, a lively 12-year-old filled with curiosity and mischief. With his tousled brown hair and playful grin, he's always up to something, whether it's building LEGO masterpieces or lobbying for a pet tarantula. Despite his fun-loving nature, Kerry is sharp and perceptive, quick to spot unfairness and hypocrisy. He's a passionate debater, often discussing superheroes or critiquing movies with friends."
@@ -34,7 +34,7 @@ gen_novel() {
 }
 
 try_gen_conversation() {
-  local conversation="Novel:\"${1}\"\n\nCharacters:\"${billy}\n${kerry}\n${meg}\n${lui}\"\n\n\ncreate conversation of Billy, Kerry, Meg, Lui about the novel. the output must be formatted as JSON like ```{ \"dialog\": [ { \"Billy\": string }, { \"Kerry\": string }, ... ] }```, \"dialog\" is the array of conversation objects that is formatted as the speaker name is the key of object and the speaker's line is its value."
+  local conversation="Novel:\```${1}\```\n\nCharacters:\"${billy}\n${kerry}\n${meg}\n${lui}\"\n\n\ncreate conversation of Billy, Kerry, Meg, Lui about the novel. the output must be formatted as JSON like ```{ \"dialog\": [ { \"Billy\": string }, { \"Kerry\": string }, ... ] }```, \"dialog\" is the array of conversation objects that is formatted as the speaker name is the key of object and the speaker's line is its value."
   ollama run llama3 $conversation \
   | tr -d '\n' \
   | sed -n -e 's/^.*```\({.*}\)```.*$/\1/p' \
@@ -45,7 +45,7 @@ gen_conversation() {
   local cnt=0
   local in; read in;
   while true; do
-    try_gen_conversation ${in} 2> /dev/null && break
+    try_gen_conversation "${in}" 2> /dev/null && break
     cnt=$((cnt + 1))
     if [ $cnt -eq 5 ]; then return 1; fi
   done
@@ -64,14 +64,13 @@ gen_quiz() {
   local cnt=0
   local in; read in;
   while true; do
-    try_gen_quiz ${in} 2> /dev/null && break
+    try_gen_quiz "${in}" 2> /dev/null && break
     cnt=$((cnt + 1))
     if [ $cnt -eq 5 ]; then return 1; fi
   done
 }
 
 gen_novel > /tmp/.gen_novel.json
-
 if [ $? -ne 0 ]; then
   echo "Failed to generate novel."
   exit 1
