@@ -2,11 +2,21 @@
 
 LANG=en_US.UTF-8
 
-fulldate=$(date +"%Y-%m-%d")
-date=$(date +"%b-%dth")
+# fulldate=$(date +"%Y-%m-%d")
+# date=$(date +"%b-%dth")
+
+fulldate=${1}
+date=${2}
+
+theme="medical accident"
+flavor="horror"
+
+billy="Billy, an 11-year-old boy of intelligence and curiosity. His passion for science, math, and history is palpable, sparking animated discussions and insightful questions. Despite his age, Billy effortlessly navigates complex concepts and loves tinkering in his bedroom laboratory."
+kerry="Kerry, a lively 12-year-old filled with curiosity and mischief. With his tousled brown hair and playful grin, he's always up to something, whether it's building LEGO masterpieces or lobbying for a pet tarantula. Despite his fun-loving nature, Kerry is sharp and perceptive, quick to spot unfairness and hypocrisy. He's a passionate debater, often discussing superheroes or critiquing movies with friends."
+meg="Meg, a 12-year-old with an insatiable love for books and boundless imagination. Always immersed in a novel or lost in her writing, she's a true bookworm with a penchant for the extraordinary. Meg's creativity knows no limits as she dreams up fantastical worlds and characters. While some may find her 'quirky,' she embraces her uniqueness, seeing magic in everyday moments."
 
 try_gen_novel() {
-  local novel="create JSON as single line. Research an event in sience history that happened on the same month and day as ${date} and create a short SF novel for children that is after the day and be written with adout 180 words and that output is a JSON formatted as { \"event\": string, \"title\": string, \"body\": string, \"word count\": number } ,newline in the string should be escaped by \\n. and output only JSON part."
+  local novel="create JSON as single line. Research an event in ${theme} history that happened on the same month and day as ${date} and create a short ${flavor} novel for children that is after the day and be written with adout 180 words and that output is a JSON formatted as { \"event\": string, \"title\": string, \"body\": string, \"word count\": number } ,newline in the string should be escaped by \\n. and output only JSON part."
   ollama run llava $novel \
   | tr -d '\n' \
   | sed -n -e 's/^.*\({.*}\).*$/\1/p' \
@@ -23,7 +33,7 @@ gen_novel() {
 }
 
 try_gen_conversation() {
-  local conversation="Novel: \"${1}\"\n\ncreate conversation of three children Billy, Kerry and Meg about the novel. the output must be formatted as JSON like ```{ \"dialog\": [ { \"Billy\": string }, { \"Kerry\": string }, ... ] }```, \"dialog\" is the array of conversation objects that is formatted as the speaker name is the key of object and the speaker's line is its value."
+  local conversation="Novel:\"${1}\"\n\nCharacters:\"${billy}\n${kerry}\n${meg}\"\n\n\ncreate conversation of Billy, Kerry and Meg about the novel. the output must be formatted as JSON like ```{ \"dialog\": [ { \"Billy\": string }, { \"Kerry\": string }, ... ] }```, \"dialog\" is the array of conversation objects that is formatted as the speaker name is the key of object and the speaker's line is its value."
   ollama run llama3 $conversation \
   | tr -d '\n' \
   | sed -n -e 's/^.*```\({.*}\)```.*$/\1/p' \
