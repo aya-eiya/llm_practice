@@ -17,7 +17,7 @@ meg="Meg, a 12-year-old with an insatiable love for books and boundless imaginat
 lui="Lui, a veteran educator with over 20 years of experience teaching social studies and history. At 42, known for his strictness and attention to detail, Lui instills values of honesty and hard work in his students. Despite his tough exterior, he's a trusted mentor and friend, inspiring a love of learning beyond the classroom."
 
 try_gen_novel() {
-  local novel="create JSON as single line. Research an event in ${theme} history that happened on the same month and day as ${date} and create a short ${flavor} novel for children that is after the day and be written with adout 180 words and that output is a JSON formatted as { \"event\": string, \"title\": string, \"body\": string } ,newline in the string should be escaped by \\n. and output only JSON part."
+  local novel="create JSON as single line. Research an event in ${theme} history that happened on the same month and day as ${date} and create a short ${flavor} novel for children that is after the day and be written with about 180 words and that output is a JSON formatted as { \"event\": string, \"title\": string, \"body\": string } ,newline in the string should be escaped by \\n. and output only JSON part."
   echo "${novel}" > /tmp/.gen_novel.prompt
   ollama run llava "$novel" \
   | tee /tmp/.gen_novel.raw.txt \
