@@ -1,81 +1,92 @@
-export default {
+export default 
+{
   "date": "2024-05-02",
-  "event": "The Mayflower Compact",
-  "title": "The Mayflower Compact: A Pivotal Moment in American History",
-  "body":
-    "On December 21, 1620, the Pilgrims aboard the Mayflower signed a document called the Mayflower Compact. This was a pivotal moment in American history because it was the first time that a group of people established a form of government while on American soil. The Mayflower Compact laid the groundwork for the United States Constitution and is still an important part of American democracy today.",
-  "word count": 65,
+  "event": "The release of Michael Jackson's 'Thriller' album",
+  "title": "Michael Jackson's Thrilling Day",
+  "body": "On May 2nd, in the year 1982, something amazing happened in the world of music. It was on this day that the King of Pop, Michael Jackson, released his iconic album 'Thriller'. This album would go on to become one of the best-selling albums of all time, selling over 65 million copies worldwide. With hit songs like 'Billie Jean', 'Beat It', and 'Thriller' itself, this album forever changed the music industry. Michael Jackson's 'Thriller' is still celebrated today as a masterpiece, and its impact can be felt in music to this very day.",
+  "word count": 93,
   "dialog": [
     {
-      "Meg":
-        "I love learning about American history! There's something so fascinating about the Pilgrims and their journey to America.",
+      "Lui": "I'm glad to see you all interested in Michael Jackson's 'Thriller' album. It's a timeless classic."
     },
     {
-      "Kerry":
-        "Totally agree, Meg! The Mayflower Compact is like, a huge deal for American democracy. Without it, who knows what would've happened?",
+      "Meg": "I love how his music videos were like mini-movies! Remember when we watched 'Billie Jean' and tried to recreate the dance moves?"
     },
     {
-      "Lui":
-        "That's right, Kerry. The Mayflower Compact was an important step towards self-governance and laid the groundwork for the United States Constitution.",
+      "Kerry": "Yeah, and who can forget that iconic zombie makeup in 'Thriller'? I bet it took hours to apply all those prosthetics."
     },
     {
-      "Billy":
-        "I think it's also cool how the Pilgrims were willing to take a chance and start anew in America. I mean, they left behind everything familiar to them and risked failure – that takes a lot of courage!",
+      "Billy": "I read that Quincy Jones was the producer on the album. He's a legendary music producer! Did you know he worked with Miles Davis and Frank Sinatra?"
     },
+    {
+      "Meg": "That's so cool, Billy! I had no idea about Quincy Jones' extensive career. Maybe we can write a song inspired by 'Thriller'?"
+    },
+    {
+      "Kerry": "Sounds like a plan to me! But first, let's analyze the music video's choreography and see if we can learn some new moves."
+    },
+    {
+      "Lui": "Well, I think it's fascinating how Michael Jackson's album brought people together. It transcended genres and ages. What do you think makes 'Thriller' so enduring?"
+    },
+    {
+      "Billy": "I think it's because the music is catchy, but also the music video was groundbreaking at the time. The special effects were revolutionary!"
+    },
+    {
+      "Meg": "Exactly! And Michael Jackson's voice is just incredible. He had a range that few people can match."
+    },
+    {
+      "Kerry": "Yeah, and who can forget the moonwalk? That's one of the most iconic dance moves ever."
+    }
   ],
   "quiz": [
     {
-      "question":
-        "When did the Pilgrims aboard the Mayflower sign the Mayflower Compact?",
+      "question": "When was Michael Jackson's iconic album 'Thriller' released?",
       "options": [
-        "November 15, 1620",
-        "December 21, 1620",
-        "January 1, 1621",
-        "February 28, 1620",
+        "May 1st, 1982",
+        "May 2nd, 1982",
+        "June 30th, 1983",
+        "July 4th, 1975"
       ],
-      "answer": 1,
+      "answer": 1
     },
     {
-      "question":
-        "What was the significance of the Mayflower Compact in American history?",
+      "question": "How many copies of Michael Jackson's 'Thriller' album were sold worldwide?",
       "options": [
-        "It was the first contact with Native Americans.",
-        "It laid the groundwork for the United States Constitution.",
-        "It was a declaration of war against England.",
-        "It marked the beginning of slavery in America.",
+        "10 million",
+        "20 million",
+        "65 million",
+        "100 million"
       ],
-      "answer": 1,
+      "answer": 2
     },
     {
-      "question": "What did the Mayflower Compact establish?",
+      "question": "Who was the producer of Michael Jackson's 'Thriller' album?",
       "options": [
-        "A form of government while on American soil",
-        "A trade agreement with Native Americans",
-        "A system of taxation",
-        "A method of communication",
+        "Quincy Jones",
+        "Michael Jackson",
+        "John Lennon",
+        "Elvis Presley"
       ],
-      "answer": 0,
+      "answer": 0
     },
     {
-      "question":
-        "According to Billy, what was impressive about the Pilgrims' decision to start anew in America?",
+      "question": "What is a distinctive feature of Michael Jackson's music videos, including 'Billie Jean' and 'Thriller'?",
       "options": [
-        "Their ability to adapt to new environments",
-        "Their willingness to take a chance and risk failure",
-        "Their knowledge of the American wilderness",
-        "Their connections with Native Americans",
+        "They were low-budget",
+        "They were high-tech",
+        "They were short",
+        "They were long"
       ],
-      "answer": 1,
+      "answer": 1
     },
     {
-      "question": "What did the Mayflower Compact lay the groundwork for?",
+      "question": "What is an iconic dance move popularized by Michael Jackson's album 'Thriller'?",
       "options": [
-        "The Declaration of Independence",
-        "The United States Constitution",
-        "The Bill of Rights",
-        "The Articles of Confederation",
+        "The moonwalk",
+        "The robot",
+        "The twist",
+        "The jitterbug"
       ],
-      "answer": 1,
-    },
-  ],
-};
+      "answer": 0
+    }
+  ]
+}
