@@ -1,3 +1,3 @@
-import dailyData from './index.ts'
+import dailyData, { dates } from "./index.ts";
 
-export default dailyData['2024-04-30']
+export default dailyData[dates[dates.length - 1]];
