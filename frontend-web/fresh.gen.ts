@@ -8,6 +8,7 @@ import * as $api_dailyQuiz from "./routes/api/dailyQuiz.ts";
 import * as $index from "./routes/index.tsx";
 import * as $pages_date_ from "./routes/pages/[date].tsx";
 import * as $pages_report from "./routes/pages/report.tsx";
+import * as $terms from "./routes/terms.tsx";
 import * as $LazyLoadOGP from "./islands/LazyLoadOGP.tsx";
 import * as $Printer from "./islands/Printer.tsx";
 import { type Manifest } from "$fresh/server.ts";
@@ -20,6 +21,7 @@ const manifest = {
     "./routes/index.tsx": $index,
     "./routes/pages/[date].tsx": $pages_date_,
     "./routes/pages/report.tsx": $pages_report,
+    "./routes/terms.tsx": $terms,
   },
   islands: {
     "./islands/LazyLoadOGP.tsx": $LazyLoadOGP,

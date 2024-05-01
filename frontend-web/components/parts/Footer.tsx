@@ -25,6 +25,11 @@ export default function Footer() {
           >
             <a href="https://www.facebook.com/ay.llc.page/">Facebook</a>
           </li>
+          <li
+            className={"underline text-center md:px-12"}
+          >
+            <a href="/terms">Terms of Service</a>
+          </li>
         </ul>
       </nav>
       <p className={"text-center pb-2"}>
