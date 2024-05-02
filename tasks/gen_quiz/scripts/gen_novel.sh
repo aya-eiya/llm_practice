@@ -1,6 +1,8 @@
 #!/bin/bash
 
 LANG=en_US.UTF-8
+CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
+OUTPUTS_DIR="${CURRENT_DIR}/../outputs"
 
 # fulldate=$(date +"%Y-%m-%d")
 # date=$(date +"%b-%dth")
@@ -16,8 +18,19 @@ kerry="Kerry, a lively 12-year-old filled with curiosity and mischief. With his 
 meg="Meg, a 12-year-old with an insatiable love for books and boundless imagination. Always immersed in a novel or lost in her writing, she's a true bookworm with a penchant for the extraordinary. Meg's creativity knows no limits as she dreams up fantastical worlds and characters. While some may find her 'quirky,' she embraces her uniqueness, seeing magic in everyday moments."
 lui="Lui, a veteran educator with over 20 years of experience teaching social studies and history. At 42, known for his strictness and attention to detail, Lui instills values of honesty and hard work in his students. Despite his tough exterior, he's a trusted mentor and friend, inspiring a love of learning beyond the classroom."
 
+research_event() {
+  local event="Research an event in ${theme} history that happened on the same month and date as ${date}. output is JSON of \"{ "event": event title, "details": event detail }\""
+  echo "${event}" > /tmp/.research_event.prompt
+  ollama run llama3 "${event}" \
+  | tee /tmp/.research_event.raw.txt \
+  | tr -d '\n' \
+  | sed -n -e 's/^.*```\s*\({.*}\)```.*$/\1/p' \
+  | jq
+}
+
 try_gen_novel() {
-  local novel="create JSON as single line. Research an event in ${theme} history that happened on the same month and day as ${date} and create a short ${flavor} novel for children that is after the day and be written with about 180 words and that output is a JSON formatted as { \"event\": string, \"title\": string, \"body\": string } ,newline in the string should be escaped by \\n. and output only JSON part."
+  local event="${1}"
+  local novel="Event:\n\`\`\`\n${event}\n\`\`\`\nCreate single line JSON of short ${flavor} novel that is inspired by the concept of the event and be written with about 180 words. The output is a JSON formatted as { \"event\": string, \"title\": string, \"body\": string }, newline charactor in strings of data should be escaped by '\\\\n'. and the output is JSON part only."
   echo "${novel}" > /tmp/.gen_novel.prompt
   ollama run llava "$novel" \
   | tee /tmp/.gen_novel.raw.txt \
@@ -38,8 +51,9 @@ try_gen_novel() {
 
 gen_novel() {
   local cnt=0
+  local event=$(research_event)
   while true; do
-    try_gen_novel 2> /dev/null
+    try_gen_novel "${event}" 2> /dev/null
     if [ $? -eq 0 ]; then
       break
     fi
@@ -94,6 +108,7 @@ gen_quiz() {
 }
 
 save_prompt() {
+  local e=$(cat /tmp/.research_event.prompt | sed -e 's/```/\\`\\`\\`/g')
   local n=$(cat /tmp/.gen_novel.prompt | sed -e 's/```/\\`\\`\\`/g')
   local c=$(cat /tmp/.gen_conversation.prompt | sed -e 's/```/\\`\\`\\`/g')
   local q=$(cat /tmp/.gen_quiz.prompt | sed -e 's/```/\\`\\`\\`/g')
@@ -101,6 +116,11 @@ save_prompt() {
   cat <<MARKDOWN
 # Prompt
 generate for ${fulldate}
+
+## Research Event
+\`\`\`raw
+${e}
+\`\`\`
 
 ## Generate Novel
 
@@ -144,7 +164,7 @@ if [ $? -ne 0 ]; then
 fi
 
 words=$(jq -r '.body' /tmp/.gen_novel.json | wc -w | tr -d ' ')
-jq -s ".[0] * { \"word count\": ${words} } * .[1] * .[2]" /tmp/.gen_novel.json /tmp/.gen_novel_conversation.json /tmp/.gen_novel_quiz.json > $(dirname "$0")/../outputs/${fulldate}.json
+jq -s ".[0] * { \"word count\": ${words} } * .[1] * .[2]" /tmp/.gen_novel.json /tmp/.gen_novel_conversation.json /tmp/.gen_novel_quiz.json > $OUTPUTS_DIR/${fulldate}.json
 
 jq -r "
   \"# Daily English Quiz ${fulldate} (AI generated)\n\n\" \
@@ -171,6 +191,6 @@ jq -r "
     + \"  <summary>Answer</summary>\n\" \
     + ([.value.answer + 65] | implode) + \") \" + .value.options[.value.answer] + \"\n\" \
     + \"</details>\n\" \
-  ) | join(\"\n\n\"))" $(dirname "$0")/../outputs/${fulldate}.json > $(dirname "$0")/../outputs/${fulldate}.md
+  ) | join(\"\n\n\"))" $OUTPUTS_DIR/${fulldate}.json > $OUTPUTS_DIR/${fulldate}.md
 
-save_prompt > $(dirname "$0")/../outputs/${fulldate}.prompt.md
+save_prompt > $OUTPUTS_DIR/${fulldate}.prompt.md

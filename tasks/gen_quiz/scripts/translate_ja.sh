@@ -1,11 +1,13 @@
 #!/bin/bash
 
 LANG=ja_JP.UTF-8
+CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
+OUTPUTS_DIR="${CURRENT_DIR}/../outputs"
 
 fulldate=${1}
 
-org_json="$(dirname "$0")/../outputs/${fulldate}.json"
-out_json="$(dirname "$0")/../outputs/${fulldate}-ja.json"
+org_json="${OUTPUTS_DIR}/${fulldate}.json"
+out_json="${OUTPUTS_DIR}/${fulldate}-ja.json"
 
 translate() {
   local in; read in;
