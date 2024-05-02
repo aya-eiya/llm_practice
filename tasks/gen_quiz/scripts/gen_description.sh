@@ -91,4 +91,4 @@ fi
 
 gen_pattern "$(jq -r '.body' ${org_json})" > /tmp/.gen_pattern.json
 gen_keywords "$(jq -r '.body' ${org_json})" > /tmp/.gen_keywords.json
-jq -s '.[0] * { "descriptions": {} * .[1] * .[2] }' "${org_json}" /tmp/.gen_keywords.json /tmp/.gen_pattern.json > "${out_json}"
+jq -s '.[0] * { "descriptions": (.[1] * .[2]) }' "${org_json}" /tmp/.gen_keywords.json /tmp/.gen_pattern.json > "${out_json}"
