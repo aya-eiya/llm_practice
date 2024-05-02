@@ -7,8 +7,15 @@ const dailyData = {
 };
 
 export default dailyData;
+const today = (() => {
+  const now = new Date();
+  return now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
+})();
 
-export const dates = Object.keys(dailyData) as Array<
+export const dates = Object.keys(dailyData).filter((date) => {
+  const time = Number(date.replaceAll("-", ""));
+  return time <= today;
+}) as Array<
   keyof typeof dailyData
 >;
 

@@ -32,6 +32,17 @@ export default function DailyQuiz(
           name="twitter:title"
           content={data.title}
         />
+        {data.descriptions?.keywords && (
+          <meta
+            name="keywords"
+            content={"English novels, AI-generated novels, English learning, test questions, English proficiency, daily novels, learning tools, " +
+              data.descriptions?.keywords?.join(", ")}
+          />
+        )}
+        <link
+          rel="canonical"
+          href={`https://daily-ai-generated-quiz.deno.dev/pages/${data.date}`}
+        />
       </Head>
       <MainLayout data={data} />
     </>

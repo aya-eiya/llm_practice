@@ -95,4 +95,256 @@ export default {
       "answer": 2,
     },
   ],
+  "descriptions": {
+    "keywords": [
+      "web marketing",
+      "search engine optimization",
+      "SEO keywords",
+      "Zythosia kingdom",
+      "magical artifacts",
+      "dark magic",
+      "brave hero",
+      "epic battle",
+      "magical staff",
+      "swift sword swing",
+    ],
+    "grammar": {
+      "vocabularies": [
+        {
+          "word": "sunny",
+          "usage": ["One sunny morning in Zythosia, Alex woke up..."],
+          "pronounce": "/ˈsʌnɪ/",
+          "meanings": [
+            {
+              "class": "Adjective",
+              "meaning":
+                "resembling or characteristic of the sun; warm and bright",
+              "example": "The sunny day was perfect for a picnic.",
+            },
+          ],
+        },
+        {
+          "word": "morning",
+          "usage": ["One sunny morning in Zythosia, Alex woke up..."],
+          "pronounce": "/ˈmɔr.nɪŋ/",
+          "meanings": [
+            {
+              "class": "Noun",
+              "meaning":
+                "the first part of the day; the time from sunrise to noon",
+              "example": "I like taking a morning walk in the park.",
+            },
+          ],
+        },
+        {
+          "word": "kingdom",
+          "usage": ["...the once peaceful kingdom in distress."],
+          "pronounce": "/ˈkɪŋ.dəm/",
+          "meanings": [
+            {
+              "class": "Noun",
+              "meaning":
+                "a country or territory ruled by a king or queen; a domain of power or influence",
+              "example": "The kingdom of England was formed in 1066.",
+            },
+          ],
+        },
+        {
+          "word": "magical",
+          "usage": ["...an evil sorcerer named Malazar with his dark magic."],
+          "pronounce": "/ˈmædʒɪ.kəl/",
+          "meanings": [
+            {
+              "class": "Adjective",
+              "meaning":
+                "having the power to produce a desired effect; producing a sense of wonder or enchantment",
+              "example":
+                "The magician performed a magical trick that left everyone amazed.",
+            },
+          ],
+        },
+        {
+          "word": "artifacts",
+          "usage": ["...the magical artifacts that could defeat Malazar."],
+          "pronounce": "/ɑrˈtɪfakt/",
+          "meanings": [
+            {
+              "class": "Noun (plural)",
+              "meaning":
+                "objects remaining from a past time or culture, especially one that is rare or unusual",
+              "example":
+                "The archaeologists discovered several ancient artifacts in the jungle.",
+            },
+          ],
+        },
+        {
+          "word": "brave",
+          "usage": [
+            "...the bravest knights into cowards and captured the king and queen.",
+          ],
+          "pronounce": "/breɪv/",
+          "meanings": [
+            {
+              "class": "Adjective",
+              "meaning":
+                "showing courage or strength in the face of danger or difficulty",
+              "example":
+                "The firefighter was very brave in rescuing people from the burning building.",
+            },
+          ],
+        },
+        {
+          "word": "battle",
+          "usage": ["...Alex faced off against Malazar in an epic battle."],
+          "pronounce": "/ˈbætəl/",
+          "meanings": [
+            {
+              "class": "Noun",
+              "meaning":
+                "a prolonged fight or struggle, especially a violent one between armies or nations",
+              "example":
+                "The battle of Gettysburg was a turning point in the American Civil War.",
+            },
+          ],
+        },
+        {
+          "word": "hero",
+          "usage": [
+            "...Alex became known as the bravest hero in all its history.",
+          ],
+          "pronounce": "/ˈhɪroʊ/",
+          "meanings": [
+            {
+              "class": "Noun",
+              "meaning":
+                "a person who is admired or idealized for their courage, outstanding achievements, or noble qualities",
+              "example":
+                "The firefighter was hailed as a hero for rescuing people from the burning building.",
+            },
+          ],
+        },
+      ],
+      "patterns": [
+        {
+          "pattern": "S + V + O",
+          "usage": [
+            "One sunny morning in Zythosia, Alex woke up to find...",
+            "With his dark magic, he had turned...",
+          ],
+          "explanation":
+            "Subject-Verb-Object pattern, where the subject is performing an action described by the verb, and the object is affected by the action.",
+          "words": [
+            {
+              "S": [
+                "One sunny morning in Zythosia",
+                "Alex",
+              ],
+              "V": [
+                "woke up",
+                "had turned",
+              ],
+              "O": [
+                "the once peaceful kingdom",
+                "the bravest knights",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V",
+          "usage": [
+            "Determined to save his kingdom, Alex set out...",
+            "With lightning strikes from his magical staff...",
+          ],
+          "explanation":
+            "Simple Subject-Verb pattern, where the subject is performing an action described by the verb.",
+          "words": [
+            {
+              "S": [
+                "Alex",
+              ],
+              "V": [
+                "set out",
+                "defeated",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "usage": [
+            "Along the way, he met new friends who joined him...",
+            "Together, they battled fierce dragons...",
+          ],
+          "explanation":
+            "Subject-Verb-Complement pattern, where the subject is performing an action described by the verb, and the complement provides additional information about the subject.",
+          "words": [
+            {
+              "S": [
+                "he",
+                "they",
+              ],
+              "V": [
+                "met new friends",
+                "battled",
+              ],
+              "C": [
+                "who joined him",
+                "fierce dragons",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + M",
+          "usage": [
+            "Finally, they reached the castle gates where Alex faced off...",
+            "With lightning strikes from his magical staff...",
+          ],
+          "explanation":
+            "Subject-Verb-Manner pattern, where the subject is performing an action described by the verb in a specific way (manner).",
+          "words": [
+            {
+              "S": [
+                "they",
+                "Alex",
+              ],
+              "V": [
+                "reached",
+                "faced off",
+              ],
+              "M": [
+                "where Alex faced off",
+                "with lightning strikes",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C + O",
+          "usage": [
+            "The kingdom of Zythosia was once again safe, and Alex became known...",
+          ],
+          "explanation":
+            "Subject-Verb-Complement-Object pattern, where the subject is performing an action described by the verb, and the complement provides additional information about the subject, while the object receives the action.",
+          "words": [
+            {
+              "S": [
+                "The kingdom of Zythosia",
+              ],
+              "V": [
+                "was once again safe",
+              ],
+              "C": [
+                "and Alex became known",
+              ],
+              "O": [
+                "as the bravest hero",
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  },
 };

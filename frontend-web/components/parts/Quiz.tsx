@@ -25,6 +25,33 @@ export type QuizData = {
     options: string[];
     answer: number;
   }[];
+  descriptions?: {
+    keywords?: string[];
+    grammar?: {
+      patterns?: {
+        pattern: string;
+        usage: string[];
+        explanation: string;
+        words: {
+          S?: string[];
+          V?: string[];
+          O?: string[];
+          C?: string[];
+          M?: string[];
+        }[];
+      }[];
+      vocabularies?: {
+        word: string;
+        usage: string[];
+        pronounce: string;
+        meanings: {
+          class: string;
+          meaning: string;
+          example: string;
+        }[];
+      }[];
+    };
+  };
 };
 
 export default function Quiz(
@@ -65,7 +92,7 @@ export default function Quiz(
                   <a
                     className={"underline py-1"}
                     target={"_blank"}
-                    href={`./report?page=/pages/${data.date}&reason=page%20broken`}
+                    href={`/report?page=/pages/${data.date}&reason=page%20broken`}
                   >
                     Broken page
                   </a>
@@ -74,7 +101,7 @@ export default function Quiz(
                   <a
                     className={"underline py-1"}
                     target={"_blank"}
-                    href={`./report?page=/pages/${data.date}&reason=meaningless%20content`}
+                    href={`/report?page=/pages/${data.date}&reason=meaningless%20content`}
                   >
                     Meaningless Content
                   </a>
@@ -83,7 +110,7 @@ export default function Quiz(
                   <a
                     className={"underline py-1"}
                     target={"_blank"}
-                    href={`./report?page=/pages/${data.date}&reason=inappropriate%20content`}
+                    href={`/report?page=/pages/${data.date}&reason=inappropriate%20content`}
                   >
                     Inappropriate Content
                   </a>
@@ -91,7 +118,7 @@ export default function Quiz(
                 <li className={"mb-1"}>
                   <a
                     className={"underline py-1"}
-                    href={`./report?page=/pages/${data.date}&reason=copyright%20violation`}
+                    href={`/report?page=/pages/${data.date}&reason=copyright%20violation`}
                     target={"_blank"}
                   >
                     Copyright Violation
@@ -161,6 +188,128 @@ export default function Quiz(
               </div>
             ))}
         </div>
+        {data.descriptions?.grammar && (
+          <section className={"bg-slate-200 mx-4 sm:mx-8 md:mx-24"}>
+            <div className={"mb-4 flex flex-col px-4"}>
+              <details className={"px-2 sm:px-4"}>
+                <summary>
+                  <h3 className={"mb-2 text-lg inline"}>[Grammar]</h3>
+                  <div>
+                    Show grammar and vocabulary description for the text.
+                  </div>
+                </summary>
+                <details className={"px-2 sm:px-4"}>
+                  <summary>
+                    {data.descriptions.grammar.patterns && (
+                      <h4 className={"inline"}>[Patterns]</h4>
+                    )}
+                  </summary>
+                  {data.descriptions.grammar.patterns?.map((
+                    pattern,
+                    pIdx,
+                  ) => (
+                    <div
+                      key={`p${data.date}-${pIdx}`}
+                      className={"mb-4 px-4"}
+                    >
+                      <h4>
+                        <strong>{pattern.pattern}</strong> Pattern
+                      </h4>
+                      <ul className={"list-decimal ml-4 mb-2"}>
+                        {pattern.usage?.map((usage, eIdx) => (
+                          <li key={`p${data.date}-${pIdx}-${eIdx}`}>
+                            <pre
+                              className={"whitespace-pre-wrap"}
+                            >{usage}</pre>
+                          </li>
+                        ))}
+                      </ul>
+                      <p
+                        className={""}
+                      >
+                        {pattern.explanation}
+                      </p>
+                    </div>
+                  ))}
+                </details>
+                <details className={"px-2 sm:px-4"}>
+                  <summary>
+                    {data.descriptions.grammar.vocabularies && (
+                      <h4 className={"inline"}>[Vocabularies]</h4>
+                    )}
+                  </summary>
+                  {data.descriptions.grammar.vocabularies?.map(
+                    ({ word, pronounce, meanings, usage }, pIdx) => {
+                      return (
+                        <>
+                          <div
+                            key={`v${data.date}-${pIdx}`}
+                            className={"mb-4 px-4"}
+                          >
+                            <dl className={""}>
+                              <dt
+                                className={"inline-block text-lg font-bold"}
+                              >
+                                {word}
+                              </dt>
+                              <dd
+                                className={"inline-block pl-4"}
+                              >
+                                {pronounce}
+                              </dd>
+                              <dd
+                                className={""}
+                              >
+                                <ul className={"ml-4 mb-2"}>
+                                  {usage?.map((ex, eIdx) => (
+                                    <li
+                                      key={`p${data.date}-${pIdx}-${eIdx}`}
+                                      className={"italic"}
+                                    >
+                                      {ex.replace(
+                                        new RegExp(word, "g"),
+                                        "<strong>" + word + "</strong>",
+                                      ).split(/<\/?strong>/).map((w) => {
+                                        return w === word
+                                          ? <strong>{w}</strong>
+                                          : w;
+                                      })}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </dd>
+                              {meanings.map((meaning, mIdx) => (
+                                <>
+                                  <dd
+                                    key={`v${data.date}-${pIdx}-${mIdx}-class`}
+                                    className={"ml-4"}
+                                  >
+                                    {meaning.class}
+                                  </dd>
+                                  <dd
+                                    key={`v${data.date}-${pIdx}-${mIdx}-meaning`}
+                                    className={"ml-4"}
+                                  >
+                                    <p className={"pl-4"}>
+                                      {meaning.meaning}
+                                    </p>
+                                    <p className={"italic pl-4"}>
+                                      {meaning.example}
+                                    </p>
+                                  </dd>
+                                </>
+                              ))}
+                            </dl>
+                          </div>
+                        </>
+                      );
+                    },
+                  )}
+                </details>
+              </details>
+            </div>
+          </section>
+        )}
         <div
           className={"w-full px-2 sm:px-8 sticky print:relative bottom-0 bg-slate-200 border-slate-500"}
         >
