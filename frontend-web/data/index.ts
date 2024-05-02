@@ -8,7 +8,7 @@ const dailyData = {
 
 export default dailyData;
 
-export const dates = Object.keys(dailyData).toSorted() as Array<
+export const dates = Object.keys(dailyData) as Array<
   keyof typeof dailyData
 >;
 
