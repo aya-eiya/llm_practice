@@ -326,7 +326,7 @@ export default function Quiz(
           className={"w-full px-2 sm:px-8 sticky print:relative bottom-0 bg-slate-200 border-slate-500"}
         >
           <div
-            className={"flex flex-row justify-between items-center w-full h-16"}
+            className={"flex flex-row justify-between items-center w-full h-16 break-inside-avoid"}
           >
             {data.quiz && data.quiz
               .map((quiz, qIdx) => {
