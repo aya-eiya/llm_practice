@@ -7,4 +7,3 @@ const dailyData = {
 };
 
 export default dailyData;
-F;
