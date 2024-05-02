@@ -148,7 +148,7 @@ if [ ! -f "${org_json}" ]; then
   exit 1
 fi
 
-# gen_pattern "$(jq -r '.body' ${org_json})" > /tmp/.gen_pattern.json
-# gen_keywords "$(jq -r '.body' ${org_json})" > /tmp/.gen_keywords.json
+gen_pattern "$(jq -r '.body' ${org_json})" > /tmp/.gen_pattern.json
+gen_keywords "$(jq -r '.body' ${org_json})" > /tmp/.gen_keywords.json
 gen_vocabularies "$(jq -r '.body' ${org_json})" > /tmp/.gen_vocabularies.json
 jq -s '.[0] * { "descriptions": (.[1] * .[2] * .[3]) }' "${org_json}" /tmp/.gen_keywords.json /tmp/.gen_vocabularies.json /tmp/.gen_pattern.json > "${out_json}"
