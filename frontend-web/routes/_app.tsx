@@ -1,5 +1,5 @@
 import { type PageProps } from "$fresh/server.ts";
-export default function App({ Component }: PageProps) {
+export default function App({ Component, config }: PageProps) {
   return (
     <html lang="en">
       <head>
@@ -61,12 +61,16 @@ export default function App({ Component }: PageProps) {
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>"
         />
         <link rel="stylesheet" href="/styles.css" />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-EHTMJRGX97"
-        >
-        </script>
-        <script async src="/ga.js"></script>
+        {!config.dev && (
+          <>
+            <script
+              async
+              src="https://www.googletagmanager.com/gtag/js?id=G-EHTMJRGX97"
+            >
+            </script>
+            <script async src="/ga.js"></script>
+          </>
+        )}
       </head>
       <body>
         <Component />

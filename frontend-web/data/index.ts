@@ -8,7 +8,10 @@ const dailyData = {
 
 export default dailyData;
 const today = (() => {
-  const now = new Date();
+  const devDate = Deno.env.get("DEV_DATE");
+  const now = devDate && Object.keys(dailyData).includes(devDate)
+    ? new Date(devDate)
+    : new Date();
   return now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
 })();
 
