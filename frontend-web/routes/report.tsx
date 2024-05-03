@@ -74,7 +74,3 @@ export default function Report({ data: { data } }: PageProps) {
     </>
   );
 }
-
-function containsKey(date: string) {
-  throw new Error("Function not implemented.");
-}

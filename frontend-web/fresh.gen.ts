@@ -9,6 +9,7 @@ import * as $index from "./routes/index.tsx";
 import * as $pages_date_ from "./routes/pages/[date].tsx";
 import * as $report from "./routes/report.tsx";
 import * as $terms from "./routes/terms.tsx";
+import * as $GtagEvent from "./islands/GtagEvent.tsx";
 import * as $LazyLoadOGP from "./islands/LazyLoadOGP.tsx";
 import * as $Printer from "./islands/Printer.tsx";
 import { type Manifest } from "$fresh/server.ts";
@@ -24,6 +25,7 @@ const manifest = {
     "./routes/terms.tsx": $terms,
   },
   islands: {
+    "./islands/GtagEvent.tsx": $GtagEvent,
     "./islands/LazyLoadOGP.tsx": $LazyLoadOGP,
     "./islands/Printer.tsx": $Printer,
   },
