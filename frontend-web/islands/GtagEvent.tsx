@@ -7,7 +7,7 @@ export type GtagEventParams = {
 
 declare global {
   interface Window {
-    gtag: (event: "event", eventName: string, param: object) => void;
+    gtag?: (event: "event", eventName: string, param: object) => void;
   }
 }
 

@@ -3,6 +3,7 @@
     "deno",
     "Gtag",
     "llava",
+    "notranslate",
     "ollama",
     "preact",
     "tailwindcss"

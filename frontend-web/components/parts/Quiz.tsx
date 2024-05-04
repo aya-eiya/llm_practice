@@ -66,7 +66,7 @@ function Grammar(
           <div className={"pb-4 flex flex-col px-4"}>
             <details className={"px-2 sm:px-4"}>
               <summary>
-                <h3 className={"mb-2 text-lg inline"}>[Grammar]</h3>
+                <h3 className={"notranslate mb-2 text-lg inline"}>[Grammar]</h3>
                 <div>
                   Show grammar and vocabulary description for the text.
                 </div>
@@ -74,8 +74,7 @@ function Grammar(
               {grammar.patterns && (
                 <details className={"px-2 sm:px-4"}>
                   <summary>
-                    (
-                    <h4 className={"inline"}>[Patterns]</h4>
+                    <h4 className={"notranslate inline"}>[Patterns]</h4>
                   </summary>
                   {grammar.patterns?.map((
                     pattern,
@@ -86,20 +85,21 @@ function Grammar(
                       className={"mb-4 px-4"}
                     >
                       <h4>
-                        <strong>{pattern.pattern}</strong> Pattern
+                        <strong className={"notranslate"}>
+                          {pattern.pattern}
+                        </strong>{" "}
+                        Pattern
                       </h4>
                       <ul className={"list-decimal ml-4 mb-2"}>
                         {pattern.usage?.map((usage, eIdx) => (
                           <li key={`p${pIdx}-${eIdx}`}>
                             <pre
-                              className={"whitespace-pre-wrap"}
+                              className={"notranslate whitespace-pre-wrap"}
                             >{usage}</pre>
                           </li>
                         ))}
                       </ul>
-                      <p
-                        className={""}
-                      >
+                      <p>
                         {pattern.explanation}
                       </p>
                     </div>
@@ -121,19 +121,19 @@ function Grammar(
                           >
                             <dl className={""}>
                               <dt
-                                className={"inline-block text-lg font-bold"}
+                                className={"notranslate inline-block text-lg font-bold"}
                               >
                                 {word}
                               </dt>
                               <dd
-                                className={"inline-block pl-4"}
+                                className={"notranslate inline-block pl-4"}
                               >
                                 {pronounce}
                               </dd>
                               <dd
                                 className={""}
                               >
-                                <ul className={"ml-4 mb-2"}>
+                                <ul className={"notranslate ml-4 mb-2"}>
                                   {usage?.map((ex, eIdx) => (
                                     <li
                                       key={`p${pIdx}-${eIdx}`}
@@ -166,7 +166,7 @@ function Grammar(
                                     <p className={"pl-4"}>
                                       {meaning.meaning}
                                     </p>
-                                    <p className={"italic pl-4"}>
+                                    <p className={"notranslate italic pl-4"}>
                                       {meaning.example}
                                     </p>
                                   </dd>
@@ -260,15 +260,15 @@ export default function Quiz(
                 </li>
               </ul>
             </aside>
-            <p className={"text-sm text-right mb-4"}>
+            <p className={"notranslate text-sm text-right mb-4"}>
               generated at {data.date}
             </p>
           </div>
           <pre className={"whitespace-pre-wrap px-4"}>{data.body}</pre>
-          <p className={"px-8 text-right"}>
+          <p className={"notranslate px-8 text-right"}>
             (Word Count: {data["word count"]})
           </p>
-          <h3 className={"mb-2 text-lg"}>[Dialog]</h3>
+          <h3 className={"notranslate mb-2 text-lg"}>[Dialog]</h3>
           <ul className={"px-4 mb-4"}>
             {data.dialog &&
               data.dialog.map((line, index) => (
@@ -281,14 +281,16 @@ export default function Quiz(
               ))}
           </ul>
           <hr className={"mb-2"} />
-          <h3 className={"mb-2 text-lg"}>[Quiz]</h3>
+          <h3 className={"notranslate mb-2 text-lg"}>[Quiz]</h3>
           {data.quiz &&
             data.quiz.map((question, qIdx) => (
               <div key={qIdx} className={"mb-4 px-4"}>
                 <dl>
                   <dt>
                     <h4>
-                      Question {qIdx + 1}.
+                      <span className={"notranslate"}>
+                        Question {qIdx + 1}.
+                      </span>
                       <p className={"px-4"}>
                         <strong>{question.question}</strong>
                       </p>
@@ -338,7 +340,7 @@ export default function Quiz(
                     <div
                       className={"border-r border-slate-500 flex px-1 sm:px-2 items-center h-full"}
                     >
-                      <div>Q{qIdx + 1}</div>
+                      <div className={"notranslate"}>Q{qIdx + 1}</div>
                     </div>
                     <div className={"w-full h-full flex items-center"}>
                       {quiz.options.map((_, oIdx) => {
@@ -373,7 +375,7 @@ export default function Quiz(
                                   ? "bg-blue-400"
                                   : "bg-red-400")}
                             >
-                              <div>
+                              <div className={"notranslate"}>
                                 {String.fromCharCode(oIdx + 65)}
                               </div>
                             </div>
@@ -392,14 +394,14 @@ export default function Quiz(
           >
             <a
               href={prev ? `/pages/${prev}` : "/"}
-              className={"border border-slate-400 px-8 rounded h-8 select-none" +
+              className={"notranslate border border-slate-400 px-8 rounded h-8 select-none" +
                 (prev ? "" : " invisible")}
             >
               Prev
             </a>
             <a
               href={next ? `/pages/${next}` : "/"}
-              className={"border border-slate-400 px-8 rounded h-8 select-none" +
+              className={"notranslate border border-slate-400 px-8 rounded h-8 select-none" +
                 (next ? "" : " invisible")}
             >
               Next
