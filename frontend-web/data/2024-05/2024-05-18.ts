@@ -97,5 +97,261 @@ const data: QuizData = {
       "answer": 1,
     },
   ],
+  "descriptions": {
+    "grammar": {
+      "patterns": [
+        {
+          "pattern": "S + V",
+          "explanation":
+            "The subject performs the action described by the verb.",
+          "usage": [
+            "In May of 1839, Louis Daguerre stood before a crowd of eager spectators at the French Academy of Sciences, his heart pounding with anticipation.",
+          ],
+          "words": [
+            {
+              "S": [
+                "Louis Daguerre",
+                "the French Academy of Sciences",
+              ],
+            },
+            {
+              "V": [
+                "stood",
+                "pounding",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation":
+            "The subject performs the action described by the verb, and a complement is added to provide more information.",
+          "usage": [
+            "His invention, a revolutionary way of capturing images on metal plates, promised to bring a new level of realism to art and revolutionize the way people viewed the world around them.",
+          ],
+          "words": [
+            {
+              "S": [
+                "His",
+                "Louis Daguerre",
+              ],
+            },
+            {
+              "V": [
+                "promised",
+              ],
+            },
+            {
+              "C": [
+                "a revolutionary way of capturing images on metal plates",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation":
+            "The subject performs the action described by the verb, and an object is added to receive the action.",
+          "usage": [
+            "As he stepped forward to address the audience, Daguerre knew that this moment would change everything.",
+          ],
+          "words": [
+            {
+              "S": [
+                "he",
+                "Daguerre",
+              ],
+            },
+            {
+              "V": [
+                "stepped",
+                "knew",
+              ],
+            },
+            {
+              "O": [
+                "the audience",
+                "this moment",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + O",
+          "explanation":
+            "The subject performs the action described by the verb, and two objects are added to receive the action.",
+          "usage": [
+            "The crowd, a mix of artists, scientists, and curious onlookers, leaned in eagerly as Daguerre began his demonstration.",
+          ],
+          "words": [
+            {
+              "S": [
+                "the crowd",
+                "Daguerre",
+              ],
+            },
+            {
+              "V": [
+                "leaned",
+                "began",
+              ],
+            },
+            {
+              "O": [
+                "a mix of artists, scientists, and curious onlookers",
+                "his demonstration",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + C",
+          "explanation":
+            "The subject performs the action described by the verb, an object receives the action, and a complement is added to provide more information.",
+          "usage": [
+            "As the images emerged from the metal plates with stunning clarity, the crowd was left breathless.",
+          ],
+          "words": [
+            {
+              "S": [
+                "the images",
+                "Daguerre",
+              ],
+            },
+            {
+              "V": [
+                "emerged",
+                "was",
+              ],
+            },
+            {
+              "O": [
+                "the metal plates",
+                "the crowd",
+              ],
+            },
+            {
+              "C": [
+                "with stunning clarity",
+              ],
+            },
+          ],
+        },
+      ],
+      "vocabularies": [
+        {
+          "class": "Noun",
+          "word": "May",
+          "meaning": "the fifth month of the year, or a time period",
+          "usage": [
+            "In May of 1839",
+            "May I ask you something",
+          ],
+          "pronounce": "/meɪ/",
+          "example":
+            "The best time to visit the beach is in May when it's warm and sunny.",
+        },
+        {
+          "class": "Noun",
+          "word": "Academy",
+          "meaning": "an institution for scientific research or study",
+          "usage": [
+            "the French Academy of Sciences",
+            "the Academy Awards",
+          ],
+          "pronounce": "/əˈkædɛmi/",
+          "example":
+            "The academy has been conducting research on the effects of climate change.",
+        },
+        {
+          "class": "Verb",
+          "word": "stood",
+          "meaning": "to be in an upright position",
+          "usage": [
+            "He stood before a crowd of people",
+            "I stood up for myself",
+          ],
+          "pronounce": "/stʊd/",
+          "example": "She stood tall and proud, looking out at the crowd.",
+        },
+        {
+          "class": "Noun",
+          "word": "process",
+          "meaning": "a series of steps or actions taken to achieve a result",
+          "usage": [
+            "the process of capturing images",
+            "the manufacturing process",
+          ],
+          "pronounce": "/ˈprɒsɛs/",
+          "example":
+            "The company has streamlined its production process to increase efficiency.",
+        },
+        {
+          "class": "Adverb",
+          "word": "revolutionary",
+          "meaning":
+            "completely new and original, or making significant changes",
+          "usage": [
+            "a revolutionary way of capturing images",
+            "her revolutionary ideas",
+          ],
+          "pronounce": "/ˌrɛvəluˈʃɒnəri/",
+          "example":
+            "The new technology is a game-changer and very revolutionary.",
+        },
+        {
+          "class": "Adjective",
+          "word": "realistic",
+          "meaning": "having a strong sense of reality or truth",
+          "usage": [
+            "a realistic portrayal of the situation",
+            "her realistic expectations",
+          ],
+          "pronounce": "/ˌrɪˈælɪstɪk/",
+          "example": "The artist's painting is very realistic and detailed.",
+        },
+        {
+          "class": "Noun",
+          "word": "spectacle",
+          "meaning": "a visually impressive or dramatic event or display",
+          "usage": [
+            "the spectacle before them",
+            "the fireworks were a spectacular show",
+          ],
+          "pronounce": "/ˈsɛkstrəkəl/",
+          "example":
+            "The new Broadway show was a spectacular musical with amazing effects.",
+        },
+        {
+          "class": "Noun",
+          "word": "photography",
+          "meaning": "the art or practice of taking and processing photographs",
+          "usage": [
+            "the art form of photography",
+            "her passion for photography",
+          ],
+          "pronounce": "/fəʊtɒˈɡrəfi/",
+          "example": "The photographer spent hours capturing the perfect shot.",
+        },
+      ],
+    },
+    "keywords": [
+      "revolutionary",
+      "invention",
+      "photography",
+      "realism",
+      "art",
+      "science",
+      "metal",
+      "plates",
+      "clarity",
+      "spectacle",
+      "breathless",
+      "window",
+      "familiar",
+      "new",
+      "imagination",
+    ],
+  },
 };
 export default data;

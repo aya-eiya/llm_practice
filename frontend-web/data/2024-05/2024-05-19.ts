@@ -95,5 +95,247 @@ const data: QuizData = {
       "answer": 0,
     },
   ],
+  "descriptions": {
+    "grammar": {
+      "patterns": [
+        {
+          "pattern": "S + V",
+          "explanation": "Simple subject-verb sentence.",
+          "usage": [
+            "In the sweltering summer of 1973, a small-town girl named Bella dreams of escaping her mundane life for the glittering world of disco.",
+          ],
+          "words": [
+            {
+              "S": [
+                "Bella",
+              ],
+            },
+            {
+              "V": [
+                "dreams",
+                "escapes",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation": "Subject-verb-complement sentence.",
+          "usage": [
+            "With her big sister, Stephanie, by her side, she embarks on an adventure to the bustling city of New York, where the music is loud and the lights never fade.",
+          ],
+          "words": [
+            {
+              "S": [
+                "Bella",
+                "she",
+              ],
+            },
+            {
+              "V": [
+                "embarks",
+              ],
+            },
+            {
+              "C": [
+                "an adventure",
+                "to the bustling city of New York",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation": "Subject-verb-object sentence.",
+          "usage": [
+            "As they navigate the vibrant nightlife scene, Bella finds herself drawn into a world of sequins, platforms, and glitter.",
+          ],
+          "words": [
+            {
+              "S": [
+                "Bella",
+                "they",
+              ],
+            },
+            {
+              "V": [
+                "finds",
+                "drawn",
+              ],
+            },
+            {
+              "O": [
+                "a world of sequins, platforms, and glitter",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + O",
+          "explanation": "Subject-verb-object-object sentence.",
+          "usage": [
+            "She meets a charismatic DJ named Tony, who takes her under his wing and teaches her the art of disco dancing.",
+          ],
+          "words": [
+            {
+              "S": [
+                "Bella",
+                "she",
+              ],
+            },
+            {
+              "V": [
+                "meets",
+                "takes",
+                "teaches",
+              ],
+            },
+            {
+              "O": [
+                "a charismatic DJ named Tony",
+                "her under his wing",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + C",
+          "explanation": "Subject-verb-object-complement sentence.",
+          "usage": [
+            "With each move she learns, Bella feels more alive than ever before.",
+          ],
+          "words": [
+            {
+              "S": [
+                "Bella",
+                "she",
+              ],
+            },
+            {
+              "V": [
+                "learns",
+                "feels",
+              ],
+            },
+            {
+              "O": [
+                "each move",
+              ],
+            },
+            {
+              "C": [
+                "more alive than ever before",
+              ],
+            },
+          ],
+        },
+      ],
+      "vocabularies": [
+        {
+          "class": "Noun",
+          "word": "summer",
+          "meaning": "the warmest season of the year",
+          "usage": [
+            "In the sweltering summer of 1973, a small-town girl named Bella dreams of escaping her mundane life for the glittering world of disco.",
+          ],
+          "pronounce": "/ˈsʌmər/",
+          "example": "The heat of the summer made it hard to stay outside.",
+        },
+        {
+          "class": "Noun",
+          "word": "disco",
+          "meaning":
+            "a style of music and dance characterized by flashing lights, loud music, and energetic dancing",
+          "usage": [
+            "With her big sister, Stephanie, by her side, she embarks on an adventure to the bustling city of New York, where the music is loud and the lights never fade.",
+          ],
+          "pronounce": "/ˈdɪskoʊ/",
+          "example":
+            "The disco era was all about having fun and letting loose.",
+        },
+        {
+          "class": "Noun",
+          "word": "sister",
+          "meaning":
+            "a female person who is related to someone by birth or adoption",
+          "usage": [
+            "With her big sister, Stephanie, by her side, she embarks on an adventure to the bustling city of New York, where the music is loud and the lights never fade.",
+          ],
+          "pronounce": "/ˈsɪstər/",
+          "example": "My sister is coming over for dinner tonight.",
+        },
+        {
+          "class": "Adjective",
+          "word": "sweltering",
+          "meaning": "extremely hot and humid",
+          "usage": [
+            "In the sweltering summer of 1973, a small-town girl named Bella dreams of escaping her mundane life for the glittering world of disco.",
+          ],
+          "pronounce": "/ˈswɛltərɪŋ/",
+          "example":
+            "The heatwave made it feel like the whole city was sweltering.",
+        },
+        {
+          "class": "Adverb",
+          "word": "loud",
+          "meaning": "making a lot of noise",
+          "usage": [
+            "With each move she learns, Bella feels more alive than ever before. But as the summer heats up, Bella must make a choice: stay in the disco-fueled paradise or return to the life she left behind.",
+          ],
+          "pronounce": "/laʊd/",
+          "example": "The music was so loud that we had to turn it down.",
+        },
+        {
+          "class": "Verb",
+          "word": "embarks",
+          "meaning": "to start a journey or project",
+          "usage": [
+            "With her big sister, Stephanie, by her side, she embarks on an adventure to the bustling city of New York, where the music is loud and the lights never fade.",
+          ],
+          "pronounce": "/ˈɛm.bɑrks/",
+          "example":
+            "She embarks on a new career path after graduating from college.",
+        },
+        {
+          "class": "Adjective",
+          "word": "vibrant",
+          "meaning": "full of energy and excitement",
+          "usage": [
+            "As they navigate the vibrant nightlife scene, Bella finds herself drawn into a world of sequins, platforms, and glitter.",
+          ],
+          "pronounce": "/ˈvaɪbrənt/",
+          "example": "The city's vibrant atmosphere was infectious.",
+        },
+        {
+          "class": "Adverb",
+          "word": "high",
+          "meaning": "at a great height or level",
+          "usage": [
+            "The answer lies on the dance floor, where the beats are loud and the stakes are high.",
+          ],
+          "pronounce": "/haɪ/",
+          "example":
+            "The rollercoaster reached new heights before dropping down.",
+        },
+      ],
+    },
+    "keywords": [
+      "disco",
+      "summer",
+      "adventure",
+      "New York",
+      "nightlife",
+      "sequins",
+      "platforms",
+      "glitter",
+      "charismatic",
+      "DJ",
+      "art of disco dancing",
+      "vibrant",
+      "heats up",
+      "choice",
+      "follow heart",
+    ],
+  },
 };
 export default data;

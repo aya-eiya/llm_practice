@@ -111,5 +111,259 @@ const data: QuizData = {
       "answer": 2,
     },
   ],
+  "descriptions": {
+    "grammar": {
+      "patterns": [
+        {
+          "pattern": "S + V",
+          "explanation": "The subject (S) performs an action (V).",
+          "usage": [
+            "In a parallel universe, the Treaty of Versaille was not signed and World War I raged on for years.",
+          ],
+          "words": [
+            {
+              "S": [
+                "parallel universe",
+                "Treaty of Versaille",
+              ],
+            },
+            {
+              "V": [
+                "was not signed",
+                "raged on for years",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation":
+            "The subject (S) performs an action (V) with a complement (C).",
+          "usage": [
+            "Using advanced time-travel technology, they journeyed back in time to the signing of the Treaty of Versailles.",
+          ],
+          "words": [
+            {
+              "S": [
+                "they",
+                "Treaty of Versailles",
+              ],
+            },
+            {
+              "V": [
+                "journeyed back in time",
+              ],
+            },
+            {
+              "C": [
+                "to the signing",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation":
+            "The subject (S) performs an action (V) with an object (O).",
+          "usage": [
+            "They discovered a world where technology had advanced beyond their wildest dreams, but at what cost?",
+          ],
+          "words": [
+            {
+              "S": [
+                "they",
+              ],
+            },
+            {
+              "V": [
+                "discovered",
+              ],
+            },
+            {
+              "O": [
+                "a world",
+                "technology",
+                "their wildest dreams",
+                "at what cost",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + O",
+          "explanation":
+            "The subject (S) performs an action (V) with two objects (O).",
+          "usage": [
+            "I loved how the novel explored the consequences of the Treaty of Versailles.",
+          ],
+          "words": [
+            {
+              "S": [
+                "I",
+              ],
+            },
+            {
+              "V": [
+                "loved",
+              ],
+            },
+            {
+              "O": [
+                "how",
+                "the novel",
+                "the consequences of the Treaty of Versailles",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + C",
+          "explanation":
+            "The subject (S) performs an action (V) with an object (O) and a complement (C).",
+          "usage": [
+            "And I think that's what makes this novel so powerful - it challenges us to think critically about the past and how it shapes our present.",
+          ],
+          "words": [
+            {
+              "S": [
+                "I",
+              ],
+            },
+            {
+              "V": [
+                "think",
+              ],
+            },
+            {
+              "O": [
+                "what",
+                "this novel",
+              ],
+              "C": [
+                "it challenges us to think critically about the past and how it shapes our present",
+              ],
+            },
+          ],
+        },
+      ],
+      "vocabularies": [
+        {
+          "class": "Noun",
+          "word": "universe",
+          "meaning":
+            "a self-contained system or set of interconnected things, including galaxies and all their contents",
+          "usage": [
+            "In a parallel universe, the Treaty of Versaille was not signed",
+          ],
+          "pronounce": "/ˈʌnɪvərs/",
+          "example":
+            "The concept of multiverse has led to the discovery of many new universes.",
+        },
+        {
+          "class": "Noun",
+          "word": "technology",
+          "meaning":
+            "the application of scientific knowledge for practical purposes, especially in industry",
+          "usage": [
+            "Using advanced time-travel technology",
+            "technology had advanced beyond their wildest dreams",
+          ],
+          "pronounce": "/tɛkˈnɒlədʒi/ ",
+          "example":
+            "The new smartphone features advanced technology to enhance user experience.",
+        },
+        {
+          "class": "Adjective",
+          "word": "advanced",
+          "meaning": "more developed or sophisticated than usual",
+          "usage": [
+            "advanced technology",
+            "advanced beyond their wildest dreams",
+          ],
+          "pronounce": "/ədˈvɑnsd/",
+          "example":
+            "The advanced materials used in the spacecraft enabled it to withstand extreme temperatures.",
+        },
+        {
+          "class": "Adverb",
+          "word": "further",
+          "meaning": "to a greater extent or degree",
+          "usage": [
+            "set out to explore it further",
+          ],
+          "pronounce": "/ˈfʌðər/",
+          "example": "We will discuss this topic further in the next meeting.",
+        },
+        {
+          "class": "Noun",
+          "word": "treaty",
+          "meaning":
+            "an agreement between nations, states, or organizations to settle certain matters",
+          "usage": [
+            "Treaty of Versaille",
+            "the signing of the Treaty of Versailles",
+          ],
+          "pronounce": "/ˈtriːti/ ",
+          "example":
+            "The treaty has led to a significant reduction in international tensions.",
+        },
+        {
+          "class": "Noun",
+          "word": "war",
+          "meaning":
+            "a state of armed conflict between different nations, states, or organizations",
+          "usage": [
+            "World War I",
+            "raged on for years",
+          ],
+          "pronounce": "/wɔː/ ",
+          "example": "The war has resulted in significant humanitarian crises.",
+        },
+        {
+          "class": "Adjective",
+          "word": "parallel",
+          "meaning": "similar but separate",
+          "usage": [
+            "a parallel universe",
+            "a world vastly different from their own",
+          ],
+          "pronounce": "/ˈpærəlɛl/",
+          "example": "The two companies have parallel business strategies.",
+        },
+        {
+          "class": "Adverb",
+          "word": "vastly",
+          "meaning": "to a very great extent or degree",
+          "usage": [
+            "a world vastly different from their own",
+          ],
+          "pronounce": "/ˈvæstli/",
+          "example":
+            "The new policy has vastly improved the company's financial performance.",
+        },
+      ],
+    },
+    "keywords": [
+      "parallel",
+      "universe",
+      "technology",
+      "energy",
+      "memories",
+      "past",
+      "scientists",
+      "historians",
+      "archive",
+      "timeline",
+      "consequences",
+      "Treaty",
+      "Versailles",
+      "Germany",
+      "scars",
+      "nation",
+      "people",
+      "cost",
+      "change",
+    ],
+  },
 };
 export default data;

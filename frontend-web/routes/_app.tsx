@@ -63,6 +63,10 @@ export default function App({ Component, config }: PageProps) {
         <link rel="stylesheet" href="/styles.css" />
         {!config.dev && (
           <>
+            <meta
+              name="google-site-verification"
+              content="m2hwol8GGWwXv_en0E1VXrKXk3i1XcCtWkCEsbfJsX0"
+            />
             <script
               async
               src="https://www.googletagmanager.com/gtag/js?id=G-EHTMJRGX97"

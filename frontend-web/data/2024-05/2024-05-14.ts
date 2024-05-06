@@ -107,5 +107,225 @@ const data: QuizData = {
       "answer": 2,
     },
   ],
+  "descriptions": {
+    "grammar": {
+      "patterns": [
+        {
+          "pattern": "S + V",
+          "explanation":
+            "The basic sentence structure with a subject and verb.",
+          "usage": [
+            "In a world where steam-powered machines ruled supreme, the dreaded polio had long plagued the population.",
+          ],
+          "words": [
+            {
+              "S": [
+                "In",
+                "a",
+                "world",
+              ],
+            },
+            {
+              "V": [
+                "ruled",
+                "plagued",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation":
+            "The basic sentence structure with a subject, verb, and object.",
+          "usage": [
+            "Families lived in constant fear of the crippling disease that seemed to have no cure.",
+          ],
+          "words": [
+            {
+              "S": [
+                "Families",
+              ],
+            },
+            {
+              "V": [
+                "lived",
+              ],
+            },
+            {
+              "O": [
+                "constant fear",
+                "the crippling disease",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation":
+            "The basic sentence structure with a subject, verb, and complement.",
+          "usage": [
+            "But then, hope appeared on the horizon in the form of Dr. Salk and his team of brilliant inventors.",
+          ],
+          "words": [
+            {
+              "S": [
+                "But",
+                "then",
+              ],
+            },
+            {
+              "V": [
+                "appeared",
+              ],
+            },
+            {
+              "C": [
+                "hope",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + O",
+          "explanation":
+            "The basic sentence structure with a subject, verb, and two objects.",
+          "usage": [
+            "With his new invention, he was able to develop an inactivated poliovirus vaccine that promised to put an end to the polio epidemic once and for all.",
+          ],
+          "words": [
+            {
+              "S": [
+                "With",
+                "he",
+              ],
+            },
+            {
+              "V": [
+                "was",
+                "able",
+                "develop",
+              ],
+            },
+            {
+              "O": [
+                "new invention",
+                "an inactivated poliovirus vaccine",
+              ],
+            },
+          ],
+        },
+      ],
+      "vocabularies": [
+        {
+          "class": "Noun",
+          "word": "polio",
+          "meaning":
+            "a highly infectious and sometimes deadly disease caused by a virus.",
+          "usage": [
+            "The dreaded polio had long plagued the population.",
+            "Families lived in constant fear of the crippling disease that seemed to have no cure.",
+          ],
+          "pronounce": "/ˈpoʊlaɪ/ (POH-lye)",
+          "example":
+            "The doctor diagnosed the patient with a severe case of polio.",
+        },
+        {
+          "class": "Verb",
+          "word": "ruled",
+          "meaning": "to have control or dominance over something.",
+          "usage": [
+            "In a world where steam-powered machines ruled supreme...",
+            "Dr. Salk had been working tirelessly on a vaccine for years, but it was only when he discovered the secrets of steam- powered mechanics that he realized the key to unlocking the mystery of polio.",
+          ],
+          "pronounce": "/ruːld/ (ROOLED)",
+          "example": "The government rules the country with an iron fist.",
+        },
+        {
+          "class": "Adjective",
+          "word": "dreaded",
+          "meaning": "causing fear or unease.",
+          "usage": [
+            "The dreaded polio had long plagued the population.",
+          ],
+          "pronounce": "/ˈdrɛtɪd/ (DREH-tid)",
+          "example": "The dreaded monster roared loudly in the forest.",
+        },
+        {
+          "class": "Adjective",
+          "word": "brilliant",
+          "meaning": "extremely clever, talented, or skillful.",
+          "usage": [
+            "Dr. Salk and his team of brilliant inventors.",
+          ],
+          "pronounce": "/ˈbrɪlɪənt/ (BRIH-lee-uhnt)",
+          "example":
+            "The brilliant scientist won the Nobel Prize for her groundbreaking research.",
+        },
+        {
+          "class": "Noun",
+          "word": "vaccine",
+          "meaning":
+            "a substance that is used to protect against a particular disease.",
+          "usage": [
+            "Dr. Salk had been working tirelessly on a vaccine for years...",
+          ],
+          "pronounce": "/ˈvaɪsɪn/ (VY-sin)",
+          "example":
+            "The new vaccine was shown to be highly effective in preventing the spread of the disease.",
+        },
+        {
+          "class": "Adverb",
+          "word": "tirelessly",
+          "meaning": "without resting or relaxing.",
+          "usage": [
+            "Dr. Salk had been working tirelessly on a vaccine for years...",
+          ],
+          "pronounce": "/ˈtaɪərli/ (TYR-lee)",
+          "example":
+            "The athlete ran tirelessly around the track, setting a new record.",
+        },
+        {
+          "class": "Noun",
+          "word": "mechanics",
+          "meaning":
+            "the branch of physics concerned with the study and application of machines.",
+          "usage": [
+            "...he discovered the secrets of steam-powered mechanics that he realized the key to unlocking the mystery of polio.",
+          ],
+          "pronounce": "/ˈmɛkənɪks/ (MEH-kah-niks)",
+          "example":
+            "The engineer studied mechanical engineering, specializing in automotive mechanics.",
+        },
+        {
+          "class": "Adverb",
+          "word": "overwhelmingly",
+          "meaning": "in a way that is very strong or impressive.",
+          "usage": [
+            "The results were overwhelmingly positive, marking the beginning of the end of polio.",
+          ],
+          "pronounce": "/ˌoʊvərˈhwelmiŋli/ (oh-vur-HWEL-ming-lee)",
+          "example":
+            "The audience applauded overwhelmingly for the amazing performance.",
+        },
+      ],
+    },
+    "keywords": [
+      "steam-powered",
+      "polio",
+      "vaccine",
+      "inventors",
+      "mechanics",
+      "epidemic",
+      "cure",
+      "hope",
+      "healing",
+      "revolutionized",
+      "paved",
+      "medical",
+      "advancements",
+      "hero",
+      "overwhelmingly",
+    ],
+  },
 };
 export default data;
