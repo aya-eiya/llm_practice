@@ -1,97 +1,97 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "The Rumba Becomes a Popular Style",
+    "details":
+      "On April 3rd, 1916, Cuban musician Don Azpiazu's recording of 'Rum Bar' becomes a huge hit in the United States, marking the beginning of the Rumba's popularity as a dance style.",
+  },
   "date": "2024-04-02",
-  "event": "The 24-hour clock is invented",
-  "title": "A Tick of Time",
+  "title": "The Rise of the Rumba",
   "body":
-    "In a world where time was everything, a young inventor named Kael set out to create the perfect timekeeping device. After months of hard work and countless failed attempts, he finally succeeded in creating a 24-hour clock that could keep track of time more accurately than ever before. With his new invention, people could now tell the exact time at any given moment. The world was forever changed by this simple yet revolutionary invention.",
-  "word count": 74,
+    "In a world where dance was a means to express one's emotions and identity, the Rumba was a style that swept through society. On April 3rd, 1916, Cuban musician Don Azpiazu recorded 'Rum Bar', a song that would change the course of history. The record quickly became a sensation in the United States, with people flocking to dance halls and nightclubs to hear the Rumba's infectious rhythms. As the popularity of the Rumba grew, so did its influence on other styles of dance. People from all walks of life were drawn to the Rumba's unique blend of passion and energy, and it soon became a symbol of freedom and self-expression. The Rumba had not only created a new genre of music but also brought people together in a way that had never been seen before.",
+  "word count": 135,
   "dialog": [
     {
-      "Kerry":
-        "Whoa, can you believe it? A 24-hour clock that's more accurate than ever before! I mean, what even is the point of time if we can't tell when to be on time?",
-    },
-    {
-      "Meg":
-        "I know, right? It's like, what about all the stories we've read about people trying to change the past or predict the future? If we had a clock that accurate, would it even matter?",
+      "Billy":
+        "I loved how the novel explored the connection between dance and emotions! It really made me think about my own feelings.",
     },
     {
       "Lui":
-        "Ah, now, now, let's not get ahead of ourselves. We're not talking about manipulating time travel just yet. This is an incredible invention for everyday use, folks! Think about all the possibilities - schedules, appointments, deadlines...",
+        "Yes, I agree with Billy. The way the Rumba brought people together was truly remarkable. As a history teacher, it's fascinating to see how music can transcend cultures and generations.",
+    },
+    {
+      "Kerry":
+        "I know what you mean, Lui! And I loved how the novel highlighted the importance of self-expression and individuality. It's like, dance is not just about following rules, but also about sharing your own unique vibes with others.",
+    },
+    {
+      "Meg":
+        "Oh, absolutely Kerry! As a bookworm, I appreciated how the novel wove together historical facts with fictional characters. It was like stepping into a world where music and dance were intertwined.",
     },
     {
       "Billy":
-        "Exactly, Mr. Lui! And it's not just about being on time. It opens up so many doors for scientific research and discovery too. Just imagine what kind of breakthroughs we could make with a clock that accurate!",
-    },
-    {
-      "Kerry":
-        "Yeah, but have you thought about how this might change our social dynamics? Like, if we can pinpoint the exact moment when something happens... Do people even have secrets anymore?",
-    },
-    {
-      "Meg":
-        "Ooh, good point, Kerry! And what about all the myths and legends that rely on timing and coincidence? Does this clock make them obsolete or just more fascinating because they're so precise now?",
+        "And don't forget how the Rumba influenced other styles of dance! I mean, it's crazy to think that one song can have such a profound impact on popular culture.",
     },
     {
       "Lui":
-        "Well, I think we have a lot to discuss here. This invention is certainly going to shake things up. But for now, let's just marvel at the sheer ingenuity and potential of it all.",
+        "Well said, Billy. As educators, we often focus on the 'big picture' historical events, but this novel reminds us of the power of everyday moments and cultural exchanges.",
+    },
+    {
+      "Kerry":
+        "Yeah, it's like, sometimes you need to look at the little things to understand the bigger picture. And in this case, that little thing was a song called 'Rum Bar'!",
     },
   ],
   "quiz": [
     {
-      "question": "What was Kael's goal when creating the timekeeping device?",
+      "question": "When was the song 'Rum Bar' recorded?",
       "options": [
-        "To create a clock that kept track of time",
-        "To change the past or predict the future",
-        "To make everyday life more efficient",
-        "To manipulate time travel",
-        "None of the above",
-      ],
-      "answer": 2,
-    },
-    {
-      "question":
-        "What was one of the potential implications of having an accurate clock?",
-      "options": [
-        "It would make it easier to schedule appointments",
-        "People wouldn't have secrets anymore",
-        "The myths and legends that rely on timing and coincidence would become obsolete",
-        "Scientists could make new breakthroughs",
-        "All of the above",
-      ],
-      "answer": 4,
-    },
-    {
-      "question": "What was Kael's invention initially used for?",
-      "options": [
-        "To predict the future",
-        "To manipulate time travel",
-        "For everyday use and scientific research",
-        "To change the past",
-        "None of the above",
-      ],
-      "answer": 2,
-    },
-    {
-      "question":
-        "How did the accurate clock potentially affect social dynamics?",
-      "options": [
-        "It made it easier for people to schedule appointments",
-        "It allowed people to pinpoint the exact moment when something happens",
-        "It made secrets obsolete",
-        "It changed how people interacted with each other",
-        "None of the above",
+        "April 1st, 1915",
+        "April 3rd, 1916",
+        "May 10th, 1920",
+        "June 20th, 1930",
       ],
       "answer": 1,
     },
     {
-      "question": "What was the significance of Kael's invention?",
+      "question": "What was the Rumba style of dance known for?",
       "options": [
-        "It revolutionized the way people told time",
-        "It allowed for manipulation of time travel",
-        "It changed everyday life",
-        "It made myths and legends obsolete",
-        "It had no significant impact",
+        "Its slow and romantic tempo",
+        "Its fast and energetic rhythms",
+        "Its ability to bring people together",
+        "None of the above",
+      ],
+      "answer": 2,
+    },
+    {
+      "question":
+        "Who recorded the song 'Rum Bar' that changed the course of history?",
+      "options": [
+        "Don Azpiazu",
+        "Billy",
+        "Lui",
+        "Kerry",
       ],
       "answer": 0,
     },
+    {
+      "question": "What was the Rumba's influence on other styles of dance?",
+      "options": [
+        "It slowed down their tempo",
+        "It sped up their rhythms",
+        "It brought people together",
+        "None of the above",
+      ],
+      "answer": 2,
+    },
+    {
+      "question": "What did the novel highlight as important about the Rumba?",
+      "options": [
+        "Its ability to express emotions",
+        "Its influence on popular culture",
+        "Its connection to self-identity",
+        "All of the above",
+      ],
+      "answer": 3,
+    },
   ],
 };
+export default data;

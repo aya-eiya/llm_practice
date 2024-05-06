@@ -1,96 +1,116 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "Tulip Mania Bubble Bursts",
+    "details":
+      "On April 30th, 1732, the tulip mania bubble burst in Holland, causing a significant economic crisis as the value of tulips plummeted and many investors lost their fortunes",
+  },
   "date": "2024-04-30",
-  "event": "The Battle of Hastings",
-  "title": "Knight's Quest: The Battle of Hastings",
+  "title": "The Tulip Bubble",
   "body":
-    "Once upon a time, in a kingdom far, far away, there lived a brave knight named Sir Thomas. He was the bravest of all the knights in the kingdom and was loved by all his friends and people. One day, he received a letter from King Harold inviting him to join the battle against the invading Normans led by William the Conqueror. \nSir Thomas accepted the invitation with enthusiasm and set off for Hastings, where the final battle was taking place. As he rode through the countryside, he met many brave knights and warriors who joined him in his quest for victory. \nWhen they arrived at the battlefield, they saw that the Normans were greatly outnumbered, but their leader, William the Conqueror, was a great tactician and had devised a plan to crush the English army. The two armies clashed on a fateful day in October, on the fields of Hastings. \nThe battle raged for hours, with both sides suffering heavy losses. Finally, as the sun began to set, King Harold was struck down by an arrow from one of William's archers. Without their leader, the English army started to fall apart, and the Normans emerged victorious. \nSir Thomas and his friends were saddened by the loss of their king, but they knew that they had done their duty and fought bravely for their kingdom. And so, they rode back to their homes, with their heads held high.",
-  "word count": 238,
+    "In the small town of Zwanenburg, everyone was obsessed with tulips. They were the talk of the town and the object of every investor's desire. But little did anyone know that the value of these beautiful flowers was about to crash.As the tulip mania bubble grew larger, more and more people poured their savings into buying tulips, driving the price through the roof. But as always happens in times of greed, the bubble was unsustainable.On April 30th, 1732, the bubble burst, leaving many investors bankrupt and causing a significant economic crisis in Holland. The once-lucrative tulip trade became worthless overnight, leaving the town in shambles.Amidst the chaos, a young investigator named Jan was determined to uncover the truth behind the bubble burst. With the help of his loyal companion, a streetwise cat named Tulip, he set out to discover who had profited from the bubble and who had suffered from its collapse.As Jan delved deeper into the mystery, he uncovered a web of corruption and greed that reached all the way to the top of the town's elite. But as he got closer to the truth, he found himself in grave danger. Will Jan be able to expose the truth and bring justice to those affected by the bubble burst? Or will he become another victim of the town's obsession with tulips?",
+  "word count": 222,
   "dialog": [
     {
       "Billy":
-        "I think Sir Thomas was really brave to join the battle even though they were outnumbered.",
-    },
-    {
-      "Kerry":
-        "Yeah, but can you imagine being in a situation where you're fighting for your king's life? That must have been intense!",
-    },
-    {
-      "Meg":
-        "I loved how the novel described the battlefield as 'a sea of chaos' - it really puts you right there with Sir Thomas and his friends.",
+        "Wow, I had no idea that tulips were so valuable! It's crazy how people got so caught up in buying them.",
     },
     {
       "Lui":
-        "Indeed, Meg. The vivid descriptions in this novel make it easy to imagine the action unfolding before your eyes. But let's not forget the importance of King Harold's leadership in that battle...",
+        "I remember learning about the tulip mania in history class. It was a perfect example of speculation gone wrong.",
+    },
+    {
+      "Meg":
+        "I loved how Jan and Tulip worked together to solve the mystery. It's always exciting to see characters with different skills collaborate.",
+    },
+    {
+      "Kerry":
+        "I don't get why people got so obsessed with tulips! They're just flowers, right?",
     },
     {
       "Billy":
-        "Yeah, I think King Harold was a great leader, but Sir Thomas and his friends really showed their bravery by fighting so hard even when they were losing.",
-    },
-    {
-      "Kerry":
-        "And what about William the Conqueror? He seemed like a pretty clever guy to come up with that plan to defeat the English army...",
-    },
-    {
-      "Meg":
-        "I think it's interesting how the novel portrays both sides of the battle - you can't help but feel sorry for King Harold and his men, even though they were defeated.",
+        "Yeah, I know what you mean, Kerry. But it's also fascinating how something as seemingly trivial as a flower can have such an impact on the economy.",
     },
     {
       "Lui":
-        "Exactly, Meg. The novel does a great job of showing that war is never simple or straightforward. Both sides had their strengths and weaknesses...",
+        "Exactly Billy. It's a great reminder that history is full of unexpected twists and turns.",
+    },
+    {
+      "Meg": "I'm curious, did anyone profit from the tulip bubble?",
+    },
+    {
+      "Kerry":
+        "Good question Meg! I think Jan found out that some people did make money off it, but not as much as they would have liked.",
+    },
+    {
+      "Billy":
+        "Yeah, I remember reading that there were some speculators who got rich off the tulips, but many more people lost their shirts.",
+    },
+    {
+      "Lui":
+        "It's a valuable lesson in the importance of diversifying investments and being cautious in times of market frenzy.",
     },
   ],
   "quiz": [
     {
-      "question": "Why did Sir Thomas accept King Harold's invitation?",
+      "question":
+        "What was the main topic of obsession in the small town of Zwanenburg?",
       "options": [
-        "To join a noble quest",
-        "To escape the kingdom's troubles",
-        "To fight against the Normans",
-        "To help his friends",
+        "Tulips",
+        "Flowers",
+        "Economy",
+        "History",
+        "Investments",
+      ],
+      "answer": 0,
+    },
+    {
+      "question": "When did the tulip mania bubble burst?",
+      "options": [
+        "April 30th, 1732",
+        "March 15th, 1731",
+        "December 25th, 1730",
+        "June 1st, 1733",
+        "February 28th, 1732",
+      ],
+      "answer": 0,
+    },
+    {
+      "question":
+        "Who was the main investigator trying to uncover the truth behind the bubble burst?",
+      "options": [
+        "Jan",
+        "Lui",
+        "Billy",
+        "Meg",
+        "Kerry",
+      ],
+      "answer": 0,
+    },
+    {
+      "question":
+        "What was the outcome for many investors when the tulip mania bubble burst?",
+      "options": [
+        "They became rich",
+        "They stayed neutral",
+        "They lost their shirts",
+        "They broke even",
+        "They gained more investments",
       ],
       "answer": 2,
     },
     {
       "question":
-        "What was William the Conqueror's strategy to defeat the English army?",
+        "Why did people get so obsessed with tulips, according to Billy?",
       "options": [
-        "He had more soldiers",
-        "He used a clever plan",
-        "He was a great swordsman",
-        "He relied on luck",
+        "Because they were beautiful",
+        "Because they were valuable",
+        "Because they were rare",
+        "Because they were useless",
+        "Because they were trivial",
       ],
       "answer": 1,
     },
-    {
-      "question": "How did the battle of Hastings end?",
-      "options": [
-        "The English won",
-        "The Normans won",
-        "It ended in a draw",
-        "King Harold escaped",
-      ],
-      "answer": 2,
-    },
-    {
-      "question": "What was Sir Thomas's attitude towards the battle?",
-      "options": [
-        "He was hesitant",
-        "He was scared",
-        "He fought bravely",
-        "He didn't care",
-      ],
-      "answer": 2,
-    },
-    {
-      "question":
-        "What did Meg mean by saying 'a sea of chaos' when describing the battlefield?",
-      "options": [
-        "It meant a peaceful scene",
-        "It referred to the number of soldiers",
-        "It described the confusing situation on the battlefield",
-        "It mentioned the use of magic",
-      ],
-      "answer": 2,
-    },
   ],
 };
+export default data;

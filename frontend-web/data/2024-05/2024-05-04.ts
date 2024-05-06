@@ -1,398 +1,348 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "May Fourth Movement",
+    "details": "Massive protests and demonstrations across China on May 4th, 1919, in response to Japan's victory over Germany and its subsequent annexation of Qingdao, which led to widespread nationalist sentiment, anti-Japanese sentiment, and the beginning of modern Chinese nationalism."
+  },
   "date": "2024-05-04",
-  "event": "Goethe and Schiller Meet",
-  "title": "The Weimar Encounter: A Gun Action Novel",
-  "body":
-    "On a stormy night in May 1787, the renowned German writer and philosopher, Johann Wolfgang von Goethe, met Friedrich Schiller, another prominent German playwright and poet, at the home of Christoph Martin Wieland in Weimar, Germany. As they spoke, they were interrupted by a group of robbers who demanded their valuables. In a moment of action, Goethe grabbed his trusty pistol and engaged the robbers in a fierce gunfight. Schiller, a former soldier, joined in with his sword, leading the charge against the criminals. Together, they fought off the robbers and saved the valuable manuscripts that were being threatened by the thieves. This encounter marked the beginning of their significant literary friendship, as they exchanged ideas about the power of action in literature.",
-  "word count": 123,
+  "title": "The Rise of the Red Dragon",
+  "body": "In a world where dragons once ruled the skies and ancient magic flowed through the veins of all living things, a powerful movement was born on May 4th. A group of brave warriors, fueled by the desire for freedom and justice, rose up against their oppressors. They were known as the Red Dragons, a diverse coalition of humans and dragons alike, united in their quest to overthrow the tyrannical rule of the corrupt Emperor.Their movement began on May 4th, with a massive protest that swept through the cities and towns of the kingdom. The people were fed up with the Emperor's corruption and mistreatment of his subjects, and they were ready for change. As the protests grew in size and intensity, the Red Dragons emerged as leaders, guiding the movement towards victory.Their actions inspired others to join their cause, and soon a full-scale revolution was underway. The Red Dragons fought bravely, using ancient magic and powerful dragon breath to strike fear into the hearts of their enemies. Despite fierce resistance from the Emperor's armies, they emerged victorious, and a new era of peace and prosperity dawned upon the kingdom.",
+  "word count": 189,
   "dialog": [
     {
-      "Billy":
-        "I love how Goethe and Schiller fought off the robbers together! It shows that even when things get tough, friends can work together to overcome obstacles.",
+      "Billy": "Wow, I loved how the Red Dragons used their unique skills to fight against the Emperor!"
     },
     {
-      "Meg":
-        "And I think it's so cool that they were both writers and philosophers. I bet they had some amazing conversations about literature and life.",
+      "Meg": "I know, right? The way they combined magic and dragon breath was so cool!"
     },
     {
-      "Kerry":
-        "Yeah, but what really stood out to me was how Goethe grabbed his pistol and Schiller pulled out his sword! They were like superheroes fighting crime!",
+      "Kerry": "Yeah, and it's amazing that they were able to inspire others to join their cause. The Emperor must have been really corrupt."
     },
     {
-      "Lui":
-        "That's a great point, Kerry. The scene does have a sense of action and adventure to it. But I think what's more interesting is the way their friendship developed as a result of that night.",
+      "Lui": "Well, as a history teacher, I can tell you that this kind of revolution is exactly what we need sometimes. A fresh start and a chance to rebuild."
     },
     {
-      "Billy":
-        "Absolutely! And I love how they exchanged ideas about literature after the robbery. It shows that even in the midst of chaos, we can find time for our passions.",
+      "Billy": "I liked how the novel highlighted the importance of unity and cooperation. It's not always easy to work together, but in the end it leads to success."
     },
     {
-      "Kerry":
-        "Exactly! And who knows, maybe if Goethe and Schiller had more friends like them, Weimar would have been a safer place!",
+      "Meg": "Absolutely! And I loved how the dragons were treated as equals by the Red Dragons. It shows that even the most unlikely creatures can be friends."
     },
     {
-      "Meg":
-        "Ha! Good point, Kerry. But seriously, I think what's most inspiring is how their friendship led to some amazing literary works. Can you imagine the conversations they must have had about art and literature?",
+      "Kerry": "Yeah, and let's not forget about the Emperor's corruption! I'm glad they finally stood up against him."
     },
     {
-      "Lui":
-        "Well, we do know that Goethe and Schiller went on to collaborate on several projects after that night. It just goes to show that even in unexpected moments, friendships can be forged.",
-    },
+      "Lui": "Well, it's clear that this novel has sparked some great discussions among you all. Let's keep exploring these themes and ideas in our own ways."
+    }
   ],
   "quiz": [
     {
-      "question": "What happened on a stormy night in May 1787?",
+      "question": "When did the Red Dragon movement begin?",
       "options": [
-        "Goethe and Schiller had a literary discussion",
-        "Goethe met Schiller for the first time",
-        "Robbers interrupted Goethe's meeting with Schiller",
-        "Goethe wrote his famous novel",
-        "Schiller composed his famous poem",
+        "April 1st",
+        "May 4th",
+        "June 12th",
+        "July 25th",
+        "August 31st"
       ],
-      "answer": 2,
+      "answer": 1
     },
     {
-      "question": "What did Goethe use to fight off the robbers?",
+      "question": "What was the main goal of the Red Dragons?",
       "options": [
-        "His sword",
-        "His pistol",
-        "His wit",
-        "His literary skills",
-        "His philosophical thoughts",
+        "To conquer the kingdom",
+        "To overthrow the corrupt Emperor",
+        "To unite all humans and dragons",
+        "To establish a new magic system",
+        "To explore the ancient world"
       ],
-      "answer": 1,
+      "answer": 1
     },
     {
-      "question":
-        "Why do you think Goethe and Schiller's friendship was significant?",
+      "question": "How did the Red Dragons fight against their enemies?",
       "options": [
-        "Because they were both writers",
-        "Because they fought off robbers together",
-        "Because they exchanged ideas about literature",
-        "Because they collaborated on literary projects",
-        "All of the above",
+        "Using only human strength",
+        "Combining magic and dragon breath",
+        "Relying on their allies",
+        "Using ancient artifacts",
+        "Fleeing to safety"
       ],
-      "answer": 4,
+      "answer": 1
     },
     {
-      "question":
-        "What do you think is more interesting, Goethe and Schiller's fight against the robbers or their friendship?",
+      "question": "What was the outcome of the Red Dragon revolution?",
       "options": [
-        "Their fight against the robbers",
-        "Their friendship",
-        "Both are equally interesting",
-        "It depends on personal perspective",
-        "Neither",
+        "The Emperor won, and the Red Dragons were defeated",
+        "A new era of peace and prosperity began",
+        "The kingdom was divided into two parts",
+        "The Red Dragons became the new rulers",
+        "Nothing changed"
       ],
-      "answer": 2,
+      "answer": 2
     },
     {
-      "question":
-        "What can be inferred about Goethe and Schiller's relationship after the robbery?",
+      "question": "What did Billy like about the novel?",
       "options": [
-        "They became enemies",
-        "They stopped talking to each other",
-        "Their friendship deepened",
-        "Their literary works suffered",
-        "Nothing changed",
+        "The way the Emperor was portrayed",
+        "The use of magic and dragon breath",
+        "The unity and cooperation of the Red Dragons",
+        "The historical context",
+        "The romantic subplot"
       ],
-      "answer": 2,
-    },
+      "answer": 2
+    }
   ],
   "descriptions": {
-    "keywords": [
-      "Goethe",
-      "Schiller",
-      "Weimar",
-      "German writer",
-      "Philosopher",
-      "Playwright",
-      "Poet",
-      "Literary friendship",
-      "Action in literature",
-    ],
     "grammar": {
-      "vocabularies": [
-        {
-          "word": "stormy",
-          "usage": [
-            "On a stormy night",
-          ],
-          "pronounce": "/ˈstɔrmi/",
-          "meanings": [
-            {
-              "class": "Adjective",
-              "meaning":
-                "of or relating to weather characterized by strong winds and rain",
-              "example": "The stormy weather made it difficult to travel.",
-            },
-          ],
-        },
-        {
-          "word": "writer",
-          "usage": [
-            "the renowned German writer",
-          ],
-          "pronounce": "/ˈraɪtər/",
-          "meanings": [
-            {
-              "class": "Noun",
-              "meaning": "a person who writes books, articles, or stories",
-              "example": "The writer spent most of his life in the mountains.",
-            },
-          ],
-        },
-        {
-          "word": "philosopher",
-          "usage": [
-            "the renowned German philosopher",
-          ],
-          "pronounce": "/fɪləˈsɒfər/",
-          "meanings": [
-            {
-              "class": "Noun",
-              "meaning":
-                "a person who seeks wisdom and understanding through contemplation, study, or experience",
-              "example":
-                "The philosopher spent years studying the meaning of life.",
-            },
-          ],
-        },
-        {
-          "word": "renowned",
-          "usage": [
-            "the renowned German",
-          ],
-          "pronounce": "/rɪˈnɔrnəd/",
-          "meanings": [
-            {
-              "class": "Adjective",
-              "meaning": "famous or well-known for something",
-              "example": "The renowned scientist was awarded the Nobel Prize.",
-            },
-          ],
-        },
-        {
-          "word": "home",
-          "usage": [
-            "at the home",
-          ],
-          "pronounce": "/hoʊm/",
-          "meanings": [
-            {
-              "class": "Noun",
-              "meaning": "a person's or family's dwelling place",
-              "example": "I'm going to my friend's home for dinner.",
-            },
-          ],
-        },
-        {
-          "word": "group",
-          "usage": [
-            "a group of robbers",
-          ],
-          "pronounce": "/ɡruːp/",
-          "meanings": [
-            {
-              "class": "Noun",
-              "meaning":
-                "two or more people who are together in a common purpose or activity",
-              "example": "The group of friends went on a hike.",
-            },
-          ],
-        },
-        {
-          "word": "trustworthy",
-          "usage": [
-            "his trusty pistol",
-          ],
-          "pronounce": "/ˈtrʌstwərθi/",
-          "meanings": [
-            {
-              "class": "Adjective",
-              "meaning": "reliable or dependable in a given situation",
-              "example":
-                "The trustworthy driver was able to get us safely to our destination.",
-            },
-          ],
-        },
-        {
-          "word": "former",
-          "usage": [
-            "a former soldier",
-          ],
-          "pronounce": "/ˈfɔrmər/",
-          "meanings": [
-            {
-              "class": "Adjective",
-              "meaning": "having previously been something or someone else",
-              "example": "The former president was honored with a statue.",
-            },
-          ],
-        },
-        {
-          "word": "significant",
-          "usage": [
-            "a significant literary friendship",
-          ],
-          "pronounce": "/sɪɡˈnɪfɪkənt/",
-          "meanings": [
-            {
-              "class": "Adjective",
-              "meaning": "important or meaningful in some way",
-              "example":
-                "The significant discovery changed the course of history.",
-            },
-          ],
-        },
-        {
-          "word": "literary",
-          "usage": [
-            "a literary friendship",
-          ],
-          "pronounce": "/lɪˈtɛrəri/",
-          "meanings": [
-            {
-              "class": "Adjective",
-              "meaning": "relating to or characteristic of literature",
-              "example":
-                "The literary society was dedicated to promoting reading and writing.",
-            },
-          ],
-        },
-      ],
       "patterns": [
         {
-          "pattern": "S + V + O",
+          "pattern": "S + V",
+          "explanation": "The basic sentence structure with a subject and verb.",
           "usage": [
-            "On a stormy night in May 1877, the renowned German writer and philosopher, Johann Wolfgang von Goethe, met Friedrich Schiller, another prominent German playwright and poet, at the home of Christoph Martin Wieland in Weimar, Germany.",
+            "In a world where dragons once ruled",
+            "A group of brave warriors"
           ],
-          "explanation":
-            "The subject (S) is introduced followed by a verb (V) and an object (O).",
           "words": [
             {
               "S": [
-                "On",
-                "the",
-                "Johann Wolfgang von Goethe",
-              ],
-              "V": [
-                "met",
-              ],
-              "O": [
-                "Friedrich Schiller",
-              ],
+                "In a world",
+                "A group of brave"
+              ]
             },
+            {
+              "V": [
+                "where dragons once ruled",
+                "were born"
+              ]
+            },
+            {
+              "O": []
+            },
+            {
+              "C": []
+            }
+          ]
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation": "The sentence structure with a subject, verb, and complement.",
+          "usage": [
+            "Their movement began on May 4th",
+            "Despite fierce resistance"
           ],
+          "words": [
+            {
+              "S": [
+                "Their movement",
+                "Despite fierce"
+              ]
+            },
+            {
+              "V": [
+                "began on May 4th",
+                "emerged victorious"
+              ]
+            },
+            {
+              "O": []
+            },
+            {
+              "C": [
+                "on May 4th",
+                "victorious"
+              ]
+            }
+          ]
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation": "The sentence structure with a subject, verb, and object.",
+          "usage": [
+            "The people were fed up",
+            "They fought bravely"
+          ],
+          "words": [
+            {
+              "S": [
+                "The people",
+                "They"
+              ]
+            },
+            {
+              "V": [
+                "were fed up",
+                "fought bravely"
+              ]
+            },
+            {
+              "O": [
+                "corruption",
+                "enemies"
+              ]
+            }
+          ]
+        },
+        {
+          "pattern": "S + V + O + O",
+          "explanation": "The sentence structure with a subject, verb, and two objects.",
+          "usage": [
+            "Their actions inspired others",
+            "They used ancient magic"
+          ],
+          "words": [
+            {
+              "S": [
+                "Their actions",
+                "They"
+              ]
+            },
+            {
+              "V": [
+                "inspired others",
+                "used ancient magic"
+              ]
+            },
+            {
+              "O": [
+                "others",
+                "magic"
+              ]
+            }
+          ]
         },
         {
           "pattern": "S + V + O + C",
+          "explanation": "The sentence structure with a subject, verb, object, and complement.",
           "usage": [
-            "As they spoke, they were interrupted by a group of robbers who demanded their valuables.",
+            "It's amazing that they were able to inspire",
+            "A fresh start and a chance"
           ],
-          "explanation":
-            "The subject (S) is followed by a verb (V), an object (O), and a complement (C).",
           "words": [
             {
               "S": [
-                "they",
-              ],
+                "It's amazing",
+                "A"
+              ]
+            },
+            {
               "V": [
-                "were interrupted",
-              ],
+                "they were able to inspire",
+                "rebuild"
+              ]
+            },
+            {
               "O": [
-                "a group of robbers",
-              ],
-              "C": [
-                "who demanded their valuables",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O",
-          "usage": [
-            "Goethe grabbed his trusty pistol and engaged the robbers in a fierce gunfight.",
-          ],
-          "explanation":
-            "The subject (S) is followed by a verb (V) and an object (O).",
-          "words": [
-            {
-              "S": [
-                "Goethe",
-              ],
-              "V": [
-                "grabbed",
-              ],
-              "O": [
-                "his trusty pistol",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O + M",
-          "usage": [
-            "Schiller, a former soldier, joined in with his sword, leading the charge against the criminals.",
-          ],
-          "explanation":
-            "The subject (S) is followed by a verb (V), an object (O), and a modifier (M).",
-          "words": [
-            {
-              "S": [
-                "Schiller",
-              ],
-              "V": [
-                "joined in",
-              ],
-              "O": [
-                "his sword",
-              ],
-              "M": [
-                "leading the charge against the criminals",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O",
-          "usage": [
-            "Together, they fought off the robbers and saved the valuable manuscripts that were being threatened by the thieves.",
-          ],
-          "explanation":
-            "The subject (S) is followed by a verb (V) and an object (O).",
-          "words": [
-            {
-              "S": [
-                "they",
-              ],
-              "V": [
-                "fought off",
-              ],
-              "O": [
-                "the robbers",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V",
-          "usage": [
-            "This encounter marked the beginning of their significant literary friendship, as they exchanged ideas about the power of action in literature.",
-          ],
-          "explanation": "The subject (S) is followed by a verb (V).",
-          "words": [
-            {
-              "S": [
-                "This",
-              ],
-              "V": [
-                "marked",
-              ],
-            },
-          ],
-        },
+                "inspire",
+                "chance"
+              ]
+            }
+          ]
+        }
       ],
+      "vocabularies": [
+        {
+          "class": "Noun",
+          "word": "Dragons",
+          "meaning": "Large, fire-breathing mythical creatures.",
+          "usage": [
+            "The dragons ruled the skies.",
+            "A group of brave warriors rode on dragons."
+          ],
+          "pronounce": "/ˈdræɡənz/",
+          "example": "The new fantasy novel features a dragon as the main protagonist."
+        },
+        {
+          "class": "Noun",
+          "word": "Emperor",
+          "meaning": "A ruler of an empire or kingdom.",
+          "usage": [
+            "The Emperor ruled with an iron fist.",
+            "The people feared their Emperor."
+          ],
+          "pronounce": "/ˈɛmpərər/",
+          "example": "The Emperor's new clothes were a symbol of his power."
+        },
+        {
+          "class": "Noun",
+          "word": "Freedom",
+          "meaning": "The state of being free from slavery, captivity, or oppression.",
+          "usage": [
+            "We fight for our freedom.",
+            "She longed for the freedom to make her own choices."
+          ],
+          "pronounce": "/ˈfrɛdəm/",
+          "example": "The abolitionists fought for the freedom of slaves."
+        },
+        {
+          "class": "Noun",
+          "word": "Justice",
+          "meaning": "The quality of being just; fairness and moral rightness.",
+          "usage": [
+            "We seek justice for all.",
+            "She believed in seeking justice through peaceful means."
+          ],
+          "pronounce": "/ˈdʒəstɪs/",
+          "example": "The judge delivered a verdict based on justice."
+        },
+        {
+          "class": "Noun",
+          "word": "Magic",
+          "meaning": "The art of producing a desired effect or illusion by using supernatural or mystical powers.",
+          "usage": [
+            "She learned magic from her mentor.",
+            "The magician performed a trick with magic."
+          ],
+          "pronounce": "/ˈmædʒɪk/",
+          "example": "The wizard used magic to defeat the dark lord."
+        },
+        {
+          "class": "Noun",
+          "word": "Revolution",
+          "meaning": "A sudden, complete change in the way things are done or thought about.",
+          "usage": [
+            "The revolution brought about a new era.",
+            "She was inspired by the French Revolution."
+          ],
+          "pronounce": "/rɪˈvəʊlʃən/",
+          "example": "The industrial revolution transformed society."
+        },
+        {
+          "class": "Noun",
+          "word": "Victory",
+          "meaning": "A successful outcome or triumph.",
+          "usage": [
+            "We celebrated our victory.",
+            "She felt a sense of victory after completing the marathon."
+          ],
+          "pronounce": "/ˈvɪktəri/",
+          "example": "The team achieved victory with a thrilling comeback."
+        },
+        {
+          "class": "Noun",
+          "word": "Tyranny",
+          "meaning": "A government or rule that is cruel and unreasonable.",
+          "usage": [
+            "The tyrant ruled with an iron fist.",
+            "She fought against the tyranny of her oppressors."
+          ],
+          "pronounce": "/ˈtɪrəni/",
+          "example": "The people rose up against the tyrannical government."
+        }
+      ]
     },
-  },
-};
+    "keywords": [
+      "movement",
+      "freedom",
+      "justice",
+      "oppressors",
+      "tyranny",
+      "corruption",
+      "protest",
+      "change",
+      "revolution",
+      "victory",
+      "peace",
+      "prosperity"
+    ]
+  }
+}
+export default data;

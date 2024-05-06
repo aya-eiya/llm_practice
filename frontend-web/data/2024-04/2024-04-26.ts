@@ -1,101 +1,120 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "Apple I Computer Unveiled",
+    "details":
+      "On April 26th, 1976, Steve Wozniak and Steve Jobs unveiled the Apple I computer, a personal computer that started the Apple empire",
+  },
   "date": "2024-04-26",
-  "event": "April 26th - The discovery of DNA structure",
-  "title": "The Secret of Life",
+  "title": "The Magic of Apple I",
   "body":
-    "Once upon a time, there was a curious scientist named Watson. He spent all his days in the lab trying to figure out how life works. One day, he made a breakthrough and discovered the secret of life: the DNA structure! But little did Watson know, the DNA was not just a code for life, but also a key to something much darker... \n\nWatson decided to share his discovery with the world. However, as soon as he announced it, strange things started to happen in the lab. The test tubes began to glow with an eerie light, and the beakers filled with mysterious liquids bubbled over. \n\nSuddenly, a shadowy figure emerged from one of the beakers, its eyes glowing like the test tubes. It was the DNA monster! With each experiment Watson performed, the DNA monster grew stronger and more sinister. \n\nWatson knew he had to stop the DNA monster before it was too late. He raced through the lab, dodging test tubes and beakers that were now filled with the monster's deadly brew. Finally, he reached the final experiment, a giant Petri dish filled with the purest form of DNA. \n\nWatson had to be careful not to let the DNA monster escape into the world. He took a deep breath, closed his eyes, and focused all his energy on the DNA structure within the dish. Suddenly, the DNA monster let out a loud roar and dissipated into thin air! \n\nWatson was exhausted but triumphant. He had saved the world from the dangers of the DNA monster. From that day forward, he never forgot the importance of responsible scientific exploration.",
-  "word count": 270,
+    "In a world where magic was thought to be lost and forgotten, young Wozniak and Jobs set out on a quest to bring it back. They had heard whispers of a powerful force, hidden within the circuits of an unassuming computer called Apple I.    With nothing but their wits and a dream, they began to tinker with this machine, pouring over its code night after night. And then, something miraculous happened: the magic they had been seeking was not in the computer at all. It was within them!    As they worked together, their passion and creativity blossomed, turning the Apple I into a symbol of innovation and progress. On April 26th, they unveiled this magical creation to the world, forever changing the course of technology.",
+  "word count": 125,
   "dialog": [
     {
       "Billy":
-        "Wow, I loved the part where Watson discovers the secret of life! It's so cool how he uses his knowledge to defeat the DNA monster.",
+        "Wow, I never thought that Steve Jobs and Steve Wozniak were the ones who brought back magic to the world!",
     },
     {
       "Kerry":
-        "Yeah, it was pretty sweet. But what really got me was when the DNA monster started growing and becoming more sinister. That part was super creepy!",
+        "Right?! And it's amazing how they found the magic within themselves!",
     },
     {
       "Meg":
-        "I know, right? The whole time I was wondering how Watson would stop the monster from taking over the world. It's amazing how he used his knowledge of DNA to defeat it.",
+        "I loved how the novel showed how creativity and innovation can change the course of history. It's so inspiring!",
     },
     {
       "Lui":
-        "Well, kids, this novel is a great reminder that with great power comes great responsibility. Scientists like Watson have a duty to use their discoveries for good and not harm humanity.",
+        "Indeed, this novel highlights the importance of perseverance and collaboration. It's a great reminder that we all have the power to make a difference.",
     },
     {
       "Billy":
-        "Exactly! And I loved how the novel highlighted the importance of being careful when working with scientific discoveries. We can learn so much from Watson's experiences.",
+        "Yeah, I liked how the novel balanced magic and technology. It shows that even in a world with computers and coding, there's still room for imagination and wonder.",
     },
     {
       "Kerry":
-        "Yeah, it's also cool to see how the DNA monster represents the dangers of playing God. We should always think about the potential consequences of our actions before we do them.",
+        "Totally agree! The Apple I is like a symbol of what we can achieve when we combine our passions and skills.",
     },
     {
       "Meg":
-        "I agree. The novel is a great cautionary tale that reminds us to be mindful of the power we have and use it wisely.",
+        "And it's not just about the tech; it's also about the people who make it happen. Steve Jobs and Steve Wozniak are heroes in this story!",
     },
     {
       "Lui":
-        "That's a valuable lesson for all of us, kids. Remember, with knowledge comes responsibility, and we should always strive to use our abilities for the greater good.",
+        "That's true, Meg. The novel reminds us that behind every great achievement is a team of dedicated individuals who worked together to make it happen.",
+    },
+    {
+      "Billy":
+        "I think my favorite part was when they finally unveiled the Apple I to the world! It must have been such an exciting moment for them and everyone else.",
+    },
+    {
+      "Kerry":
+        "Yeah, I bet it was a real game-changer. And now we get to live in a world with computers that can do amazing things!",
+    },
+    {
+      "Meg":
+        "Exactly! The novel shows us that even when things seem impossible, with determination and creativity, anything is possible.",
     },
   ],
   "quiz": [
     {
-      "question": "What is the title of the novel mentioned in the text?",
+      "question": "Who were the two main characters in the novel?",
       "options": [
-        "The Secret of Life",
-        "The Mysterious Stranger",
-        "The Unseen Force",
-        "The Hidden Truth",
-        "The Inexplicable Event",
+        "Steve Jobs and Steve Wozniak",
+        "Billy and Kerry",
+        "Meg and Lui",
+        "Wozniak and Apple I",
+        "Jobs and Apple I",
       ],
       "answer": 0,
-    },
-    {
-      "question": "Who is talking about the secret of life?",
-      "options": [
-        "Dr. Lee",
-        "A stranger",
-        "An unknown person",
-        "No one",
-        "The author himself",
-      ],
-      "answer": 0,
-    },
-    {
-      "question": "What does the speaker want to know according to the text?",
-      "options": [
-        "How to live a long life",
-        "The meaning of happiness",
-        "Why people get sick",
-        "What is the secret of life",
-        "None of the above",
-      ],
-      "answer": 3,
     },
     {
       "question":
-        "According to the text, what does the speaker think will happen if they find out the secret of life?",
+        "What did Steve Jobs and Steve Wozniak find within the Apple I?",
       "options": [
-        "Nothing will change",
-        "They will live forever",
-        "Their problems will be solved",
-        "The world will become a better place",
-        "None of the above",
+        "A piece of metal",
+        "A hidden message",
+        "Their own creativity and passion",
+        "A powerful force",
+        "The code to the computer",
       ],
       "answer": 2,
     },
     {
-      "question":
-        "What is the main topic discussed in the novel according to the text?",
+      "question": "What was the significance of the Apple I?",
       "options": [
-        "A mysterious stranger's life story",
-        "The secrets of nature",
-        "How to live a long and healthy life",
-        "The meaning of happiness",
-        "None of the above",
+        "It was a symbol of innovation and progress",
+        "It was a piece of junk",
+        "It was a type of computer",
+        "It was a game-changer",
+        "It was just a machine",
+      ],
+      "answer": 0,
+    },
+    {
+      "question":
+        "What did Steve Jobs and Steve Wozniak's collaboration represent?",
+      "options": [
+        "The power of technology",
+        "The importance of teamwork",
+        "The magic of computers",
+        "The creativity of imagination",
+        "The innovation of progress",
+      ],
+      "answer": 1,
+    },
+    {
+      "question":
+        "What was the outcome of Steve Jobs and Steve Wozniak's hard work?",
+      "options": [
+        "They failed miserably",
+        "They achieved a little success",
+        "They unveiled their creation to the world",
+        "They lost interest in their project",
+        "They gave up",
       ],
       "answer": 2,
     },
   ],
 };
+export default data;

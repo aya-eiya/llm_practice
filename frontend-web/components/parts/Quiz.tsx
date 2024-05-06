@@ -1,58 +1,5 @@
+import { QuizData } from "../../domains/quiz.ts";
 import { Printer } from "../../islands/Printer.tsx";
-
-export type QuizData = {
-  date: string;
-  event: string;
-  title: string;
-  body: string;
-  "word count": number;
-  dialog: (
-    | {
-      Billy: string;
-    }
-    | {
-      Kerry: string;
-    }
-    | {
-      Meg: string;
-    }
-    | {
-      Lui: string;
-    }
-  )[];
-  quiz: {
-    question: string;
-    options: string[];
-    answer: number;
-  }[];
-  descriptions?: {
-    keywords?: string[];
-    grammar?: {
-      patterns?: {
-        pattern: string;
-        usage: string[];
-        explanation: string;
-        words: {
-          S?: string[];
-          V?: string[];
-          O?: string[];
-          C?: string[];
-          M?: string[];
-        }[];
-      }[];
-      vocabularies?: {
-        word: string;
-        usage: string[];
-        pronounce: string;
-        meanings: {
-          class: string;
-          meaning: string;
-          example: string;
-        }[];
-      }[];
-    };
-  };
-};
 
 function Grammar(
   { grammar }: {
@@ -112,7 +59,17 @@ function Grammar(
                     <h4 className={"inline"}>[Vocabularies]</h4>
                   </summary>
                   {grammar.vocabularies?.map(
-                    ({ word, pronounce, meanings, usage }, pIdx) => {
+                    (
+                      {
+                        word,
+                        class: wordClass,
+                        pronounce,
+                        usage,
+                        meaning,
+                        example,
+                      },
+                      pIdx,
+                    ) => {
                       return (
                         <>
                           <div
@@ -151,27 +108,21 @@ function Grammar(
                                   ))}
                                 </ul>
                               </dd>
-                              {meanings.map((meaning, mIdx) => (
-                                <>
-                                  <dd
-                                    key={`v${pIdx}-${mIdx}-class`}
-                                    className={"ml-4"}
-                                  >
-                                    {meaning.class}
-                                  </dd>
-                                  <dd
-                                    key={`v${pIdx}-${mIdx}-meaning`}
-                                    className={"ml-4"}
-                                  >
-                                    <p className={"pl-4"}>
-                                      {meaning.meaning}
-                                    </p>
-                                    <p className={"notranslate italic pl-4"}>
-                                      {meaning.example}
-                                    </p>
-                                  </dd>
-                                </>
-                              ))}
+                              <dd
+                                className={"ml-4"}
+                              >
+                                {wordClass}
+                              </dd>
+                              <dd
+                                className={"ml-4"}
+                              >
+                                <p className={"pl-4"}>
+                                  {meaning}
+                                </p>
+                                <p className={"notranslate italic pl-4"}>
+                                  {example}
+                                </p>
+                              </dd>
                             </dl>
                           </div>
                         </>

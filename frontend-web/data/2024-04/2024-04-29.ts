@@ -1,103 +1,87 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "The Scream was stolen from the National Gallery in Oslo",
+    "details":
+      "On April 29th, 1993, Edvard Munch's iconic masterpiece 'The Scream' was stolen from the National Gallery in Oslo, Norway. The thief left a note claiming responsibility and demanding that the museum pay them 840,000 Norwegian kroner (approximately $108,000 USD) to return the artwork.",
+  },
   "date": "2024-04-29",
-  "event": "The invention of the World Wide Web",
-  "title": "The Day The Internet Came Alive!",
+  "title": "The Mysterious Disappearance of The Scream",
   "body":
-    "It was a typical day in April, but little did anyone know that something extraordinary was about to happen. As the clock struck midnight, a young computer scientist named Tim Berners-Lee flipped a switch and sent the first message over the newly created World Wide Web. Suddenly, the computer screens around the world lit up with a bright blue glow. People gasped in amazement as they saw their emails, websites, and chats for the first time. From that day on, the web quickly became an integral part of our daily lives. We could now communicate with people all over the world, share information instantly, and even shop online from the comfort of our own homes. The World Wide Web had changed everything. It was a new era of connectedness and global communication that would forever alter the way we live, work, and interact with one another.",
-  "word count": 146,
+    "In the steam-powered city of Oslo, Norway, the most celebrated painting in the world, 'The Scream' by Edvard Munch, had gone missing from the National Gallery. The people of Oslo were in shock as the news spread like wildfire. A few days later, a note was found on the empty wall where the painting once hung, claiming responsibility for the theft and demanding an exorbitant sum in exchange for its return.As the city's most renowned detective, Viktor, began his investigation, he quickly realized that this was no ordinary art heist. The note was written in a strange, otherworldly script, suggesting a connection to the city's underground steam-powered community, where the line between technology and magic often blurred. With the help of his loyal assistant, Elise, Viktor delved into the darker corners of Oslo, uncovering a web of secrets that threatened not only the safety of 'The Scream' but also the very essence of the city itself.",
+  "word count": 156,
   "dialog": [
     {
       "Billy":
-        "I'm still trying to wrap my head around this World Wide Web thing. How can something be so powerful and yet invisible?",
+        "Wow, I never thought about art being connected to magic! It's like Edvard Munch was tapping into some kind of mystical energy.",
     },
     {
       "Kerry":
-        "Dude, it's like a magic portal that connects everyone! Imagine being able to talk to someone in another country just by clicking on their name",
+        "Totally! And that weird script on the note is definitely not from any human language I've seen. Maybe it's a code or something?",
     },
     {
       "Meg":
-        "I love how the novel describes the World Wide Web as 'a new era of connectedness and global communication'. It sounds like a whole new world opened up!",
+        "I think it's more than just a code... I mean, have you read Munch's notes about the painting? He said it was inspired by his own dark emotions and fears. What if that note is somehow connected to the same kind of emotional energy?",
     },
     {
       "Lui":
-        "Ah, yes. The World Wide Web has certainly revolutionized the way we communicate and access information. But let's not forget its potential to shape our understanding of history and culture.",
-    },
-    {
-      "Billy":
-        "Exactly! I'm excited to learn more about how this new technology is changing the way historians do their job",
-    },
-    {
-      "Kerry":
-        "Yeah, and maybe we can even use it to help us with our own projects! Like, imagine being able to research and gather information from all over the world for a school project",
-    },
-    {
-      "Meg":
-        "I'm so down for that! Maybe we can even collaborate on a project using this new technology",
-    },
-    {
-      "Lui":
-        "Now, now, let's not get ahead of ourselves. We need to make sure we understand the implications and responsibilities that come with this powerful tool.",
+        "Now hold on, kids. Let's not get ahead of ourselves here. We don't know what kind of secrets are hidden in this city yet. But I do think we should look into the history of Oslo and see if there are any clues about that script.",
     },
   ],
   "quiz": [
     {
-      "question":
-        "What was the event that marked the beginning of a new era in communication?",
+      "question": "What was stolen from the National Gallery in Oslo?",
       "options": [
-        "The invention of email",
-        "The creation of the World Wide Web",
-        "The launch of the first social media platform",
-        "A significant scientific discovery",
-        "A major global event",
+        "The Mona Lisa",
+        "The Scream",
+        "Guernica",
+        "Starry Night",
       ],
       "answer": 1,
     },
     {
       "question":
-        "What was one of the key features of the World Wide Web, as described in the novel?",
+        "Who is the city's most renowned detective mentioned in the text?",
       "options": [
-        "It allowed people to shop online from their homes",
-        "It enabled instant communication with anyone globally",
-        "It was a platform for sharing information only",
-        "It connected people through email only",
-        "It was invisible",
+        "Billy",
+        "Kerry",
+        "Viktor",
+        "Lui",
       ],
-      "answer": 1,
+      "answer": 2,
     },
     {
       "question":
-        "According to the dialogue, what is one of the potential benefits of using the World Wide Web?",
+        "What do Billy and Kerry suggest about the strange script on the note?",
       "options": [
-        "It allows people to communicate with anyone globally",
-        "It enables instant shopping from anywhere",
-        "It helps historians do their job more efficiently",
-        "It facilitates collaboration on projects",
-        "All of the above",
+        "It's a code",
+        "It's a human language",
+        "It's connected to emotional energy",
+        "It's not important",
       ],
-      "answer": 3,
+      "answer": 2,
     },
     {
-      "question": "Who is credited with creating the World Wide Web?",
+      "question": "Who is Viktor's loyal assistant mentioned in the text?",
       "options": [
-        "Tim Berners-Lee",
-        "Steve Jobs",
-        "Bill Gates",
-        "Mark Zuckerberg",
-        "Al Gore",
+        "Elise",
+        "Meg",
+        "Lui",
+        "Billy",
       ],
       "answer": 0,
     },
     {
       "question":
-        "What was Billy trying to understand about the World Wide Web?",
+        "What did Edvard Munch say inspired his painting 'The Scream'?",
       "options": [
-        "Its impact on global communication",
-        "Its potential to shape our understanding of history and culture",
-        "How it changed daily life",
-        "Its connection to email",
-        "Its role in shaping our understanding of the world",
+        "His own emotions and fears",
+        "A trip to Paris",
+        "A dream he had",
+        "A book he read",
       ],
-      "answer": 1,
+      "answer": 0,
     },
   ],
 };
+export default data;

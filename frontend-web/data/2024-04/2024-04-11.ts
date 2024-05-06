@@ -1,95 +1,107 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "Woodstock Music & Art Fair",
+    "details":
+      "A three-day music festival held on August 15-17, 1969, on a dairy farm in Bethel, New York, featuring performances by Jimi Hendrix, Janis Joplin, The Who, and many others.",
+  },
   "date": "2024-04-11",
-  "event": "April 11th, 1680 - The Great Fire of London",
-  "title": "The Secret World Beneath the Thames",
+  "title": "The Bethel Horror",
   "body":
-    "In a world hidden beneath the waters of the River Thames, lived a group of tiny magical creatures known as the Nix. On April 11th, the day after the Great Fire of London, their home was in grave danger as humans tried to drain the river to put out the flames. The Nix, led by a brave young creature named Kael, must rally their friends and use their magic to protect their home from destruction. Along the way, they meet a human boy named Jack who helps them on their quest. Together, they discover that the Nix have the power to control water and use it to put out the fire and save their world.",
-  "word count": 115,
+    "It was August 15-17, 1969, and a group of people had gathered on a dairy farm in Bethel, New York, for the Woodstock Music & Art Fair. The festival was meant to be a celebration of peace, love, and music, but something sinister lurked beneath the surface.As night fell over the festival grounds, strange occurrences began to take place. People reported seeing figures lurking in the shadows, whispering eerie phrases like 'join us' and 'never-ending'. The music stopped abruptly at midnight, and a deafening silence fell over the crowd.Suddenly, the sky turned a sickly green color and the ground began to shake violently. People ran for cover as the earth split open and monstrous creatures emerged from the depths of the earth. The festival-goers were picked off one by one, their screams echoing through the night.By morning, only a handful of survivors remained. They emerged from their hiding spots to find the festival grounds littered with bodies and covered in blood. The horror had come to Bethel, leaving a trail of carnage in its wake.",
+  "word count": 175,
   "dialog": [
     {
       "Billy":
-        "Wow, this novel sounds amazing! A group of magical creatures trying to save their home from destruction?",
-    },
-    {
-      "Kerry":
-        "Yeah, I know right? The Nix are so cool! And the way they use water magic to put out the fire is genius!",
+        "I'm still trying to wrap my head around what happened at Woodstock. I mean, monsters emerging from the earth? It's like something out of a science fiction movie!",
     },
     {
       "Meg":
-        "I love how imaginative the author is! The world beneath the River Thames sounds like a dream come true. Can you imagine living among mermaids and sea creatures?",
+        "Exactly! And don't even get me started on the eerie green sky and the way the music just stopped. It was so creepy!",
+    },
+    {
+      "Kerry":
+        "I know, right? I was totally freaked out when the ground started shaking. But what really gets me is how quickly things went from peace-loving hippies to total chaos.",
     },
     {
       "Lui":
-        "Now, now, let's not get ahead of ourselves. While the story has its fantastical elements, it also explores themes of community and cooperation. The Nix working together to save their home is quite inspiring.",
+        "As a historian, I have to say that this novel raises some interesting questions about the power of fear and the consequences of unchecked emotions. I mean, think about it - the festival-goers were initially celebrating peace and love, but then things took a dark turn...",
     },
     {
       "Billy":
-        "Exactly! And I love how Jack, the human boy, helps them out. It's great to see people from different worlds coming together to achieve a common goal.",
-    },
-    {
-      "Kerry":
-        "Yeah, and who knows? Maybe we can learn something about teamwork from the Nix!",
+        "Yeah, and what really gets me is how the novel leaves us wondering what happened to the survivors after the fact. Did they get rescued? Did they have to fend for themselves? The lack of closure is really haunting.",
     },
     {
       "Meg":
-        "I think that's what I love most about this story - it shows us that even in the face of adversity, there's always hope. And a little bit of magic never hurts!",
+        "I know I wouldn't want to be stuck in a world where monsters are roaming free! Can you imagine having to live with that kind of fear every day?",
+    },
+    {
+      "Kerry":
+        "And what about the government's role in all this? Were they aware of the supernatural events unfolding at Woodstock, or did they just cover it up?",
     },
     {
       "Lui":
-        "Well said, Meg. It's a reminder that we all have the power to make a difference, no matter how small our actions may seem.",
+        "Those are all excellent questions. As a teacher, I'd love to explore these themes and ideas with my students. It's a great opportunity for critical thinking and analysis.",
     },
   ],
   "quiz": [
     {
-      "question":
-        "What was happening above the River Thames when the Nix's home was in danger?",
+      "question": "What was the purpose of the Woodstock Music & Art Fair?",
       "options": [
-        "A fire was burning",
-        "It was a sunny day",
-        "The river was flooding",
-        "There was a storm",
-      ],
-      "answer": 0,
-    },
-    {
-      "question": "Who helps the Nix on their quest to save their home?",
-      "options": [
-        "Kael's friend, Finley",
-        "A human boy named Jack",
-        "The River Thames itself",
-        "No one, they do it alone",
+        "A celebration of war",
+        "A festival of peace, love, and music",
+        "An event to raise awareness about environmental issues",
+        "A competition for musicians",
+        "A party for politicians",
       ],
       "answer": 1,
     },
     {
-      "question": "What is special about the Nix's magic?",
+      "question": "What happened to the crowd at midnight during the festival?",
       "options": [
-        "They can talk to fish",
-        "They have super strength",
-        "They control water",
-        "They are invisible",
+        "The music got louder",
+        "The music stopped abruptly",
+        "The lights went out",
+        "The performers took a break",
+        "The festival-goers started dancing",
+      ],
+      "answer": 1,
+    },
+    {
+      "question":
+        "What did the survivors find when they emerged from their hiding spots in the morning?",
+      "options": [
+        "A peaceful crowd enjoying the music",
+        "A mess of trash and debris",
+        "Bodies and blood on the ground",
+        "The festival grounds were empty",
+        "The performers had left",
       ],
       "answer": 2,
     },
     {
-      "question": "Why do the humans try to drain the river?",
+      "question": "What was Lui, a historian, discussing about the novel?",
       "options": [
-        "To make a new canal",
-        "To build a bridge",
-        "To put out a fire",
-        "To catch fish",
+        "The power of love",
+        "The impact of music",
+        "The consequences of unchecked emotions",
+        "The importance of government intervention",
+        "The role of media",
+      ],
+      "answer": 2,
+    },
+    {
+      "question":
+        "What did Kerry mention as one of her concerns about the events at Woodstock?",
+      "options": [
+        "The noise level was too high",
+        "The crowd was getting too rowdy",
+        "The ground started shaking violently",
+        "The music stopped suddenly",
+        "The monsters emerged",
       ],
       "answer": 3,
     },
-    {
-      "question": "What is one of the themes explored in this story?",
-      "options": [
-        "Competition and rivalry",
-        "Community and cooperation",
-        "Loneliness and isolation",
-        "Revenge and retaliation",
-      ],
-      "answer": 1,
-    },
   ],
 };
+export default data;

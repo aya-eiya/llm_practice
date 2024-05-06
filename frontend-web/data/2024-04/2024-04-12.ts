@@ -1,99 +1,110 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "First public demonstration of the Telephone",
+    "details":
+      "Alexander Graham Bell demonstrated his telephone invention to a group of reporters and investors at Brantford, Ontario, Canada",
+  },
   "date": "2024-04-12",
-  "event": "Discovery of DNA structure",
-  "title": "The Secret of Life",
+  "title": "The Dawn of Telecommunication",
   "body":
-    "In a small village deep in the countryside, there lived a curious boy named Max. He loved to explore the world around him and always asked questions about everything he saw. One day, while wandering through the woods, Max stumbled upon an old book that was hidden among the trees. It was a book about science and the wonders of the natural world. As Max flipped through the pages, his eyes landed on a chapter about DNA - the building blocks of all living things. He read on to learn more about this mysterious structure that held the key to life itself. With newfound excitement, Max set out on a quest to uncover the secrets of DNA and how it worked. He scoured the village for information and even traveled to distant places to meet with scientists who were studying DNA. After many months of research, Max finally cracked the code and discovered that DNA was the key to unlocking the mysteries of life. The villagers celebrated Max's discovery and he became a hero in the eyes of all. From that day on, Max dedicated his life to sharing his knowledge with others and inspiring the next generation of scientists to explore the wonders of the natural world.",
-  "word count": 208,
+    "It was a moment that changed the world forever. The year was 1876 and the setting was a small workshop in Brantford, Ontario, Canada. A group of curious onlookers had gathered to witness the first public demonstration of the telephone, an invention by Alexander Graham Bell.  As Bell stood before them, he picked up the receiver and spoke into it. The crowd listened in amazement as they heard his voice echoing through the wires. It was a magical moment that marked the beginning of telecommunication.  From that day on, the telephone became an essential tool for communication. It revolutionized the way people interacted with each other, allowing them to connect from great distances and share their lives in real-time. The invention of the telephone paved the way for modern telecommunications, leading to advancements in technology and connecting the world like never before.",
+  "word count": 142,
   "dialog": [
     {
       "Billy":
-        "Guys, I just finished reading this amazing novel about a boy named Max who discovers the secrets of DNA! It's so inspiring!",
-    },
-    {
-      "Kerry":
-        "Whoa, that sounds like some serious science-y stuff! What did you think of it, Billy?",
-    },
-    {
-      "Billy":
-        "I loved it! The way Max was curious and kept asking questions really resonated with me. And the way he went on a quest to learn more about DNA was so cool!",
-    },
-    {
-      "Meg":
-        "Ooh, I love books that make you feel like you can achieve anything if you just keep learning! Did Max have any obstacles or challenges along the way?",
-    },
-    {
-      "Billy":
-        "Yeah, there were definitely some tough moments. But what I loved was how he didn't give up and kept pushing forward despite the setbacks.",
+        "I never thought I'd be so fascinated by a story about the invention of the telephone! Can anyone tell me why it's such an important part of history?",
     },
     {
       "Lui":
-        "Ah, yes, perseverance is a valuable lesson indeed. As an educator, I always try to instill those kinds of values in my students. Billy, did you think the novel did a good job of explaining complex scientific concepts in an accessible way?",
-    },
-    {
-      "Billy":
-        "Absolutely! The author did a great job of making DNA and genetics easy to understand, even for someone like me who's not a scientist.",
+        "Well, Billy, it's because the telephone revolutionized communication. It enabled people to connect with each other instantly, no matter where they were in the world.",
     },
     {
       "Kerry":
-        "Yeah, I was impressed too. I mean, it's not every day you read about something as complex as DNA in a way that makes sense!",
+        "Yeah, and it was like a magic trick! People could hear each other's voices coming out of thin air!",
     },
     {
       "Meg":
-        "I know what you mean! Sometimes I get so caught up in the fantastical elements of books that I forget about the real-world applications. This book was a great reminder that science and imagination can go hand-in-hand.",
+        "I love how the novel highlighted the importance of innovation and perseverance. Bell didn't give up when faced with challenges, and look what happened!",
+    },
+    {
+      "Lui":
+        "Exactly, Meg. The story shows us that even the most seemingly impossible ideas can become reality if we stay committed and work hard.",
+    },
+    {
+      "Kerry":
+        "I also like how it showed how technology can bring people together. I mean, my grandma lives in another country, but with a phone call, I can talk to her whenever I want!",
+    },
+    {
+      "Billy":
+        "That's so cool, Kerry! And it makes me think about all the other ways technology has changed our world.",
+    },
+    {
+      "Meg":
+        "I'm just glad I got to learn more about this amazing piece of history. It's really inspiring!",
     },
   ],
   "quiz": [
     {
-      "question": "What did Max find hidden among the trees?",
+      "question":
+        "What was the year when Alexander Graham Bell demonstrated the first public telephone?",
       "options": [
-        "A book about science",
-        "A map of the village",
-        "A treasure chest",
-        "An old key",
-      ],
-      "answer": 0,
-    },
-    {
-      "question": "Why was Max inspired to learn more about DNA?",
-      "options": [
-        "Because it was part of a school assignment",
-        "Because he wanted to unlock the secrets of life",
-        "Because his friends were studying it",
-        "Because it was related to medicine",
+        "1874",
+        "1876",
+        "1880",
+        "1895",
+        "1900",
       ],
       "answer": 1,
     },
     {
-      "question": "What did Max become in the eyes of the villagers?",
+      "question":
+        "Where did Alexander Graham Bell demonstrate the first public telephone?",
       "options": [
-        "A hero",
-        "An outcast",
-        "A teacher",
-        "A scientist",
+        "New York City",
+        "Brantford, Ontario, Canada",
+        "London, UK",
+        "Paris, France",
+        "Tokyo, Japan",
       ],
-      "answer": 0,
-    },
-    {
-      "question": "Who was Billy talking to about the novel?",
-      "options": [
-        "Kerry and Meg",
-        "Lui and Meg",
-        "Billy's friends at school",
-        "The author of the book",
-      ],
-      "answer": 0,
+      "answer": 1,
     },
     {
       "question":
-        "What did Billy think of the way the novel explained DNA and genetics?",
+        "What was a significant impact of the invention of the telephone?",
       "options": [
-        "He found it too complicated",
-        "He thought it was boring",
-        "He loved how it made complex concepts easy to understand",
-        "He didn't care about the science",
+        "It made music more popular",
+        "It revolutionized communication",
+        "It increased food production",
+        "It improved transportation",
+        "It reduced energy consumption",
+      ],
+      "answer": 1,
+    },
+    {
+      "question":
+        "Who highlighted the importance of innovation and perseverance in the story?",
+      "options": [
+        "Billy",
+        "Lui",
+        "Meg",
+        "Kerry",
+        "Alexander Graham Bell",
+      ],
+      "answer": 3,
+    },
+    {
+      "question":
+        "What was a magical moment that marked the beginning of telecommunication?",
+      "options": [
+        "The invention of the computer",
+        "The first moon landing",
+        "The demonstration of the telephone",
+        "The discovery of electricity",
+        "The creation of the internet",
       ],
       "answer": 2,
     },
   ],
 };
+export default data;

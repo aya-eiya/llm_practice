@@ -1,98 +1,110 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "First African American Student Admitted to University",
+    "details":
+      "On April 23, 1896, John McCray became the first African American student admitted to the University of Missouri. This milestone marked a significant step towards racial integration in higher education.",
+  },
   "date": "2024-04-03",
-  "event": "Boston Tea Party",
-  "title": "The Great Tea Sale",
+  "title": "A Trailblazer's Journey",
   "body":
-    "In this fun and exciting adventure, a group of young rebels discover that the king has been stealing their tea and decide to take action. With the help of some magical creatures, they set out on a journey to stop the tea theft once and for all! But will they be able to save their beloved tea from being stolen again? Find out in this exciting adventure!",
-  "word count": 67,
+    "It was a momentous day in April 1896 when John McCray, a young African American man, made history by becoming the first student of his race to be admitted to the University of Missouri. Despite facing discrimination and prejudice, John had always dreamed of pursuing higher education and making a difference in the world.Determined to prove that he was just as capable as any other student, John worked tirelessly to excel academically and socially. He quickly became a role model for other African American students who were also fighting for their right to an education.As John navigated through the challenges of being a minority in a predominantly white institution, he faced many obstacles but never lost his determination. His perseverance paid off when he graduated with honors and went on to become a successful lawyer, dedicating his life to advocating for civil rights and racial equality.John's legacy continues to inspire future generations of African American students who strive to break down barriers and achieve their dreams.",
+  "word count": 166,
   "dialog": [
     {
       "Billy":
-        "I'm so excited to start this adventure! Who else loves tea as much as we do?",
-    },
-    {
-      "Kerry":
-        "Totally! I mean, what's not to love? It's like, the ultimate comfort drink. But seriously though, have you guys noticed how weird it is that the king has been stealing our tea?",
-    },
-    {
-      "Meg":
-        "Oh yeah! I was so upset when I found out. It's like, our culture and traditions are being stolen right from under our noses! We can't let him get away with this!",
+        "Wow, I loved the story about John McCray! It's amazing what he accomplished despite all the obstacles.",
     },
     {
       "Lui":
-        "Now hold on just a minute, kids. Let's not jump to conclusions. What evidence do we have that the king is actually stealing our tea?",
+        "Indeed, John's determination and perseverance are an inspiration. His legacy continues to inspire future generations.",
+    },
+    {
+      "Kerry":
+        "I know, right? It's crazy how much prejudice and discrimination people faced back then. But I guess it's also true that we've made progress since then.",
+    },
+    {
+      "Meg":
+        "Absolutely! The novel shows us that even in the face of adversity, people can make a difference. And John's story is so powerful because he didn't give up.",
+    },
+    {
+      "Lui":
+        "That's right, Meg. We have to keep working towards equality and justice. As educators, we play a crucial role in shaping young minds and inspiring them to make a positive impact.",
     },
     {
       "Billy":
-        "Well, I was talking to Mrs. Jenkins, and she said that she saw the king's guards sneaking into the village at night with big baskets of tea leaves. And then there are all these rumors about how he's using it for some kind of dark magic...",
+        "I love how the novel highlights John's academic achievements. It shows that with hard work and dedication, anyone can succeed, regardless of their background.",
     },
     {
       "Kerry":
-        "Dark magic? That sounds like something out of a fantasy novel! But seriously, we can't just sit back and let him get away with this. We need to take action!",
+        "Yeah, it's cool to see how John became a role model for other African American students who were fighting for their right to an education.",
     },
     {
       "Meg":
-        "I'm so down for that! I've been reading about all these magical creatures that live in the forest nearby. Maybe we could enlist their help?",
+        "And I think the novel also emphasizes the importance of mentorship. Lui, as a veteran educator, has been a great role model for us too.",
     },
     {
       "Lui":
-        "Now, hold on just a minute, kids. Let's not get ahead of ourselves. We need to come up with a solid plan before we start taking action.",
+        "Thank you, Meg. It's our responsibility to guide and support students like John McCray who are breaking barriers and making history.",
     },
   ],
   "quiz": [
     {
-      "question": "What is the main concern of the group of young rebels?",
+      "question":
+        "What was significant about John McCray's admission to the University of Missouri?",
       "options": [
-        "The king's dark magic",
-        "The king's guards stealing their tea",
-        "Their village being destroyed",
-        "Their culture and traditions being stolen",
+        "He was a white student",
+        "He was the first African American student",
+        "He graduated with honors",
+        "He became a successful lawyer",
+        "He advocated for civil rights",
+      ],
+      "answer": 1,
+    },
+    {
+      "question": "What did John McCray work tirelessly to excel in?",
+      "options": [
+        "Academically and socially",
+        "Only academically",
+        "Only socially",
+        "In sports",
+        "In music",
+      ],
+      "answer": 0,
+    },
+    {
+      "question": "What was the outcome of John's perseverance?",
+      "options": [
+        "He dropped out of school",
+        "He graduated with honors",
+        "He became a successful lawyer",
+        "He never achieved his goals",
+        "He got married and had kids",
       ],
       "answer": 2,
     },
     {
-      "question":
-        "Why are the young rebels upset about the king stealing their tea?",
+      "question": "Who did John become a role model for?",
       "options": [
-        "Because they like a different type of drink",
-        "Because it's part of their culture and traditions",
-        "Because they don't want to share with others",
-        "Because they think it's not worth the effort",
+        "Only white students",
+        "Only African American students",
+        "Other minority students",
+        "All students regardless of race",
+        "No one",
       ],
       "answer": 1,
     },
     {
-      "question":
-        "What does Billy have proof about regarding the king stealing tea?",
+      "question": "What was emphasized in the novel about John's story?",
       "options": [
-        "He saw the king drinking tea in secret",
-        "Mrs. Jenkins told him that she saw the king's guards sneaking into the village",
-        "The king admitted to it himself",
-        "There is no proof",
+        "His athletic achievements",
+        "His academic struggles",
+        "His determination and perseverance",
+        "His social life",
+        "His family background",
       ],
-      "answer": 1,
-    },
-    {
-      "question":
-        "What do the young rebels want to do with the magical creatures they've read about?",
-      "options": [
-        "Use them for dark magic",
-        "Enlist their help in stopping the king's tea theft",
-        "Keep them as pets",
-        " Ignore them",
-      ],
-      "answer": 1,
-    },
-    {
-      "question":
-        "What is Lui cautioning the group to do before taking action?",
-      "options": [
-        "To jump into action without a plan",
-        "To come up with a solid plan",
-        "To give up and forget about the tea theft",
-        "To ask for help from the king",
-      ],
-      "answer": 1,
+      "answer": 2,
     },
   ],
 };
+export default data;

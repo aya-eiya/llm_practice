@@ -1,101 +1,101 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "Eames Lounge Chair and Ottoman Introduction",
+    "details":
+      "The Eames Lounge Chair and Ottoman was introduced to the public for the first time at the Museum of Modern Art (MoMA) in New York City on April 5, 1956. The chair was designed by Charles and Ray Eames, and its introduction marked a significant moment in the history of modern design.",
+  },
   "date": "2024-04-05",
-  "event": "Discovery of penicillin",
-  "title": "The Magic Pill",
+  "title": "The Eames Lounge Chair and Ottoman: A Magical Novel",
   "body":
-    "In a world where illnesses were rampant and deadly, the discovery of penicillin changed everything. On April 5th, a humble scientist named Alexander Fleming made a remarkable discovery in his laboratory. He noticed that a mold growing on one of his petri dishes was killing bacteria, which he later identified as penicillin. The news of this discovery spread like wildfire and people started to wonder if it could be used to cure diseases.As the days passed, the world began to change. Doctors and scientists worked tirelessly to find new ways to use this miracle drug. Hospitals were filled with patients who had once been deemed incurable. Families rejoiced as their loved ones were cured of deadly illnesses.The magic pill had finally arrived! And so, on April 5th, the world celebrated the discovery of penicillin and the hope it brought for a healthier future.",
-  "word count": 143,
+    "Once upon a time in a bustling city, there was a special chair that held a magical power. This chair, known as the Eames Lounge Chair and Ottoman, had been kept hidden from the world for years. It was designed by a brilliant couple, Charles and Ray Eames, who had spent countless hours perfecting its every detail.  The chair finally made its debut at the Museum of Modern Art (MoMA) in New York City on April 5, 1956. As soon as it was unveiled to the public, people were drawn to it like a moth to a flame. They couldn't resist sitting down and feeling its unique comfort.  As they sat, they were transported to another world, one filled with creativity, innovation, and endless possibilities. The chair had a magical power that inspired people to think differently, to challenge the norms of design, and to create something truly extraordinary. And so, the Eames Lounge Chair and Ottoman became more than just a piece of furniture; it became a symbol of modern design and a beacon for creativity and innovation.",
+  "word count": 179,
   "dialog": [
     {
       "Billy":
-        "Wow, can you believe it? Penicillin was discovered just by accident! I mean, who would have thought that a mold could be so powerful?",
-    },
-    {
-      "Kerry":
-        "Ha! Yeah, my mom always says that the best inventions come from mistakes. I'm surprised it took so long to discover it though. I mean, people were dying left and right from infections.",
+        "I loved how the chair inspired people to think differently! It's like it had a magic power that brought out their creativity.",
     },
     {
       "Meg":
-        "I love how science can be like a big adventure. I bet Alexander Fleming was just as excited as we are now when he made that discovery! Did you know that there's even a mold named after him now?",
+        "Exactly, Billy! The way the chair transported people to another world is just amazing. I can imagine myself sitting in it and feeling so inspired.",
+    },
+    {
+      "Kerry":
+        "Yeah, but what about the design of the chair itself? Charles and Ray Eames did an incredible job. It's like they knew exactly what they were doing.",
     },
     {
       "Lui":
-        "That's right, Meg. And it's amazing to think about all the lives that were changed because of that one discovery. As a history teacher, I like to emphasize how science and medicine have come so far in just a few centuries.",
+        "As a teacher, I appreciate how the novel highlights the importance of creativity and innovation in education. We should definitely incorporate more projects that encourage students to think outside the box.",
     },
     {
       "Billy":
-        "Yeah, it's crazy to think about how much more we can do now compared to even 50 years ago. And it's all thanks to people like Fleming who were willing to take risks and try new things.",
-    },
-    {
-      "Kerry":
-        "Totally! I mean, what if someone had just thrown that mold away instead of studying it? We might not have penicillin today!",
+        "I agree with you, Lui! And it's not just about being creative, but also about taking risks and challenging norms. The chair shows us that even seemingly ordinary things can have extraordinary effects.",
     },
     {
       "Meg":
-        "Shudder at the thought! But I'm glad we do have penicillin now. It's so cool to think about how many more discoveries are waiting for us out there.",
+        "I think what I loved most was how the novel showed that creativity is not limited to artists or designers. Anyone can be creative and make a difference.",
     },
     {
-      "Lui":
-        "Absolutely, Meg. And who knows? Maybe one of you will make a groundbreaking discovery that changes the world just like Fleming did.",
+      "Kerry":
+        "Yeah, and it's cool that the chair has become a symbol of modern design and innovation. We should totally go see it at MoMA when we're in New York City!",
     },
   ],
   "quiz": [
     {
-      "question": "When was penicillin discovered?",
+      "question": "What was special about the Eames Lounge Chair and Ottoman?",
       "options": [
-        "April 5th",
-        "January 1st",
-        "December 31st",
-        "February 14th",
-        "March 21st",
+        "It had a magical power",
+        "It was designed by Charles and Ray Eames",
+        "It was displayed at MoMA",
+        "It was only for artists",
+        "It was very expensive",
       ],
       "answer": 0,
     },
     {
-      "question": "Who made the discovery of penicillin?",
+      "question": "What did the chair transport people to?",
       "options": [
-        "Alexander Fleming",
-        "Billy",
-        "Kerry",
-        "Meg",
-        "Lui",
+        "Another world",
+        "The past",
+        "The future",
+        "Their imagination",
+        "Nowhere",
       ],
       "answer": 0,
     },
     {
-      "question": "What was surprising about the discovery of penicillin?",
+      "question": "Who designed the Eames Lounge Chair and Ottoman?",
       "options": [
-        "It was expected to be discovered",
-        "It was discovered by accident",
-        "It was discovered by a famous scientist",
-        "It took a long time to discover",
-        "It wasn't important",
-      ],
-      "answer": 1,
-    },
-    {
-      "question":
-        "What is the name of the mold that penicillin was identified as?",
-      "options": [
-        "Penicillium",
-        "Moldy",
-        "Fleming's Fungus",
-        "Alexander's Mold",
-        "The Magic Mold",
+        "Charles and Ray Eames",
+        "Billy and Meg",
+        "Kerry and Lui",
+        "A team of designers",
+        "No one",
       ],
       "answer": 0,
     },
     {
-      "question":
-        "What is implied to have changed because of the discovery of penicillin?",
+      "question": "What did Billy agree with Lui about the chair?",
       "options": [
-        "The way people think about science",
-        "The lives of many people",
-        "The development of new technology",
-        "The study of medicine",
-        "The creation of new art",
+        "That it was only for artists",
+        "That it had no magical power",
+        "That creativity is not limited to artists or designers",
+        "That it was very expensive",
+        "That it was only a piece of furniture",
       ],
-      "answer": 1,
+      "answer": 2,
+    },
+    {
+      "question": "What did the chair become in the end?",
+      "options": [
+        "A symbol of modern design and innovation",
+        "A piece of art",
+        "A book",
+        "A movie",
+        "Nothing special",
+      ],
+      "answer": 0,
     },
   ],
 };
+export default data;

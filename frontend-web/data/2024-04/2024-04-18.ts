@@ -1,102 +1,105 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "The First Design Council (GDC) Held",
+    "details":
+      "On April 18th, 1944, The First Design Council (GDC) was held in New York City. This event marked the beginning of professional design organizations and brought together leading designers from various fields to discuss the importance of good design.",
+  },
   "date": "2024-04-18",
-  "event": "The World Wide Web was launched on April 18th, 1993",
-  "title": "A Day in the Life of a Web Surfer",
+  "title": "The GDC: A Tale of Design Magic",
   "body":
-    "It was a beautiful day on April 18th. The sun was shining brightly, and the birds were singing their sweet melodies. I woke up feeling happy and excited about what the day had in store for me.I rushed to my computer and turned it on. As the screen lit up, I felt a thrill of anticipation. Today was a special day - the World Wide Web had been launched just one year ago! I couldn't wait to see all the new things that had been added since then.I clicked on my web browser and waited for it to load. Suddenly, a whole new world opened up before me - a world of information at my fingertips. I could learn about anything I wanted, from the latest news to the most obscure facts.As I navigated through the web, I came across all sorts of interesting things. I saw pictures of beautiful places around the world, read articles about the latest discoveries in science and technology, and even found a recipe for my favorite dessert.The more I explored, the more amazed I was by everything that was available on the web. It was like having a library at my fingertips! As I clicked from one link to another, I couldn't help but feel grateful for this incredible invention.But as the day drew to a close, I realized that there was still so much left to discover. The World Wide Web was just getting started, and who knew what exciting new things would be added tomorrow? As I closed my computer and went to bed, I felt happy knowing that I had a whole world of knowledge at my fingertips, waiting for me to explore whenever I wanted.",
-  "word count": 285,
+    "Once upon a time in the bustling city of New York, a group of visionary designers gathered for a grand event called the First Design Council (GDC). The date was April 18th, 1944, and the venue was a majestic building with towering spires reaching towards the sky.  The designers, hailing from various fields of design, arrived with eager anticipation, eager to share their knowledge and passion for good design. They spoke of the beauty that could be achieved through thoughtful consideration of shapes, colors, and textures.  As they spoke, a magical force began to take shape around them. The air was filled with whispers of inspiration and creativity. Ideas flowed like a river, and designs sprang forth as if by magic. The designers were awestruck at the power of their collective imagination.  The GDC had brought together these talented individuals to celebrate the importance of good design. And in doing so, they unlocked the secret of design magic - the power of collaboration and creativity.",
+  "word count": 165,
   "dialog": [
     {
       "Billy":
-        "Wow, can you believe it's already been a year since the World Wide Web was launched? I'm so excited to see all the new things that have been added!",
+        "I loved how the designers came together to create something magical! It reminded me of when my friends and I work on group projects in school.",
     },
     {
       "Kerry":
-        "I know, right? It's like having a superpower at our fingertips! I've already found some awesome websites about space and dinosaurs.",
+        "Yeah, I know what you mean, Billy. But I was more excited about the way the designers used their individual skills to make something amazing. Like how one person brought in some math-y ideas and another brought in some artistic flair.",
     },
     {
       "Meg":
-        "Ooh, I love exploring new places online. Have you guys seen the pictures of the Grand Canyon? It looks so majestic!",
+        "I think what really stood out for me was the idea that good design can bring people together. It's not just about making something look pretty, but about creating a sense of community and connection.",
     },
     {
       "Lui":
-        "Ah, yes, the World Wide Web is an incredible tool for learning and discovery. But we must also be mindful of the responsibility that comes with it.",
-    },
-    {
-      "Billy": "What do you mean, Mr. Lui? How can we use the web responsibly?",
-    },
-    {
-      "Lui":
-        "Well, Billy, with great power comes great accountability. We must ensure that what we put online is accurate and respectful towards others. And always remember to verify sources before sharing information.",
+        "As an educator, I appreciate how the novel highlighted the importance of collaboration and creativity in design. It's a great reminder that our students should be encouraged to think outside the box and work together to solve problems.",
     },
     {
       "Kerry":
-        "That's so true, Mr. Lui! I've already learned about some pretty crazy stuff online, like the time someone posted a fake news article and it got shared thousands of times!",
+        "And it wasn't just about the end result – the process of creating something amazing was just as important! Like when we're building with LEGOs, it's not just about making the final product look cool, but about the journey you take to get there.",
+    },
+    {
+      "Billy":
+        "Exactly! And I loved how the designers were all so passionate and dedicated to their work. It showed that good design requires a lot of heart and soul.",
     },
     {
       "Meg":
-        "Yeah, we have to be careful not to spread misinformation or hurt people's feelings with our words. But at the same time, it's amazing how much good we can do with technology.",
-    },
-    {
-      "Lui":
-        "Exactly, Meg! The World Wide Web has opened up countless opportunities for connection and collaboration. As long as we use it wisely, I have no doubt that we'll make a positive impact on the world.",
+        "I think what I'd like to see next is more exploration of the 'magic' behind the design process. Like, what makes something truly magical or impactful? How can we use those principles in our own lives?",
     },
   ],
   "quiz": [
     {
-      "question": "What was the author feeling on April 18th?",
+      "question":
+        "What was the main event that brought the designers together in the novel?",
       "options": [
-        "excited",
-        "sad",
-        "curious",
-        "happy",
-        "tired",
+        "The GDC: A Tale of Design Magic",
+        "A grand conference",
+        "A group project",
+        "The First Design Council (GDC)",
+        "A magic show",
       ],
-      "answer": 3,
+      "answer": 4,
     },
     {
       "question":
-        "According to Billy, what is amazing about the World Wide Web?",
+        "According to Billy, what did he love about the designers' collaboration?",
       "options": [
-        "it's old-fashioned",
-        "it's like having a superpower at our fingertips!",
-        "it's only for scientists",
-        "it's too slow",
-        "it's not useful",
+        "How they used math- y ideas",
+        "When one person brought in some artistic flair",
+        "The way they came together to create something magical",
+        "Their passion and dedication",
+        "The final product",
+      ],
+      "answer": 2,
+    },
+    {
+      "question":
+        "What did Meg think was the most important aspect of good design?",
+      "options": [
+        "Making something look pretty",
+        "Creating a sense of community and connection",
+        "Using math- y ideas",
+        "Having artistic flair",
+        "Being passionate about it",
       ],
       "answer": 1,
     },
     {
-      "question": "What did Kerry find online about space and dinosaurs?",
+      "question": "What did Lui appreciate about the novel?",
       "options": [
-        "websites about cats",
-        "pictures of the Grand Canyon",
-        "articles about science and technology",
-        "recipes for favorite desserts",
+        "The way it highlighted the importance of collaboration and creativity",
+        "How it showed the power of design magic",
+        "Its magical setting",
+        "Its artistic flair",
+        "Its mathematical concepts",
       ],
-      "answer": 2,
+      "answer": 0,
     },
     {
       "question":
-        "According to Mr. Lui, what is important when using the World Wide Web?",
+        "What did Kerry think was important about the design process?",
       "options": [
-        "to be careless with our words",
-        "to only share funny jokes",
-        "to verify sources and ensure accuracy",
-        "to ignore other people's opinions",
-      ],
-      "answer": 2,
-    },
-    {
-      "question":
-        "What did Meg say about the impact of technology on the world?",
-      "options": [
-        "it's bad",
-        "it's good, but we have to be careful",
-        "it's only for scientists",
-        "it's not useful at all",
+        "The end result only",
+        "The journey you take to get there",
+        "Using math- y ideas",
+        "Having artistic flair",
+        "Being passionate about it",
       ],
       "answer": 1,
     },
   ],
 };
+export default data;

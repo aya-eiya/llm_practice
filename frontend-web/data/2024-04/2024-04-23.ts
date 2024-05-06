@@ -1,96 +1,108 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "First patent for a paper-based computer",
+    "details":
+      "On April 23, 1900, Simon Minot patented the 'Electro-Mechanical Calculator', which was essentially a large mechanical device that used paper tape to store calculations and perform arithmetic operations.",
+  },
   "date": "2024-04-23",
-  "event": "The Great Fire of London",
-  "title": "The Flames of Fate",
+  "title": "The Paper-Based Computer",
   "body":
-    "Once upon a time, on April 23rd, the people of London were enjoying a beautiful day. The sun was shining, and birds were singing in the trees. Suddenly, without warning, flames began to spread from a bakery on Pudding Lane. The people rushed to put out the fire, but it quickly grew out of control. As the flames reached higher and higher, the people realized that their beloved city was in danger. They tried everything they could think of, but nothing seemed to stop the fire. Just when all hope seemed lost, a miracle happened: it started to rain. The rain helped put out the fire, and the people of London were saved. From that day on, the people of London made sure to always have water handy, just in case another fire broke out.",
-  "word count": 135,
+    "In a world where technology had just begun to take off, a young inventor named Simon Minot dreamt of creating a device that could revolutionize the way people computed and worked with numbers. One day, while tinkering in his workshop, Simon stumbled upon an idea: what if he could create a machine that used paper tape to store and perform calculations?With a newfound sense of purpose, Simon set to work on his invention. He spent countless hours experimenting with different mechanisms, testing and retesting until finally, after months of tireless effort, he had created the first paper-based computer.The device was a marvel of engineering, able to perform arithmetic operations with incredible speed and accuracy. Simon's invention quickly gained popularity among business owners and academics, who saw its potential for revolutionizing their industries.But as with all new technologies, there were those who feared what this machine might do. Some believed that it would replace human labor, leaving many workers out of a job. Others worried about the security of the paper tape, fearing that sensitive information could be easily read by anyone with access to the device.Despite these concerns, Simon's invention continued to gain traction, and soon it was being used in offices and universities across the country. It had truly become a magical tool for those who knew how to use it.",
+  "word count": 222,
   "dialog": [
     {
       "Billy":
-        "Wow, I had no idea that the Great Fire of London was so devastating! Did you know that it lasted for four days and destroyed over 13,000 houses?",
+        "I loved how Simon's invention changed the way people worked with numbers. It was like having a superpower!",
     },
     {
       "Kerry":
-        "Whoa, that's crazy! I learned about that fire in school. It's wild how fast fires can spread, especially when people are trying to fight them.",
+        "Yeah, but did you think about all the jobs it might replace? Like, what would happen to all the accountants and bookkeepers?",
     },
     {
       "Meg":
-        "I love how the novel highlights the importance of preparedness and community during times of crisis. The rain was like a miracle!",
+        "Oh, I didn't think of that. But maybe it could create new jobs too? Like, people who maintain the machines or develop new programs for them.",
     },
     {
       "Lui":
-        "Indeed, it's a powerful reminder that even in the darkest moments, there is always hope for recovery. And I'm glad you mentioned the fire lasting four days - it's a great example of how history can inform our understanding of present-day challenges.",
+        "That's a good point, Meg. As an educator, I've seen how technology can both automate tasks and open up new opportunities for students.",
     },
     {
       "Billy":
-        "Exactly! I was thinking about how scientists today are working on ways to predict and prevent natural disasters like fires and hurricanes. It's fascinating to see how far we've come in terms of understanding risk management.",
+        "Exactly! And it was so cool to see Simon's determination pay off after all those months of tinkering. He's such an inspiration!",
     },
     {
       "Kerry":
-        "That's so cool, Billy! I never thought about it that way. But what about the people affected by the fire? How did they recover?",
+        "Yeah, but what about the security concerns? I mean, if anyone can just access the paper tape, that's a major problem.",
     },
     {
       "Meg":
-        "I think it's amazing how resilient humans can be. The novel shows that even in the face of disaster, there is always a chance to rebuild and start anew.",
+        "Good point, Kerry. But maybe they could develop ways to encrypt the information or use passwords to protect it?",
     },
     {
       "Lui":
-        "Absolutely, Meg. And I think that's one of the most important lessons we can take away from this story: that with determination and community, we can overcome even the greatest challenges.",
+        "Actually, Meg, those are some great ideas. As educators, we need to think about how we can prepare students for this kind of technology and ensure it's used responsibly.",
     },
   ],
   "quiz": [
     {
-      "question": "What was the sudden cause of the Great Fire of London?",
+      "question": "What was Simon Minot's dream invention?",
       "options": [
-        "A fire at a bakery on Pudding Lane",
-        "A storm with strong winds",
-        "An earthquake that shook the city",
-        "A flood in the Thames River",
-      ],
-      "answer": 0,
-    },
-    {
-      "question": "What finally put out the Great Fire of London?",
-      "options": [
-        "The people's efforts to fight the fire",
-        "Water from a nearby river",
-        "Rain that fell on the city",
-        "No one knows for sure",
-      ],
-      "answer": 2,
-    },
-    {
-      "question": "How many houses did the Great Fire of London destroy?",
-      "options": [
-        "Over 1,000 houses",
-        "Over 10,000 houses",
-        "Over 13,000 houses",
-        "The exact number is unknown",
-      ],
-      "answer": 2,
-    },
-    {
-      "question":
-        "What was one of the lessons learned from the Great Fire of London?",
-      "options": [
-        "That fires can be predicted and prevented",
-        "That people should always have water handy",
-        "That storms are more destructive than fires",
-        "That cities should not rebuild after a disaster",
+        "A paper airplane",
+        "A machine that uses paper tape to store and perform calculations",
+        "A device that can read minds",
+        "A book that can teach itself",
+        "A computer that can play games",
       ],
       "answer": 1,
     },
     {
       "question":
-        "What is one of the most important lessons that can be taken away from this story?",
+        "What were some of the concerns people had about Simon's invention?",
       "options": [
-        "That even in the darkest moments, there is always hope for recovery",
-        "That scientists are working on ways to predict and prevent natural disasters",
-        "That people should never rebuild after a disaster",
-        "That fires are more destructive than hurricanes",
+        "It would replace human labor",
+        "It would create too many jobs",
+        "It would make accounting easier",
+        "It would not be secure",
+        "It would only work with numbers",
+      ],
+      "answer": 0,
+    },
+    {
+      "question": "What did Billy think about Simon's invention?",
+      "options": [
+        "He was skeptical",
+        "He thought it was amazing",
+        "He didn't care",
+        "He thought it was boring",
+        "He didn't know what to think",
+      ],
+      "answer": 1,
+    },
+    {
+      "question":
+        "What job might be replaced by Simon's invention, according to Kerry?",
+      "options": [
+        "Teacher",
+        "Accountant",
+        "Doctor",
+        "Engineer",
+        "Chef",
+      ],
+      "answer": 1,
+    },
+    {
+      "question":
+        "What did Lui suggest as a way to ensure the security of the paper tape?",
+      "options": [
+        "Using passwords",
+        "Encrypting the information",
+        "Locking it in a safe",
+        "Giving it to someone else",
+        "Tearing it up",
       ],
       "answer": 0,
     },
   ],
 };
+export default data;

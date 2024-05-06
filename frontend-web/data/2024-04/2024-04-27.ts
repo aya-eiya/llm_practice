@@ -1,112 +1,106 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "Starry Night by Vincent van Gogh is completed",
+    "details":
+      "On April 27th, 1889, Vincent van Gogh finished his iconic painting 'The Starry Night' in Arles, France.",
+  },
   "date": "2024-04-27",
-  "event":
-    "On April 27th, 1982, Shoah Foundation was founded by Steven Spielberg. The foundation is dedicated to collecting and preserving video testimonies from survivors and witnesses of the Holocaust.",
-  "title": "The Secret Room",
+  "title": "The Starry Night",
   "body":
-    "One dark and stormy night, Emily and her friends decided to explore the old mansion at the end of their street. As they made their way through the creaky hallways, they stumbled upon a hidden room. The door was locked tight, but with some effort, they managed to pry it open.As soon as they entered the room, they were hit with a strange feeling of dread. The walls were covered in black and white photos of people who had disappeared without a trace. Emily noticed a small notebook on a table, and as she flipped through its pages, she realized that it was filled with names and dates of missing people.Suddenly, the door slammed shut behind them, and they found themselves trapped in the room. They frantically searched for a way out, but all doors and windows were sealed tight. Emily noticed that the name on the notebook matched her own, and she began to suspect that she was one of the missing people.As the minutes ticked by, the room grew colder and darker. Emily could hear whispers and mutterings coming from the walls. She realized that they were not alone in the room, and that the ghosts of the missing people were trying to communicate with her.Just when all hope seemed lost, a faint light appeared in the distance. It grew brighter and brighter until it filled the entire room. As Emily approached the light, she saw a figure standing in front of her. It was an old woman, dressed in a white robe. She told Emily that she had been searching for her for a long time, and that she was not alone.The old woman then took Emily's hand and led her to a door on the other side of the room. As they walked through it, Emily felt a sense of peace wash over her. She knew that she would always remember the secret room and the ghosts who had guided her.",
-  "word count": 325,
+    "In a small village in France, there lived a man named Vincent van Gogh. He was known for his eccentric behavior and unconventional art style. One evening, he sat by the window of his room in an asylum, staring out at the sky. The stars twinkled brightly and inspired him to create something beautiful. Over the next few days, he worked tirelessly on his latest masterpiece, a painting that would come to be known as 'The Starry Night'. As he painted, the colors seemed to bleed onto the canvas, creating swirling patterns that seemed to dance across the sky. When he was finally finished, Vincent knew that he had created something truly magical. The villagers marveled at the beauty of the painting and it became a symbol of hope and inspiration for all who saw it.",
+  "word count": 136,
   "dialog": [
     {
       "Billy":
-        "Dude, have you guys read this novel? It's so creepy! I mean, who writes a story about ghosts and missing people?",
+        "I loved how Vincent van Gogh's art was inspired by the stars! It's amazing to see how something as simple as looking at the sky can spark creativity.",
     },
     {
       "Kerry":
-        "Ha! You're telling me! The way the author describes the old mansion is straight out of a horror movie. I was on the edge of my seat!",
+        "Yeah, I know what you mean. His paintings are so vibrant and expressive. And it's cool that he wasn't afraid to be different and follow his own path.",
     },
     {
       "Meg":
-        "Ooh, I loved the part where Emily finds out she's one of the missing people! It's like, what would you do if you found out your whole life was just a mystery to be solved?",
+        "I loved how Vincent struggled with mental health issues, but still managed to create something beautiful. It shows us that even in difficult times, we can find ways to express ourselves creatively.",
     },
     {
       "Lui":
-        "Ah, yes. The novel does have some...unsettling themes. But I think it's great that the author explores the idea of identity and how our past can shape who we are today.",
+        "That's a great point, Meg. And I think it's also important to note how Vincent's art was ahead of its time. He wasn't afraid to experiment and try new things, which is something we should all strive for.",
     },
     {
       "Billy":
-        "Exactly! And Emily's character development is so cool. She starts out all scared and unsure, but by the end she's like a whole different person.",
+        "I never thought about it that way, Lui. But you're right - Vincent's willingness to take risks and challenge the status quo really paid off in the end.",
     },
     {
       "Kerry":
-        "Yeah, and don't even get me started on the creepy atmosphere! The way the author describes the creaky floorboards and musty smell... it's like you're right there with Emily!",
+        "Totally agree! And I think his art is still inspiring people today. I mean, who wouldn't want to be able to create something as beautiful as 'The Starry Night'?",
     },
     {
       "Meg":
-        "I loved how the ghosts communicated with Emily through whispers and mutterings. It was so eerie but also kind of beautiful?",
+        "Exactly! Art has a way of transcending time and culture. It's amazing to think that Vincent's painting can still bring joy and inspiration to people all these years later.",
     },
     {
       "Lui":
-        "Well, I think what I love most about this novel is how it makes you question reality. Like, are the ghosts real or just a product of Emily's imagination? It's up to the reader to decide.",
-    },
-    {
-      "Billy":
-        "Whoa, that's deep! I never thought about it like that. Maybe we should write our own stories inspired by this novel...",
-    },
-    {
-      "Kerry": "Game on! Let's get writing!",
-    },
-    {
-      "Meg":
-        "Yaaas, I'm so down! We can have a writing party and share our stories with each other!",
+        "Well said, Meg. And I think it's also important to recognize the impact that art can have on our mental health and wellbeing. Vincent's story shows us that creative expression can be a powerful tool for coping with stress and anxiety.",
     },
   ],
   "quiz": [
     {
-      "question":
-        "What did Emily and her friends decide to explore on a dark and stormy night?",
+      "question": "Where did Vincent van Gogh live?",
       "options": [
-        "The old mansion at the end of their street",
-        "A hidden room in the old mansion",
-        "A abandoned building in town",
-        "A mysterious cave",
-        "A secret garden",
+        "France",
+        "Netherlands",
+        "Belgium",
+        "Germany",
+        "Italy",
       ],
       "answer": 0,
     },
     {
-      "question": "What did Emily find out about herself from the notebook?",
+      "question":
+        "What was the inspiration for Vincent's painting 'The Starry Night'?",
       "options": [
-        "She was not missing",
-        "She was one of the missing people",
-        "She was a ghost",
-        "She was a detective",
-        "She was a writer",
+        "A dream he had",
+        "Watching the stars in the sky",
+        "Reading a book on art",
+        "Talking to his friends",
+        "Looking at the sunset",
       ],
       "answer": 1,
     },
     {
-      "question": "Who led Emily to the door on the other side of the room?",
+      "question": "What was Vincent van Gogh known for?",
       "options": [
-        "An old man",
-        "A young woman",
-        "The ghost of one of the missing people",
-        "The old woman in white robe",
-        "No one",
+        "His good looks",
+        "His love of music",
+        "His eccentric behavior and unconventional art style",
+        "His ability to make delicious food",
+        "His talent in sports",
       ],
-      "answer": 3,
+      "answer": 2,
     },
     {
-      "question": "What was Billy's reaction to the novel?",
+      "question": "How did Vincent's art style differ from others?",
       "options": [
-        "He hated it",
-        "He loved it",
-        "He thought it was okay",
-        "He didn't read it",
-        "He was indifferent",
+        "It was more realistic than others",
+        "It was less colorful than others",
+        "It was more expressive and vibrant than others",
+        "It was less detailed than others",
+        "It was more abstract than others",
       ],
-      "answer": 1,
+      "answer": 2,
     },
     {
-      "question": "What theme does the novel explore, according to Lui?",
+      "question": "What is the significance of 'The Starry Night'?",
       "options": [
-        "The importance of friendship",
-        "The power of imagination",
-        "Identity and how our past shapes who we are today",
-        "The dangers of exploration",
-        "The magic of storytelling",
+        "It's a beautiful painting",
+        "It shows Vincent's love for nature",
+        "It represents hope and inspiration for people who see it",
+        "It's a representation of his mental health struggles",
+        "It's just a random artwork",
       ],
       "answer": 2,
     },
   ],
 };
+export default data;

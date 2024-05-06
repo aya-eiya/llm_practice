@@ -1,95 +1,112 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "Guernica's Premiere",
+    "details":
+      "Pablo Picasso's anti-war painting Guernica is first shown to the public at the Spanish Republic's pavilion at the Exposition Internationale des Arts Décoratifs et Industriels Modernes in Paris, France on April 15th, 1937.",
+  },
   "date": "2024-04-15",
-  "event": "The mathematician Johann Gauss was born on April 15th.",
-  "title": "Gauss' Birthday Adventure",
+  "title": "Guernica's Legacy",
   "body":
-    "Once upon a time, in a small town far away, lived a young boy named Johann. He was born on April 15th, the same day as the famous mathematician, Gauss. Unlike Gauss, who was known for his incredible intelligence and mathematical prowess, Johann struggled with math at first. But one day, he discovered a new way of looking at numbers that changed everything. With this new perspective, he began to excel in math and quickly became known as the greatest mathematician of all time. And so, on his birthday, April 15th, we celebrate Johann's incredible journey and the impact he had on the world of mathematics.",
-  "word count": 107,
+    "In a world where steam power had replaced fossil fuels, Europe was embroiled in an industrial war unlike any other. The year was 1897 and the Spanish Republic, once a symbol of peace, now stood as a battlefield for the newest technological advancements - steam-powered tanks and airships.  On April 15th, the premiere of Pablo Picasso's anti-war painting, Guernica, took place at the Exposition Internationale des Arts Décoratifs et Industriels Modernes in Paris, France. The event was more than just an exhibition; it was a call for peace and an end to the senseless destruction wrought by steam power.  The painting depicted the aftermath of a bombing raid on Guernica, Spain, a stark reminder of the horrors of war. As the public viewed the artwork, they were filled with outrage and despair. The message was clear: the advancements in technology had led to unimaginable suffering and devastation.  In response, the world's greatest minds came together to develop new technologies that could harness the power of steam for peaceful purposes. Guernica's legacy lived on, inspiring a movement towards a more peaceful and sustainable future. The painting served as a constant reminder of the dangers of unchecked technological progress and the importance of working towards peace.",
+  "word count": 204,
   "dialog": [
     {
       "Billy":
-        "I just read this amazing novel about a kid named Johann who was actually good at math! Can you believe it?",
-    },
-    {
-      "Kerry":
-        "Whoa, that's crazy! I thought everyone struggled with math until high school. What made him so good?",
-    },
-    {
-      "Meg":
-        "I think what's cool is that he didn't start out being great at math. He had to find a new way of looking at numbers, like you do when you're trying to solve a puzzle in your lab experiments.",
+        "Wow, I never thought about war in this way. The painting really brought it home for me.",
     },
     {
       "Lui":
-        "Ah, yes! Persistence and creativity can take you a long way. Johann's story is an inspiration for students who may not initially grasp certain concepts.",
+        "I agree, Billy. The impact of war on civilians is always devastating. We need to find a way to harness steam power for peaceful purposes.",
+    },
+    {
+      "Kerry":
+        "I'm so sick of seeing these airships and tanks destroying cities! Can't we just make them do something good for once?",
+    },
+    {
+      "Meg":
+        "I think the painting was really powerful, but it also made me realize how much we take peace for granted. We need to appreciate what we have.",
     },
     {
       "Billy":
-        "Exactly! And it's not just about being good at math. He became famous because of his unique perspective on numbers. I wish we could be more like that in our own fields of interest!",
+        "Exactly, Meg! And maybe if we work together, we can find a way to use steam power for good. Like Lui said, harnessing its power could be the key.",
     },
     {
       "Kerry":
-        "I know, right? Imagine if we could make discoveries and innovations as kids, without having to wait until we're adults! That would be awesome.",
-    },
-    {
-      "Meg":
-        "And think about all the possibilities for new stories and characters based on Johann's journey. It's like a math-based superhero origin story!",
+        "Yeah, and maybe we can even use it to help people who've been affected by war. That would be so cool.",
     },
     {
       "Lui":
-        "Ha! Well, I suppose you could say that Johann is a real-life math superhero. His legacy continues to inspire mathematicians and students alike.",
+        "I'm glad you're all thinking critically about this, kids. It's crucial that we find a way to balance technological advancements with the well-being of humanity.",
+    },
+    {
+      "Meg":
+        "I think Guernica's message is clear: we need to work together for peace and sustainability. We can make a difference!",
+    },
+    {
+      "Kerry":
+        "Whoa, Meg, you're like a superhero or something! Saving the world one steam-powered invention at a time!",
     },
   ],
   "quiz": [
     {
-      "question": "What was Johann's initial struggle with?",
+      "question":
+        "What was the year when the industrial war took place in Europe?",
       "options": [
-        "Reading",
-        "Writing",
-        "Math",
-        "Science",
-      ],
-      "answer": 2,
-    },
-    {
-      "question": "What changed everything for Johann when it came to math?",
-      "options": [
-        "He got a tutor",
-        "He practiced every day",
-        "He found a new way of looking at numbers",
-        "He gave up on math",
-      ],
-      "answer": 2,
-    },
-    {
-      "question": "Who is another famous mathematician mentioned in the story?",
-      "options": [
-        "Einstein",
-        "Gauss",
-        "Newton",
-        "Fermat",
-      ],
-      "answer": 1,
-    },
-    {
-      "question": "What is Johann's legacy according to Lui?",
-      "options": [
-        "He became a famous scientist",
-        "He inspired mathematicians and students alike",
-        "He gave up on math",
-        "He didn't have any impact",
+        "1887",
+        "1897",
+        "1902",
+        "1915",
+        "1920",
       ],
       "answer": 1,
     },
     {
       "question":
-        "What do Billy, Kerry, Meg, and Lui agree is inspiring about Johann's story?",
+        "What was the name of Picasso's anti-war painting that premiered in 1897?",
       "options": [
-        "His ability to solve complex math problems",
-        "His perseverance in the face of challenges",
-        "He was good at science",
-        "He found a new way of looking at numbers",
+        "Guernica",
+        "The War of the Worlds",
+        "The Last Supper",
+        "The Starry Night",
+        "Starry Eyes",
+      ],
+      "answer": 0,
+    },
+    {
+      "question": "What was the main theme of Picasso's painting 'Guernica'?",
+      "options": [
+        "Celebration of war",
+        "Commemoration of peace",
+        "Depiction of destruction",
+        "Portrayal of technology",
+        "Expression of art",
       ],
       "answer": 2,
     },
+    {
+      "question":
+        "What was the main idea behind the minds coming together to develop new technologies?",
+      "options": [
+        "To create more powerful war machines",
+        "To find peaceful purposes for steam power",
+        "To improve airship designs",
+        "To increase the speed of tanks",
+        "To reduce energy consumption",
+      ],
+      "answer": 1,
+    },
+    {
+      "question": "What was Kerry's attitude towards using steam power?",
+      "options": [
+        "Negative",
+        "Positive",
+        "Skeptical",
+        "Indifferent",
+        "Critical",
+      ],
+      "answer": 3,
+    },
   ],
 };
+export default data;

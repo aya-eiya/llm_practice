@@ -1,97 +1,107 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "The Beatles Release 'Abbey Road'",
+    "details":
+      "On April 17th, 1969, The Beatles released their iconic album 'Abbey Road', which would go on to become one of the best-selling albums in history.",
+  },
   "date": "2024-04-17",
-  "event": "April 17th - The Boston Tea Party",
-  "title": "The Secret Treasure",
+  "title": "The Abbey Road Haunting",
   "body":
-    "Once upon a time, in a small town called Boston, there lived a brave little girl named Sarah. She was known for her love of tea and her courage to speak her mind. One day, while wandering through the streets, she heard rumors of a hidden treasure buried somewhere in the town. Without hesitation, Sarah embarked on a journey to find the treasure, determined to uncover its secrets. Along the way, she met a group of rebels who were fighting for their freedom from the oppressive British rule. They joined forces and together they discovered the treasure, which was not just a pile of gold and jewels, but a symbol of hope and independence. With her new friends by her side, Sarah realized that true treasure is found in the bonds of friendship and the courage to stand up for what you believe in.",
-  "word count": 285,
+    "It was a cold and dreary October night when the small town of Abbeyville was suddenly plunged into darkness. The power lines had been cut, leaving the residents in complete darkness. As the clock struck midnight, strange noises began to echo through the streets. A cacophony of screams and laughter filled the air, coming from an abandoned building on the outskirts of town.  The following morning, a group of friends decided to investigate the source of the noises. Upon entering the old building, they were greeted by a chilling sight: several mannequins dressed in vintage 1960s clothing, arranged as if posing for a photo. The mannequins seemed to be alive, moving and speaking in hushed whispers.  As the night wore on, the group began to feel uneasy. The laughter of the mannequins grew louder, their movements more erratic. Suddenly, the lights flickered back on, revealing a shocking sight: several figures standing around the room, dressed in identical white outfits and holding red guitars.  The group realized that they were not alone in the building. The figures seemed to be waiting for something, their attention fixated on a large, open door at the end of the hall. As the clock struck midnight, the figures began to play a haunting melody, filling the air with eerie chords and howls.",
+  "word count": 217,
   "dialog": [
     {
       "Billy":
-        "I loved Sarah's determination to find the treasure! She's such a great role model for kids like us.",
+        "I still can't believe what we saw in that abandoned building! The mannequins seemed so real.",
     },
     {
       "Kerry":
-        "Yeah, but I think it's cool how she found common ground with the rebels. That shows that even when things seem tough, you can make a difference by working together.",
+        "Yeah, I know what you mean! And have you noticed that the figures with guitars were playing a weird melody? It gave me chills.",
     },
     {
       "Meg":
-        "I know what you mean, Kerry. Sarah's story is all about finding hope and independence. And isn't it awesome that she discovered treasure wasn't just gold and jewels, but the bonds of friendship too?",
+        "I loved the way the old building looked like a movie set. It was like stepping into a different era. And those mannequins... they were so lifelike!",
     },
     {
       "Lui":
-        "Ah, yes. The themes in this novel are excellent. As a teacher, I appreciate how it showcases the importance of teamwork and standing up for what you believe in. What do you think about Sarah's character development throughout the story, class?",
+        "As a historian, I'm fascinated by the setting and the atmosphere of that place. The 1960s vibe really added to the mystery.",
     },
     {
       "Billy":
-        "I liked seeing her grow from just wanting to find treasure to realizing that true friendship is more valuable than any treasure. It's a great lesson for all of us.",
+        "I think what creeped me out the most was how quiet everything got after midnight. It was like time stopped.",
     },
     {
       "Kerry":
-        "Definitely! And it's cool how she wasn't afraid to speak her mind and challenge the status quo, even when others told her she was crazy for believing in the treasure.",
+        "Yeah, and then those figures started playing their guitars... it was like they were summoning something. Spooky!",
     },
     {
       "Meg":
-        "Exactly! Sarah's courage is inspiring. I think we can all learn from her experiences and be more confident in our own abilities and convictions.",
+        "I wish we could've seen what was behind that open door at the end of the hall. I bet it would've been amazing.",
+    },
+    {
+      "Lui":
+        "We should do some research on the history of that building and see if there are any connections to the strange occurrences we experienced.",
     },
   ],
   "quiz": [
     {
-      "question": "What was Sarah known for?",
+      "question": "What happened on a cold October night in Abbeyville?",
       "options": [
-        "her love of tea",
-        "her bravery",
-        "her ability to speak her mind",
-        "her skill in math",
-        "her talent in art",
+        "The power lines were cut",
+        "It was Halloween",
+        "A parade took place",
+        "The town's festival ended",
+        "Christmas decorations were put up",
       ],
-      "answer": 2,
+      "answer": 0,
     },
     {
-      "question": "Why did Sarah join forces with the rebels?",
+      "question":
+        "Where did the group of friends decide to investigate the strange noises?",
       "options": [
-        "to find treasure",
-        "to fight for freedom from British rule",
-        "to learn new skills",
-        "to make friends",
-        "to have an adventure",
+        "An abandoned building on the outskirts of town",
+        "The local police station",
+        "A nearby café",
+        "Their own homes",
+        "The town's library",
+      ],
+      "answer": 0,
+    },
+    {
+      "question": "What did the figures with guitars seem to be waiting for?",
+      "options": [
+        "The mannequins to start moving",
+        "Some unknown event",
+        "The group of friends to leave",
+        "Their leader to arrive",
+        "The night to end",
       ],
       "answer": 1,
     },
     {
-      "question":
-        "What did Sarah and the rebels discover was not just gold and jewels?",
+      "question": "What was the atmosphere of the old building like?",
       "options": [
-        "a secret message",
-        "a magical power",
-        "a symbol of hope and independence",
-        "a treasure map",
-        "a new language",
+        "Modern and sleek",
+        "Old-fashioned and dusty",
+        "Lively and colorful",
+        "Spooky and eerie",
+        "Calming and peaceful",
       ],
-      "answer": 2,
+      "answer": 4,
     },
     {
       "question":
-        "What was a valuable lesson Sarah learned throughout the story?",
+        "Who is fascinated by the setting and atmosphere of the abandoned building?",
       "options": [
-        "to never give up on finding treasure",
-        "to always trust others",
-        "that true friendship is more important than treasure",
-        "to never challenge authority",
-        "to always follow rules",
-      ],
-      "answer": 2,
-    },
-    {
-      "question": "What did Sarah's character development show?",
-      "options": [
-        "her ability to adapt to new situations",
-        "her growth from being selfish to selfless",
-        "her transformation from a rebel to an ally",
-        "her shift from seeking treasure to finding friendship",
-        "her change from being brave to being cautious",
+        "Kerry",
+        "Billy",
+        "Meg",
+        "Lui",
+        "The group as a whole",
       ],
       "answer": 3,
     },
   ],
 };
+export default data;

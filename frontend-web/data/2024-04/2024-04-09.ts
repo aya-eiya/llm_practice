@@ -1,99 +1,101 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "ARPANET Goes Public",
+    "details":
+      "On April 9, 1983, ARPANET, the precursor to the global Internet, was opened to commercial use by the United States Department of Defense. This marked a significant milestone in the development of the modern Internet.",
+  },
   "date": "2024-04-09",
-  "event": "The Battle of Actium",
-  "title": "The Sword of Olympus",
+  "title": "The ARPANET Horror",
   "body":
-    "Once upon a time, in a land far, far away, there lived a young prince named Leo. He was the bravest and kindest of all the princes in the kingdom. One day, while out riding his horse, he stumbled upon an ancient sword buried deep in the forest. As soon as he touched it, the sword began to glow with a bright blue light. Leo pulled the sword from the ground and felt its power surge through him. He knew that he was meant to be the hero who would save the kingdom from the wicked sorcerer who had taken control of the throne. With his new sword in hand, Leo set out on his quest to defeat the sorcerer and bring peace back to the kingdom. Along the way, he met a wise old wizard who taught him how to use the sword's magic to control the elements. Together, they battled fierce dragons and treacherous goblins, but nothing could prepare them for the final showdown with the sorcerer himself. In the end, Leo and his friends emerged victorious, and the kingdom was saved once again.",
-  "word count": 186,
+    'It was a dark and stormy night when the ARPANET went public. The computer servers hummed with activity, their screens flickering with unseen data. Suddenly, an error message flashed across all monitors: "Connection Lost - Cannot Reach Internet". Panic ensued as people realized they were cut off from the digital world. The storm raged on, but it was nothing compared to what followed.As the hours passed, strange occurrences began to happen. People reported seeing figures moving through the darkness, their forms illuminated by the soft glow of computer screens. The figures seemed to be drawn towards the servers, as if they were feeding off the digital energy that powered them.The storm finally abated, but the horror had only just begun. The figures had multiplied, and now roamed freely through the streets. They moved with a purpose, their eyes glowing with an otherworldly light. It was clear that they were not of this world.The people of the town huddled in fear, their only refuge the safety of their homes. But even there, the figures found them. The ARPANET had been unleashed upon the world, and now it had taken on a life of its own. It was a horror beyond comprehension, a darkness that would never be extinguished.',
+  "word count": 207,
   "dialog": [
     {
       "Billy":
-        "I loved how Leo used his sword to control the elements! It was like something out of a sci-fi movie.",
-    },
-    {
-      "Kerry":
-        "Totally agree with Billy. And I liked how the wizard helped Leo learn how to use his powers. Reminded me of those Marvel movies where the superheroes have to learn how to master their abilities.",
+        "I'm telling you, it's like nothing we've ever seen before! The way those figures just appeared out of nowhere...",
     },
     {
       "Meg":
-        "I was really drawn in by the world-building in this story. The kingdom and its history felt so vividly real. And I loved how Leo's journey was tied to the fate of his kingdom.",
+        "Exactly! And have you noticed how they seem to be drawn to the computer servers? It's as if they're trying to tap into some kind of digital energy.",
+    },
+    {
+      "Kerry":
+        "I know, right? I was thinking maybe they're like some kind of alien invasion force or something. But what's with the glowing eyes?",
     },
     {
       "Lui":
-        "Ah, yes, the world-building is indeed one of the strongest aspects of this novel. As a historian, I appreciate how the author wove together historical and mythical elements to create a rich narrative. But what struck me most was Leo's character development. His bravery and kindness are truly admirable.",
+        "Now, now, let's not jump to conclusions. We don't have all the facts yet. But one thing is certain: we need to find a way to stop these... entities.",
     },
     {
       "Billy":
-        "Yeah, and his friendship with the wizard added an extra layer of depth to the story. I liked how they worked together to overcome challenges.",
-    },
-    {
-      "Kerry":
-        "I know what you mean about their friendship, Billy. It reminded me of some of my favorite fantasy stories where heroes work together to save the day. And I loved the action scenes with dragons and goblins!",
+        "But how? We can't just sit around and wait for them to destroy our town! We need to come up with a plan, stat!",
     },
     {
       "Meg":
-        "The final showdown with the sorcerer was so intense! I was on the edge of my seat wondering if Leo would succeed.",
+        "I think I have an idea. What if we try to hack into the ARPANET systems? Maybe we can find some way to shut it down or disable these... creatures.",
+    },
+    {
+      "Kerry":
+        "Whoa, that's actually not a bad idea! But what about the risks? We don't know what kind of technology we're dealing with here.",
     },
     {
       "Lui":
-        "Indeed, Meg, the pacing and tension are expertly handled throughout the novel. As an educator, I appreciate how this story promotes themes of courage, perseverance, and teamwork – all essential values for our students to learn.",
+        "Risk is always involved when you're trying to solve a problem like this. But I think it's our best bet. Let's get to work!",
     },
   ],
   "quiz": [
     {
-      "question": "Who is the main character in the novel?",
+      "question": "What happened to the ARPANET when it went public?",
       "options": [
-        "Ares",
-        "Theseus",
-        "Persephone",
-        "Orion",
-        "Hercules",
+        "It became a huge success",
+        "A storm knocked out the servers",
+        "The internet was invented",
+        "Connection Lost - Cannot Reach Internet",
       ],
-      "answer": 1,
+      "answer": 3,
     },
     {
-      "question": "What is the sword that Theseus uses?",
+      "question": "Why were people drawn to the computer screens?",
       "options": [
-        "Sword of Apollo",
-        "Sword of Olympus",
-        "Sword of Poseidon",
-        "Sword of Athena",
-        "Sword of Mars",
-      ],
-      "answer": 1,
-    },
-    {
-      "question": "Why does Theseus go to Crete?",
-      "options": [
-        "To rescue Persephone from Hades",
-        "To fight the Minotaur",
-        "To retrieve his lost sword",
-        "To visit his friend Orion",
-        "To go on a adventure",
-      ],
-      "answer": 1,
-    },
-    {
-      "question": "Who helps Theseus in his journey?",
-      "options": [
-        "Athena",
-        "Poseidon",
-        "Artemis",
-        "Hercules",
-        "Dionysus",
+        "Because they were pretty",
+        "To see the figures moving through the darkness",
+        "For digital energy",
+        "To play games",
       ],
       "answer": 2,
     },
     {
-      "question": "What does Theseus do with the Minotaur's head?",
+      "question": "What did Billy think was happening with the figures?",
       "options": [
-        "He buries it in a grave",
-        "He gives it to Athena as a gift",
-        "He wears it as a helmet",
-        "He throws it into the sea",
-        "He uses it as a trophy",
+        "Alien invasion",
+        "Computer glitch",
+        "Digital energy",
+        "Ghostly appearance",
       ],
-      "answer": 3,
+      "answer": 0,
+    },
+    {
+      "question": "Why did Lui suggest hacking into the ARPANET systems?",
+      "options": [
+        "To play games online",
+        "To shut down the ARPANET",
+        "To disable the creatures",
+        "To hack into other computers",
+      ],
+      "answer": 2,
+    },
+    {
+      "question":
+        "What was the main concern of the group when trying to come up with a plan?",
+      "options": [
+        "The risk of getting hurt",
+        "The danger of losing their town",
+        "The possibility of failure",
+        "The cost of equipment",
+      ],
+      "answer": 0,
     },
   ],
 };
+export default data;

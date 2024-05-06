@@ -1,93 +1,103 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "The Bayeux Tapestry is completed",
+    "details":
+      "The Bayeux Tapestry, a 700-year-old embroidered cloth depicting the events leading up to the Norman conquest of England in 1066, was finished on April 24th",
+  },
   "date": "2024-04-24",
-  "event":
-    "In 1896, biologist and Nobel laureate, Robert Koch isolated the bacterium responsible for tuberculosis.",
-  "title": "The Terror of TB",
+  "title": "The Tapestry's Secret",
   "body":
-    "It was a dark and stormy night. The wind howled through the trees as twelve-year-old Tommy lay in bed, tossing and turning with fever. He had been sick for weeks, and his parents were getting worried. Suddenly, a loud knock came at the door. Tommy's dad went to answer it, but when he opened the door, he saw nothing. It was as if someone or something had vanished into thin air.As the days passed, more and more people in town fell sick with a strange fever. The doctors couldn't figure out what was causing it. Some said it was the water, others blamed the air quality. But Tommy knew the truth. He remembered hearing his dad talk about Robert Koch and how he had isolated the bacterium that caused tuberculosis. Tommy realized that something similar must be happening in their town.With a flashlight in hand, Tommy set out to find the source of the illness. As he walked through the streets, he noticed a strange odor. It was as if someone had been burning something foul. He followed his nose until he came upon an old abandoned warehouse. The door was open, and inside, Tommy found what he had feared: a giant vat filled with a bubbling liquid. He knew that whatever was in that vat must be causing the illness.Tommy quickly ran back to his house and told his parents everything. They were skeptical at first, but when they saw how sick their son was getting, they decided to believe him. Together, they went back to the warehouse and found the source of the illness: a giant vat filled with the bacteria that caused tuberculosis. They destroyed the vat, and soon after, the fever in town subsided.The end.",
-  "word count": 289,
+    "In a quaint village in Normandy, a mysterious tapestry was being woven by a group of skilled artisans under the watchful eye of a wealthy patron. The tapestry depicted scenes of treachery and betrayal, hinting at a dark secret that the villagers had long forgotten.  As the tapestry neared completion on April 24th, the village was thrown into chaos when one of the artisans was found dead. The local constable, a diligent man named Robert, was tasked with unraveling the mystery behind the death and the cryptic messages hidden within the tapestry.  Robert's investigation led him to suspect that the patron was involved in the murder and that the tapestry held clues to his nefarious plans. As he delved deeper into the case, Robert found himself drawn into a web of deceit, corruption, and political intrigue that threatened to tear the village apart.",
+  "word count": 143,
   "dialog": [
     {
       "Billy":
-        "I loved this novel! The way Tommy figured out what was causing the illness in his town was so cool!",
+        "I'm so glad we read this novel! The mystery really got me thinking about how easy it is to overlook secrets in our own communities.",
     },
     {
       "Kerry":
-        "Totally agree, Billy! I love how he used science to solve the mystery. And I have to say, it's always awesome when a kid gets to be the hero of their own story.",
+        "Totally agree, Billy. I loved how the author wove together historical and social commentary with a murder mystery. It was like solving a puzzle!",
     },
     {
       "Meg":
-        "I know, right? I loved imagining what it would be like to walk into an abandoned warehouse and find a vat of bacteria just waiting to be discovered! The imagery in this novel is amazing!",
+        "I'm still reeling from the symbolism of the tapestry. Did anyone else notice how it mirrored the village's hidden truths?",
     },
     {
       "Lui":
-        "Well, I think we can all agree that this novel does a great job of showing how science and critical thinking can be used to solve real-world problems. But what really stood out to me was the way Tommy's parents supported him even when they were skeptical at first.",
-    },
-    {
-      "Billy":
-        "Yeah, that's a great point, Mr. Lui! It shows that even adults can learn from kids and change their minds if presented with new information. And it's not just about science - it's also about perseverance and determination.",
+        "Ah, yes! The tapestry was indeed a masterclass in storytelling. And I think we can all relate to feeling like we're trying to unravel mysteries in our own lives.",
     },
     {
       "Kerry":
-        "Absolutely! I think we can all relate to feeling like we're the only ones who care about something, but Tommy proved that even one person can make a difference when they're passionate about solving a problem.",
+        "Right? Like, have you guys noticed how often we see similar themes of deception and corruption in history books?",
     },
     {
       "Meg":
-        "I love how this novel shows that science isn't just for experts or adults - anyone can contribute to our understanding of the world and make it a better place. And who knows, maybe we'll be the ones to come up with the next big discovery!",
+        "Oh, absolutely! It's like the author was saying that some secrets never truly go away. And what about Robert's investigation? I loved how he pieced together clues!",
+    },
+    {
+      "Billy":
+        "Yeah, his determination to get to the truth was inspiring. But I'm still wondering about the patron's motivations... did anyone else think they were trying to cover something up?",
     },
   ],
   "quiz": [
     {
-      "question": "What was Tommy suffering from?",
-      "options": [
-        "Fever",
-        "TB",
-        "Cancer",
-        "Broken leg",
-      ],
-      "answer": 1,
-    },
-    {
-      "question": "Why did Tommy's parents go back to the warehouse with him?",
-      "options": [
-        "To play games",
-        "To get some fresh air",
-        "To destroy the vat of bacteria",
-        "To take a nap",
-      ],
-      "answer": 2,
-    },
-    {
-      "question": "What was found in the abandoned warehouse?",
-      "options": [
-        "A treasure chest",
-        "A secret laboratory",
-        "A giant vat filled with bacteria",
-        "A time machine",
-      ],
-      "answer": 2,
-    },
-    {
       "question":
-        "Why did Tommy's dad go to answer the door on the stormy night?",
+        "What was being woven by a group of skilled artisans in the story?",
       "options": [
-        "To see who was there",
-        "To ignore it",
-        "To hide from the storm",
-        "To get some fresh air",
+        "A tapestry",
+        "A book",
+        "A painting",
+        "A song",
+        "A poem",
       ],
       "answer": 0,
     },
     {
       "question":
-        "What happened to the town after the vat of bacteria was destroyed?",
+        "Why was Robert, the local constable, tasked with unraveling the mystery behind the death and the cryptic messages?",
       "options": [
-        "The people got even sicker",
-        "The people started to recover",
-        "Nothing changed",
-        "The town flooded",
+        "Because he was a skilled detective",
+        "Because he was a friend of the victim",
+        "Because the patron suspected him to be involved in the murder",
+        "Because it was his duty as a law enforcement officer",
+        "Because nobody else wanted to solve the case",
+      ],
+      "answer": 2,
+    },
+    {
+      "question": "What did Billy think about the novel?",
+      "options": [
+        "He found it too boring",
+        "He loved how easy it was to overlook secrets in our own communities",
+        "He didn't like the way it was written",
+        "He thought it was just a murder mystery",
+        "He liked its historical and social commentary",
+      ],
+      "answer": 1,
+    },
+    {
+      "question": "What did Meg notice about the tapestry?",
+      "options": [
+        "That it was too long",
+        "That it had many colors",
+        "That it mirrored the village's hidden truths",
+        "That it didn't have any characters",
+        "That it was just a simple design",
+      ],
+      "answer": 2,
+    },
+    {
+      "question": "What did Kerry think about the novel?",
+      "options": [
+        "It was too easy to solve the mystery",
+        "It was a masterclass in storytelling",
+        "It was boring and didn't have any twists",
+        "It was just an okay book",
+        "It was like solving a puzzle",
       ],
       "answer": 1,
     },
   ],
 };
+export default data;

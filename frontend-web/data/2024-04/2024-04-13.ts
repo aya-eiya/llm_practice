@@ -1,99 +1,104 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "The Death of Immanuel Kant",
+    "details":
+      "Immanuel Kant, a German philosopher and pioneer of modern philosophy, passed away on February 13, 1804, at the age of 80.",
+  },
   "date": "2024-04-13",
-  "event": "Discovery of X-rays",
-  "title": "The X-ray Mystery",
+  "title": "The Philosopher's End",
   "body":
-    "Once upon a time, on a beautiful spring day in April, a young scientist named Marie and her assistant Pierre were working in their laboratory. They had been experimenting with electricity for weeks, trying to understand how it worked.One day, as they were adjusting some equipment, they noticed something strange happening to a piece of paper. It was glowing with an eerie blue light!Marie and Pierre quickly realized that they had stumbled upon something incredible - the ability to see inside objects without cutting them open. They called this new discovery X-rays, and it changed the world forever!From then on, Marie and Pierre became famous for their discovery, and they continued to work together, making many more important discoveries in the field of science. The end.",
-  "word count": 126,
+    "It was a cold February night in 1804 when Immanuel Kant took his final breath. As he lay on his deathbed, surrounded by the trappings of his scholarly life, he pondered the nature of existence and the meaning of his work. The room was filled with the scent of burning candles, casting flickering shadows across the walls. Suddenly, a figure appeared at the foot of Kant's bed, beckoning him to follow. With a sense of curiosity and trepidation, Kant rose from his bed and followed the figure into the unknown. As he ventured deeper into the realm beyond the veil of life, he was greeted by the great philosophers of the past, who had been waiting for him. Together, they embarked on a journey through the realms of thought and reason, exploring the depths of the human mind and the mysteries of existence. Finally, as the sun began to rise on the horizon, Kant arrived at a vast, white expanse, where he was greeted by a figure who revealed himself to be the embodiment of knowledge and wisdom. With a final farewell, Kant closed his eyes and embraced the end.",
+  "word count": 190,
   "dialog": [
     {
       "Billy":
-        "Whoa, did you guys see that part where Marie and Pierre discovered X-rays? It was like magic!",
+        "I loved how the novel explored the intersection of philosophy and adventure! It made me think about my own existence.",
     },
     {
       "Kerry":
-        "Yeah, I loved how they were just messing around in their lab and then BAM! They stumbled upon something amazing. I bet it was super cool to be there when it happened.",
+        "Yeah, I was blown away by the way Kant's ideas came to life in this story. It's like we're all just trying to figure out this crazy thing called life.",
     },
     {
       "Meg":
-        "I know, right? The way they described the paper glowing blue... it's like you can almost see it happening in your mind. I wish we could've been there too!",
+        "I was so captivated by the imagery and world-building! It felt like I was right there with Kant as he journeyed through the realms of thought.",
     },
     {
       "Lui":
-        "Well, boys and girls, while this was certainly an exciting discovery, let's not forget that science is all about experimentation and taking risks. Marie and Pierre weren't afraid to try new things and explore the unknown.",
+        "As a teacher, I appreciated how the novel handled complex philosophical concepts in an accessible way. It's a great example for my students.",
     },
     {
       "Billy":
-        "Exactly! And it's cool how they worked together as a team. I bet they learned so much from each other.",
+        "I agree, Lui! The writing style made me feel like I was part of the discussion with Kant and his fellow philosophers. It was really engaging.",
     },
     {
       "Kerry":
-        "Yeah, and think about all the people who benefited from their discovery! Doctors could finally see inside patients without having to do surgery... it was life-changing!",
+        "And can we talk about the symbolism of the white expanse at the end? What did you guys think it represented?",
     },
     {
       "Meg":
-        "I'm just imagining what kind of stories they must've had in the lab after that. 'Hey Marie, did you know this X-ray thingy is gonna change medicine forever?'",
+        "I saw it as a representation of the infinite possibilities and mysteries of existence. Like, even when our physical lives come to an end, our minds and ideas can continue to explore and create.",
     },
     {
       "Lui":
-        "Ha! I can only imagine the excitement and anticipation they felt as their discovery took off. But we should also remember the importance of scientific rigor and peer review in ensuring the validity of their findings.",
+        "That's a beautiful interpretation, Meg. I also thought it might symbolize the unknown or the afterlife – something that goes beyond our mortal understanding.",
     },
   ],
   "quiz": [
     {
-      "question":
-        "What was Marie and Pierre trying to understand when they discovered X-rays?",
+      "question": "What was the setting for Immanuel Kant's final moment?",
       "options": [
-        "Electricity",
-        "Lightning",
-        "Gravity",
-        "The structure of atoms",
+        "A cold February night in 1804",
+        "A warm summer day in 1810",
+        "A snowy winter morning in 1795",
+        "A rainy autumn afternoon in 1821",
       ],
       "answer": 0,
     },
     {
       "question":
-        "What did Marie and Pierre's discovery allow doctors to do without having to perform surgery?",
+        "What was the purpose of the figure's appearance at the foot of Kant's bed?",
       "options": [
-        "Prescribe new medicines",
-        "Diagnose patients more quickly",
-        "See inside patients' bodies",
-        "Develop new medical procedures",
+        "To offer him a drink",
+        "To bid him farewell",
+        "To take him on a journey through thought and reason",
+        "To wake him up",
       ],
       "answer": 2,
     },
     {
       "question":
-        "How did Marie and Pierre feel when their discovery took off?",
+        "What did the white expanse at the end of the story represent?",
       "options": [
-        "Excited and nervous",
-        "Surprised and relieved",
-        "Anxious and worried",
-        "Anticipatory and excited",
+        "The beginning of Kant's life",
+        "The end of his thoughts",
+        "The infinite possibilities and mysteries of existence",
+        "The darkness of death",
+      ],
+      "answer": 2,
+    },
+    {
+      "question":
+        "Who was the embodiment of knowledge and wisdom that Kant met at the end?",
+      "options": [
+        "A fellow philosopher",
+        "Immanuel's own conscience",
+        "The personification of wisdom",
+        "An angel or a guide",
       ],
       "answer": 3,
     },
     {
       "question":
-        "What was the name of the discovery made by Marie and Pierre?",
+        "What did the novel do well in terms of philosophical concepts, according to Lui?",
       "options": [
-        "X-rays",
-        "Electricity",
-        "Radiation",
-        "Light",
+        "It made them confusing and hard to understand",
+        "It ignored their importance altogether",
+        "It handled them in an accessible way",
+        "It didn't mention them at all",
       ],
-      "answer": 0,
-    },
-    {
-      "question":
-        "Why did Lui mention the importance of scientific rigor and peer review?",
-      "options": [
-        "To criticize Marie and Pierre's discovery",
-        "To emphasize the significance of their finding",
-        "To caution against the misuse of X-rays",
-        "To highlight the process that ensured the validity of their results",
-      ],
-      "answer": 3,
+      "answer": 2,
     },
   ],
 };
+export default data;

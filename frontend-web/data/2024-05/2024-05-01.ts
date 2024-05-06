@@ -1,102 +1,370 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "Woodstock Music & Art Fair",
+    "details": "A three-day music festival held on August 15-17, 1969, at Max Yasgur's farm in Bethel, New York, featuring performances by Jimi Hendrix, The Who, Joan Baez, Santana, and many others."
+  },
   "date": "2024-05-01",
-  "event":
-    "On May 1st, 1851, the Great Exhibition, the first World's Fair, opened in the Crystal Palace in Hyde Park, London, showcasing the marvels of industry and culture from around the world.",
-  "title": "The Time Traveling Tinkerer",
-  "body":
-    "Once upon a time, in the bustling streets of London, a young inventor named Emily stumbled upon an old, dusty workshop tucked away in a forgotten corner. Inside, she found a peculiar contraption—a time machine! With a whirl of gears and a crackle of electricity, Emily found herself transported to the Great Exhibition of 1851. Amidst the wonders of the Crystal Palace, she met inventors and visionaries from across history. But when the time machine malfunctioned, Emily had to use her ingenuity to fix it and return home before she was trapped in the past forever. With the help of her new friends and her trusty toolbox, Emily embarked on a thrilling adventure through time, learning that the greatest invention of all is the power of imagination.",
-  "word count": 126,
+  "title": "Echoes of Woodstock: A Horror Story",
+  "body": "The year was 1969, and the world was in a state of revolution. The Woodstock Music & Art Fair had just taken place, bringing together some of the greatest musicians and artists of the time. But little did anyone know, the festival would soon become a haunting memory for all who attended.As the sun set on the final day of the festival, strange occurrences began to plague the attendees. People reported seeing figures lurking in the shadows, and hearing eerie noises that seemed to emanate from the nearby woods. The mood shifted from one of celebration and freedom to one of fear and uncertainty.As the night wore on, the strange occurrences only intensified. People began to disappear without a trace, and those who returned were forever changed. They spoke of seeing ghostly apparitions and feeling an otherworldly presence that seemed to be drawing them in.Despite the warnings from those who had experienced the strange phenomena, many refused to leave the festival grounds. And it was then that the true horror began. The festival became a living nightmare, and those who remained were trapped in a hellish reality that they could never escape.",
+  "word count": 192,
   "dialog": [
     {
-      "Kerry":
-        "Hey, have you guys read that new book Meg found? It's about time travel and stuff. Pretty cool, huh?",
+      "Billy": "I'm still trying to wrap my head around what happened at Woodstock. It was like nothing I've ever experienced before."
     },
     {
-      "Meg":
-        "Oh, you mean 'The Time Traveling Tinkerer'? It's amazing! The way Emily fixes her time machine using just her wits and tools is so inspiring.",
+      "Meg": "I know, right? The whole vibe of the festival changed so suddenly. One minute we're having fun and dancing, the next..."
     },
     {
-      "Billy":
-        "I love that book! The way they describe the Great Exhibition of 1851 makes me wish I could have been there to see all those inventions.",
+      "Lui": "Folks were reporting ghostly apparitions and hearing strange noises. It was as if the very fabric of reality had torn apart."
     },
     {
-      "Meg":
-        "Right? And Emily's adventurous spirit reminds me of all of us, always exploring and dreaming up new ideas.",
+      "Kerry": "Yeah, and then people started disappearing! I mean, some came back, but they were all like 'I saw things'..."
     },
     {
-      "Lui":
-        "Speaking of time travel, did you know the Great Exhibition actually happened on May 1st, 1851? It was a pivotal moment in history, showcasing the advancements of the Industrial Revolution.",
+      "Billy": "Exactly! They'd tell us about seeing these shadowy figures lurking around. It was freaky, man."
     },
     {
-      "Kerry":
-        "Wow, that's so cool! Imagine being there, surrounded by all that innovation and excitement.",
+      "Meg": "And the way the music changed too... it was like it was drawing us in or something."
     },
     {
-      "Billy":
-        "Yeah, it's fascinating how events from the past can inspire stories that capture our imaginations today.",
+      "Lui": "The music was a key factor in all this. It's as if the harmonies and rhythms somehow awakened something ancient and malevolent."
     },
     {
-      "Lui":
-        "Absolutely, Billy. History has a way of shaping our present and future, just like Emily's adventures in 'The Time Traveling Tinkerer'.",
+      "Kerry": "Whoa, that's heavy, Lui! I'm still trying to figure out what really happened there. Do you think it was some kind of mass hysteria or..."
     },
+    {
+      "Billy": "I don't know, but I do know that our perception of reality changed after Woodstock. It was like we were all connected to something deeper."
+    },
+    {
+      "Meg": "Yeah, and the art installations! They seemed to take on a life of their own..."
+    },
+    {
+      "Lui": "The symbolism and metaphors in those artworks might hold some clues about what went down at Woodstock. I think we should study it further."
+    },
+    {
+      "Kerry": "Study it? Dude, you're talking like we're going to be the next generation of conspiracy theorists! Ha ha ha!"
+    }
   ],
-
   "quiz": [
     {
-      "question": "What is the title of the book discussed in the text?",
+      "question": "What was the setting for the horror story?",
       "options": [
-        "'The Great Exhibition'",
-        "'The Adventures of Emily'",
-        "'The Time Traveling Tinkerer'",
-        "'Exploring the Crystal Palace'",
-        "'Inventions of the Industrial Revolution'",
+        "A music festival in 1969",
+        "A haunted forest",
+        "A small town in America",
+        "A futuristic city",
+        "A medieval castle"
       ],
-      "answer": 2,
+      "answer": 0
     },
     {
-      "question": "Where does Emily find the time machine in the novel?",
+      "question": "How did the atmosphere of the Woodstock Music & Art Fair change?",
       "options": [
-        "In a hidden cave",
-        "In her school's library",
-        "In a forgotten corner of her workshop",
-        "In a modern laboratory",
-        "In a bustling marketplace",
+        "It became more peaceful and calm",
+        "It remained the same, with people having fun",
+        "It shifted from celebration to fear and uncertainty",
+        "It turned violent and chaotic",
+        "It became boring and uneventful"
       ],
-      "answer": 2,
+      "answer": 2
     },
     {
-      "question": "Which character is described as a 'bookworm' in the text?",
+      "question": "What was one of the strange occurrences reported by attendees?",
       "options": [
-        "Billy",
-        "Kerry",
-        "Meg",
-        "Lui",
-        "Emily",
+        "People seeing ghostly apparitions",
+        "Heard eerie noises coming from the woods",
+        "Saw shadowy figures lurking around",
+        "Felt an otherworldly presence drawing them in",
+        "Experienced a sudden and unexplained change in temperature"
       ],
-      "answer": 2,
+      "answer": 0
     },
     {
-      "question":
-        "What historical event is mentioned in the novel as the backdrop for the story?",
+      "question": "According to Lui, what role did the music play in the events at Woodstock?",
       "options": [
-        "The French Revolution",
-        "The American Civil War",
-        "The Great Exhibition of 1851",
-        "The Industrial Revolution",
-        "The Moon Landing",
+        "The music was just background noise",
+        "It had no significant impact on the events",
+        "It awakened something ancient and malevolent",
+        "It helped to calm everyone down",
+        "It got people dancing and having fun"
       ],
-      "answer": 2,
+      "answer": 2
     },
     {
-      "question": "What does Lui mention about the Great Exhibition?",
+      "question": "What did Billy suggest about what happened at Woodstock?",
       "options": [
-        "It happened in Paris",
-        "It showcased art from around the world",
-        "It featured inventions from the future",
-        "It occurred on May 1st, 1851",
-        "It was a celebration of ancient history",
+        "Our perception of reality changed after the event",
+        "The festival was just a normal music event",
+        "People experienced mass hysteria",
+        "There were no supernatural events",
+        "It was all just a prank gone wrong"
       ],
-      "answer": 3,
-    },
+      "answer": 0
+    }
   ],
-};
+  "descriptions": {
+    "grammar": {
+      "patterns": [
+        {
+          "pattern": "S + V",
+          "explanation": "Simple statement with a subject and verb.",
+          "usage": [
+            "The year was 1969, and the world was in a state of revolution.",
+            "It was like nothing I've ever experienced before."
+          ],
+          "words": [
+            {
+              "S": [
+                "The",
+                "year",
+                "world"
+              ]
+            },
+            {
+              "V": [
+                "was",
+                "experienced",
+                "known"
+              ]
+            }
+          ]
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation": "Statement with a subject, verb, and complement.",
+          "usage": [
+            "But little did anyone know, the festival would soon become a haunting memory for all who attended.",
+            "It's as if the harmonies and rhythms somehow awakened something ancient and malevolent."
+          ],
+          "words": [
+            {
+              "S": [
+                "But",
+                "little",
+                "anyone"
+              ]
+            },
+            {
+              "V": [
+                "did",
+                "know",
+                "become"
+              ]
+            },
+            {
+              "C": [
+                "the festival",
+                "a haunting memory",
+                "something ancient and malevolent"
+              ]
+            }
+          ]
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation": "Statement with a subject, verb, and object.",
+          "usage": [
+            "As the sun set on the final day of the festival, strange occurrences began to plague the attendees.",
+            "People reported seeing figures lurking in the shadows, and hearing eerie noises that seemed to emanate from the nearby woods."
+          ],
+          "words": [
+            {
+              "S": [
+                "As",
+                "the sun",
+                "the festival"
+              ]
+            },
+            {
+              "V": [
+                "set",
+                "began",
+                "reported"
+              ]
+            },
+            {
+              "O": [
+                "the final day of the festival",
+                "strange occurrences",
+                "figures lurking in the shadows",
+                "eerie noises",
+                "the nearby woods"
+              ]
+            }
+          ]
+        },
+        {
+          "pattern": "S + V + O + O",
+          "explanation": "Statement with a subject, verb, and two objects.",
+          "usage": [
+            "People began to disappear without a trace, and those who returned were forever changed.",
+            "Folks were reporting ghostly apparitions and hearing strange noises."
+          ],
+          "words": [
+            {
+              "S": [
+                "People",
+                "those"
+              ]
+            },
+            {
+              "V": [
+                "began",
+                "disappear",
+                "returned"
+              ]
+            },
+            {
+              "O": [
+                "without a trace",
+                "forever changed",
+                "ghostly apparitions",
+                "strange noises"
+              ]
+            }
+          ]
+        },
+        {
+          "pattern": "S + V + O + C",
+          "explanation": "Statement with a subject, verb, an object, and complement.",
+          "usage": [
+            "As the night wore on, the strange occurrences only intensified.",
+            "The music was a key factor in all this."
+          ],
+          "words": [
+            {
+              "S": [
+                "As",
+                "the night"
+              ]
+            },
+            {
+              "V": [
+                "wore",
+                "intensified"
+              ]
+            },
+            {
+              "O": [
+                "the strange occurrences"
+              ]
+            },
+            {
+              "C": [
+                "only intensified",
+                "a key factor"
+              ]
+            }
+          ]
+        }
+      ],
+      "vocabularies": [
+        {
+          "class": "Noun",
+          "word": "year",
+          "meaning": "a unit of time",
+          "usage": [
+            "The year was a great one.",
+            "My favorite year is 2020."
+          ],
+          "pronounce": "/jɪr/",
+          "example": "It's the best year for vacations."
+        },
+        {
+          "class": "Adjective",
+          "word": "haunting",
+          "meaning": "giving a feeling of fear or sadness",
+          "usage": [
+            "The haunting melody stuck in my head.",
+            "The haunted house was so scary."
+          ],
+          "pronounce": "/ˈhɔtɪŋ/",
+          "example": "The movie's haunting special effects left me shivering."
+        },
+        {
+          "class": "Verb",
+          "word": "began",
+          "meaning": "to start or initiate something",
+          "usage": [
+            "We began the project last week.",
+            "She began to cry."
+          ],
+          "pronounce": "/biˈɡən/",
+          "example": "The new employee began working yesterday."
+        },
+        {
+          "class": "Adverb",
+          "word": "only",
+          "meaning": "to a limited extent or degree",
+          "usage": [
+            "I only have 10 minutes.",
+            "You can only eat so much."
+          ],
+          "pronounce": "/ʊˈnaɪl/",
+          "example": "The teacher warned us to only take what we need."
+        },
+        {
+          "class": "Noun",
+          "word": "festival",
+          "meaning": "a special event or celebration",
+          "usage": [
+            "We're attending the music festival this weekend.",
+            "The festival was a huge success."
+          ],
+          "pronounce": "/ˈfɛstɪvəl/",
+          "example": "The cultural festival showcased many different traditions."
+        },
+        {
+          "class": "Preposition",
+          "word": "on",
+          "meaning": "at or in a specified position",
+          "usage": [
+            "Put the book on the table.",
+            "We're meeting up on Saturday."
+          ],
+          "pronounce": "/ɒn/",
+          "example": "The sun is setting on the horizon."
+        },
+        {
+          "class": "Conjunction",
+          "word": "but",
+          "meaning": "used to indicate a contrast or exception",
+          "usage": [
+            "I like pizza, but my friend hates it.",
+            "You're smart, but you should still learn."
+          ],
+          "pronounce": "/bʌt/",
+          "example": "We wanted to go out, but it was raining."
+        },
+        {
+          "class": "Other",
+          "word": "revolution",
+          "meaning": "a sudden and profound change",
+          "usage": [
+            "The revolution changed the country forever.",
+            "We're in a technological revolution."
+          ],
+          "pronounce": "/rɪˈvəʊʃən/",
+          "example": "The scientific revolution brought about many new discoveries."
+        }
+      ]
+    },
+    "keywords": [
+      "revolution",
+      "haunting",
+      "eerie",
+      "fearful",
+      "uncertain",
+      "disappearance",
+      "ghostly",
+      "apparition",
+      "otherworldly",
+      "nightmare",
+      "hellish",
+      "trapped",
+      "unescapable"
+    ]
+  }
+}
+export default data;

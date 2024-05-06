@@ -1,332 +1,101 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
   "event": {
-    "event": "Gallipoli Campaign Begins",
-    "details":
-      "The Gallipoli Campaign, also known as the Dardanelles Campaign, began during World War I when Allied forces, led by British Admiral John de Robeck, launched a naval attack on the Ottoman Empire's Dardanelles Strait in an attempt to capture the capital city of Constantinople (now Istanbul). The campaign lasted from February 19, 1915, until January 9, 1916.",
+    "event": "Gulf War Ends",
+    "details": "The Gulf War ended on May 5, 1991, after a cease-fire agreement was reached between Iraqi forces and coalition forces led by the United States."
   },
   "date": "2024-05-05",
-  "title": "The Forgotten Front",
-  "body":
-    "In a world where empires clash for dominance, a young adventurer named Alex finds themselves caught up in the midst of the Great War. With their homeland on the brink of destruction, Alex sets out to join the fight, determined to make a difference. They soon find themselves aboard a ship bound for the Dardanelles, tasked with leading an important mission behind enemy lines.  As they venture further into the heart of the conflict, Alex must navigate a tangled web of intrigue and betrayal, all while trying to avoid the unrelenting gaze of sniper fire. With their wits, courage, and a trusty band of allies at their side, they fight tooth and nail for every inch of ground they gain.  But as the days stretch into weeks, and the weeks stretch into months, Alex begins to question the very nature of their quest. Can they truly change the course of history, or will they be just another footnote in the annals of war? The fate of countless lives hangs in the balance, as Alex must decide where their loyalties lie, and what, if anything, they are willing to sacrifice for the greater good.",
-  "word count": 193,
+  "title": "The Last Battle of the Gulf",
+  "body": "In a world where magic was real and war raged, a small group of mages had been tasked with ending the long-standing conflict in the Gulf region. For years, the two kingdoms had battled each other over resources, and the mages knew that only by working together could they bring an end to the carnage.As the final battle approached, the mages gathered at a sacred site, where it was said that the very fabric of reality had been woven by the gods themselves. There, they joined hands and chanted ancient incantations, calling forth a mighty force to strike them down should they falter in their quest.With the power of the gods behind them, the mages faced off against the armies of both kingdoms. The battle raged for hours, with spells and blades flashing across the field as the two sides fought tooth and nail.But eventually, the mages' unity proved stronger than any army or weapon. With a final, devastating spell, they brought an end to the war, and the kingdoms were left to rebuild in peace.",
+  "word count": 176,
   "dialog": [
     {
-      "Billy":
-        "I really love how Alex gets to be a part of something bigger than themselves, like joining the fight against empires.",
+      "Billy": "I loved how the mages came together to end the war! It was so cool seeing them use their powers to bring about peace."
     },
     {
-      "Meg":
-        "And I'm so curious about what kind of mission they'll be on! Will it involve sneaking behind enemy lines?",
+      "Kerry": "Totally agree, Billy! And can we talk about the magic system? I had no idea it was based on ancient incantations and gods' power. Mind blown!"
     },
     {
-      "Kerry":
-        "Yeah, and can we guess how many times Alex will almost get killed by sniper fire? That's some intense stuff!",
+      "Meg": "I know, right? The world-building was incredible. I loved how the story wove together mythology and fantasy elements."
     },
     {
-      "Lui":
-        "As educators, I think it's wonderful to see our students taking an interest in history and war. But let's not forget the importance of critical thinking and questioning authority.",
+      "Lui": "As a historian, I appreciated the attention to detail in portraying the conflict and its aftermath. It's not often we see such nuanced portrayals of war and peace."
     },
     {
-      "Billy":
-        "Exactly! Alex has to navigate all this intrigue and betrayal while trying to make a difference. That sounds so cool!",
+      "Billy": "Yeah, it was really well done! And what about the characters? I liked how the mages weren't just one-dimensional heroes or villains."
     },
     {
-      "Meg":
-        "I love how Billy said it's 'cool'! Sometimes we need to think outside the box and be brave, just like Alex is.",
+      "Kerry": "Absolutely! They were all complex and multidimensional. It's like, even in the midst of war, they still had their own motivations and struggles."
     },
     {
-      "Kerry":
-        "But what about the moral dilemmas? Will Alex have to sacrifice something or someone for the greater good?",
+      "Meg": "Exactly! And it made me think about how we can learn from their experiences. I mean, wars are always devastating, but what if we could find a way to bring people together like the mages did?"
     },
     {
-      "Lui":
-        "Well, that's where the real learning begins. We can learn so much from Alex's journey and apply it to our own lives.",
+      "Lui": "That's a great point, Meg. As educators, we're constantly looking for ways to promote understanding and empathy. This story shows that even in the darkest of times, there's hope for a brighter future."
     },
     {
-      "Billy":
-        "I think it would be awesome if we could create a story together about what happens next in the novel!",
+      "Billy": "Yeah, it was really uplifting. And I loved how the story wrapped up with the mages rebuilding and starting anew. It felt like a message about the importance of forgiveness and moving forward."
     },
     {
-      "Meg":
-        "Ooh, yes! Let's imagine what kind of adventures Alex might have after joining the fight!",
-    },
-    {
-      "Kerry":
-        "And maybe we can even design our own war-torn landscapes and characters? That sounds like so much fun!",
-    },
+      "Kerry": "I know, right? It gave me chills thinking about all the possibilities for new beginnings. Can we get more books like this in our reading list?"
+    }
   ],
   "quiz": [
     {
-      "question": "What does Alex decide to do at the beginning of the story?",
+      "question": "What was the main goal of the mages in the story?",
       "options": [
-        "Join a peaceful protest",
-        "Run away from home",
-        "Join the fight against empires",
-        "Become a sniper for one of the warring empires",
+        "To start a new war",
+        "To end the long-standing conflict between the two kingdoms",
+        "To use their powers for personal gain",
+        "To ignore the war and focus on rebuilding",
+        "To continue fighting indefinitely"
       ],
-      "answer": 2,
+      "answer": 1
     },
     {
-      "question": "What kind of mission does Alex get tasked with?",
+      "question": "What was special about the sacred site where the mages gathered?",
       "options": [
-        "To gather intelligence behind enemy lines",
-        "To lead an important mission behind enemy lines",
-        "To deliver supplies to troops on the front line",
-        "To negotiate a peace treaty between warring empires",
+        "It was a magical portal to another world",
+        "It was a place of great beauty and tranquility",
+        "It was said that the gods themselves had woven reality there",
+        "It was a battlefield from a previous war",
+        "It was a meeting point for rival factions"
       ],
-      "answer": 1,
+      "answer": 2
     },
     {
-      "question":
-        "How does Alex's journey relate to their life outside of war?",
+      "question": "What was one of the strengths of the mages' approach to ending the war?",
       "options": [
-        "It allows them to escape reality and focus on something else",
-        "It gives them the chance to make a difference in the world",
-        "It forces them to confront the consequences of war",
-        "It provides an excuse for them to avoid their responsibilities",
+        "Their individual magical powers were unmatched",
+        "They used brute force and aggression to defeat their enemies",
+        "Their unity and cooperation proved stronger than any army or weapon",
+        "They relied on luck and chance to prevail",
+        "They ignored the conflict and let it continue"
       ],
-      "answer": 2,
+      "answer": 2
     },
     {
-      "question": "What is one of the themes discussed in the dialogue?",
+      "question": "What did the story suggest about forgiveness and moving forward?",
       "options": [
-        "The importance of loyalty and sacrifice",
-        "The power of friendship and teamwork",
-        "The need to question authority and think critically",
-        "The impact of war on individual lives",
+        "It showed that forgiveness is impossible in war-torn regions",
+        "It implied that forgiveness requires a long time to process",
+        "It hinted at the importance of forgiveness for rebuilding and new beginnings",
+        "It suggested that forgetting past conflicts is necessary for peace",
+        "It concluded that revenge is always the best option"
       ],
-      "answer": 3,
+      "answer": 3
     },
     {
-      "question": "What is one of the moral dilemmas that Alex might face?",
+      "question": "What was one of the themes explored in the story?",
       "options": [
-        "Whether to follow orders or disobey them",
-        "How far they are willing to go to achieve their goals",
-        "Whether to prioritize their own survival or help others in danger",
-        "Whether to sacrifice someone for the greater good",
+        "The importance of individual power and strength",
+        "The futility of war and the need for cooperation",
+        "The inevitability of conflict and the need to accept it",
+        "The role of chance and luck in shaping history",
+        "The impossibility of change"
       ],
-      "answer": 4,
-    },
-  ],
-  "descriptions": {
-    "keywords": [
-      "Great War",
-      "Dardanelles",
-      "adventure",
-      "war",
-      "history",
-      "quest",
-      "loyalties",
-      "sacrifice",
-    ],
-    "grammar": {
-      "vocabularies": [
-        {
-          "word": "empires",
-          "usage": [
-            "In a world where empires clash for dominance",
-          ],
-          "pronounce": "/ɪˈmpaɪəriz/",
-          "meanings": [
-            {
-              "class": "Noun",
-              "meaning":
-                "a group of people who are in control of an area or country",
-              "example": "The British Empire was a major world power.",
-            },
-          ],
-        },
-        {
-          "word": "adventurer",
-          "usage": [
-            "a young adventurer named Alex",
-          ],
-          "pronounce": "/ædˌvɛnˈtʃər/ər/",
-          "meanings": [
-            {
-              "class": "Noun",
-              "meaning":
-                "someone who enjoys taking risks and trying new things",
-              "example": "She's an adventurer at heart.",
-            },
-          ],
-        },
-        {
-          "word": "homeland",
-          "usage": [
-            "With their homeland on the brink of destruction",
-          ],
-          "pronounce": "/hoʊmˈlænd/",
-          "meanings": [
-            {
-              "class": "Noun",
-              "meaning":
-                "the country or region where someone was born or grew up",
-              "example": "He left his homeland to seek a new life abroad.",
-            },
-          ],
-        },
-        {
-          "word": "Dardanelles",
-          "usage": [
-            "tasked with leading an important mission behind enemy lines, aboard a ship bound for the Dardanelles",
-          ],
-          "pronounce": "/dɑːrˈdænəlɪz/",
-          "meanings": [
-            {
-              "class": "Noun",
-              "meaning":
-                "a narrow strait in northwest Turkey connecting the Aegean Sea with the Sea of Marmara",
-              "example": "The Dardanelles are a critical waterway.",
-            },
-          ],
-        },
-        {
-          "word": "allies",
-          "usage": [
-            "With their wits, courage, and a trusty band of allies at their side",
-          ],
-          "pronounce": "/ˈælaɪz/",
-          "meanings": [
-            {
-              "class": "Noun",
-              "meaning":
-                "people or countries that help each other in a war or struggle",
-              "example": "The Allies defeated the Axis powers in World War II.",
-            },
-          ],
-        },
-        {
-          "word": "loyalties",
-          "usage": [
-            "Alex must decide where their loyalties lie",
-          ],
-          "pronounce": "/loʊˈtaɪəti/zi/",
-          "meanings": [
-            {
-              "class": "Noun",
-              "meaning":
-                "the feeling of loyalty or commitment to a person, group, or cause",
-              "example":
-                "She struggled with her loyalties as she chose between two friends.",
-            },
-          ],
-        },
-        {
-          "word": "sacrifice",
-          "usage": [
-            "what, if anything, they are willing to sacrifice for the greater good",
-          ],
-          "pronounce": "/ˈsækəraɪs/",
-          "meanings": [
-            {
-              "class": "Verb",
-              "meaning":
-                "to give up something important or valuable in order to achieve a goal or help others",
-              "example":
-                "He sacrificed his own desires for the good of his family.",
-            },
-          ],
-        },
-      ],
-      "patterns": [
-        {
-          "pattern": "S + V",
-          "usage": [
-            "In a world...",
-            "With their homeland...",
-          ],
-          "explanation":
-            "Simple subject-verb pattern, where the subject is the main entity performing the action.",
-          "words": [
-            {
-              "S": [
-                "world",
-                "homeland",
-              ],
-              "V": [
-                "clash",
-                "sets",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O",
-          "usage": [
-            "They soon find themselves...",
-            "Alex must navigate...",
-          ],
-          "explanation":
-            "Simple subject-verb-object pattern, where the object is the entity receiving the action.",
-          "words": [
-            {
-              "S": [
-                "they",
-                "Alex",
-              ],
-              "V": [
-                "find",
-                "navigate",
-              ],
-              "O": [
-                "ship",
-                "web of intrigue",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + C",
-          "usage": [
-            "With their wits...",
-            "As the days...",
-          ],
-          "explanation":
-            "Simple subject-verb-complement pattern, where the complement is an additional information about the action.",
-          "words": [
-            {
-              "S": [
-                "they",
-                "Alex",
-              ],
-              "V": [
-                "fight",
-                "question",
-              ],
-              "C": [
-                "courage and a trusty band of allies",
-                "the very nature of their quest",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + M",
-          "usage": [
-            "But as the days...",
-            "The fate...",
-          ],
-          "explanation":
-            "Simple subject-verb-modifier pattern, where the modifier is an additional information about the action or state.",
-          "words": [
-            {
-              "S": [
-                "Alex",
-                "the fate",
-              ],
-              "V": [
-                "question",
-                "decide",
-              ],
-              "M": [
-                "days and weeks",
-                "loyalties lie",
-              ],
-            },
-          ],
-        },
-      ],
-    },
-  },
-};
+      "answer": 2
+    }
+  ]
+}
+export default data;

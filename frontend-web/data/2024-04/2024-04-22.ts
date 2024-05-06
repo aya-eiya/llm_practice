@@ -1,98 +1,108 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "The Edmund Pettus Bridge March",
+    "details":
+      "On April 22, 1965, a group of African American civil rights activists led by Hosea Williams and John Lewis marched from Selma to Montgomery, Alabama in an effort to gain voting rights for African Americans. The march was violently attacked by state troopers, resulting in many injuries and arrests.",
+  },
   "date": "2024-04-22",
-  "event":
-    "The first International Congress of Mathematicians held on April 22nd, 1897",
-  "title": "The Secret of Math Magic",
+  "title": "A March for Justice",
   "body":
-    "In the small town of Mathville, everyone loved math. But one day, strange things started to happen. The numbers in the town suddenly began to change! The trees that used to be green turned into fractions and the houses that were once solid became sets. The people of Mathville were terrified. They knew they had to find out what was happening. So, they called upon their greatest mathematician, Professor Euclid. With his trusty calculator by his side, he set off on a journey to solve the mystery. He followed the numbers deeper and deeper into the unknown. But as he got closer, he realized that the numbers were alive! They had a mind of their own and were using their magic to change the town. Professor Euclid knew he had to stop them before it was too late. With the help of his friends, he battled the living numbers and finally defeated them. The people of Mathville were relieved and grateful. And from that day on, they made sure to always appreciate math and never take it for granted again.",
-  "word count": 180,
+    "In a world where technology has advanced beyond our wildest dreams, but racism still persists, a group of brave individuals embark on a march to fight for their rights. Led by a charismatic leader named Hosea, the marchers set out from Selma to Montgomery, Alabama, determined to bring attention to the injustices they face.  As they walk, the group is met with resistance and violence at every turn, but they refuse to be deterred. State troopers attack them, resulting in many injuries and arrests. Despite the hardships they face, the marchers continue their journey, spreading a message of hope and equality.  Through this harrowing experience, they discover that technology can be used for good as well as evil, and that it is up to them to use it wisely. In the end, their efforts pay off as they successfully bring about change and pave the way for a brighter future.",
+  "word count": 150,
   "dialog": [
     {
       "Billy":
-        "I loved this novel! The idea that numbers can be alive and change a town is so cool!",
-    },
-    {
-      "Kerry":
-        "Totally agree! I was on the edge of my seat when Professor Euclid was battling those living numbers. Did you think he'd actually succeed?",
+        "I'm still trying to wrap my head around how technology can be used for good or evil. It's mind-blowing!",
     },
     {
       "Meg":
-        "I loved how Meg's creativity was reflected in her writing. She's such a brilliant character!",
+        "I know what you mean, Billy! I loved how the author showed that even with all this advanced tech, people can still be cruel and biased.",
+    },
+    {
+      "Kerry":
+        "Yeah, it's like, just because we have super smart stuff doesn't mean we're automatically better. It's up to us to use our brains wisely.",
     },
     {
       "Lui":
-        "Indeed, Meg's imagination is quite impressive. But I have to say, as an educator, I'm concerned about the message this novel sends. It seems to suggest that math and numbers are somehow magical or alive, which might be misleading for young readers.",
+        "Well said, Kerry. As educators, we need to make sure students understand the power of technology and how to wield it responsibly.",
     },
     {
       "Billy":
-        "I see what you mean, Mr. Lui. But isn't it possible to appreciate math without making it seem supernatural? I think Professor Euclid's approach is more realistic and shows the importance of understanding numbers in our daily lives.",
-    },
-    {
-      "Kerry":
-        "Yeah, Billy makes a good point! And who knows, maybe we can even find some real-life connections between math and magic",
+        "I think that's what I loved most about this novel - it showed that even in the face of adversity, people can come together and make a difference.",
     },
     {
       "Meg":
-        "Ooh, that's a great idea, Kerry! Maybe we could write our own stories about numbers coming to life... or perhaps a superhero using math skills to save the day!",
+        "Exactly! And I loved how the author didn't shy away from tough topics like racism and injustice. It was so powerful.",
+    },
+    {
+      "Kerry":
+        "Yeah, it's not always easy to read about, but it's important that we do. We need to learn from history and use those lessons to create a better future.",
     },
     {
       "Lui":
-        "Well, I think that's a wonderful idea, Meg. It's always exciting to see students exploring their creativity and curiosity. Who knows what kind of innovative ideas they might come up with?",
+        "Well, I think this novel did just that - it inspired us to take action and make a positive impact in our own community.",
     },
   ],
   "quiz": [
     {
-      "question": "What was happening to the town of Mathville?",
+      "question":
+        "What was the main goal of the march led by Hosea in the novel?",
       "options": [
-        "The numbers were becoming alive",
-        "The houses were moving",
-        "The trees were turning green again",
-        "People were leaving the town",
+        "To protest against technology",
+        "To fight for racial equality",
+        "To celebrate a technological achievement",
+        "To promote a peaceful movement",
+        "To criticize a government policy",
       ],
-      "answer": 0,
+      "answer": 1,
     },
     {
       "question":
-        "Who did the people of Mathville call upon to solve the mystery?",
+        "What was one of the challenges faced by the marchers in the novel?",
       "options": [
-        "Professor Euclid",
-        "Billy",
-        "Meg",
-        "Kerry",
+        "They got lost on the way to Montgomery",
+        "State troopers attacked them",
+        "It rained heavily throughout their journey",
+        "Some marchers were too tired to continue",
+        "The group ran out of food",
       ],
-      "answer": 0,
+      "answer": 1,
     },
     {
-      "question":
-        "What was Professor Euclid's approach to solving the problem?",
+      "question": "What was Billy's main concern about technology?",
       "options": [
-        "He used magic",
-        "He battled the living numbers",
-        "He ignored the situation",
-        "He showed the importance of understanding numbers in daily life",
-      ],
-      "answer": 3,
-    },
-    {
-      "question": "How did Meg's creativity reflect her writing style?",
-      "options": [
-        "She wrote about math and science",
-        "Her writing was plain and simple",
-        "Her imagination was reflected in her writing",
-        "Her writing was boring",
+        "That it was too powerful",
+        "That it was not advanced enough",
+        "That it could be used for good or evil",
+        "That it was only used by a select few",
+        "That it didn't exist",
       ],
       "answer": 2,
     },
     {
-      "question":
-        "What message did Lui, the educator, find concerning in the novel?",
+      "question": "What did the novel show about technology?",
       "options": [
-        "That math is fun and easy to learn",
-        "That math is important for daily life",
-        "That numbers can be magical or alive",
-        "That creativity is essential in writing",
+        "That it's always positive",
+        "That it can be used for both good and evil",
+        "That it's only useful for a select few",
+        "That it doesn't exist",
+        "That it's not important",
+      ],
+      "answer": 1,
+    },
+    {
+      "question":
+        "What did the group of marchers discover through their experience?",
+      "options": [
+        "That technology is useless",
+        "That it can be used to promote peace",
+        "That it's up to them to use it wisely",
+        "That they're not capable of change",
+        "That they should just give up",
       ],
       "answer": 2,
     },
   ],
 };
+export default data;

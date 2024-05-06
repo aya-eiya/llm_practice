@@ -1,101 +1,124 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "Groundbreaking for the Guggenheim Museum in New York City",
+    "details":
+      "On April 10th, 1959, the groundbreaking ceremony took place for the Solomon R. Guggenheim Museum, designed by Frank Lloyd Wright, marking the beginning of its construction.",
+  },
   "date": "2024-04-10",
-  "event": "April 10th, 1429 - Battle of Crécy",
-  "title": "The Magical Dragon's Treasure",
+  "title": "The Architect's Vision",
   "body":
-    "In a faraway kingdom, there was a magical dragon named Zephyr who guarded a treasure that held the power to make anyone rich and powerful. But one day, the wicked king tried to steal the treasure for himself. The villagers were in despair until a brave young knight named Sir Cedric stepped forward to save them.On his quest, Sir Cedric met a wise old wizard who gave him a magical sword that could defeat any enemy. With the sword in hand, Sir Cedric battled through the treacherous forests and dark caves until he reached Zephyr's lair. The battle was fierce, but Sir Cedric emerged victorious. He took the treasure and returned it to the kingdom, where it was used for good deeds and the kingdom prospered.From that day on, Sir Cedric was hailed as a hero, and the villagers lived in peace and happiness.",
-  "word count": 144,
+    "In the bustling city of New York City, a groundbreaking ceremony took place on a crisp April day in 1959 for the construction of the Solomon R. Guggenheim Museum. The architect, Frank Lloyd Wright, stood proudly behind the podium, his mind filled with visions of what the museum would become once completed. As the first shovel full of dirt was thrown into the air, a cheer erupted from the crowd, marking the beginning of this monumental project. Over the course of the next few years, the museum took shape under Wright's meticulous direction, and as each piece of marble and steel was carefully placed, the architect's vision began to come alive. Finally, on a sunny day in 1963, the museum was complete, standing as a testament to Wright's genius and the limitless possibilities of architecture.",
+  "word count": 135,
   "dialog": [
     {
-      "Billy":
-        "Wow, I loved the part where Sir Cedric battled Zephyr! The way he used his magical sword was so cool!",
+      "Billy": "I loved how Wright's design seemed to defy gravity!",
     },
     {
       "Kerry":
-        "Totally agreed, Billy! And what's up with King being so mean? I mean, come on, stealing treasure just to get rich and powerful?",
+        "Yeah, me too! It's like he took all these crazy shapes and put them together in a way that makes sense.",
     },
     {
       "Meg":
-        "Oh, don't forget the wise old wizard who gave Sir Cedric that magical sword! He was like a superhero in his own right",
+        "And the spiral shape of the museum is just incredible. I felt like I was inside a whirlpool!",
     },
     {
       "Lui":
-        "Ah, yes, the wizard played a crucial role indeed. But what I found most inspiring was how Sir Cedric's bravery and determination brought prosperity to the kingdom.",
+        "Actually, the design was quite intentional. Wright wanted to create a space that would engage visitors on multiple levels.",
     },
     {
       "Billy":
-        "Yeah, it's amazing how one person can make such a huge difference! And I loved how Zephyr wasn't just some mindless dragon - he had a reason for guarding that treasure",
+        "That's so cool! I never thought about it that way. What do you think the museum means for the city?",
     },
     {
       "Kerry":
-        "Yeah, and it's like... what would you do if someone stole something super valuable from you? You'd want to get it back, right?",
+        "I think it shows that New York City is willing to take risks and push boundaries. It's a symbol of innovation!",
     },
     {
       "Meg":
-        "I think we can all relate to that! I mean, when you're passionate about something - whether it's a book or an idea - you don't want others taking it away",
+        "And it's not just about the architecture – the museum itself is a work of art, with so many unique exhibits and displays.",
     },
     {
       "Lui":
-        "Well said, Meg. And speaking of passions, Billy, tell me more about your own projects in the laboratory!",
+        "The Guggenheim has become an iconic landmark in New York City, attracting visitors from all over the world.",
+    },
+    {
+      "Billy":
+        "I've heard the permanent collection is amazing. What's your favorite piece?",
+    },
+    {
+      "Kerry":
+        "Oh, definitely the Kandinsky painting! It's so vibrant and colorful.",
+    },
+    {
+      "Meg":
+        "I love the Pollock exhibit too – it's like looking at a Jackson Pollock painting come to life!",
+    },
+    {
+      "Lui":
+        "The museum's commitment to modern art is what sets it apart from other institutions.",
     },
   ],
   "quiz": [
     {
-      "question": "What was Zephyr, the magical dragon, guarding?",
+      "question":
+        "When did the groundbreaking ceremony for the Solomon R. Guggenheim Museum take place?",
       "options": [
-        "A treasure that could make anyone poor",
-        "A treasure that held the power to make anyone rich and powerful",
-        "A mysterious object that only wizards could understand",
-        "A dark secret that only King knew about",
-        "Nothing at all",
-      ],
-      "answer": 1,
-    },
-    {
-      "question": "What did Sir Cedric use to defeat Zephyr?",
-      "options": [
-        "His bravery and determination",
-        "A magical sword given by a wise old wizard",
-        "The treasure itself",
-        "The power of the kingdom's villagers",
-        "Zephyr's own fire",
+        "1955",
+        "1959",
+        "1963",
+        "1966",
+        "1970",
       ],
       "answer": 1,
     },
     {
       "question":
-        "What was King trying to do when he tried to steal the treasure?",
+        "What was Frank Lloyd Wright's intention behind designing the museum's spiral shape?",
       "options": [
-        "He wanted to use it for good deeds in the kingdom",
-        "He wanted to keep it all for himself and become rich and powerful",
-        "He wanted to destroy it because it was too valuable",
-        "He wanted to trade it with another kingdom",
-        "He didn't care about what happened",
+        "To create a sense of chaos",
+        "To engage visitors on multiple levels",
+        "To defy gravity",
+        "To showcase modern art",
+        "To represent the city's architecture",
       ],
       "answer": 1,
     },
     {
-      "question": "What did the wise old wizard give Sir Cedric?",
+      "question": "What does Billy think about Wright's design for the museum?",
       "options": [
-        "A magical shield to protect him from Zephyr's fire",
-        "A map leading to Zephyr's lair",
-        "A magical sword that could defeat any enemy",
-        "The treasure itself",
-        "A potion to make Sir Cedric stronger",
+        "It's too complex",
+        "It seems to defy gravity",
+        "It's boring",
+        "It's not impressive",
+        "It's just okay",
       ],
-      "answer": 2,
+      "answer": 1,
     },
     {
       "question":
-        "What happened to the kingdom after Sir Cedric returned the treasure?",
+        "According to Lui, what does the Guggenheim Museum symbolize for New York City?",
       "options": [
-        "It became poorer and less prosperous",
-        "It remained the same as before",
-        "It prospered and became a better place for its people",
-        "It was destroyed by Zephyr's fire",
-        "It became a dark and scary place",
+        "Innovation and progress",
+        "Cultural heritage",
+        "Economic growth",
+        "Environmental sustainability",
+        "Tourist attractions",
       ],
-      "answer": 2,
+      "answer": 0,
+    },
+    {
+      "question":
+        "What is Kerry's favorite piece in the museum's permanent collection?",
+      "options": [
+        "A Pollock painting",
+        "A Kandinsky painting",
+        "A Picasso sculpture",
+        "A Rothko mural",
+        "An unknown artwork",
+      ],
+      "answer": 0,
     },
   ],
 };
+export default data;

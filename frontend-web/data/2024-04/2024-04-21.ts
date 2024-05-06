@@ -1,99 +1,106 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "The Beatles Release 'Sgt. Pepper's Lonely Hearts Club Band'",
+    "details":
+      "On April 21st, 1967, The Beatles released their groundbreaking album 'Sgt. Pepper's Lonely Hearts Club Band', which is widely regarded as one of the most influential and iconic albums in rock music history.",
+  },
   "date": "2024-04-21",
-  "event": "April 21, 1976, Pointe Du Hoc invasion",
-  "title": "The Aliens of April 21st",
+  "title": "A Lonely Heart's Love Story",
   "body":
-    "Once upon a time, on a cold and dark April night, something strange happened. The children of the small town of Greenville woke up to find their homes invaded by strange creatures from another world. These aliens were not like any other creatures they had ever seen before. They had long, thin fingers that they used to reach through walls and snatch people out of bed. The children were terrified and didn't know what to do. But then, a group of brave adults came together to fight off the invaders. With bravery and determination, they managed to chase the aliens back to their spaceship and save the town. From that day on, no one dared to speak of the aliens again, and life went back to normal in Greenville.",
-  "word count": 129,
+    "As the world was captivated by The Beatles' release of 'Sgt. Pepper's Lonely Hearts Club Band', a young woman named Sophie found herself drawn to the album's themes of love, loss, and the search for meaning in life. She spent every spare moment listening to the album and imagining herself as part of the band.One day, while on a walk through the park, she stumbled upon a man playing a guitar and singing one of her favorite Beatles songs. His name was Jack, and he had a way of performing that made her heart skip a beat. They struck up a conversation, and before they knew it, they were inseparable.Together, they embarked on a journey of self-discovery and love. They spent hours discussing the album's lyrics and what they meant to them. They discovered that they shared a deep connection through their love for The Beatles and their appreciation for the album's message of finding happiness in unexpected places.",
+  "word count": 159,
   "dialog": [
     {
       "Billy":
-        "I'm still trying to wrap my head around what happened in Greenville. Aliens invading homes? It sounds like science fiction!",
-    },
-    {
-      "Kerry":
-        "Dude, it's not just that! Think about it - these aliens had some serious technology going on. I mean, who needs walls and doors when you can just phase through them?",
+        "I loved how Sophie's love for The Beatles brought her and Jack together. It's like the music was a common language that helped them connect.",
     },
     {
       "Meg":
-        "Oh my gosh, the way they described those long fingers... it gave me chills! Can we imagine what kind of powers they might have possessed?",
+        "Absolutely! And I think it's great how they found meaning in life through the album. It's a beautiful reminder that we can find joy even in unexpected places.",
     },
     {
       "Lui":
-        "Now, now, let's not get too carried away with speculation. We need to focus on the historical context of this event. What do you think would happen if something like this were to occur in our own town?",
+        "Well, as an educator, I appreciate how the novel highlights the importance of shared experiences and connections. It's a powerful message for young people (and adults!) to learn from.",
+    },
+    {
+      "Kerry":
+        "Yeah, and I loved how Sophie was so passionate about The Beatles! She wasn't just some average fan; she really got what they were all about. That's something we can all learn from - being true to ourselves and our passions.",
     },
     {
       "Billy":
-        "That's a great point, Lui. I wonder what kind of social changes would follow an alien invasion. Would we have to relearn everything about our world and culture?",
-    },
-    {
-      "Kerry":
-        "And what about the government response? Would they try to cover it up or work with the aliens to figure out what's going on?",
+        "I also liked how the novel explored themes of love, loss, and self-discovery. It's a relatable journey that many people can identify with.",
     },
     {
       "Meg":
-        "I think it's fascinating that the town went back to normal after the invasion. Did anyone in Greenville ever talk about what really happened, or was it all just hushed up?",
+        "And I think it's great how Sophie didn't just stop at imagining herself as part of The Beatles; she took action and actually met Jack through music. That takes courage!",
     },
     {
       "Lui":
-        "Well, Meg, I suppose that's a topic for our history class discussion next week. Let's keep exploring this fascinating story and see where it takes us!",
+        "Yes, the novel does a wonderful job of showing how our passions and interests can bring us together with others. It's a beautiful thing to see.",
+    },
+    {
+      "Kerry":
+        "I loved how the novel ended too - it left me feeling hopeful and inspired. I think that's what makes this book so special; it leaves you feeling uplifted and motivated.",
     },
   ],
   "quiz": [
     {
-      "question": "What did the aliens do when they arrived on Earth?",
+      "question": "What was Sophie passionate about?",
       "options": [
-        "They destroyed everything",
-        "They made friends with humans",
-        "They started a war",
-        "They landed peacefully",
-        "They disappeared",
-      ],
-      "answer": 3,
-    },
-    {
-      "question": "Why were the aliens upset about April 21st?",
-      "options": [
-        "Because it was their birthday",
-        "Because they had an appointment",
-        "Because something happened on that day in the past",
-        "Because they didn't like the date format",
-        "Because they were tired",
-      ],
-      "answer": 2,
-    },
-    {
-      "question": "What did the narrator think about the aliens?",
-      "options": [
-        "They were kind and friendly",
-        "They were mean and scary",
-        "They were just weird",
-        "They were boring",
-        "They didn't care",
-      ],
-      "answer": 0,
-    },
-    {
-      "question": "What happened on April 21st that upset the aliens?",
-      "options": [
-        "The sun went out",
-        "A major event occurred in history",
-        "It was a holiday",
-        "The weather changed dramatically",
-        "Nothing special happened",
+        "Music",
+        "The Beatles",
+        "Love",
+        "Self-Discovery",
+        "Life",
       ],
       "answer": 1,
     },
     {
-      "question": "How did the narrator feel about the situation?",
+      "question": "How did Sophie and Jack meet?",
       "options": [
-        "Scared and confused",
-        "Sad and upset",
-        "Happy and excited",
-        "Angry and frustrated",
-        "Indifferent and curious",
+        "Through a shared love of The Beatles",
+        "In the park",
+        "At a concert",
+        "Online",
+        "By chance",
       ],
       "answer": 0,
     },
+    {
+      "question":
+        "What was the common language that brought Sophie and Jack together?",
+      "options": [
+        "Their love for life",
+        "The Beatles' music",
+        "Their shared experiences",
+        "Their passion for learning",
+        "Their sense of humor",
+      ],
+      "answer": 1,
+    },
+    {
+      "question": "What did Sophie learn from her love for The Beatles?",
+      "options": [
+        "To be more outgoing",
+        "To appreciate the little things in life",
+        "To find meaning in unexpected places",
+        "To take risks and try new things",
+        "To play the guitar",
+      ],
+      "answer": 2,
+    },
+    {
+      "question": "What was the overall tone of the novel's ending?",
+      "options": [
+        "Sad",
+        "Hopeful and inspired",
+        "Surprised",
+        "Disappointed",
+        "Bored",
+      ],
+      "answer": 1,
+    },
   ],
 };
+export default data;

@@ -1,98 +1,107 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "First Stone Laying Ceremony for the Taj Mahal",
+    "details":
+      "On April 1, 1632, Mughal Emperor Shah Jahan laid the first stone of the Taj Mahal in Agra, India, marking the beginning of its construction. The mausoleum was built as a tribute to his beloved wife, Mumtaz Mahal.",
+  },
   "date": "2024-04-01",
-  "event": "Event: April 1st",
-  "title": "The Day of the Great Invention",
+  "title": "The Stone that Stood the Test of Time",
   "body":
-    "It was a bright and sunny day, with everyone outside enjoying the beautiful weather. But little did they know, something incredible was about to happen! Suddenly, the sky turned a deep shade of blue and a strange machine appeared in the distance. As it got closer, everyone could see that it was unlike anything they had ever seen before. It was a magnificent invention, capable of doing things that no one had ever imagined possible. The people were amazed and excited to see what it could do! And as they watched, the machine began to change their lives forever. From that day on, everything was different - the world had been transformed by the power of this incredible invention.",
-  "word count": 119,
+    "In a distant world where crystals held the key to the universe, there was a powerful stone that held the secret to eternal love. This stone was guarded by the great queen Mumtaz, who ruled over her kingdom with an iron will. But one day, a wicked sorcerer attempted to steal the stone, and in its place, he left a small pebble, vowing to return when the great queen passed away.Years later, on the day of the first stone laying ceremony for the Taj Mahal, a group of brave adventurers set out on a quest to find the lost crystal. They traveled through treacherous landscapes, braving danger at every turn, until they finally discovered the small pebble that had replaced the great queen's precious stone.With the help of the queen's loyal followers, they worked tirelessly to build a magnificent mausoleum in her honor, using the stone as its foundation. And so, the Taj Mahal was born, a monument to eternal love that would stand the test of time.",
+  "word count": 168,
   "dialog": [
     {
       "Billy":
-        "Wow, can you believe what just happened? That machine was incredible!",
+        "Wow, I never thought I'd be reading a story about the Taj Mahal! But it's actually really cool how it's connected to eternal love.",
     },
     {
       "Kerry":
-        "I know, right? I've never seen anything like it! What do you think it does?",
+        "Yeah, and can you believe that someone would try to steal the stone? That's so not right! I'm glad they were able to find it in the end.",
     },
     {
       "Meg":
-        "I think it's magical! I mean, the way it changed everything overnight... it's like something out of a fantasy novel.",
+        "I loved learning about the queen Mumtaz and how she guarded the stone. It makes me think of all the powerful women throughout history who have made a difference.",
     },
     {
       "Lui":
-        "Well, let's not jump to conclusions. We don't know what kind of technology or science is behind this machine. It could be incredibly advanced or entirely new.",
+        "As a teacher, I appreciate how this story incorporates historical events like the Taj Mahal's construction into a fictional narrative. It's a great way to make learning fun and engaging.",
     },
     {
       "Billy":
-        "But think about it, Lui! If we can figure out how it works, we could do all sorts of amazing things! Imagine the possibilities!",
+        "I'm curious, did you guys notice any themes or messages in the story? Like, what does it say about love and sacrifice?",
     },
     {
       "Kerry":
-        "Yeah, and imagine if we could use it to help people in need or solve some of the world's biggest problems. That would be awesome!",
+        "Yeah, I think it shows that even when people are gone, their legacy can live on. The Taj Mahal is a symbol of eternal love and remembrance.",
     },
     {
       "Meg":
-        "I just hope it doesn't change who we are as individuals. I mean, what if our unique qualities get lost in all the changes?",
+        "That's true! And it also highlights the importance of perseverance and teamwork. The adventurers didn't give up, even when things got tough.",
     },
     {
       "Lui":
-        "That's a valid concern, Meg. But let's not forget that this machine has already brought people together and inspired wonder. That's something to build on.",
+        "I agree with both of you. The story promotes a sense of community and honoring one's heritage. It's a great reminder to appreciate our cultural icons and the people who built them.",
     },
   ],
   "quiz": [
     {
-      "question":
-        "What event occurred in 1914 that had far-reaching consequences?",
+      "question": "What was the powerful stone guarded by Queen Mumtaz?",
       "options": [
-        "The rise of nationalism",
-        "The decline of empires",
-        "The assassination of Archduke Franz Ferdinand",
-        "The beginning of World War I",
-      ],
-      "answer": 3,
-    },
-    {
-      "question": "How did the author blend science and history in the novel?",
-      "options": [
-        "By using astronomy to solve mysteries",
-        "By incorporating mythology into historical events",
-        "By creating fictional characters with real-world skills",
-        "None of the above",
+        "A small pebble",
+        "A magnificent crystal",
+        "The Taj Mahal",
+        "Eternal love",
+        "An iron will",
       ],
       "answer": 1,
     },
     {
       "question":
-        "What is an important lesson that can be learned from the novel?",
+        "Why did the sorcerer leave a small pebble instead of the great queen's precious stone?",
       "options": [
-        "The importance of imagination",
-        "The power of curiosity",
-        "The value of resourcefulness",
-        "The need for superheroes",
+        "To build the Taj Mahal",
+        "To confuse the adventurers",
+        "To return when the queen passed away",
+        "To test their courage",
+        "To create a puzzle",
       ],
-      "answer": 1,
+      "answer": 2,
     },
     {
-      "question":
-        "Why has the novel resonated with many readers according to Lui?",
+      "question": "What was built using the small pebble as its foundation?",
       "options": [
-        "Because it's an inspiration story",
-        "Because it's grounded in reality",
-        "Because it's a thriller",
-        "Because it's about history",
+        "A magnificent mausoleum",
+        "The Taj Mahal",
+        "Eternal love",
+        "A monument to bravery",
+        "An iron will",
       ],
       "answer": 0,
     },
     {
       "question":
-        "What was Archduke Franz Ferdinand known for, according to the novel?",
+        "Who worked tirelessly to build a magnificent mausoleum in Queen Mumtaz' honor?",
       "options": [
-        "His love of war and desire to bring destruction",
-        "His love of peace and desire to bring happiness",
-        "His interest in astronomy and mathematics",
-        "His skill in solving mysteries",
+        "Brave adventurers",
+        "The queen's loyal followers",
+        "The sorcerer's apprentices",
+        "The people of the kingdom",
+        "The Taj Mahal builders",
       ],
       "answer": 1,
     },
+    {
+      "question": "What is the Taj Mahal a symbol of, according to the story?",
+      "options": [
+        "Eternal love and remembrance",
+        "Bravery and sacrifice",
+        "Perseverance and teamwork",
+        "Cultural icons and heritage",
+        "Power and will",
+      ],
+      "answer": 0,
+    },
   ],
 };
+export default data;

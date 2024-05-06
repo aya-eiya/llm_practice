@@ -1,99 +1,107 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "Founding of the University of Uppsala",
+    "details":
+      "On April 28, 1477, the University of Uppsala was founded by Gustav Vasa, King of Sweden. The university is considered one of the oldest and most prestigious in Scandinavia.",
+  },
   "date": "2024-04-28",
-  "event": "Discovery of DNA",
-  "title": "The Secret of Life",
+  "title": "The Dream of Gustav Vasa",
   "body":
-    "In a world where humans had long forgotten their origins, a young girl named Mia stumbled upon an ancient text that spoke of the building blocks of life. As she read the words on the old scroll, her mind raced with the possibilities. With the help of her best friend and a team of scientists, they set out to unravel the mysteries of the DNA strands that lay within each cell.As they worked tirelessly in the lab, Mia's imagination soared. She envisioned a world where diseases were eradicated, and life was perfected. The excitement was palpable as they made breakthrough after breakthrough.But as the days passed, Mia realized that their discoveries had fallen into the wrong hands. A rogue organization sought to use the knowledge for nefarious purposes. It was up to Mia and her friends to save the world from a dark fate. With courage and determination, they fought off the villains and saved the day.Mia's discovery changed the course of history, and she went on to become one of the most celebrated scientists of all time. Her legacy lived on, inspiring generations to come.",
-  "word count": 186,
+    "Gustav Vasa was a man who dreamed of creating a place where knowledge could be shared and celebrated. He envisioned a university that would bring together scholars from all corners of the world, a place where ideas could be exchanged and the human mind could flourish. On April 28, 1477, Gustav Vasa's dream became a reality as he founded the University of Uppsala. The university was to become one of the oldest and most prestigious in Scandinavia, a place where minds were pushed to their limits and the boundaries of knowledge were expanded. But as the years passed, the university began to lose its luster. Scholars from all over Europe flocked to the university, but they brought with them their own ideas and ways of thinking. The university became a melting pot of cultures and ideologies, and soon the dream that Gustav Vasa had envisioned began to fade away. As the years passed, the university became more and more like any other institution, until eventually it was nothing more than a shadow of its former self.",
+  "word count": 176,
   "dialog": [
     {
       "Billy":
-        "Wow, I loved this novel! The way it wove together science and adventure was so cool.",
+        "I didn't expect the University of Uppsala to have such a rich history! I mean, who knew Gustav Vasa was a visionary?",
     },
     {
       "Kerry":
-        "Totally agreed, dude! I loved how Mia's curiosity drove her to make a difference. And that rogue organization? Super creepy!",
+        "Yeah, I know what you mean, Billy. And what's crazy is that it's not just about the university - it's about how knowledge can bring people together.",
     },
     {
       "Meg":
-        "I know what you mean, Billy. The way the novel highlighted the importance of science and discovery was really inspiring. And Meg was such a great role model for girls everywhere.",
+        "I loved learning about the scholars from all over Europe coming to Uppsala. It felt like a really special place where people could share their ideas.",
     },
     {
       "Lui":
-        "Well said, all of you. I think what resonated with me most was how this story showed that even young people can make a significant impact when they follow their passions.",
+        "That's exactly what I was thinking, Meg. The idea of a melting pot of cultures and ideologies is fascinating. It shows how knowledge can transcend borders and backgrounds.",
     },
     {
       "Billy":
-        "Exactly! And I loved how the novel explored the idea that knowledge is power. It's so important to use it for good, not evil.",
+        "And it's not just about the past - it's also about the present. I mean, we have our own ways of sharing ideas and learning from each other.",
     },
     {
       "Kerry":
-        "Yeah, and speaking of power, have you guys noticed how the book highlighted the importance of teamwork? Mia couldn't have done it without her friends' help.",
+        "Totally, Billy! We've got social media, online courses... the possibilities are endless. It's like Gustav Vasa's dream is still alive and kicking today.",
     },
     {
       "Meg":
-        "Absolutely! I think that's one of my favorite things about the novel. It shows that even when faced with huge challenges, we can overcome them if we work together and support each other.",
+        "I never thought about it that way, Kerry. But I guess you're right - we do have our own ways of sharing knowledge and celebrating our differences.",
     },
     {
       "Lui":
-        "Well said, Meg. And let's not forget how the novel emphasized the importance of perseverance and determination. Mia didn't give up, even when things got tough.",
-    },
-    {
-      "Billy":
-        "Yeah, it's a great reminder that we should never give up on our goals, no matter what obstacles come our way.",
+        "Well said, Meg. And I think that's what makes this story so relevant to us as readers. We can learn from the past and apply those lessons to our own lives today.",
     },
   ],
   "quiz": [
     {
-      "question":
-        "What did Mia discover that changed her life and the course of history?",
+      "question": "What was Gustav Vasa's dream?",
       "options": [
-        "An ancient text",
-        "A cure for a disease",
-        "The building blocks of life",
-        "The power of teamwork",
-      ],
-      "answer": 2,
-    },
-    {
-      "question": "Why was Mia's discovery significant?",
-      "options": [
-        "It helped her friends in the lab",
-        "It saved the world from a dark fate",
-        "It showed that science is important",
-        "It made her famous",
+        "to build a castle",
+        "to found a university",
+        "to conquer Europe",
+        "to write a book",
+        "to become king",
       ],
       "answer": 1,
     },
     {
-      "question": "What was the theme of the novel?",
+      "question": "When was the University of Uppsala founded?",
       "options": [
-        "The importance of friendship",
-        "The power of determination",
-        "The danger of knowledge",
-        "The excitement of adventure",
+        "1450",
+        "1477",
+        "1500",
+        "1550",
+        "1600",
       ],
-      "answer": 3,
+      "answer": 1,
     },
     {
-      "question": "Who were Mia's friends who helped her in the lab?",
+      "question": "What happened to the University of Uppsala over time?",
       "options": [
-        "Billy, Kerry, and Meg",
-        "A team of scientists",
-        "Her family members",
-        "Other students",
+        "it became more prestigious",
+        "it lost its luster",
+        "it became a melting pot of cultures and ideologies",
+        "it moved to another location",
+        "it was abandoned",
       ],
-      "answer": 0,
+      "answer": 1,
     },
     {
-      "question": "What was the main message of the novel?",
+      "question":
+        "What did the scholars from all over Europe bring with them to the University of Uppsala?",
       "options": [
-        "That science is powerful but can be misused",
-        "That teamwork is essential for success",
-        "That determination and perseverance are key to overcoming challenges",
-        "That adventure is exciting but not always important",
+        "only books",
+        "their own ideas and ways of thinking",
+        "only friends",
+        "only food",
+        "only clothes",
+      ],
+      "answer": 1,
+    },
+    {
+      "question":
+        "How does Kerry think Gustav Vasa's dream is still alive today?",
+      "options": [
+        "it's not relevant to modern times",
+        "it's only applicable to the past",
+        "through social media and online courses",
+        "by building more universities",
+        "through writing books",
       ],
       "answer": 2,
     },
   ],
 };
+export default data;

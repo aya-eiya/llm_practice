@@ -1,338 +1,315 @@
-export default {
-  "body":
-    "In a kingdom far, far away, young Princess Isabella was known for her insatiable curiosity and love of art. When she heard of the great Italian Renaissance painter Rafael Santi, she knew she had to see his masterpieces for herself. Despite her father's objections, Isabella set off on a journey to find Rafael's works.But when she arrived in Italy, tragedy struck. Rafael Santi had passed away just days before. Heartbroken, Isabella decided to dedicate her life to preserving and promoting the works of this great artist. With the help of her new friends, she set up a school for young artists and worked tirelessly to ensure that Rafael's legacy would live on forever.",
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "First Photograph Taken by Louis Daguerre",
+    "details": "On May 8, 1839, French inventor Louis Daguerre took the first photograph using his daguerreotype process. This marked a major milestone in the development of photography as we know it today."
+  },
   "date": "2024-05-03",
+  "title": "The Inventor's Miracle",
+  "body": "In a bustling city of the early 1800s, Louis Daguerre was a young inventor struggling to make his mark on the world. He spent countless hours in his small workshop, tinkering with gears and wires, trying to find a way to capture the fleeting beauty of life.One day, while working on one of his many experiments, Louis noticed something strange happening before his eyes. The room was filled with light, and as he looked through the lens of his contraption, he saw an image forming on a silver plate.Excited by this discovery, Louis spent the next few weeks perfecting his new invention, which he would later call the daguerreotype process. On May 8, 1839, he was ready to test his creation. He set up his equipment in a room and pointed it towards the street outside.As he looked through the lens, he saw the world around him come alive in stunning detail - every brick on the buildings, every leaf on the trees, and even the people walking by. It was as if he had captured a slice of time and placed it forever within his creation.News of Louis' invention spread like wildfire, and soon enough, photography became all the rage. People traveled from far and wide to have their portraits taken using the daguerreotype process.Louis Daguerre had not only changed the way people viewed the world around them but also paved the way for a whole new industry - one that would continue to evolve and shape our world for generations to come.",
+  "word count": 254,
+  "dialog": [
+    {
+      "Billy": "I loved how Louis Daguerre's invention captured the world around him in stunning detail! It's like I was right there with him."
+    },
+    {
+      "Kerry": "Yeah, and think about it - this was back in the early 1800s. Photography had just started becoming a thing!"
+    },
+    {
+      "Meg": "I know, right? It's amazing to think that Louis' invention paved the way for an entire industry. I wonder what other innovations he might have come up with if he hadn't passed away so young."
+    },
+    {
+      "Lui": "Well, let's not forget the impact it had on people's lives. Photography allowed them to preserve memories and tell stories in a whole new way."
+    },
+    {
+      "Billy": "Exactly! And I think that's what makes Louis' story so inspiring. He didn't just create something new; he changed the world."
+    },
+    {
+      "Kerry": "I'm going to have to disagree with you, Billy. While Louis was definitely a pioneer, I think it's important to remember that there were already artists and illustrators doing similar work before his time."
+    },
+    {
+      "Meg": "That's true, Kerry, but Louis' invention was still groundbreaking. And didn't he also have to overcome some pretty significant challenges along the way?"
+    },
+    {
+      "Lui": "Absolutely, Meg! Louis faced many obstacles as an inventor, not to mention being a foreigner in France at the time. His perseverance and determination are truly admirable."
+    },
+    {
+      "Billy": "Yeah, and it's amazing how his invention continues to influence us today. I mean, think about all the ways photography has changed over the years!"
+    },
+    {
+      "Kerry": "Totally! And it's crazy to think that Louis' original daguerreotype process was so cumbersome compared to what we have now."
+    },
+    {
+      "Meg": "I know, right? It's like how far we've come in terms of technology. But I still love the romanticism of those old photographs..."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What was Louis Daguerre trying to invent?",
+      "options": [
+        "A camera",
+        "A machine that could capture the fleeting beauty of life",
+        "A way to make art more realistic",
+        "A new form of entertainment",
+        "None of the above"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What was the date when Louis Daguerre tested his invention?",
+      "options": [
+        "May 8, 1839",
+        "June 15, 1840",
+        "July 20, 1820",
+        "August 10, 1850",
+        "None of the above"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What was the name of Louis Daguerre's invention?",
+      "options": [
+        "Daguerreotype process",
+        "Photography",
+        "Camera",
+        "Ink drawing",
+        "None of the above"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How did Louis Daguerre's invention change people's lives?",
+      "options": [
+        "It allowed them to preserve memories and tell stories in a whole new way",
+        "It gave them more time to relax",
+        "It helped them to learn faster",
+        "It made their daily routine easier",
+        "None of the above"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What was the impact of Louis Daguerre's invention on people?",
+      "options": [
+        "It allowed them to capture a slice of time and place it forever within his creation",
+        "It made their lives more boring",
+        "It helped them to make new friends",
+        "It gave them more money",
+        "None of the above"
+      ],
+      "answer": 0
+    }
+  ],
   "descriptions": {
     "grammar": {
       "patterns": [
         {
-          "explanation":
-            "Subject-Verb pattern: The subject (she/Isabella) is performing the action (heard/knew, set off).",
           "pattern": "S + V",
+          "explanation": "The simplest sentence pattern: Subject (S) + Verb (V). This pattern is used for simple statements or declarations.",
           "usage": [
-            "When she heard of the great Italian Renaissance painter Rafael Santi, she knew she had to see his masterpieces for herself.",
-            "Despite her father's objections, Isabella set off on a journey to find Rafael's works.",
+            "In a bustling city of the early 1800s, Louis Daguerre was a young inventor struggling to make his mark on the world."
           ],
           "words": [
             {
               "S": [
-                "she",
-                "Isabella",
-              ],
+                "Louis Daguerre",
+                "a young inventor"
+              ]
             },
             {
               "V": [
-                "heard",
-                "knew",
-                "set off",
-              ],
-            },
-          ],
+                "was",
+                "struggling"
+              ]
+            }
+          ]
         },
         {
-          "explanation":
-            "Subject-Object-Complement pattern: The subject (Princess Isabella) is described by the object (curiosity and love of art) and complemented by additional information (in a kingdom far, far away).",
-          "pattern": "S + O + C",
+          "pattern": "S + V + C",
+          "explanation": "This pattern adds a Complement (C) to the basic Subject-Verb structure, providing more information about the action or state.",
           "usage": [
-            "In a kingdom far, far away, young Princess Isabella was known for her insatiable curiosity and love of art.",
-            "With the help of her new friends, she set up a school for young artists.",
+            "On May 8, 1839, he was ready to test his creation."
           ],
           "words": [
             {
               "S": [
-                "In a kingdom",
-                "young Princess Isabella",
-              ],
+                "Louis Daguerre",
+                "he"
+              ]
             },
             {
-              "O": [
-                "insatiable curiosity",
-                "love of art",
-                "new friends",
-                "school for young artists",
-              ],
+              "V": [
+                "was",
+                "ready"
+              ]
             },
             {
               "C": [
-                "was known",
-                "set up",
-              ],
-            },
-          ],
+                "to test his creation"
+              ]
+            }
+          ]
         },
         {
-          "explanation":
-            "Subject-Object pattern: The subject (she) is affected by the object (tragedy).",
-          "pattern": "S + O",
-          "usage": [
-            "But when she arrived in Italy, tragedy struck.",
-          ],
-          "words": [
-            {
-              "S": [
-                "she",
-              ],
-            },
-            {
-              "O": [
-                "tragedy",
-              ],
-            },
-          ],
-        },
-        {
-          "explanation":
-            "Subject-Verb-Object pattern: The subject (she) is performing the action (set off) and achieving an object (finding Rafael's works).",
           "pattern": "S + V + O",
+          "explanation": "This pattern introduces an Object (O) that receives the action of the verb.",
           "usage": [
-            "She set off on a journey to find Rafael's works.",
+            "As he looked through the lens, he saw the world around him come alive in stunning detail - every brick on the buildings, every leaf on the trees, and even the people walking by."
           ],
           "words": [
             {
               "S": [
-                "she",
-              ],
+                "Louis Daguerre",
+                "he"
+              ]
             },
             {
               "V": [
-                "set off",
-              ],
+                "looked",
+                "saw"
+              ]
             },
             {
               "O": [
-                "Rafael's works",
-              ],
-            },
-          ],
+                "the world around him",
+                "every brick on the buildings",
+                "every leaf on the trees",
+                "even the people walking by"
+              ]
+            }
+          ]
         },
         {
-          "explanation":
-            "Subject-Verb pattern: The subject (Isabella) is performing the action (decided).",
-          "pattern": "S + V",
+          "pattern": "S + V + O + O",
+          "explanation": "This pattern adds a second Object (O) to provide more information about the action or state.",
           "usage": [
-            "Heartbroken, Isabella decided to dedicate her life to preserving and promoting the works of this great artist.",
+            "News of Louis' invention spread like wildfire, and soon enough, photography became all the rage."
           ],
           "words": [
             {
               "S": [
-                "Isabella",
-              ],
+                "Louis",
+                "photography"
+              ]
             },
             {
               "V": [
-                "decided",
-              ],
+                "spread",
+                "became"
+              ]
             },
-          ],
-        },
+            {
+              "O": [
+                "like wildfire",
+                "all the rage"
+              ]
+            }
+          ]
+        }
       ],
       "vocabularies": [
         {
-          "meanings": [
-            {
-              "class": "Noun",
-              "example":
-                "Her curiosity got the best of her and she started exploring the attic.",
-              "meaning": "the desire to learn or know about something",
-            },
-          ],
-          "pronounce": "/kərˈɪsɪtɪ/ (kuhr-uh-SIH-tih)",
+          "class": "Noun",
+          "word": "city",
+          "meaning": "a large and densely populated urban area",
           "usage": [
-            "In a kingdom far, far away, young Princess Isabella was known for her insatiable curiosity and love of art.",
+            "In a bustling city of the early 1800s, Louis Daguerre was a young inventor...",
+            "The city was filled with light..."
           ],
-          "word": "curiosity",
+          "pronounce": "/ˈsɪti/",
+          "example": "The city is known for its historic landmarks."
         },
         {
-          "meanings": [
-            {
-              "class": "Noun",
-              "example": "The Renaissance saw a rise in artistic innovation.",
-              "meaning":
-                "a period of time when there was a revival of art, literature, and learning in Europe",
-            },
-          ],
-          "pronounce": "/rɛˈnɛsəns/ (reh-NAH-suhns)",
+          "class": "Noun",
+          "word": "inventor",
+          "meaning": "a person who creates new devices or products",
           "usage": [
-            "When she heard of the great Italian Renaissance painter Rafael Santi, she knew she had to see his masterpieces for herself.",
+            "Louis Daguerre was a young inventor struggling to make his mark on the world.",
+            "...he spent countless hours in his small workshop, tinkering with gears and wires..."
           ],
-          "word": "Renaissance",
+          "pronounce": "/ɪnˈvɛntər/",
+          "example": "The inventor designed a new robot that could assist people."
         },
         {
-          "meanings": [
-            {
-              "class": "Noun",
-              "example": "The museum is home to many famous masterpieces.",
-              "meaning":
-                "works of art that are considered the best or most impressive",
-            },
-          ],
-          "pronounce": "/ˈmæstərpɪs/ (MAH-stur-peeze)",
+          "class": "Noun",
+          "word": "room",
+          "meaning": "a space within a building, usually with walls and a roof",
           "usage": [
-            "When she heard of the great Italian Renaissance painter Rafael Santi, she knew she had to see his masterpieces for herself.",
+            "He set up his equipment in a room and pointed it towards the street outside.",
+            "...he saw an image forming on a silver plate in the room..."
           ],
-          "word": "masterpieces",
+          "pronounce": "/ruːm/",
+          "example": "The room was filled with natural light."
         },
         {
-          "meanings": [
-            {
-              "class": "Noun",
-              "example":
-                "The news of the natural disaster was met with tragedy.",
-              "meaning":
-                "an event that is very sad and often causes a lot of suffering",
-            },
-          ],
-          "pronounce": "/ˈtrædɪgi/ (TRAH-dij-ee)",
+          "class": "Verb",
+          "word": "capture",
+          "meaning": "to take or get hold of (something) by force or skill",
           "usage": [
-            "But when she arrived in Italy, tragedy struck.",
+            "He spent the next few weeks perfecting his new invention, which he would later call the daguerreotype process.",
+            "...he saw an image forming on a silver plate..."
           ],
-          "word": "tragedy",
+          "pronounce": "/ˈkæptʃər/",
+          "example": "The photographer captured the moment perfectly."
         },
         {
-          "meanings": [
-            {
-              "class": "Verb",
-              "example": "She dedicated her life to helping others.",
-              "meaning": "to give a lot of time or effort to something",
-            },
-          ],
-          "pronounce": "/dɪˈdeɪt/ (di-DAYT)",
+          "class": "Verb",
+          "word": "pave",
+          "meaning": "to prepare or make a surface smooth and even for use",
           "usage": [
-            "Heartbroken, Isabella decided to dedicate her life to preserving and promoting the works of this great artist.",
+            "Louis Daguerre had not only changed the way people viewed the world around them but also paved the way..."
           ],
-          "word": "dedicate",
+          "pronounce": "/peɪv/",
+          "example": "The new road paves the way to future development."
         },
         {
-          "meanings": [
-            {
-              "class": "Verb",
-              "example":
-                "The museum is working to preserve the ancient artifacts.",
-              "meaning": "to keep something from being damaged or destroyed",
-            },
-          ],
-          "pronounce": "/prɪˈzɝrvɪŋ/ (pree-ZUR-ving)",
+          "class": "Noun",
+          "word": "industry",
+          "meaning": "a business or group of businesses that produces goods and services",
           "usage": [
-            "Heartbroken, Isabella decided to dedicate her life to preserving and promoting the works of this great artist.",
+            "...paved the way for a whole new industry...",
+            "...one that would continue to evolve and shape our world..."
           ],
-          "word": "preserving",
+          "pronounce": "/ɪnˈdʌstri/",
+          "example": "The tech industry is growing rapidly."
         },
         {
-          "meanings": [
-            {
-              "class": "Verb",
-              "example":
-                "The company is promoting their new product through social media.",
-              "meaning": "to help something become popular or well-known",
-            },
-          ],
-          "pronounce": "/prəˈmɒtoʊtɪŋ/ (proh-MOH-tihng)",
+          "class": "Noun",
+          "word": "world",
+          "meaning": "the earth together with its inhabitants, atmosphere, and everything that lives on it",
           "usage": [
-            "Heartbroken, Isabella decided to dedicate her life to preserving and promoting the works of this great artist.",
+            "...he had not only changed the way people viewed the world around them...",
+            "...one that would continue to evolve and shape our world..."
           ],
-          "word": "promoting",
+          "pronounce": "/ˈwɜrld/",
+          "example": "The world is a beautiful place."
         },
-      ],
+        {
+          "class": "Noun",
+          "word": "life",
+          "meaning": "the condition or quality that distinguishes living beings from dead ones",
+          "usage": [
+            "He spent countless hours in his small workshop, tinkering with gears and wires, trying to find a way to capture the fleeting beauty of life."
+          ],
+          "pronounce": "/laɪf/",
+          "example": "The new medical treatment improved the quality of life."
+        }
+      ]
     },
     "keywords": [
-      "Rafael Santi",
-      "Italian Renaissance painter",
-      "masterpieces",
-      "art",
-      "artist",
-      "legacy",
-    ],
-  },
-  "dialog": [
-    {
-      "Billy":
-        "I loved how Princess Isabella was so passionate about art and Rafael Santi's work! It's inspiring to see someone dedicate their life to preserving his legacy.",
-    },
-    {
-      "Meg":
-        "Oh, I know what you mean, Billy. I think it's amazing that she didn't give up even when tragedy struck. She just kept going and found a way to make Rafael's art live on through her school.",
-    },
-    {
-      "Kerry":
-        "Yeah, and I loved how the novel highlighted the importance of perseverance and following one's passion. It's a great message for kids like us!",
-    },
-    {
-      "Lui":
-        "I must say, I was impressed by Princess Isabella's determination and resourcefulness. It's not every day you see someone take on such a daunting task at her age.",
-    },
-    {
-      "Billy":
-        "Exactly! And I think it's cool how she found friends to help her along the way. It shows that even when things seem tough, having good people by your side can make all the difference.",
-    },
-    {
-      "Meg":
-        "Absolutely! I loved seeing how everyone came together to support Princess Isabella and keep Rafael's art alive. It was like they were one big happy family!",
-    },
-    {
-      "Kerry":
-        "Ha! Yeah, kind of like a superhero team, but instead of superpowers, they had passion and creativity! ",
-    },
-  ],
-  "event": "The Death of Raphael",
-  "quiz": [
-    {
-      "answer": 1,
-      "options": [
-        "To meet her friends",
-        "To learn about Rafael Santi's art",
-        "To see the famous landmarks",
-        "To escape her father's rules",
-        "To find a new home",
-      ],
-      "question":
-        "What was Princess Isabella's main reason for traveling to Italy?",
-    },
-    {
-      "answer": 2,
-      "options": [
-        "Give up on her dream of preserving his art",
-        "Return to her kingdom and forget about Rafael's work",
-        "Dedicate her life to preserving and promoting his legacy",
-        "Move to Italy permanently",
-        "Start a new business",
-      ],
-      "question":
-        "What did Princess Isabella decide to do after Rafael Santi passed away?",
-    },
-    {
-      "answer": 1,
-      "options": [
-        "A museum dedicated to Rafael Santi's art",
-        "A school for young artists",
-        "A library filled with books about Italian culture",
-        "A restaurant serving traditional Italian food",
-        "A shop selling handmade Italian crafts",
-      ],
-      "question": "What did Princess Isabella set up in Italy?",
-    },
-    {
-      "answer": 1,
-      "options": [
-        "Her love of art",
-        "Her determination and resourcefulness",
-        "Her ability to make friends easily",
-        "Her willingness to give up on her dreams",
-        "Her talent for cooking",
-      ],
-      "question": "What was Lui impressed by in Princess Isabella?",
-    },
-    {
-      "answer": 2,
-      "options": [
-        "The importance of giving up when things get tough",
-        "The value of being lazy and taking breaks",
-        "The power of perseverance and following one's passion",
-        "The danger of traveling alone",
-        "The benefit of having a good sense of humor",
-      ],
-      "question": "What was the main message highlighted in the novel?",
-    },
-  ],
-  "title": "A Princess's Quest for Knowledge",
-  "word count": 113,
-};
+      "invention",
+      "photography",
+      "daguerreotype",
+      "Louis Daguerre",
+      "experimentation",
+      "capturing life",
+      "stunning detail",
+      "portraits",
+      "industry evolution",
+      "history of technology",
+      "early 1800s",
+      "pioneering discovery"
+    ]
+  }
+}
+export default data;

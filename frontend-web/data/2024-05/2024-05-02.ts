@@ -1,350 +1,329 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "The Bauhaus Building Opens",
+    "details": "On May 3, 1919, the Bauhaus Building in Weimar, Germany officially opened its doors to students and faculty, marking a new era in art and design education."
+  },
   "date": "2024-05-02",
-  "event":
-    "On May 2nd in the virtual world of Zythosia, a brave hero named Alex saved the kingdom from an evil sorcerer who had taken over the castle.",
-  "title": "Alex the Brave: The Sorcerer's Curse",
-  "body":
-    "One sunny morning in Zythosia, Alex woke up to find the once peaceful kingdom in distress. The castle, which had always been a beacon of hope and safety for all its citizens, was now under the control of an evil sorcerer named Malazar. With his dark magic, he had turned the bravest knights into cowards and captured the king and queen.Determined to save his kingdom, Alex set out on a dangerous journey to find the magical artifacts that could defeat Malazar. Along the way, he met new friends who joined him on his quest. Together, they battled fierce dragons, solved riddles in ancient ruins, and braved treacherous dungeons.Finally, they reached the castle gates where Alex faced off against Malazar in an epic battle. With lightning strikes from his magical staff and a swift sword swing, Alex defeated Malazar and freed the king and queen. The kingdom of Zythosia was once again safe, and Alex became known as the bravest hero in all its history.",
-  "word count": 164,
+  "title": "The Bauhaus Building: A Tale of Art and Education",
+  "body": "In a land where creativity was king, there stood a building that held the key to unlocking the dreams of aspiring artists and designers. This building, known as the Bauhaus, had just opened its doors for the first time on May 3, 1919.As the students and faculty stepped into the grand hall, they were greeted by a world unlike any other. The walls were adorned with works of art that pushed the boundaries of what was possible, and every corner held the promise of discovery.The Bauhaus was not just a school, but a magical place where imagination ran wild and creativity flowed like a river. It was here that the greatest minds of the time gathered to share their knowledge and inspire the next generation of artists and designers.But this magic did not come without its challenges. As the world outside the Bauhaus's walls grew darker, the school became a beacon of hope for those who sought to bring light back into the world. The students and faculty worked tirelessly to create beauty in the face of adversity, and in doing so, they not only shaped the future of art and design but also brought magic back into the world.",
+  "word count": 200,
   "dialog": [
     {
-      "Billy":
-        "I love how Alex is so determined to save his kingdom! It shows that even when things seem hopeless, you can make a difference.",
+      "Billy": "I loved how the Bauhaus was a symbol of hope during a time of war. It showed that even in the darkest moments, there's always room for creativity and beauty."
     },
     {
-      "Kerry":
-        "Totally agree with Billy! I also think it's cool how they had to battle dragons and solve riddles. It's like a big adventure!",
+      "Meg": "I completely agree with Billy! The way the students and faculty came together to create something beautiful in the face of adversity really resonated with me."
     },
     {
-      "Meg":
-        "Oh, and the magical artifacts! I would love to have some of those powers. Maybe we could even create our own spells?",
+      "Lui": "As someone who values education and learning, I appreciated how the novel highlighted the importance of sharing knowledge and inspiring others."
     },
     {
-      "Lui":
-        "Now, now, let's not get ahead of ourselves. We need to focus on the historical context of Zythosia and Malazar's motivations.",
+      "Kerry": "Yeah, but what about the challenges they faced? It's not like it was all sunshine and rainbows. The war was still going on outside those walls."
     },
     {
-      "Kerry":
-        "Yeah, yeah, teacher talk. But can we please discuss how awesome Alex is? I mean, he defeated an evil sorcerer single-handedly!",
+      "Billy": "That's true, Kerry, but I think that's what made the Bauhaus' story even more powerful. They found a way to make a positive impact despite the darkness around them."
     },
     {
-      "Billy":
-        "That's true! And did you notice how the author used Alex's journey to explore themes of courage and perseverance?",
+      "Meg": "Exactly! And it wasn't just about creating art or design; it was about bringing people together and giving them hope for a better future."
     },
     {
-      "Meg":
-        "I loved how imaginative it was! The world-building is incredible. I wish we could have our own magical kingdom.",
+      "Lui": "Well said, Meg. I think that's what made the Bauhaus such an important part of history – its impact went far beyond just the art world."
     },
     {
-      "Lui":
-        "Ah, but that's the beauty of fiction, my young friends. We can learn from these stories and apply those values to our own lives.",
-    },
+      "Kerry": "Yeah, and who knows? Maybe if we had more schools like the Bauhaus today, we wouldn't have as many problems in the world."
+    }
   ],
   "quiz": [
     {
-      "question":
-        "What was the state of the kingdom of Zythosia when Alex woke up?",
+      "question": "What was special about the Bauhaus building when it first opened?",
       "options": [
-        "At peace",
-        "Under attack",
-        "In distress",
-        "In chaos",
+        "It was a school for mathematics",
+        "It was a symbol of hope during wartime",
+        "It was a museum for art only",
+        "It was a factory for manufacturing goods",
+        "It was a library for books"
       ],
-      "answer": 2,
+      "answer": 1
     },
     {
-      "question":
-        "Who had captured the king and queen in the kingdom of Zythosia?",
+      "question": "What was the Bauhaus building most known for?",
       "options": [
-        "Alex's enemies",
-        "The evil sorcerer Malazar",
-        "Fierce dragons",
-        "Treacherous knights",
+        "Its beautiful architecture",
+        "Its importance in the art world",
+        "Its role in World War I",
+        "Its impact on education",
+        "Its location in Germany"
       ],
-      "answer": 1,
+      "answer": 1
     },
     {
-      "question": "What did Alex face off against at the end of his journey?",
+      "question": "Why did the students and faculty at the Bauhaus work tirelessly to create beauty?",
       "options": [
-        "A fierce dragon",
-        "Malazar, the evil sorcerer",
-        "The king's guards",
-        "A treacherous knight",
+        "Because they loved art",
+        "To bring light back into the world during wartime",
+        "To make a positive impact on society",
+        "To express their emotions",
+        "To follow tradition"
       ],
-      "answer": 1,
+      "answer": 1
     },
     {
-      "question":
-        "What did Billy and Kerry agree on when discussing the story?",
+      "question": "What did the Bauhaus building represent?",
       "options": [
-        "That Alex is not a brave hero",
-        "That the kingdom was always in danger",
-        "That Alex is a determined hero",
-        "That the story is too adventurous",
+        "A place of darkness and despair",
+        "A symbol of hope and creativity",
+        "A source of knowledge only",
+        "A factory for manufacturing goods",
+        "A museum for art only"
       ],
-      "answer": 2,
+      "answer": 0
     },
     {
-      "question": "What did Lui suggest students learn from the story?",
+      "question": "What was the impact of the Bauhaus on history?",
       "options": [
-        "How to be more adventurous",
-        "How to create their own spells",
-        "How to apply the values of courage and perseverance to their lives",
-        "How to write a better novel",
+        "It had no significant impact",
+        "It brought about World War II",
+        "It shaped the future of education and art",
+        "It ended the war in Europe",
+        "It created a new form of government"
       ],
-      "answer": 2,
-    },
+      "answer": 2
+    }
   ],
   "descriptions": {
-    "keywords": [
-      "web marketing",
-      "search engine optimization",
-      "SEO keywords",
-      "Zythosia kingdom",
-      "magical artifacts",
-      "dark magic",
-      "brave hero",
-      "epic battle",
-      "magical staff",
-      "swift sword swing",
-    ],
     "grammar": {
-      "vocabularies": [
-        {
-          "word": "sunny",
-          "usage": ["One sunny morning in Zythosia, Alex woke up..."],
-          "pronounce": "/ˈsʌnɪ/",
-          "meanings": [
-            {
-              "class": "Adjective",
-              "meaning":
-                "resembling or characteristic of the sun; warm and bright",
-              "example": "The sunny day was perfect for a picnic.",
-            },
-          ],
-        },
-        {
-          "word": "morning",
-          "usage": ["One sunny morning in Zythosia, Alex woke up..."],
-          "pronounce": "/ˈmɔr.nɪŋ/",
-          "meanings": [
-            {
-              "class": "Noun",
-              "meaning":
-                "the first part of the day; the time from sunrise to noon",
-              "example": "I like taking a morning walk in the park.",
-            },
-          ],
-        },
-        {
-          "word": "kingdom",
-          "usage": ["...the once peaceful kingdom in distress."],
-          "pronounce": "/ˈkɪŋ.dəm/",
-          "meanings": [
-            {
-              "class": "Noun",
-              "meaning":
-                "a country or territory ruled by a king or queen; a domain of power or influence",
-              "example": "The kingdom of England was formed in 1066.",
-            },
-          ],
-        },
-        {
-          "word": "magical",
-          "usage": ["...an evil sorcerer named Malazar with his dark magic."],
-          "pronounce": "/ˈmædʒɪ.kəl/",
-          "meanings": [
-            {
-              "class": "Adjective",
-              "meaning":
-                "having the power to produce a desired effect; producing a sense of wonder or enchantment",
-              "example":
-                "The magician performed a magical trick that left everyone amazed.",
-            },
-          ],
-        },
-        {
-          "word": "artifacts",
-          "usage": ["...the magical artifacts that could defeat Malazar."],
-          "pronounce": "/ɑrˈtɪfakt/",
-          "meanings": [
-            {
-              "class": "Noun (plural)",
-              "meaning":
-                "objects remaining from a past time or culture, especially one that is rare or unusual",
-              "example":
-                "The archaeologists discovered several ancient artifacts in the jungle.",
-            },
-          ],
-        },
-        {
-          "word": "brave",
-          "usage": [
-            "...the bravest knights into cowards and captured the king and queen.",
-          ],
-          "pronounce": "/breɪv/",
-          "meanings": [
-            {
-              "class": "Adjective",
-              "meaning":
-                "showing courage or strength in the face of danger or difficulty",
-              "example":
-                "The firefighter was very brave in rescuing people from the burning building.",
-            },
-          ],
-        },
-        {
-          "word": "battle",
-          "usage": ["...Alex faced off against Malazar in an epic battle."],
-          "pronounce": "/ˈbætəl/",
-          "meanings": [
-            {
-              "class": "Noun",
-              "meaning":
-                "a prolonged fight or struggle, especially a violent one between armies or nations",
-              "example":
-                "The battle of Gettysburg was a turning point in the American Civil War.",
-            },
-          ],
-        },
-        {
-          "word": "hero",
-          "usage": [
-            "...Alex became known as the bravest hero in all its history.",
-          ],
-          "pronounce": "/ˈhɪroʊ/",
-          "meanings": [
-            {
-              "class": "Noun",
-              "meaning":
-                "a person who is admired or idealized for their courage, outstanding achievements, or noble qualities",
-              "example":
-                "The firefighter was hailed as a hero for rescuing people from the burning building.",
-            },
-          ],
-        },
-      ],
       "patterns": [
         {
-          "pattern": "S + V + O",
-          "usage": [
-            "One sunny morning in Zythosia, Alex woke up to find...",
-            "With his dark magic, he had turned...",
-          ],
-          "explanation":
-            "Subject-Verb-Object pattern, where the subject is performing an action described by the verb, and the object is affected by the action.",
-          "words": [
-            {
-              "S": [
-                "One sunny morning in Zythosia",
-                "Alex",
-              ],
-              "V": [
-                "woke up",
-                "had turned",
-              ],
-              "O": [
-                "the once peaceful kingdom",
-                "the bravest knights",
-              ],
-            },
-          ],
-        },
-        {
           "pattern": "S + V",
+          "explanation": "The subject (S) performs an action (V). This pattern is used to describe a simple statement or declaration.",
           "usage": [
-            "Determined to save his kingdom, Alex set out...",
-            "With lightning strikes from his magical staff...",
+            "In a land where creativity was king,"
           ],
-          "explanation":
-            "Simple Subject-Verb pattern, where the subject is performing an action described by the verb.",
           "words": [
             {
               "S": [
-                "Alex",
-              ],
-              "V": [
-                "set out",
-                "defeated",
-              ],
+                "land",
+                "creativity"
+              ]
             },
-          ],
+            {
+              "V": [
+                "was king"
+              ]
+            }
+          ]
         },
         {
           "pattern": "S + V + C",
+          "explanation": "The subject (S) performs an action (V) and the sentence has a complement (C). This pattern is used to describe a statement with additional information or elaboration.",
           "usage": [
-            "Along the way, he met new friends who joined him...",
-            "Together, they battled fierce dragons...",
+            "This building, known as the Bauhaus,"
           ],
-          "explanation":
-            "Subject-Verb-Complement pattern, where the subject is performing an action described by the verb, and the complement provides additional information about the subject.",
           "words": [
             {
               "S": [
-                "he",
-                "they",
-              ],
-              "V": [
-                "met new friends",
-                "battled",
-              ],
-              "C": [
-                "who joined him",
-                "fierce dragons",
-              ],
+                "building",
+                "Bauhaus"
+              ]
             },
-          ],
+            {
+              "V": [
+                "was known"
+              ]
+            },
+            {
+              "C": [
+                "as the Bauhaus"
+              ]
+            }
+          ]
         },
         {
-          "pattern": "S + V + M",
+          "pattern": "S + V + O",
+          "explanation": "The subject (S) performs an action (V) on or with an object (O). This pattern is used to describe a statement that involves an action and an object.",
           "usage": [
-            "Finally, they reached the castle gates where Alex faced off...",
-            "With lightning strikes from his magical staff...",
+            "As the students and faculty stepped into the grand hall,"
           ],
-          "explanation":
-            "Subject-Verb-Manner pattern, where the subject is performing an action described by the verb in a specific way (manner).",
           "words": [
             {
               "S": [
-                "they",
-                "Alex",
-              ],
-              "V": [
-                "reached",
-                "faced off",
-              ],
-              "M": [
-                "where Alex faced off",
-                "with lightning strikes",
-              ],
+                "students",
+                "faculty"
+              ]
             },
-          ],
-        },
-        {
-          "pattern": "S + V + C + O",
-          "usage": [
-            "The kingdom of Zythosia was once again safe, and Alex became known...",
-          ],
-          "explanation":
-            "Subject-Verb-Complement-Object pattern, where the subject is performing an action described by the verb, and the complement provides additional information about the subject, while the object receives the action.",
-          "words": [
             {
-              "S": [
-                "The kingdom of Zythosia",
-              ],
               "V": [
-                "was once again safe",
-              ],
-              "C": [
-                "and Alex became known",
-              ],
+                "stepped"
+              ]
+            },
+            {
               "O": [
-                "as the bravest hero",
-              ],
-            },
-          ],
+                "grand hall"
+              ]
+            }
+          ]
         },
+        {
+          "pattern": "S + V + O + O",
+          "explanation": "The subject (S) performs an action (V) on or with two objects (O). This pattern is used to describe a statement that involves multiple actions and objects.",
+          "usage": [
+            "The walls were adorned with works of art that pushed the boundaries of what was possible, and every corner held the promise of discovery,"
+          ],
+          "words": [
+            {
+              "S": [
+                "walls"
+              ]
+            },
+            {
+              "V": [
+                "were adorned"
+              ]
+            },
+            {
+              "O": [
+                "works of art",
+                "promise"
+              ]
+            }
+          ]
+        },
+        {
+          "pattern": "S + V + O + C",
+          "explanation": "The subject (S) performs an action (V) on or with an object (O) and the sentence has a complement (C). This pattern is used to describe a statement that involves multiple actions, objects, and additional information.",
+          "usage": [
+            "The students and faculty worked tirelessly to create beauty in the face of adversity, and in doing so, they not only shaped the future of art and design but also brought magic back into the world,"
+          ],
+          "words": [
+            {
+              "S": [
+                "students",
+                "faculty"
+              ]
+            },
+            {
+              "V": [
+                "worked",
+                "created",
+                "brought"
+              ]
+            },
+            {
+              "O": [
+                "adversity",
+                "face"
+              ]
+            },
+            {
+              "C": [
+                "beauty",
+                "magic"
+              ]
+            }
+          ]
+        }
       ],
+      "vocabularies": [
+        {
+          "class": "Noun",
+          "word": "creativity",
+          "meaning": "the ability to generate new and original ideas, solutions, or artistic works",
+          "usage": [
+            "Creativity was king",
+            "The school became a beacon of hope for those who sought to bring light back into the world"
+          ],
+          "pronounce": "/krɪˈtɛvɪti/",
+          "example": "The company's creative team developed innovative solutions to complex problems."
+        },
+        {
+          "class": "Noun",
+          "word": "Bauhaus",
+          "meaning": "a German art school that emphasized functional design and the fusion of arts and technology",
+          "usage": [
+            "This building, known as the Bauhaus, had just opened its doors...",
+            "The students and faculty worked tirelessly to create beauty in the face of adversity"
+          ],
+          "pronounce": "/ˈboʊ.hɑːs/",
+          "example": "The Bauhaus movement influenced modern architecture and design."
+        },
+        {
+          "class": "Verb",
+          "word": "pushed",
+          "meaning": "to cause something to go beyond a certain point or boundary",
+          "usage": [
+            "The walls were adorned with works of art that pushed the boundaries of what was possible"
+          ],
+          "pronounce": "/pʊʃt/",
+          "example": "The new policy will push the company's revenue forward."
+        },
+        {
+          "class": "Adjective",
+          "word": "magical",
+          "meaning": "having a special power or quality that is mysterious and fascinating",
+          "usage": [
+            "It was here that the greatest minds of the time gathered to share their knowledge and inspire the next generation of artists and designers"
+          ],
+          "pronounce": "/ˈmædʒɪkəl/",
+          "example": "The magician performed a magical trick that amazed the audience."
+        },
+        {
+          "class": "Noun",
+          "word": "imagination",
+          "meaning": "the ability to form mental images of things not present in reality",
+          "usage": [
+            "It was here that imagination ran wild and creativity flowed like a river"
+          ],
+          "pronounce": "/ɪmədʒɪˈneɪʃən/",
+          "example": "The writer's vivid imagination brought the story to life."
+        },
+        {
+          "class": "Adverb",
+          "word": "wildly",
+          "meaning": "in a reckless or uncontrolled manner",
+          "usage": [
+            "Imagination ran wild and creativity flowed like a river"
+          ],
+          "pronounce": "/ˈwaɪdli/",
+          "example": "The dog ran wildly through the park."
+        },
+        {
+          "class": "Noun",
+          "word": "adversity",
+          "meaning": "a difficult or unpleasant situation",
+          "usage": [
+            "They worked tirelessly to create beauty in the face of adversity"
+          ],
+          "pronounce": "/ædˈvɜːrstɪti/",
+          "example": "The company faced severe adversity after the financial crisis."
+        },
+        {
+          "class": "Verb",
+          "word": "inspire",
+          "meaning": "to give someone an idea or feeling that motivates them to take action",
+          "usage": [
+            "They gathered to share their knowledge and inspire the next generation"
+          ],
+          "pronounce": "/ɪnˈspʊəraɪ/",
+          "example": "The motivational speaker inspired the audience with her words."
+        }
+      ]
     },
-  },
-};
+    "keywords": [
+      "creative",
+      "aspiring",
+      "artists",
+      "designers",
+      "magical",
+      "imagination",
+      "river",
+      "hope",
+      "adversity",
+      "beauty",
+      "art",
+      "design",
+      "future"
+    ]
+  }
+}
+export default data;

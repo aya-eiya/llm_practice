@@ -1,94 +1,97 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "First public demonstration of the telephone",
+    "details":
+      "Alexander Graham Bell publicly demonstrated his invention of the telephone to a group of reporters and investors at Brantford, Ontario, Canada on April 25th",
+  },
   "date": "2024-04-25",
-  "event": "The Battle of Sekigahara",
-  "title": "The Ninja who saved Japan",
+  "title": "The Telephone: A Tale of Invention and Innovation",
   "body":
-    "One sunny morning in April, a young ninja named Akira set out on a mission. He had heard that the famous samurai lord, Tokugawa Ieyasu, was planning to attack his village. Akira knew he had to stop him before it was too late.Akira snuck into Tokugawa's camp and saw that he had an army of thousands of soldiers. But Akira was not afraid. He had trained for years to be a ninja, and he was ready for anything.He sneaked around the camp, avoiding the guards at all costs. Finally, he reached Tokugawa's tent. Inside, he saw that Tokugawa was planning to attack the village that very day. Akira knew he had to stop him.Akira quickly grabbed a sword and charged at Tokugawa. The two fought for hours, neither of them giving an inch. But in the end, Akira's quick thinking and ninja skills won out.Tokugawa was defeated, and the village was saved. Akira had done it. He was hailed as a hero and his name would be remembered in Japanese history.",
-  "word count": 171,
+    "In a bustling city not so long ago, a brilliant inventor named Alex Graham Bell toiled tirelessly in his laboratory, driven by the desire to revolutionize communication. With a passion for understanding the intricacies of sound and speech, Bell was on the brink of making history. One fateful day, he succeeded in creating a device that could transmit human voices over vast distances. Excited to share his discovery with the world, Bell organized a public demonstration at a grand auditorium. As reporters and investors gathered around, eager to witness this remarkable feat, Bell picked up the receiver and spoke into it. To their amazement, the words he uttered were clearly heard by another man in an entirely different room. The telephone had been born! As news of this revolutionary invention spread far and wide, people everywhere began to marvel at the possibilities it opened up for connecting with loved ones and conducting business across vast distances. The world was forever changed by the power of the telephone, and Alex Graham Bell's legacy lived on as a testament to human ingenuity.",
+  "word count": 180,
   "dialog": [
     {
       "Billy":
-        "I loved the part where Akira sneaked into Tokugawa's camp! He was so brave!",
-    },
-    {
-      "Kerry":
-        "Yeah, and I liked how he used his ninja skills to defeat Tokugawa. That was awesome!",
+        "I loved how Alex Graham Bell's passion for understanding sound and speech led to his revolutionary invention! Can you imagine what other innovations we'll see in the future?",
     },
     {
       "Meg":
-        "I know, right? The way the author described Akira's movements and thoughts was so vivid. It felt like I was there with him.",
+        "Oh, I know exactly what you mean, Billy! The way Bell brought people together through communication is just amazing. And think about all the possibilities for connecting with loved ones or conducting business now that the telephone exists.",
+    },
+    {
+      "Kerry":
+        "Yeah, but have you guys thought about the potential downsides? Like, what if someone uses this technology to spread misinformation or harm others? We need to be careful and responsible in our use of these powerful tools.",
     },
     {
       "Lui":
-        "Excellent observation, Meg. The author did a great job of immersing us in Akira's world. But what did you guys think about Tokugawa's motivations? Was he really planning to attack the village?",
+        "Well, Kerry, it's true that with great power comes great responsibility. But I think Bell's invention also highlights the importance of human connection and community. As educators, we can use this technology to bring people together and promote understanding.",
     },
     {
       "Billy":
-        "I think he was trying to expand his territory or something. History buffs like me know that Ieyasu was a powerful warlord.",
-    },
-    {
-      "Kerry":
-        "Yeah, and it's cool how Akira was able to stop him. I wonder what would've happened if Tokugawa had attacked the village.",
-    },
-    {
-      "Meg":
-        "Ooh, good question, Kerry! Maybe we could write a sequel where Akira has to deal with the aftermath of stopping Tokugawa?",
-    },
-    {
-      "Lui":
-        "Ha! I think that's a great idea, Meg. And speaking of sequels, did anyone else notice how the author hinted at Akira being a hero in Japanese history? That adds a whole new layer of depth to the story.",
+        "Exactly! And speaking of community, do you guys think Bell's invention would have changed things if it had been created earlier? Like, maybe during the American Civil War or something?",
     },
   ],
   "quiz": [
     {
-      "question": "What was Akira's mission?",
+      "question": "What was Alex Graham Bell's passion for?",
       "options": [
-        "To attack Tokugawa's camp",
-        "To stop Tokugawa from attacking his village",
-        "To become a samurai",
-        "To learn ninja skills",
-      ],
-      "answer": 1,
-    },
-    {
-      "question": "Why did Akira sneak into Tokugawa's camp?",
-      "options": [
-        "To gather information about Tokugawa's plans",
-        "To steal food from the soldiers",
-        "To fight with Tokugawa",
-        "To escape from his village",
+        "Understanding sound",
+        "Creating a device that could transmit human voices",
+        "Conducting business across vast distances",
+        "Promoting misinformation",
+        "Harming others",
       ],
       "answer": 0,
     },
     {
-      "question": "What was Akira's advantage in fighting Tokugawa?",
+      "question":
+        "What was the outcome of Bell's public demonstration at the grand auditorium?",
       "options": [
-        "He had more soldiers",
-        "He was bigger and stronger",
-        "He used his ninja skills",
-        "He had a magic sword",
+        "He failed to impress the audience",
+        "The device didn't work as expected",
+        "People were amazed by the device's capabilities",
+        "It was a disaster",
+        "Nothing happened",
       ],
       "answer": 2,
     },
     {
-      "question": "Why did the villagers hail Akira as a hero?",
+      "question":
+        "What did Kerry mention as potential downsides of Bell's invention?",
       "options": [
-        "Because he attacked Tokugawa's camp",
-        "Because he saved their village from attack",
-        "Because he became a samurai",
-        "Because he learned ninja skills",
+        "Spreading misinformation",
+        "Harming others",
+        "Creating unnecessary noise pollution",
+        "Dividing communities",
+        "Wasting time",
       ],
-      "answer": 1,
+      "answer": 0,
     },
     {
-      "question": "What is hinted at about Akira in the story?",
+      "question":
+        "According to Lui, what is the importance of Bell's invention?",
       "options": [
-        "That he was a failure as a ninja",
-        "That he would become a famous actor",
-        "That he would be remembered in Japanese history",
-        "That he would never go on another mission",
+        "To promote understanding and community",
+        "To revolutionize communication",
+        "To bring people together",
+        "To make a quick profit",
+        "To gain fame",
       ],
-      "answer": 3,
+      "answer": 0,
+    },
+    {
+      "question":
+        "What did Billy speculate about if Bell's invention had been created earlier?",
+      "options": [
+        "The American Civil War would have ended sooner",
+        "The telephone wouldn't have changed anything",
+        "The Civil War would have been more brutal",
+        "The world would be a better place now",
+        "It would have been used to spread misinformation",
+      ],
+      "answer": 0,
     },
   ],
 };
+export default data;

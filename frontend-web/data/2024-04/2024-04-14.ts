@@ -1,97 +1,112 @@
-export default {
+import { QuizData } from "../../domains/quiz.ts";
+const data: QuizData = {
+  "event": {
+    "event": "First public demonstration of photography",
+    "details":
+      "On April 14, 1839, Louis Daguerre publicly demonstrated his daguerreotype process for the first time, marking a significant milestone in the development of photography.",
+  },
   "date": "2024-04-14",
-  "event": "The assassination of President John F. Kennedy",
-  "title": "The Day After: A Tale of Adventure and Friendship",
+  "title": "A Daguerrean Dream",
   "body":
-    "\n\nIn a world where technology has advanced beyond our wildest dreams, a group of children embark on an adventure to find the source of a mysterious signal that seems to be coming from a distant planet. As they journey through the stars, they uncover secrets about their own planet and the events that led to its downfall. Will they be able to save their world before it's too late?\n\nOn April 14th, the day after President John F. Kennedy's assassination, the children of Earth are forever changed. They must navigate a new world filled with danger and uncertainty as they fight to protect everything they hold dear.",
-  "word count": 180,
+    "In the early 1830s, a young inventor named Louis Daguerre was determined to create an instrument that could capture the beauty of the world around him. He had been fascinated by the power of light and shadow for years, but he knew that there must be a way to immortalize these fleeting moments in time.  After countless experiments and setbacks, Louis finally stumbled upon a breakthrough. He discovered that by using a silver-coated copper plate and exposing it to iodine vapor, he could create an image that was both clear and detailed.  Over the next few months, Louis worked tirelessly to perfect his process. He knew that he had something truly remarkable on his hands, and he couldn't wait to share it with the world.  On April 14, 1839, Louis stood in front of a crowd of eager spectators and demonstrated his daguerreotype process for the first time. The audience was mesmerized by the sight of the image slowly emerging on the plate before their eyes.  It was a moment that would change the course of history, as photography was finally brought to the masses. Louis' invention would pave the way for future developments in the field and would inspire countless others to explore the world through the lens of a camera.",
+  "word count": 212,
   "dialog": [
     {
       "Billy":
-        "I'm so excited to start this new adventure! I've always wondered what secrets are hidden in the stars.",
+        "Wow, I had no idea that Louis Daguerre was working on photography for so long! It's amazing to think about how much technology has advanced since then.",
     },
     {
       "Kerry":
-        "Yeah, me too! And who knows, maybe we'll even find some alien friends along the way.",
+        "Yeah, and it's crazy to think about all the things we take for granted today because of his invention. Like, have you ever seen an old photograph and thought about what it must've been like back then?",
     },
     {
       "Meg":
-        "Ooh, can you imagine? Meeting extraterrestrial beings and learning about their worlds would be incredible!",
+        "I loved how detailed the descriptions were in the novel! It really helped me visualize what was happening. Did anyone else notice how Louis' passion for science was contagious?",
     },
     {
       "Lui":
-        "Now, now, let's not get ahead of ourselves. We have a lot to learn before we start exploring other planets.",
-    },
-    {
-      "Billy":
-        "That's true, Mr. Lui. But I think our curiosity will keep us going. We can't wait to uncover the secrets of that mysterious signal!",
+        "Indeed, the novel did an excellent job of highlighting Louis' perseverance and dedication to his craft. It's a valuable lesson for all of us.",
     },
     {
       "Kerry":
-        "Yeah, and who knows what kind of technology or knowledge they might have? It could totally change everything about our world.",
+        "And I think it's awesome that we can still learn from Louis' story today! Like, what if he had given up on his invention? Would photography even exist?",
+    },
+    {
+      "Billy":
+        "Exactly! It's cool to think about how things could've been different. Maybe we would've stuck with painting or sketching instead.",
     },
     {
       "Meg":
-        "I just hope we're prepared for anything. I've read so many books about space travel and colonization... it's all so fascinating!",
+        "Oh, that's a great point Billy! I mean, can you imagine having to rely on art alone for storytelling and capturing moments? It's mind-blowing",
+    },
+    {
+      "Lui":
+        "Well said, Meg. As educators, it's our responsibility to inspire students like us to pursue their passions and push boundaries.",
+    },
+    {
+      "Kerry":
+        "And who knows, maybe one of us will create the next big thing in photography or science! The possibilities are endless!",
     },
   ],
   "quiz": [
     {
-      "question":
-        "What event changed the world forever for a group of children?",
+      "question": "What was Louis Daguerre's breakthrough in photography?",
       "options": [
-        "The launch of the first spaceship",
-        "The discovery of extraterrestrial life",
-        "The assassination of President John F. Kennedy",
-        "A major scientific breakthrough",
-        "The invention of a new technology",
-      ],
-      "answer": 2,
-    },
-    {
-      "question": "What is the children's goal for their adventure?",
-      "options": [
-        "To find a lost friend",
-        "To explore other planets",
-        "To learn about a mysterious signal",
-        "To escape their daily routine",
-        "To save their world",
-      ],
-      "answer": 2,
-    },
-    {
-      "question": "Who is Mr. Lui to the children?",
-      "options": [
-        "A teacher",
-        "A parent",
-        "A friend",
-        "A leader",
-        "A scientist",
+        "He used a silver-coated copper plate",
+        "He discovered the power of light and shadow",
+        "He perfected his process over several months",
+        "He invented the camera",
+        "He captured the beauty of the world around him",
       ],
       "answer": 0,
     },
     {
       "question":
-        "What might the children find on their journey through the stars?",
+        "When did Louis Daguerre first demonstrate his daguerreotype process?",
       "options": [
-        "Alien technology",
-        "New friends",
-        "Hidden secrets about their own planet",
-        "Unusual animals",
-        "Beautiful landscapes",
+        "March 14, 1839",
+        "April 14, 1839",
+        "June 10, 1838",
+        "December 25, 1837",
+        "January 1, 1836",
       ],
-      "answer": 2,
+      "answer": 1,
     },
     {
-      "question": "Why is April 14th a significant date for the children?",
+      "question":
+        "What is mentioned as something that photography has made possible?",
       "options": [
-        "It's the day they start their adventure",
-        "It's the anniversary of their favorite holiday",
-        "It's the day after President John F. Kennedy's assassination",
-        "It's the birthday of one of the children",
-        "It's a random day",
+        "Painting and sketching only",
+        "Capturing moments in time",
+        "Viewing the beauty of the world around us",
+        "Inspiring others to explore the world through a camera",
+        "Nothing",
       ],
-      "answer": 2,
+      "answer": 1,
+    },
+    {
+      "question": "What is emphasized as Louis Daguerre's passion?",
+      "options": [
+        "Art",
+        "Science",
+        "Music",
+        "Dance",
+        "Photography",
+      ],
+      "answer": 1,
+    },
+    {
+      "question":
+        "What is suggested to have been different if Louis Daguerre had given up on his invention?",
+      "options": [
+        "We would still have art",
+        "We would not have photography",
+        "We would rely on painting and sketching",
+        "We would focus on science only",
+        "Nothing",
+      ],
+      "answer": 1,
     },
   ],
 };
+export default data;
