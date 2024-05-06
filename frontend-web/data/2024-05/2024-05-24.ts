@@ -110,5 +110,261 @@ const data: QuizData = {
       "answer": 0,
     },
   ],
+  "descriptions": {
+    "grammar": {
+      "patterns": [
+        {
+          "pattern": "S + V",
+          "explanation":
+            "The subject is followed by a verb, describing an action or state.",
+          "usage": [
+            "In a world where...",
+            "The great Star Wars franchise...",
+          ],
+          "words": [
+            {
+              "S": [
+                "world",
+                "cityscapes",
+                "Star Wars franchise",
+              ],
+            },
+            {
+              "V": [
+                "lay in ruin",
+                "thrive",
+                "survive",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation":
+            "The subject is followed by a verb and a complement, describing an action or state with additional details.",
+          "usage": [
+            "As Jax watches...",
+            "With the help of...",
+          ],
+          "words": [
+            {
+              "S": [
+                "Jax",
+                "Star Wars franchise",
+              ],
+            },
+            {
+              "V": [
+                "watches",
+                "help",
+              ],
+            },
+            {
+              "C": [
+                "the film on his makeshift projector",
+                "find the resources needed",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation":
+            "The subject is followed by a verb and an object, describing an action or state with an affected entity.",
+          "usage": [
+            "He becomes obsessed...",
+            "I loved how...",
+          ],
+          "words": [
+            {
+              "S": [
+                "Jax",
+                "I",
+              ],
+            },
+            {
+              "V": [
+                "becomes obsessed",
+                "loved",
+              ],
+            },
+            {
+              "O": [
+                "recreating the epic battles",
+                "restoring hope and order",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + O",
+          "explanation":
+            "The subject is followed by a verb, two objects, describing an action or state with multiple affected entities.",
+          "usage": [
+            "With the help of...",
+            "But as they get...",
+          ],
+          "words": [
+            {
+              "S": [
+                "Jax",
+                "they",
+              ],
+            },
+            {
+              "V": [
+                "help",
+                "get",
+              ],
+            },
+            {
+              "O": [
+                "his friends",
+                "closer to their goal",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + C",
+          "explanation":
+            "The subject is followed by a verb, an object, and a complement, describing an action or state with additional details.",
+          "usage": [
+            "Along the way...",
+            "But as they get...",
+          ],
+          "words": [
+            {
+              "S": [
+                "Jax",
+                "they",
+              ],
+            },
+            {
+              "V": [
+                "sets out",
+                "get",
+              ],
+            },
+            {
+              "O": [
+                "on a quest",
+                "closer to their goal",
+              ],
+            },
+            {
+              "C": [
+                "to find the resources needed",
+                "to restore hope and order",
+              ],
+            },
+          ],
+        },
+      ],
+      "vocabularies": [
+        {
+          "class": "Noun",
+          "word": "cityscapes",
+          "meaning": "the physical appearance of a city",
+          "usage": [
+            "The once vibrant cityscapes now lay in ruin.",
+          ],
+          "pronounce": "/sɪˈtɪskoʊpiːz/",
+          "example":
+            "The new skyscraper transformed the cityscapes of downtown.",
+        },
+        {
+          "class": "Noun",
+          "word": "franchise",
+          "meaning": "a series of related businesses or organizations",
+          "usage": [
+            "The great Star Wars franchise, once the pinnacle of intergalactic entertainment.",
+          ],
+          "pronounce": "/ˈfrænˌtʃiːz/",
+          "example": "The company expanded its franchise to new countries.",
+        },
+        {
+          "class": "Adjective",
+          "word": "post-apocalyptic",
+          "meaning": "occurring or existing after a catastrophic event",
+          "usage": [
+            "In this post-apocalyptic world, a young scavenger named Jax discovers an old holoprojector.",
+          ],
+          "pronounce": "/ˌpɒst əˈpæptɪkʊlɪs/",
+          "example": "The movie depicted a post-apocalyptic wasteland.",
+        },
+        {
+          "class": "Proper Noun",
+          "word": "Star Wars",
+          "meaning": "a series of science fiction films and other media",
+          "usage": [
+            "The great Star Wars franchise, once the pinnacle of intergalactic entertainment.",
+          ],
+          "pronounce": "/ˈstɑr wərz/",
+          "example": "I'm a huge fan of the Star Wars saga.",
+        },
+        {
+          "class": "Proper Noun",
+          "word": "Jax",
+          "meaning": "a character in the passage, a young scavenger",
+          "usage": [
+            "In this post-apocalyptic world, a young scavenger named Jax discovers an old holoprojector.",
+          ],
+          "pronounce": "/dʒæks/",
+          "example": "Jax was the leader of the group.",
+        },
+        {
+          "class": "Noun",
+          "word": "holoprojector",
+          "meaning": "a device that projects three-dimensional images",
+          "usage": [
+            "In this post-apocalyptic world, a young scavenger named Jax discovers an old holoprojector.",
+          ],
+          "pronounce": "/hɒloʊˌproʊdʒˈeksɪtər/",
+          "example":
+            "The scientists used a holoprojector to display the new technology.",
+        },
+        {
+          "class": "Adverb",
+          "word": "obsessed",
+          "meaning":
+            "having a strong and often excessive interest in something",
+          "usage": [
+            "As Jax watches the film on his makeshift projector, he becomes obsessed with recreating the epic battles.",
+          ],
+          "pronounce": "/əˈbɛsɪst/",
+          "example": "He was obsessed with playing video games.",
+        },
+        {
+          "class": "Adjective",
+          "word": "harsh",
+          "meaning": "severe or unforgiving",
+          "usage": [
+            "the harsh desert planet.",
+          ],
+          "pronounce": "/hɑːrʃ/",
+          "example":
+            "The harsh weather conditions made it difficult to survive.",
+        },
+      ],
+    },
+    "keywords": [
+      "post-apocalyptic",
+      "starwars",
+      "holoprojector",
+      "scavenger",
+      "desertplanet",
+      "adventure",
+      "heroes",
+      "villains",
+      "quest",
+      "obstacles",
+      "mutants",
+      "storms",
+      "restoration",
+      "hope",
+      "order",
+    ],
+  },
 };
 export default data;

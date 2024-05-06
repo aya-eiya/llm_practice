@@ -99,5 +99,297 @@ const data: QuizData = {
       "answer": 2,
     },
   ],
+  "descriptions": {
+    "grammar": {
+      "patterns": [
+        {
+          "pattern": "S + V",
+          "explanation": "The subject (S) performs the verb (V).",
+          "usage": [
+            "In the heart of New York City, on a fateful day in May of 1929,",
+          ],
+          "words": [
+            {
+              "S": [
+                "In",
+                "the",
+                "heart",
+                "of",
+                "New",
+                "York",
+                "City",
+              ],
+            },
+            {
+              "V": [
+                "swung",
+                "open",
+                "reveal",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation":
+            "The subject (S) performs the verb (V) with a complement (C).",
+          "usage": [
+            "As visitors stepped into the grand building at 11 West 53rd Street,",
+          ],
+          "words": [
+            {
+              "S": [
+                "As",
+                "visitors",
+              ],
+            },
+            {
+              "V": [
+                "stepped",
+                "into",
+                "the",
+                "grand",
+                "building",
+                "at",
+                "11",
+                "West",
+                "53rd",
+                "Street",
+              ],
+            },
+            {
+              "C": [
+                "",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation":
+            "The subject (S) performs the verb (V) with an object (O).",
+          "usage": [
+            "Each painting and sculpture told a story of creativity, innovation, and freedom.",
+          ],
+          "words": [
+            {
+              "S": [
+                "Each",
+                "painting",
+                "and",
+                "sculpture",
+              ],
+            },
+            {
+              "V": [
+                "told",
+                "a",
+                "story",
+                "of",
+                "creativity",
+                "innovation",
+                "and",
+                "freedom",
+              ],
+            },
+            {
+              "O": [
+                "",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + O",
+          "explanation":
+            "The subject (S) performs the verb (V) with two objects (O).",
+          "usage": [
+            "But amidst the celebration of modern art, a mysterious figure haunted the halls of MoMA.",
+          ],
+          "words": [
+            {
+              "S": [
+                "But",
+                "amidst",
+                "the",
+                "celebration",
+                "of",
+                "modern",
+                "art",
+              ],
+            },
+            {
+              "V": [
+                "haunted",
+                "the",
+                "halls",
+                "of",
+                "MoMA",
+              ],
+            },
+            {
+              "O": [
+                "a",
+                "mysterious",
+                "figure",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + C",
+          "explanation":
+            "The subject (S) performs the verb (V) with an object (O) and a complement (C).",
+          "usage": [
+            "And as the years passed, the tale of the mysterious being became a part of the museum's rich history - a story whispered between art lovers.",
+          ],
+          "words": [
+            {
+              "S": [
+                "And",
+                "as",
+                "the",
+                "years",
+              ],
+            },
+            {
+              "V": [
+                "passed",
+                "the",
+                "tale",
+                "of",
+                "the",
+                "mysterious",
+                "being",
+                "became",
+                "a",
+                "part",
+                "of",
+                "the",
+                "museum's",
+                "rich",
+                "history",
+              ],
+            },
+          ],
+        },
+      ],
+      "vocabularies": [
+        {
+          "class": "Noun",
+          "word": "New York City",
+          "meaning": "a city located in the state of New York, USA",
+          "usage": [
+            "In the heart of New York City...",
+            "The city is known for its iconic landmarks...",
+          ],
+          "pronounce": "/ˌnuː ˈjɔr k sɪti/ (new YOUR-k see-ti)",
+          "example":
+            "I've always wanted to visit New York City during the holiday season.",
+        },
+        {
+          "class": "Adjective",
+          "word": "fateful",
+          "meaning": "having a significant or decisive effect",
+          "usage": [
+            "On a fateful day in May of 1929...",
+            "The decision was fateful for the company's future.",
+          ],
+          "pronounce": "/ˈfeɪtful/ (FAY-tul)",
+          "example":
+            "The meeting was a fateful moment that changed the course of history.",
+        },
+        {
+          "class": "Noun",
+          "word": "Museum of Modern Art",
+          "meaning": "a museum in New York City dedicated to modern art",
+          "usage": [
+            "The doors of the Museum of Modern Art swung open...",
+            "I visited the Museum of Modern Art last weekend.",
+          ],
+          "pronounce":
+            "/ˌmjuːziəm ɒv ˈmɑrdən ˈɑrt/ (myoo-zee-uhm of MOD-ern ART)",
+          "example":
+            "I loved the modern art exhibit at the Museum of Modern Art.",
+        },
+        {
+          "class": "Adverb",
+          "word": "defied",
+          "meaning": "went against or contradicted something",
+          "usage": [
+            "The exhibition defied tradition and pushed...",
+            "She defied convention by wearing a bright pink dress.",
+          ],
+          "pronounce": "/dɪˈfaɪd/ (dif-EYE-d)",
+          "example":
+            "The artist's work defied all expectations with its bold colors.",
+        },
+        {
+          "class": "Noun",
+          "word": "abstraction",
+          "meaning": "a concept or idea that is not concrete or tangible",
+          "usage": [
+            "The walls of the museum echoed with...",
+            "The abstract concept was difficult to understand.",
+          ],
+          "pronounce": "/əbˈstrækʃən/ (uh-BSTRAK-shun)",
+          "example":
+            "The artist's use of abstraction created a unique and thought-provoking piece.",
+        },
+        {
+          "class": "Pronoun",
+          "word": "it",
+          "meaning":
+            "a third-person singular pronoun referring to a person, place, or thing",
+          "usage": [
+            "This enigmatic being seemed to be drawn...",
+            "I'm not sure what it means.",
+          ],
+          "pronounce": "/ɪt/ (it)",
+          "example": "It is the best book I have read all year.",
+        },
+        {
+          "class": "Adverb",
+          "word": "amidst",
+          "meaning": "in or surrounded by something",
+          "usage": [
+            "But amidst the celebration of modern art...",
+            "I was amidst the chaos of the city.",
+          ],
+          "pronounce": "/əˈmɪdst/ (uh-MID-st)",
+          "example": "The team played amidst heavy rain and strong winds.",
+        },
+        {
+          "class": "Noun",
+          "word": "legend",
+          "meaning": "a story or myth that is widely accepted as true",
+          "usage": [
+            "Some said it was an artist's muse...",
+            "The legend of the lost city has been passed down for generations.",
+          ],
+          "pronounce": "/ˈlɛdʒənd/ (LEH-jend)",
+          "example":
+            "The legend of King Arthur has been retold in many different ways.",
+        },
+      ],
+    },
+    "keywords": [
+      "modern",
+      "art",
+      "innovation",
+      "creativity",
+      "freedom",
+      "mystery",
+      "intrigue",
+      "legend",
+      "inspiration",
+      "guardian",
+      "angel",
+      "history",
+      "imagination",
+      "reality",
+      "abstraction",
+    ],
+  },
 };
 export default data;

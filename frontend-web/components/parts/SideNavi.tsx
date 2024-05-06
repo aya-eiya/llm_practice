@@ -44,6 +44,7 @@ export default function SideNavi() {
                   <a
                     href={pr.url}
                     target={"_blank"}
+                    rel={"nofollow"}
                   >
                     <img
                       src={pr.image}
@@ -56,7 +57,8 @@ export default function SideNavi() {
                 <a
                   href={pr.url}
                   target={"_blank"}
-                  className={"text-xs underline max-w-full inline-block text-nowrap text-ellipsis overflow-hidden"}
+                  className={"notranslate text-xs underline max-w-full inline-block text-nowrap text-ellipsis overflow-hidden"}
+                  rel={"nofollow"}
                 >
                   {pr.title}
                 </a>

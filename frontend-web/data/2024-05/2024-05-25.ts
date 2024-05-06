@@ -101,5 +101,241 @@ const data: QuizData = {
       "answer": 2,
     },
   ],
+  "descriptions": {
+    "grammar": {
+      "patterns": [
+        {
+          "pattern": "S + V",
+          "explanation": "Simple statement with a subject and verb",
+          "usage": [
+            "The world was a vast expanse of mystery, connected by the whispers of wind and water.",
+          ],
+          "words": [
+            {
+              "S": [
+                "The world",
+              ],
+            },
+            {
+              "V": [
+                "was",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation":
+            "Simple statement with a subject, verb, and complement",
+          "usage": [
+            "As they watched the message flash across the screen, they couldn't help but feel a sense of wonder and excitement.",
+          ],
+          "words": [
+            {
+              "S": [
+                "they",
+              ],
+            },
+            {
+              "V": [
+                "watched",
+              ],
+            },
+            {
+              "C": [
+                "a sense of wonder and excitement",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation": "Simple statement with a subject, verb, and object",
+          "usage": [
+            "With this new technology, messages could travel faster than ever before.",
+          ],
+          "words": [
+            {
+              "S": [
+                "this",
+              ],
+            },
+            {
+              "V": [
+                "travel",
+              ],
+            },
+            {
+              "O": [
+                "messages",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + O",
+          "explanation": "Simple statement with a subject, verb, two objects",
+          "usage": [
+            "Two scientists, Dr. Jack, were eager to test out the capabilities of the new cable.",
+          ],
+          "words": [
+            {
+              "S": [
+                "two scientists",
+              ],
+            },
+            {
+              "V": [
+                "were",
+              ],
+            },
+            {
+              "O": [
+                "Dr. Jack",
+                "the capabilities",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + C",
+          "explanation":
+            "Simple statement with a subject, verb, object, and complement",
+          "usage": [
+            "As they began to exchange messages with their colleagues on the other side of the Atlantic, strange things started to happen.",
+          ],
+          "words": [
+            {
+              "S": [
+                "they",
+              ],
+            },
+            {
+              "V": [
+                "began",
+              ],
+            },
+            {
+              "O": [
+                "messages",
+                "their colleagues",
+              ],
+            },
+            {
+              "C": [
+                "strange things",
+              ],
+            },
+          ],
+        },
+      ],
+      "vocabularies": [
+        {
+          "class": "Noun",
+          "word": "expanse",
+          "meaning": "a large area or distance of something",
+          "usage": [
+            "The world was a vast expanse of mystery",
+            "The universe is an endless expanse",
+          ],
+          "pronounce": "/ɛksˈpæns/",
+          "example": "The beauty of the desert landscape is a true expanse.",
+        },
+        {
+          "class": "Verb",
+          "word": "whisper",
+          "meaning": "to speak very softly",
+          "usage": [
+            "But as the first transatlantic telegraph cable was completed on May 25th, 1858, the possibilities seemed endless.",
+            "She whispered a secret in my ear.",
+          ],
+          "pronounce": "/ˈwɪspər/",
+          "example": "The wind whispers through the trees.",
+        },
+        {
+          "class": "Adverb",
+          "word": "endlessly",
+          "meaning": "without end or limit",
+          "usage": [
+            "With this new technology, messages could travel faster than ever before.",
+            "She loved to read books endlessly.",
+          ],
+          "pronounce": "/ɛnˈdli//",
+          "example": "The possibilities of the new technology seemed endless.",
+        },
+        {
+          "class": "Adjective",
+          "word": "garbled",
+          "meaning": "made unintelligible or unclear",
+          "usage": [
+            "But as they began to exchange messages with their colleagues on the other side of the Atlantic, strange things started to happen.",
+            "The garbled transmission made no sense.",
+          ],
+          "pronounce": "/ˈɡɑrbəld/",
+          "example": "The message was garbled and didn't make sense.",
+        },
+        {
+          "class": "Noun",
+          "word": "universe",
+          "meaning": "the whole creation regarded as an orderly system",
+          "usage": [
+            "With this new technology, messages could travel faster than ever before.",
+            "She studied the universe to understand its secrets.",
+          ],
+          "pronounce": "/juːˈnɪvər.s/",
+          "example": "The universe is a vast and complex place.",
+        },
+        {
+          "class": "Verb",
+          "word": "transmit",
+          "meaning": "to send or convey (information, etc.)",
+          "usage": [
+            "As they watched the message flash across the screen, they couldn't help but feel a sense of wonder and excitement.",
+            "She transmitted the message to her team.",
+          ],
+          "pronounce": "/trænˈsɪt/",
+          "example":
+            "The new technology allowed us to transmit messages instantly.",
+        },
+        {
+          "class": "Adverb",
+          "word": "minutely",
+          "meaning": "in great detail or precision",
+          "usage": [
+            "As they watched the message flash across the screen, they couldn't help but feel a sense of wonder and excitement.",
+            "She examined the data minutely.",
+          ],
+          "pronounce": "/mɪˈnjuːtli//",
+          "example": "We analyzed the data minutely to find the pattern.",
+        },
+        {
+          "class": "Noun",
+          "word": "realm",
+          "meaning":
+            "a kingdom or domain, especially one thought of as being otherworldly",
+          "usage": [
+            "And as they continued to send messages back and forth, they began to unravel the secrets of the universe, one garbled message at a time.",
+            "She entered a realm of magic and wonder.",
+          ],
+          "pronounce": "/rɛlm/",
+          "example":
+            "The fantasy novel transported me to a realm of adventure.",
+        },
+      ],
+    },
+    "keywords": [
+      "mystery",
+      "connection",
+      "technology",
+      "messages",
+      "speed",
+      "scientists",
+      "plan",
+      "excitement",
+      "communication",
+      "portal",
+      "universe",
+    ],
+  },
 };
 export default data;

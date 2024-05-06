@@ -105,5 +105,246 @@ const data: QuizData = {
       "answer": 3,
     },
   ],
+  "descriptions": {
+    "grammar": {
+      "patterns": [
+        {
+          "pattern": "S + V",
+          "explanation":
+            "The basic sentence structure with a subject and verb.",
+          "usage": [
+            "In the summer of 1871, the city of Chicago was abuzz",
+          ],
+          "words": [
+            {
+              "S": [
+                "the city of Chicago",
+              ],
+            },
+            {
+              "V": [
+                "was abuzz",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation":
+            "The sentence structure with a subject, verb, and complement.",
+          "usage": [
+            "As the wind carried the flames from building to building",
+          ],
+          "words": [
+            {
+              "S": [
+                "the wind",
+              ],
+            },
+            {
+              "V": [
+                "carried",
+              ],
+            },
+            {
+              "C": [
+                "the flames from building to building",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation":
+            "The sentence structure with a subject, verb, and object.",
+          "usage": [
+            "With nothing left to lose, he set out",
+          ],
+          "words": [
+            {
+              "S": [
+                "he",
+              ],
+            },
+            {
+              "V": [
+                "set out",
+              ],
+            },
+            {
+              "O": [
+                "to uncover the truth",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + O",
+          "explanation":
+            "The sentence structure with a subject, verb, and two objects.",
+          "usage": [
+            "As they delved deeper into the mystery",
+          ],
+          "words": [
+            {
+              "S": [
+                "they",
+              ],
+            },
+            {
+              "V": [
+                "delved deeper",
+              ],
+            },
+            {
+              "O": [
+                "into the mystery",
+                "to solve",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + C",
+          "explanation":
+            "The sentence structure with a subject, verb, object, and complement.",
+          "usage": [
+            "I loved how Detective Hart was so determined",
+          ],
+          "words": [
+            {
+              "S": [
+                "I",
+              ],
+            },
+            {
+              "V": [
+                "loved",
+              ],
+            },
+            {
+              "O": [
+                "how Detective Hart",
+              ],
+            },
+            {
+              "C": [
+                "was so determined",
+              ],
+            },
+          ],
+        },
+      ],
+      "vocabularies": [
+        {
+          "class": "Noun",
+          "word": "city",
+          "meaning":
+            "a large human settlement with fixed boundaries and a recognized government.",
+          "usage": [
+            "The city of Chicago was abuzz...",
+            "She walked through the city streets...",
+          ],
+          "pronounce": "/ˈsɪti/ ",
+          "example": "The city is known for its vibrant culture.",
+        },
+        {
+          "class": "Pronoun",
+          "word": "he",
+          "meaning":
+            "used to refer to a male person or animal previously mentioned.",
+          "usage": [
+            "He set out to uncover the truth...",
+            "He watched the inferno from his office window...",
+          ],
+          "pronounce": "/hiː/ ",
+          "example": "He went to the store to buy some milk.",
+        },
+        {
+          "class": "Noun",
+          "word": "fire",
+          "meaning":
+            "the rapid oxidation of a fuel source in combination with an oxidizer, typically producing heat and light.",
+          "usage": [
+            "The fire had broken out...",
+            "As he watched the inferno from his office window...",
+          ],
+          "pronounce": "/faɪər/ ",
+          "example": "The firefighters put out the fire quickly.",
+        },
+        {
+          "class": "Verb",
+          "word": "watched",
+          "meaning": "to observe or see something.",
+          "usage": [
+            "He watched the inferno from his office window...",
+            "She watched the sunset on the beach...",
+          ],
+          "pronounce": "/ˈwɒtʃt/ ",
+          "example": "I watched the movie last night.",
+        },
+        {
+          "class": "Adjective",
+          "word": "great",
+          "meaning": "extremely good or excellent.",
+          "usage": [
+            "The great fire had broken out...",
+            "She is a great singer...",
+          ],
+          "pronounce": "/greɪt/ ",
+          "example": "He did a great job on the project.",
+        },
+        {
+          "class": "Noun",
+          "word": "office",
+          "meaning": "a room or building where people work.",
+          "usage": [
+            "He watched the inferno from his office window...",
+            "She works in an office downtown...",
+          ],
+          "pronounce": "/ˈɒfɪs/ ",
+          "example": "The office is located on the top floor.",
+        },
+        {
+          "class": "Adverb",
+          "word": "carefully",
+          "meaning": "in a way that avoids damage or harm.",
+          "usage": [
+            "They discovered that the fire was no accident...",
+            "She poured the medicine carefully...",
+          ],
+          "pronounce": "/ˈkærflɪ/ ",
+          "example": "He drove carefully through the snowstorm.",
+        },
+        {
+          "class": "Verb",
+          "word": "set",
+          "meaning": "to put something somewhere.",
+          "usage": [
+            "He set out to uncover the truth...",
+            "She set her alarm clock for 7 am...",
+          ],
+          "pronounce": "/sɛt/ ",
+          "example": "I will set my bag down over there.",
+        },
+      ],
+    },
+    "keywords": [
+      "arson",
+      "mystery",
+      "fire",
+      "investigation",
+      "detective",
+      "Chicago",
+      "1871",
+      "panic",
+      "chaos",
+      "truth",
+      "clue",
+      "crime",
+      "motives",
+      "suspense",
+    ],
+  },
 };
 export default data;

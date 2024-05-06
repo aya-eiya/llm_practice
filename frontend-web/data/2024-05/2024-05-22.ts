@@ -102,5 +102,250 @@ const data: QuizData = {
       "answer": 2,
     },
   ],
+  "descriptions": {
+    "grammar": {
+      "patterns": [
+        {
+          "pattern": "S + V",
+          "explanation":
+            "The basic five sentence pattern where the subject (S) performs the action described by the verb (V).",
+          "usage": [
+            "In a world where communication was limited to letters and telegrams, a brilliant inventor named Alexander Graham Bell had a vision for a device that could instantly connect people across vast distances.",
+          ],
+          "words": [
+            {
+              "S": [
+                "a brilliant inventor",
+                "Alexander Graham Bell",
+              ],
+            },
+            {
+              "V": [
+                "had a vision",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation":
+            "The basic five sentence pattern where the subject (S) performs the action described by the verb (V) on the object (O).",
+          "usage": [
+            "With his team of engineers and scientists, he worked tirelessly in his lab, day and night, to bring this dream to fruition.",
+          ],
+          "words": [
+            {
+              "S": [
+                "he",
+              ],
+            },
+            {
+              "V": [
+                "worked",
+              ],
+            },
+            {
+              "O": [
+                "his team",
+                "this dream",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + C",
+          "explanation":
+            "The basic five sentence pattern where the subject (S) performs the action described by the verb (V) on the object (O), and the complement (C) provides additional information.",
+          "usage": [
+            "On a crisp autumn morning, as the sun was just beginning to rise, Bell and his team set up their contraption in the center of a bustling city square.",
+          ],
+          "words": [
+            {
+              "S": [
+                "Bell",
+                "his team",
+              ],
+            },
+            {
+              "V": [
+                "set up",
+              ],
+            },
+            {
+              "O": [
+                "their contraption",
+              ],
+            },
+            {
+              "C": [
+                "in the center of a bustling city square",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation":
+            "The basic five sentence pattern where the subject (S) performs the action described by the verb (V) on the object (O).",
+          "usage": [
+            "As the crowd held their breath, waiting for the magic to happen, Bell picked up the receiver and spoke into it, his voice echoing through the airwaves.",
+          ],
+          "words": [
+            {
+              "S": [
+                "Bell",
+              ],
+            },
+            {
+              "V": [
+                "picked up",
+                "spoke",
+              ],
+            },
+            {
+              "O": [
+                "the receiver",
+                "it",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V",
+          "explanation":
+            "The basic five sentence pattern where the subject (S) performs the action described by the verb (V).",
+          "usage": [
+            "I loved how the novel highlighted the importance of perseverance and teamwork.",
+          ],
+          "words": [
+            {
+              "S": [
+                "I",
+              ],
+            },
+            {
+              "V": [
+                "loved",
+              ],
+            },
+          ],
+        },
+      ],
+      "vocabularies": [
+        {
+          "class": "Noun",
+          "word": "communication",
+          "meaning":
+            "the process or skill of exchanging information, ideas, or messages",
+          "usage": [
+            "The new technology revolutionized the way people communicate.",
+            "Effective communication is key to a successful business.",
+          ],
+          "pronounce": "/kəmˌyjoʊˈmeɪʃn/",
+          "example": "Good communication skills are essential for a manager.",
+        },
+        {
+          "class": "Adjective",
+          "word": "brilliant",
+          "meaning": "extremely talented or clever",
+          "usage": [
+            "The brilliant scientist won the Nobel Prize.",
+            "Her brilliant idea changed the industry.",
+          ],
+          "pronounce": "/ˈbrɪl.jənt/",
+          "example": "Alexander Graham Bell was a brilliant inventor.",
+        },
+        {
+          "class": "Noun",
+          "word": "invention",
+          "meaning": "the creation of something new or improved",
+          "usage": [
+            "The invention of the wheel changed human history.",
+            "The company's latest invention is a game-changer.",
+          ],
+          "pronounce": "/ɪnˈven.tʃən/",
+          "example":
+            "Bell's invention, the telephone, revolutionized communication.",
+        },
+        {
+          "class": "Verb",
+          "word": "demonstrate",
+          "meaning":
+            "to show or prove something by doing it or making a model of it",
+          "usage": [
+            "The company will demonstrate its new product at the trade show.",
+            "The teacher asked the students to demonstrate their math skills.",
+          ],
+          "pronounce": "/ˌdɛm.ənˈsteɪt/",
+          "example":
+            "Bell and his team demonstrated their invention to the public.",
+        },
+        {
+          "class": "Noun",
+          "word": "moment",
+          "meaning": "a very short period of time",
+          "usage": [
+            "The moment I walked in, I knew it was going to be a great party.",
+            "I'll never forget that moment when I saw my child for the first time.",
+          ],
+          "pronounce": "/ˈmʌm.ənt/",
+          "example":
+            "The moment arrived when they were ready to demonstrate their invention.",
+        },
+        {
+          "class": "Adverb",
+          "word": "instantly",
+          "meaning": "very quickly or immediately",
+          "usage": [
+            "I instantly knew that I had made a mistake.",
+            "The cure worked instantly and effectively.",
+          ],
+          "pronounce": "/ɪnˈstænt.lɪ/",
+          "example":
+            "Bell wanted to create a device that could connect people instantly.",
+        },
+        {
+          "class": "Noun",
+          "word": "history",
+          "meaning":
+            "the study of past events and the way in which they have affected people",
+          "usage": [
+            "The history of the world is filled with stories of war and peace.",
+            "I'm fascinated by the history of science.",
+          ],
+          "pronounce": "/hɪˈstɔri/",
+          "example":
+            "The invention of the telephone marked a pivotal moment in history.",
+        },
+        {
+          "class": "Noun",
+          "word": "society",
+          "meaning":
+            "a group of people who share common characteristics, values, or institutions",
+          "usage": [
+            "The society has changed significantly over the past century.",
+            "The company is committed to improving society.",
+          ],
+          "pronounce": "/ˈsɒs.ə.ti/",
+          "example":
+            "The invention of the telephone paved the way for a new era in human interaction and society.",
+        },
+      ],
+    },
+    "keywords": [
+      "communication",
+      "innovation",
+      "technology",
+      "history",
+      "milestone",
+      "connection",
+      "interaction",
+      "telephony",
+      "pioneering",
+      "visionary",
+      "breakthrough",
+      "revolutionary",
+    ],
+  },
 };
 export default data;
