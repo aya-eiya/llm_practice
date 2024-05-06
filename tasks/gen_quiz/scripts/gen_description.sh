@@ -5,52 +5,98 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 OUTPUTS_DIR="${CURRENT_DIR}/../outputs"
 
 fulldate=${1}
+
+## TMP files
+init_tmp () {
+  tmp_prompt_pattern=/tmp/.gen_pattern_${fulldate}.prompt
+  tmp_prompt_vocabularies=/tmp/.gen_vocabularies_${fulldate}.prompt
+  tmp_prompt_keywords=/tmp/.gen_keywords_${fulldate}.prompt
+  
+  tmp_out_pattern=/tmp/.gen_pattern_${fulldate}.raw.txt
+  tmp_out_vocabularies=/tmp/.gen_vocabularies_${fulldate}.raw.txt
+  tmp_out_keywords=/tmp/.gen_keywords_${fulldate}.raw.txt
+
+  tmp_json_pattern=/tmp/.gen_pattern_${fulldate}.json
+  tmp_json_vocabularies=/tmp/.gen_vocabularies_${fulldate}.json
+  tmp_json_keywords=/tmp/.gen_keywords_${fulldate}.json
+  
+  tmp_files=(
+    ${tmp_prompt_pattern}
+    ${tmp_prompt_vocabularies}
+    ${tmp_prompt_keywords}
+    ${tmp_out_pattern}
+    ${tmp_out_vocabularies}
+    ${tmp_out_keywords}
+    ${tmp_json_pattern}
+    ${tmp_json_vocabularies}
+    ${tmp_json_keywords}
+  )
+}
+## models
+main_model="llama3"
+
 org_json="${OUTPUTS_DIR}/${fulldate}.json"
 out_json="${OUTPUTS_DIR}/${fulldate}.desc.json"
 
 try_gen_pattern() {
-  local novel=${1}
-  local pattern="Analyze the basic five sentence patterns used in the following passage and express them using \
-the notation 'S, V, O, C, (M)' where applicable. Provide usege of each pattern within the passage along with a \
-brief explanation of the pattern.\
-\`\`\`\n\
-${novel}\n\
-\`\`\`\n\
-The output is JSON formatted like \n\
-\`\`\`\n\
-{\n\
-  \"grammar\" : {\n\
-    \"patterns\": [\n\
-      {\n\
-        \"pattern\": \"S + V\",\n\
-        \"usage\": string[],\n\
-        \"explanation\": string,\n\
-        \"words\": [{
-          \"S\": string[]\n\,
-          \"V\": string[]\n\,
-          ...
-        }]
-      },\n\
-      ...\n\
-    ]\n\
-  }\n\
-}\n\
-\`\`\`\
-"
-  echo "${pattern}" > /tmp/.gen_pattern.prompt
-  ollama run llama3 "${pattern}" \
-  | tee /tmp/.gen_pattern.raw.txt \
+  local lines="${1}"
+  local pattern="
+Generate JSON.
+Analyze the basic five sentence patterns used in the following sentences.
+Express them using the notation 'S, V, O, C' where applicable.
+The basic five sentence pattern is 'S + V', 'S + V + C', 'S + V + O', 'S + V + O + O', 'S + V + O + C'.
+Deescribe each pattern with a brief explanation from the sentences.
+
+\`\`\`
+${lines}
+\`\`\`
+
+The output must be a JSON object, its type is described following typescript code.
+\`\`\`
+Type Grammar = {
+  \"grammar\" : { // required as root key
+    \"patterns\": { // required as object key, \"patterns\" is array its length is limited to 5
+      \"pattern\": \"S + V', 'S + V + C\" | \"S + V + O\" | \"S + V + O + O\" | \"S + V + O + C\", // pattern name
+      \"explanation\": string, // brief explanation of the pattern
+      \"usage\": string[], // pickup the sentence as usage do not modify or trim the sentence
+      \"words\": [ // \"words\" is array of single key objects
+        {
+          \"S\": string[], // required. Subject parts of the usage sentence.
+        },
+        {
+          \"V\": string[], // required. Verb parts of the usage sentence.
+        },
+        {
+          \"O\": string[], // Object parts of the usage sentence. required if the pattern is \"S + V + O\" or \"S + V + O + O\" or \"S + V + O + C\" .
+        },
+        {
+          \"C\": string[], // Complement parts of the usage sentence. required if the pattern is \"S + V + O + C\".
+        }
+      ]
+    }[]
+  }
+}
+\`\`\`
+\"grammar\" is the root key, contains \"patterns\" as pattern object array.
+Output is only one single JSON."
+
+  echo "${pattern}" > $tmp_prompt_pattern
+  timeout 120 ollama run llama3 "${pattern}" \
+  | tee $tmp_out_pattern \
   | tr -d '\n' \
   | sed -e 's/```json/```/g' \
   | sed -n -e 's/^.*```\s*\({.*}\)```.*$/\1/p' \
-  | jq '{ "grammar": .grammar }'
+  | jq 'if (.grammar.patterns | .[0].words | type | . != "array")
+    then ("format error\n" | halt_error(1))
+    else . end'
 }
 
 gen_pattern() {
-  local novel=${1}
+  local lines="${1}"
   local cnt=0
+
   while true; do
-    try_gen_pattern "${novel}" 2> /dev/null && break
+    try_gen_pattern "${lines}" 2> /dev/null && break
     cnt=$((cnt + 1))
     if [ $cnt -eq 5 ]; then return 1; fi
   done
@@ -58,82 +104,87 @@ gen_pattern() {
 
 
 try_gen_vocabularies() {
-  local novel=${1}
-  local vocabularies="Pickup some important words from following passage to understand the passage,\
-and describe the each words meaning in dictionary,\
-and if the word is a plural form then replace it with singular form,\
-and \"usage\" is the sentence that is the usage in the pssage,\
-and enumerate the meanings of the word if it has multiple senses,\
-and tell the word class in Noun, Pronoun, Adjective,Adverb, Verb, Preposition, Conjunction, Interjection or Other of every sense of the word,\
-and generate new sentence of the word usage as \"example\" \
-and the pronounce must be illustrated with International Phonetic Alphabet,\
-\`\`\`\n\
-${novel}\n\
-\`\`\`\n\
-The output is JSON formatted like \n\
-\`\`\`\n\
-{\n\
-  \"grammar\" : {\n\
-    \"vocabularies\": [\n\
-      {\n\
-        \"word\": \"S + V\",\n\
-        \"usage\": string[],\n\
-        \"pronounce\": string,\n\
-        \"meanings\": [{\
-          \"class\": string,\n\
-          \"meaning\": string,\n\
-          \"example\": string\n\
-        }]\
-      },\n\
-      ...\n\
-    ]\n\
-  }\n\
-}\n\
-\`\`\`\
-"
-  echo "${vocabularies}" > /tmp/.gen_vocabularies.prompt
-  ollama run llama3 "${vocabularies}" \
-  | tee /tmp/.gen_vocabularies.raw.txt \
+  local novel="${1}"
+  local vocabularies="
+Generate JSON.
+Pickup 8 important words from following passage to understand the passage.
+
+\`\`\`
+${novel}
+\`\`\`
+
+Describe the each picked words meaning in dictionary,
+
+The output must be a JSON object, its type is described following typescript code.
+\`\`\`
+type Grammar = {
+  \"grammar\" : { // required as root key, length of the array is 8
+    \"vocabularies\": { // required as object key
+      \"class\": \"Noun\" | \"Pronoun\" | \"Adjective\" | \"Adverb\" | \"Verb\" | \"Preposition\" | \"Conjunction\" | \"Interjection\" | \"Other\"
+      \"word\": string, // pickup the word from the passage without any modification
+      \"meaning\": string, // The meaning of the word in context
+      \"usage\": string[], // pickup some sentence from the sentences that use the word, do not modify or trim the sentence
+      \"pronounce\": string, // Illustrate with International Phonetic Alphabet
+      \"example\": string // generate new sentence of the word usage
+    }[]
+  }
+}
+\`\`\`
+\"grammar\" is the root key, an object, not array, contains \"vocabularies\". \"vocabularies\" is vocabulary object array.
+Output is only one single JSON."
+
+  echo "${vocabularies}" > $tmp_prompt_vocabularies
+  timeout 120 ollama run llama3 "${vocabularies}" \
+  | tee $tmp_out_vocabularies \
   | tr -d '\n' \
   | sed -e 's/```json/```/g' \
   | sed -n -e 's/^.*```\s*\({.*}\)```.*$/\1/p' \
-  | jq '{ "grammar": .grammar }'
+  | jq 'if (.grammar.vocabularies | .[0].usage | type | . != "array")
+    then ("format error 1" | halt_error(1))
+    else . end'
 }
 
 gen_vocabularies() {
-  local novel=${1}
+  local novel="${1}"
   local cnt=0
+  
   while true; do
-    try_gen_vocabularies "${novel}" 2> /dev/null && break
+    try_gen_vocabularies "${novel}" && break
     cnt=$((cnt + 1))
     if [ $cnt -eq 5 ]; then return 1; fi
   done
 }
 
 try_gen_keywords() {
-  local novel=${1}
-  local keywords="In context of web marketing, identify the SEO words in the following passage. the words are the most important words in SEO, and a \"word\" is not mean only just one word but also can be two or three words more identify the feature of the passage.\
-\`\`\`\n\
-${novel}\
-\`\`\`\n\
-The output is JSON formatted like \
-\`\`\`\n\
-{\n\
-  \"keywords\": string[]\n\
-}\n\
+  local novel="${1}"
+  local keywords="
+Generate JSON.
+
+Create 12 keywords that is best describe the following passage from the following passage.
+
 \`\`\`
-"
-  echo "${keywords}" > /tmp/.gen_keywords.prompt
-  ollama run llama3 "${keywords}" \
-  | tee /tmp/.gen_keywords.raw.txt \
+${novel}
+\`\`\`
+
+The output is JSON as following format.
+\`\`\`
+{
+  \"keywords\": string[]
+}
+\`\`\`
+And the output JSON only."
+
+  echo "${keywords}" > $tmp_prompt_keywords
+  timeout 60s ollama run llama3 "${keywords}" \
+  | tee $tmp_out_keywords \
   | tr -d '\n' \
-  | sed -e 's/```json/```/g' \
-  | sed -n -e 's/^.*```\s*\({.*}\)```.*$/\1/p' \
+  | tr -d '\`' \
+  | sed -n -e 's/^.*\({.*}\).*$/\1/p' \
   | jq '{ "keywords": .keywords }'
 }
 
 gen_keywords() {
-  local novel=${1}
+  local novel="${1}"
   local cnt=0
   while true; do
     try_gen_keywords "${novel}" 2> /dev/null && break
@@ -148,7 +199,42 @@ if [ ! -f "${org_json}" ]; then
   exit 1
 fi
 
-gen_pattern "$(jq -r '.body' ${org_json})" > /tmp/.gen_pattern.json
-gen_keywords "$(jq -r '.body' ${org_json})" > /tmp/.gen_keywords.json
-gen_vocabularies "$(jq -r '.body' ${org_json})" > /tmp/.gen_vocabularies.json
-jq -s '.[0] * { "descriptions": (.[1] * .[2] * .[3]) }' "${org_json}" /tmp/.gen_keywords.json /tmp/.gen_vocabularies.json /tmp/.gen_pattern.json > "${out_json}"
+init_tmp
+
+cat <<OPTS | jq
+{
+  "fulldate": "$fulldate",
+  "models": {
+    "main": "$main_model"
+  },
+  "temp_files": [$( for file in "${tmp_files[@]}" ; do echo -n "\"$file\","; done | sed 's/,$//')]
+}
+OPTS
+
+if [ ! -f $tmp_json_pattern ] || [ "$(jq 'has("grammar")' $tmp_json_pattern)" != "true" ]; then
+  echo "gen pattern"
+  gen_pattern "$(jq '[.body] + (.dialog | map(. | to_entries | map(.value)) | flatten) | map(. | sub("(?<M>\\.|\\?|\\!)"; "\(.M)<||>"; "gm")| split("<||>")) | flatten | map(.|ltrimstr(" ")|select(.|length|.>12))' ${org_json})" > $tmp_json_pattern
+else
+  echo "skip gen pattern"
+fi
+
+if [ ! -f $tmp_json_vocabularies ] || [ "$(jq 'has("grammar")' $tmp_json_vocabularies)" != "true" ]; then
+  echo "gen vocabularies"
+  gen_vocabularies "$(jq -r '.body' ${org_json})" > $tmp_json_vocabularies
+else
+  echo "skip gen vocabularies"
+fi
+
+if [ ! -f $tmp_json_keywords ] || [ "$(jq 'has("keywords")' $tmp_json_keywords)" != "true" ]; then
+  echo "gen keywords"
+  gen_keywords "$(jq -r '.body' ${org_json})" > $tmp_json_keywords
+else
+  echo "skip gen keywords"
+fi
+
+
+jq -s '.[0] * { "descriptions": (.[1] * .[2] * .[3]) }' "${org_json}" \
+  "${tmp_json_pattern}" \
+  "${tmp_json_vocabularies}" \
+  "${tmp_json_keywords}" \
+  > "${out_json}"

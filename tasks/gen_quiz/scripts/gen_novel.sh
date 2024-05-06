@@ -12,19 +12,6 @@ kerry="Kerry, a lively 12-year-old filled with curiosity and mischief. With his 
 meg="Meg, a 12-year-old with an insatiable love for books and boundless imagination. Always immersed in a novel or lost in her writing, she's a true bookworm with a penchant for the extraordinary. Meg's creativity knows no limits as she dreams up fantastical worlds and characters. While some may find her 'quirky,' she embraces her uniqueness, seeing magic in everyday moments."
 lui="Lui, a veteran educator with over 20 years of experience teaching social studies and history. At 42, known for his strictness and attention to detail, Lui instills values of honesty and hard work in his students. Despite his tough exterior, he's a trusted mentor and friend, inspiring a love of learning beyond the classroom."
 
-## date
-fulldate=$(date "+%Y-%m-%d")
-# date='April 1st'
-date_th=$(
-  p=('1st' '2nd' '3rd');
-  d=$(($(date "+%d")));
-  if [ $d -gt 3 ];
-    then echo -n "${d}th"
-    else echo -n "$p[$d]"
-  fi
-)
-date=$(date "+%B ${date_th}")
-
 ## Steps
 steps=('event' 'novel' 'conversation' 'quiz' 'make')
 
@@ -62,7 +49,17 @@ novel_model="llava"
 
 ## Event
 try_gen_event() {
-  local event="Research an event in ${theme} history that happened on the same month and date as ${date}. output is JSON of \"{ \n "event": string, // event title,\n "details": string // event detail \n}\""
+  local event="
+Research an event caused at ${date} in ${theme} history.
+The output is JSON of 
+\`\`\`
+{
+  "event": string, // event title
+  "details": string // event detail
+}
+\`\`\`
+And the output JSON only."
+
   echo "${event}" > $tmp_prompt_event
   ollama run $main_model "${event}" \
   | tee $tmp_out_event \
@@ -89,13 +86,30 @@ gen_event() {
 ## Novel
 try_gen_novel() {
   local event="${1}"
-  local novel="Event:\n\`\`\`\n${event}\n\`\`\`\nCreate single line JSON of short ${flavor} novel that is inspired by the concept of the event and be written with about 180 words. The output is a JSON formatted as { \"title\": string, \"body\": string }, newline charactor in strings of data should be escaped by '\\\\n'. and the output is JSON part only."
+  local novel="
+Event:
+\`\`\`
+${event}
+\`\`\`
+
+Create short ${flavor} novel that is inspired by the concept of the event and be written with about 180 words.
+The output is a JSON formatted as 
+\`\`\`
+{
+  \"title\": string,
+  \"body\": string
+}
+\`\`\`
+And the output JSON only."
+
   echo "${novel}" > $tmp_prompt_novel
   ollama run $novel_model "$novel" \
   | tee $tmp_out_novel \
   | tr -d '\n' \
   | sed -n -e 's/^.*\({.*}\).*$/\1/p' \
+  | jq '{ "title": .title, "body": (.body| if (.|split(" ")|length|.<160 or .>260) then ("body word length error\n"|halt_error(1)) else . end) }' \
   | jq -s "{\"event\": ${event} ,\"date\": \"${fulldate}\"} * .[0]"
+  # TODO: sanitize body not to include the name in real
 }
 
 gen_novel() {
@@ -115,14 +129,40 @@ gen_novel() {
 
 ## Conversation
 try_gen_conversation() {
-  local conversation="Novel:\`\`\`${1}\`\`\`\n\nCharacters:\"${billy}\n${kerry}\n${meg}\n${lui}\"\n\n\ncreate conversation of Billy, Kerry, Meg, Lui about the novel, and the order of the statements of the three conversations should be swapped so that they are random. the output must be formatted as JSON like \`\`\`{ \"dialog\": [ { \"Billy\": string }, { \"Kerry\": string }, ... ] }\`\`\`, \"dialog\" is the array of conversation objects that is formatted as the speaker name is the key of object and the speaker's line is its value and the object must have only one key."
+  local conversation="
+Novel:\`\`\`
+${1}
+\`\`\`
+
+Readers:
+\`\`\`
+${billy}
+${kerry}
+${meg}
+${lui}
+\`\`\`
+Create conversation of \"Readers\" about the novel after read it.
+Order of the speaker is random, and each speaker talks at least 2 times.
+
+The output must be a JSON object, its type is described following typescript code.
+\`\`\`
+type SpeakerName= 'Billy' | 'Kerry' | 'Meg' | 'Lui'
+type Dialog = {
+  \"dialog\": { // required as root key
+    [SpeakerName]: string // string is the line, key is the speaker name, object must have only one key
+  }[] // array of conversation objects
+}
+\`\`\`
+\"dialog\" is the root key, and array of conversation objects."
+
   echo "${conversation}" > $tmp_prompt_conversation
   ollama run $main_model "$conversation" \
   | tee $tmp_out_conversation \
   | tr -d '\n' \
   | sed -e 's/```json/```/g' \
   | sed -n -e 's/^.*```\s*\({.*}\)```.*$/\1/p' \
-  | jq
+  | jq '{ "dialog": .dialog }'
+  # TODO: prevent dialog to be a template conversation.
 }
 
 gen_conversation() {
@@ -138,7 +178,26 @@ gen_conversation() {
 
 ## Quiz
 try_gen_quiz() {
-  local quiz="${1}\n\nFrom the above novel text and dialogue, create five questions to test the English reading comprehension skills used in ESL classes. The format for answering the questions should be a one-choice format with five options to choose from, the output must be formatted as JSON like \`\`\`{ \"quiz\": [ { \"question\": string, "options": [ string, string, ... ], "answer": number  } ] }\`\`\`, \"quiz\" is root of the object and it is the array of question objects that format is \"question\" as string and \"options\" as string array and \"answer\" as index of correct choice in options."
+  local quiz="
+\`\`\`
+${1}
+\`\`\`
+
+From the above novel text and dialogue, create five questions to test the English reading comprehension skills used in ESL classes.
+The format for answering the questions should be a one-choice format with five options to choose from.
+
+The output must be a JSON object, its type is described following typescript code.
+\`\`\`
+type Quize = {
+  \"quiz\": { // required root key
+    \"question\": string,
+    \"options\": string[], // length must be 5
+    \"answer\": number  // index of correct choice in options
+  }[] // length must be 5
+}
+\`\`\`
+\"quiz\" is the root key and the object must have 5 question object."
+
   echo "${quiz}" > $tmp_prompt_quiz
   ollama run $main_model "${quiz}" \
   | tee $tmp_out_quiz \
@@ -146,16 +205,17 @@ try_gen_quiz() {
   | sed -e 's/```json/```/g' \
   | sed -n -e 's/^.*```\s*\({.*}\)```.*$/\1/p' \
   | jq '{ "quiz": .quiz }'
+  # TODO: force to fail on quiz count != 5
+  # TODO: force to fail on options count != 5
+  # TODO: check the ansewer is correct
 }
 
 gen_quiz() {
   local cnt=0
-  local input=('')
-  local in; while read -r in; do input+=("${in}" '\n') ;done
   while true; do
-    try_gen_quiz "${input[*]}" 2> /dev/null && break
+    try_gen_quiz "${1}" 2> /dev/null && break
     cnt=$((cnt + 1))
-    if [ $cnt -eq 5 ]; then return 1; fi
+    if [ $cnt -eq 10 ]; then return 1; fi
   done
 }
 
@@ -198,22 +258,23 @@ make_json() {
     echo "$tmp_json_novel not found." >&2
     echo "generate novel first." >&2
     echo "${0} -f ${fulldate} -e ${date} -s 'event, novel'" >&2
-    echo "exit." >&2
-    exit 1
+    return 1
   fi
   if [ ! -f $tmp_json_conversation ]; then
     echo "$tmp_json_conversation not found." >&2
     echo "generate conversation first." >&2
     echo "${0} -f ${fulldate} -e ${date} -s 'conversation'" >&2
-    echo "exit." >&2
-    exit 1
+    jq -s ".[0] * { \"word count\": ${words} }" \
+      $tmp_json_novel
+    return 1
   fi
   if [ ! -f $tmp_json_quiz ]; then
     echo "$tmp_json_quiz not found." >&2
     echo "generate quiz first." >&2
     echo "${0} -f ${fulldate} -e ${date} -s 'quiz'" >&2
-    echo "exit." >&2
-    exit 1
+    jq -s ".[0] * { \"word count\": ${words} } * .[1]" \
+      $tmp_json_novel $tmp_json_conversation
+    return 1
   fi
   local words=$(jq -r '.body' $tmp_json_novel | wc -w | tr -d ' ')
   jq -s ".[0] * { \"word count\": ${words} } * .[1] * .[2]" \
@@ -281,7 +342,35 @@ while getopts ":d:e:s:t:f:m:n:-:" opt; do
   esac
 done
 
+if [ "$fulldate" = "" ]; then
+  ## date
+  fulldate=$(date "+%Y-%m-%d")
+fi
+
+if [ "$date" = "" ]; then
+  date_th=$(
+    p=('1st' '2nd' '3rd');
+    d=$(($(date -j -f "%Y-%m-%d" "$fulldate" "+%d")));
+    if [ $d -gt 3 ];
+      then echo -n "${d}th"
+      else echo -n "${p[$d]}"
+    fi
+  )
+  # date='April 1st'
+  date=$(date -j -f "%Y-%m-%d" "$fulldate" "+%B ${date_th}")
+fi
+
 init_tmp
+
+if [ "$flavor" = "" ]; then
+  # set random flavor
+  flavor=$(echo -e "mystery\nfantasy\nsci-fi" | shuf -n 1)
+fi
+
+if [ "$theme" = "" ]; then
+  # set random theme
+  theme=$(echo -e "ancient\nmedieval\nmodern" | shuf -n 1)  
+fi
 
 cat <<OPTS | jq
 {
@@ -328,8 +417,7 @@ if [[ " ${steps[@]} " =~ "conversation" ]]; then
 fi
 
 if [[ " ${steps[@]} " =~ "quiz" ]]; then
-  jq -s -r '"# " + .[0].title + "\n\n" + .[0].body + "\n\n" + (.[1].dialog | map(keys[0] + ": " + .[keys[0]]) | "## Dialog\n\n" + join("\n"))' $tmp_json_novel $tmp_json_conversation \
-    | gen_quiz >  $tmp_json_quiz
+  gen_quiz "$(jq -s -r '"# " + .[0].title + "\n\n" + .[0].body + "\n\n" + (.[1].dialog | map(keys[0] + ": " + .[keys[0]]) | "## Dialog\n\n" + join("\n"))' $tmp_json_novel $tmp_json_conversation)" >  $tmp_json_quiz
   if [ $? -ne 0 ]; then
     make_prompt_log_md > $OUTPUTS_DIR/${fulldate}.prompt.md
     echo "Failed to generate quiz." >&2

@@ -3,3 +3,4 @@ outputs/*
 !outputs/example.md
 *.log
 *.bk
+*.tmp.sh
