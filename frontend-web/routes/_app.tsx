@@ -2,7 +2,7 @@ import { type PageProps } from "$fresh/server.ts";
 export default function App({ Component, config }: PageProps) {
   return (
     <html lang="en">
-      <head className={"notranslate"}>
+      <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
@@ -15,7 +15,7 @@ export default function App({ Component, config }: PageProps) {
         />
         <meta name="author" content="AY.LLC" />
         <meta name="robots" content="index, follow" />
-        <title>
+        <title className={"notranslate"}>
           Daily AI-Generated English Novels & Learning Test Questions
         </title>
         <link
