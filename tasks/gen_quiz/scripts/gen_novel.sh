@@ -204,9 +204,8 @@ type Quize = {
   | tr -d '\n' \
   | sed -e 's/```json/```/g' \
   | sed -n -e 's/^.*```\s*\({.*}\)```.*$/\1/p' \
-  | jq '{ "quiz": .quiz }'
-  # TODO: force to fail on quiz count != 5
-  # TODO: force to fail on options count != 5
+  | jq 'if (.quiz | length | . != 5 ) then ("quiz count error\n" | halt_error(1)) else . end' \
+  | jq 'if (.quiz[0].options | length | . != 5 ) then ("quiz options count error\n" | halt_error(1)) else . end'
   # TODO: check the ansewer is correct
 }
 
