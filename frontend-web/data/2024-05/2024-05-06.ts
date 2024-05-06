@@ -65,7 +65,7 @@ const data: QuizData = {
         "To be part of an innovative community",
         "To pursue their passion",
       ],
-      "answer": 2,
+      "answer": 1,
     },
     {
       "question": "What did Brenner value in his design academy?",
