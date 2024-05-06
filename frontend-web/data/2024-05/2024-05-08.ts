@@ -1,287 +1,107 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event":
-      "German Zeppelin L-70 shoots down British biplane R36/45 over Cuxhaven, Germany.",
-    "details":
-      "On May 8th, 1921, a German airship LZ-70, a rigid airship also known as a zeppelin, was conducting a routine flight when it spotted a British biplane R36/45 flying in the vicinity. The zeppelin's gunner mistook the biplane for an enemy aircraft and opened fire, shooting down the plane and killing its pilot, Flight Lieutenant Frederick Herman Parker.",
+    "event": "Nuremberg Trials",
+    "details": "In May 1946, the Nuremberg Trials began, a series of war crimes trials held by the International Military Tribunal (IMT) following World War II. The trials were conducted from November 20, 1945, to October 3, 1946, and resulted in the conviction of several high-ranking Nazi officials."
   },
   "date": "2024-05-08",
-  "title": "The Zeppelin's Mistake",
-  "body":
-    "In a world where airships were the cutting edge of technology, the German LZ-70 and British R36/45 were two of the most advanced aircraft. One day, as they were on their respective missions, the LZ-70 spotted the R36/45 in its flight path. Without hesitation, the zeppelin's gunner opened fire, believing it to be an enemy aircraft. However, the biplane was not a threat and was piloted by Flight Lieutenant Frederick Herman Parker. The unfortunate event left the pilot dead and tensions between the two nations escalated. As the world mourned the loss of such a brilliant mind, both countries were left to wonder if this tragedy could have been avoided.",
-  "word count": 110,
+  "title": "Nuremberg Trial: A Crime Novel",
+  "body": "In a small European town in the aftermath of World War II, a group of survivors band together to uncover the truth about the war and bring those responsible for their suffering to justice. As they delve deeper into the darkness of the past, they discover a network of high-ranking Nazis who have fled the country but continue to wield power from the shadows.Their search leads them to Nuremberg, where the International Military Tribunal (IMT) is holding the Nuremberg Trials. The survivors find themselves drawn into the proceedings, using their knowledge of the atrocities committed during the war to expose the true extent of the Nazi regime's crimes against humanity.As the trials progress, the survivors face increasing threats from those who would prefer to see them silenced forever. But they are determined to speak the truth and ensure that justice is served. In the end, their bravery and perseverance pay off as several high-ranking Nazi officials are convicted of war crimes and brought to account for their actions.",
+  "word count": 168,
   "dialog": [
     {
-      "Lui":
-        "As educators, it's our responsibility to help students understand the significance of this tragic event.",
+      "Billy": "Wow, I had no idea that the Nuremberg Trials were so important in bringing Nazis to justice! I learned a lot about history."
     },
     {
-      "Meg":
-        "I think we're just as guilty for not knowing more about airships and their role in history. We're always learning, but sometimes I feel like there's so much we don't know.",
+      "Meg": "I know, right? It's crazy how much we don't learn about this stuff in school. I mean, I loved 'The Diary of Anne Frank', but this was on a whole different level."
     },
     {
-      "Kerry":
-        "Yeah, it's crazy how something like a misunderstanding can escalate into international tensions! It's a reminder that we should never assume anything without checking the facts first.",
+      "Kerry": "Yeah, and it's not just the trials themselves, but what they reveal about human nature. Like, who knew that some people were so willing to turn a blind eye to atrocities?"
     },
     {
-      "Billy":
-        "I've been reading about the LZ-70 and R36/45. Did you know that the R36/45 was actually Britain's attempt to surpass Germany's airship technology?",
+      "Lui": "Exactly, Kerry. It's a reminder that we can't just focus on individual actions or intentions; we need to look at the broader context and societal pressures that shape our decisions."
     },
     {
-      "Meg":
-        "Wow, I had no idea! It makes sense that there would be tensions between the two countries with such a big difference in their technological advancements.",
+      "Billy": "That makes sense. And it was interesting to see how the novel tied everything together - like, how the survivors' experiences influenced their actions in the present."
     },
     {
-      "Kerry":
-        "Yeah, it's like when you're playing a game and someone cheats. You want to prove that you can do better, so they try to one-up each other.",
+      "Meg": "Yeah, I loved seeing how they all came together to support each other and fight for justice. It's so inspiring!"
     },
     {
-      "Lui":
-        "That's a great point, Kerry. This incident serves as a reminder of the importance of diplomacy and communication in international relations.",
+      "Kerry": "Totally agree! And I have to say, it was pretty cool learning about the IMT and its role in the Nuremberg Trials."
     },
     {
-      "Billy":
-        "I wonder what would have happened if the gunner on the LZ-70 had taken a moment to identify the R36/45 before opening fire.",
+      "Lui": "Well, as a history teacher, I'm glad we got to learn more about this period. It's an important reminder of why we need to keep studying and remembering our past."
     },
     {
-      "Meg":
-        "Maybe there wouldn't have been any casualties. It's easy to imagine how things could have gone differently if they had just stopped for a second and looked.",
+      "Billy": "Definitely. And now that we know what really went down, we can't just forget it or sugarcoat the truth. We have to keep telling these stories."
     },
     {
-      "Kerry":
-        "Definitely. And it makes you think about all the times we assume something is true without verifying the facts first. We should always be careful and not jump to conclusions.",
+      "Meg": "Absolutely! I'm so glad we got to read this novel together - it's sparked some amazing conversations and reflections for me."
     },
+    {
+      "Kerry": "Same here! Thanks for letting us discuss it, Lui."
+    },
+    {
+      "Lui": "No problem at all. It's always great to see students engaged and passionate about learning."
+    }
   ],
   "quiz": [
     {
-      "question": "What happened when the LZ-70 spotted the R36/45?",
+      "question": "What was the main theme of the Nuremberg Trial: A Crime Novel?",
       "options": [
-        "It flew away",
-        "The gunner opened fire without hesitation",
-        "The two airships collided",
-        "The pilot of the R36/45 gave up",
-        "None of the above",
+        "The power of human nature",
+        "The importance of justice",
+        "The impact of war on survivors",
+        "The struggle for truth and accountability",
+        "The role of history in shaping our decisions"
       ],
-      "answer": 1,
+      "answer": 4
     },
     {
-      "question": "Who was the pilot of the R36/45?",
+      "question": "What did the survivors discover about the Nazi regime's crimes against humanity?",
       "options": [
-        "Flight Lieutenant Frederick Herman Parker",
-        "Captain James Smith",
-        "Lieutenant Colonel John Doe",
-        "Air Marshal Michael Brown",
-        "Unknown",
+        "That they were minimal",
+        "That they were mostly targeted at Jews",
+        "That they were widespread and brutal",
+        "That they were limited to a few high-ranking officials",
+        "That they didn't exist"
       ],
-      "answer": 0,
+      "answer": 2
     },
     {
-      "question": "What was Britain's attempt to do with the R36/45?",
+      "question": "What did the novel reveal about human nature?",
       "options": [
-        "To surpass Germany's airship technology",
-        "To make a new record in flying distance",
-        "To carry out military operations",
-        "To take tourists on a tour",
-        "None of the above",
+        "That people are inherently good",
+        "That people are capable of great evil",
+        "That people can change their attitudes over time",
+        "That people are generally apathetic",
+        "That people are always selfish"
       ],
-      "answer": 0,
+      "answer": 1
     },
     {
-      "question":
-        "What was the result of the misunderstanding between the two nations?",
+      "question": "What was the role of the International Military Tribunal (IMT) in the novel?",
       "options": [
-        "A peaceful resolution",
-        "Increased international tensions",
-        "The cancellation of airship flights",
-        "No impact at all",
-        "None of the above",
+        "It was a group of survivors who sought justice",
+        "It was a fictional court that tried to bring Nazis to justice",
+        "It was a real court that held trials for high-ranking Nazi officials",
+        "It was a council that advised on war crimes",
+        "It didn't exist"
       ],
-      "answer": 1,
+      "answer": 2
     },
     {
-      "question":
-        "What is one lesson that can be learned from this incident, according to Kerry?",
+      "question": "What did the novel suggest about the importance of learning from history?",
       "options": [
-        "To always assume things are true without verifying facts",
-        "To never open fire without hesitation",
-        "To always communicate with other nations before taking action",
-        "To be careless when flying airships",
-        "None of the above",
+        "That it's not important to learn from history",
+        "That we can't learn from history",
+        "That we should focus on individual actions, not broader societal pressures",
+        "That we need to keep studying and remembering our past",
+        "That history is irrelevant"
       ],
-      "answer": 2,
-    },
-  ],
-  "descriptions": {
-    "grammar": {
-      "patterns": [
-        {
-          "pattern": "S + V",
-          "explanation":
-            "The subject performs the verb, without a complement or object.",
-          "usage": [
-            "In a world where airships were the cutting edge of technology,",
-          ],
-          "words": [
-            {
-              "S": [
-                "In a",
-                "a",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + C",
-          "explanation":
-            "The subject performs the verb, with a complement (e.g. 'the most advanced aircraft')",
-          "usage": [
-            "One day, as they were on their respective missions,",
-          ],
-          "words": [
-            {
-              "C": [
-                "the cutting edge of technology",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O",
-          "explanation":
-            "The subject performs the verb, with an object (e.g. 'the German LZ-70')",
-          "usage": [
-            "Without hesitation, the zeppelin's gunner opened fire,",
-          ],
-          "words": [
-            {
-              "O": [
-                "the R36/45",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O + O",
-          "explanation":
-            "The subject performs the verb, with two objects (e.g. 'the pilot dead and tensions between the two nations')",
-          "usage": [
-            "The unfortunate event left the pilot dead and tensions between the two nations escalated,",
-          ],
-          "words": [
-            {
-              "O": [
-                "the pilot",
-                "tensions between the two nations",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O + C",
-          "explanation":
-            "The subject performs the verb, with an object and complement (e.g. 'the R36/45 in its flight path')",
-          "usage": [
-            "One day, as they were on their respective missions, the LZ-70 spotted the R36/45 in its flight path,",
-          ],
-          "words": [
-            {
-              "O": [
-                "the R36/45",
-              ],
-              "C": [
-                "its flight path",
-              ],
-            },
-          ],
-        },
-      ],
-      "vocabularies": [
-        {
-          "class": "Noun",
-          "word": "airships",
-          "meaning": "large, powered flying machines that are lighter than air",
-          "usage": [
-            "In a world where airships were the cutting edge of technology...",
-            "The German LZ-70 and British R36/45 were two of the most advanced aircraft.",
-          ],
-        },
-        {
-          "class": "Noun",
-          "word": "LZ-70",
-          "meaning": "a type of German airship",
-          "usage": [
-            "In a world where airships were the cutting edge of technology...",
-            "The German LZ-70 and British R36/45 were two of the most advanced aircraft.",
-          ],
-        },
-        {
-          "class": "Noun",
-          "word": "R36/45",
-          "meaning": "a type of British airship",
-          "usage": [
-            "In a world where airships were the cutting edge of technology...",
-            "The German LZ-70 and British R36/45 were two of the most advanced aircraft.",
-          ],
-        },
-        {
-          "class": "Noun",
-          "word": "zeppelin",
-          "meaning": "a type of airship",
-          "usage": [
-            "In a world where airships were the cutting edge of technology...",
-            "The zeppelin's gunner opened fire...",
-          ],
-        },
-        {
-          "class": "Proper Noun",
-          "word": "German",
-          "meaning": "relating to Germany or its people",
-          "usage": [
-            "The German LZ-70 and British R36/45 were two of the most advanced aircraft.",
-          ],
-        },
-        {
-          "class": "Proper Noun",
-          "word": "British",
-          "meaning": "relating to Britain or its people",
-          "usage": [
-            "The German LZ-70 and British R36/45 were two of the most advanced aircraft.",
-          ],
-        },
-        {
-          "class": "Verb",
-          "word": "spotted",
-          "meaning": "to see or notice something",
-          "usage": [
-            "One day, as they were on their respective missions, the LZ-70 spotted...",
-          ],
-        },
-        {
-          "class": "Adjective",
-          "word": "advanced",
-          "meaning": "more developed or sophisticated than others",
-          "usage": [
-            "The German LZ-70 and British R36/45 were two of the most advanced aircraft.",
-          ],
-        },
-      ],
-    },
-    "keywords": [
-      "airship",
-      "technology",
-      "advanced",
-      "aircraft",
-      "gunfire",
-      "misidentification",
-      "tragedy",
-      "loss",
-      "mourned",
-      "tension",
-      "nations",
-      "escalate",
-      "avoidable",
-    ],
-  },
-};
+      "answer": 3
+    }
+  ]
+}
 export default data;
