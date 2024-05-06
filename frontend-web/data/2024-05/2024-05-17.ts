@@ -101,5 +101,246 @@ const data: QuizData = {
       "answer": 3,
     },
   ],
+  "descriptions": {
+    "grammar": {
+      "patterns": [
+        {
+          "pattern": "S + V",
+          "explanation": "Simple statement with a subject and verb.",
+          "usage": [
+            "In the midst of a brutal war that had been raging for decades, a group of powerful rulers gathered in the small town of Munster to negotiate a peace treaty.",
+          ],
+          "words": [
+            {
+              "S": [
+                "a group of powerful rulers",
+              ],
+            },
+            {
+              "V": [
+                "gathered",
+                "negotiate",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation": "Statement with a subject, verb, and complement.",
+          "usage": [
+            "The Treaty of Westphalia marks a significant turning point in European history.",
+          ],
+          "words": [
+            {
+              "S": [
+                "The Treaty of Westphalia",
+              ],
+            },
+            {
+              "V": [
+                "marks",
+                "turning",
+              ],
+            },
+            {
+              "C": [
+                "a significant turning point in European history",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation": "Statement with a subject, verb, and object.",
+          "usage": [
+            "The Thirty Years' War had left countless lives and cities in ruins.",
+          ],
+          "words": [
+            {
+              "S": [
+                "The Thirty Years' War",
+              ],
+            },
+            {
+              "V": [
+                "had left",
+              ],
+            },
+            {
+              "O": [
+                "countless lives",
+                "cities in ruins",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + O",
+          "explanation": "Statement with a subject, verb, and two objects.",
+          "usage": [
+            "It was signed on May 17, 1648, and it marked the end of the Thirty Years' War.",
+          ],
+          "words": [
+            {
+              "S": [
+                "It",
+              ],
+            },
+            {
+              "V": [
+                "was",
+                "marked",
+              ],
+            },
+            {
+              "O": [
+                "signed",
+                "end of the Thirty Years' War",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + C",
+          "explanation":
+            "Statement with a subject, verb, object, and complement.",
+          "usage": [
+            "The Treaty of Westphalia did little to quell the simmering tensions between the various parties.",
+          ],
+          "words": [
+            {
+              "S": [
+                "The Treaty of Westphalia",
+              ],
+            },
+            {
+              "V": [
+                "did",
+                "quell",
+              ],
+            },
+            {
+              "O": [
+                "the simmering tensions between the various parties",
+              ],
+            },
+            {
+              "C": [
+                "little",
+              ],
+            },
+          ],
+        },
+      ],
+      "vocabularies": [
+        {
+          "class": "Noun",
+          "word": "war",
+          "meaning":
+            "a state of armed conflict between different countries, groups, or individuals",
+          "usage": [
+            "In the midst of a brutal war that had been raging for decades...",
+            "The Thirty Years' War had left countless lives and cities in ruins...",
+          ],
+          "pronounce": "/wɔr/",
+          "example":
+            "The devastating effects of the war were felt across the country.",
+        },
+        {
+          "class": "Pronoun",
+          "word": "they",
+          "meaning":
+            "used to refer to people or animals previously mentioned or easily identified",
+          "usage": [
+            "As they returned to their respective lands...",
+            "They couldn't shake the feeling that the peace was only temporary...",
+          ],
+          "pronounce": "/ðeɪ/",
+          "example": "They went to the store and bought some milk.",
+        },
+        {
+          "class": "Noun",
+          "word": "rulers",
+          "meaning": "people who have a high position of authority or power",
+          "usage": [
+            "A group of powerful rulers gathered in the small town of Munster...",
+            "The rulers returned to their respective lands...",
+          ],
+          "pronounce": "/ˈruːlərz/",
+          "example": "The rulers of the country met to discuss the new laws.",
+        },
+        {
+          "class": "Adjective",
+          "word": "powerful",
+          "meaning": "having a lot of strength or influence",
+          "usage": [
+            "A group of powerful rulers gathered in the small town of Munster...",
+          ],
+          "pronounce": "/ˈpɔːfəl/",
+          "example": "The powerful storm caused widespread damage.",
+        },
+        {
+          "class": "Adverb",
+          "word": "temporarily",
+          "meaning": "for a short time, but not permanently",
+          "usage": [
+            "They couldn't shake the feeling that the peace was only temporarily...",
+          ],
+          "pronounce": "/ˌtɛmˈpɔrəri/",
+          "example":
+            "The company will be closed temporarily due to renovations.",
+        },
+        {
+          "class": "Noun",
+          "word": "territories",
+          "meaning":
+            "an area of land that is controlled or owned by a country, organization, etc.",
+          "usage": [
+            "It was a complex set of agreements that recognized the sovereignty of each party and established the boundaries of their territories...",
+          ],
+          "pronounce": "/tərˈɪtɔri/zi/",
+          "example":
+            "The country has several territories in the Pacific Ocean.",
+        },
+        {
+          "class": "Verb",
+          "word": "negotiate",
+          "meaning":
+            "to talk and discuss with someone to reach an agreement or compromise",
+          "usage": [
+            "A group of powerful rulers gathered in the small town of Munster to negotiate a peace treaty...",
+          ],
+          "pronounce": "/ˌnɛgəˈteɪt/",
+          "example": "The two sides will negotiate to find a solution.",
+        },
+        {
+          "class": "Noun",
+          "word": "Europe",
+          "meaning":
+            "a continent that includes many countries in the northern hemisphere",
+          "usage": [
+            "But for now, at least, there was peace in Europe.",
+          ],
+          "pronounce": "/ˈjʊərəp/",
+          "example": "Many tourists visit Europe every year.",
+        },
+      ],
+    },
+    "keywords": [
+      "negotiation",
+      "war",
+      "peace",
+      "treaty",
+      "compromise",
+      "sovereignty",
+      "boundaries",
+      "territory",
+      "agreement",
+      "bloodshed",
+      "ruin",
+      "complexity",
+      "instability",
+    ],
+  },
 };
 export default data;

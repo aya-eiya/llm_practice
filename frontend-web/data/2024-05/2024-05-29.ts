@@ -113,5 +113,245 @@ const data: QuizData = {
       "answer": 2,
     },
   ],
+  "descriptions": {
+    "grammar": {
+      "patterns": [
+        {
+          "pattern": "S + V",
+          "explanation":
+            "Subject-Verb sentence structure, where the subject performs the verb.",
+          "usage": [
+            "After years of tireless work and experimentation, he had invented a process that could capture images on silver plates with stunning clarity.",
+          ],
+          "words": [
+            {
+              "S": [
+                "he",
+              ],
+            },
+            {
+              "V": [
+                "invented",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation":
+            "Subject-Verb-Object sentence structure, where the subject performs an action on the object.",
+          "usage": [
+            "This was no ordinary invention; it was a revolution in the way people saw the world around them.",
+          ],
+          "words": [
+            {
+              "S": [
+                "it",
+              ],
+            },
+            {
+              "V": [
+                "was",
+              ],
+            },
+            {
+              "O": [
+                "a revolution",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + C",
+          "explanation":
+            "Subject-Verb-Object-Complement sentence structure, where the subject performs an action on the object and the complement provides additional information.",
+          "usage": [
+            "As Daguerre unveiled his latest creation, a portrait of his dear friend, the acclaimed painter, Paul Delaroche, the room fell silent.",
+          ],
+          "words": [
+            {
+              "S": [
+                "Daguerre",
+              ],
+            },
+            {
+              "V": [
+                "unveiled",
+              ],
+            },
+            {
+              "O": [
+                "a portrait",
+              ],
+            },
+            {
+              "C": [
+                "Paul Delaroche",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V",
+          "explanation":
+            "Subject-Verb sentence structure, where the subject performs an action.",
+          "usage": [
+            "The image was so lifelike that it took their breath away.",
+          ],
+          "words": [
+            {
+              "S": [
+                "the image",
+              ],
+            },
+            {
+              "V": [
+                "was",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation":
+            "Subject-Verb-Object sentence structure, where the subject performs an action on the object.",
+          "usage": [
+            "They could see every detail - from the intricate patterns on Delaroche's coat to the subtle expression on his face.",
+          ],
+          "words": [
+            {
+              "S": [
+                "they",
+              ],
+            },
+            {
+              "V": [
+                "could see",
+              ],
+            },
+            {
+              "O": [
+                "every detail",
+              ],
+            },
+          ],
+        },
+      ],
+      "vocabularies": [
+        {
+          "class": "Noun",
+          "word": "Paris",
+          "meaning": "The capital city of France.",
+          "usage": [
+            "The Eiffel Tower is located in Paris.",
+            "I visited Paris last year.",
+          ],
+          "pronounce": "/ˈpærɪs/",
+          "example": "I'm planning a trip to Paris for the summer.",
+        },
+        {
+          "class": "Noun",
+          "word": "May",
+          "meaning": "The fifth month of the year.",
+          "usage": [
+            "The best time to visit Tokyo is in May.",
+            "My birthday is in May.",
+          ],
+          "pronounce": "/meɪ/",
+          "example": "I'm looking forward to my vacation in May.",
+        },
+        {
+          "class": "Noun",
+          "word": "Louis-Jacques-Mandé Daguerre",
+          "meaning": "A French inventor and artist.",
+          "usage": [
+            "Daguerre is credited with inventing the daguerreotype.",
+            "He was a pioneer in photography.",
+          ],
+          "pronounce": "/luːiˈdʒɑːk ˈmændi dəˈɡuːr/ or /duːˈeɪr/",
+          "example":
+            "Daguerre's invention of the daguerreotype revolutionized photography.",
+        },
+        {
+          "class": "Verb",
+          "word": "invented",
+          "meaning": "To create something new.",
+          "usage": [
+            "She invented a new way to cook rice.",
+            "He invented a machine that can translate languages.",
+          ],
+          "pronounce": "/ɪnˈvɛntɪd/",
+          "example":
+            "Daguerre invented the daguerreotype, a process for capturing images.",
+        },
+        {
+          "class": "Noun",
+          "word": "process",
+          "meaning": "A series of actions to achieve something.",
+          "usage": [
+            "The process of making cheese is complex.",
+            "I'm going through a process of self-discovery.",
+          ],
+          "pronounce": "/ˈprɒsɛs/",
+          "example":
+            "Daguerre's new process captured images with stunning clarity.",
+        },
+        {
+          "class": "Adjective",
+          "word": "stunning",
+          "meaning": "Extremely impressive or attractive.",
+          "usage": [
+            "The stunning view from the top of the mountain was breathtaking.",
+            "She had a stunning performance at the concert.",
+          ],
+          "pronounce": "/ˈstʌnɪŋ/",
+          "example":
+            "Daguerre's invention captured images with stunning clarity.",
+        },
+        {
+          "class": "Adverb",
+          "word": "tirelessly",
+          "meaning": "Without showing any signs of fatigue.",
+          "usage": [
+            "She worked tirelessly to finish the project.",
+            "He was working tirelessly to meet the deadline.",
+          ],
+          "pronounce": "/ˈtaɪərli/ or /ˈtɛrɪlɪs/",
+          "example":
+            "Daguerre had been working tirelessly for years on his invention.",
+        },
+        {
+          "class": "Adverb",
+          "word": "silently",
+          "meaning": "Without making any noise.",
+          "usage": [
+            "The crowd silently watched the performance.",
+            "She silently cried in her room.",
+          ],
+          "pronounce": "/ˈsɪləntli/",
+          "example":
+            "As Daguerre unveiled his latest creation, the room fell silently.",
+        },
+      ],
+    },
+    "keywords": [
+      "Revolutionary",
+      "Innovation",
+      "Perception",
+      "Documentation",
+      "HumanIngenuity",
+      "Lifelike",
+      "WindowIntoAnotherWorld",
+      "Portraits",
+      "Unveiling",
+      "Silence",
+      "BreathAway",
+      "Patterns",
+      "Expression",
+      "Subtlety",
+      "Celebration",
+      "Discovery",
+    ],
+  },
 };
 export default data;

@@ -111,5 +111,300 @@ const data: QuizData = {
       "answer": 2,
     },
   ],
+  "descriptions": {
+    "grammar": {
+      "patterns": [
+        {
+          "pattern": "S + V",
+          "explanation":
+            "The subject (S) performs the action described by the verb (V).",
+          "usage": [
+            "In a world where art and science were one and the same,",
+          ],
+          "words": [
+            {
+              "S": [
+                "In",
+                "a",
+                "world",
+                "where",
+                "art",
+                "and",
+                "science",
+                "were",
+                "one",
+                "and",
+                "the",
+                "same",
+              ],
+            },
+            {
+              "V": [
+                "was",
+                "not",
+                "just",
+                "an",
+                "event",
+                "but",
+                "a",
+                "revelation",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation":
+            "The subject (S) performs the action described by the verb (V), and there is a complement (C).",
+          "usage": [
+            "The museum, designed by Frank Lloyd Wright in the late 1950s,",
+          ],
+          "words": [
+            {
+              "S": [
+                "The",
+                "museum",
+              ],
+            },
+            {
+              "V": [
+                "was",
+                "designed",
+              ],
+            },
+            {
+              "C": [
+                "by",
+                "Frank",
+                "Lloyd",
+                "Wright",
+                "in",
+                "the",
+                "late",
+                "1950s",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation":
+            "The subject (S) performs the action described by the verb (V), and there is an object (O).",
+          "usage": [
+            "As the curtain fell on the grand opening ceremony,",
+          ],
+          "words": [
+            {
+              "S": [
+                "As",
+                "the",
+                "curtain",
+              ],
+            },
+            {
+              "V": [
+                "fell",
+              ],
+            },
+            {
+              "O": [
+                "on",
+                "the",
+                "grand",
+                "opening",
+                "ceremony",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + O",
+          "explanation":
+            "The subject (S) performs the action described by the verb (V), and there are two objects (O1 and O2).",
+          "usage": [
+            "With each new discovery, the team faced new challenges and dangers,",
+          ],
+          "words": [
+            {
+              "S": [
+                "With",
+                "each",
+                "new",
+              ],
+            },
+            {
+              "V": [
+                "faced",
+              ],
+            },
+            {
+              "O": [
+                "new",
+                "challenges",
+                "and",
+                "dangers",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + C",
+          "explanation":
+            "The subject (S) performs the action described by the verb (V), and there is an object (O) and a complement (C).",
+          "usage": [
+            "As they delved deeper into the museum, they realized that they had stumbled upon a hidden laboratory,",
+          ],
+          "words": [
+            {
+              "S": [
+                "As",
+                "they",
+              ],
+            },
+            {
+              "V": [
+                "delved",
+              ],
+            },
+            {
+              "O": [
+                "deeper",
+                "into",
+                "the",
+                "museum",
+              ],
+            },
+            {
+              "C": [
+                "that",
+                "they",
+                "had",
+                "stumbled",
+                "upon",
+                "a",
+                "hidden",
+                "laboratory",
+              ],
+            },
+          ],
+        },
+      ],
+      "vocabularies": [
+        {
+          "class": "Noun",
+          "word": "art",
+          "meaning":
+            "the expression or application of human creative skill and imagination, typically in a visual form such as painting or sculpture.",
+          "usage": [
+            "The artist's use of color was an art form.",
+            "She is a patron of the arts.",
+          ],
+          "pronounce": "/ɑrt/",
+          "example":
+            "The museum showcased the latest art from around the world.",
+        },
+        {
+          "class": "Noun",
+          "word": "science",
+          "meaning":
+            "the intellectual and practical activity encompassing the systematic study of the structure and behavior of the physical and natural world through observation, experimentation, and evidence-based reasoning.",
+          "usage": [
+            "He is a scientist in the field of medicine.",
+            "The discovery was a major breakthrough in science.",
+          ],
+          "pronounce": "/ˈsaɪəns/",
+          "example":
+            "The scientist's experiment confirmed the theory in science.",
+        },
+        {
+          "class": "Noun",
+          "word": "museum",
+          "meaning":
+            "a building or institution dedicated to the acquisition, conservation, study, exhibition, and educational interpretation of tangible evidence of human culture, history, or natural phenomena.",
+          "usage": [
+            "The museum was a popular tourist destination.",
+            "He worked at a natural history museum.",
+          ],
+          "pronounce": "/ˈmjuːziəm/",
+          "example": "The museum displayed ancient artifacts from Egypt.",
+        },
+        {
+          "class": "Noun",
+          "word": "dimension",
+          "meaning":
+            "a measure of size or distance; the extent to which something extends in a particular direction.",
+          "usage": [
+            "The spacecraft entered a new dimension.",
+            "The company operates on multiple dimensions.",
+          ],
+          "pronounce": "/dɪˈmɛnʃən/",
+          "example":
+            "The mathematician explored the concept of higher dimensions.",
+        },
+        {
+          "class": "Verb",
+          "word": "open",
+          "meaning":
+            "to cause to open; to make (something) available for use or inspection.",
+          "usage": [
+            "She opened the door.",
+            "The company will open a new office.",
+          ],
+          "pronounce": "/ˈoʊpən/",
+          "example": "The museum was set to open its new exhibit next week.",
+        },
+        {
+          "class": "Verb",
+          "word": "discover",
+          "meaning":
+            "to find or learn about something for the first time; to come across (something) unexpectedly.",
+          "usage": [
+            "He discovered a hidden talent.",
+            "The team discovered a new species.",
+          ],
+          "pronounce": "/dɪsəvˈɛr/",
+          "example":
+            "The archaeologists were eager to discover more about the ancient civilization.",
+        },
+        {
+          "class": "Verb",
+          "word": "perceive",
+          "meaning":
+            "to become aware of (something) through one's senses; to understand or comprehend something.",
+          "usage": [
+            "She perceived a threat.",
+            "He perceived the joke was not funny.",
+          ],
+          "pronounce": "/pərˈsɛp/",
+          "example": "The audience perceived the performance as outstanding.",
+        },
+        {
+          "class": "Verb",
+          "word": "unlock",
+          "meaning": "to find or discover a hidden meaning, secret, or truth.",
+          "usage": [
+            "She unlocked the door.",
+            "He unlocked the mystery.",
+          ],
+          "pronounce": "/ʌnˈlɒk/",
+          "example": "The detective worked to unlock the case.",
+        },
+      ],
+    },
+    "keywords": [
+      "ArtScience",
+      "Museum",
+      "Portals",
+      "Dimensions",
+      "Laboratory",
+      "Discovery",
+      "Humanity",
+      "Potential",
+      "Revelation",
+      "Secrets",
+      "Challenges",
+      "Dangers",
+    ],
+  },
 };
 export default data;

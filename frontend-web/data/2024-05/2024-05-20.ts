@@ -105,5 +105,279 @@ const data: QuizData = {
       "answer": 1,
     },
   ],
+  "descriptions": {
+    "grammar": {
+      "patterns": [
+        {
+          "pattern": "S + V",
+          "explanation": "Introduces a new sentence with a subject and a verb.",
+          "usage": [
+            "In a world where architecture and design hold magical properties, three legendary architects - Le Corbusier, Walter Gropius, and Ludwig Mies van der Rohe - were brought together by a mysterious force to create a new style.",
+          ],
+          "words": [
+            {
+              "S": [
+                "In",
+                "a",
+                "world",
+                "where",
+                "architecture",
+                "and",
+                "design",
+                "hold",
+                "magical",
+                "properties",
+                "three",
+                "legendary",
+                "architects",
+              ],
+            },
+            {
+              "V": [
+                "were",
+                "brought",
+                "together",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation": "Adds a complement to the sentence.",
+          "usage": [
+            "On May 20th, 1925, MoMA hosted an exhibition celebrating the birth of the International Style.",
+          ],
+          "words": [
+            {
+              "S": [
+                "On",
+                "May",
+                "20th",
+                "1925",
+                "MoMA",
+              ],
+            },
+            {
+              "V": [
+                "hosted",
+                "an",
+                "exhibition",
+                "celebrating",
+                "the",
+                "birth",
+                "of",
+                "the",
+              ],
+            },
+            {
+              "C": [
+                "International Style",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation": "Introduces an object in the sentence.",
+          "usage": [
+            "Their works, once displayed in the grand halls of the Museum of Modern Art (MoMA), began to weave a tapestry of modernity that would change the course of history.",
+          ],
+          "words": [
+            {
+              "S": [
+                "Their",
+                "works",
+              ],
+            },
+            {
+              "V": [
+                "began",
+                "to",
+                "weave",
+                "a",
+                "tapestry",
+                "of",
+                "modernity",
+                "that",
+                "would",
+                "change",
+                "the",
+                "course",
+                "of",
+                "history",
+              ],
+            },
+            {
+              "O": [
+                "in the grand halls of the Museum of Modern Art (MoMA)",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + O",
+          "explanation": "Adds a second object to the sentence.",
+          "usage": [
+            "The attendees were transported into a world where buildings danced with the wind and walls whispered secrets to those who passed by.",
+          ],
+          "words": [
+            {
+              "S": [
+                "The",
+                "attendees",
+              ],
+            },
+            {
+              "V": [
+                "were",
+                "transported",
+                "into",
+                "a",
+                "world",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + C",
+          "explanation": "Adds a complement to the sentence.",
+          "usage": [
+            "As they stood before their masterpieces, Le Corbusier, Walter Gropius, and Ludwig Mies van der Rohe knew that their collaboration had set a new standard for architecture.",
+          ],
+          "words": [
+            {
+              "S": [
+                "As",
+                "they",
+                "stood",
+                "before",
+                "their",
+                "masterpieces",
+              ],
+            },
+          ],
+        },
+      ],
+      "vocabularies": [
+        {
+          "class": "Noun",
+          "word": "architecture",
+          "meaning":
+            "the art of designing and building structures, such as buildings or bridges.",
+          "usage": [
+            "The museum's new architecture is a marvel.",
+            "The city's skyline is dominated by its iconic architecture.",
+          ],
+          "pronounce": "/ɑːrˈkiːtɛktʃər/",
+          "example":
+            "The city's new architecture is inspired by ancient Greek designs.",
+        },
+        {
+          "class": "Adjective",
+          "word": "magical",
+          "meaning":
+            "having or characterized by a mysterious or supernatural power.",
+          "usage": [
+            "The magician waved his wand with magical gestures.",
+            "The movie had a magical quality that captivated audiences.",
+          ],
+          "pronounce": "/ˈmædʒɪkəl/",
+          "example":
+            "The game has a magical way of making you feel like you're in another world.",
+        },
+        {
+          "class": "Noun",
+          "word": "style",
+          "meaning":
+            "a manner or approach to doing something, such as a particular type of clothing or architecture.",
+          "usage": [
+            "The fashion designer's new style is all the rage.",
+            "The museum's latest exhibit showcases modern art in a unique style.",
+          ],
+          "pronounce": "/staɪl/",
+          "example":
+            "The company's new marketing strategy has a fresh and trendy style.",
+        },
+        {
+          "class": "Verb",
+          "word": "celebrate",
+          "meaning":
+            "to mark or honor the anniversary of an event, person, or thing.",
+          "usage": [
+            "We're celebrating my birthday with dinner tonight.",
+            "The city will celebrate its 100th anniversary with a parade.",
+          ],
+          "pronounce": "/sɛlɪˈbreɪt/",
+          "example":
+            "The community is going to celebrate the new park's opening with a big festival.",
+        },
+        {
+          "class": "Adverb",
+          "word": "better",
+          "meaning": "to an improved or enhanced state.",
+          "usage": [
+            "I'm feeling better after taking some medicine.",
+            "The new policy will make things better for employees.",
+          ],
+          "pronounce": "/ˈbɛtər/",
+          "example":
+            "If we work harder, I think our team can do better in the next game.",
+        },
+        {
+          "class": "Noun",
+          "word": "Museum",
+          "meaning":
+            "a building or institution where works of art, scientific specimens, or other items are exhibited.",
+          "usage": [
+            "The museum is one of the city's most popular tourist attractions.",
+            "The museum has an extensive collection of ancient artifacts.",
+          ],
+          "pronounce": "/ˈmjuːzɪəm/",
+          "example":
+            "The art museum features a rotating exhibit of contemporary pieces.",
+        },
+        {
+          "class": "Proper Noun",
+          "word": "MoMA",
+          "meaning":
+            "short for Museum of Modern Art, an American modern art museum.",
+          "usage": [
+            "I'm going to visit MoMA this weekend.",
+            "The exhibit at MoMA is a must-see.",
+          ],
+          "pronounce": "/ˈmoʊmɑː/",
+          "example":
+            "MoMA's collection includes works by some of the most influential artists of the 20th century.",
+        },
+        {
+          "class": "Adverb",
+          "word": "harmoniously",
+          "meaning": "in a way that is smooth and pleasant.",
+          "usage": [
+            "The music played harmoniously with the gentle breeze.",
+            "The company's employees work harmoniously together.",
+          ],
+          "pronounce": "/ˌhɑrˈmənɪsli/",
+          "example":
+            "The new management team is working harmoniously to improve the company's performance.",
+        },
+      ],
+    },
+    "keywords": [
+      "magical",
+      "architecture",
+      "design",
+      "legendary",
+      "style",
+      "modernity",
+      "history",
+      "International",
+      "creativity",
+      "harmony",
+      "innovation",
+      "promise",
+      "future",
+    ],
+  },
 };
 export default data;
