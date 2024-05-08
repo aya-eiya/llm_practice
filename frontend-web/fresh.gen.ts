@@ -4,7 +4,6 @@
 
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
-import * as $api_dailyQuiz from "./routes/api/dailyQuiz.ts";
 import * as $index from "./routes/index.tsx";
 import * as $pages_date_ from "./routes/pages/[date].tsx";
 import * as $report from "./routes/report.tsx";
@@ -18,7 +17,6 @@ const manifest = {
   routes: {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
-    "./routes/api/dailyQuiz.ts": $api_dailyQuiz,
     "./routes/index.tsx": $index,
     "./routes/pages/[date].tsx": $pages_date_,
     "./routes/report.tsx": $report,
