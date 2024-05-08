@@ -15,7 +15,7 @@ function Grammar(
               <summary>
                 <h3 className={"notranslate mb-2 text-lg inline"}>[Grammar]</h3>
                 <div>
-                  Show grammar and vocabulary description for the text.
+                  [Beta:] Show grammar and vocabulary description for the text.
                 </div>
               </summary>
               {grammar.patterns && (
