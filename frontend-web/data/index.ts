@@ -6,12 +6,13 @@ const dailyData = {
   ...data202405,
 };
 
+const devDate = Deno.env.get("DEV_DATE");
+const now = devDate && Object.keys(dailyData).includes(devDate)
+  ? new Date(devDate)
+  : new Date();
+
 export default dailyData;
-const today = (() => {
-  const devDate = Deno.env.get("DEV_DATE");
-  const now = devDate && Object.keys(dailyData).includes(devDate)
-    ? new Date(devDate)
-    : new Date();
+export const today = (() => {
   return now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
 })();
 
@@ -24,4 +25,9 @@ export const dates = Object.keys(dailyData).filter((date) => {
 
 export function containsKey(key: string): key is keyof typeof dailyData {
   return (dates as string[]).includes(key);
+}
+
+export function isThisMonth(date: string): boolean {
+  return now.getFullYear() + "-" +
+      (now.getMonth() + 1).toString().padStart(2, "0") === date.slice(0, 7);
 }

@@ -1,12 +1,15 @@
 {
   "cSpell.words": [
+    "changefreq",
     "deno",
     "Gtag",
+    "lastmod",
     "llava",
     "notranslate",
     "ollama",
     "preact",
-    "tailwindcss"
+    "tailwindcss",
+    "urlset"
   ],
   "deno.enable": true,
   "deno.lint": true,

@@ -1,7 +1,7 @@
 import { Handlers } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
 import MainLayout from "../../components/MainLayout.tsx";
-import { QuizData } from "../../components/parts/Quiz.tsx";
+import { QuizData } from "../../domains/quiz.ts";
 import dailyData, { containsKey } from "../../data/index.ts";
 
 export const handler: Handlers = {
