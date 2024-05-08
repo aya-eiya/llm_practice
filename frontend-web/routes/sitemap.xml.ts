@@ -1,6 +1,5 @@
 import { Handlers } from "$fresh/server.ts";
 import { dates, isThisMonth } from "../data/index.ts";
-import * as xml from "https://deno.land/x/xml@4.0.0/mod.ts";
 
 export const handler: Handlers = {
   GET(_req, _ctx) {
