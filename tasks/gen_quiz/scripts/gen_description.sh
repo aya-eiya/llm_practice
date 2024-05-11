@@ -6,6 +6,8 @@ OUTPUTS_DIR="${CURRENT_DIR}/../outputs"
 
 fulldate=${1}
 
+clear=${2}
+
 ## TMP files
 init_tmp () {
   tmp_prompt_pattern=/tmp/.gen_pattern_${fulldate}.prompt
@@ -32,11 +34,19 @@ init_tmp () {
     ${tmp_json_keywords}
   )
 }
+
+
 ## models
 main_model="llama3"
 
 org_json="${OUTPUTS_DIR}/${fulldate}.json"
 out_json="${OUTPUTS_DIR}/${fulldate}.desc.json"
+
+if [ "${clear}" = "clear" ]; then
+  init_tmp
+  rm -f ${tmp_files[@]} ${out_json}
+  exit 0
+fi
 
 try_gen_pattern() {
   local lines="${1}"
