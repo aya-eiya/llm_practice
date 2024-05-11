@@ -1,117 +1,111 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "First Performance of Beethoven's Symphony No. 9",
+    "event": "The Great Fire of London",
     "details":
-      "On May 11th, 1824, Ludwig van Beethoven's Symphony No. 9 in D minor, Op. 125 was performed for the first time at Kärntnertortheater in Vienna, Austria.",
+      "On May 11th, 1666, a devastating fire broke out in a bakery on Pudding Lane, spreading rapidly through the largely wooden city and leaving thousands homeless.",
   },
   "date": "2024-05-11",
-  "title": "Beethoven's Symphony No. 9: A Historical Novel",
+  "title": "Escape from London",
   "body":
-    "In May of 1824, Vienna was abuzz with excitement as the Kärntnertortheater prepared for the first performance of Ludwig van Beethoven's Symphony No. 9 in D minor, Op. 125. The symphony, a grand and ambitious work, had been in progress for several years, and its completion was a cause for celebration.The composer himself was a shadowy figure, a recluse who rarely left his home or interacted with others. But he had a reputation as one of the greatest composers of his time, and his symphony was widely anticipated.As the day approached, the anticipation grew. The musicians rehearsed tirelessly, practicing every note and crescendo to perfection. The audience waited in eager anticipation, their tickets clutched tightly in their hands.When the doors of the Kärntnertortheater opened on May 11th, a throng of people rushed in, filling every seat with excitement and expectation. As the orchestra began to play, the audience was transported into another world, swept up in the grandeur and drama of Beethoven's symphony.The performance was a triumph, hailed as a masterpiece by all who attended. The symphony had been a labor of love for Beethoven, and his genius was on full display. It was a moment that would be remembered for generations to come.",
-  "word count": 204,
+    "Seventeen-year-old Katie had always been fascinated by the Great Fire of London, which she had learned about in school. When her parents announced that they were moving to London for a new job opportunity, Katie was thrilled at the chance to explore the city firsthand and even more so when she found out that their new home was located on Pudding Lane, the very street where the fire had started. However, as Katie explored the city with her best friend, Luke, she began to notice strange things happening around them - objects moving on their own, whispers in the wind, and a sense of unease settling over the city. It wasn't until a mysterious letter arrived at their door, warning them about an ancient curse that had been unleashed during the Great Fire, that Katie realized something was terribly wrong. With the help of Luke and a few new friends they meet along the way, Katie must navigate through the dangers of London in the midst of the fire, all while trying to break the curse before it's too late.",
+  "word count": 180,
   "dialog": [
     {
       "Billy":
-        "I loved how the novel highlighted Beethoven's struggles with hearing loss and his determination to complete the symphony.",
-    },
-    {
-      "Kerry":
-        "Yeah, that was really inspiring! I also liked how the novel showed how music can bring people together.",
+        "I loved how Katie's fascination with the Great Fire of London set the stage for the whole story! It was so cool to see her learn more about it as she explored the city.",
     },
     {
       "Meg":
-        "I completely agree. The way the novel wove together history, music, and human emotions was just incredible.",
+        "I totally agree, Billy! And I loved how the author wove in historical facts and legends to create this sense of mystery and wonder. It felt like we were right there with Katie, experiencing all the strange happenings and curiosities.",
+    },
+    {
+      "Kerry":
+        "Yeah, but what really got me was the way the curse affected the characters' lives. I mean, it was like they were trapped in this web of superstition and fear, and it was so hard to escape!",
     },
     {
       "Lui":
-        "As a historian, I appreciated the attention to detail in portraying Vienna's cultural scene during that time period.",
+        "That's a great point, Kerry. As an educator, I appreciated how the author used the story to teach about historical events and cultural contexts. It was a great way to make learning fun and relevant.",
     },
     {
       "Billy":
-        "And I loved learning more about Beethoven's creative process. It's amazing how he could produce such masterpieces despite his physical limitations.",
-    },
-    {
-      "Kerry":
-        "I know, right? And it's cool how the novel showed how music can transcend time and culture.",
+        "And I loved how Katie and her friends worked together to break the curse! It was like they were solving a puzzle, and it was so satisfying to see them succeed.",
     },
     {
       "Meg":
-        "Absolutely! The symphony itself was so powerful and evocative. I felt like I was transported to Vienna in 1824.",
+        "Absolutely! I loved how creative and resourceful they were. And the way the author used symbolism and foreshadowing added an extra layer of depth to the story.",
+    },
+    {
+      "Kerry":
+        "Yeah, and what about Luke? He was such a great friend to Katie throughout all this chaos!",
     },
     {
       "Lui":
-        "As someone who's studied music history, I have to say that the novel did a great job of capturing the essence of Beethoven's music.",
+        "Ah, yes, Luke was indeed a wonderful character. As a teacher, I appreciate how he modeled empathy and support for his friends in the face of adversity.",
     },
     {
       "Billy":
-        "I think what struck me most was how the symphony brought people together, despite their differences. It's a powerful reminder of music's ability to unite us.",
-    },
-    {
-      "Kerry":
-        "That's so true! And I loved how the novel showed how even in times of uncertainty and change, art can be a constant source of comfort and inspiration.",
+        "Anyway, has anyone else been thinking about what they would do if they stumbled upon a mysterious curse?",
     },
     {
       "Meg":
-        "I completely agree with both of you. The novel was just masterfully written, and it's left me thinking about the power of music and creativity long after finishing it.",
+        "Oh, totally! I think we'd all want to be heroes like Katie and her friends, trying to break the curse and save the day!",
     },
   ],
   "quiz": [
     {
-      "question":
-        "What was the significance of May 11th, according to the novel?",
+      "question": "What was Katie's fascination with in London?",
       "options": [
-        "The date when Beethoven finished writing his Symphony No. 9",
-        "The date when the symphony was first performed at the Kärntnertortheater",
-        "The date when Beethoven's hearing loss began to worsen",
-        "The date when Vienna was celebrating its cultural scene",
-        "None of the above",
+        "The Great Fire of London",
+        "The city's architecture",
+        "The people of London",
+        "The food",
+        "Katie's favorite restaurant",
       ],
-      "answer": 1,
+      "answer": 0,
     },
     {
-      "question": "What was one of the themes highlighted in the novel?",
+      "question": "Who helped Katie and her friends to break the curse?",
       "options": [
-        "The struggles of a composer with hearing loss",
-        "The importance of music in uniting people",
-        "The power of art to transcend time and culture",
-        "The impact of historical events on a city's cultural scene",
-        "None of the above",
+        "Luke",
+        "Billy",
+        "Meg",
+        "Kerry",
+        "A mysterious stranger",
       ],
-      "answer": 1,
+      "answer": 0,
     },
     {
-      "question":
-        "What was Beethoven's reputation like, according to the novel?",
+      "question": "What was the setting for the story?",
       "options": [
-        "He was a recluse who rarely interacted with others",
-        "He was one of the most famous composers in Vienna",
-        "He was a struggling artist trying to make ends meet",
-        "He was a musician who only composed for himself",
-        "None of the above",
+        "London during World War II",
+        "Ancient Egypt",
+        "Modern-day New York City",
+        "London in the 17th century",
+        "Paris during the French Revolution",
+      ],
+      "answer": 3,
+    },
+    {
+      "question": "Why did Katie's parents move to London?",
+      "options": [
+        "For a job opportunity",
+        "To visit friends and family",
+        "To explore the city",
+        "To study abroad",
+        "To escape the cold weather",
       ],
       "answer": 0,
     },
     {
       "question":
-        "What was the outcome of the first performance of Beethoven's Symphony No. 9?",
+        "What was the main challenge that Katie and her friends faced in the story?",
       "options": [
-        "It was met with criticism and negative reviews",
-        "It was a commercial failure",
-        "It was hailed as a masterpiece by all who attended",
-        "It was postponed due to technical issues",
-        "None of the above",
-      ],
-      "answer": 2,
-    },
-    {
-      "question": "What did the novel show about music's impact on people?",
-      "options": [
-        "It only brought people together if they shared the same musical taste",
-        "It had no effect on people at all",
-        "It could bring people together despite their differences",
-        "It only appealed to a select few",
-        "None of the above",
+        "Finding a new home",
+        "Making new friends",
+        "Breaking a curse",
+        "Learning about history",
+        "Solving puzzles",
       ],
       "answer": 2,
     },
@@ -121,116 +115,104 @@ const data: QuizData = {
       "patterns": [
         {
           "pattern": "S + V",
-          "explanation": "A simple sentence with a subject and verb.",
+          "explanation":
+            "Introduce the topic and state the main action or activity.",
           "usage": [
-            "In May of 1824, Vienna was abuzz with excitement",
+            "When her parents announced that they were moving to London for a new job opportunity, Katie was thrilled at the chance to explore the city firsthand.",
           ],
           "words": [
             {
               "S": [
-                "Vienna",
-                "May of 1824",
+                "Katie",
+                "her parents",
               ],
             },
             {
               "V": [
-                "was abuzz with excitement",
+                "were moving",
+                "was thrilled",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + C",
-          "explanation": "A sentence with a subject, verb, and complement.",
+          "explanation":
+            "Introduce the topic, state the main action or activity, and provide additional context.",
           "usage": [
-            "The symphony had been in progress for several years",
+            "When her parents announced that they were moving to London for a new job opportunity, Katie was thrilled at the chance to explore the city firsthand and even more so when she found out that their new home was located on Pudding Lane, the very street where the fire had started.",
           ],
           "words": [
             {
               "S": [
-                "The symphony",
+                "Katie",
+                "her parents",
               ],
             },
             {
               "V": [
-                "had been in progress for several years",
+                "were moving",
+                "was thrilled",
               ],
             },
             {
-              "C": [],
+              "C": [
+                "to explore the city",
+                "located on Pudding Lane",
+              ],
             },
           ],
         },
         {
           "pattern": "S + V + O",
-          "explanation": "A sentence with a subject, verb, and object.",
+          "explanation":
+            "Introduce the topic, state the main action or activity, and introduce an object.",
           "usage": [
-            "The musicians rehearsed tirelessly",
+            "However, as Katie explored the city with her best friend, Luke, she began to notice strange things happening around them - objects moving on their own, whispers in the wind, and a sense of unease settling over the city.",
           ],
           "words": [
             {
               "S": [
-                "The musicians",
+                "Katie",
               ],
             },
             {
               "V": [
-                "rehearsed tirelessly",
+                "explored",
+                "began to notice",
               ],
             },
             {
-              "O": [],
+              "O": [
+                "objects moving on their own",
+                "whispers in the wind",
+              ],
             },
           ],
         },
         {
           "pattern": "S + V + O + O",
-          "explanation": "A sentence with a subject, verb, and two objects.",
+          "explanation":
+            "Introduce the topic, state the main action or activity, and introduce two objects.",
           "usage": [
-            "When the doors of the Kärntnertortheater opened on May 11th",
+            "It wasn't until a mysterious letter arrived at their door, warning them about an ancient curse that had been unleashed during the Great Fire, that Katie realized something was terribly wrong.",
           ],
           "words": [
             {
               "S": [
-                "When the doors",
+                "Katie",
               ],
             },
             {
               "V": [
-                "opened on May 11th",
+                "realized",
               ],
             },
             {
               "O": [
-                "of the Kärntnertortheater",
-                "May 11th",
+                "mysterious letter",
+                "ancient curse",
               ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O + C",
-          "explanation":
-            "A sentence with a subject, verb, object, and complement.",
-          "usage": [
-            "As the orchestra began to play",
-          ],
-          "words": [
-            {
-              "S": [
-                "As the orchestra",
-              ],
-            },
-            {
-              "V": [
-                "began to play",
-              ],
-            },
-            {
-              "O": [],
-            },
-            {
-              "C": [],
             },
           ],
         },
@@ -238,105 +220,115 @@ const data: QuizData = {
       "vocabularies": [
         {
           "class": "Noun",
-          "word": "Vienna",
-          "meaning": "the capital city of Austria",
+          "word": "Katie",
+          "meaning": "the main character's name in the story",
           "usage": [
-            "In May of 1824, Vienna was abuzz with excitement",
+            "Seventeen-year-old Katie had always been fascinated by...",
+            "Katie was thrilled at the chance to explore...",
           ],
-          "pronounce": "/vɪˈniːə/",
-          "example":
-            "The tour guide took us to see the famous opera house in Vienna.",
-        },
-        {
-          "class": "Proper Noun",
-          "word": "Kärntnertortheater",
-          "meaning": "a theater in Vienna",
-          "usage": [
-            "As the day approached, the anticipation grew. The musicians rehearsed tirelessly at the Kärntnertortheater",
-          ],
-          "pronounce": "/kɑːrtnˈtɔːrtoʊˌteɪər/",
-          "example":
-            "The ballet performance took place at the grand Kärntnertortheater.",
-        },
-        {
-          "class": "Proper Noun",
-          "word": "Beethoven",
-          "meaning": "a famous German composer",
-          "usage": [
-            "In May of 1824, Vienna was abuzz with excitement as the Kärntnertortheater prepared for the first performance of Ludwig van Beethoven's Symphony No. 9",
-          ],
-          "pronounce": "/bɪˈhtoʊvən/",
-          "example":
-            "Ludwig van Beethoven is one of the most renowned composers in history.",
-        },
-        {
-          "class": "Noun",
-          "word": "Symphony",
-          "meaning": "a musical composition for orchestra",
-          "usage": [
-            "The symphony, a grand and ambitious work, had been in progress for several years",
-          ],
-          "pronounce": "/sɪmˈfəni/",
-          "example":
-            "The symphony orchestra performed beautifully at the concert.",
-        },
-        {
-          "class": "Noun",
-          "word": "Orchestra",
-          "meaning": "a group of musicians playing together",
-          "usage": [
-            "The musicians rehearsed tirelessly, practicing every note and crescendo to perfection",
-          ],
-          "pronounce": "/ɔrˈkɛstrə/",
-          "example":
-            "The orchestra played a lively rendition of the famous waltz.",
-        },
-        {
-          "class": "Noun",
-          "word": "Performance",
-          "meaning": "the act of performing or presenting something",
-          "usage": [
-            "When the doors of the Kärntnertortheater opened on May 11th, a throng of people rushed in, filling every seat with excitement and expectation",
-          ],
-          "pronounce": "/ˌpɜːrfərˈmeɪs/",
-          "example": "The performance was flawless, impressing the audience.",
+          "pronounce": "/ˈkeɪti/",
+          "example": "My sister is named Katie, and she loves reading books.",
         },
         {
           "class": "Adverb",
-          "word": "grandly",
-          "meaning": "in a grand or impressive manner",
+          "word": "thrilled",
+          "meaning": "very excited or delighted",
           "usage": [
-            "The symphony, a grand and ambitious work, had been in progress for several years",
+            "Katie was thrilled at the chance to explore...",
+            "I was thrilled when I won the prize.",
           ],
-          "pronounce": "/ˈɡrændli/",
-          "example": "The fireworks exploded grandly in the night sky.",
+          "pronounce": "/ˈθrɪld/",
+          "example": "I'm thrilled to be going on a vacation soon.",
         },
         {
-          "class": "Adverb",
-          "word": "ambitiously",
-          "meaning": "in a bold or adventurous manner",
+          "class": "Noun",
+          "word": "London",
+          "meaning": "a city in England where the story takes place",
           "usage": [
-            "The symphony, a grand and ambitious work, had been in progress for several years",
+            "When her parents announced that they were moving...",
+            "Their new home was located on Pudding Lane, the very street...",
           ],
-          "pronounce": "/æmˈbɪtɪəsli/",
+          "pronounce": "/ˈlʌndən/",
           "example":
-            "She took the job enthusiastically, aiming to achieve something big.",
+            "I love visiting London and seeing all the famous landmarks.",
+        },
+        {
+          "class": "Adjective",
+          "word": "mysterious",
+          "meaning": "difficult to understand or explain",
+          "usage": [
+            "a mysterious letter arrived at their door...",
+            "The mysterious disappearance of the treasure has puzzled...",
+          ],
+          "pronounce": "/ˌmɪsˈtɛriəs/",
+          "example":
+            "The movie had a very mysterious plot, and I couldn't figure it out.",
+        },
+        {
+          "class": "Verb",
+          "word": "realize",
+          "meaning": "to understand or become aware of something",
+          "usage": [
+            "It wasn' until a mysterious letter arrived...",
+            "I didn't realize the joke was on me until...",
+          ],
+          "pronounce": "/raɪˈaɪz/",
+          "example": "I finally realized that I had left my phone at home.",
+        },
+        {
+          "class": "Pronoun",
+          "word": "she",
+          "meaning":
+            "a female person or animal, used to refer to a specific individual",
+          "usage": [
+            "Her parents announced that they were moving...",
+            "She began to notice strange things happening...",
+          ],
+          "pronounce": "/ʃi/",
+          "example":
+            "My sister is the one who always helps me with my homework.",
+        },
+        {
+          "class": "Adjective",
+          "word": "ancient",
+          "meaning": "very old or from a long time ago",
+          "usage": [
+            "an ancient curse that had been unleashed...",
+            "The ancient city of Pompeii was buried under...",
+          ],
+          "pronounce": "/ˈænsɪnt/",
+          "example":
+            "The ancient Egyptian pyramids are still an amazing sight to see.",
+        },
+        {
+          "class": "Noun",
+          "word": "curse",
+          "meaning":
+            "a wish or saying that is meant to cause bad things to happen",
+          "usage": [
+            "an ancient curse that had been unleashed...",
+            "The curse was placed on the village by a wizard.",
+          ],
+          "pronounce": "/ˈkɝrz/",
+          "example":
+            "In some cultures, it's believed that breaking an object under a ladder can cause a curse.",
         },
       ],
     },
     "keywords": [
-      "Vienna",
-      "Beethoven",
-      "Symphony",
-      "Kärntnertortheater",
-      "Celebration",
-      "Recluse",
-      "Genius",
-      "Masterpiece",
-      "Anticipation",
-      "Expectation",
-      "Perfection",
-      "Triumph",
+      "London",
+      "Fire",
+      "Curse",
+      "Ancient",
+      "Mystery",
+      "Adventure",
+      "Danger",
+      "Friendship",
+      "Exploration",
+      "History",
+      "Supernatural",
+      "Unexplained",
+      "Whispers",
     ],
   },
 };
