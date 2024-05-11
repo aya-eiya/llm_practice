@@ -101,5 +101,225 @@ const data: QuizData = {
       "answer": 2,
     },
   ],
+  "descriptions": {
+    "grammar": {
+      "patterns": [
+        {
+          "pattern": "S + V",
+          "explanation":
+            "The basic sentence structure with a subject and verb.",
+          "usage": [
+            "It was May eleventh when the world changed forever in West Philadelphia.",
+            "A radical African American liberation group, known as MOVE, had been causing chaos for weeks.",
+          ],
+          "words": [
+            {
+              "S": [
+                "It",
+                "A",
+              ],
+            },
+            {
+              "V": [
+                "was",
+                "had been causing",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation":
+            "The basic sentence structure with a subject, verb, and complement.",
+          "usage": [
+            "That morning, a helicopter dropped explosives on their headquarters, killing eleven people and injuring over two hundred others.",
+            "From that day on, Maria became an activist, fighting for justice and equality for all.",
+          ],
+          "words": [
+            {
+              "S": [
+                "That",
+                "From",
+              ],
+            },
+            {
+              "V": [
+                "dropped",
+                "became",
+              ],
+            },
+            {
+              "C": [
+                "killing eleven people and injuring over two hundred others",
+                "fighting for justice and equality for all",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O",
+          "explanation":
+            "The basic sentence structure with a subject, verb, and object.",
+          "usage": [
+            "She woke up to sirens blaring and smoke rising into the sky.",
+            "As she ran outside, she saw the chaos unfolding before her eyes.",
+          ],
+          "words": [
+            {
+              "S": [
+                "She",
+              ],
+            },
+            {
+              "V": [
+                "woke up",
+                "ran",
+              ],
+            },
+            {
+              "O": [
+                "sirens blaring and smoke rising into the sky",
+                "chaos unfolding before her eyes",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + O",
+          "explanation":
+            "The basic sentence structure with a subject, verb, and two objects.",
+          "usage": [
+            "That morning, a helicopter dropped explosives on their headquarters, killing eleven people and injuring over two hundred others.",
+            "Eleven eleventh would always be a reminder of the tragedy that occurred, but it also marked the beginning of Maria's journey to make a difference in the world.",
+          ],
+          "words": [
+            {
+              "S": [
+                "That",
+                "Eleven",
+              ],
+            },
+            {
+              "V": [
+                "dropped",
+                "marked",
+              ],
+            },
+            {
+              "O": [
+                "explosives on their headquarters",
+                "the tragedy that occurred",
+              ],
+            },
+          ],
+        },
+      ],
+      "vocabularies": [
+        {
+          "class": "Noun",
+          "word": "MOVE",
+          "meaning": "a radical African American liberation group",
+          "usage": [
+            "The police had been trying to contain them, but they refused to give up their cause.",
+          ],
+          "pronounce": "/moʊv/",
+          "example":
+            "The activists were part of MOVE, fighting for justice and equality.",
+        },
+        {
+          "class": "Adjective",
+          "word": "radical",
+          "meaning": "unconventional or unconventional in nature",
+          "usage": [
+            "A radical African American liberation group...",
+          ],
+          "pronounce": "/rəˈdækəl/",
+          "example":
+            "The artist's latest sculpture was a radical departure from his previous work.",
+        },
+        {
+          "class": "Noun",
+          "word": "headquarters",
+          "meaning": "the main office or location of an organization",
+          "usage": [
+            "...the police had raided MOVE'’s headquarters, and now the neighborhood was on fire.",
+          ],
+          "pronounce": "/hɛdˈkwaɪərz/",
+          "example":
+            "The company's international headquarters is located in London.",
+        },
+        {
+          "class": "Verb",
+          "word": "dropped",
+          "meaning": "to let fall or release something from a height",
+          "usage": [
+            "...a helicopter dropped explosives on their headquarters.",
+          ],
+          "pronounce": "/drɒpt/",
+          "example": "The pilot had to drop the cargo due to bad weather.",
+        },
+        {
+          "class": "Noun",
+          "word": "neighborhood",
+          "meaning": "an area of a city or town where people live",
+          "usage": [
+            "...the neighborhood was on fire.",
+          ],
+          "pronounce": "/ˈnɛmbərhʊd/",
+          "example":
+            "The new community center is located in the heart of our neighborhood.",
+        },
+        {
+          "class": "Adverb",
+          "word": "forever",
+          "meaning": "at all times, always, or without end",
+          "usage": [
+            "...the world changed forever.",
+          ],
+          "pronounce": "/fɔrˈevər/",
+          "example":
+            "She will always love her childhood home, which she left forever ago.",
+        },
+        {
+          "class": "Adjective",
+          "word": "sixteen-year-old",
+          "meaning": "relating to a person who is 16 years old",
+          "usage": [
+            "...a sixteen-year-old named Maria.",
+          ],
+          "pronounce": "/sɪksˈtiːn ˌjɔrˈoʊld/",
+          "example":
+            "The college student was only a seventeen-year-old when she started her first business.",
+        },
+        {
+          "class": "Pronoun",
+          "word": "she",
+          "meaning":
+            "used to refer to a female person or animal previously mentioned",
+          "usage": [
+            "...Maria realized that she couldn't just be an observer anymore.",
+          ],
+          "pronounce": "/ʃi/",
+          "example":
+            "If she had studied harder, she would have passed the exam.",
+        },
+      ],
+    },
+    "keywords": [
+      "chaos",
+      "liberation",
+      "explosives",
+      "bombing",
+      "neighborhood",
+      "fire",
+      "activism",
+      "justice",
+      "equality",
+      "tragedy",
+      "remembrance",
+      "community",
+      "fighting",
+    ],
+  },
 };
 export default data;
