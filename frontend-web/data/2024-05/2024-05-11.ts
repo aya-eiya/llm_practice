@@ -1,335 +1,105 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "The Great Fire of London",
+    "event": "The MOVE bombing",
     "details":
-      "On May 11th, 1666, a devastating fire broke out in a bakery on Pudding Lane, spreading rapidly through the largely wooden city and leaving thousands homeless.",
+      "On May 11th, 1985, a Philadelphia police helicopter dropped explosives on the Osage Avenue row houses in West Philadelphia, killing 11 people and injuring 250 others. The incident occurred during a standoff between the Philadelphia Police Department and members of the MOVE organization, a radical African American liberation group.",
   },
   "date": "2024-05-11",
-  "title": "Escape from London",
+  "title": "Eleven Eleven",
   "body":
-    "Seventeen-year-old Katie had always been fascinated by the Great Fire of London, which she had learned about in school. When her parents announced that they were moving to London for a new job opportunity, Katie was thrilled at the chance to explore the city firsthand and even more so when she found out that their new home was located on Pudding Lane, the very street where the fire had started. However, as Katie explored the city with her best friend, Luke, she began to notice strange things happening around them - objects moving on their own, whispers in the wind, and a sense of unease settling over the city. It wasn't until a mysterious letter arrived at their door, warning them about an ancient curse that had been unleashed during the Great Fire, that Katie realized something was terribly wrong. With the help of Luke and a few new friends they meet along the way, Katie must navigate through the dangers of London in the midst of the fire, all while trying to break the curse before it's too late.",
-  "word count": 180,
+    "It was May eleventh when the world changed forever in West Philadelphia. A radical African American liberation group, known as MOVE, had been causing chaos for weeks. The police had been trying to contain them, but they refused to give up their cause. That morning, a helicopter dropped explosives on their headquarters, killing eleven people and injuring over two hundred others.Sixteen-year-old Maria lived just blocks away from the bombing site. She woke up to sirens blaring and smoke rising into the sky. As she ran outside, she saw the chaos unfolding before her eyes. The police had raided MOVE's headquarters, and now the neighborhood was on fire.Maria didn't know what to do. She had always been a bystander, watching from afar as the world around her crumbled. But now, she couldn't ignore it anymore. She joined a group of people who were trying to help put out the fires and evacuate those affected by the bombing.As they worked together, Maria realized that she couldn't just be an observer anymore. She had to take action and make a difference in her community. And so, she decided to join MOVE and fight for their cause.From that day on, Maria became an activist, fighting for justice and equality for all. Eleven eleventh would always be a reminder of the tragedy that occurred, but it also marked the beginning of Maria's journey to make a difference in the world.",
+  "word count": 235,
   "dialog": [
     {
       "Billy":
-        "I loved how Katie's fascination with the Great Fire of London set the stage for the whole story! It was so cool to see her learn more about it as she explored the city.",
-    },
-    {
-      "Meg":
-        "I totally agree, Billy! And I loved how the author wove in historical facts and legends to create this sense of mystery and wonder. It felt like we were right there with Katie, experiencing all the strange happenings and curiosities.",
-    },
-    {
-      "Kerry":
-        "Yeah, but what really got me was the way the curse affected the characters' lives. I mean, it was like they were trapped in this web of superstition and fear, and it was so hard to escape!",
+        "I didn't expect the novel to have such a strong impact on me. I felt like I was right there with Maria, watching her transformation from bystander to activist.",
     },
     {
       "Lui":
-        "That's a great point, Kerry. As an educator, I appreciated how the author used the story to teach about historical events and cultural contexts. It was a great way to make learning fun and relevant.",
-    },
-    {
-      "Billy":
-        "And I loved how Katie and her friends worked together to break the curse! It was like they were solving a puzzle, and it was so satisfying to see them succeed.",
+        "As an educator, I appreciated how the novel handled complex social issues and encouraged readers to take action. It's a great example of literature as a catalyst for change.",
     },
     {
       "Meg":
-        "Absolutely! I loved how creative and resourceful they were. And the way the author used symbolism and foreshadowing added an extra layer of depth to the story.",
+        "I loved how Maria's journey wasn't just about her individual growth, but also about the community coming together to support each other. It really highlighted the power of collective action.",
     },
     {
       "Kerry":
-        "Yeah, and what about Luke? He was such a great friend to Katie throughout all this chaos!",
-    },
-    {
-      "Lui":
-        "Ah, yes, Luke was indeed a wonderful character. As a teacher, I appreciate how he modeled empathy and support for his friends in the face of adversity.",
+        "Yeah, and it was crazy to see how one event could spark such a chain reaction! I mean, Maria didn't even know what she wanted to do at first, but then she found her purpose and started making a difference.",
     },
     {
       "Billy":
-        "Anyway, has anyone else been thinking about what they would do if they stumbled upon a mysterious curse?",
+        "Exactly! And I think that's what made the novel so compelling. It showed us that anyone can make a difference, no matter how small they may feel.",
+    },
+    {
+      "Lui":
+        "That's why it's essential to teach our students about the importance of civic engagement and community involvement. We need more people like Maria making positive changes in their neighborhoods.",
     },
     {
       "Meg":
-        "Oh, totally! I think we'd all want to be heroes like Katie and her friends, trying to break the curse and save the day!",
+        "I completely agree! And I think the novel did a great job of portraying the complexities of social justice issues without shying away from the tough stuff. It's not always easy to talk about, but it's crucial we do so.",
+    },
+    {
+      "Kerry":
+        "Totally! Now I'm inspired to start my own activism project. Who knows, maybe one day I'll be making a difference in West Philadelphia just like Maria did!",
     },
   ],
   "quiz": [
     {
-      "question": "What was Katie's fascination with in London?",
+      "question": "What event occurred in West Philadelphia on May eleventh?",
       "options": [
-        "The Great Fire of London",
-        "The city's architecture",
-        "The people of London",
-        "The food",
-        "Katie's favorite restaurant",
+        "A police raid on MOVE's headquarters",
+        "The bombing of MOVE's headquarters",
+        "The start of Maria's activism journey",
+        "The destruction of the neighborhood",
+        "Maria's decision to join MOVE",
       ],
-      "answer": 0,
+      "answer": 1,
     },
     {
-      "question": "Who helped Katie and her friends to break the curse?",
+      "question": "What was Maria's initial role in the community?",
       "options": [
-        "Luke",
-        "Billy",
-        "Meg",
-        "Kerry",
-        "A mysterious stranger",
+        "An activist",
+        "A bystander",
+        "A leader",
+        "A participant",
+        "A observer",
       ],
-      "answer": 0,
+      "answer": 2,
     },
     {
-      "question": "What was the setting for the story?",
+      "question": "How did Maria feel about the bombing at first?",
       "options": [
-        "London during World War II",
-        "Ancient Egypt",
-        "Modern-day New York City",
-        "London in the 17th century",
-        "Paris during the French Revolution",
+        "She was devastated",
+        "She was indifferent",
+        "She was angry",
+        "She was confused",
+        "She was scared",
       ],
-      "answer": 3,
+      "answer": 4,
     },
     {
-      "question": "Why did Katie's parents move to London?",
+      "question": "What did Maria decide to do after the bombing?",
       "options": [
-        "For a job opportunity",
-        "To visit friends and family",
-        "To explore the city",
-        "To study abroad",
-        "To escape the cold weather",
+        "Leave West Philadelphia",
+        "Join MOVE's cause",
+        "Stay away from politics",
+        "Get involved in activism",
+        "Continue being a bystander",
       ],
-      "answer": 0,
+      "answer": 2,
     },
     {
-      "question":
-        "What was the main challenge that Katie and her friends faced in the story?",
+      "question": "What was Kerry inspired to do after reading the novel?",
       "options": [
-        "Finding a new home",
-        "Making new friends",
-        "Breaking a curse",
-        "Learning about history",
-        "Solving puzzles",
+        "Start a new book club",
+        "Write a letter to the author",
+        "Join an activist group",
+        "Plan a trip to West Philadelphia",
+        "Create a social media campaign",
       ],
       "answer": 2,
     },
   ],
-  "descriptions": {
-    "grammar": {
-      "patterns": [
-        {
-          "pattern": "S + V",
-          "explanation":
-            "Introduce the topic and state the main action or activity.",
-          "usage": [
-            "When her parents announced that they were moving to London for a new job opportunity, Katie was thrilled at the chance to explore the city firsthand.",
-          ],
-          "words": [
-            {
-              "S": [
-                "Katie",
-                "her parents",
-              ],
-            },
-            {
-              "V": [
-                "were moving",
-                "was thrilled",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + C",
-          "explanation":
-            "Introduce the topic, state the main action or activity, and provide additional context.",
-          "usage": [
-            "When her parents announced that they were moving to London for a new job opportunity, Katie was thrilled at the chance to explore the city firsthand and even more so when she found out that their new home was located on Pudding Lane, the very street where the fire had started.",
-          ],
-          "words": [
-            {
-              "S": [
-                "Katie",
-                "her parents",
-              ],
-            },
-            {
-              "V": [
-                "were moving",
-                "was thrilled",
-              ],
-            },
-            {
-              "C": [
-                "to explore the city",
-                "located on Pudding Lane",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O",
-          "explanation":
-            "Introduce the topic, state the main action or activity, and introduce an object.",
-          "usage": [
-            "However, as Katie explored the city with her best friend, Luke, she began to notice strange things happening around them - objects moving on their own, whispers in the wind, and a sense of unease settling over the city.",
-          ],
-          "words": [
-            {
-              "S": [
-                "Katie",
-              ],
-            },
-            {
-              "V": [
-                "explored",
-                "began to notice",
-              ],
-            },
-            {
-              "O": [
-                "objects moving on their own",
-                "whispers in the wind",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O + O",
-          "explanation":
-            "Introduce the topic, state the main action or activity, and introduce two objects.",
-          "usage": [
-            "It wasn't until a mysterious letter arrived at their door, warning them about an ancient curse that had been unleashed during the Great Fire, that Katie realized something was terribly wrong.",
-          ],
-          "words": [
-            {
-              "S": [
-                "Katie",
-              ],
-            },
-            {
-              "V": [
-                "realized",
-              ],
-            },
-            {
-              "O": [
-                "mysterious letter",
-                "ancient curse",
-              ],
-            },
-          ],
-        },
-      ],
-      "vocabularies": [
-        {
-          "class": "Noun",
-          "word": "Katie",
-          "meaning": "the main character's name in the story",
-          "usage": [
-            "Seventeen-year-old Katie had always been fascinated by...",
-            "Katie was thrilled at the chance to explore...",
-          ],
-          "pronounce": "/ˈkeɪti/",
-          "example": "My sister is named Katie, and she loves reading books.",
-        },
-        {
-          "class": "Adverb",
-          "word": "thrilled",
-          "meaning": "very excited or delighted",
-          "usage": [
-            "Katie was thrilled at the chance to explore...",
-            "I was thrilled when I won the prize.",
-          ],
-          "pronounce": "/ˈθrɪld/",
-          "example": "I'm thrilled to be going on a vacation soon.",
-        },
-        {
-          "class": "Noun",
-          "word": "London",
-          "meaning": "a city in England where the story takes place",
-          "usage": [
-            "When her parents announced that they were moving...",
-            "Their new home was located on Pudding Lane, the very street...",
-          ],
-          "pronounce": "/ˈlʌndən/",
-          "example":
-            "I love visiting London and seeing all the famous landmarks.",
-        },
-        {
-          "class": "Adjective",
-          "word": "mysterious",
-          "meaning": "difficult to understand or explain",
-          "usage": [
-            "a mysterious letter arrived at their door...",
-            "The mysterious disappearance of the treasure has puzzled...",
-          ],
-          "pronounce": "/ˌmɪsˈtɛriəs/",
-          "example":
-            "The movie had a very mysterious plot, and I couldn't figure it out.",
-        },
-        {
-          "class": "Verb",
-          "word": "realize",
-          "meaning": "to understand or become aware of something",
-          "usage": [
-            "It wasn' until a mysterious letter arrived...",
-            "I didn't realize the joke was on me until...",
-          ],
-          "pronounce": "/raɪˈaɪz/",
-          "example": "I finally realized that I had left my phone at home.",
-        },
-        {
-          "class": "Pronoun",
-          "word": "she",
-          "meaning":
-            "a female person or animal, used to refer to a specific individual",
-          "usage": [
-            "Her parents announced that they were moving...",
-            "She began to notice strange things happening...",
-          ],
-          "pronounce": "/ʃi/",
-          "example":
-            "My sister is the one who always helps me with my homework.",
-        },
-        {
-          "class": "Adjective",
-          "word": "ancient",
-          "meaning": "very old or from a long time ago",
-          "usage": [
-            "an ancient curse that had been unleashed...",
-            "The ancient city of Pompeii was buried under...",
-          ],
-          "pronounce": "/ˈænsɪnt/",
-          "example":
-            "The ancient Egyptian pyramids are still an amazing sight to see.",
-        },
-        {
-          "class": "Noun",
-          "word": "curse",
-          "meaning":
-            "a wish or saying that is meant to cause bad things to happen",
-          "usage": [
-            "an ancient curse that had been unleashed...",
-            "The curse was placed on the village by a wizard.",
-          ],
-          "pronounce": "/ˈkɝrz/",
-          "example":
-            "In some cultures, it's believed that breaking an object under a ladder can cause a curse.",
-        },
-      ],
-    },
-    "keywords": [
-      "London",
-      "Fire",
-      "Curse",
-      "Ancient",
-      "Mystery",
-      "Adventure",
-      "Danger",
-      "Friendship",
-      "Exploration",
-      "History",
-      "Supernatural",
-      "Unexplained",
-      "Whispers",
-    ],
-  },
 };
 export default data;
