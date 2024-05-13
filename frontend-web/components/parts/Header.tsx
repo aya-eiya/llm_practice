@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <header id="mainHeader">
       <div
-        className={"px-4 py-4 text-center md:text-left bg-[url('/img/bg_header.png')] bg-center bg-contain"}
+        className={"px-4 py-4 text-center md:text-left bg-[url('/img/bg_header.webp')] bg-center bg-contain"}
       >
         <h1 className={"text-4xl mb-4 font-serif"}>
           <a href="/">

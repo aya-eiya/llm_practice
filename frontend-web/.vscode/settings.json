@@ -9,7 +9,8 @@
     "ollama",
     "preact",
     "tailwindcss",
-    "urlset"
+    "urlset",
+    "webp"
   ],
   "deno.enable": true,
   "deno.lint": true,
