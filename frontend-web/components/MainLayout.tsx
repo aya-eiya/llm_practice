@@ -1,10 +1,11 @@
+import { containsKey } from "../data/index.ts";
+import { dates } from "../data/index.ts";
 import { Partial } from "$fresh/runtime.ts";
+import { type QuizData } from "../domains/quiz.ts";
 import Footer from "./parts/Footer.tsx";
 import Header from "./parts/Header.tsx";
+import Quiz from "./parts/Quiz.tsx";
 import SideNavi from "./parts/SideNavi.tsx";
-import Quiz, { QuizData } from "./parts/Quiz.tsx";
-import { dates } from "../data/index.ts";
-import { containsKey } from "../data/index.ts";
 
 export default function Main({ data }: { data: QuizData }) {
   const next = containsKey(data.date) &&
