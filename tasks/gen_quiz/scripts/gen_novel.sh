@@ -43,7 +43,7 @@ init_tmp () {
 }
 ## models
 main_model="llama3"
-novel_model="llava"
+novel_model="llava-llama3"
 
 # Functions
 
@@ -276,8 +276,8 @@ make_json() {
     return 1
   fi
   local words=$(jq -r '.body' $tmp_json_novel | wc -w | tr -d ' ')
-  jq -s ".[0] * { \"word count\": ${words} } * .[1] * .[2]" \
-    $tmp_json_novel $tmp_json_conversation $tmp_json_quiz
+  jq -s ".[0] * { \"word count\": ${words} } * .[1] * .[2] * { \"params\": .[3] }" \
+    $tmp_json_novel $tmp_json_conversation $tmp_json_quiz $tmp_json_params
 }
 
 make_markdown() {
@@ -352,7 +352,7 @@ if [ "$date" = "" ]; then
     d=$(($(date -j -f "%Y-%m-%d" "$fulldate" "+%d")));
     if [ $d -gt 3 ];
       then echo -n "${d}th"
-      else echo -n "${p[$d]}"
+      else echo -n "${p[$(($d - 1))]}"
     fi
   )
   # date='April 1st'
@@ -371,7 +371,7 @@ if [ "$theme" = "" ]; then
   theme=$(echo -e "ancient\nmedieval\nmodern" | shuf -n 1)  
 fi
 
-cat <<OPTS | jq
+cat <<OPTS | jq > $tmp_json_params
 {
   "fulldate": "$fulldate",
   "date": "$date",
@@ -385,6 +385,8 @@ cat <<OPTS | jq
   "temp_files": [$( for file in "${tmp_files[@]}" ; do echo -n "\"$file\","; done | sed 's/,$//')]
 }
 OPTS
+
+cat $tmp_json_params
 
 if [[ " ${steps[@]} " =~ "event" ]]; then
   gen_event > $tmp_json_event
@@ -430,3 +432,4 @@ if [[ " ${steps[@]} " =~ "make" ]]; then
   make_json > $OUTPUTS_DIR/${fulldate}.json
   make_markdown > $OUTPUTS_DIR/${fulldate}.md
 fi
+C
