@@ -4,6 +4,7 @@
     "libmp",
     "melo",
     "openvoice",
-    "pydub"
+    "pydub",
+    "Versaille"
   ]
 }
