@@ -1,5 +1,7 @@
 {
   "recommendations": [
-    "donjayamanne.python-environment-manager"
+    "donjayamanne.python-environment-manager",
+    "ms-python.pylint",
+    "ms-python.black-formatter"
   ]
 }
