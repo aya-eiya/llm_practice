@@ -62,7 +62,7 @@ texts = [
 
     {"System": "Question.1"},
     {"System": "What was the main event that did not happen in the parallel universe described in the novel?"},
-    {"System": "Ay."}, {"System": "The Treaty of Versailles was signed."},
+    {"System": "Ey\."}, {"System": "The Treaty of Versailles was signed."},
     {"System": "B."}, {"System": "World War One ended."},
     {"System": "C."}, {"System": "A new form of energy emerged."},
     {"System": "D."}, {"System": "The scientists traveled back in time."},
@@ -72,7 +72,7 @@ texts = [
 
     {"System": "Question.2"},
     {"System": "According to the dialogue, what did Billy think about the novel?."},
-    {"System": "Ay."}, {"System": "It was too complex."},
+    {"System": "Ey\."}, {"System": "It was too complex."},
     {"System": "B."}, {"System": "It didn't explore consequences well."},
     {"System": "C."}, {"System": "It made him think critically."},
     {"System": "D."}, {"System": "It was boring."},
@@ -82,7 +82,7 @@ texts = [
 
     {"System": "Question.3"},
     {"System": "What concern did Kerry raise in the dialogue?."},
-    {"System": "Ay."}, {"System": "The novel didn't have enough science."},
+    {"System": "Ey\."}, {"System": "The novel didn't have enough science."},
     {"System": "B."}, {"System": "The characters were not relatable."},
     {"System": "C."}, {"System": "Our obsession with tech is distracting us from the bigger picture."},
     {"System": "D."}, {"System": "The world was too perfect."},
@@ -92,7 +92,7 @@ texts = [
 
     {"System": "Question.4"},
     {"System": "What did Meg think about the technology in the novel?."},
-    {"System": "Ay."}, {"System": "It was outdated."},
+    {"System": "Ey\."}, {"System": "It was outdated."},
     {"System": "B."}, {"System": "It was a dream come true but at what cost."},
     {"System": "C."}, {"System": "It was irrelevant to the story."},
     {"System": "D."}, {"System": "It was too complex."},
@@ -102,7 +102,7 @@ texts = [
 
     {"System": "Question.5"},
     {"System": "What did Lui think about the novel's themes?."},
-    {"System": "Ay."}, {"System": "They were too simplistic."},
+    {"System": "Ey\."}, {"System": "They were too simplistic."},
     {"System": "B."}, {"System": "They didn't relate to education."},
     {"System": "C."}, {"System": "They raised important questions about responsibility and the human condition."},
     {"System": "D."}, {"System": "They were too complex for students."},

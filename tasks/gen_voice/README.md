@@ -57,5 +57,3 @@ ffmpeg -loop 1 -i "sample_mp4_back.png" -i "outputs/dialog.wav" -vcodec libx264 
 ```
 
 https://github.com/aya-eiya/llm_practice/raw/main/tasks/gen_voice/example.mp4
-
-
