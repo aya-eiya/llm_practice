@@ -1,5 +1,5 @@
 import os
-
+from melo.api import TTS
 import torch
 from gen_voice_model.openvoice.api import ToneColorConverter
 from gen_voice_model.openvoice.se_extractor import get_se
@@ -116,8 +116,6 @@ src_path = f"{OUTPUT_DIR}/tmp.wav"
 
 # Speed is adjustable
 SPEED = 1.0
-
-from melo.api import TTS
 
 model = TTS(language="EN", device=DEVICE)
 speaker_data = model.hps.data.spk2id # pylint: disable=no-member
