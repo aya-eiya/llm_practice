@@ -1,35 +1,36 @@
 import os
+from melo.api import TTS
 import torch
 from gen_voice_model.openvoice.api import ToneColorConverter
 from gen_voice_model.openvoice.se_extractor import get_se
 
-ckpt_converter = 'gen_voice_model/checkpoints_v2/converter'
-base_speaker = 'gen_voice_model/checkpoints_v2/base_speakers/ses'
-#device = "cuda:0" if torch.cuda.is_available(."}, {"System": "else "cpu"
-#device = "cuda:0" if torch.cuda.is_available(."}, {"System": "else "mps" if torch.backends.mps.is_available(."}, {"System": "else "cpu"
-device = "cpu"
-output_dir = 'outputs'
+CONVERTER = "gen_voice_model/checkpoints_v2/converter"
+SPEAKER = "gen_voice_model/checkpoints_v2/base_speakers/ses"
+# DEVICE = "cuda:0" if torch.cuda.is_available(."}, {"System": "else "cpu"
+# DEVICE = "cuda:0" if torch.cuda.is_available(."}, {"System": "else "mps" if torch.backends.mps.is_available(."}, {"System": "else "cpu"
+DEVICE = "cpu"
+OUTPUT_DIR = "outputs"
 
-tone_color_converter = ToneColorConverter(f'{ckpt_converter}/config.json', device=device)
-tone_color_converter.load_ckpt(f'{ckpt_converter}/checkpoint.pth')
+tone_color_converter = ToneColorConverter(f"{CONVERTER}/config.json", device=DEVICE)
+tone_color_converter.load_ckpt(f"{CONVERTER}/checkpoint.pth")
 
-os.makedirs(output_dir, exist_ok=True)
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-reference_speakers = {
-  'Narrator': 'gen_voice_model/resources/narrator.wav',
-  'System': 'gen_voice_model/resources/system.wav',
-  'Billy': 'gen_voice_model/resources/billy.wav',
-  'Lui': 'gen_voice_model/resources/lui.wav',
-  'Meg': 'gen_voice_model/resources/meg.wav',
-  'Kerry': 'gen_voice_model/resources/kerry.wav'
+VOICE_SAMPLES = {
+    "Narrator": "voice_sample/narrator.wav",
+    "System": "voice_sample/system.wav",
+    "Billy": "voice_sample/billy.wav",
+    "Lui": "voice_sample/lui.wav",
+    "Meg": "voice_sample/meg.wav",
+    "Kerry": "voice_sample/kerry.wav",
 }
-# build target_se dictionary from reference speakers
-target_se = {}
-for speaker, audio_path in reference_speakers.items():
-  se, _ = get_se(audio_path, tone_color_converter, target_dir=output_dir)
-  target_se[speaker] = se
 
-from melo.api import TTS
+target_se = {}
+for speaker, audio_path in VOICE_SAMPLES.items():
+    se, _ = get_se(audio_path, tone_color_converter, target_dir=OUTPUT_DIR)
+    target_se[speaker] = se
+
+# fmt: off
 
 texts = [
     {"System": "Improve Your English Skills with Daily AI-Generated Novels and Learning Tests."},
@@ -61,81 +62,85 @@ texts = [
 
     {"System": "Question.1"},
     {"System": "What was the main event that did not happen in the parallel universe described in the novel?"},
-    {"System": "A."}, {"System": "The Treaty of Versailles was signed."},
+    {"System": "Ey\."}, {"System": "The Treaty of Versailles was signed."},
     {"System": "B."}, {"System": "World War One ended."},
     {"System": "C."}, {"System": "A new form of energy emerged."},
     {"System": "D."}, {"System": "The scientists traveled back in time."},
     {"System": "E."}, {"System": "The world remained unchanged."},
     {"System": "The Answer is."},
-    {"System": "A."}, {"System": "The Treaty of Versailles was signed."},
+    {"System": "Ay!"}, {"System": "The Treaty of Versailles was signed."},
 
     {"System": "Question.2"},
     {"System": "According to the dialogue, what did Billy think about the novel?."},
-    {"System": "A."}, {"System": "It was too complex."},
+    {"System": "Ey\."}, {"System": "It was too complex."},
     {"System": "B."}, {"System": "It didn't explore consequences well."},
     {"System": "C."}, {"System": "It made him think critically."},
     {"System": "D."}, {"System": "It was boring."},
     {"System": "E."}, {"System": "It had too much technology."},
     {"System": "The Answer is."},
-    {"System": "C."}, {"System": "It made him think critically."},
+    {"System": "C!"}, {"System": "It made him think critically."},
 
-    {"System": "Question.3."},
+    {"System": "Question.3"},
     {"System": "What concern did Kerry raise in the dialogue?."},
-    {"System": "A."}, {"System": "The novel didn't have enough science."},
+    {"System": "Ey\."}, {"System": "The novel didn't have enough science."},
     {"System": "B."}, {"System": "The characters were not relatable."},
     {"System": "C."}, {"System": "Our obsession with tech is distracting us from the bigger picture."},
     {"System": "D."}, {"System": "The world was too perfect."},
     {"System": "E."}, {"System": "There wasn't enough history."},
     {"System": "The Answer is."},
-    {"System": "C."}, {"System": "Our obsession with tech is distracting us from the bigger picture."},
+    {"System": "C!"}, {"System": "Our obsession with tech is distracting us from the bigger picture."},
 
     {"System": "Question.4"},
     {"System": "What did Meg think about the technology in the novel?."},
-    {"System": "A."}, {"System": "It was outdated."},
+    {"System": "Ey\."}, {"System": "It was outdated."},
     {"System": "B."}, {"System": "It was a dream come true but at what cost."},
     {"System": "C."}, {"System": "It was irrelevant to the story."},
     {"System": "D."}, {"System": "It was too complex."},
     {"System": "E."}, {"System": "It wasn't described."},
     {"System": "The Answer is."},
-    {"System": "B."}, {"System": "It was a dream come true but at what cost."},
+    {"System": "B!"}, {"System": "It was a dream come true but at what cost."},
 
     {"System": "Question.5"},
     {"System": "What did Lui think about the novel's themes?."},
-    {"System": "A."}, {"System": "They were too simplistic."},
+    {"System": "Ey\."}, {"System": "They were too simplistic."},
     {"System": "B."}, {"System": "They didn't relate to education."},
     {"System": "C."}, {"System": "They raised important questions about responsibility and the human condition."},
     {"System": "D."}, {"System": "They were too complex for students."},
     {"System": "E."}, {"System": "They weren't relevant."},
     {"System": "The Answer is."},
-    {"System": "C."}, {"System": "They raised important questions about responsibility and the human condition."}
+    {"System": "C!"}, {"System": "They raised important questions about responsibility and the human condition."}
 ]
+# fmt: on
 
-src_path = f'{output_dir}/tmp.wav'
+src_path = f"{OUTPUT_DIR}/tmp.wav"
 
 # Speed is adjustable
-speed = 1.0
+SPEED = 1.0
 
-model = TTS(language='EN', device=device)
+model = TTS(language="EN", device=DEVICE)
+speaker_data = model.hps.data.spk2id # pylint: disable=no-member
 speaker_ids = {
-  'Narrator': model.hps.data.spk2id['EN-US'],
-  'System': model.hps.data.spk2id['EN-US'],
-  'Billy': model.hps.data.spk2id['EN-US'],
-  'Lui': model.hps.data.spk2id['EN-BR'],
-  'Meg': model.hps.data.spk2id['EN-AU'],
-  'Kerry': model.hps.data.spk2id['EN-BR']
+    "Narrator": speaker_data["EN-US"],
+    "System": speaker_data["EN-US"],
+    "Billy": speaker_data["EN-US"],
+    "Lui": speaker_data["EN-BR"],
+    "Meg": speaker_data["EN-AU"],
+    "Kerry": speaker_data["EN-BR"],
 }
 
-for index,line in enumerate(texts):
-  speaker, text = list(line.items())[0]
-  source_se = torch.load(f'{base_speaker}/en-us.pth', map_location=device)
-  model.tts_to_file(text, speaker_ids[speaker], src_path, speed=speed)
-  save_path = f'{output_dir}/{str(index).zfill(2)}_{speaker}.wav'
+CORP = "AY.LLC"
+for index, line in enumerate(texts):
+    speaker, text = list(line.items())[0]
+    source_se = torch.load(f"{SPEAKER}/en-us.pth", map_location=DEVICE)
+    model.tts_to_file(text, speaker_ids[speaker], src_path, speed=SPEED)
+    save_path = f"{OUTPUT_DIR}/{str(index).zfill(2)}_{speaker}.wav"
 
-  # Run the tone color converter
-  encode_message = "AY.LLC"
-  tone_color_converter.convert(
-    audio_src_path=src_path, 
-    src_se=source_se, 
-    tgt_se=target_se[speaker], 
-    output_path=save_path,
-    message=encode_message)
+    # Run the tone color converter
+    print(f"create: {save_path}")
+    tone_color_converter.convert(
+        audio_src_path=src_path,
+        src_se=source_se,
+        tgt_se=target_se[speaker],
+        output_path=save_path,
+        message=CORP,
+    )

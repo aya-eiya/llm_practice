@@ -17,12 +17,12 @@ python tts_sample.python
 例えば [moe-speech](https://huggingface.co/datasets/litagin/moe-speech) などから取得する
 
 ```
-./gen_voice_model/resources/system.wav # sample based moe-speech 1707f3b6
-./gen_voice_model/resources/narrator.wav # sample based moe-speech 0c109d26
-./gen_voice_model/resources/billy.wav # sample based moe-speech 5c25991f
-./gen_voice_model/resources/kerry.wav # sample based moe-speech 0deadde0
-./gen_voice_model/resources/lui.wav # sample based moe-speech 1105cfcb
-./gen_voice_model/resources/meg.wav # sample based moe-speech 00163dc9
+./voice_sample/resources/system.wav # sample based moe-speech 1707f3b6
+./voice_sample/resources/narrator.wav # sample based moe-speech 0c109d26
+./voice_sample/resources/billy.wav # sample based moe-speech 5c25991f
+./voice_sample/resources/kerry.wav # sample based moe-speech 0deadde0
+./voice_sample/resources/lui.wav # sample based moe-speech 1105cfcb
+./voice_sample/resources/meg.wav # sample based moe-speech 00163dc9
 ```
 
 実行準備
@@ -48,6 +48,12 @@ python join_sample.py
 
 生成されたファイルは outputs/dialog.wav として保存されているはず
 
-[生成されたサンプルDL](https://github.com/aya-eiya/llm_practice/raw/main/tasks/gen_voice/example.mp3)
+```bash
+# mp3に変換する場合
+ffmpeg -i "outputs/dialog.wav" -vn -ac 2 -ar 44100 -ab 256k -acodec libmp3lame -f mp3 "example.mp3"
 
+# mp4に変換する場合
+ffmpeg -loop 1 -i "sample_mp4_back.png" -i "outputs/dialog.wav" -vcodec libx264 -acodec aac -ab 160k -ac 2 -ar 48000 -pix_fmt yuv420p -shortest output.mp4
+```
 
+https://github.com/aya-eiya/llm_practice/raw/main/tasks/gen_voice/example.mp4

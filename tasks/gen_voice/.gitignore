@@ -1,5 +1,6 @@
 **/*.wav
 **/*.mp3
 outputs/**/*
+processed/**/*
 !example.wav
-!example.mp3
+!example.mp*
