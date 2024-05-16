@@ -56,4 +56,4 @@ ffmpeg -i "outputs/dialog.wav" -vn -ac 2 -ar 44100 -ab 256k -acodec libmp3lame -
 ffmpeg -loop 1 -i "sample_mp4_back.png" -i "outputs/dialog.wav" -vcodec libx264 -acodec aac -ab 160k -ac 2 -ar 48000 -pix_fmt yuv420p -shortest output.mp4
 ```
 
-https://github.com/aya-eiya/llm_practice/raw/main/tasks/gen_voice/example.mp4
+https://github.com/aya-eiya/llm_practice/assets/601721/4603e5a2-dc6c-40fb-9cd6-f461dd8e9b2a
