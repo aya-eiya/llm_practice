@@ -17,6 +17,8 @@ python tts_sample.python
 例えば [moe-speech](https://huggingface.co/datasets/litagin/moe-speech) などから取得する
 
 ```
+./gen_voice_model/resources/system.wav # sample based moe-speech 1707f3b6
+./gen_voice_model/resources/narrator.wav # sample based moe-speech 0c109d26
 ./gen_voice_model/resources/billy.wav # sample based moe-speech 5c25991f
 ./gen_voice_model/resources/kerry.wav # sample based moe-speech 0deadde0
 ./gen_voice_model/resources/lui.wav # sample based moe-speech 1105cfcb
@@ -46,6 +48,6 @@ python join_sample.py
 
 生成されたファイルは outputs/dialog.wav として保存されているはず
 
-[生成されたサンプルDL](https://github.com/aya-eiya/llm_practice/raw/main/tasks/gen_voice/example.wav)
+[生成されたサンプルDL](https://github.com/aya-eiya/llm_practice/raw/main/tasks/gen_voice/example.mp3)
 
 

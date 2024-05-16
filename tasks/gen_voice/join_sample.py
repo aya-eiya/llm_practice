@@ -31,7 +31,10 @@ def concatenate_wav_files_with_silence(file_paths, silence_duration_ms, output_p
 directory = "outputs"
 dialog_files = get_dialog_files(directory)
 
-silence_duration_ms = 300  # 1秒の無音区間
+silence_duration_ms = 300 # 300msの無音区間を追加
 output_path = f"{directory}/dialog.wav"
 
 concatenate_wav_files_with_silence(dialog_files, silence_duration_ms, output_path)
+
+# mp3に変換する場合
+# ffmpeg -i "outputs/dialog.wav" -vn -ac 2 -ar 44100 -ab 256k -acodec libmp3lame -f mp3 "example.mp3"
