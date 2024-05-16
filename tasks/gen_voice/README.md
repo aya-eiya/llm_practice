@@ -46,9 +46,6 @@ python join_sample.py
 
 生成されたファイルは outputs/dialog.wav として保存されているはず
 
-[example.wav](https://github.com/aya-eiya/llm_practice/raw/main/tasks/gen_voice/example.wav)
+[生成されたサンプルDL](https://github.com/aya-eiya/llm_practice/raw/main/tasks/gen_voice/example.wav)
 
-<audio controls>
-  <source src="https://github.com/aya-eiya/llm_practice/raw/main/tasks/gen_voice/example.wav" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+
