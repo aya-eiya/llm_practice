@@ -36,3 +36,6 @@ __concatenate_wav_files_with_silence(
 
 # mp3に変換する場合
 # ffmpeg -i "outputs/dialog.wav" -vn -ac 2 -ar 44100 -ab 256k -acodec libmp3lame -f mp3 "example.mp3"
+
+# mp4に変換する場合
+# ffmpeg -loop 1 -i "sample_mp4_back.png" -i "outputs/dialog.wav" -vcodec libx264 -acodec aac -ab 160k -ac 2 -ar 48000 -pix_fmt yuv420p -shortest output.mp4

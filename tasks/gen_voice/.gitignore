@@ -3,4 +3,4 @@
 outputs/**/*
 processed/**/*
 !example.wav
-!example.mp3
+!example.mp*

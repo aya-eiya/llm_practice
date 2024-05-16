@@ -48,6 +48,14 @@ python join_sample.py
 
 生成されたファイルは outputs/dialog.wav として保存されているはず
 
-[生成されたサンプルDL](https://github.com/aya-eiya/llm_practice/raw/main/tasks/gen_voice/example.mp3)
+```bash
+# mp3に変換する場合
+ffmpeg -i "outputs/dialog.wav" -vn -ac 2 -ar 44100 -ab 256k -acodec libmp3lame -f mp3 "example.mp3"
+
+# mp4に変換する場合
+ffmpeg -loop 1 -i "sample_mp4_back.png" -i "outputs/dialog.wav" -vcodec libx264 -acodec aac -ab 160k -ac 2 -ar 48000 -pix_fmt yuv420p -shortest output.mp4
+```
+
+https://github.com/aya-eiya/llm_practice/raw/main/tasks/gen_voice/example.mp4
 
 
