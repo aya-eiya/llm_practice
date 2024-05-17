@@ -28,12 +28,14 @@
   "lock": false,
   "nodeModulesDir": true,
   "tasks": {
-    "build": "deno run -A dev.ts build",
-    "check": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
+    "build": "deno task gen:data; deno task check && deno run -A dev.ts build",
+    "check": "deno task gen:data; deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
     "cli": "echo \"import '\\$fresh/src/dev/cli.ts'\" | deno run --unstable -A -",
     "manifest": "deno task cli manifest $(pwd)",
-    "preview": "deno run -A main.ts",
-    "start": "deno run -A --watch=static/,routes/ dev.ts",
-    "update": "deno run -A -r https://fresh.deno.dev/update ."
+    "preview": "deno task gen:data; deno task check && deno run -A main.ts",
+    "start": "gen:data; deno run -A --watch=static/,routes/ dev.ts",
+    "update": "deno run -A -r https://fresh.deno.dev/update .",
+    "gen:data": "./scripts/generate_data.sh",
+    "gen:voice_list": "./scripts/generate_voice_list.sh"
   }
 }

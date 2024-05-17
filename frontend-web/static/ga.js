@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 window.dataLayer = window.dataLayer || [];
 function gtag() {
   dataLayer.push(arguments);
