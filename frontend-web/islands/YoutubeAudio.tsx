@@ -152,6 +152,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
             <input
               type="range"
               min="0"
+              step="0.05"
               max="100"
               value={currentTime.value / durationTime.value * 100}
               className="w-full h-2 bg-transparent border-2 rounded-lg appearance-none cursor-pointer"
