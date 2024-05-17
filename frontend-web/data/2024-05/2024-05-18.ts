@@ -1,123 +1,137 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "The First Public Photography Exhibition",
+    "event": "Siege of Syracuse",
     "details":
-      "On May 18th, 1839, Louis Daguerre held the first public photography exhibition at the French Academy of Sciences, showcasing his daguerreotypes to the scientific community and marking a significant milestone in the development of photography as an art form.",
+      "The Siege of Syracuse was a prolonged siege conducted by the Roman Republic against the city-state of Syracuse, which lasted from 213 to 212 BC. The siege was part of the Second Punic War and saw the Roman army, led by Marcus Claudius Marcellus, lay siege to the city for nearly two years before capturing it.",
   },
   "date": "2024-05-18",
-  "title": "A New Lens on Art",
+  "title": "The Siege of Syracuse",
   "body":
-    "In May of 1839, Louis Daguerre stood before a crowd of eager spectators at the French Academy of Sciences, his heart pounding with anticipation. For months, he had worked tirelessly to perfect his daguerreotype process, and now it was time to share his discoveries with the world.  As he stepped forward to address the audience, Daguerre knew that this moment would change everything. His invention, a revolutionary way of capturing images on metal plates, promised to bring a new level of realism to art and revolutionize the way people viewed the world around them.  The crowd, a mix of artists, scientists, and curious onlookers, leaned in eagerly as Daguerre began his demonstration. With each passing moment, their excitement grew, and soon they were all engrossed in the spectacle before them.  As the images emerged from the metal plates with stunning clarity, the crowd was left breathless. They had never seen anything like it - a window into the world that was both familiar and yet entirely new.  And so, on that fateful May day in 1839, photography was born. The art form would go on to captivate the imaginations of people around the world, forever changing the way we see and document our lives.",
-  "word count": 204,
+    "In a time long past, a great empire called Rome sought to conquer all lands and rule over all nations. Among its many conquests was the city-state of Syracuse, which stood as a beacon of defiance against the Roman Republic's dominance.For nearly two years, a Roman army led by Marcus Claudius Marcellus had laid siege to Syracuse, withstanding the harsh conditions of war, yet slowly making progress towards victory. The city's defenses were formidable, but the Romans were relentless in their pursuit, pouring resources into the siege and employing innovative tactics to breach the walls.The citizens of Syracuse fought bravely, but they were vastly outnumbered by the Roman forces. Despite their valiant efforts, it was clear that the tide had turned against them. One day, a massive battering ram crashed into the city's defenses, shattering gates and breaching walls, marking the end of the city's resistance.The fall of Syracuse was a significant victory for Rome, adding to its growing power and dominance over the world. It was a testament to the relentless pursuit of conquest, a legacy that would live on for centuries to come.",
+  "word count": 185,
   "dialog": [
     {
       "Billy":
-        "I loved how the novel described Daguerre's process of perfecting his daguerreotype. It was so detailed and made me feel like I was right there with him.",
-    },
-    {
-      "Kerry":
-        "Yeah, I know what you mean Billy! And I liked how it showed how photography could change the way people saw the world. It's crazy to think about how much has changed since then.",
+        "Wow, I had no idea that Syracuse was such a strong city-state! Did you know that they were able to resist the Roman Republic for nearly two years?",
     },
     {
       "Meg":
-        "I know I'm a bookworm and all, but I have to say, this novel really brought history to life for me. The descriptions of Paris in the 19th century were so vivid!",
+        "I love how the author described the siege of Syracuse. It's like I'm right there, watching the walls crumble under the Roman army's relentless attack.",
     },
     {
       "Lui":
-        "As a teacher, I appreciate how the novel highlighted the significance of Daguerre's invention. It's amazing to think about how it has impacted our daily lives.",
-    },
-    {
-      "Billy":
-        "Exactly Lui! And I think what I liked most was how it showed the power of human curiosity and perseverance. Daguerre didn't give up, even when faced with challenges",
+        "Yes, the fall of Syracuse was a significant turning point in ancient history. The Romans' ability to adapt and innovate their tactics allowed them to overcome even the most formidable defenses.",
     },
     {
       "Kerry":
-        "That's so true Billy! And I loved how the novel wove together science, art, and history to tell its story.",
+        "I'm surprised that the city-state of Syracuse didn't have a better plan to defend itself. I mean, they were fighting against an empire that had already conquered so many other lands!",
+    },
+    {
+      "Billy":
+        "But think about it, Kerry - Syracuse was a small city-state surrounded by powerful empires on all sides. It's amazing that they held out for as long as they did.",
     },
     {
       "Meg":
-        "I think what struck me most was the way the novel captured the excitement and uncertainty of the time. It felt like anything could happen!",
+        "I'm just glad the author didn't sugarcoat anything. The description of the siege and its aftermath is really vivid and makes you feel like you're right there, experiencing it firsthand.",
+    },
+    {
+      "Lui":
+        "That's one thing I love about this novel - it doesn't shy away from the harsh realities of war. It shows us what it's really like to be on the front lines, to see the devastation and destruction caused by conflict.",
+    },
+    {
+      "Kerry":
+        "Yeah, it's not just a bunch of dry history facts. The author makes you feel like you're right there, in the midst of all the action and drama.",
     },
   ],
   "quiz": [
     {
-      "question": "What did Louis Daguerre do in May of 1839?",
+      "question": "What was the duration of the Roman siege against Syracuse?",
       "options": [
-        "Showed his invention to the French Academy of Sciences",
-        "Built a new camera",
-        "Discovered a new way of capturing images on metal plates",
-        "Travelled to Paris",
-        "Wrote a novel",
+        "One year",
+        "Nearly two years",
+        "Five years",
+        "Ten years",
+        "Twenty years",
+      ],
+      "answer": 1,
+    },
+    {
+      "question":
+        "Why did the Romans ultimately succeed in breaching the walls of Syracuse?",
+      "options": [
+        "Because they had more soldiers",
+        "Because they were able to adapt and innovate their tactics",
+        "Because the city's defenses were weak",
+        "Because the citizens of Syracuse gave up",
+        "Because the Roman army was not well-trained",
+      ],
+      "answer": 1,
+    },
+    {
+      "question": "What was significant about the fall of Syracuse?",
+      "options": [
+        "It marked the beginning of a new era in world history",
+        "It was a turning point in ancient history",
+        "It led to the decline of the Roman Empire",
+        "It showed that even small city-states can resist mighty empires",
+        "It had no significant impact on history",
+      ],
+      "answer": 1,
+    },
+    {
+      "question": "Why did Syracuse resist the Roman Republic for so long?",
+      "options": [
+        "Because they were vastly outnumbered by the Romans",
+        "Because they were well-prepared and had strong defenses",
+        "Because they were fighting against an empire that had already conquered many other lands",
+        "Because they were seeking independence from Rome",
+        "Because they were trying to maintain their cultural identity",
+      ],
+      "answer": 3,
+    },
+    {
+      "question":
+        "What is notable about the author's description of the siege and its aftermath?",
+      "options": [
+        "It is too detailed and boring",
+        "It does not provide enough historical context",
+        "It shows us what it's really like to be on the front lines, to see the devastation and destruction caused by conflict",
+        "It only focuses on the Roman perspective",
+        "It has no notable features",
       ],
       "answer": 2,
-    },
-    {
-      "question": "What was the impact of Daguerre's invention?",
-      "options": [
-        "It changed the world by introducing a new sport",
-        "It revolutionized art and science",
-        "It created a new form of entertainment",
-        "It improved transportation",
-        "It increased global warming",
-      ],
-      "answer": 1,
-    },
-    {
-      "question": "What did Billy like about the novel?",
-      "options": [
-        "The description of Paris in the 19th century",
-        "The way it highlighted the significance of Daguerre's invention",
-        "How it showed the power of human curiosity and perseverance",
-        "The way it captured the excitement and uncertainty of the time",
-        "The characters",
-      ],
-      "answer": 2,
-    },
-    {
-      "question": "What did Meg appreciate about the novel?",
-      "options": [
-        "The way it described science",
-        "The vivid descriptions of Paris in the 19th century",
-        "The dialogue between characters",
-        "How it captured the excitement and uncertainty of the time",
-        "The plot",
-      ],
-      "answer": 1,
-    },
-    {
-      "question": "What did Lui appreciate about the novel?",
-      "options": [
-        "The way it described art",
-        "The significance of Daguerre's invention for daily life",
-        "How it captured the excitement and uncertainty of the time",
-        "The vivid descriptions of Paris in the 19th century",
-        "The characters",
-      ],
-      "answer": 1,
     },
   ],
+  "params": {
+    "theme": "ancient",
+    "flavor": "fantasy",
+    "models": {
+      "main": "llama3",
+      "novel": "llava-llama3",
+    },
+  },
   "descriptions": {
     "grammar": {
       "patterns": [
         {
           "pattern": "S + V",
           "explanation":
-            "The subject performs the action described by the verb.",
+            "The subject (S) performs an action described by the verb (V).",
           "usage": [
-            "In May of 1839, Louis Daguerre stood before a crowd of eager spectators at the French Academy of Sciences, his heart pounding with anticipation.",
+            "In a time long past, a great empire called Rome sought to conquer all lands and rule over all nations.",
           ],
           "words": [
             {
               "S": [
-                "Louis Daguerre",
-                "the French Academy of Sciences",
+                "a great empire",
+                "Rome",
               ],
             },
             {
               "V": [
-                "stood",
-                "pounding",
+                "sought to conquer",
+                "rule over",
               ],
             },
           ],
@@ -125,25 +139,27 @@ const data: QuizData = {
         {
           "pattern": "S + V + C",
           "explanation":
-            "The subject performs the action described by the verb, and a complement is added to provide more information.",
+            "The subject (S) performs an action described by the verb (V), and this action is modified or completed by the complement (C).",
           "usage": [
-            "His invention, a revolutionary way of capturing images on metal plates, promised to bring a new level of realism to art and revolutionize the way people viewed the world around them.",
+            "For nearly two years, a Roman army led by Marcus Claudius Marcellus had laid siege to Syracuse, withstanding the harsh conditions of war, yet slowly making progress towards victory.",
           ],
           "words": [
             {
               "S": [
-                "His",
-                "Louis Daguerre",
+                "a Roman army",
+                "Marcus Claudius Marcellus",
               ],
             },
             {
               "V": [
-                "promised",
+                "had laid siege",
+                "withstanding",
               ],
             },
             {
               "C": [
-                "a revolutionary way of capturing images on metal plates",
+                "to Syracuse",
+                "yet slowly making progress towards victory",
               ],
             },
           ],
@@ -151,27 +167,27 @@ const data: QuizData = {
         {
           "pattern": "S + V + O",
           "explanation":
-            "The subject performs the action described by the verb, and an object is added to receive the action.",
+            "The subject (S) performs an action described by the verb (V), and this action involves or affects the object (O).",
           "usage": [
-            "As he stepped forward to address the audience, Daguerre knew that this moment would change everything.",
+            "Among its many conquests was the city-state of Syracuse, which stood as a beacon of defiance against the Roman Republic' s dominance.",
           ],
           "words": [
             {
               "S": [
-                "he",
-                "Daguerre",
+                "Rome",
+                "the Roman Republic",
               ],
             },
             {
               "V": [
-                "stepped",
-                "knew",
+                "conquered",
+                "stood",
               ],
             },
             {
               "O": [
-                "the audience",
-                "this moment",
+                "Syracuse",
+                "the city-state",
               ],
             },
           ],
@@ -179,27 +195,27 @@ const data: QuizData = {
         {
           "pattern": "S + V + O + O",
           "explanation":
-            "The subject performs the action described by the verb, and two objects are added to receive the action.",
+            "The subject (S) performs an action described by the verb (V), and this action involves or affects multiple objects (O).",
           "usage": [
-            "The crowd, a mix of artists, scientists, and curious onlookers, leaned in eagerly as Daguerre began his demonstration.",
+            "The citizens of Syracuse fought bravely, but they were vastly outnumbered by the Roman forces.",
           ],
           "words": [
             {
               "S": [
-                "the crowd",
-                "Daguerre",
+                "the citizens of Syracuse",
+                "they",
               ],
             },
             {
               "V": [
-                "leaned",
-                "began",
+                "fought",
+                "were vastly outnumbered",
               ],
             },
             {
               "O": [
-                "a mix of artists, scientists, and curious onlookers",
-                "his demonstration",
+                "by the Roman forces",
+                "Roman forces",
               ],
             },
           ],
@@ -207,32 +223,32 @@ const data: QuizData = {
         {
           "pattern": "S + V + O + C",
           "explanation":
-            "The subject performs the action described by the verb, an object receives the action, and a complement is added to provide more information.",
+            "The subject (S) performs an action described by the verb (V), and this action involves or affects the object (O) and is modified or completed by the complement (C).",
           "usage": [
-            "As the images emerged from the metal plates with stunning clarity, the crowd was left breathless.",
+            "One day, a massive battering ram crashed into the city' s defenses, shattering gates and breaching walls, marking the end of the city' s resistance.",
           ],
           "words": [
             {
               "S": [
-                "the images",
-                "Daguerre",
+                "a Roman army",
+                "the Romans",
               ],
             },
             {
               "V": [
-                "emerged",
-                "was",
+                "crashed",
+                "shattering",
               ],
             },
             {
               "O": [
-                "the metal plates",
-                "the crowd",
+                "into the city' s defenses",
+                "gates and breaching walls",
               ],
             },
             {
               "C": [
-                "with stunning clarity",
+                "marking the end of the city' s resistance",
               ],
             },
           ],
@@ -241,116 +257,113 @@ const data: QuizData = {
       "vocabularies": [
         {
           "class": "Noun",
-          "word": "May",
-          "meaning": "the fifth month of the year, or a time period",
+          "word": "Rome",
+          "meaning": "the capital city of ancient Italy",
           "usage": [
-            "In May of 1839",
-            "May I ask you something",
+            "The city of Rome was founded in 753 BC.",
+            "Rome is known for its architecture, art, and history.",
           ],
-          "pronounce": "/meɪ/",
-          "example":
-            "The best time to visit the beach is in May when it's warm and sunny.",
+          "pronounce": "/roʊm/",
+          "example": "I'm going to visit the Colosseum in Rome.",
         },
         {
-          "class": "Noun",
-          "word": "Academy",
-          "meaning": "an institution for scientific research or study",
+          "class": "Proper Noun",
+          "word": "Syracuse",
+          "meaning": "a city-state on the island of Sicily, Italy",
           "usage": [
-            "the French Academy of Sciences",
-            "the Academy Awards",
+            "The ancient Greek city of Syracuse was a major power.",
+            "Syracuse is known for its beautiful beaches and rich history.",
           ],
-          "pronounce": "/əˈkædɛmi/",
+          "pronounce": "/sɪˈrəʊs/",
           "example":
-            "The academy has been conducting research on the effects of climate change.",
+            "I'm planning to visit the ancient ruins in Syracuse, Sicily.",
         },
         {
-          "class": "Verb",
-          "word": "stood",
-          "meaning": "to be in an upright position",
+          "class": "Proper Noun",
+          "word": "Marcus Claudius Marcellus",
+          "meaning": "a Roman general and statesman",
           "usage": [
-            "He stood before a crowd of people",
-            "I stood up for myself",
+            "Marcus Claudius Marcellus was a prominent Roman leader.",
+            "He led the Roman army in several successful campaigns.",
           ],
-          "pronounce": "/stʊd/",
-          "example": "She stood tall and proud, looking out at the crowd.",
-        },
-        {
-          "class": "Noun",
-          "word": "process",
-          "meaning": "a series of steps or actions taken to achieve a result",
-          "usage": [
-            "the process of capturing images",
-            "the manufacturing process",
-          ],
-          "pronounce": "/ˈprɒsɛs/",
-          "example":
-            "The company has streamlined its production process to increase efficiency.",
-        },
-        {
-          "class": "Adverb",
-          "word": "revolutionary",
-          "meaning":
-            "completely new and original, or making significant changes",
-          "usage": [
-            "a revolutionary way of capturing images",
-            "her revolutionary ideas",
-          ],
-          "pronounce": "/ˌrɛvəluˈʃɒnəri/",
-          "example":
-            "The new technology is a game-changer and very revolutionary.",
+          "pronounce": "/ˈmɑːrkeɪs ˌkloʊdɪəs ˈmɑːrsɛləs/",
+          "example": "Marcus Claudius Marcellus was a renowned Roman general.",
         },
         {
           "class": "Adjective",
-          "word": "realistic",
-          "meaning": "having a strong sense of reality or truth",
+          "word": "great",
+          "meaning": "extremely large or important",
           "usage": [
-            "a realistic portrayal of the situation",
-            "her realistic expectations",
+            "The great empire of Rome rose to power.",
+            "She's a great tennis player.",
           ],
-          "pronounce": "/ˌrɪˈælɪstɪk/",
-          "example": "The artist's painting is very realistic and detailed.",
+          "pronounce": "/ɡreɪt/",
+          "example": "Ancient Greece was a great civilization.",
         },
         {
-          "class": "Noun",
-          "word": "spectacle",
-          "meaning": "a visually impressive or dramatic event or display",
+          "class": "Adverb",
+          "word": "slowly",
+          "meaning": "at a pace that is gradually increasing or decreasing",
           "usage": [
-            "the spectacle before them",
-            "the fireworks were a spectacular show",
+            "The team slowly began to gain momentum.",
+            "She spoke slowly and clearly.",
           ],
-          "pronounce": "/ˈsɛkstrəkəl/",
+          "pronounce": "/ˈsləʊli/",
+          "example": "He slowly opened the gift.",
+        },
+        {
+          "class": "Adjective",
+          "word": "formidable",
+          "meaning":
+            "frightening or intimidating because of power, strength, or size",
+          "usage": [
+            "The opponent was a formidable boxer.",
+            "She's a formidable opponent.",
+          ],
+          "pronounce": "/ˈfɔrmɪdəbəl/",
           "example":
-            "The new Broadway show was a spectacular musical with amazing effects.",
+            "The team faced a formidable rival in the championship game.",
+        },
+        {
+          "class": "Adjective",
+          "word": "relentless",
+          "meaning":
+            "not stopping or giving up, even when things are difficult or unpleasant",
+          "usage": [
+            "She was relentless in her pursuit of justice.",
+            "He's been relentless in his criticism.",
+          ],
+          "pronounce": "/rɪˈlɛnstls/",
+          "example":
+            "The team showed no signs of slowing down and remained relentless.",
         },
         {
           "class": "Noun",
-          "word": "photography",
-          "meaning": "the art or practice of taking and processing photographs",
+          "word": "walls",
+          "meaning": "a structure built around a place to protect it",
           "usage": [
-            "the art form of photography",
-            "her passion for photography",
+            "The walls of the castle were very high.",
+            "The city's ancient walls are well-preserved.",
           ],
-          "pronounce": "/fəʊtɒˈɡrəfi/",
-          "example": "The photographer spent hours capturing the perfect shot.",
+          "pronounce": "/wɔlz/",
+          "example": "The new development will have high walls for security.",
         },
       ],
     },
     "keywords": [
-      "revolutionary",
-      "invention",
-      "photography",
-      "realism",
-      "art",
-      "science",
-      "metal",
-      "plates",
-      "clarity",
-      "spectacle",
-      "breathless",
-      "window",
-      "familiar",
-      "new",
-      "imagination",
+      "conquest",
+      "empire",
+      "Rome",
+      "Syracuse",
+      "siege",
+      "war",
+      "defiance",
+      "victory",
+      "resistance",
+      "battering",
+      "ram",
+      "dominance",
+      "power",
     ],
   },
 };
