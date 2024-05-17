@@ -1,5 +1,8 @@
-import { QuizData } from "../../domains/quiz.ts";
+import { type AudioData } from "../../domains/audio.ts";
+import { type QuizData } from "../../domains/quiz.ts";
+import { playerId } from "../../infras/audio/youtube.ts";
 import { Printer } from "../../islands/Printer.tsx";
+import Audio from "../../islands/YoutubeAudio.tsx";
 
 function Grammar(
   { grammar }: {
@@ -140,7 +143,9 @@ function Grammar(
 }
 
 export default function Quiz(
-  { data, next, prev }: { data: QuizData } & { next?: QuizData["date"] } & {
+  { data, audio, next, prev }: { data: QuizData } & { audio?: AudioData } & {
+    next?: QuizData["date"];
+  } & {
     prev?: QuizData["date"];
   },
 ) {
@@ -215,6 +220,8 @@ export default function Quiz(
               generated at {data.date}
             </p>
           </div>
+          {audio && <Audio data={audio} />}{" "}
+          <div className={"w-0 h-0"} id={playerId} />
           <pre className={"whitespace-pre-wrap px-4"}>{data.body}</pre>
           <p className={"notranslate px-8 text-right"}>
             (Word Count: {data["word count"]})

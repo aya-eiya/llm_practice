@@ -6,6 +6,7 @@ import Footer from "./parts/Footer.tsx";
 import Header from "./parts/Header.tsx";
 import Quiz from "./parts/Quiz.tsx";
 import SideNavi from "./parts/SideNavi.tsx";
+import { getAudioData } from "../infras/audio/youtube.ts";
 
 export default function Main({ data }: { data: QuizData }) {
   const next = containsKey(data.date) &&
@@ -57,6 +58,7 @@ export default function Main({ data }: { data: QuizData }) {
               </p>
               <Quiz
                 data={data}
+                audio={getAudioData(data.date)}
                 prev={prev}
                 next={next}
               />

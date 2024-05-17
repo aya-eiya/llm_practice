@@ -1,5 +1,11 @@
 import { type PageProps } from "$fresh/server.ts";
+import { useSignal } from "@preact/signals";
+import { playerId } from "../infras/audio/youtube.ts";
+
 export default function App({ Component, config }: PageProps) {
+  // deno-lint-ignore no-explicit-any
+  const player = useSignal<any>(undefined);
+
   return (
     <html lang="en">
       <head>
@@ -75,6 +81,10 @@ export default function App({ Component, config }: PageProps) {
             <script async src="/ga.js"></script>
           </>
         )}
+        <script
+          id="yt"
+          src="https://www.youtube.com/iframe_api"
+        />
       </head>
       <body>
         <Component />
