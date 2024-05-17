@@ -2,7 +2,8 @@ import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
     "event": "First public demonstration of the telephone",
-    "details": null,
+    "details":
+      "Alexander Graham Bell and his team demonstrate the telephone to the public for the first time.",
   },
   "date": "2024-05-22",
   "title": "The Call of the Future",
