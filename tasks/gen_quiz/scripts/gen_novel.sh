@@ -276,7 +276,16 @@ make_json() {
     return 1
   fi
   local words=$(jq -r '.body' $tmp_json_novel | wc -w | tr -d ' ')
-  jq -s ".[0] * { \"word count\": ${words} } * .[1] * .[2] * { \"params\": .[3] }" \
+  jq -s "
+    .[0] * {
+      \"word count\": ${words}
+    } * .[1] * .[2] * {
+      \"params\": {
+        \"theme\": .[3].theme,
+        \"flavor\": .[3].flavor,
+        \"models\": .[3].models
+      }
+    }" \
     $tmp_json_novel $tmp_json_conversation $tmp_json_quiz $tmp_json_params
 }
 
@@ -432,4 +441,4 @@ if [[ " ${steps[@]} " =~ "make" ]]; then
   make_json > $OUTPUTS_DIR/${fulldate}.json
   make_markdown > $OUTPUTS_DIR/${fulldate}.md
 fi
-C
+
