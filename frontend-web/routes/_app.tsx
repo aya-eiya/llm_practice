@@ -24,10 +24,6 @@ export default function App({ Component, config }: PageProps) {
         <title className={"notranslate"}>
           Daily AI-Generated English Novels & Learning Test Questions
         </title>
-        <link
-          rel="canonical"
-          href="https://daily-ai-generated-quiz.deno.dev/"
-        />
         <meta
           property="og:title"
           content="Daily AI-Generated English Novels & Learning Test Questions"

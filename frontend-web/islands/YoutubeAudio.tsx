@@ -147,13 +147,16 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
     }
     return (
       <>
-        <div className="w-full bg-slate-400 rounded-lg flex flex-col px-2 print:hidden mb-2">
+        <div
+          className={"w-full bg-slate-400 rounded-lg flex flex-col px-2 print:hidden mb-2"}
+        >
           <div className={"w-full"}>
             <input
-              type="range"
-              min="0"
-              step="0.05"
-              max="100"
+              type={"range"}
+              min={0}
+              step={0.05}
+              max={100}
+              name={"seek"}
               value={currentTime.value / durationTime.value * 100}
               className="w-full h-2 bg-transparent border-2 rounded-lg appearance-none cursor-pointer"
               onDrag={(e) => {
@@ -171,6 +174,9 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
           <div className={"flex flex-row items-center"}>
             <div className={"w-16"}>
               <button
+                name={player.value && state.value === STATE.PLAYING
+                  ? "pause"
+                  : "play"}
                 onClick={() => {
                   if (!player.value) {
                     return;
@@ -181,7 +187,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
                     player.value.playVideo();
                   }
                 }}
-                className="focus:outline-none"
+                className={"focus:outline-none"}
               >
                 {state.value === STATE.PLAYING
                   ? (
@@ -226,20 +232,21 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
             <div className={"w-32 flex flex-row"}>
               <div>
                 <button
+                  name={beforeMuteVolume.value === 0 ? "mute" : "unmute"}
                   onClick={() => {
                     if (!player.value) {
                       return;
                     }
-                    if (player.value.getVolume() === 0) {
-                      player.value.setVolume(beforeMuteVolume.value);
-                      beforeMuteVolume.value = 0;
-                    } else {
+                    if (beforeMuteVolume.value === 0) {
                       const tmp = player.value.getVolume();
                       player.value.setVolume(0);
                       beforeMuteVolume.value = tmp;
+                    } else {
+                      player.value.setVolume(beforeMuteVolume.value);
+                      beforeMuteVolume.value = 0;
                     }
                   }}
-                  className="focus:outline-none"
+                  className={"focus:outline-none"}
                 >
                   <svg
                     className="w-12 h-12"
@@ -266,6 +273,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
               <div className={"flex items-center w-32"}>
                 <input
                   type={"range"}
+                  name={"volume"}
                   min={0}
                   max={1}
                   step={0.01}

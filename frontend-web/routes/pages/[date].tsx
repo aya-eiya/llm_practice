@@ -39,10 +39,6 @@ export default function DailyQuiz(
               data.descriptions?.keywords?.join(", ")}
           />
         )}
-        <link
-          rel="canonical"
-          href={`https://daily-ai-generated-quiz.deno.dev/pages/${data.date}`}
-        />
       </Head>
       <MainLayout data={data} />
     </>
