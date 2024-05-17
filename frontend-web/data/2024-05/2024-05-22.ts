@@ -1,154 +1,215 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "First public demonstration of the telephone",
+    "event": "Battle of Philippi",
     "details":
-      "Alexander Graham Bell and his team demonstrate the telephone to the public for the first time.",
+      "The Battle of Philippi was fought on May 22, 42 BC, during Caesar's Civil War between Julius Caesar and his assassins Brutus and Cassius.",
   },
   "date": "2024-05-22",
-  "title": "The Call of the Future",
+  "title": "The Battle of Philippi",
   "body":
-    "In a world where communication was limited to letters and telegrams, a brilliant inventor named Alexander Graham Bell had a vision for a device that could instantly connect people across vast distances. With his team of engineers and scientists, he worked tirelessly in his lab, day and night, to bring this dream to fruition. Finally, after years of dedication and hard work, the moment arrived when they were ready to demonstrate their invention to the world.On a crisp autumn morning, as the sun was just beginning to rise, Bell and his team set up their contraption in the center of a bustling city square. People from all walks of life had gathered around to witness this incredible feat of technology. As the crowd held their breath, waiting for the magic to happen, Bell picked up the receiver and spoke into it, his voice echoing through the airwaves.The device was called the telephone, and its invention would forever change the way we communicate with one another. It was a pivotal moment in history that opened up new possibilities for human connection and interaction. The first public demonstration of the telephone marked not only a milestone in technological advancements but also a turning point in our society, paving the way for the digital age that we know today.",
-  "word count": 216,
+    "In the year 42 BC, a tumultuous civil war raged between Julius Caesar and his ruthless assassins Brutus and Cassius. The tension reached a boiling point on May 22nd when the two armies met at Philippi, nestled in the heart of Macedonia.The battle was fierce, with both sides suffering heavy losses. But it was Caesar's relentless tactics and superior numbers that ultimately turned the tide of the war. Despite their valiant efforts, Brutus and Cassius were no match for Caesar's strategic prowess.As the dust settled on Philippi's fields, a weary silence fell over the battlefield. The Roman legions had emerged victorious, but at what cost? Thousands of lives were lost, including those of the two men who would eventually be considered traitors to Rome.Caesar, now in full control of Rome, vowed that his victory would not go unnoticed. His enemies, however, had other plans. Vengeful and determined, they plotted their next move, vowing to bring Caesar down once and for all. The war was far from over.",
+  "word count": 167,
   "dialog": [
     {
       "Billy":
-        "I loved how the novel highlighted the importance of perseverance and teamwork. Bell's determination to invent the telephone was truly inspiring.",
+        "I loved how the novel described the battle at Philippi in such detail! I felt like I was right there with Caesar's army.",
     },
     {
       "Kerry":
-        "Yeah, but what I found most fascinating was how the invention changed society. The way people connected with each other instantly was mind-blowing!",
+        "Yeah, me too! But what really stood out to me was how Brutus and Cassius were portrayed. They seemed so... human.",
     },
     {
       "Meg":
-        "I know, right? It's amazing to think about how something as simple as a phone call could bring people together like that. And it made me realize how much we take technology for granted nowadays.",
+        "Exactly! The novel didn't make them out to be one-dimensional villains. It showed their motivations and flaws, which made the story even more compelling.",
     },
     {
       "Lui":
-        "As an educator, I appreciated the novel's emphasis on the importance of learning from failures and continuing to push boundaries. Bell's story serves as a great reminder that even the most complex problems can be solved with hard work and creativity.",
+        "Well said, Meg. I think that's what makes history so fascinating - getting to understand the people behind the events.",
     },
     {
       "Billy":
-        "Exactly! And it's not just about the technology itself, but how it brings people together. I loved reading about the first phone call between Bell and his team member.",
+        "Absolutely! And I loved how the novel wove together historical facts with fictional characters. It made the story feel so much more real.",
     },
     {
       "Kerry":
-        "Ha! Yeah, that part was hilarious! 'Mr. Watson, come here, I want to see you'... classic!",
+        "Definitely. I was on the edge of my seat during the battle scenes. Did anyone else get a little choked up when Caesar's army emerged victorious?",
     },
     {
       "Meg":
-        "And the way they had to troubleshoot all those technical issues was so cool. It's amazing what people can accomplish when they work together towards a common goal.",
+        "Oh, yeah! I felt like I was right there with them, celebrating their victory. But what really got me was thinking about all the people who died in that war.",
     },
     {
       "Lui":
-        "Well said, Meg. The novel does an excellent job of showcasing the power of collaboration and innovation. As educators, we should strive to inspire our students with stories like Bell's.",
+        "Yes, war is always a tragic reminder of human sacrifice. But it's also important to remember the strategic decisions made by leaders like Caesar.",
+    },
+    {
+      "Billy":
+        "Exactly! And I think that's what makes this novel so great - it shows how history can be both fascinating and heartbreaking at the same time.",
+    },
+    {
+      "Kerry":
+        "Totally agree, Billy. Okay, who wants to start a discussion on whether Caesar was a good or bad leader?",
     },
   ],
   "quiz": [
     {
-      "question":
-        "What was Alexander Graham Bell's vision for a device that could instantly connect people?",
+      "question": "What was the outcome of the battle at Philippi?",
       "options": [
-        "A machine that could send letters quickly",
-        "A device that could translate languages",
-        "A device that could connect people across vast distances",
-        "A machine that could play music",
-        "A device that could read books",
+        "Caesar's army lost",
+        "Brutus and Cassius' army won",
+        "Caesar's army emerged victorious",
+        "The battle ended in a draw",
+        "The war continued",
       ],
       "answer": 2,
     },
     {
-      "question": "What was the name of Bell's invention?",
+      "question": "How were Brutus and Cassius portrayed in the novel?",
       "options": [
-        "The computer",
-        "The telephone",
-        "The internet",
-        "The radio",
-        "The television",
+        "As one-dimensional villains",
+        "As heroes of the Roman legions",
+        "As human beings with motivations and flaws",
+        "As mythical characters",
+        "As ancient historians",
       ],
-      "answer": 1,
+      "answer": 2,
     },
     {
-      "question": "How did the invention of the telephone change society?",
+      "question": "What did the novel do to make the story more compelling?",
       "options": [
-        "It didn't make a big difference",
-        "It brought people together instantly",
-        "It made communication slower",
-        "It only changed the way scientists communicated",
-        "It had no impact on society",
+        "It added fictional characters",
+        "It removed historical facts",
+        "It showed the motivations and flaws of Brutus and Cassius",
+        "It only focused on Caesar's side of the war",
+        "It used ancient historians' accounts",
       ],
-      "answer": 1,
+      "answer": 2,
     },
     {
-      "question":
-        "What was one of Bell's team members' reactions to the first phone call?",
+      "question": "What was one of the key takeaways from the novel for Meg?",
       "options": [
-        "He laughed and said it was a joke",
-        "He was surprised but excited",
-        "He didn't believe it was possible",
-        "He thought it was just noise",
-        "He wasn't interested",
+        "The importance of strategic decisions in war",
+        "The futility of war",
+        "The tragic reminder of human sacrifice",
+        "The power of fiction to make history come alive",
+        "The inevitability of Caesar's victory",
       ],
-      "answer": 1,
+      "answer": 2,
     },
     {
-      "question": "What did the novel emphasize as important for innovation?",
+      "question": "What did the novel show about Caesar?",
       "options": [
-        "Creativity only",
-        "Perseverance and teamwork",
-        "Money and resources",
-        "Education and learning from failures",
-        "Only genius is necessary",
+        "His ruthlessness in battle",
+        "His cowardice on the battlefield",
+        "His strategic prowess and superior numbers",
+        "His inability to make decisions",
+        "His lack of compassion for his enemies",
       ],
       "answer": 2,
     },
   ],
+  "params": {
+    "theme": "ancient",
+    "flavor": "fantasy",
+    "models": {
+      "main": "llama3",
+      "novel": "llava-llama3",
+    },
+  },
   "descriptions": {
     "grammar": {
       "patterns": [
         {
           "pattern": "S + V",
-          "explanation":
-            "The basic five sentence pattern where the subject (S) performs the action described by the verb (V).",
+          "explanation": "Simple sentence with a single subject and verb.",
           "usage": [
-            "In a world where communication was limited to letters and telegrams, a brilliant inventor named Alexander Graham Bell had a vision for a device that could instantly connect people across vast distances.",
+            "In the year 42 BC, a tumultuous civil war raged between Julius Caesar and his ruthless assassins Brutus and Cassius.",
           ],
           "words": [
             {
               "S": [
-                "a brilliant inventor",
-                "Alexander Graham Bell",
+                "Julius Caesar",
+                "his ruthless assassins",
               ],
             },
             {
               "V": [
-                "had a vision",
+                "raged",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation": "Sentence with a subject, verb, and complement.",
+          "usage": [
+            "The battle was fierce, with both sides suffering heavy losses.",
+          ],
+          "words": [
+            {
+              "S": [
+                "The battle",
+              ],
+            },
+            {
+              "V": [
+                "was fierce",
+              ],
+            },
+            {
+              "C": [
+                "with both sides suffering heavy losses",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O",
-          "explanation":
-            "The basic five sentence pattern where the subject (S) performs the action described by the verb (V) on the object (O).",
+          "explanation": "Sentence with a subject, verb, and object.",
           "usage": [
-            "With his team of engineers and scientists, he worked tirelessly in his lab, day and night, to bring this dream to fruition.",
+            "Despite their valiant efforts, Brutus and Cassius were no match for Caesar's strategic prowess.",
           ],
           "words": [
             {
               "S": [
-                "he",
+                "Their efforts",
+                "Brutus and Cassius",
               ],
             },
             {
               "V": [
-                "worked",
+                "were no match for",
               ],
             },
             {
               "O": [
-                "his team",
-                "this dream",
+                "Caesar's strategic prowess",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + O",
+          "explanation": "Sentence with multiple objects.",
+          "usage": [
+            "Thousands of lives were lost, including those of the two men who would eventually be considered traitors to Rome.",
+          ],
+          "words": [
+            {
+              "S": [
+                "Thousands of lives",
+              ],
+            },
+            {
+              "V": [
+                "were lost",
+              ],
+            },
+            {
+              "O": [
+                "including",
+                "those of the two men",
               ],
             },
           ],
@@ -156,77 +217,29 @@ const data: QuizData = {
         {
           "pattern": "S + V + O + C",
           "explanation":
-            "The basic five sentence pattern where the subject (S) performs the action described by the verb (V) on the object (O), and the complement (C) provides additional information.",
+            "Sentence with a subject, verb, object, and complement.",
           "usage": [
-            "On a crisp autumn morning, as the sun was just beginning to rise, Bell and his team set up their contraption in the center of a bustling city square.",
+            "As the dust settled on Philippi's fields, a weary silence fell over the battlefield.",
           ],
           "words": [
             {
               "S": [
-                "Bell",
-                "his team",
+                "The dust",
               ],
             },
             {
               "V": [
-                "set up",
+                "settled",
               ],
             },
             {
               "O": [
-                "their contraption",
+                "Philippi's fields",
               ],
             },
             {
               "C": [
-                "in the center of a bustling city square",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O",
-          "explanation":
-            "The basic five sentence pattern where the subject (S) performs the action described by the verb (V) on the object (O).",
-          "usage": [
-            "As the crowd held their breath, waiting for the magic to happen, Bell picked up the receiver and spoke into it, his voice echoing through the airwaves.",
-          ],
-          "words": [
-            {
-              "S": [
-                "Bell",
-              ],
-            },
-            {
-              "V": [
-                "picked up",
-                "spoke",
-              ],
-            },
-            {
-              "O": [
-                "the receiver",
-                "it",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V",
-          "explanation":
-            "The basic five sentence pattern where the subject (S) performs the action described by the verb (V).",
-          "usage": [
-            "I loved how the novel highlighted the importance of perseverance and teamwork.",
-          ],
-          "words": [
-            {
-              "S": [
-                "I",
-              ],
-            },
-            {
-              "V": [
-                "loved",
+                "a weary silence",
               ],
             },
           ],
@@ -235,117 +248,108 @@ const data: QuizData = {
       "vocabularies": [
         {
           "class": "Noun",
-          "word": "communication",
+          "word": "Caesar",
           "meaning":
-            "the process or skill of exchanging information, ideas, or messages",
+            "a Roman general and statesman who played a critical role in the transformation of the Roman Republic into the Roman Empire.",
           "usage": [
-            "The new technology revolutionized the way people communicate.",
-            "Effective communication is key to a successful business.",
+            "Julius Caesar was a Roman general",
+            "Caesar's strategic prowess led to victory",
           ],
-          "pronounce": "/kəmˌyjoʊˈmeɪʃn/",
-          "example": "Good communication skills are essential for a manager.",
-        },
-        {
-          "class": "Adjective",
-          "word": "brilliant",
-          "meaning": "extremely talented or clever",
-          "usage": [
-            "The brilliant scientist won the Nobel Prize.",
-            "Her brilliant idea changed the industry.",
-          ],
-          "pronounce": "/ˈbrɪl.jənt/",
-          "example": "Alexander Graham Bell was a brilliant inventor.",
-        },
-        {
-          "class": "Noun",
-          "word": "invention",
-          "meaning": "the creation of something new or improved",
-          "usage": [
-            "The invention of the wheel changed human history.",
-            "The company's latest invention is a game-changer.",
-          ],
-          "pronounce": "/ɪnˈven.tʃən/",
+          "pronounce": "/ˈsiːzər/",
           "example":
-            "Bell's invention, the telephone, revolutionized communication.",
-        },
-        {
-          "class": "Verb",
-          "word": "demonstrate",
-          "meaning":
-            "to show or prove something by doing it or making a model of it",
-          "usage": [
-            "The company will demonstrate its new product at the trade show.",
-            "The teacher asked the students to demonstrate their math skills.",
-          ],
-          "pronounce": "/ˌdɛm.ənˈsteɪt/",
-          "example":
-            "Bell and his team demonstrated their invention to the public.",
-        },
-        {
-          "class": "Noun",
-          "word": "moment",
-          "meaning": "a very short period of time",
-          "usage": [
-            "The moment I walked in, I knew it was going to be a great party.",
-            "I'll never forget that moment when I saw my child for the first time.",
-          ],
-          "pronounce": "/ˈmʌm.ənt/",
-          "example":
-            "The moment arrived when they were ready to demonstrate their invention.",
+            "The famous Roman leader Julius Caesar rode his chariot through the city.",
         },
         {
           "class": "Adverb",
-          "word": "instantly",
-          "meaning": "very quickly or immediately",
+          "word": "ultimately",
+          "meaning": "in the end; finally.",
           "usage": [
-            "I instantly knew that I had made a mistake.",
-            "The cure worked instantly and effectively.",
+            "His relentless tactics ultimately turned the tide of the war",
           ],
-          "pronounce": "/ɪnˈstænt.lɪ/",
+          "pronounce": "/ˌʌltɪmətli/",
           "example":
-            "Bell wanted to create a device that could connect people instantly.",
+            "The team's hard work ultimately paid off with a championship win.",
+        },
+        {
+          "class": "Verb",
+          "word": "raged",
+          "meaning":
+            "to make a loud, fierce noise; to be in an intense state of turmoil.",
+          "usage": [
+            "A tumultuous civil war raged between Julius Caesar and his ruthless assassins",
+          ],
+          "pronounce": "/reɪdʒ/",
+          "example":
+            "The storm ragged on for hours, causing widespread damage.",
+        },
+        {
+          "class": "Adjective",
+          "word": "ruthless",
+          "meaning": "showing no pity or compassion; merciless.",
+          "usage": [
+            "his ruthless assassins",
+          ],
+          "pronounce": "/ˈruθlɛs/",
+          "example":
+            "The ruthless business tactics of the corporation led to a major scandal.",
         },
         {
           "class": "Noun",
-          "word": "history",
-          "meaning":
-            "the study of past events and the way in which they have affected people",
+          "word": "Philippi",
+          "meaning": "an ancient city in northern Greece.",
           "usage": [
-            "The history of the world is filled with stories of war and peace.",
-            "I'm fascinated by the history of science.",
+            "The battle was fierce, with both sides suffering heavy losses on Philippi's fields",
           ],
-          "pronounce": "/hɪˈstɔri/",
+          "pronounce": "/fɪˈlɪpi/",
           "example":
-            "The invention of the telephone marked a pivotal moment in history.",
+            "The ancient city of Philippi is now a popular tourist destination.",
+        },
+        {
+          "class": "Pronoun",
+          "word": "they",
+          "meaning": "used to refer to people previously mentioned.",
+          "usage": [
+            "Vengeful and determined, they plotted their next move",
+          ],
+          "pronounce": "/ðeɪ/",
+          "example": "They will be attending the meeting tomorrow.",
         },
         {
           "class": "Noun",
-          "word": "society",
-          "meaning":
-            "a group of people who share common characteristics, values, or institutions",
+          "word": "Rome",
+          "meaning": "the capital city of Italy.",
           "usage": [
-            "The society has changed significantly over the past century.",
-            "The company is committed to improving society.",
+            "Caesar, now in full control of Rome",
           ],
-          "pronounce": "/ˈsɒs.ə.ti/",
+          "pronounce": "/roʊm/",
+          "example": "The ancient city of Rome is famous for its architecture.",
+        },
+        {
+          "class": "Verb",
+          "word": "vowed",
+          "meaning": "to make a solemn promise or oath.",
+          "usage": [
+            "Caesar vowed that his victory would not go unnoticed",
+          ],
+          "pronounce": "/vaʊd/",
           "example":
-            "The invention of the telephone paved the way for a new era in human interaction and society.",
+            "The athlete vowed to train harder for the next competition.",
         },
       ],
     },
     "keywords": [
-      "communication",
-      "innovation",
-      "technology",
-      "history",
-      "milestone",
-      "connection",
-      "interaction",
-      "telephony",
-      "pioneering",
-      "visionary",
-      "breakthrough",
-      "revolutionary",
+      "civil war",
+      "Julius Caesar",
+      "assassination",
+      "Philippi",
+      "Macedonia",
+      "tactics",
+      "strategic prowess",
+      "Roman legions",
+      "victory",
+      "vengeance",
+      "plotting",
+      "conquest",
     ],
   },
 };

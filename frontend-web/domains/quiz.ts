@@ -48,6 +48,14 @@ export type QuizData = {
     options: string[];
     answer: number;
   }[];
+  params?: {
+    theme: string;
+    flavor: string;
+    models: {
+      main: string;
+      novel: string;
+    };
+  };
   descriptions?: {
     keywords?: string[];
     grammar?: {
