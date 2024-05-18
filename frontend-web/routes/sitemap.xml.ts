@@ -18,6 +18,10 @@ export const handler: Handlers = {
     <loc>${baseUrl}/terms</loc>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>${baseUrl}/lp/forJP</loc>
+    <changefreq>monthly</changefreq>
+  </url>
 ${
       dates.map((date) => {
         return `
