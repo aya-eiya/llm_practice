@@ -24,7 +24,7 @@ export default function forJP({ url }: PageProps) {
         />
         <meta
           property="og:image"
-          content={`${url.origin}/lp/forJP/og-image.png.webp`}
+          content={`${url.origin}/lp/forJP/og-image.png`}
         />
         <meta
           property="og:url"
@@ -42,7 +42,7 @@ export default function forJP({ url }: PageProps) {
         />
         <meta
           name="twitter:image"
-          content={`${url.origin}/lp/forJP/og-image.png.webp`}
+          content={`${url.origin}/lp/forJP/og-image.png`}
         />
       </Head>
       <div className="bg-gray-100">
