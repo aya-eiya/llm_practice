@@ -5,7 +5,7 @@ export default function forJP({ url }: PageProps) {
   return (
     <>
       <Head>
-        <title>毎日英語力アップの秘訣</title>
+        <title>AIがサポートする毎日の英語トレーニング</title>
         <meta
           name="description"
           content="AIを活用した毎日の英語短文と読解力テストで、効率的に英語力を向上させる方法をご紹介。リスニング力も強化できます。"
@@ -14,8 +14,10 @@ export default function forJP({ url }: PageProps) {
           name="keywords"
           content="英語学習, AI, 読解力テスト, リスニング, 毎日更新, 英語力向上, 効果的な英語学習"
         />
-        <meta name="author" content="英語学習サービス" />
-        <meta property="og:title" content="毎日英語力アップの秘訣" />
+        <meta
+          property="og:title"
+          content="AIがサポートする毎日の英語トレーニング"
+        />
         <meta
           property="og:description"
           content="AIを活用した毎日の英語短文と読解力テストで、効率的に英語力を向上させる方法をご紹介。リスニング力も強化できます。"
@@ -29,18 +31,18 @@ export default function forJP({ url }: PageProps) {
           content={`${url.origin}/lp/forJP`}
         />
         <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta
-          name="twitter:card"
-          content={`${url.origin}/lp/forJP/og-image.png.webp`}
+          name="twitter:title"
+          content="AIがサポートする毎日の英語トレーニング"
         />
-        <meta name="twitter:title" content="毎日英語力アップの秘訣" />
         <meta
           name="twitter:description"
           content="AIを活用した毎日の英語短文と読解力テストで、効率的に英語力を向上させる方法をご紹介。リスニング力も強化できます。"
         />
         <meta
           name="twitter:image"
-          content="https://example.com/twitter-image.jpg"
+          content={`${url.origin}/lp/forJP/og-image.png.webp`}
         />
       </Head>
       <div className="bg-gray-100">
