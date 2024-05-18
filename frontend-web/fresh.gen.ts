@@ -5,6 +5,7 @@
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $lp_forJP from "./routes/lp/forJP.tsx";
 import * as $pages_date_ from "./routes/pages/[date].tsx";
 import * as $report from "./routes/report.tsx";
 import * as $sitemap_xml from "./routes/sitemap.xml.ts";
@@ -20,6 +21,7 @@ const manifest = {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/index.tsx": $index,
+    "./routes/lp/forJP.tsx": $lp_forJP,
     "./routes/pages/[date].tsx": $pages_date_,
     "./routes/report.tsx": $report,
     "./routes/sitemap.xml.ts": $sitemap_xml,

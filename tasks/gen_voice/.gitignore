@@ -2,5 +2,3 @@
 **/*.mp3
 outputs/**/*
 processed/**/*
-!example.wav
-!example.mp*

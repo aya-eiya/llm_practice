@@ -1,4 +1,3 @@
-import { Head } from "$fresh/runtime.ts";
 import MainLayout from "../components/MainLayout.tsx";
 import data from "../data/example.ts";
 
