@@ -1,13 +1,8 @@
 import { type PageProps } from "$fresh/server.ts";
-import { useSignal } from "@preact/signals";
-import { playerId } from "../infras/audio/youtube.ts";
 
 export default function App({ Component, config }: PageProps) {
-  // deno-lint-ignore no-explicit-any
-  const player = useSignal<any>(undefined);
-
   return (
-    <html lang="en">
+    <>
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -85,6 +80,6 @@ export default function App({ Component, config }: PageProps) {
       <body>
         <Component />
       </body>
-    </html>
+    </>
   );
 }
