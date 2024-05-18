@@ -6,7 +6,6 @@ export const render: RenderFunction = (ctx, render) => {
   if (ctx.url.pathname.includes("forJP")) {
     ctx.lang = "ja";
   }
-  console.log("rendering", ctx.lang);
   render();
 };
 
