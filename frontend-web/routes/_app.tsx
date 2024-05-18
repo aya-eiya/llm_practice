@@ -1,6 +1,6 @@
 import { type PageProps } from "$fresh/server.ts";
 
-export default function App({ Component, config }: PageProps) {
+export default function App({ Component, config, url }: PageProps) {
   return (
     <>
       <head>
@@ -29,7 +29,7 @@ export default function App({ Component, config }: PageProps) {
         />
         <meta
           property="og:url"
-          content="https://daily-ai-generated-quiz.deno.dev/"
+          content={`${url.origin}/`}
         />
         <meta
           property="og:site_name"
@@ -38,7 +38,7 @@ export default function App({ Component, config }: PageProps) {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://daily-ai-generated-quiz.deno.dev/og/study_group.jpg"
+          content={`${url.origin}/og/study_group.jpg`}
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -51,7 +51,7 @@ export default function App({ Component, config }: PageProps) {
         />
         <meta
           name="twitter:image"
-          content="https://daily-ai-generated-quiz.deno.dev/og/study_group.jpg"
+          content={`${url.origin}/og/study_group.jpg`}
         />
         <link
           rel="icon"

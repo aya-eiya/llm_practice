@@ -73,7 +73,6 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
     };
   }, [events]);
   useEffect(() => {
-    console.log("init");
     if (!id) {
       return;
     }
