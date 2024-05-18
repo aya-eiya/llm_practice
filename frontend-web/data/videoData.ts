@@ -9,5 +9,10 @@ const videoData = {
     "title":
       "[2024-05-18][Daily English Novels For Learners] The Siege of Syracuse",
   },
+  "2024-05-19": {
+    "id": "tk_jvyA3Obg",
+    "title":
+      "[2024-05-19][Daily English Novels For Learners] Disco Fever: A Tale of Rhythm and Glamour",
+  },
 } as const;
 export default videoData;

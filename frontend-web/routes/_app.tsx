@@ -24,6 +24,12 @@ export default function App({ Component, config }: PageProps) {
             >
             </script>
             <script async src="/ga.js"></script>
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4228655180940549"
+              crossorigin="anonymous"
+            >
+            </script>
           </>
         )}
         <script
