@@ -1,15 +1,18 @@
 const videoData = {
   "2024-05-16": {
     "id": "qVxVq4fylGk",
-    "title": "[2024-05-16][Daily English Novels For Learners] Echoes of Versailles"
+    "title":
+      "[2024-05-16][Daily English Novels For Learners] Echoes of Versailles",
   },
   "2024-05-18": {
     "id": "2IzenF7Iq7k",
-    "title": "[2024-05-18][Daily English Novels For Learners] The Siege of Syracuse"
+    "title":
+      "[2024-05-18][Daily English Novels For Learners] The Siege of Syracuse",
   },
   "2024-05-19": {
     "id": "tk_jvyA3Obg",
-    "title": "[2024-05-19][Daily English Novels For Learners] Disco Fever: A Tale of Rhythm and Glamour"
-  }
-} as const
-export default videoData
+    "title":
+      "[2024-05-19][Daily English Novels For Learners] Disco Fever: A Tale of Rhythm and Glamour",
+  },
+} as const;
+export default videoData;
