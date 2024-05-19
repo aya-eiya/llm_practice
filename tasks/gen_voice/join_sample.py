@@ -43,7 +43,9 @@ def __concatenate_wav_files_with_silence(file_paths, text_paths, silence_duratio
                 f.write(f"{start//1000//60//60:02}:{start//1000//60%60:02}:{start//1000%60:02},{start%1000:03} --> ")
                 f.write(f"{end//1000//60//60:02}:{end//1000//60%60:02}:{end//1000%60:02},{end%1000:03}\n")
                 with open(text_paths[i], "r", encoding="utf-8") as t:
-                    f.write(t.read())
+                    # trim last newline character and append two newlines
+                    f.write(t.read().strip())
+                    f.write("\n\n")
                 f.write("\n")
 
 
@@ -59,4 +61,5 @@ __concatenate_wav_files_with_silence(
 # ffmpeg -i "outputs/dialog.wav" -vn -ac 2 -ar 44100 -ab 256k -acodec libmp3lame -f mp3 "example.mp3"
 
 # mp4に変換する場合
-# ffmpeg -loop 1 -i "sample_mp4_back.png" -i "outputs/dialog.wav" -i outputs/dialog.srt -metadata:s:s:0 language=eng -vcodec libx264 -acodec aac -ab 160k -ac 2 -ar 48000 -pix_fmt yuv420p -shortest example.mp4
+# ffmpeg -loop 1 -i "sample_mp4_back.png" -i "outputs/dialog.wav" -vcodec libx264 -acodec aac -ab 160k -ac 2 -ar 48000 -pix_fmt yuv420p -shortest example.mp4 \
+#   && ffmpeg -i example.mp4 -i outputs/dialog.srt -c copy -c:s mov_text -metadata:s:s:0 language=eng example.sub.mp4
