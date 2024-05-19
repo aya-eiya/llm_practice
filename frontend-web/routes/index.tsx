@@ -1,7 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import { PageProps } from "$fresh/server.ts";
-import MainLayout from "../components/MainLayout.tsx";
-import data from "../data/example.ts";
+import TopLayout from "../components/TopLayout.tsx";
 
 export default function Home({ url }: PageProps) {
   return (
@@ -55,7 +54,7 @@ export default function Home({ url }: PageProps) {
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>"
         />
       </Head>
-      <MainLayout data={data} />
+      <TopLayout />
     </>
   );
 }

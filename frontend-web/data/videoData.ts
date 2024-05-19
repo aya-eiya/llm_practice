@@ -15,4 +15,10 @@ const videoData = {
       "[2024-05-19][Daily English Novels For Learners] Disco Fever: A Tale of Rhythm and Glamour",
   },
 } as const;
+
+export type VideoDate = keyof typeof videoData;
+export function isVideoDate(date: string): date is VideoDate {
+  return Object.keys(videoData).includes(date);
+}
+
 export default videoData;
