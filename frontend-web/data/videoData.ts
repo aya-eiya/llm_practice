@@ -14,6 +14,11 @@ const videoData = {
     "title":
       "[2024-05-19][Daily English Novels For Learners] Disco Fever: A Tale of Rhythm and Glamour",
   },
+  "2024-05-20": {
+    "id": "paQgRrYmRQo",
+    "title":
+      "[2024-05-20][Daily English Novels For Learners] A Night to Remember",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
