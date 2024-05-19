@@ -25,4 +25,11 @@ video_ids=$(curl -X GET \
   )
 
 echo "const videoData = $video_ids as const" > "data/videoData.ts"
-echo "export default videoData" >> "data/videoData.ts"
+echo "
+export type VideoDate = keyof typeof videoData;
+export function isVideoDate(date: string): date is VideoDate {
+  return Object.keys(videoData).includes(date);
+}
+
+export default videoData
+" >> "data/videoData.ts"

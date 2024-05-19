@@ -16,4 +16,11 @@ const videoData = {
     "title": "[2024-05-20][Daily English Novels For Learners] A Night to Remember"
   }
 } as const
+
+export type VideoDate = keyof typeof videoData;
+export function isVideoDate(date: string): date is VideoDate {
+  return Object.keys(videoData).includes(date);
+}
+
 export default videoData
+
