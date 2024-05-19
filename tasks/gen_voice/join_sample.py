@@ -38,11 +38,18 @@ def __concatenate_wav_files_with_silence(file_paths, text_paths, silence_duratio
     if len(file_paths) == len(text_paths):
         with open(output_path.replace(".wav", ".srt"), "w", encoding="utf-8") as f:
             for i, (start, end) in enumerate(zip(chapter[:-1], chapter[1:])):
-                f.write(f"{i+1}\n")
-                # hours:minutes:seconds,milliseconds (00:00:00,000) --> hours:minutes:seconds,milliseconds (00:00:00,000)
-                f.write(f"{start//1000//60//60:02}:{start//1000//60%60:02}:{start//1000%60:02},{start%1000:03} --> ")
-                f.write(f"{end//1000//60//60:02}:{end//1000//60%60:02}:{end//1000%60:02},{end%1000:03}\n")
                 with open(text_paths[i], "r", encoding="utf-8") as t:
+                    # TODO: Question の項目をまとめる
+                    # Question N. のばあいは、次の行も同じステップ（i）に追加する
+                    # EE.は A) に変更する さらに 次の行も同じステップ（i）に追加する
+                    # B. は B) に変更する さらに 次の行も同じステップ（i）に追加する
+                    # C. は C) に変更する さらに 次の行も同じステップ（i）に追加する
+                    # D. は D) に変更する さらに 次の行も同じステップ（i）に追加する
+                    # E. は E) に変更する さらに 次の行も同じステップ（i）に追加する
+                    f.write(f"{i+1}\n")
+                    # hours:minutes:seconds,milliseconds (00:00:00,000) --> hours:minutes:seconds,milliseconds (00:00:00,000)
+                    f.write(f"{start//1000//60//60:02}:{start//1000//60%60:02}:{start//1000%60:02},{start%1000:03} --> ")
+                    f.write(f"{end//1000//60//60:02}:{end//1000//60%60:02}:{end//1000%60:02},{end%1000:03}\n")
                     # trim last newline character and append two newlines
                     f.write(t.read().strip())
                     f.write("\n\n")
