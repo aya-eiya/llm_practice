@@ -183,13 +183,29 @@ export default function TopLayout() {
                   </div>
                 </section>
                 <section id="voices" className={"mb-8"}>
-                  <header className="text-center mb-12">
-                    <h2 className="text-4xl font-bold text-slate-800">
+                  <header className={"text-center mb-8"}>
+                    <h2 className={"text-4xl font-bold text-slate-800"}>
                       Introduction of the characters
                     </h2>
-                    <p className="mt-2 text-xl">
+                    <p className={"mt-2 text-xl mb-4"}>
                       The unique characters in the daily quiz have AI-generated
                       voices
+                    </p>
+                    <p className={"flex flex-row justify-center"}>
+                      <a
+                        className={"flex flex-row items-center"}
+                        href="https://youtu.be/o8BVav3ZR6g?si=gl3yUiTHhJGO1Uj3"
+                        title="check voice on youtube"
+                      >
+                        <span className={"block text-xl font-bold mr-2"}>
+                          CHECK VOICE ON
+                        </span>
+                        <img
+                          className={"w-32 block"}
+                          src="/img/YT_logo.svg"
+                          alt="youtube logo"
+                        />
+                      </a>
                     </p>
                   </header>
 
