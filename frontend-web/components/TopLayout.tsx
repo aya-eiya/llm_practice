@@ -20,22 +20,43 @@ const descriptions = {
     "Lui, a veteran educator with over 20 years of experience teaching social studies and history. known for his strictness and attention to detail, Lui instills values of honesty and hard work in his students. Despite his tough exterior, he's a trusted mentor and friend, inspiring a love of learning beyond the classroom.",
 };
 
+const YT_times = {
+  system: "0",
+  narrator: "16",
+  billy: "30",
+  meg: "44",
+  kerry: "59",
+  lui: "70",
+};
+
 const CharacterCard = (
-  { name, role, description, imgUrl }: {
+  { name, ytTime, role, description, imgUrl }: {
     name: string;
+    ytTime: string;
     role: string;
     description: string;
     imgUrl: string;
   },
 ) => (
-  <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-    <img
-      src={imgUrl}
-      alt={`${name}`}
-      className="w-32 h-32 mx-auto rounded-full mb-4"
-    />
-    <h2 className="text-2xl font-semibold mb-2">{name}</h2>
-    <h3 className="text-lg text-gray-700 mb-2">{role}</h3>
+  <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-start items-center">
+    <div className={"relative w-fit mb-4"}>
+      <a href={`https://youtu.be/o8BVav3ZR6g?t=${ytTime}`}>
+        <img
+          src={imgUrl}
+          alt={`${name}`}
+          className="w-32 h-32 mx-auto rounded-full"
+        />
+        <img
+          className={"w-10 absolute bottom-0 right-0"}
+          alt="youtube"
+          src="/img/YT_icon.svg"
+        />
+      </a>
+    </div>
+    <h3 className="text-2xl font-semibold mb-2">
+      {name}
+    </h3>
+    <h4 className="text-lg text-gray-700 mb-2">{role}</h4>
     <p className="text-gray-600">{description}</p>
   </div>
 );
@@ -214,6 +235,7 @@ export default function TopLayout() {
                     <div className={"md:col-span-2"}>
                       <CharacterCard
                         name="Host Girl"
+                        ytTime={YT_times.system}
                         role="Provides a warm welcome and overview of the quiz."
                         description={descriptions.system}
                         imgUrl="/top/System.jpg.webp"
@@ -223,6 +245,7 @@ export default function TopLayout() {
                     <div className={"md:col-span-2"}>
                       <CharacterCard
                         name="Narrator Man"
+                        ytTime={YT_times.narrator}
                         role="Reads the main text for the day."
                         description={descriptions.narrator}
                         imgUrl="/top/Narrator.jpg.webp"
@@ -234,6 +257,7 @@ export default function TopLayout() {
                   <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <CharacterCard
                       name="Billy"
+                      ytTime={YT_times.billy}
                       role="Discusses the passage, asks questions."
                       description={descriptions.billy}
                       imgUrl="/top/Billy.jpg.webp"
@@ -241,6 +265,7 @@ export default function TopLayout() {
 
                     <CharacterCard
                       name="Meg"
+                      ytTime={YT_times.meg}
                       role="Participates in the conversation, offers insights."
                       description={descriptions.meg}
                       imgUrl="/top/Meg.jpg.webp"
@@ -248,6 +273,7 @@ export default function TopLayout() {
 
                     <CharacterCard
                       name="Kerry"
+                      ytTime={YT_times.kerry}
                       role="Contributes to the conversation, shares interpretations."
                       description={descriptions.kerry}
                       imgUrl="/top/Kerry.jpg.webp"
@@ -255,6 +281,7 @@ export default function TopLayout() {
 
                     <CharacterCard
                       name="Teacher Lui"
+                      ytTime={YT_times.lui}
                       role="Guides the discussion, provides explanations."
                       description={descriptions.lui}
                       imgUrl="/top/Lui.jpg.webp"
