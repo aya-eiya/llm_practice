@@ -41,7 +41,7 @@ const CharacterCard = (
 );
 
 export default function TopLayout() {
-  const last7dates = dates.slice(0, 7);
+  const last7dates = [...dates].reverse().slice(0, 7);
   return (
     <>
       <Header />
@@ -79,21 +79,28 @@ export default function TopLayout() {
               <div className="min-h-screen p-8">
                 <section id="usage" className={"mb-16"}>
                   <header className="text-center mb-4">
-                    <h2 className="text-4xl font-bold text-slate-800 mb-4">
-                      Last 7 Date's Quiz
+                    <h2 className="text-4xl font-bold text-slate-800 mb-8">
+                      Last 7 Daily Quiz
                     </h2>
-                    <div className={"text-left"}>
-                      <ul>
+                    <div className={"flex justify-center"}>
+                      <ul
+                        className={"md:w-5/6"}
+                      >
                         {last7dates.map((date) => (
                           <li
                             key={date}
+                            className={"text-left"}
                           >
                             <a
                               href={`/pages/${date}`}
                               className="block text-xl text-slate-800 hover:underline mb-2"
                             >
                               {date}:
-                              {data[date].title}
+                              <span
+                                className={"font-bold inline-block px-2 hover:underline"}
+                              >
+                                {data[date].title}
+                              </span>
                               {isVideoDate(date) ? "🎧" : ""}
                             </a>
                           </li>
@@ -193,7 +200,7 @@ export default function TopLayout() {
                         name="Host Girl"
                         role="Provides a warm welcome and overview of the quiz."
                         description={descriptions.system}
-                        imgUrl="/top/System.jpg"
+                        imgUrl="/top/System.jpg.webp"
                       />
                     </div>
 
@@ -202,7 +209,7 @@ export default function TopLayout() {
                         name="Narrator Man"
                         role="Reads the main text for the day."
                         description={descriptions.narrator}
-                        imgUrl="/top/Narrator.jpg"
+                        imgUrl="/top/Narrator.jpg.webp"
                       />
                     </div>
                     <div className={"hidden md:block md:col-span-1"} />
@@ -213,28 +220,28 @@ export default function TopLayout() {
                       name="Billy"
                       role="Discusses the passage, asks questions."
                       description={descriptions.billy}
-                      imgUrl="/top/Billy.jpg"
+                      imgUrl="/top/Billy.jpg.webp"
                     />
 
                     <CharacterCard
                       name="Meg"
                       role="Participates in the conversation, offers insights."
                       description={descriptions.meg}
-                      imgUrl="/top/Meg.jpg"
+                      imgUrl="/top/Meg.jpg.webp"
                     />
 
                     <CharacterCard
                       name="Kerry"
                       role="Contributes to the conversation, shares interpretations."
                       description={descriptions.kerry}
-                      imgUrl="/top/Kerry.jpg"
+                      imgUrl="/top/Kerry.jpg.webp"
                     />
 
                     <CharacterCard
                       name="Teacher Lui"
                       role="Guides the discussion, provides explanations."
                       description={descriptions.lui}
-                      imgUrl="/top/Lui.jpg"
+                      imgUrl="/top/Lui.jpg.webp"
                     />
                   </div>
                 </section>
