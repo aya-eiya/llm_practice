@@ -167,7 +167,7 @@ export default function Quiz(
           <div className={"flex flex-row justify-end px-4 select-none"}>
             {aiParams.length > 0 && (
               <aside
-                className={"mr-4 print:hidden flex flex-row-reverse items-center"}
+                className={"mr-4 print:hidden md:flex md:flex-row-reverse"}
               >
                 <input
                   key={data.date}
@@ -175,27 +175,30 @@ export default function Quiz(
                   id={"aiParams"}
                   className={"hidden peer/aiParams"}
                 />
-                <>
+                <div className={"flex items-center"}>
                   <label
                     htmlFor={"aiParams"}
-                    className={"cursor-pointer"}
+                    className={"z-10 cursor-pointer"}
                     title="AI Params"
                   >
                     🤖
                   </label>
-                  <ul
-                    className={"hidden peer-checked/aiParams:flex md:text-xs px-2 flex-raw"}
-                  >
+                </div>
+                <div
+                  className={"hidden peer-checked/aiParams:block absolute bg-slate-50 border border-slate-400 p-2" +
+                    "md:bg-transparent md:border-0 md:p-0 md:relative"}
+                >
+                  <ul className={"md:flex flex-row md:text-xs"}>
                     {aiParams.map((param, idx) => (
                       <li
                         key={idx}
-                        className={"h-5 mr-1 px-2 border rounded-full"}
+                        className={"h-5 md:pb-1 md:mr-1 px-2 md:border-slate-400 md:rounded-full md:bg-slate-200"}
                       >
                         {param}
                       </li>
                     ))}
                   </ul>
-                </>
+                </div>
               </aside>
             )}
             <aside className={"mr-4 hidden md:flex print:hidden items-center"}>
