@@ -275,9 +275,49 @@ export default function Quiz(
               </p>
             </div>
           </div>
-          {audio && <Audio data={audio} />}{" "}
           <div className={"w-0 h-0"} id={playerId} />
-          <pre className={"whitespace-pre-wrap px-4"}>{data.body}</pre>
+          <div className={"md:pr-12"}>
+            {data.body.replace(/(\.+|[!?]+)/g, "$1\n").split("\n").map((
+              line,
+              index,
+            ) => (
+              <>
+                {index === 0 &&
+                  (
+                    <div
+                      className={"flex flex-col w-full sm:w-56 md:w-80 sm:ml-4 sm:mb-4 sm:float-right"}
+                    >
+                      {audio && (
+                        <div
+                          className={"rounded-t-xl w-full bg-slate-800 h-8"}
+                        />
+                      )}
+                      <div
+                        className={"w-full h-auto sm:w-56 sm:h-auto md:w-80 md:h-auto bg-slate-800 bg-cover bg-center" +
+                          (audio
+                            ? " aspect-video"
+                            : " rounded-xl aspect-[17/13]")}
+                        style={{
+                          backgroundImage:
+                            `url('/bookshelf?date=${data.date}&img=webp')`,
+                        }}
+                      >
+                      </div>
+                      <div className={"-mt-6"}>
+                        {audio && <Audio data={audio} />}
+                      </div>
+                    </div>
+                  )}
+                <p
+                  key={index}
+                  className={"mb-2 font-mono whitespace-pre-wrap"}
+                >
+                  {(index === 0 ? " " : "") +
+                    line.replaceAll(/(\s+)/g, " ")}
+                </p>
+              </>
+            ))}
+          </div>
           <p className={"notranslate px-8 text-right"}>
             (Word Count: {data["word count"]})
           </p>

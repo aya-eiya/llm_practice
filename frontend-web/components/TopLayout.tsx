@@ -223,7 +223,7 @@ export default function TopLayout() {
                         </span>
                         <img
                           className={"w-32 block"}
-                          src="/img/YT_logo.svg"
+                          src={"/img/YT_logo.svg"}
                           alt="youtube logo"
                         />
                       </a>
