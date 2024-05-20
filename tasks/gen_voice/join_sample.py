@@ -37,23 +37,40 @@ def __concatenate_wav_files_with_silence(file_paths, text_paths, silence_duratio
     # chapter と text から字幕(.srt)ファイルを作成
     if len(file_paths) == len(text_paths):
         with open(output_path.replace(".wav", ".srt"), "w", encoding="utf-8") as f:
+            merge = ""
             for i, (start, end) in enumerate(zip(chapter[:-1], chapter[1:])):
                 with open(text_paths[i], "r", encoding="utf-8") as t:
+                    line=t.read().strip()
                     # TODO: Question の項目をまとめる
+                    if merge != "":
+                        line = merge + line
+                        merge = ""
                     # Question N. のばあいは、次の行も同じステップ（i）に追加する
+                    if re.search(r"^Question \d+\.$",line):
+                        merge = line + " "
                     # EE.は A) に変更する さらに 次の行も同じステップ（i）に追加する
+                    if line in ("EE.", "EE!"):
+                        merge = line = "A) "
                     # B. は B) に変更する さらに 次の行も同じステップ（i）に追加する
+                    if line in ("B.", "B!"):
+                        merge = line = "B) "
                     # C. は C) に変更する さらに 次の行も同じステップ（i）に追加する
+                    if line in ("C.", "C!"):
+                        merge = line = "C) "
                     # D. は D) に変更する さらに 次の行も同じステップ（i）に追加する
+                    if line in ("D.", "D!"):
+                        merge = line = "D) "
                     # E. は E) に変更する さらに 次の行も同じステップ（i）に追加する
+                    if line in ("E.", "E!"):
+                        merge = line = "E) "
                     f.write(f"{i+1}\n")
                     # hours:minutes:seconds,milliseconds (00:00:00,000) --> hours:minutes:seconds,milliseconds (00:00:00,000)
                     f.write(f"{start//1000//60//60:02}:{start//1000//60%60:02}:{start//1000%60:02},{start%1000:03} --> ")
                     f.write(f"{end//1000//60//60:02}:{end//1000//60%60:02}:{end//1000%60:02},{end%1000:03}\n")
                     # trim last newline character and append two newlines
-                    f.write(t.read().strip())
+                    f.write(line)
                     f.write("\n\n")
-                f.write("\n")
+                    f.write("\n")
 
 
     print(f"結合した音声ファイルを保存しました: {output_path} ({chapter})")
