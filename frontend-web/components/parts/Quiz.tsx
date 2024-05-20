@@ -167,7 +167,7 @@ export default function Quiz(
           <div className={"flex flex-row justify-end px-4 select-none"}>
             {aiParams.length > 0 && (
               <aside
-                className={"mr-4 print:hidden flex flex-row-reverse items-center"}
+                className={"mr-4 print:hidden md:flex md:flex-row-reverse"}
               >
                 <input
                   key={data.date}
@@ -175,27 +175,30 @@ export default function Quiz(
                   id={"aiParams"}
                   className={"hidden peer/aiParams"}
                 />
-                <>
+                <div className={"flex items-center"}>
                   <label
                     htmlFor={"aiParams"}
-                    className={"cursor-pointer"}
+                    className={"z-10 cursor-pointer"}
                     title="AI Params"
                   >
                     🤖
                   </label>
-                  <ul
-                    className={"hidden peer-checked/aiParams:flex md:text-xs px-2 flex-raw"}
-                  >
+                </div>
+                <div
+                  className={"hidden peer-checked/aiParams:block absolute bg-slate-50 border border-slate-400 p-2" +
+                    "md:bg-transparent md:border-0 md:p-0 md:relative"}
+                >
+                  <ul className={"md:flex flex-row md:text-xs"}>
                     {aiParams.map((param, idx) => (
                       <li
                         key={idx}
-                        className={"h-5 mr-1 px-2 border rounded-full"}
+                        className={"h-5 md:pb-1 md:mr-1 px-2 md:border-slate-400 md:rounded-full md:bg-slate-200"}
                       >
                         {param}
                       </li>
                     ))}
                   </ul>
-                </>
+                </div>
               </aside>
             )}
             <aside className={"mr-4 hidden md:flex print:hidden items-center"}>
@@ -272,9 +275,49 @@ export default function Quiz(
               </p>
             </div>
           </div>
-          {audio && <Audio data={audio} />}{" "}
           <div className={"w-0 h-0"} id={playerId} />
-          <pre className={"whitespace-pre-wrap px-4"}>{data.body}</pre>
+          <div className={"md:pr-12"}>
+            {data.body.replace(/(\.+|[!?]+)/g, "$1\n").split("\n").map((
+              line,
+              index,
+            ) => (
+              <>
+                {index === 0 &&
+                  (
+                    <div
+                      className={"flex flex-col w-full sm:w-56 md:w-80 sm:ml-4 sm:mb-4 sm:float-right"}
+                    >
+                      {audio && (
+                        <div
+                          className={"rounded-t-xl w-full bg-slate-800 h-8"}
+                        />
+                      )}
+                      <div
+                        className={"w-full h-auto sm:w-56 sm:h-auto md:w-80 md:h-auto bg-slate-800 bg-cover bg-center" +
+                          (audio
+                            ? " aspect-video"
+                            : " rounded-xl aspect-[17/13]")}
+                        style={{
+                          backgroundImage:
+                            `url('/bookshelf?date=${data.date}&img=webp')`,
+                        }}
+                      >
+                      </div>
+                      <div className={"-mt-6"}>
+                        {audio && <Audio data={audio} />}
+                      </div>
+                    </div>
+                  )}
+                <p
+                  key={index}
+                  className={"mb-2 font-mono whitespace-pre-wrap"}
+                >
+                  {(index === 0 ? " " : "") +
+                    line.replaceAll(/(\s+)/g, " ")}
+                </p>
+              </>
+            ))}
+          </div>
           <p className={"notranslate px-8 text-right"}>
             (Word Count: {data["word count"]})
           </p>

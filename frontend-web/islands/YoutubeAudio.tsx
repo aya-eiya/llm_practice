@@ -147,9 +147,9 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
     return (
       <>
         <div
-          className={"w-full bg-slate-400 rounded-lg flex flex-col px-2 print:hidden mb-2"}
+          className={"w-full flex flex-col print:hidden"}
         >
-          <div className={"w-full"}>
+          <div className={"w-full h-6"}>
             <input
               type={"range"}
               min={0}
@@ -170,7 +170,9 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
               }}
             />
           </div>
-          <div className={"flex flex-row items-center"}>
+          <div
+            className={"flex flex-row bg-slate-800 items-center rounded-b-xl"}
+          >
             <div className={"w-16"}>
               <button
                 name={player.value && state.value === STATE.PLAYING
@@ -196,14 +198,14 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
                     >
                       <g>
                         <rect
-                          className={"stroke-slate-800 fill-slate-800 stroke-[12]"}
+                          className={"stroke-slate-100 fill-slate-100 stroke-[12]"}
                           x="100"
                           y="100"
                           width="20"
                           height="100"
                         />
                         <rect
-                          className={"stroke-slate-800 fill-slate-800 stroke-[12]"}
+                          className={"stroke-slate-100 fill-slate-100 stroke-[12]"}
                           x="180"
                           y="100"
                           width="20"
@@ -219,7 +221,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
                     >
                       <g>
                         <polygon
-                          className={"stroke-slate-800 fill-slate-800 stroke-[12]"}
+                          className={"stroke-slate-100 fill-slate-100 stroke-[12]"}
                           strokeLinejoin="round"
                           points="120,100 120,200 200,150"
                         />
@@ -257,14 +259,14 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
                       width="42"
                       height="60"
                       className={beforeMuteVolume.value == 0
-                        ? "stroke-slate-800 fill-slate-800 stroke-[12]"
-                        : "stroke-slate-100 fill-slate-100 stroke-[12]"}
+                        ? "stroke-slate-100 fill-slate-100 stroke-[12]"
+                        : "stroke-slate-600 fill-slate-600 stroke-[12]"}
                     />
                     <polygon
                       points="60,150 175,90 175,210"
                       className={beforeMuteVolume.value == 0
-                        ? "stroke-slate-800 fill-slate-800 stroke-[12]"
-                        : "stroke-slate-100 fill-slate-100 stroke-[12]"}
+                        ? "stroke-slate-100 fill-slate-100 stroke-[12]"
+                        : "stroke-slate-600 fill-slate-600 stroke-[12]"}
                     />
                   </svg>
                 </button>
@@ -285,6 +287,20 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
                   className="w-full h-2 bg-transparent border-2 rounded-lg appearance-none cursor-pointer"
                 />
               </div>
+            </div>
+
+            <div className={"bg-white ml-3 p-1 rounded"}>
+              <a
+                href={`https://www.youtube.com/watch?v=${id}`}
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
+                <img
+                  title="watch on youtube"
+                  src={"/img/YT_logo.svg"}
+                  className={"w-24 block relative"}
+                />
+              </a>
             </div>
           </div>
         </div>
