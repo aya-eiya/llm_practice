@@ -6,6 +6,7 @@ export default function forJP({ url }: PageProps) {
     <>
       <Head>
         <title>AIがサポートする毎日の英語トレーニング</title>
+        <meta name="robots" content="index, follow" />
         <meta
           name="description"
           content="AIを活用した毎日の英語短文と読解力テストで、効率的に英語力を向上させる方法をご紹介。リスニング力も強化できます。"

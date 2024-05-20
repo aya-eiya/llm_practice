@@ -149,13 +149,56 @@ export default function Quiz(
     prev?: QuizData["date"];
   },
 ) {
+  const aiParams = [
+    data.params?.models?.main
+      ? `chat-ai: ${data.params.models.main}`
+      : undefined,
+    data.params?.models?.novel
+      ? `novel-ai: ${data.params.models.novel}`
+      : undefined,
+    data.params?.theme ? `theme: ${data.params.theme}` : undefined,
+    data.params?.flavor ? `flavor: ${data.params.flavor}` : undefined,
+  ].filter((p) => !!p);
   return (
     <>
-      <section id="quiz.example">
+      <section id={"quiz"}>
         <div className={"px-4"}>
           <h2 className={"text-3xl"}>{data.title}</h2>
-          <div className={"flex flex-row justify-end px-4"}>
-            <aside className={"mr-4 hidden md:flex print:hidden"}>
+          <div className={"flex flex-row justify-end px-4 select-none"}>
+            {aiParams.length > 0 && (
+              <aside
+                className={"mr-4 print:hidden flex flex-row-reverse items-center"}
+              >
+                <input
+                  key={data.date}
+                  type="checkbox"
+                  id={"aiParams"}
+                  className={"hidden peer/aiParams"}
+                />
+                <>
+                  <label
+                    htmlFor={"aiParams"}
+                    className={"cursor-pointer"}
+                    title="AI Params"
+                  >
+                    🤖
+                  </label>
+                  <ul
+                    className={"hidden peer-checked/aiParams:flex md:text-xs px-2 flex-raw"}
+                  >
+                    {aiParams.map((param, idx) => (
+                      <li
+                        key={idx}
+                        className={"h-5 mr-1 px-2 border rounded-full"}
+                      >
+                        {param}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              </aside>
+            )}
+            <aside className={"mr-4 hidden md:flex print:hidden items-center"}>
               <div>
                 <Printer />
               </div>
@@ -167,58 +210,67 @@ export default function Quiz(
                 id={"reportProblem"}
                 className={"hidden peer/reportProblem"}
               />
-              <label htmlFor={"reportProblem"} className={"cursor-pointer"}>
-                📢
-              </label>
-              <ul
+              <div className={"flex items-center"}>
+                <label htmlFor={"reportProblem"} className={"cursor-pointer"}>
+                  📢
+                </label>
+              </div>
+              <div
                 className={"hidden peer-checked/reportProblem:block md:text-xs absolute bg-slate-50 border border-slate-400 p-2"}
               >
-                <caption className={"font-bold"}>
-                  <label htmlFor={"reportProblem"} className={"cursor-pointer"}>
-                    [x]&nbsp;&nbsp;&nbsp;Report Problem
-                  </label>
-                </caption>
-                <li className={"mt-2 mb-1"}>
-                  <a
-                    className={"underline py-1"}
-                    target={"_blank"}
-                    href={`/report?page=/pages/${data.date}&reason=page%20broken`}
-                  >
-                    Broken page
-                  </a>
-                </li>
-                <li className={"mb-1"}>
-                  <a
-                    className={"underline py-1"}
-                    target={"_blank"}
-                    href={`/report?page=/pages/${data.date}&reason=meaningless%20content`}
-                  >
-                    Meaningless Content
-                  </a>
-                </li>
-                <li className={"mb-1"}>
-                  <a
-                    className={"underline py-1"}
-                    target={"_blank"}
-                    href={`/report?page=/pages/${data.date}&reason=inappropriate%20content`}
-                  >
-                    Inappropriate Content
-                  </a>
-                </li>
-                <li className={"mb-1"}>
-                  <a
-                    className={"underline py-1"}
-                    href={`/report?page=/pages/${data.date}&reason=copyright%20violation`}
-                    target={"_blank"}
-                  >
-                    Copyright Violation
-                  </a>
-                </li>
-              </ul>
+                <label
+                  htmlFor={"reportProblem"}
+                  className={"cursor-pointer font-bold"}
+                >
+                  [x]&nbsp;&nbsp;&nbsp;Report Problem
+                </label>
+                <ul>
+                  <li className={"mt-2 mb-1"}>
+                    <a
+                      className={"underline py-1"}
+                      target={"_blank"}
+                      href={`/report?page=/pages/${data.date}&reason=page%20broken`}
+                    >
+                      Broken page
+                    </a>
+                  </li>
+                  <li className={"mb-1"}>
+                    <a
+                      className={"underline py-1"}
+                      target={"_blank"}
+                      href={`/report?page=/pages/${data.date}&reason=meaningless%20content`}
+                    >
+                      Meaningless Content
+                    </a>
+                  </li>
+                  <li className={"mb-1"}>
+                    <a
+                      className={"underline py-1"}
+                      target={"_blank"}
+                      href={`/report?page=/pages/${data.date}&reason=inappropriate%20content`}
+                    >
+                      Inappropriate Content
+                    </a>
+                  </li>
+                  <li className={"mb-1"}>
+                    <a
+                      className={"underline py-1"}
+                      href={`/report?page=/pages/${data.date}&reason=copyright%20violation`}
+                      target={"_blank"}
+                    >
+                      Copyright Violation
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </aside>
-            <p className={"notranslate text-sm text-right mb-4"}>
-              generated at {data.date}
-            </p>
+            <div className={"flex items-center"}>
+              <p
+                className={"notranslate text-sm text-right"}
+              >
+                generated at {data.date}
+              </p>
+            </div>
           </div>
           {audio && <Audio data={audio} />}{" "}
           <div className={"w-0 h-0"} id={playerId} />
