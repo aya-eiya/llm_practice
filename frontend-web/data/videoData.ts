@@ -14,6 +14,10 @@ const videoData = {
     "title":
       "[2024-05-19][Daily English Novels For Learners] Disco Fever: A Tale of Rhythm and Glamour",
   },
+  "2024-05-20": {
+    "id": "T9XPzbgvk6U",
+    "title": "[2024-05-20][Daily English Novels For Learners] Eclipse of Style",
+  },
   "2024-05-21": {
     "id": "KFUOuZiT4vg",
     "title":
