@@ -16,10 +16,10 @@ export default function Meta(
     ...(quiz?.descriptions?.keywords ?? []),
   ];
   const title = quiz?.title
-    ? `${quiz.title} - [${quiz.date}]`
+    ? `${quiz.title} - ${quiz.date}`
     : "Daily AI-Generated English Novels & Learning Test Questions";
   const description = quiz
-    ? `Daily Novel at ${quiz.date}, "${quiz.title}". let's read and answer the quiz!`
+    ? `Daily English Novel & Quiz for ESL Learners. Today's episode is "${quiz.title}". Let's try the quiz!`
     : "Daily AI-generated English novels and learning-focused test questions to improve English proficiency.";
   return (
     <>
