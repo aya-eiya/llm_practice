@@ -1,3 +1,4 @@
+import { isVideoDate } from "../../data/videoData.ts";
 import { type AudioData } from "../../domains/audio.ts";
 import { type QuizData } from "../../domains/quiz.ts";
 import { playerId } from "../../infras/audio/youtube.ts";
@@ -163,7 +164,10 @@ export default function Quiz(
     <>
       <section id={"quiz"}>
         <div className={"px-4"}>
-          <h2 className={"text-3xl"}>{data.title}</h2>
+          <h2 className={"text-3xl"}>
+            {data.title}
+            {isVideoDate(data.date) ? "🎧" : ""}
+          </h2>
           <div className={"flex flex-row justify-end px-4 select-none"}>
             {aiParams.length > 0 && (
               <aside
