@@ -116,13 +116,13 @@ export default function TopLayout() {
                               href={`/pages/${date}`}
                               className="block text-xl text-slate-800 hover:underline mb-2"
                             >
-                              {date}:
+                              {date}:{" "}
                               <span
-                                className={"font-bold inline-block px-2 hover:underline"}
+                                className={"font-bold"}
                               >
                                 {data[date].title}
                               </span>
-                              {isVideoDate(date) ? "🎧" : ""}
+                              {isVideoDate(date) ? " 🎧" : ""}
                             </a>
                           </li>
                         ))}
