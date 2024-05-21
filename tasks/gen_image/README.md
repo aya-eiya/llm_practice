@@ -8,3 +8,9 @@
 ### プロンプト
 
 - BookShelf.md 
+
+## web で使う フォントのサブセット生成
+
+```
+pip fonttools
+```

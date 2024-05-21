@@ -41,7 +41,6 @@ def __concatenate_wav_files_with_silence(file_paths, text_paths, silence_duratio
             for i, (start, end) in enumerate(zip(chapter[:-1], chapter[1:])):
                 with open(text_paths[i], "r", encoding="utf-8") as t:
                     line=t.read().strip()
-                    # TODO: Question の項目をまとめる
                     if merge != "":
                         line = merge + line
                         merge = ""

@@ -286,7 +286,7 @@ make_json() {
         \"models\": .[3].models
       }
     }" \
-    $tmp_json_novel $tmp_json_conversation $tmp_json_quiz $tmp_json_params
+    "$tmp_json_novel" "$tmp_json_conversation" "$tmp_json_quiz" "$tmp_json_params"
 }
 
 make_markdown() {
@@ -315,7 +315,7 @@ make_markdown() {
       + \"  <summary>Answer</summary>\n\" \
       + ([.value.answer + 65] | implode) + \") \" + .value.options[.value.answer] + \"\n\" \
       + \"</details>\n\" \
-    ) | join(\"\n\n\"))" $OUTPUTS_DIR/${fulldate}.json
+    ) | join(\"\n\n\"))" "$OUTPUTS_DIR/${fulldate}.json"
 }
 
 
