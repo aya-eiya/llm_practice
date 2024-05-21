@@ -51,7 +51,7 @@ export default function Meta(
       <meta property="og:type" content="website" />
       <meta
         property="og:image"
-        content={`${origin}/og/study_group.jpg`}
+        content={`${origin}/bookshelf?date=${quiz?.date ?? ""}&img=jpg`}
       />
       <meta name="twitter:card" content="summary_large_image" />
       <meta
@@ -64,7 +64,7 @@ export default function Meta(
       />
       <meta
         name="twitter:image"
-        content={`${origin}/og/study_group.jpg`}
+        content={`${origin}/bookshelf?date=${quiz?.date ?? ""}&img=jpg`}
       />
       <link
         rel="icon"
