@@ -140,17 +140,12 @@ Book-Shelf
     Vintage photography, couple in historical attire, timeless moment, sepia tones, elegant details, romantic atmosphere, nostalgic mood, detailed setting
     ```
 
-29. **Design / Magical Realism**
-    ```
-    Real-world design elements, magical realism, surreal imaginative details, colorful scene, whimsical atmosphere, blending reality and fantasy, vibrant colors
-    ```
-
-30. **Technology / Horror**
+29. **Technology / Horror**
     ```
     Advanced technology, dark eerie environment, sinister tech devices, lurking danger, dark tones, chilling atmosphere, high-tech elements, creepy scene
     ```
 
-31. **Music / Horror**
+30. **Music / Horror**
     ```
     Dark abandoned concert hall, ghostly figures, eerie instruments, shadowy tones, ominous atmosphere, haunting scene, dark colors, creepy setting
     ```

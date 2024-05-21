@@ -47,8 +47,8 @@ def __concatenate_wav_files_with_silence(file_paths, text_paths, silence_duratio
                     # Question N. のばあいは、次の行も同じステップ（i）に追加する
                     if re.search(r"^Question \d+\.$",line):
                         merge = line + " "
-                    # EE.は A) に変更する さらに 次の行も同じステップ（i）に追加する
-                    if line in ("EE.", "EE!"):
+                    # EY.は A) に変更する さらに 次の行も同じステップ（i）に追加する
+                    if line in ("EY.", "EY!"):
                         merge = line = "A) "
                     # B. は B) に変更する さらに 次の行も同じステップ（i）に追加する
                     if line in ("B.", "B!"):

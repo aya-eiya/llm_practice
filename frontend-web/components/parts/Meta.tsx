@@ -1,4 +1,5 @@
 import { PageProps } from "$fresh/server.ts";
+import example from "../../data/example.ts";
 import { QuizData } from "../../domains/quiz.ts";
 
 export default function Meta(
@@ -51,7 +52,9 @@ export default function Meta(
       <meta property="og:type" content="website" />
       <meta
         property="og:image"
-        content={`${origin}/bookshelf?date=${quiz?.date ?? ""}&img=jpg`}
+        content={`${origin}/bookshelf?date=${
+          quiz?.date ?? example.date
+        }&img=jpg`}
       />
       <meta name="twitter:card" content="summary_large_image" />
       <meta
@@ -64,7 +67,9 @@ export default function Meta(
       />
       <meta
         name="twitter:image"
-        content={`${origin}/bookshelf?date=${quiz?.date ?? ""}&img=jpg`}
+        content={`${origin}/bookshelf?date=${
+          quiz?.date ?? example.date
+        }&img=jpg`}
       />
       <link
         rel="icon"
