@@ -17,14 +17,14 @@ export default function SideNavi() {
                 className={"mt-2 marker:content-['📗'] hover:marker:content-['📖']"}
               >
                 <a
-                  className={"hover:underline inline-block ml-1 align-top"}
+                  className={"hover:underline block ml-1 align-top"}
                   href={`/pages/${date}`}
                 >
-                  {date}
-                  <strong class={"inline-block ml-2 hover:underline"}>
+                  {date}{" "}
+                  <span class={"font-bold"}>
                     {dailyData[date].title}
-                  </strong>
-                  {isVideoDate(date) ? "🎧" : ""}
+                  </span>
+                  {isVideoDate(date) ? " 🎧" : ""}
                 </a>
               </li>
             );
