@@ -21,7 +21,7 @@ export default function SideNavi() {
                   href={`/pages/${date}`}
                 >
                   {date}
-                  <strong class={"inline-block ml-2"}>
+                  <strong class={"inline-block ml-2 hover:underline"}>
                     {dailyData[date].title}
                   </strong>
                   {isVideoDate(date) ? "🎧" : ""}
