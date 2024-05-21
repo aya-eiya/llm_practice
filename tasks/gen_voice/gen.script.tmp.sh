@@ -12,11 +12,11 @@ jq '.quiz | to_entries | map([
   { "System": ("Question " + (.key + 1|tostring) + ".") },
   ( .value | { "System": .question } ),
   ( .value.options | to_entries | map([
-    { "System": ([.key+65]|implode|.+"."|sub("A";"EE")) },
+    { "System": ([.key+65]|implode|.+"."|sub("A";"EY")) },
     { "System": .value }
   ])),
   { "System": "The answer is." },
-  { "System": ([.value.answer+65]|implode|.+"!"|sub("A";"EE")) },
+  { "System": ([.value.answer+65]|implode|.+"!"|sub("A";"EY")) },
   { "System": .value.options[.value.answer] }
 ]) | flatten' "${inputfile}" > /tmp/gen_voice_quiz.json
 
