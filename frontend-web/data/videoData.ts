@@ -23,6 +23,11 @@ const videoData = {
     "title":
       "[2024-05-21][Daily English Novels For Learners] A Night to Remember",
   },
+  "2024-05-22": {
+    "id": "rwzIQdKS9bM",
+    "title":
+      "[2024-05-22][Daily English Novels For Learners] Starry Night Over the Rhone Steampunk",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;

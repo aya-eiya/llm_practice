@@ -8,7 +8,7 @@ API="https://www.googleapis.com/youtube/v3"
 PLAY_LIST_ID="PLe8rBiAN890Y9055UfPQhNWFD_A8dr9Ro"
 
 video_ids=$(curl -X GET \
-  "${API}/playlistItems?key=${API_KEY}&part=snippet&playlistId=${PLAY_LIST_ID}" 2>/dev/null \
+  "${API}/playlistItems?key=${API_KEY}&part=snippet&maxResults=31&playlistId=${PLAY_LIST_ID}" 2>/dev/null \
   | jq '
     .items
     | map(

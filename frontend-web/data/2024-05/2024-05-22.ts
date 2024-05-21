@@ -1,117 +1,113 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "Battle of Philippi",
+    "event": "Starry Night Over the Rhone",
     "details":
-      "The Battle of Philippi was fought on May 22, 42 BC, during Caesar's Civil War between Julius Caesar and his assassins Brutus and Cassius.",
+      "On May 22nd, 1888, Vincent van Gogh painted 'Starry Night Over the Rhone', a post-impressionist masterpiece that showcased his unique style and innovative use of color.",
   },
   "date": "2024-05-22",
-  "title": "The Battle of Philippi",
+  "title": "Starry Night Over the Rhone Steampunk",
   "body":
-    "In the year 42 BC, a tumultuous civil war raged between Julius Caesar and his ruthless assassins Brutus and Cassius. The tension reached a boiling point on May 22nd when the two armies met at Philippi, nestled in the heart of Macedonia.The battle was fierce, with both sides suffering heavy losses. But it was Caesar's relentless tactics and superior numbers that ultimately turned the tide of the war. Despite their valiant efforts, Brutus and Cassius were no match for Caesar's strategic prowess.As the dust settled on Philippi's fields, a weary silence fell over the battlefield. The Roman legions had emerged victorious, but at what cost? Thousands of lives were lost, including those of the two men who would eventually be considered traitors to Rome.Caesar, now in full control of Rome, vowed that his victory would not go unnoticed. His enemies, however, had other plans. Vengeful and determined, they plotted their next move, vowing to bring Caesar down once and for all. The war was far from over.",
-  "word count": 167,
+    "In the quiet of the night, under a dark and cloudy sky, Vincent van Gogh sat on his painting table, surrounded by the tools of his trade. His oil lamp cast a warm glow over the scene, illuminating the canvas before him. He dipped his brush into a palette filled with colors - greens, blues, yellows - each one swirling together to create a masterpiece.As he worked, he thought about the world around him - the stars twinkling above, the river flowing gently below, and the people living their lives in the city. Each element seemed to be telling a story, just like his own.And then it happened - the moment of creation when all the elements came together. A burst of light filled the canvas, illuminating the night sky with stars that twinkled like diamonds against the dark backdrop. The river below seemed to mirror this celestial spectacle, its surface shimmering under the starlight.In a flash, he had created something truly unique - 'Starry Night Over the Rhone', a post-impressionist masterpiece that would change the course of art history. It was more than just a painting; it was a piece of time captured within four corners.",
+  "word count": 197,
   "dialog": [
     {
       "Billy":
-        "I loved how the novel described the battle at Philippi in such detail! I felt like I was right there with Caesar's army.",
+        "I loved how Vincent van Gogh's painting came alive in my imagination. The way he captured the stars and the river was like nothing I've ever seen before.",
     },
     {
       "Kerry":
-        "Yeah, me too! But what really stood out to me was how Brutus and Cassius were portrayed. They seemed so... human.",
+        "Totally agree, Billy! And have you noticed how his struggles with mental health are woven throughout the novel? It's like he's sharing a piece of himself with us.",
     },
     {
       "Meg":
-        "Exactly! The novel didn't make them out to be one-dimensional villains. It showed their motivations and flaws, which made the story even more compelling.",
+        "Oh, yes! The way Vincent's emotions poured onto the canvas was so moving. I felt like I was right there beside him as he created 'Starry Night Over the Rhone'.",
     },
     {
       "Lui":
-        "Well said, Meg. I think that's what makes history so fascinating - getting to understand the people behind the events.",
-    },
-    {
-      "Billy":
-        "Absolutely! And I loved how the novel wove together historical facts with fictional characters. It made the story feel so much more real.",
+        "As an educator, I'm always looking for ways to make history come alive for my students. This novel did just that. The way it tied Vincent's art to his life experiences was fascinating.",
     },
     {
       "Kerry":
-        "Definitely. I was on the edge of my seat during the battle scenes. Did anyone else get a little choked up when Caesar's army emerged victorious?",
+        "I know what you mean, Lui! It made me appreciate how art can transcend time and cultures. What do you think about the symbolism in the painting?",
+    },
+    {
+      "Billy":
+        "I think it's amazing how the stars represent hope and guidance for Vincent during those tough times. And the river... it's like the flow of life, carrying us forward.",
     },
     {
       "Meg":
-        "Oh, yeah! I felt like I was right there with them, celebrating their victory. But what really got me was thinking about all the people who died in that war.",
+        "That's so deep! I loved how the novel explored the intersection of art and reality. It made me realize that our own stories are woven into the fabric of history too.",
     },
     {
       "Lui":
-        "Yes, war is always a tragic reminder of human sacrifice. But it's also important to remember the strategic decisions made by leaders like Caesar.",
-    },
-    {
-      "Billy":
-        "Exactly! And I think that's what makes this novel so great - it shows how history can be both fascinating and heartbreaking at the same time.",
-    },
-    {
-      "Kerry":
-        "Totally agree, Billy. Okay, who wants to start a discussion on whether Caesar was a good or bad leader?",
+        "Well said, Meg. As teachers, we know that every student has a unique story to tell. This novel reminds us to listen to those stories and find the beauty in them.",
     },
   ],
   "quiz": [
     {
-      "question": "What was the outcome of the battle at Philippi?",
+      "question":
+        "What was Vincent van Gogh doing when he created 'Starry Night Over the Rhone'?",
       "options": [
-        "Caesar's army lost",
-        "Brutus and Cassius' army won",
-        "Caesar's army emerged victorious",
-        "The battle ended in a draw",
-        "The war continued",
+        "Painting a self-portrait",
+        "Writing letters to his friends",
+        "Creating a masterpiece under the night sky",
+        "Designing a new painting style",
+        "Teaching art classes",
       ],
       "answer": 2,
     },
     {
-      "question": "How were Brutus and Cassius portrayed in the novel?",
+      "question":
+        "What was the significance of the stars in Vincent van Gogh's painting?",
       "options": [
-        "As one-dimensional villains",
-        "As heroes of the Roman legions",
-        "As human beings with motivations and flaws",
-        "As mythical characters",
-        "As ancient historians",
+        "They represented his struggles with mental health",
+        "They symbolized hope and guidance for him",
+        "They were just a random addition to the painting",
+        "They had no meaning whatsoever",
+        "They represented the beauty of nature",
       ],
-      "answer": 2,
+      "answer": 1,
     },
     {
-      "question": "What did the novel do to make the story more compelling?",
+      "question":
+        "What did Billy find most impressive about Vincent van Gogh's painting?",
       "options": [
-        "It added fictional characters",
-        "It removed historical facts",
-        "It showed the motivations and flaws of Brutus and Cassius",
-        "It only focused on Caesar's side of the war",
-        "It used ancient historians' accounts",
+        "The way it captured the city atmosphere",
+        "The unique blend of colors used",
+        "The stars twinkling like diamonds against the dark backdrop",
+        "The river flowing gently below",
+        "The way it told a story",
       ],
-      "answer": 2,
+      "answer": 3,
     },
     {
-      "question": "What was one of the key takeaways from the novel for Meg?",
+      "question": "What did Lui appreciate most about the novel?",
       "options": [
-        "The importance of strategic decisions in war",
-        "The futility of war",
-        "The tragic reminder of human sacrifice",
-        "The power of fiction to make history come alive",
-        "The inevitability of Caesar's victory",
+        "How it tied Vincent's art to his life experiences",
+        "The way it explored the intersection of art and reality",
+        "The symbolism in the painting",
+        "The way it captured the quiet of the night",
+        "The emotional impact on the readers",
       ],
-      "answer": 2,
+      "answer": 0,
     },
     {
-      "question": "What did the novel show about Caesar?",
+      "question":
+        "What did Meg find most moving about Vincent van Gogh's painting?",
       "options": [
-        "His ruthlessness in battle",
-        "His cowardice on the battlefield",
-        "His strategic prowess and superior numbers",
-        "His inability to make decisions",
-        "His lack of compassion for his enemies",
+        "The way his emotions poured onto the canvas",
+        "The colors used in the painting",
+        "The story it told",
+        "The way it captured the flow of life",
+        "The beauty of nature",
       ],
-      "answer": 2,
+      "answer": 0,
     },
   ],
   "params": {
-    "theme": "ancient",
-    "flavor": "fantasy",
+    "theme": "Art",
+    "flavor": "Steampunk",
     "models": {
       "main": "llama3",
       "novel": "llava-llama3",
