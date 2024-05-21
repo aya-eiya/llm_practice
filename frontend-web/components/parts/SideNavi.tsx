@@ -2,6 +2,7 @@ import { useSignal } from "@preact/signals";
 import dailyData, { dates } from "../../data/index.ts";
 import prs from "../../pr/index.ts";
 import { LazyLoadOGP } from "../../islands/LazyLoadOGP.tsx";
+import { isVideoDate } from "../../data/videoData.ts";
 
 export default function SideNavi() {
   const ads = useSignal(prs);
@@ -23,6 +24,7 @@ export default function SideNavi() {
                   <strong class={"inline-block ml-2"}>
                     {dailyData[date].title}
                   </strong>
+                  {isVideoDate(date) ? "🎧" : ""}
                 </a>
               </li>
             );
