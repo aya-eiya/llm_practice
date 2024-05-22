@@ -56,8 +56,8 @@ for index, line in enumerate(texts):
     speaker, text = list(line.items())[0]
     source_se = torch.load(f"{SPEAKER}/en-us.pth", map_location=DEVICE)
     model.tts_to_file(text, speaker_ids[speaker], src_path, speed=SPEED)
-    save_path = f"{OUTPUT_DIR}/{str(index).zfill(2)}_{speaker}.wav"
-    text_path = f"{OUTPUT_DIR}/{str(index).zfill(2)}_{speaker}.txt"
+    save_path = f"{OUTPUT_DIR}/{str(index).zfill(3)}_{speaker}.wav"
+    text_path = f"{OUTPUT_DIR}/{str(index).zfill(3)}_{speaker}.txt"
 
     # Run the tone color converter
     print(f"create: {save_path}")

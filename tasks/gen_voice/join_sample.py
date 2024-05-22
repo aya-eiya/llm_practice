@@ -76,6 +76,7 @@ def __concatenate_wav_files_with_silence(file_paths, text_paths, silence_duratio
 
 
 wav,text = __get_dialog_files("outputs")
+print(len(wav),len(text))
 __concatenate_wav_files_with_silence(
     wav, text, silence_duration_ms=300, output_path="outputs/dialog.wav"
 )
