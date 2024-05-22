@@ -5,3 +5,4 @@ outputs/*
 *.bk
 *.tmp.sh
 .env
+*.tmp.prompt
