@@ -35,7 +35,7 @@
     "preview": "deno task gen:data; deno task check && deno run -A main.ts",
     "start": "deno task gen:data; deno run -A --watch=static/,routes/ dev.ts",
     "update": "deno run -A -r https://fresh.deno.dev/update .",
-    "gen:data": "./scripts/generate_data.sh",
-    "gen:voice_list": "./scripts/generate_voice_list.sh"
+    "gen:data": "./scripts/generate_data.sh && deno fmt",
+    "gen:voice_list": "./scripts/generate_voice_list.sh && deno fmt"
   }
 }

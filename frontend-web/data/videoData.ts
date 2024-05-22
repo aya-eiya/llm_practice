@@ -28,6 +28,11 @@ const videoData = {
     "title":
       "[2024-05-22][Daily English Novels For Learners] Starry Night Over the Rhone Steampunk",
   },
+  "2024-05-23": {
+    "id": "ZAeeQmmQ91c",
+    "title":
+      "[2024-05-23][Daily English Novels For Learners] The Defenestration of Prague",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
