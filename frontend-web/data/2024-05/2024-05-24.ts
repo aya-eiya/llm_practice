@@ -1,139 +1,143 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "Premiere of Star Wars",
+    "event": "Dedication of the Flatiron Building",
     "details":
-      "The first film in the Star Wars franchise, later subtitled Episode IV: A New Hope, was released on May 24th, 1977.",
+      "The Flatiron Building, one of the first skyscrapers in New York City, was dedicated on May 24, 1902. The triangular-shaped building was designed by architect Daniel Burnham and is a landmark of the city's Flatiron District.",
   },
   "date": "2024-05-24",
-  "title": "Beyond the Stars",
+  "title": "The Flatiron Dimension",
   "body":
-    "In a world where the once vibrant cityscapes now lay in ruin, remnants of a society that once thrived are scattered throughout the landscape. The great Star Wars franchise, once the pinnacle of intergalactic entertainment, is now a distant memory for those who survive on the harsh desert planet.In this post-apocalyptic world, a young scavenger named Jax discovers an old holoprojector in an abandoned dome. To his surprise, it contains the original Star Wars film - Episode IV: A New Hope.As Jax watches the film on his makeshift projector, he is transported to a world of adventure, heroes, and villains. He becomes obsessed with recreating the epic battles and daring escapes depicted in the movie. With the help of his friends, Jax sets out on a quest to find the resources needed to repair the holoprojector and bring back the Star Wars franchise.Along the way, they face countless obstacles, including hostile mutants and treacherous desert storms. But as they get closer to their goal, they begin to realize that restoring the franchise is only the beginning of a larger mission - to restore hope and order to a world on the brink of collapse.",
-  "word count": 194,
+    "In the heart of the bustling metropolis, where skyscrapers pierce the heavens, there stood the Flatiron Building. But beneath its iconic facade lay a hidden portal, a gateway to a realm of cosmic wonders.  One fateful night, a group of daring explorers stumbled upon the secret, their hearts pounding with anticipation. As they stepped through the portal, they were transported to a dimension beyond comprehension. Floating islands dotted the iridescent sky, and radiant energies danced through the void.  They encountered enigmatic beings from distant galaxies, creatures of light and shadow, and witnessed the birth and death of stars. Time seemed to warp and fold upon itself as they navigated through this ethereal realm.  But their journey was not without peril. Dark forces lurked in the depths, seeking to devour the explorers' souls. With courage and ingenuity, they faced these cosmic threats, their bond unyielding.  In the end, they emerged from the Flatiron Dimension forever changed, carrying the secrets and wonders of that extraordinary realm within their hearts.",
+  "word count": 167,
   "dialog": [
     {
-      "Billy":
-        "I loved how the story took me on a journey to a post-apocalyptic world where people are fighting to restore hope and order. It was so inspiring!",
+      "Meg":
+        "Wow! I've never read anything like this before. It's like a blend of 'Doctor Who' and 'The Hitchhiker's Guide to the Galaxy'.",
     },
     {
-      "Meg":
-        "I completely agree, Billy! The way Jax's obsession with Star Wars helped bring people together and create a sense of community really resonated with me.",
+      "Billy":
+        "I know, right? I loved the part where they encountered the enigmatic beings from distant galaxies. It was like something out of 'Star Trek'.",
     },
     {
       "Kerry":
-        "Yeah, but what really got me pumped up was the action scenes! I loved how Jax and his friends used their skills to overcome obstacles and defeat enemies.",
+        "Yeah, but I wish there was more action. I mean, it was cool exploring the Flatiron Dimension, but I wanted to see the explorers really battling some cosmic threats.",
     },
     {
       "Lui":
-        "I think what struck me most was the way the novel explored the importance of preserving our cultural heritage. The Star Wars franchise may seem trivial to some, but it represents a connection to our collective past.",
-    },
-    {
-      "Billy":
-        "That's such an important point, Lui! I loved how the story wove together themes of nostalgia, community, and resilience.",
+        "Well, you have to remember, Kerry, that this is a work of fiction. The author is not trying to write a war story. They're trying to create a sense of wonder and exploration.",
     },
     {
       "Meg":
-        "And can we talk about Jax's character development? He starts off as this scrappy survivor but gradually becomes a leader who inspires others to work towards a common goal.",
+        "I agree with Mr. Lui. I think the author did a great job of capturing the sense of awe and mystery that comes with exploring the unknown.",
+    },
+    {
+      "Billy":
+        "Yeah, it's like when you're looking up at the stars at night. You can't help but wonder what's out there, and what kind of amazing things are waiting to be discovered.",
     },
     {
       "Kerry":
-        "Totally! And I loved how the novel didn't shy away from exploring the darker aspects of their world. It added depth and complexity to the story.",
+        "I guess you're right. It's just that I'm always up for a good adventure, and this book didn't quite scratch that itch for me.",
     },
     {
       "Lui":
-        "I appreciated how the author balanced action, adventure, and character growth with thought-provoking themes about hope, order, and cultural heritage. It's a true masterpiece!",
-    },
-    {
-      "Billy":
-        "I'm so glad we all read this together! It was amazing to see our perspectives intersect and overlap.",
-    },
-    {
-      "Meg":
-        "Me too, Billy! Let's do it again sometime and explore more books together.",
+        "That's okay, Kerry. Not every book is going to be to your taste. But I'm glad you gave it a try. And who knows, maybe one day you'll write your own adventure story.",
     },
   ],
   "quiz": [
     {
-      "question": "What is the main plot of the story?",
+      "question": "What is the setting of the story?",
       "options": [
-        "A group of friends try to restore a Star Wars franchise",
-        "A young scavenger named Jax finds an old holoprojector",
-        "The world is destroyed by a massive storm",
-        "Jax and his friends fight against hostile mutants",
-        "None of the above",
-      ],
-      "answer": 1,
-    },
-    {
-      "question": "What did Billy, Meg, Kerry, and Lui think about the story?",
-      "options": [
-        "They thought it was too boring",
-        "They loved how it took them on a journey to a post-apocalyptic world",
-        "They didn't care about the story",
-        "They wanted more action scenes",
-        "None of the above",
-      ],
-      "answer": 1,
-    },
-    {
-      "question": "What did Jax start as and become throughout the novel?",
-      "options": [
-        "A leader who inspires others to work towards a common goal, then a scrappy survivor",
-        "A scrappy survivor, then a leader who inspires others",
-        "A hero, then a villain",
-        "A villain, then a hero",
-        "None of the above",
+        "A bustling metropolis",
+        "A hidden portal",
+        "A distant galaxy",
+        "A floating island",
+        "A dark dimension",
       ],
       "answer": 0,
     },
     {
-      "question": "What theme was emphasized in the novel?",
+      "question": "What do the explorers encounter in the Flatiron Dimension?",
       "options": [
-        "The importance of preserving cultural heritage",
-        "The power of friendship and community",
-        "The danger of relying on nostalgia",
-        "The struggle to restore hope and order",
+        "Enigmatic beings",
+        "Cosmic threats",
+        "Birth and death of stars",
+        "All of the above",
         "None of the above",
       ],
-      "answer": 0,
+      "answer": 3,
     },
     {
-      "question":
-        "What was the main obstacle Jax and his friends faced in their quest?",
+      "question": "What do Meg and Billy agree on about the story?",
       "options": [
-        "Hostile mutants and treacherous desert storms",
-        "Lack of resources and equipment",
-        "Betrayal from within their group",
-        "The destruction of their home planet",
-        "None of the above",
+        "It's a blend of 'Doctor Who' and 'The Hitchhiker's Guide to the Galaxy'.",
+        "There should be more action.",
+        "It captures the sense of awe and mystery.",
+        "It's not to Kerry's taste.",
+        "It's not well-written.",
+      ],
+      "answer": 2,
+    },
+    {
+      "question": "Why doesn't Kerry like the story?",
+      "options": [
+        "It's too boring.",
+        "It's too confusing.",
+        "It doesn't have enough action.",
+        "It's too predictable.",
+        "It's too long.",
+      ],
+      "answer": 2,
+    },
+    {
+      "question": "What does Lui suggest to Kerry?",
+      "options": [
+        "To write his own adventure story.",
+        "To try reading a different book.",
+        "To give the story another chance.",
+        "To watch a movie instead.",
+        "To play a video game.",
       ],
       "answer": 0,
     },
   ],
+  "params": {
+    "theme": "Architecture",
+    "flavor": "Science Fiction",
+    "models": {
+      "main": "gemini",
+      "novel": "gemini",
+    },
+  },
   "descriptions": {
     "grammar": {
       "patterns": [
         {
           "pattern": "S + V",
           "explanation":
-            "The subject is followed by a verb, describing an action or state.",
+            "Contains a subject and a verb, but no object or complement.",
           "usage": [
-            "In a world where...",
-            "The great Star Wars franchise...",
+            "In the heart of the bustling metropolis, where skyscrapers pierce the heavens, there stood the Flatiron Building.",
+            "But beneath its iconic facade lay a hidden portal, a gateway to a realm of cosmic wonders.",
+            "Time seemed to warp and fold upon itself as they navigated through this ethereal realm.",
+            "I've never read anything like this before.",
           ],
           "words": [
             {
               "S": [
-                "world",
-                "cityscapes",
-                "Star Wars franchise",
+                "skyscrapers",
+                "portal",
+                "Time",
+                "I",
               ],
             },
             {
               "V": [
-                "lay in ruin",
-                "thrive",
-                "survive",
+                "stood",
+                "lay",
+                "seemed to warp and fold",
+                "navigated",
+                "read",
               ],
             },
           ],
@@ -141,28 +145,37 @@ const data: QuizData = {
         {
           "pattern": "S + V + C",
           "explanation":
-            "The subject is followed by a verb and a complement, describing an action or state with additional details.",
+            "Contains a subject, a verb, and a complement, but no object.",
           "usage": [
-            "As Jax watches...",
-            "With the help of...",
+            "One fateful night, a group of daring explorers stumbled upon the secret, their hearts pounding with anticipation.",
+            "Floating islands dotted the iridescent sky, and radiant energies danced through the void.",
+            "Dark forces lurked in the depths, seeking to devour the explorers' souls.",
+            "It's like a blend of 'Doctor Who' and 'The Hitchhiker's Guide to the Galaxy'.",
           ],
           "words": [
             {
               "S": [
-                "Jax",
-                "Star Wars franchise",
+                "explorers",
+                "islands",
+                "forces",
+                "It",
               ],
             },
             {
               "V": [
-                "watches",
-                "help",
+                "stumbled",
+                "dotted",
+                "danced",
+                "lurked",
+                "is",
               ],
             },
             {
               "C": [
-                "the film on his makeshift projector",
-                "find the resources needed",
+                "with anticipation",
+                "through the void",
+                "in the depths",
+                "a blend of 'Doctor Who' and 'The Hitchhiker's Guide to the Galaxy'",
               ],
             },
           ],
@@ -170,92 +183,102 @@ const data: QuizData = {
         {
           "pattern": "S + V + O",
           "explanation":
-            "The subject is followed by a verb and an object, describing an action or state with an affected entity.",
+            "Contains a subject, a verb, and an object, but no complement.",
           "usage": [
-            "He becomes obsessed...",
-            "I loved how...",
+            "They encountered enigmatic beings from distant galaxies, creatures of light and shadow, and witnessed the birth and death of stars.",
+            "With courage and ingenuity, they faced these cosmic threats, their bond unyielding.",
+            "In the end, they emerged from the Flatiron Dimension forever changed, carrying the secrets and wonders of that extraordinary realm within their hearts.",
+            "I loved the part where they encountered the enigmatic beings from distant galaxies.",
           ],
           "words": [
             {
               "S": [
-                "Jax",
+                "They",
+                "They",
+                "They",
                 "I",
               ],
             },
             {
               "V": [
-                "becomes obsessed",
+                "encountered",
+                "faced",
+                "emerged",
+                "carrying",
                 "loved",
               ],
             },
             {
               "O": [
-                "recreating the epic battles",
-                "restoring hope and order",
+                "enigmatic beings from distant galaxies, creatures of light and shadow, and witnessed the birth and death of stars",
+                "these cosmic threats",
+                "the secrets and wonders of that extraordinary realm within their hearts",
+                "the part where they encountered the enigmatic beings from distant galaxies",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O + O",
-          "explanation":
-            "The subject is followed by a verb, two objects, describing an action or state with multiple affected entities.",
-          "usage": [
-            "With the help of...",
-            "But as they get...",
-          ],
-          "words": [
-            {
-              "S": [
-                "Jax",
-                "they",
-              ],
-            },
-            {
-              "V": [
-                "help",
-                "get",
-              ],
-            },
-            {
-              "O": [
-                "his friends",
-                "closer to their goal",
-              ],
-            },
-          ],
+          "explanation": "Contains a subject, a verb, and two objects.",
+          "usage": [],
+          "words": [],
         },
         {
           "pattern": "S + V + O + C",
           "explanation":
-            "The subject is followed by a verb, an object, and a complement, describing an action or state with additional details.",
+            "Contains a subject, a verb, an object, and a complement.",
           "usage": [
-            "Along the way...",
-            "But as they get...",
+            "Well, you have to remember, Kerry, that this is a work of fiction.",
+            "The author is not trying to write a war story.",
+            "They're trying to create a sense of wonder and exploration.",
+            "I agree with Mr.",
+            "I think the author did a great job of capturing the sense of awe and mystery that comes with exploring the unknown.",
+            "Yeah, it's like when you're looking up at the stars at night.",
+            "You can't help but wonder what's out there, and what kind of amazing things are waiting to be discovered.",
           ],
           "words": [
             {
               "S": [
-                "Jax",
-                "they",
+                "you",
+                "Kerry",
+                "the author",
+                "They",
+                "I",
+                "I",
+                "you",
               ],
             },
             {
               "V": [
-                "sets out",
-                "get",
+                "have to remember",
+                "is not trying to write",
+                "are trying to create",
+                "agree",
+                "think",
+                "did a great job of capturing",
+                "can't help but wonder",
               ],
             },
             {
               "O": [
-                "on a quest",
-                "closer to their goal",
+                "this is a work of fiction",
+                "a war story",
+                "a sense of wonder and exploration",
+                "Mr.",
+                "the sense of awe and mystery that comes with exploring the unknown",
+                "what's out there",
+                "what kind of amazing things are waiting to be discovered",
               ],
             },
             {
               "C": [
-                "to find the resources needed",
-                "to restore hope and order",
+                "that this is a work of fiction",
+                "you have to remember",
+                "Kerry",
+                "with Mr",
+                "at night",
+                "and what kind of amazing things are waiting to be discovered",
               ],
             },
           ],
@@ -264,106 +287,101 @@ const data: QuizData = {
       "vocabularies": [
         {
           "class": "Noun",
-          "word": "cityscapes",
-          "meaning": "the physical appearance of a city",
+          "word": "metropolis",
+          "meaning": "A large, densely populated city",
           "usage": [
-            "The once vibrant cityscapes now lay in ruin.",
+            "In the heart of the bustling metropolis, where skyscrapers pierce the heavens, there stood the Flatiron Building.",
           ],
-          "pronounce": "/sɪˈtɪskoʊpiːz/",
-          "example":
-            "The new skyscraper transformed the cityscapes of downtown.",
+          "pronounce": "/məˈtrɑːpəlɪs/",
+          "example": "The metropolis was a bustling hub of activity.",
         },
         {
           "class": "Noun",
-          "word": "franchise",
-          "meaning": "a series of related businesses or organizations",
+          "word": "facade",
+          "meaning": "The front of a building, especially the main entrance",
           "usage": [
-            "The great Star Wars franchise, once the pinnacle of intergalactic entertainment.",
+            "But beneath its iconic facade lay a hidden portal, a gateway to a realm of cosmic wonders.",
           ],
-          "pronounce": "/ˈfrænˌtʃiːz/",
-          "example": "The company expanded its franchise to new countries.",
-        },
-        {
-          "class": "Adjective",
-          "word": "post-apocalyptic",
-          "meaning": "occurring or existing after a catastrophic event",
-          "usage": [
-            "In this post-apocalyptic world, a young scavenger named Jax discovers an old holoprojector.",
-          ],
-          "pronounce": "/ˌpɒst əˈpæptɪkʊlɪs/",
-          "example": "The movie depicted a post-apocalyptic wasteland.",
-        },
-        {
-          "class": "Proper Noun",
-          "word": "Star Wars",
-          "meaning": "a series of science fiction films and other media",
-          "usage": [
-            "The great Star Wars franchise, once the pinnacle of intergalactic entertainment.",
-          ],
-          "pronounce": "/ˈstɑr wərz/",
-          "example": "I'm a huge fan of the Star Wars saga.",
-        },
-        {
-          "class": "Proper Noun",
-          "word": "Jax",
-          "meaning": "a character in the passage, a young scavenger",
-          "usage": [
-            "In this post-apocalyptic world, a young scavenger named Jax discovers an old holoprojector.",
-          ],
-          "pronounce": "/dʒæks/",
-          "example": "Jax was the leader of the group.",
+          "pronounce": "/fəˈsɑːd/",
+          "example":
+            "The facade of the building was adorned with intricate carvings.",
         },
         {
           "class": "Noun",
-          "word": "holoprojector",
-          "meaning": "a device that projects three-dimensional images",
-          "usage": [
-            "In this post-apocalyptic world, a young scavenger named Jax discovers an old holoprojector.",
-          ],
-          "pronounce": "/hɒloʊˌproʊdʒˈeksɪtər/",
-          "example":
-            "The scientists used a holoprojector to display the new technology.",
-        },
-        {
-          "class": "Adverb",
-          "word": "obsessed",
+          "word": "portal",
           "meaning":
-            "having a strong and often excessive interest in something",
+            "A gateway or entrance, especially to another world or realm",
           "usage": [
-            "As Jax watches the film on his makeshift projector, he becomes obsessed with recreating the epic battles.",
+            "But beneath its iconic facade lay a hidden portal, a gateway to a realm of cosmic wonders.",
           ],
-          "pronounce": "/əˈbɛsɪst/",
-          "example": "He was obsessed with playing video games.",
+          "pronounce": "/ˈpɔːrtl/",
+          "example": "The portal led to a world of endless possibilities.",
         },
         {
-          "class": "Adjective",
-          "word": "harsh",
-          "meaning": "severe or unforgiving",
+          "class": "Noun",
+          "word": "realm",
+          "meaning": "A kingdom, domain, or sphere of activity",
           "usage": [
-            "the harsh desert planet.",
+            "But beneath its iconic facade lay a hidden portal, a gateway to a realm of cosmic wonders.",
           ],
-          "pronounce": "/hɑːrʃ/",
-          "example":
-            "The harsh weather conditions made it difficult to survive.",
+          "pronounce": "/relm/",
+          "example": "The realm of imagination is vast and limitless.",
+        },
+        {
+          "class": "Noun",
+          "word": "dimension",
+          "meaning": "A particular level of existence or reality",
+          "usage": [
+            "As they stepped through the portal, they were transported to a dimension beyond comprehension.",
+          ],
+          "pronounce": "/dəˈmɛnʃən/",
+          "example": "The dimension of time is often difficult to comprehend.",
+        },
+        {
+          "class": "Noun",
+          "word": "void",
+          "meaning": "An empty space or area",
+          "usage": [
+            "Floating islands dotted the iridescent sky, and radiant energies danced through the void.",
+          ],
+          "pronounce": "/vɔɪd/",
+          "example": "The void of space is vast and mysterious.",
+        },
+        {
+          "class": "Noun",
+          "word": "threat",
+          "meaning": "A danger or risk",
+          "usage": [
+            "But their journey was not without peril. Dark forces lurked in the depths, seeking to devour the explorers' souls.",
+          ],
+          "pronounce": "/θrɛt/",
+          "example": "The threat of war loomed over the region.",
+        },
+        {
+          "class": "Noun",
+          "word": "secrets",
+          "meaning": "Something kept hidden from others",
+          "usage": [
+            "In the end, they emerged from the Flatiron Dimension forever changed, carrying the secrets and wonders of that extraordinary realm within their hearts.",
+          ],
+          "pronounce": "/ˈsiːkrɪts/",
+          "example": "The secrets of the universe are still a mystery to us.",
         },
       ],
     },
     "keywords": [
-      "post-apocalyptic",
-      "starwars",
-      "holoprojector",
-      "scavenger",
-      "desertplanet",
-      "adventure",
-      "heroes",
-      "villains",
-      "quest",
-      "obstacles",
-      "mutants",
-      "storms",
-      "restoration",
-      "hope",
-      "order",
+      "Flatiron Building",
+      "Hidden portal",
+      "Cosmic wonders",
+      "Daring explorers",
+      "Floating islands",
+      "Radiant energies",
+      "Enigmatic beings",
+      "Time warp",
+      "Dark forces",
+      "Courage and ingenuity",
+      "Unbreakable bond",
+      "Altered perspectives",
     ],
   },
 };

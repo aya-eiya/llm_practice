@@ -1,222 +1,237 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "Microsoft releases Windows 95",
+    "event":
+      "The French Academy of Sciences announces the discovery of Neptune",
     "details":
-      "On May 31, 1995, Microsoft released Windows 95, a consumer-oriented operating system that aimed to replace MS-DOS and make computers more accessible to non-technical users.",
+      "The discovery of the planet Neptune was announced to the French Academy of Sciences on May 31, 1846 by Urbain Le Verrier.",
   },
   "date": "2024-05-31",
-  "title": "Echoes of the Past",
+  "title": "The Discovery of Neptune",
   "body":
-    "As the clock struck midnight on May 31st, the once-quaint town of Harmony was forever changed by the arrival of Windows 95. The operating system promised to make computers more accessible to non-technical users, but no one could have predicted the nightmare that followed.    As soon as the installation process began, strange occurrences started plaguing the townsfolk. Computers began to malfunction, displaying bizarre error messages and freezing at random moments. The once friendly neighborhood became a place of terror, with people disappearing and reappearing in different locations.    The town's residents soon realized that the Windows 95 installation had unleashed an ancient curse, trapping their souls within the digital realm. They were doomed to roam the digital landscapes for all eternity, unable to escape the clutches of the cursed operating system.    The townsfolk tried everything to break the curse, from performing rituals to burning effigies, but nothing seemed to work. The only hope was to find a way to purge the digital world of Windows 95 and free themselves from its grasp.    As the years passed, the once bustling town became a ghost town, with its inhabitants forever trapped within the digital realm, haunting the once-familiar streets.",
-  "word count": 196,
+    "In a dimly lit room within the hallowed halls of the French Academy of Sciences, a hushed anticipation hung in the air. The year was 1846, and the world was poised on the brink of a scientific revelation.Urbain Le Verrier, a brilliant astronomer, stood before his colleagues, his eyes gleaming with excitement. For years, he had tirelessly studied the irregularities in the orbit of Uranus, convinced that they were caused by the gravitational pull of another, unseen planet beyond.With trembling hands, Le Verrier revealed his calculations. He had predicted the existence and location of a new world, which he named Neptune. A wave of astonishment swept through the academy, followed by an eruption of cheers.The discovery of Neptune was a triumph for science. It not only confirmed Le Verrier's theories but also expanded the known boundaries of our solar system. As the stars twinkled above Paris that night, astronomers gazed up at the heavens, filled with a sense of wonder and the boundless possibilities that lay beyond the darkness.",
+  "word count": 169,
   "dialog": [
     {
-      "Billy": "Wow, I never thought Windows 95 could be so terrifying!",
+      "Billy":
+        "Wow, I can't believe the discovery of Neptune was made possible through math and science. It's amazing how we can learn about the universe by studying the movements of faraway objects.",
     },
     {
       "Kerry":
-        "I know, right? It's like they took all our childhood memories and turned them into a horror movie",
+        "Totally dude! It's like, a cosmic detective story. Le Verrier was like a celestial Sherlock Holmes, using clues from Uranus' orbit to track down Neptune.",
     },
     {
       "Meg":
-        "I loved the way the author wove together technology and folklore to create this eerie atmosphere. It was like being trapped in a time loop.",
+        "I wonder what other mysteries are hidden in the vastness of space. It's like there's a whole other world of possibilities out there, waiting to be explored.",
     },
     {
       "Lui":
-        "Fascinating how the novel explores the theme of technological dependence. I think we can all relate to feeling lost without our smartphones.",
+        "Indeed, my young scholars. The pursuit of scientific knowledge is an ongoing journey, with each discovery paving the way for new questions and the potential to expand our understanding of the universe.",
     },
     {
       "Kerry":
-        "Absolutely! And the way Windows 95 was used as a symbol of control and manipulation is genius. It's like, what if our technology is actually holding us back?",
+        "So, basically, Neptune's discovery was like a giant cosmic upgrade. It made our solar system bigger and cooler.",
+    },
+    {
+      "Meg":
+        "Right! It's like when you get a new toy and it totally revolutionizes your playtime. Imagine how excited astronomers must have been when they realized there was a whole new planet hanging out just beyond Uranus.",
+    },
+    {
+      "Billy":
+        "And it's not just about the excitement, it's about the incredible precision and dedication of scientists like Le Verrier. Years of tireless calculations and observations, all leading up to this groundbreaking moment.",
+    },
+    {
+      "Lui":
+        "Absolutely, Billy. Scientific discoveries are the culmination of hard work, perseverance, and a deep curiosity about the world around us. Neptune's discovery is a testament to the power of human ingenuity and the boundless potential of scientific inquiry.",
     },
   ],
   "quiz": [
     {
-      "question": "What was the significant event that changed Harmony town?",
+      "question": "In what year was the discovery of Neptune made?",
       "options": [
-        "Windows 95 installation",
-        "The disappearance of townsfolk",
-        "A power outage",
-        "A natural disaster",
-        "A technological revolution",
+        "1845",
+        "1846",
+        "1847",
+        "1848",
+        "1849",
+      ],
+      "answer": 1,
+    },
+    {
+      "question": "Who is credited with predicting the existence of Neptune?",
+      "options": [
+        "Albert Einstein",
+        "Isaac Newton",
+        "Copernicus",
+        "Galileo Galilei",
+        "Urbain Le Verrier",
+      ],
+      "answer": 4,
+    },
+    {
+      "question":
+        "What was the name given to the new planet discovered beyond Uranus?",
+      "options": [
+        "Pluto",
+        "Mercury",
+        "Venus",
+        "Neptune",
+        "Saturn",
+      ],
+      "answer": 3,
+    },
+    {
+      "question":
+        "What is the main idea conveyed by the word 'triumph' as used in the text?",
+      "options": [
+        "A feeling of great joy and success",
+        "A minor setback",
+        "A sense of failure",
+        "A surprising discovery",
+        "A minor inconvenience",
       ],
       "answer": 0,
     },
     {
       "question":
-        "What happened to the townspeople after Windows 95 was installed?",
+        "According to the dialogue, what is one of the potential outcomes of scientific discoveries?",
       "options": [
-        "They became more efficient workers",
-        "Their computers became faster",
-        "They started disappearing and reappearing",
-        "Their lives became easier",
-        "Nothing changed",
+        "Expanding our understanding of the universe",
+        "Making our lives easier",
+        "Curing all diseases",
+        "Ending wars",
+        "Creating new technologies",
       ],
-      "answer": 2,
-    },
-    {
-      "question": "What did the townsfolk try to do to break the curse?",
-      "options": [
-        "Burning effigies",
-        "Performing rituals",
-        "Installing a new operating system",
-        "Praying for help",
-        "Giving up",
-      ],
-      "answer": 1,
-    },
-    {
-      "question":
-        "What was the main theme explored in the novel about Windows 95?",
-      "options": [
-        "The importance of technology",
-        "The power of human connection",
-        "Technological dependence and control",
-        "The impact of nostalgia",
-        "The danger of progress",
-      ],
-      "answer": 2,
-    },
-    {
-      "question":
-        "What was the outcome for Harmony town after the Windows 95 installation?",
-      "options": [
-        "It became a thriving community again",
-        "It remained unchanged",
-        "It became a ghost town",
-        "It became a tourist attraction",
-        "It disappeared",
-      ],
-      "answer": 2,
+      "answer": 0,
     },
   ],
+  "params": {
+    "theme": "Culture",
+    "flavor": "Historical Fiction",
+    "models": {
+      "main": "gemini",
+      "novel": "gemini",
+    },
+  },
   "descriptions": {
     "grammar": {
       "patterns": [
         {
           "pattern": "S + V",
-          "explanation": "Simple sentence with a subject and verb.",
+          "explanation": "Subject followed by a verb, no object or complement.",
           "usage": [
-            "As the clock struck midnight on May 31st, the once-quaint town of Harmony was forever changed by the arrival of Windows 95.",
+            "Urbain Le Verrier, a brilliant astronomer, stood before his colleagues, his eyes gleaming with excitement.",
           ],
           "words": [
             {
               "S": [
-                "As",
-                "the clock",
-                "midnight on May 31st",
-                "the once-quiet town of Harmony",
+                "Urbain Le Verrier",
+                "a brilliant astronomer",
               ],
             },
             {
               "V": [
-                "was forever changed",
-                "arrived",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + C",
-          "explanation": "Sentence with a subject, verb, and complement.",
-          "usage": [
-            "The operating system promised to make computers more accessible to non-technical users, but no one could have predicted the nightmare that followed.",
-          ],
-          "words": [
-            {
-              "S": [
-                "The operating system",
-                "no one",
-              ],
-            },
-            {
-              "V": [
-                "promised",
-                "predicted",
-              ],
-            },
-            {
-              "C": [
-                "to make computers more accessible to non-technical users",
-                "the nightmare that followed",
+                "stood",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O",
-          "explanation": "Sentence with a subject, verb, and object.",
+          "explanation": "Subject followed by a verb and an object.",
           "usage": [
-            "As soon as the installation process began, strange occurrences started plaguing the townsfolk.",
+            "For years, he had tirelessly studied the irregularities in the orbit of Uranus",
           ],
           "words": [
             {
               "S": [
-                "As soon",
-                "the installation process",
+                "he",
               ],
             },
             {
               "V": [
-                "began",
-                "started",
+                "had studied",
               ],
             },
             {
               "O": [
-                "strange occurrences",
-                "the townsfolk",
+                "the irregularities in the orbit of Uranus",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O + O",
-          "explanation": "Sentence with a subject, verb, and two objects.",
+          "explanation": "Subject followed by a verb and two objects.",
           "usage": [
-            "Computers began to malfunction, displaying bizarre error messages and freezing at random moments.",
+            "He had predicted the existence and location of a new world",
           ],
           "words": [
             {
               "S": [
-                "Computers",
+                "He",
               ],
             },
             {
               "V": [
-                "began",
-                "malfunctioning",
-                "displaying",
-                "freezing",
+                "had predicted",
               ],
             },
             {
               "O": [
-                "bizarre error messages",
-                "random moments",
+                "the existence",
+                "location",
               ],
             },
           ],
         },
         {
-          "pattern": "S + V",
-          "explanation": "Simple sentence with a subject and verb.",
+          "pattern": "S + V + O + C",
+          "explanation":
+            "Subject followed by a verb, an object, and a complement.",
           "usage": [
-            "The town's residents soon realized that the Windows 95 installation had unleashed an ancient curse, trapping their souls within the digital realm.",
+            "It not only confirmed Le Verrier's theories but also expanded the known boundaries of our solar system.",
           ],
           "words": [
             {
               "S": [
-                "The town's residents",
-                "the Windows 95 installation",
+                "It",
               ],
             },
             {
               "V": [
-                "realized",
-                "unleashed",
-                "trapped",
+                "confirmed",
+                "expanded",
+              ],
+            },
+            {
+              "O": [
+                "Le Verrier's theories",
+                "the known boundaries of our solar system",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation": "Subject followed by a verb and a complement.",
+          "usage": [
+            "With trembling hands, Le Verrier revealed his calculations.",
+          ],
+          "words": [
+            {
+              "S": [
+                "Le Verrier",
+              ],
+            },
+            {
+              "V": [
+                "revealed",
+              ],
+            },
+            {
+              "C": [
+                "his calculations",
               ],
             },
           ],
@@ -225,113 +240,108 @@ const data: QuizData = {
       "vocabularies": [
         {
           "class": "Noun",
-          "word": "midnight",
+          "word": "room",
           "meaning":
-            "the time of 12 o'clock at night, or the beginning of a new day.",
+            "a separate and enclosed space within a building, used for a particular purpose",
           "usage": [
-            "As the clock struck midnight on May 31st",
-            "The concert started at midnight.",
+            "In a dimly lit room within the hallowed halls of the French Academy of Sciences, a hushed anticipation hung in the air.",
           ],
-          "pronounce": "/ˈmaɪtnaɪt/",
-          "example": "I'll meet you at midnight to celebrate my birthday.",
+          "pronounce": "/rum/",
+          "example": "I went to the living room to watch TV.",
+        },
+        {
+          "class": "Noun",
+          "word": "academy",
+          "meaning":
+            "a society of scholars, artists, or scientists founded for the promotion of a particular subject or field",
+          "usage": [
+            "The French Academy of Sciences",
+          ],
+          "pronounce": "/əˈkædᵊmē/",
+          "example":
+            "The National Academy of Sciences is a private, nonprofit organization of scientists and engineers dedicated to the furtherance of science and its use for the general welfare.",
+        },
+        {
+          "class": "Noun",
+          "word": "anticipation",
+          "meaning":
+            "the feeling of excitement or eagerness that you have before something is going to happen",
+          "usage": [
+            "a hushed anticipation hung in the air",
+          ],
+          "pronounce": "/ænˌtɪsəˈpeɪʃən/",
+          "example":
+            "I couldn't sleep the night before my trip because of anticipation.",
         },
         {
           "class": "Adjective",
-          "word": "quaint",
-          "meaning": "pleasantly old-fashioned or charming.",
+          "word": "brilliant",
+          "meaning": "very intelligent or talented",
           "usage": [
-            "the once-quiet town of Harmony was forever changed",
-            "Her quaint little cottage was full of character.",
+            "Urbain Le Verrier, a brilliant astronomer",
           ],
-          "pronounce": "/ˈkeɪnt/",
-          "example": "The quaint bakery on Main Street is my favorite.",
+          "pronounce": "/ˈbrɪljənt/",
+          "example":
+            "She is a brilliant student who excels in all her classes.",
         },
         {
           "class": "Noun",
-          "word": "townsfolk",
-          "meaning": "people who live in a town.",
+          "word": "astronomer",
+          "meaning":
+            "a scientist who studies the stars, planets, and other objects in space",
           "usage": [
-            "The townsfolk tried everything to break the curse",
-            "The townsfolk were excited for the festival.",
+            "Urbain Le Verrier, a brilliant astronomer",
           ],
-          "pronounce": "/ˈtaʊnzfʊk/",
-          "example": "The townsfolk gathered at the town square to celebrate.",
+          "pronounce": "/əˈstrɑːnəmər/",
+          "example":
+            "My uncle is an astronomer who works at the local university.",
         },
         {
           "class": "Verb",
-          "word": "unleashed",
-          "meaning":
-            "to release or let loose (something, such as an animal or a force).",
+          "word": "stood",
+          "meaning": "to be in an upright position on your feet",
           "usage": [
-            "the Windows 95 installation had unleashed an ancient curse",
-            "The storm unleashed its full fury on the city.",
+            "Urbain Le Verrier, a brilliant astronomer, stood before his colleagues",
           ],
-          "pronounce": "/ʌnˈlɛʃt/",
-          "example":
-            "The new policy has unleashed a wave of creativity in our company.",
+          "pronounce": "/stud/",
+          "example": "The boy stood up to answer the question.",
         },
         {
-          "class": "Noun",
-          "word": "curse",
+          "class": "Adjective",
+          "word": "trembling",
           "meaning":
-            "a wish or declaration that something bad will happen to someone.",
+            "shaking or quivering, especially because of fear, excitement, or weakness",
           "usage": [
-            "the Windows 95 installation had unleashed an ancient curse",
-            "The witch cast a curse on the kingdom.",
+            "With trembling hands, Le Verrier revealed his calculations.",
           ],
-          "pronounce": "/kɝːs/",
-          "example": "The curse was broken when the treasure chest was opened.",
-        },
-        {
-          "class": "Adverb",
-          "word": "forever",
-          "meaning": "at all times; constantly.",
-          "usage": [
-            "the once-quiet town of Harmony was forever changed",
-            "I'll love you forever.",
-          ],
-          "pronounce": "/ˈfɔrɪvər/",
-          "example": "We'll be friends forever, no matter what.",
+          "pronounce": "/ˈtrɛmblɪŋ/",
+          "example": "He was trembling with fear as he stood before the judge.",
         },
         {
           "class": "Verb",
-          "word": "purge",
-          "meaning": "to remove or get rid of (something unwanted or bad).",
+          "word": "revealed",
+          "meaning": "to make something known or visible",
           "usage": [
-            "the only hope was to find a way to purge the digital world",
-            "The government purged its officials of corruption.",
+            "With trembling hands, Le Verrier revealed his calculations.",
           ],
-          "pronounce": "/pɝːrdʒ/",
-          "example": "We need to purge our email inbox of spam messages.",
-        },
-        {
-          "class": "Noun",
-          "word": "digital",
-          "meaning": "relating to or using digital technology.",
-          "usage": [
-            "the digital realm",
-            "The company is investing in digital marketing.",
-          ],
-          "pronounce": "/ˈdɪdʒɪtəl/",
-          "example":
-            "We need to upgrade our digital equipment for the new project.",
+          "pronounce": "/rɪˈviːld/",
+          "example": "The scientist revealed his findings to the world.",
         },
       ],
     },
     "keywords": [
-      "ancient",
-      "curse",
-      "digital",
-      "error",
-      "forever",
-      "haunting",
-      "installation",
-      "malfunction",
-      "nightmare",
-      "operating",
-      "purge",
-      "rituals",
-      "souls",
+      "scientific discovery",
+      "French Academy of Sciences",
+      "Urbain Le Verrier",
+      "astronomer",
+      "irregularities in the orbit of Uranus",
+      "gravitational pull",
+      "new planet",
+      "Neptune",
+      "astounded",
+      "expanded the known boundaries of our solar system",
+      "wonder",
+      "boundless possibilities",
     ],
   },
 };

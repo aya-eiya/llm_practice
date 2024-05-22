@@ -40,7 +40,7 @@ export const handler: Handlers = {
     const flavor = String(data.params?.flavor).toLocaleLowerCase().replace(
       / /g,
       "-",
-    ).replace(/(science fiction|sci-fi)/, "sf");
+    ).replace(/(science-fiction|sci-fi)/, "sf");
     const dir = ctx.config.staticDir + "/img/bookshelf";
     const stDir = Deno.readDirSync(dir);
     const qImg = new URL(req.url).searchParams.get("img") ?? "webp";

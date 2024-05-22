@@ -1,129 +1,152 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "The Great Fire of Chicago",
+    "event": "Vincent van Gogh shoots himself",
     "details":
-      "The Great Fire of Chicago was a devastating conflagration that occurred on May 30th, 1871, and burned for nearly 28 hours, destroying much of the city's central business district.",
+      "On May 30, 1890, Dutch artist Vincent van Gogh shot himself in the chest with a revolver in a wheat field outside the village of Auvers-sur-Oise, France. He died two days later from his injuries.",
   },
   "date": "2024-05-30",
-  "title": "A Flame in the Wind",
+  "title": "The Wheat Field",
   "body":
-    "In the summer of 1871, the city of Chicago was abuzz with news of a great fire that had broken out in the heart of its bustling business district. As the wind carried the flames from building to building, the panic grew and people fled for their lives. But amidst the chaos, one man refused to leave.  Detective James Hart had always been drawn to the flames, and as he watched the inferno from his office window, he couldn't help but wonder what had caused it. With nothing left to lose, he set out to uncover the truth behind the fire, aided only by his trusty sidekick, a street-smart orphan named Alice.  As they delved deeper into the mystery, they discovered that the fire was no accident - it was a carefully planned act of arson with a sinister motive at its heart. But who had the means and motive to commit such a heinous crime? And could they stop them before it was too late?",
-  "word count": 166,
+    "In the eerie stillness of twilight, as the first whispers of darkness crept across the whispering wheat field, a solitary figure stumbled through the tall stalks. His clothes were torn and stained with blood, his face haggard and etched with despair. With each labored step, Vincent van Gogh drew closer to the inevitable.The revolver, cold and unforgiving in his trembling hand, weighed heavy in his soul. The relentless torment that had plagued his mind for so long had finally consumed him, driving him to this desperate act.As he raised the weapon to his temple, the wheat field seemed to hold its breath, the stalks frozen in a macabre tableau. The deafening silence was shattered by the thunderous discharge, echoing through the desolate landscape.Vincent collapsed into the field, his lifeblood seeping into the thirsty soil. The wheat, once a symbol of hope and renewal, now became a shroud for his shattered dreams and the darkness that had claimed his tormented soul.",
+  "word count": 160,
   "dialog": [
     {
       "Billy":
-        "I loved how Detective Hart was so determined to solve the mystery! He didn't give up even when things got tough.",
-    },
-    {
-      "Meg":
-        "Oh, absolutely! I think what really drew me in was the way the author wove together historical facts with fictional elements. It felt like I was right there in 1871 Chicago.",
-    },
-    {
-      "Kerry":
-        "Yeah, and the characters were so well-developed! Alice was my favorite - she's such a cool street-smart kid.",
+        "This novel is so sad. I can't believe Vincent van Gogh died by suicide.",
     },
     {
       "Lui":
-        "As a history teacher, I appreciated how the novel brought to life a pivotal moment in American history. The fire of 1871 is often overlooked, but this book shows its significance.",
-    },
-    {
-      "Billy":
-        "I know what you mean about Alice, Kerry! And Lui, that's so cool that you teach history. Maybe one day we can even create our own historical mysteries to solve.",
+        "It is indeed a tragic tale. Van Gogh struggled with mental illness throughout his life, and his despair ultimately led him to take his own life.",
     },
     {
       "Meg":
-        "Ooh, that sounds like a great idea, Billy! Maybe we could even make it into a game or something.",
-    },
-    {
-      "Kerry":
-        "Whoa, now that's a brilliant idea, Meg! We should totally do it. Lui, would you help us with the historical accuracy?",
-    },
-    {
-      "Lui":
-        "Ah, I'd be happy to help you kids with any research or fact-checking. Just remember, in history class, we always say 'accuracy is key'.",
+        "I was so affected by the description of the wheat field. It was so beautiful and yet so haunting.",
     },
     {
       "Billy":
-        "Got it! Thanks, Lui. Meg and Kerry, let's start brainstorming our own mystery game. Who knows what kind of thrills and chills we can come up with?",
+        "I agree. The wheat field seemed to symbolize both Van Gogh's hope and his despair.",
+    },
+    {
+      "Kerry":
+        "I think the novel does a great job of capturing the torment that Van Gogh must have felt. It's hard to imagine what it must have been like to live with such mental anguish.",
+    },
+    {
+      "Lui":
+        "It is important to remember that Van Gogh was a brilliant artist who created some of the most beautiful paintings in the world. His legacy will live on long after his death.",
+    },
+    {
+      "Meg":
+        "I'm glad that his paintings are still here for us to enjoy. They're a reminder of his genius and his struggle.",
+    },
+    {
+      "Kerry":
+        "I think it's important to talk about mental illness and suicide. It's a serious issue that affects many people.",
+    },
+    {
+      "Lui":
+        "I agree. We need to be more open about mental health and encourage people to seek help if they are struggling.",
+    },
+    {
+      "Billy":
+        "I'm glad that we had this discussion. It's important to remember that we're not alone.",
     },
   ],
   "quiz": [
     {
-      "question": "What was Detective James Hart drawn to in the story?",
+      "question":
+        "What physical state did Vincent van Gogh find himself in when he entered the wheat field?",
       "options": [
-        "The fire",
-        "The panic",
-        "The chaos",
-        "The flames",
-        "The office",
-      ],
-      "answer": 0,
-    },
-    {
-      "question": "Who helped Detective Hart solve the mystery?",
-      "options": [
-        "Alice, a street-smart orphan",
-        "A detective from another city",
-        "A local historian",
-        "His trusty sidekick, Billy",
-        "No one",
-      ],
-      "answer": 0,
-    },
-    {
-      "question": "What was the fire in the story a result of?",
-      "options": [
-        "An accident",
-        "Arson with a sinister motive",
-        "Natural causes",
-        "Human error",
-        "Unknown",
+        "Drunk and disoriented",
+        "Injured and exhausted",
+        "Happy and content",
+        "Calm and collected",
+        "Angry and violent",
       ],
       "answer": 1,
     },
     {
-      "question": "Who was Kerry's favorite character in the book?",
+      "question": "Why did Vincent van Gogh take his own life?",
       "options": [
-        "Alice, the street-smart orphan",
-        "Detective Hart",
-        "Billy, the detective from another city",
-        "The local historian",
-        "No one",
+        "He was overcome with grief over a lost love",
+        "He was bankrupt and facing eviction",
+        "He was plagued by persistent mental illness",
+        "He was forced to give up painting",
+        "He was diagnosed with a terminal illness",
+      ],
+      "answer": 2,
+    },
+    {
+      "question": "What symbol did the wheat field represent?",
+      "options": [
+        "Hope and renewal",
+        "Despair and sorrow",
+        "Love and passion",
+        "Peace and tranquility",
+        "Wealth and prosperity",
       ],
       "answer": 0,
     },
     {
-      "question": "What did Lui appreciate about the novel?",
+      "question":
+        "How did the group react to the story of Vincent van Gogh's death?",
       "options": [
-        "The way it wove together historical facts and fictional elements",
-        "The characters' well-developed personalities",
-        "The fast-paced action scenes",
-        "The detailed descriptions of the city",
-        "Its significance in American history",
+        "They were indifferent and unmoved",
+        "They were shocked and saddened",
+        "They were angry and resentful",
+        "They were curious and intrigued",
+        "They were inspired and motivated",
       ],
-      "answer": 3,
+      "answer": 1,
+    },
+    {
+      "question": "What message does the novel convey about mental illness?",
+      "options": [
+        "It is a weakness that should be hidden",
+        "It is a condition that should be met with compassion",
+        "It is a punishment for past sins",
+        "It is a sign of failure",
+        "It is a permanent obstacle to happiness",
+      ],
+      "answer": 1,
     },
   ],
+  "params": {
+    "theme": "Art",
+    "flavor": "Gothic",
+    "models": {
+      "main": "gemini",
+      "novel": "gemini",
+    },
+  },
   "descriptions": {
     "grammar": {
       "patterns": [
         {
           "pattern": "S + V",
           "explanation":
-            "The basic sentence structure with a subject and verb.",
+            "Subject-Verb pattern. The simplest sentence pattern, consisting of a subject (S) and a verb (V).",
           "usage": [
-            "In the summer of 1871, the city of Chicago was abuzz",
+            "The wheat field seemed to hold its breath, the stalks frozen in a macabre tableau.",
+            "It is indeed a tragic tale.",
+            "It's hard to imagine what it must have been like to live with such mental anguish.",
+            "It is important to remember that we're not alone.",
           ],
           "words": [
             {
               "S": [
-                "the city of Chicago",
+                "The wheat field",
+                "It",
+                "It",
+                "It",
               ],
             },
             {
               "V": [
-                "was abuzz",
+                "seemed to hold",
+                "is",
+                "hard to imagine",
+                "important to remember",
               ],
             },
           ],
@@ -131,24 +154,44 @@ const data: QuizData = {
         {
           "pattern": "S + V + C",
           "explanation":
-            "The sentence structure with a subject, verb, and complement.",
+            "Subject-Verb-Complement pattern. Adds a complement (C) to the basic subject-verb pattern. The complement can provide additional information about the subject or the verb.",
           "usage": [
-            "As the wind carried the flames from building to building",
+            "His clothes were torn and stained with blood, his face haggard and etched with despair.",
+            "The relentless torment that had plagued his mind for so long had finally consumed him, driving him to this desperate act.",
+            "Van Gogh struggled with mental illness throughout his life, and his despair ultimately led him to take his own life.",
+            "His legacy will live on long after his death.",
+            "They're a reminder of his genius and his struggle.",
+            "I'm glad that we had this discussion.",
           ],
           "words": [
             {
               "S": [
-                "the wind",
+                "His clothes",
+                "The relentless torment",
+                "Van Gogh",
+                "His legacy",
+                "They",
+                "I",
               ],
             },
             {
               "V": [
-                "carried",
+                "were",
+                "had plagued",
+                "had consumed",
+                "will live on",
+                "are",
+                "had",
               ],
             },
             {
               "C": [
-                "the flames from building to building",
+                "torn and stained with blood, his face haggard and etched with despair.",
+                "driving him to this desperate act.",
+                "and his despair ultimately led him to take his own life.",
+                "long after his death.",
+                "a reminder of his genius and his struggle.",
+                "this discussion.",
               ],
             },
           ],
@@ -156,24 +199,60 @@ const data: QuizData = {
         {
           "pattern": "S + V + O",
           "explanation":
-            "The sentence structure with a subject, verb, and object.",
+            "Subject-Verb-Object pattern. Adds an object (O) to the basic subject-verb pattern. The object is a noun or pronoun that receives the action of the verb.",
           "usage": [
-            "With nothing left to lose, he set out",
+            "In the eerie stillness of twilight, as the first whispers of darkness crept across the whispering wheat field, a solitary figure stumbled through the tall stalks.",
+            "With each labored step, Vincent van Gogh drew closer to the inevitable.",
+            "The revolver, cold and unforgiving in his trembling hand, weighed heavy in his soul.",
+            "The wheat, once a symbol of hope and renewal, now became a shroud for his shattered dreams and the darkness that had claimed his tormented soul.",
+            "This novel is so sad.",
+            "I can't believe Vincent van Gogh died by suicide.",
+            "I was so affected by the description of the wheat field.",
+            "The wheat field seemed to symbolize both Van Gogh's hope and his despair.",
+            "I think the novel does a great job of capturing the torment that Van Gogh must have felt.",
+            "I'm glad that his paintings are still here for us to enjoy.",
           ],
           "words": [
             {
               "S": [
-                "he",
+                "a solitary figure",
+                "Vincent van Gogh",
+                "The revolver",
+                "The wheat",
+                "This novel",
+                "I",
+                "I",
+                "The wheat field",
+                "I",
+                "I",
               ],
             },
             {
               "V": [
-                "set out",
+                "stumbled",
+                "drew",
+                "weighed",
+                "became",
+                "is",
+                "can't believe",
+                "was so affected",
+                "seemed to symbolize",
+                "think",
+                "am glad",
               ],
             },
             {
               "O": [
-                "to uncover the truth",
+                "through the tall stalks.",
+                "closer to the inevitable.",
+                "heavy in his soul.",
+                "a shroud for his shattered dreams and the darkness that had claimed his tormented soul.",
+                "so sad.",
+                "Vincent van Gogh died by suicide.",
+                "by the description of the wheat field.",
+                "both Van Gogh's hope and his despair.",
+                "the novel does a great job of capturing the torment that Van Gogh must have felt.",
+                "his paintings are still here for us to enjoy.",
               ],
             },
           ],
@@ -181,25 +260,25 @@ const data: QuizData = {
         {
           "pattern": "S + V + O + O",
           "explanation":
-            "The sentence structure with a subject, verb, and two objects.",
+            "Subject-Verb-Object-Object pattern. Adds a second object (O) to the basic subject-verb-object pattern. The second object is typically an indirect object that receives the indirect action of the verb.",
           "usage": [
-            "As they delved deeper into the mystery",
+            "Vincent collapsed into the field, his lifeblood seeping into the thirsty soil.",
           ],
           "words": [
             {
               "S": [
-                "they",
+                "Vincent",
               ],
             },
             {
               "V": [
-                "delved deeper",
+                "collapsed",
               ],
             },
             {
               "O": [
-                "into the mystery",
-                "to solve",
+                "into the field",
+                "his lifeblood",
               ],
             },
           ],
@@ -207,29 +286,34 @@ const data: QuizData = {
         {
           "pattern": "S + V + O + C",
           "explanation":
-            "The sentence structure with a subject, verb, object, and complement.",
+            "Subject-Verb-Object-Complement pattern. Adds a complement (C) to the basic subject-verb-object pattern. The complement can provide additional information about the object.",
           "usage": [
-            "I loved how Detective Hart was so determined",
+            "As he raised the weapon to his temple, the wheat field seemed to hold its breath, the stalks frozen in a macabre tableau.",
+            "The deafening silence was shattered by the thunderous discharge, echoing through the desolate landscape.",
           ],
           "words": [
             {
               "S": [
-                "I",
+                "he",
+                "The deafening silence",
               ],
             },
             {
               "V": [
-                "loved",
+                "raised",
+                "was shattered",
               ],
             },
             {
               "O": [
-                "how Detective Hart",
+                "the weapon",
+                "by the thunderous discharge",
               ],
             },
             {
               "C": [
-                "was so determined",
+                "to his temple, the wheat field seemed to hold its breath, the stalks frozen in a macabre tableau.",
+                "echoing through the desolate landscape.",
               ],
             },
           ],
@@ -238,112 +322,104 @@ const data: QuizData = {
       "vocabularies": [
         {
           "class": "Noun",
-          "word": "city",
+          "word": "twilight",
           "meaning":
-            "a large human settlement with fixed boundaries and a recognized government.",
+            "the soft, dim light from the sky just before sunrise or after sunset",
           "usage": [
-            "The city of Chicago was abuzz...",
-            "She walked through the city streets...",
+            "In the eerie stillness of twilight, as the first whispers of darkness crept across the whispering wheat field, a solitary figure stumbled through the tall stalks.",
           ],
-          "pronounce": "/ˈsɪti/ ",
-          "example": "The city is known for its vibrant culture.",
-        },
-        {
-          "class": "Pronoun",
-          "word": "he",
-          "meaning":
-            "used to refer to a male person or animal previously mentioned.",
-          "usage": [
-            "He set out to uncover the truth...",
-            "He watched the inferno from his office window...",
-          ],
-          "pronounce": "/hiː/ ",
-          "example": "He went to the store to buy some milk.",
-        },
-        {
-          "class": "Noun",
-          "word": "fire",
-          "meaning":
-            "the rapid oxidation of a fuel source in combination with an oxidizer, typically producing heat and light.",
-          "usage": [
-            "The fire had broken out...",
-            "As he watched the inferno from his office window...",
-          ],
-          "pronounce": "/faɪər/ ",
-          "example": "The firefighters put out the fire quickly.",
+          "pronounce": "/ˈtwaɪlʌɪt/",
+          "example": "The twilight hours are a beautiful time to be outdoors.",
         },
         {
           "class": "Verb",
-          "word": "watched",
-          "meaning": "to observe or see something.",
+          "word": "crept",
+          "meaning": "to move stealthily or quietly",
           "usage": [
-            "He watched the inferno from his office window...",
-            "She watched the sunset on the beach...",
+            "as the first whispers of darkness crept across the whispering wheat field",
           ],
-          "pronounce": "/ˈwɒtʃt/ ",
-          "example": "I watched the movie last night.",
-        },
-        {
-          "class": "Adjective",
-          "word": "great",
-          "meaning": "extremely good or excellent.",
-          "usage": [
-            "The great fire had broken out...",
-            "She is a great singer...",
-          ],
-          "pronounce": "/greɪt/ ",
-          "example": "He did a great job on the project.",
+          "pronounce": "/krɛpt/",
+          "example": "The cat crept up on the mouse.",
         },
         {
           "class": "Noun",
-          "word": "office",
-          "meaning": "a room or building where people work.",
+          "word": "figure",
+          "meaning": "a person or thing that is easily recognizable",
           "usage": [
-            "He watched the inferno from his office window...",
-            "She works in an office downtown...",
+            "a solitary figure stumbled through the tall stalks",
           ],
-          "pronounce": "/ˈɒfɪs/ ",
-          "example": "The office is located on the top floor.",
-        },
-        {
-          "class": "Adverb",
-          "word": "carefully",
-          "meaning": "in a way that avoids damage or harm.",
-          "usage": [
-            "They discovered that the fire was no accident...",
-            "She poured the medicine carefully...",
-          ],
-          "pronounce": "/ˈkærflɪ/ ",
-          "example": "He drove carefully through the snowstorm.",
+          "pronounce": "/ˈfɪɡjər/",
+          "example": "A shadowy figure emerged from the darkness.",
         },
         {
           "class": "Verb",
-          "word": "set",
-          "meaning": "to put something somewhere.",
+          "word": "stumbled",
+          "meaning": "to walk or move unsteadily",
           "usage": [
-            "He set out to uncover the truth...",
-            "She set her alarm clock for 7 am...",
+            "a solitary figure stumbled through the tall stalks",
           ],
-          "pronounce": "/sɛt/ ",
-          "example": "I will set my bag down over there.",
+          "pronounce": "/ˈstʌmbəl/",
+          "example": "The hiker stumbled over a rock.",
+        },
+        {
+          "class": "Noun",
+          "word": "revolver",
+          "meaning":
+            "a handgun that can be fired several times without reloading",
+          "usage": [
+            "The revolver, cold and unforgiving in his trembling hand, weighed heavy in his soul.",
+          ],
+          "pronounce": "/rɪˈvɑlvər/",
+          "example":
+            "The police officer drew his revolver and ordered the suspect to surrender.",
+        },
+        {
+          "class": "Noun",
+          "word": "torment",
+          "meaning": "great mental or physical suffering",
+          "usage": [
+            "The relentless torment that had plagued his mind for so long had finally consumed him",
+          ],
+          "pronounce": "/ˈtɔrmənt/",
+          "example":
+            "The prisoner was subjected to years of physical and mental torment.",
+        },
+        {
+          "class": "Noun",
+          "word": "discharge",
+          "meaning": "the act of firing a gun or other weapon",
+          "usage": [
+            "The deafening silence was shattered by the thunderous discharge",
+          ],
+          "pronounce": "/dɪsˈtʃɑrdʒ/",
+          "example":
+            "The discharge of the gun was so loud that it made me jump.",
+        },
+        {
+          "class": "Noun",
+          "word": "shroud",
+          "meaning": "a cloth that is used to cover a dead body",
+          "usage": [
+            "The wheat, once a symbol of hope and renewal, now became a shroud for his shattered dreams",
+          ],
+          "pronounce": "/ʃraʊd/",
+          "example": "The body was wrapped in a white shroud.",
         },
       ],
     },
     "keywords": [
-      "arson",
-      "mystery",
-      "fire",
-      "investigation",
-      "detective",
-      "Chicago",
-      "1871",
-      "panic",
-      "chaos",
-      "truth",
-      "clue",
-      "crime",
-      "motives",
-      "suspense",
+      "Depression",
+      "Suicide",
+      "Vincent van Gogh",
+      "Despair",
+      "Torment",
+      "Isolation",
+      "Wheat field",
+      "Darkness",
+      "Macabre",
+      "Desolate",
+      "Shattered dreams",
+      "Tragedy",
     ],
   },
 };

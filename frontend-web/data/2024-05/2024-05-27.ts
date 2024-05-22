@@ -1,187 +1,293 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "Invention of Photography",
+    "event": "Bob Dylan Goes Electric",
     "details":
-      "May 27th, 1826 - Joseph Nicéphore Niépce makes the first permanent photograph using a process called heliography, capturing the view from his window at Le Gras estate in France.",
+      "On May 27th, 1965, Bob Dylan performed at the Newport Folk Festival, one of the most important events in music history. Dylan had previously been known for his acoustic folk songs, but at this festival, he performed with an electric band, which caused a great deal of controversy among the folk purists in the audience. Dylan's performance marked a turning point in his career and in the history of folk music.",
   },
   "date": "2024-05-27",
-  "title": "The First Light",
+  "title": "The Electric Nightmare",
   "body":
-    "In the summer of 1826, in the small town of Le Gras in France, a young inventor named Joseph Nicéphore Niépce was on the brink of a groundbreaking discovery. For years, he had been tinkering with new ways to capture images, but nothing seemed to work. That was until one day, when out of nowhere, inspiration struck him like a bolt of lightning.  Niépce decided to experiment with using a camera obscura, an instrument used by artists to sketch the outlines of objects, and combining it with the power of light to create images that could be reproduced. After months of trial and error, he finally succeeded in taking the first permanent photograph. The image was of his own backyard, but for Niépce, it was a masterpiece.  The news of his invention quickly spread throughout Europe, and soon enough, other inventors began to experiment with photography as well. It wasn't long before this new art form became all the rage in the world of art and science.",
-  "word count": 167,
+    "In the dim recesses of an abandoned barn, the air crackled with an eerie silence. Dust motes danced in the feeble moonlight that filtered through the cracks in the crumbling walls. Suddenly, a surge of electricity coursed through the barn, illuminating the grotesque figure of a man. His skin was pale and translucent, his eyes glowing an unnatural red. In his hands, he held a guitar, its strings trembling as if they were alive.The man began to play, his fingers dancing over the strings with an otherworldly speed. The notes that emerged were not music, but a cacophony of discordant wails that tore through the night. As he played, the barn began to tremble, its walls groaning and creaking like an ancient beast.Outside, the once-peaceful night sky turned a sickly shade of green. The wind howled like a banshee, carrying with it the sound of the man's macabre symphony. The barn became a vortex of pure terror, its inhabitants frozen in a nightmare that seemed to have no end.",
+  "word count": 169,
   "dialog": [
     {
-      "Billy":
-        "I loved how Niépce's invention changed everything! Before, people only had sketches or paintings to remember things by.",
+      "Kerry":
+        "Wow, that story was creepy! I couldn't believe how the barn started to shake and groan.",
     },
     {
-      "Kerry":
-        "Yeah, and it was all thanks to his curiosity and perseverance. I mean, who would have thought that a camera obscura could be used to take pictures?",
+      "Billy": "I know, right? It was like something out of a horror movie.",
     },
     {
       "Meg":
-        "I know, right? It's amazing how much our understanding of the world can change just because someone asks 'what if'?",
+        "I loved the part where the man's eyes glowed red. It was so eerie.",
     },
     {
       "Lui":
-        "Indeed, innovation is often sparked by curiosity and a willingness to take risks. Niépce's discovery has had a lasting impact on art and science.",
+        "The author did a great job of creating a sense of atmosphere. I could really feel the tension and suspense.",
     },
     {
       "Billy":
-        "And it's not just about taking pictures. The technology behind photography has led to all sorts of advancements in fields like medicine and astronomy.",
+        "I wonder what the man's guitar was made of. It sounded like it was made of bone or something.",
     },
     {
       "Kerry":
-        "That's true, but I think what really excites me is the way photography can capture moments and memories. It's like having a piece of history right in front of you!",
+        "Maybe it was a magic guitar. Like the one in the movie 'The Last Unicorn'.",
     },
     {
       "Meg":
-        "Exactly! And I love how photography can be both an art form and a science. It's like it's its own special language.",
+        "I think it was just a normal guitar, but the man was playing it with such power that it made it sound like it was made of something else.",
     },
     {
       "Lui":
-        "Well said, Meg. Photography has indeed become a powerful tool for communicating ideas and telling stories.",
+        "Whatever it was, it was definitely a powerful instrument. It was able to control the weather and everything.",
+    },
+    {
+      "Kerry": "I wonder what happened to the man after the story ended.",
+    },
+    {
+      "Billy": "I think he just disappeared. Into the night.",
     },
   ],
   "quiz": [
     {
-      "question":
-        "Where did Joseph Nicéphore Niépce make his groundbreaking discovery in 1826?",
+      "question": "What was the setting of the story?",
       "options": [
-        "Paris",
-        "Le Gras, France",
-        "London",
-        "New York City",
-        "Rome",
+        "A haunted house",
+        "An abandoned barn",
+        "A dark forest",
+        "A graveyard",
+        "A hospital",
       ],
       "answer": 1,
     },
     {
-      "question":
-        "What instrument did Niépce use to create images that could be reproduced?",
+      "question": "What color did the man's eyes glow?",
       "options": [
-        "Camera obscura",
-        "Paintbrush",
-        "Pencil",
-        "Chisel",
-        "Eraser",
+        "Blue",
+        "Green",
+        "Red",
+        "Yellow",
+        "Purple",
       ],
-      "answer": 0,
+      "answer": 2,
     },
     {
-      "question":
-        "Who began experimenting with photography after hearing about Niépce's invention?",
+      "question": "What sound did the man's music make?",
       "options": [
-        "Other artists",
-        "Scientists only",
-        "Inventors worldwide",
-        "Art critics and historians",
-        "Photography enthusiasts",
+        "Beautiful melodies",
+        "Discordant wails",
+        "Uplifting anthems",
+        "Calming lullabies",
+        "Energetic dance music",
+      ],
+      "answer": 1,
+    },
+    {
+      "question": "What happened to the barn as the man played?",
+      "options": [
+        "It collapsed",
+        "It caught fire",
+        "It started to shake and groan",
+        "It turned into a giant monster",
+        "It became invisible",
       ],
       "answer": 2,
     },
     {
       "question":
-        "What was the impact of Niépce's discovery on art and science?",
+        "What do you think happened to the man at the end of the story?",
       "options": [
-        "It led to the development of new art forms only.",
-        "It revolutionized both art and science.",
-        "It had no significant impact.",
-        "It led to the decline of photography.",
-        "It was a failure.",
+        "He was captured by the police",
+        "He was killed by a ghost",
+        "He disappeared into the night",
+        "He was arrested for disturbing the peace",
+        "He became a famous musician",
       ],
-      "answer": 1,
-    },
-    {
-      "question":
-        "According to Kerry, what is one exciting aspect of photography?",
-      "options": [
-        "Its ability to capture moments and memories",
-        "Its use in medicine and astronomy",
-        "Its impact on art only",
-        "Its use as an art form",
-        "Its ability to tell stories",
-      ],
-      "answer": 0,
+      "answer": 2,
     },
   ],
+  "params": {
+    "theme": "Music",
+    "flavor": "Horror",
+    "models": {
+      "main": "gemini",
+      "novel": "gemini",
+    },
+  },
   "descriptions": {
     "grammar": {
       "patterns": [
         {
           "pattern": "S + V",
-          "explanation": "Simple statement with a subject and verb.",
+          "explanation": "Subject + Verb, no objects or complements.",
           "usage": [
-            "In the summer of 1826, in the small town of Le Gras in France, a young inventor named Joseph Nicéphore Niépce was on the brink of a groundbreaking discovery.",
+            "In the dim recesses of an abandoned barn, the air crackled with an eerie silence.",
+            "Dust motes danced in the feeble moonlight that filtered through the cracks in the crumbling walls.",
+            "Wow, that story was creepy!",
+            "I couldn't believe how the barn started to shake and groan.",
           ],
           "words": [
             {
               "S": [
-                "In the summer of 1826",
-                "in the small town of Le Gras in France",
-                "a young inventor named Joseph Nicéphore Niépce",
+                "air",
+                "dust motes",
               ],
             },
             {
               "V": [
-                "was on the brink of a groundbreaking discovery",
+                "crackled",
+                "danced",
               ],
+            },
+            {
+              "C": [],
+            },
+            {
+              "O": [],
             },
           ],
         },
         {
           "pattern": "S + V + O",
-          "explanation": "Statement with a subject, verb, and object.",
+          "explanation": "Subject + Verb + Object, no complements.",
           "usage": [
-            "For years, he had been tinkering with new ways to capture images, but nothing seemed to work.",
+            "Suddenly, a surge of electricity coursed through the barn, illuminating the grotesque figure of a man.",
+            "His skin was pale and translucent, his eyes glowing an unnatural red.",
+            "He held a guitar in his hands, its strings trembling as if they were alive.",
+            "The notes that emerged were not music, but a cacophony of discordant wails that tore through the night.",
           ],
           "words": [
             {
               "S": [
-                "For years",
+                "surge",
                 "he",
+                "man",
+                "notes",
               ],
             },
             {
               "V": [
-                "had been tinkering with new ways to capture images",
+                "coursed",
+                "was",
+                "held",
+                "emerged",
               ],
             },
             {
               "O": [
-                "nothing",
+                "figure",
+                "skin",
+                "guitar",
+                "wails",
+              ],
+            },
+            {
+              "C": [],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + O",
+          "explanation": "Subject + Verb + Object + Object, no complements.",
+          "usage": [
+            "As he played, the barn began to tremble, its walls groaning and creaking like an ancient beast.",
+            "Outside, the once-peaceful night sky turned a sickly shade of green.",
+          ],
+          "words": [
+            {
+              "S": [
+                "he",
+                "night sky",
+              ],
+            },
+            {
+              "V": [
+                "played",
+                "turned",
+              ],
+            },
+            {
+              "O": [
+                "barn",
+                "shade",
+              ],
+            },
+            {
+              "C": [],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation": "Subject + Verb + Complement, no objects.",
+          "usage": [
+            "The wind howled like a banshee, carrying with it the sound of the man's macabre symphony.",
+            "The barn became a vortex of pure terror, its inhabitants frozen in a nightmare that seemed to have no end.",
+          ],
+          "words": [
+            {
+              "S": [
+                "wind",
+                "barn",
+              ],
+            },
+            {
+              "V": [
+                "howled",
+                "became",
+              ],
+            },
+            {
+              "O": [],
+            },
+            {
+              "C": [
+                "like a banshee",
+                "a vortex of pure terror",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O + C",
-          "explanation":
-            "Statement with a subject, verb, object, and complement.",
+          "explanation": "Subject + Verb + Object + Complement, no objects.",
           "usage": [
-            "After months of trial and error, he finally succeeded in taking the first permanent photograph.",
+            "I know, right?",
+            "It was like something out of a horror movie.",
+            "It sounded like it was made of bone or something.",
+            "It was able to control the weather and everything.",
+            "It was just a normal guitar, but the man was playing it with such power that it made it sound like it was made of something else.",
           ],
           "words": [
             {
               "S": [
-                "For years",
-                "he",
+                "I",
+                "it",
+                "sound",
+                "guitar",
+                "it",
               ],
             },
             {
               "V": [
-                "finally succeeded in taking the first permanent photograph",
+                "know",
+                "was",
+                "sounded",
+                "was able",
+                "it",
               ],
             },
             {
-              "O": [
-                "the first permanent photograph",
-              ],
+              "O": [],
             },
             {
               "C": [
-                "in taking",
+                "like something out of a horror movie",
+                "like it was made of bone or something",
+                "to control the weather and everything",
+                "just a normal guitar",
+                "with such power",
               ],
             },
           ],
@@ -190,103 +296,104 @@ const data: QuizData = {
       "vocabularies": [
         {
           "class": "Noun",
-          "word": "summer",
-          "meaning": "the warmest season of the year",
-          "usage": [
-            "In the summer of 1826",
-            "That was until one day, when out of nowhere, inspiration struck him like a bolt of lightning in the summer",
-          ],
-          "pronounce": "/ˈsʌmər/",
-          "example": "The summer vacation is a time to relax.",
-        },
-        {
-          "class": "Proper Noun",
-          "word": "Le Gras",
-          "meaning": "a small town in France",
-          "usage": [
-            "In the small town of Le Gras in France",
-          ],
-          "pronounce": "/leɡreɪz/",
-          "example": "The town of Le Gras is known for its historic landmarks.",
-        },
-        {
-          "class": "Proper Noun",
-          "word": "Joseph Nicéphore Niépce",
-          "meaning": "a young inventor",
-          "usage": [
-            "In the summer of 1826, in the small town of Le Gras in France, a young inventor named Joseph Nicéphore Niépce",
-          ],
-          "pronounce": "/dʒoʊˈsɛf nɪˈseɪfroʊ niːˈpɛs/",
+          "word": "recesses",
+          "meaning": "a secluded or hidden place",
+          "usage": [],
+          "pronounce": "rɪˈsɛsɪz",
           "example":
-            "Joseph Nicéphore Niépce is credited with inventing the first permanent photograph.",
+            "The team retreated to the recesses of the forest to regroup.",
         },
         {
           "class": "Noun",
-          "word": "camera",
-          "meaning": "an instrument used to capture images",
+          "word": "mote",
+          "meaning": "a tiny speck of dust or other matter",
           "usage": [
-            "He decided to experiment with using a camera obscura",
+            "Dust motes danced in the feeble moonlight that filtered through the cracks in the crumbling walls.",
           ],
-          "pronounce": "/ˈkæmərə/",
-          "example": "The camera captures the beauty of nature.",
+          "pronounce": "moʊt",
+          "example": "Motes of pollen floated in the air.",
+        },
+        {
+          "class": "Adjective",
+          "word": "feeble",
+          "meaning": "weak or lacking in strength",
+          "usage": [
+            "Dust motes danced in the feeble moonlight that filtered through the cracks in the crumbling walls.",
+          ],
+          "pronounce": "ˈfiːbəl",
+          "example":
+            "The old man's feeble attempts to walk were heartbreaking.",
         },
         {
           "class": "Noun",
-          "word": "light",
-          "meaning": "the power of light to create images",
+          "word": "surge",
+          "meaning": "a sudden increase or rush of something",
           "usage": [
-            "combining it with the power of light",
+            "Suddenly, a surge of electricity coursed through the barn, illuminating the grotesque figure of a man.",
           ],
-          "pronounce": "/laɪt/",
-          "example": "The light is essential for capturing photographs.",
+          "pronounce": "sɜːrdʒ",
+          "example":
+            "A surge of adrenaline coursed through his body when he saw the danger.",
+        },
+        {
+          "class": "Adjective",
+          "word": "grotesque",
+          "meaning": "causing a sense of horror or revulsion",
+          "usage": [
+            "Suddenly, a surge of electricity coursed through the barn, illuminating the grotesque figure of a man.",
+          ],
+          "pronounce": "ɡroʊˈtɛsk",
+          "example":
+            "The grotesque creature had sharp claws and glowing red eyes.",
         },
         {
           "class": "Noun",
-          "word": "image",
-          "meaning": "a picture or representation",
+          "word": "cacophony",
+          "meaning": "a harsh or discordant mixture of sounds",
           "usage": [
-            "He finally succeeded in taking the first permanent photograph of his own backyard",
+            "The notes that emerged were not music, but a cacophony of discordant wails that tore through the night.",
           ],
-          "pronounce": "/ˈɪmɪdʒ/",
-          "example": "The image on the screen is not clear.",
+          "pronounce": "kəˈkɑːfəni",
+          "example": "The cacophony of car horns made it difficult to think.",
         },
         {
           "class": "Noun",
-          "word": "backyard",
-          "meaning": "the area behind one's house",
+          "word": "vortex",
+          "meaning":
+            "a swirling mass of water or air, especially a whirlpool or tornado",
           "usage": [
-            "He finally succeeded in taking the first permanent photograph of his own backyard",
+            "The barn became a vortex of pure terror, its inhabitants frozen in a nightmare that seemed to have no end.",
           ],
-          "pronounce": "/ˈbæk.jɑrd/",
-          "example": "The backyard is a great place to relax.",
+          "pronounce": "ˈvɔːrtɛks",
+          "example":
+            "The tornado created a vortex that lifted houses into the air.",
         },
         {
-          "class": "Verb",
-          "word": "take",
-          "meaning": "to capture or obtain something",
+          "class": "Noun",
+          "word": "banshee",
+          "meaning":
+            "a female spirit in Irish folklore that wails before a death",
           "usage": [
-            "He finally succeeded in taking the first permanent photograph",
+            "The wind howled like a banshee, carrying with it the sound of the man's macabre symphony.",
           ],
-          "pronounce": "/teɪk/",
-          "example": "I will take a picture of my cat.",
+          "pronounce": "ˈbænʃiː",
+          "example": "The banshee's wail pierced the night air.",
         },
       ],
     },
     "keywords": [
-      "invention",
-      "photography",
-      "image",
-      "light",
-      "camera",
-      "obscura",
-      "art",
-      "science",
-      "groundbreaking",
-      "France",
-      "Le Gras",
-      "inspiration",
-      "experimentation",
-      "permanent",
+      "eerie",
+      "grotesque",
+      "unnatural",
+      "discordant",
+      "banshee",
+      "macabre",
+      "vortex",
+      "terror",
+      "nightmare",
+      "supernatural",
+      "otherworldly",
+      "haunting",
     ],
   },
 };

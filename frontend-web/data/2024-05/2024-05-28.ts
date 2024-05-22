@@ -1,224 +1,228 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "Microsoft releases Windows 95",
+    "event": "American Ballet Theatre's First Performance",
     "details":
-      "Windows 95 was a consumer-oriented operating system released by Microsoft on May 28th, 1995. It was the first widely popular version of Windows to include the Start menu and Taskbar.",
+      "On May 28, 1940, the American Ballet Theatre (ABT) held its first performance at the Metropolitan Opera House in New York City. The company was founded by Lucia Chase and Richard Pleasant, and its inaugural season featured a mix of classical and modern ballets. ABT has since become one of the world's leading ballet companies, known for its artistic excellence and innovative productions.",
   },
   "date": "2024-05-28",
-  "title": "Electric Dreams: A Cyberpunk Novel",
+  "title": "The Enchanted Theater",
   "body":
-    "In a neon-lit city where technology had long surpassed humanity's wildest dreams, life was both a blessing and a curse. Everyday people were connected to the digital grid, their bodies enhanced with cybernetic implants that allowed them to interface directly with the net. The streets were bustling with chrome-skinned individuals, their eyes glowing with the soft blue light of their augmented brains.  It was in this world that we met our protagonist, a washed-up hacker named Jack. Once a brilliant mind who had helped shape the very fabric of the digital universe, he now found himself struggling to make ends meet in a city that had long outgrown him.  But fate had other plans for Jack. When a mysterious message arrived on his datapad, offering a chance at redemption and untold riches, he couldn't resist the temptation. The message was simple: steal the latest operating system from Microsoft before it hit the streets and sell it to the highest bidder.  As Jack delved deeper into the seedy underworld of the city, he found himself fighting for survival against a cast of characters who would stop at nothing to get what they wanted. With every step he took, he was drawn further and further into a web of lies, deceit, and betrayal.  In the end, Jack would learn that some dreams are worth fighting for, even if it means risking everything he had left.",
-  "word count": 233,
+    "In the heart of a vibrant metropolis, there stood a grand and opulent theater. Known as the Enchanted Theater, it was a realm where dreams took flight and magic wove its enchanting spell. As the curtain rose on a momentous night, a ballet of unparalleled beauty unfolded before the spellbound audience. Dancers moved with ethereal grace, their every step a tapestry of rhythm and emotion. The music soared through the air, painting an enchanting symphony upon the hearts of all who listened. Among the spectators sat Anya, a young girl whose imagination ignited with each graceful leap and pirouette. As the ballet reached its crescendo, the stage transformed into a realm of shimmering stars and swirling colors. Suddenly, Anya felt an irresistible pull towards the stage. With a gasp, she found herself transported to the heart of the performance, surrounded by the ethereal dancers. Together, they soared through the air, defying gravity and embracing the magic of the enchanted theater.",
+  "word count": 160,
   "dialog": [
     {
       "Billy":
-        "I loved how the author blended technology with humanity in this world. It really made me think about what's important in life.",
-    },
-    {
-      "Lui":
-        "Indeed, it's a great commentary on our society's dependence on technology. But I have to say, I found Jack's character quite relatable. His struggles to find purpose in a world that had moved beyond him resonated with me.",
-    },
-    {
-      "Meg":
-        "Ooh, I know what you mean, Lui! Jack's journey was so compelling. And the themes of redemption and second chances really spoke to me. I think we can all learn from his experiences.",
+        "Wow, that was an amazing ballet! The dancers were so graceful, and the music was beautiful.",
     },
     {
       "Kerry":
-        "Yeah, I liked how the novel explored the gray areas between right and wrong. It made me realize that even the most questionable characters have their own motivations and backstories.",
-    },
-    {
-      "Lui":
-        "(laughs) Well, that's certainly true. But I think the novel also shows us the importance of human connection and community. Even in a world with all these advanced technologies, it's our relationships that truly matter.",
+        "I know, right? I felt like I was transported to another world. It was like I was actually dancing with them.",
     },
     {
       "Meg":
-        "That's so beautifully put, Lui. And I love how the author wove together these different threads – technology, humanity, morality... It really keeps you thinking long after you finish the book.",
+        "The stage was so magical, with the shimmering stars and the swirling colors. It was like something out of a dream.",
+    },
+    {
+      "Lui":
+        "I agree, it was a truly captivating performance. The dancers' technique was impeccable, and the choreography was breathtaking.",
     },
     {
       "Billy":
-        "Yeah, and now I'm curious to see where the author takes us next. Will there be more adventures with Jack or new characters to explore?",
+        "I wonder how they do it. Is it just practice, or is there something more to it?",
+    },
+    {
+      "Kerry":
+        "I bet they have some kind of secret formula. Like they drink a magic potion that makes them dance better.",
+    },
+    {
+      "Meg":
+        "Or maybe they're just born with it. Some people are just naturally talented.",
+    },
+    {
+      "Lui":
+        "It's probably a combination of both. Natural talent is important, but it takes a lot of hard work and dedication to become a truly great dancer.",
     },
   ],
   "quiz": [
     {
-      "question":
-        "What was Jack's occupation before he got involved in stealing the latest operating system from Microsoft?",
+      "question": "Where was the Enchanted Theater located?",
       "options": [
-        "Hacker",
-        "Cybernetic Engineer",
-        "Software Developer",
-        "Data Analyst",
-        "Writer",
-      ],
-      "answer": 0,
-    },
-    {
-      "question":
-        "According to Billy, what did the author do well in the novel?",
-      "options": [
-        "Portrayed the characters as 2D",
-        "Blended technology with humanity poorly",
-        "Explained complex technical terms clearly",
-        "Added too many unnecessary details",
+        "In the suburbs of a quiet town",
+        "In the heart of a vibrant metropolis",
+        "On a remote island",
+        "In a small, charming village",
+        "In a grand palace",
       ],
       "answer": 1,
     },
     {
-      "question": "What theme did Lui find relatable in Jack's character?",
+      "question": "What was one of the most captivating aspects of the ballet?",
       "options": [
-        "Struggles to find purpose in a world that had moved beyond him",
-        "Tries to balance technology and humanity",
-        "Finds redemption and second chances",
-        "Faces moral dilemmas",
+        "The intricate costumes",
+        "The ethereal grace of the dancers",
+        "The powerful music",
+        "The imaginative set design",
+        "The humorous choreography",
+      ],
+      "answer": 1,
+    },
+    {
+      "question": "According to Anya, what happened during the ballet?",
+      "options": [
+        "She was transported to the stage",
+        "She met the dancers backstage",
+        "She fell asleep and missed the performance",
+        "She performed a solo dance",
+        "She became a professional dancer",
       ],
       "answer": 0,
+    },
+    {
+      "question": "What did Kerry believe about the dancers' abilities?",
+      "options": [
+        "They were born with exceptional talent",
+        "They practiced for many hours each day",
+        "They used a secret formula to enhance their skills",
+        "They were possessed by magical beings",
+        "Their success was all due to luck",
+      ],
+      "answer": 2,
     },
     {
       "question":
-        "What did the author try to show through Jack's journey, according to Meg?",
+        "According to Lui, what is essential for becoming a great dancer?",
       "options": [
-        "The importance of human connection and community",
-        "The power of technology in modern society",
-        "The struggle for social justice",
-        "The impact of environmental degradation",
+        "Natural talent alone is sufficient",
+        "Hard work and dedication are the only requirements",
+        "Both natural talent and hard work are important",
+        "Having the right teacher is the most important factor",
+        "Participating in competitions is essential",
       ],
-      "answer": 0,
-    },
-    {
-      "question": "What did Kerry like about the novel?",
-      "options": [
-        "How it explored the gray areas between right and wrong",
-        "How it portrayed complex characters with motivations",
-        "How it used technology to drive the plot forward",
-        "How it handled themes of morality",
-      ],
-      "answer": 0,
+      "answer": 2,
     },
   ],
+  "params": {
+    "theme": "Dance",
+    "flavor": "Fantasy",
+    "models": {
+      "main": "gemini",
+      "novel": "gemini",
+    },
+  },
   "descriptions": {
     "grammar": {
       "patterns": [
         {
           "pattern": "S + V",
-          "explanation":
-            "The simplest sentence pattern, where S is the subject and V is the verb.",
+          "explanation": "Subject and verb",
           "usage": [
-            "In a neon-lit city...",
-            "Everyday people were...",
+            "In the heart of a vibrant metropolis, there stood a grand and opulent theater.",
           ],
           "words": [
             {
               "S": [
-                "In",
-                "a",
-                "neon-lit",
-                "city",
+                "In the heart of a vibrant metropolis",
               ],
             },
             {
               "V": [
-                "was",
-                "were",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + C",
-          "explanation":
-            "A sentence pattern where S is the subject, V is the verb, and C is the complement.",
-          "usage": [
-            "It was in this world...",
-            "I loved how...",
-          ],
-          "words": [
-            {
-              "S": [
-                "It",
-                "was",
-              ],
-            },
-            {
-              "V": [
-                "was",
-                "loved",
-              ],
-            },
-            {
-              "C": [
-                "in this world",
-                "how the author blended technology with humanity",
+                "stood",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O",
-          "explanation":
-            "A sentence pattern where S is the subject, V is the verb, and O is the object.",
+          "explanation": "Subject, verb, and object",
           "usage": [
-            "The streets were...",
+            "As the curtain rose on a momentous night, a ballet of unparalleled beauty unfolded before the spellbound audience.",
+            "The music soared through the air, painting an enchanting symphony upon the hearts of all who listened.",
+            "Wow, that was an amazing ballet!",
           ],
           "words": [
             {
               "S": [
-                "The",
-                "streets",
+                "As the curtain",
+                "The music",
               ],
             },
             {
               "V": [
-                "were",
+                "rose",
+                "soared",
+                "was",
               ],
             },
             {
               "O": [
-                "bustling with chrome- skinned individuals",
+                "a ballet of unparalleled beauty",
+                "an enchanting symphony",
+                "that",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O + O",
-          "explanation":
-            "A sentence pattern where S is the subject, V is the verb, and O are two objects.",
-          "usage": [],
-          "words": [
-            {},
-          ],
-        },
-        {
-          "pattern": "S + V + O + C",
-          "explanation":
-            "A sentence pattern where S is the subject, V is the verb, O is the object, and C is the complement.",
+          "explanation": "Subject, verb, two objects",
           "usage": [
-            "With every step he...",
-            "I think we can...",
+            "Among the spectators sat Anya, a young girl whose imagination ignited with each graceful leap and pirouette.",
           ],
           "words": [
             {
               "S": [
-                "Jack",
-                "he",
+                "Among the spectators",
               ],
             },
             {
               "V": [
-                "took",
-                "think",
+                "sat",
               ],
             },
             {
               "O": [
-                "step",
-                "can",
+                "Anya",
+                "a young girl whose imagination ignited with each graceful leap and pirouette",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + C",
+          "explanation": "Subject, verb, object, complement",
+          "usage": [
+            "The stage transformed into a realm of shimmering stars and swirling colors.",
+            "With a gasp, she found herself transported to the heart of the performance, surrounded by the ethereal dancers.",
+            "Together, they soared through the air, defying gravity and embracing the magic of the enchanted theater.",
+          ],
+          "words": [
+            {
+              "S": [
+                "The stage",
+                "she",
+                "Together",
+              ],
+            },
+            {
+              "V": [
+                "transformed",
+                "found",
+                "soared",
+              ],
+            },
+            {
+              "O": [
+                "a realm of shimmering stars and swirling colors",
+                "herself",
+                "the air",
               ],
             },
             {
               "C": [
-                "he was drawn further and further into a web of lies, deceit, and betrayal",
-                "we can all learn from his experiences",
+                "into a realm of shimmering stars and swirling colors",
+                "transported to the heart of the performance, surrounded by the ethereal dancers",
+                "defying gravity and embracing the magic of the enchanted theater",
               ],
             },
           ],
@@ -227,109 +231,102 @@ const data: QuizData = {
       "vocabularies": [
         {
           "class": "Noun",
-          "word": "technology",
-          "meaning":
-            "the application of scientific knowledge for practical purposes",
+          "word": "metropolis",
+          "meaning": "a large, busy city",
           "usage": [
-            "Everyday people were connected to the digital grid, their bodies enhanced with cybernetic implants that allowed them to interface directly with the net. The streets were bustling with chrome- skinned individuals, their eyes glowing with the soft blue light of their augmented brains.",
+            "In the heart of a vibrant metropolis, there stood a grand and opulent theater.",
           ],
-          "pronounce": "/tɛk'nɒlədʒi/",
-          "example":
-            "The rapid advancement in technology has changed our lives.",
-        },
-        {
-          "class": "Adjective",
-          "word": "digital",
-          "meaning":
-            "relating to or consisting of digits, especially as represented by a sequence of binary code",
-          "usage": [
-            "Everyday people were connected to the digital grid,",
-          ],
-          "pronounce": "/dɪˈtɛlɪt/",
-          "example": "The digital age has brought many changes.",
+          "pronounce": "/məˈtrɑːpəlɪs/",
+          "example": "The metropolis was a bustling hub of activity.",
         },
         {
           "class": "Noun",
-          "word": "hacker",
+          "word": "theater",
           "meaning":
-            "a person who secretly accesses and alters someone else's computer system without permission",
+            "a building where plays, operas, or other performances are given",
           "usage": [
-            "It was in this world that we met our protagonist, a washed- up hacker named Jack.",
+            "Known as the Enchanted Theater, it was a realm where dreams took flight and magic wove its enchanting spell.",
           ],
-          "pronounce": "/ˈhækər/",
-          "example": "The skilled hacker managed to break into the system.",
+          "pronounce": "/ˈθiːətər/",
+          "example": "The theater was packed with eager audience members.",
         },
         {
-          "class": "Verb",
-          "word": "interface",
-          "meaning":
-            "to communicate or interact with something, especially a computer or machine",
+          "class": "Noun",
+          "word": "ballet",
+          "meaning": "a dance form that involves graceful, stylized movements",
           "usage": [
-            "their bodies enhanced with cybernetic implants that allowed them to interface directly with the net.",
+            "As the curtain rose on a momentous night, a ballet of unparalleled beauty unfolded before the spellbound audience.",
           ],
-          "pronounce": "/ɪnˈtɝrfɛs/",
+          "pronounce": "/ˈbæleɪ/",
+          "example": "The ballet was a mesmerizing performance.",
+        },
+        {
+          "class": "Noun",
+          "word": "audience",
+          "meaning": "a group of people who are present at a performance",
+          "usage": [
+            "Dancers moved with ethereal grace, their every step a tapestry of rhythm and emotion. The music soared through the air, painting an enchanting symphony upon the hearts of all who listened.",
+          ],
+          "pronounce": "/ˈɔːdiəns/",
           "example":
-            "The new software allows you to interface with other devices.",
+            "The audience applauded enthusiastically at the end of the performance.",
         },
         {
-          "class": "Adverb",
-          "word": "long",
-          "meaning": "to a great extent or degree; very much so",
+          "class": "Noun",
+          "word": "crescendo",
+          "meaning": "a gradual increase in volume or intensity",
           "usage": [
-            "technology had long surpassed humanity's wildest dreams,",
+            "As the ballet reached its crescendo, the stage transformed into a realm of shimmering stars and swirling colors.",
           ],
-          "pronounce": "/lɔŋ/",
-          "example": "The city has been long in need of renovation.",
+          "pronounce": "/krəˈʃɛndoʊ/",
+          "example": "The music reached a thunderous crescendo.",
         },
         {
-          "class": "Adverb",
-          "word": "mysteriously",
-          "meaning": "in a way that is difficult to understand or explain",
+          "class": "Noun",
+          "word": "performance",
+          "meaning": "a presentation of a play, dance, or other entertainment",
           "usage": [
-            "When a mysterious message arrived on his datapad,",
+            "Together, they soared through the air, defying gravity and embracing the magic of the enchanted theater.",
           ],
-          "pronounce": "/mɪˈstərɪəsli/",
-          "example":
-            "The company's financial reports were mysteriously delayed.",
+          "pronounce": "/pərˈfɔːrməns/",
+          "example": "The performance was a critical and commercial success.",
         },
         {
-          "class": "Preposition",
-          "word": "in",
+          "class": "Noun",
+          "word": "gravity",
+          "meaning": "the force that attracts objects towards each other",
+          "usage": [
+            "Together, they soared through the air, defying gravity and embracing the magic of the enchanted theater.",
+          ],
+          "pronounce": "/ˈɡrævəti/",
+          "example": "The gravity of the situation was apparent.",
+        },
+        {
+          "class": "Noun",
+          "word": "magic",
           "meaning":
-            "located within something or on its surface; situated inside something",
+            "the power to produce seemingly impossible effects by using supernatural means",
           "usage": [
-            "It was in this world that we met our protagonist,",
+            "As the curtain rose on a momentous night, a ballet of unparalleled beauty unfolded before the spellbound audience. Dancers moved with ethereal grace, their every step a tapestry of rhythm and emotion.",
           ],
-          "pronounce": "/ɪn/",
-          "example": "The book is in my bag.",
-        },
-        {
-          "class": "Conjunction",
-          "word": "but",
-          "meaning": "however; on the other hand",
-          "usage": [
-            "But fate had other plans for Jack.",
-          ],
-          "pronounce": "/bʌt/",
-          "example": "I wanted to go, but my parents said no.",
+          "pronounce": "/ˈmædʒɪk/",
+          "example": "The magician pulled a rabbit out of his hat.",
         },
       ],
     },
     "keywords": [
-      "cybernetic",
-      "neon-lit",
-      "augmented",
-      "hacker",
-      "digital",
-      "grid",
-      "chrome-skinned",
-      "mysterious",
-      "redemption",
-      "operating",
-      "Microsoft",
-      "underworld",
-      "betrayal",
-      "dreams",
+      "Enchanted Theater",
+      "ballet",
+      "ethereal grace",
+      "rhythm and emotion",
+      "enchanting symphony",
+      "Anya",
+      "imagination",
+      "shimmering stars",
+      "swirling colors",
+      "transported to the stage",
+      "defying gravity",
+      "magic",
     ],
   },
 };
