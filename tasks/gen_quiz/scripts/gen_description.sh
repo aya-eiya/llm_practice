@@ -4,9 +4,14 @@ LANG=en_US.UTF-8
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 OUTPUTS_DIR="${CURRENT_DIR}/../outputs"
 
-fulldate=${1}
-
-clear=${2}
+create_llm_cmd() {
+  local model=$1
+  if [ -f "${CURRENT_DIR}/../models/${model}.py" ]; then
+    echo python "${CURRENT_DIR}/../models/${model}.py"
+  else
+    echo "ollama run ${model}"
+  fi
+}
 
 ## TMP files
 init_tmp () {
@@ -38,15 +43,6 @@ init_tmp () {
 
 ## models
 main_model="llama3"
-
-org_json="${OUTPUTS_DIR}/${fulldate}.json"
-out_json="${OUTPUTS_DIR}/${fulldate}.desc.json"
-
-if [ "${clear}" = "clear" ]; then
-  init_tmp
-  rm -f ${tmp_files[@]} ${out_json}
-  exit 0
-fi
 
 try_gen_pattern() {
   local lines="${1}"
@@ -91,7 +87,7 @@ Type Grammar = {
 Output is only one single JSON."
 
   echo "${pattern}" > $tmp_prompt_pattern
-  timeout 120 ollama run llama3 "${pattern}" \
+  timeout 120 ${run_llm} "${pattern}" \
   | tee $tmp_out_pattern \
   | tr -d '\n' \
   | sed -e 's/```json/```/g' \
@@ -106,7 +102,7 @@ gen_pattern() {
   local cnt=0
 
   while true; do
-    try_gen_pattern "${lines}" 2> /dev/null && break
+    try_gen_pattern "${lines}" && break
     cnt=$((cnt + 1))
     if [ $cnt -eq 5 ]; then return 1; fi
   done
@@ -144,7 +140,7 @@ type Grammar = {
 Output is only one single JSON."
 
   echo "${vocabularies}" > $tmp_prompt_vocabularies
-  timeout 120 ollama run llama3 "${vocabularies}" \
+  timeout 120 ${run_llm} "${vocabularies}" \
   | tee $tmp_out_vocabularies \
   | tr -d '\n' \
   | sed -e 's/```json/```/g' \
@@ -185,7 +181,7 @@ The output is JSON as following format.
 And the output JSON only."
 
   echo "${keywords}" > $tmp_prompt_keywords
-  timeout 60s ollama run llama3 "${keywords}" \
+  timeout 60s ${run_llm} "${keywords}" \
   | tee $tmp_out_keywords \
   | tr -d '\n' \
   | tr -d '\`' \
@@ -204,12 +200,41 @@ gen_keywords() {
 
 }
 
-if [ ! -f "${org_json}" ]; then
-  echo "'${org_json}' File not found."
-  exit 1
+while getopts ":d:e:s:t:f:m:n:-:" opt; do
+  if [ "$opt" = "-" ]; then
+    opt="${OPTARG%%=*}"
+    OPTARG="${OPTARG#$opt}"
+  fi
+  OPTARG="${OPTARG#=}"
+  case $opt in
+    d|fulldate) # date of generated content
+      fulldate="$OPTARG";;
+    c|clear) # clear step tmp files
+      clear="true";;
+    m|model) # main model to use
+      main_model="$OPTARG";;
+    \?)
+      echo "Invalid option: -"$OPTARG"" >&2
+      exit 1;;
+    : )
+      echo "Option -"$OPTARG" requires an argument." >&2
+      exit 1;;
+  esac
+done
+
+if [ "$fulldate" = "" ]; then
+  ## date
+  fulldate=$(date "+%Y-%m-%d")
 fi
 
 init_tmp
+org_json="${OUTPUTS_DIR}/${fulldate}.json"
+out_json="${OUTPUTS_DIR}/${fulldate}.desc.json"
+
+if [ "${clear}" = "clear" ]; then
+  rm -f ${tmp_files[@]} ${out_json}
+  exit 0
+fi
 
 cat <<OPTS | jq
 {
@@ -220,6 +245,12 @@ cat <<OPTS | jq
   "temp_files": [$( for file in "${tmp_files[@]}" ; do echo -n "\"$file\","; done | sed 's/,$//')]
 }
 OPTS
+
+if [ ! -f "${org_json}" ]; then
+  echo "'${org_json}' File not found."
+  exit 1
+fi
+run_llm=$(create_llm_cmd "$main_model")
 
 if [ ! -f $tmp_json_pattern ] || [ "$(jq 'has("grammar")' $tmp_json_pattern)" != "true" ]; then
   echo "gen pattern"

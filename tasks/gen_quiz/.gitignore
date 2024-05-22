@@ -4,3 +4,4 @@ outputs/*
 *.log
 *.bk
 *.tmp.sh
+.env

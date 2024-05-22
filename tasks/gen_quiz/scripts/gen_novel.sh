@@ -15,6 +15,15 @@ lui="Lui, a veteran educator with over 20 years of experience teaching social st
 ## Steps
 steps=('event' 'novel' 'conversation' 'quiz' 'make')
 
+create_llm_cmd() {
+  local model=$1
+  if [ -f "${CURRENT_DIR}/../models/${model}.py" ]; then
+    echo python "${CURRENT_DIR}/../models/${model}.py"
+  else
+    echo "ollama run ${model}"
+  fi
+}
+
 ## TMP files
 init_tmp () {
   tmp_prompt_event=/tmp/.research_event_${fulldate}.prompt
@@ -61,7 +70,7 @@ The output is JSON of
 And the output JSON only."
 
   echo "${event}" > $tmp_prompt_event
-  ollama run $main_model "${event}" \
+  $run_llm "${event}" \
   | tee $tmp_out_event \
   | tr -d '\n' \
   | tr -d '\`' \
@@ -103,7 +112,7 @@ The output is a JSON formatted as
 And the output JSON only."
 
   echo "${novel}" > $tmp_prompt_novel
-  ollama run $novel_model "$novel" \
+  $run_llm_novel "$novel" \
   | tee $tmp_out_novel \
   | tr -d '\n' \
   | sed -n -e 's/^.*\({.*}\).*$/\1/p' \
@@ -156,7 +165,7 @@ type Dialog = {
 \"dialog\" is the root key, and array of conversation objects."
 
   echo "${conversation}" > $tmp_prompt_conversation
-  ollama run $main_model "$conversation" \
+  $run_llm "$conversation" \
   | tee $tmp_out_conversation \
   | tr -d '\n' \
   | sed -e 's/```json/```/g' \
@@ -199,7 +208,7 @@ type Quize = {
 \"quiz\" is the root key and the object must have 5 question object."
 
   echo "${quiz}" > $tmp_prompt_quiz
-  ollama run $main_model "${quiz}" \
+  $run_llm "${quiz}" \
   | tee $tmp_out_quiz \
   | tr -d '\n' \
   | sed -e 's/```json/```/g' \
@@ -372,12 +381,12 @@ init_tmp
 
 if [ "$flavor" = "" ]; then
   # set random flavor
-  flavor=$(echo -e "mystery\nfantasy\nsci-fi" | shuf -n 1)
+  flavor=$(echo -e "Horror\nThriller\nSF\nFantasy" | shuf -n 1)
 fi
 
 if [ "$theme" = "" ]; then
   # set random theme
-  theme=$(echo -e "ancient\nmedieval\nmodern" | shuf -n 1)  
+  theme=$(echo -e "Design\nEconomy\nPolitics" | shuf -n 1)  
 fi
 
 cat <<OPTS | jq > $tmp_json_params
@@ -396,6 +405,8 @@ cat <<OPTS | jq > $tmp_json_params
 OPTS
 
 cat $tmp_json_params
+run_llm=$(create_llm_cmd "$main_model")
+run_llm_novel=$(create_llm_cmd "$novel_model")
 
 if [[ " ${steps[@]} " =~ "event" ]]; then
   gen_event > $tmp_json_event
