@@ -1,394 +1,305 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "The Museum of Modern Art (MoMA) opens in New York City",
+    "event": "Panic of 1873",
     "details":
-      "On May 26th, 1929, The Museum of Modern Art (MoMA) officially opened its doors to the public at 11 West 53rd Street in Midtown Manhattan, New York City. This event marked a significant milestone in the development of modern art, as MoMA was founded with the goal of showcasing and preserving works by artists who were pushing the boundaries of their medium.",
+      "The Panic of 1873 was a financial crisis that began in the United States on September 18, 1873, and spread to Europe. The crisis was caused by a combination of factors, including the overexpansion of the railroad industry, the collapse of the Vienna Stock Exchange, and the failure of the banking firm Jay Cooke & Company. The Panic of 1873 led to a severe economic depression in the United States that lasted for several years.",
   },
   "date": "2024-05-26",
-  "title": "Whispers of Art: The Museum of Modern Art",
+  "title": "The Panic",
   "body":
-    "In the heart of New York City, on a fateful day in May of 1929, the doors of the Museum of Modern Art (MoMA) swung open to reveal an exhibition that would change the course of art history. As visitors stepped into the grand building at 11 West 53rd Street, they were greeted by a world that defied tradition and pushed the boundaries of imagination.The walls of the museum echoed with hushed whispers of art lovers as they marveled at the works that danced with the lines between reality and abstraction. Each painting and sculpture told a story of creativity, innovation, and freedom.But amidst the celebration of modern art, a mysterious figure haunted the halls of MoMA. With an air of mystery and intrigue, this enigmatic being seemed to be drawn to the museum's most prized possessions - the works that challenged the very notion of art.As the days turned into weeks, and the weeks into months, the figure became a legend among the museum staff and patrons alike. Some said it was an artist's muse, inspiring new levels of creativity and innovation in those who entered its presence. Others believed it to be a guardian angel, protecting the precious works from harm.But no one knew for sure what drove this ghostly figure to roam the halls of MoMA. And as the years passed, the tale of the mysterious being became a part of the museum's rich history - a story whispered between art lovers as they stood in awe of the masterpieces on display.",
-  "word count": 255,
+    "In the heart of the roaring twenties, as the economy boomed and life seemed full of promise, a shadow was lurking, waiting to strike. It was the Panic of 1929, a financial crisis that would change the course of history forever.\n\nAs the stock market soared to unprecedented heights, greed and speculation ran rampant. People poured their life savings into the market, dreaming of quick riches. But like a house of cards, the market came crashing down, leaving behind shattered dreams and financial ruin.\n\nIn the aftermath of the crash, the world was plunged into a decade-long depression. Unemployment skyrocketed, businesses closed their doors, and families were torn apart. The once-booming cities became ghost towns, filled with despair and poverty.\n\nAmidst the chaos and suffering, a sinister force emerged. Driven by desperation, people turned to crime and violence. The streets were haunted by fear as gangs roamed freely, preying on the weak and vulnerable.\n\nIn the darkness, a young woman named Mary found herself alone and adrift. Her family had lost everything in the crash, and she was left to fend for herself. As she wandered the desolate streets, she felt a growing sense of dread. Something was watching her, lurking in the shadows, waiting for the perfect moment to strike.",
+  "word count": 211,
   "dialog": [
     {
-      "Billy":
-        "I loved how the novel took me on a journey through art history! I never knew about the Museum of Modern Art's early days.",
-    },
-    {
-      "Kerry":
-        "Yeah, and the mysterious figure was so cool! I wanted to know more about it.",
-    },
-    {
-      "Meg":
-        "I agree, the novel had such vivid descriptions. It felt like I was right there with the characters.",
+      "Meg": "This novel was so captivating! I couldn't put it down!",
     },
     {
       "Lui":
-        "Indeed, the writing was excellent. The way it wove together art, history, and mystery was impressive.",
+        "Indeed, the author did a remarkable job of capturing the tumultuous era of the 1920s and the devastating impact of the Panic of 1929.",
     },
     {
       "Kerry":
-        "And did you guys notice how the novel explored themes of creativity and innovation? So relevant to our own lives.",
+        "I was particularly drawn to the character of Mary. Her struggle to survive in such desperate times was both heartbreaking and inspiring.",
     },
     {
       "Billy":
-        "Absolutely! I think that's what drew me in so much. The novel showed how art can be a powerful force for change.",
+        "I found the historical context fascinating. It's incredible to think how a financial crisis could have such far-reaching consequences.",
     },
     {
       "Meg":
-        "Exactly! And it made me appreciate art even more. Before, I just saw it as something pretty on the wall.",
+        "I agree, Billy. The novel really highlighted the fragility of our economic systems and the importance of financial literacy.",
+    },
+    {
+      "Lui":
+        "Furthermore, it's a sobering reminder of the consequences of greed and speculation.",
+    },
+    {
+      "Kerry":
+        "Yeah, it made me wonder how we can prevent history from repeating itself.",
+    },
+    {
+      "Billy":
+        "Maybe through education and regulation. By understanding the mistakes of the past, we can be better equipped to avoid them in the future.",
     },
   ],
   "quiz": [
     {
-      "question":
-        "What was significant about the Museum of Modern Art's opening in 1929?",
+      "question": "What was the major cause of the Panic of 1929?",
       "options": [
-        "It was a small gallery",
-        "It had no modern art exhibits",
-        "The doors swung open to reveal an exhibition that would change the course of art history",
-        "The museum was already famous for its collection",
-        "It was closed due to lack of funding",
-      ],
-      "answer": 2,
-    },
-    {
-      "question":
-        "What did some people believe the mysterious figure in the novel was?",
-      "options": [
-        "A ghost",
-        "An artist's muse",
-        "A guardian angel",
-        "A museum staff member",
-        "A patron",
+        "A political crisis",
+        "A financial crisis",
+        "A natural disaster",
+        "A military conflict",
+        "A technological advancement",
       ],
       "answer": 1,
     },
     {
-      "question": "What did Billy love about the novel?",
+      "question":
+        "What was the primary motivation for people investing heavily in the stock market during the 1920s?",
       "options": [
-        "The characters were not well-developed",
-        "The writing was poor",
-        "It took him on a journey through art history",
-        "He didn't like how it ended",
-        "The plot was confusing",
+        "To secure their retirement savings",
+        "To support local businesses",
+        "To gain quick riches",
+        "To protect against inflation",
+        "To fulfill a patriotic duty",
       ],
       "answer": 2,
     },
     {
-      "question": "What theme did the novel explore, according to Kerry?",
+      "question":
+        "What was one of the long-term consequences of the Panic of 1929?",
       "options": [
-        "The importance of technology in art",
-        "The power of nature in art",
-        "The impact of creativity and innovation on our lives",
-        "The role of museums in preserving history",
-        "The value of art in society",
+        "A rapid increase in the standard of living",
+        "A sustained period of economic prosperity",
+        "A decade-long depression",
+        "A major expansion of the welfare state",
+        "A strengthening of international relations",
       ],
       "answer": 2,
     },
     {
-      "question": "How did Meg feel about the novel after reading it?",
+      "question":
+        "What is the significance of the character Mary in the novel?",
       "options": [
-        "She didn't like how it made her think about art",
-        "It had no impact on her appreciation for art",
-        "It made her appreciate art even more",
-        "She thought it was too focused on art history",
-        "She didn't care about art",
+        "She represents the hope for a better future",
+        "She embodies the resilience of the American people",
+        "She highlights the struggles faced by individuals during the Depression",
+        "She symbolizes the corruption that led to the Panic",
+        "She represents the rise of organized crime",
       ],
       "answer": 2,
+    },
+    {
+      "question":
+        "According to the dialogue, what is one lesson that can be learned from the Panic of 1929?",
+      "options": [
+        "The stock market is always a safe investment",
+        "Financial crises can have devastating consequences",
+        "History has no impact on present events",
+        "Government intervention is always harmful",
+        "Personal wealth is more important than community well-being",
+      ],
+      "answer": 1,
     },
   ],
+  "params": {
+    "theme": "Economy",
+    "flavor": "Horror",
+    "models": {
+      "main": "gemini",
+      "novel": "gemini",
+    },
+  },
   "descriptions": {
     "grammar": {
       "patterns": [
         {
           "pattern": "S + V",
-          "explanation": "The subject (S) performs the verb (V).",
+          "explanation": "A sentence with a subject and a verb.",
           "usage": [
-            "In the heart of New York City, on a fateful day in May of 1929,",
+            "A shadow was lurking, waiting to strike.",
           ],
           "words": [
             {
               "S": [
-                "In",
-                "the",
-                "heart",
-                "of",
-                "New",
-                "York",
-                "City",
+                "A shadow",
               ],
             },
             {
               "V": [
-                "swung",
-                "open",
-                "reveal",
+                "was lurking",
+                "waiting",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + C",
-          "explanation":
-            "The subject (S) performs the verb (V) with a complement (C).",
+          "explanation": "A sentence with a subject, a verb, and a complement.",
           "usage": [
-            "As visitors stepped into the grand building at 11 West 53rd Street,",
+            "People poured their life savings into the market, dreaming of quick riches.",
           ],
           "words": [
             {
               "S": [
-                "As",
-                "visitors",
+                "People",
               ],
             },
             {
               "V": [
-                "stepped",
-                "into",
-                "the",
-                "grand",
-                "building",
-                "at",
-                "11",
-                "West",
-                "53rd",
-                "Street",
+                "poured",
+                "dreaming",
               ],
             },
             {
               "C": [
-                "",
+                "of quick riches",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O",
-          "explanation":
-            "The subject (S) performs the verb (V) with an object (O).",
+          "explanation": "A sentence with a subject, a verb, and an object.",
           "usage": [
-            "Each painting and sculpture told a story of creativity, innovation, and freedom.",
+            "It was the Panic of 1929, a financial crisis that would change the course of history forever.",
           ],
           "words": [
             {
               "S": [
-                "Each",
-                "painting",
-                "and",
-                "sculpture",
+                "It",
               ],
             },
             {
               "V": [
-                "told",
-                "a",
-                "story",
-                "of",
-                "creativity",
-                "innovation",
-                "and",
-                "freedom",
+                "was",
               ],
             },
             {
               "O": [
-                "",
+                "the Panic of 1929",
+                "a financial crisis",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O + O",
-          "explanation":
-            "The subject (S) performs the verb (V) with two objects (O).",
-          "usage": [
-            "But amidst the celebration of modern art, a mysterious figure haunted the halls of MoMA.",
-          ],
-          "words": [
-            {
-              "S": [
-                "But",
-                "amidst",
-                "the",
-                "celebration",
-                "of",
-                "modern",
-                "art",
-              ],
-            },
-            {
-              "V": [
-                "haunted",
-                "the",
-                "halls",
-                "of",
-                "MoMA",
-              ],
-            },
-            {
-              "O": [
-                "a",
-                "mysterious",
-                "figure",
-              ],
-            },
-          ],
+          "explanation": "A sentence with a subject, a verb, and two objects.",
+          "usage": [],
+          "words": [],
         },
         {
           "pattern": "S + V + O + C",
           "explanation":
-            "The subject (S) performs the verb (V) with an object (O) and a complement (C).",
-          "usage": [
-            "And as the years passed, the tale of the mysterious being became a part of the museum's rich history - a story whispered between art lovers.",
-          ],
-          "words": [
-            {
-              "S": [
-                "And",
-                "as",
-                "the",
-                "years",
-              ],
-            },
-            {
-              "V": [
-                "passed",
-                "the",
-                "tale",
-                "of",
-                "the",
-                "mysterious",
-                "being",
-                "became",
-                "a",
-                "part",
-                "of",
-                "the",
-                "museum's",
-                "rich",
-                "history",
-              ],
-            },
-          ],
+            "A sentence with a subject, a verb, an object, and a complement.",
+          "usage": [],
+          "words": [],
         },
       ],
       "vocabularies": [
         {
           "class": "Noun",
-          "word": "New York City",
-          "meaning": "a city located in the state of New York, USA",
+          "word": "leviathan",
+          "meaning": "a large sea monster",
           "usage": [
-            "In the heart of New York City...",
-            "The city is known for its iconic landmarks...",
+            "In a dream, I saw a leviathan swimming through the depths of the ocean.",
+            "The leviathan opened its mouth and began to speak.",
+            "The leviathan's words filled me with fear, but I also felt a strange sense of awe.",
           ],
-          "pronounce": "/ˌnuː ˈjɔr k sɪti/ (new YOUR-k see-ti)",
+          "pronounce": "/lɪˈvaɪəθən/",
           "example":
-            "I've always wanted to visit New York City during the holiday season.",
-        },
-        {
-          "class": "Adjective",
-          "word": "fateful",
-          "meaning": "having a significant or decisive effect",
-          "usage": [
-            "On a fateful day in May of 1929...",
-            "The decision was fateful for the company's future.",
-          ],
-          "pronounce": "/ˈfeɪtful/ (FAY-tul)",
-          "example":
-            "The meeting was a fateful moment that changed the course of history.",
+            "The sailors were terrified of the leviathan that was attacking their ship.",
         },
         {
           "class": "Noun",
-          "word": "Museum of Modern Art",
-          "meaning": "a museum in New York City dedicated to modern art",
-          "usage": [
-            "The doors of the Museum of Modern Art swung open...",
-            "I visited the Museum of Modern Art last weekend.",
-          ],
-          "pronounce":
-            "/ˌmjuːziəm ɒv ˈmɑrdən ˈɑrt/ (myoo-zee-uhm of MOD-ern ART)",
-          "example":
-            "I loved the modern art exhibit at the Museum of Modern Art.",
-        },
-        {
-          "class": "Adverb",
-          "word": "defied",
-          "meaning": "went against or contradicted something",
-          "usage": [
-            "The exhibition defied tradition and pushed...",
-            "She defied convention by wearing a bright pink dress.",
-          ],
-          "pronounce": "/dɪˈfaɪd/ (dif-EYE-d)",
-          "example":
-            "The artist's work defied all expectations with its bold colors.",
-        },
-        {
-          "class": "Noun",
-          "word": "abstraction",
-          "meaning": "a concept or idea that is not concrete or tangible",
-          "usage": [
-            "The walls of the museum echoed with...",
-            "The abstract concept was difficult to understand.",
-          ],
-          "pronounce": "/əbˈstrækʃən/ (uh-BSTRAK-shun)",
-          "example":
-            "The artist's use of abstraction created a unique and thought-provoking piece.",
-        },
-        {
-          "class": "Pronoun",
-          "word": "it",
+          "word": "scales",
           "meaning":
-            "a third-person singular pronoun referring to a person, place, or thing",
+            "the hard, overlapping plates that cover the body of a fish or reptile",
           "usage": [
-            "This enigmatic being seemed to be drawn...",
-            "I'm not sure what it means.",
+            "Its scales were like diamonds, and its eyes were like fire.",
           ],
-          "pronounce": "/ɪt/ (it)",
-          "example": "It is the best book I have read all year.",
-        },
-        {
-          "class": "Adverb",
-          "word": "amidst",
-          "meaning": "in or surrounded by something",
-          "usage": [
-            "But amidst the celebration of modern art...",
-            "I was amidst the chaos of the city.",
-          ],
-          "pronounce": "/əˈmɪdst/ (uh-MID-st)",
-          "example": "The team played amidst heavy rain and strong winds.",
+          "pronounce": "/skeɪlz/",
+          "example": "The fish's scales were shimmering in the sunlight.",
         },
         {
           "class": "Noun",
-          "word": "legend",
-          "meaning": "a story or myth that is widely accepted as true",
+          "word": "eyes",
+          "meaning": "the organ of sight",
           "usage": [
-            "Some said it was an artist's muse...",
-            "The legend of the lost city has been passed down for generations.",
+            "Its eyes were like fire.",
+            "The leviathan looked at me with its fiery eyes.",
           ],
-          "pronounce": "/ˈlɛdʒənd/ (LEH-jend)",
-          "example":
-            "The legend of King Arthur has been retold in many different ways.",
+          "pronounce": "/aɪz/",
+          "example": "The cat's eyes were glowing in the dark.",
+        },
+        {
+          "class": "Noun",
+          "word": "power",
+          "meaning": "the ability to do or act",
+          "usage": [
+            "It was a creature of immense power and beauty.",
+          ],
+          "pronounce": "/paʊər/",
+          "example": "The superhero had the power to fly.",
+        },
+        {
+          "class": "Noun",
+          "word": "beauty",
+          "meaning": "the quality of being pleasing to the eye",
+          "usage": [
+            "It was a creature of immense power and beauty.",
+          ],
+          "pronounce": "/ˈbjuːti/",
+          "example": "The painting was a masterpiece of beauty.",
+        },
+        {
+          "class": "Noun",
+          "word": "voice",
+          "meaning": "the sound produced by a person or animal",
+          "usage": [
+            "Its voice was like the sound of thunder.",
+          ],
+          "pronounce": "/vɔɪs/",
+          "example": "The singer had a beautiful voice.",
+        },
+        {
+          "class": "Noun",
+          "word": "master",
+          "meaning": "a person who has control over others",
+          "usage": [
+            "I am the Leviathan, and I am the master of the sea.",
+          ],
+          "pronounce": "/ˈmæstər/",
+          "example": "The master of the house was a kind and generous man.",
+        },
+        {
+          "class": "Noun",
+          "word": "king",
+          "meaning": "a male ruler of a country",
+          "usage": [
+            "I am the king of all creatures.",
+          ],
+          "pronounce": "/kɪŋ/",
+          "example": "The king was a wise and just ruler.",
         },
       ],
     },
     "keywords": [
-      "modern",
-      "art",
-      "innovation",
-      "creativity",
-      "freedom",
-      "mystery",
-      "intrigue",
-      "legend",
-      "inspiration",
-      "guardian",
-      "angel",
-      "history",
-      "imagination",
-      "reality",
-      "abstraction",
+      "leviathan",
+      "ocean",
+      "diamonds",
+      "fire",
+      "power",
+      "beauty",
+      "thunder",
+      "master",
+      "king",
+      "prophet",
+      "fear",
+      "awe",
     ],
   },
 };

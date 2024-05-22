@@ -1,107 +1,110 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "Art Deco, an influential design style, emerged",
+    "event": "1618: Defenestrations of Prague",
     "details":
-      "On May 23, 1925, the Exposition Internationale des Arts Décoratifs et Industriels Modernes (International Exhibition of Modern Decorative and Industrial Arts) opened in Paris, France. This exhibition showcased a new style of art and design that became known as Art Deco. Art Deco was characterized by its geometric shapes, bold colors, and luxurious materials.",
+      "The Defenestrations of Prague were two incidents that occurred on May 23, 1618, in Prague, Bohemia (now the Czech Republic). In the first incident, two imperial governors, Jaroslav Borzita of Martinice and Vilém Slavata of Chlum, were thrown out of a window of Prague Castle by Protestant Bohemian noblemen. The incident marked the beginning of the Thirty Years' War.",
   },
   "date": "2024-05-23",
-  "title": "The Deco Reaper",
+  "title": "The Defenestration of Prague",
   "body":
-    "In the depths of an opulent Art Deco mansion, shadows danced ominously. Sharp angles and gleaming chrome masked a sinister secret. As the night crept in, the eerie glow of geometric lamps cast haunting shadows, revealing a grotesque figure lurking within. Its porcelain-like skin was adorned with Art Deco patterns, its eyes cold and unforgiving. The Deco Reaper, they whispered, a harbinger of terror inspired by the heartless beauty of the era. Its every step echoed with the chilling chime of a crystal chandelier, its presence sending shivers down the spines of all who dared to approach. In the mansion's grand hall, a lavish party raged on, oblivious to the horror unfolding within. But as the clock struck midnight, the Deco Reaper emerged, its cold embrace claiming its victims one by one. Amidst the splendor and decadence, the mansion became a stage for a macabre dance of death, a chilling testament to the darkness that lurked beneath the alluring surface of Art Deco.",
-  "word count": 163,
+    "In the year 2042, the world is a very different place. Technology has advanced at an unprecedented rate, and with it, the potential for conflict has grown exponentially.One such conflict is brewing in the city of Prague. A group of rogue scientists have developed a new type of weapon, one that could potentially destroy the entire city. The government is desperate to stop them, but their efforts have been met with fierce resistance.As the conflict escalates, the rogue scientists take their weapons to the top of Prague Castle. They threaten to use them unless the government meets their demands. The government refuses, and a standoff ensues.Suddenly, one of the scientists loses his footing and falls out of a window. The crowd below gasps in horror. The scientist's death is a turning point in the conflict. It shows the government that the scientists are willing to die for their cause.The government is forced to negotiate with the scientists. They eventually reach an agreement, and the conflict is averted. But the defenestration of Prague serves as a warning to the world. The potential for conflict is always present, and it can erupt at any moment.",
+  "word count": 193,
   "dialog": [
     {
+      "Billy":
+        "I wish I could have been there to see the defenestration of Prague. It sounds like something out of a history book!",
+    },
+    {
       "Kerry":
-        "Guys, I just finished the 'Deco Reaper' novel! It was totally chilling!",
+        "I know, right? It's crazy to think that something like that could happen in the modern world.",
+    },
+    {
+      "Lui":
+        "It's a reminder that we can never take peace for granted. Even in the most advanced societies, there is always the potential for conflict.",
+    },
+    {
+      "Kerry": "Yeah, I think it's important to remember that.",
     },
     {
       "Meg":
-        "I know, right? The mansion's description was so vivid, I felt like I was there!",
+        "I wonder what it would have been like to be one of the scientists on the castle. They must have been so scared.",
     },
     {
       "Billy":
-        "I loved how the novel combined Art Deco with horror. It was such a unique concept!",
+        "I think they were probably more determined than scared. They believed in what they were fighting for.",
     },
     {
-      "Lui":
-        "It's a great example of how literature can explore the darker aspects of human nature.",
+      "Lui": "That's true. They were willing to die for their cause.",
     },
     {
-      "Meg":
-        "But I also thought it was a commentary on the superficiality of the era. The mansion's splendor hides something truly horrifying.",
+      "Kerry": "It's a shame things had to turn out the way they did.",
     },
     {
-      "Kerry": "Yeah, the Deco Reaper itself was such a creepy symbol of that.",
-    },
-    {
-      "Lui":
-        "It's a reminder that even in glamorous times, there can be a hidden darkness.",
+      "Meg": "I agree. But at least the conflict was averted.",
     },
   ],
   "quiz": [
     {
-      "question": "In what setting does the 'Deco Reaper' novel take place?",
+      "question": "In what year does the story take place?",
       "options": [
-        "A gothic castle",
-        "A modern skyscraper",
-        "An opulent Art Deco mansion",
-        "A dark labyrinth",
-        "A bustling city street",
+        "2022",
+        "2032",
+        "2042",
+        "2052",
+        "2062",
       ],
       "answer": 2,
     },
     {
-      "question":
-        "What is a prominent feature of the Deco Reaper's appearance?",
+      "question": "What type of weapon did the rogue scientists develop?",
       "options": [
-        "Long, flowing hair",
-        "Bulging eyes",
-        "Art Deco patterns on its skin",
-        "Sharp claws and teeth",
-        "A ragged cloak",
-      ],
-      "answer": 2,
-    },
-    {
-      "question":
-        "How does the Deco Reaper's presence affect those who approach it?",
-      "options": [
-        "It makes them laugh uncontrollably",
-        "It puts them to sleep",
-        "It gives them a sense of calm",
-        "It sends shivers down their spines",
-        "It makes them lose their minds",
+        "A nuclear bomb",
+        "A biological weapon",
+        "A chemical weapon",
+        "A new type of energy weapon",
+        "A mind control device",
       ],
       "answer": 3,
     },
     {
-      "question":
-        "What is the significance of the lavish party taking place in the mansion?",
+      "question": "What was the turning point in the conflict?",
       "options": [
-        "It symbolizes the hidden darkness that lies beneath the surface",
-        "It provides a setting for the Deco Reaper to make its victims",
-        "It contrasts with the horrifying events that are occurring within",
-        "It is a celebration of the Art Deco era",
-        "It is a subplot that has no bearing on the main story",
-      ],
-      "answer": 0,
-    },
-    {
-      "question": "What does the 'Deco Reaper' novel ultimately explore?",
-      "options": [
-        "The beauty of Art Deco design",
-        "The dangers of excessive wealth",
-        "The darker aspects of human nature",
-        "The importance of facing one's fears",
-        "The rise and fall of civilizations",
+        "The government agreed to meet the scientists' demands",
+        "The rogue scientists were captured",
+        "One of the scientists fell out of a window",
+        "The government launched a military strike on the castle",
+        "The scientists surrendered peacefully",
       ],
       "answer": 2,
     },
+    {
+      "question":
+        "What does the defenestration of Prague serve as a warning to the world?",
+      "options": [
+        "That technology can be used for good or evil",
+        "That peace is fragile and can be easily broken",
+        "That scientists are always willing to die for their beliefs",
+        "That governments should never negotiate with terrorists",
+        "That history is doomed to repeat itself",
+      ],
+      "answer": 1,
+    },
+    {
+      "question": "Which of the following is NOT a character in the dialogue?",
+      "options": [
+        "Billy",
+        "Kerry",
+        "Lui",
+        "Meg",
+        "Sam",
+      ],
+      "answer": 4,
+    },
   ],
   "params": {
-    "theme": "Design",
-    "flavor": "Horror",
+    "theme": "Politics",
+    "flavor": "Science Fiction",
     "models": {
       "main": "gemini",
       "novel": "gemini",

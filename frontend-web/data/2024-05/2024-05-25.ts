@@ -1,198 +1,182 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "The first transatlantic telegraph cable is completed",
+    "event": "Coco Chanel Presents the Little Black Dress",
     "details":
-      "On May 25th, 1858, the first transatlantic telegraph cable was completed, allowing for near-instant communication between North America and Europe.",
+      "On May 25, 1926, Coco Chanel debuted her revolutionary little black dress in the pages of Vogue magazine. The simple yet elegant design quickly became a staple in women's wardrobes and remains a timeless fashion icon today.",
   },
   "date": "2024-05-25",
-  "title": "A Telegraphic Odyssey",
+  "title": "The Black Dress",
   "body":
-    "The world was a vast expanse of mystery, connected by the whispers of wind and water. But as the first transatlantic telegraph cable was completed on May 25th, 1858, the possibilities seemed endless. With this new technology, messages could travel faster than ever before.    Two scientists, Dr. Jane and Dr. Jack, were eager to test out the capabilities of the new cable. They devised a plan to send a message from New York to London in just minutes. As they watched the message flash across the screen, they couldn't help but feel a sense of wonder and excitement.    But as they began to exchange messages with their colleagues on the other side of the Atlantic, strange things started to happen. The messages seemed to be garbled and nonsensical, leaving them puzzled and frustrated.    As they dug deeper into the issue, they discovered that the cable was not just a simple communication device, but a portal between worlds. With each message sent across the cable, it was not just information being transmitted, but entire realms of existence. And as they continued to send messages back and forth, they began to unravel the secrets of the universe, one garbled message at a time.",
-  "word count": 201,
+    "In the neon-drenched labyrinth of Neo-Tokyo, where technology reigned supreme, there lived a fashion icon named Anya. Inspired by the legendary Coco Chanel, Anya sought to create a garment that would transcend time and become the ultimate symbol of power and style in the cybernetic realm.One fateful night, amidst the pulsating rhythms of a techno club, Anya unveiled her masterpiece - the 'Black Dress.' Its sleek, synthetic fabric shimmered like a thousand tiny stars, adorned with intricate cybernetic implants that responded to the wearer's every move.As Anya graced the runway, the crowd gasped in awe. The Black Dress was more than just a garment; it was a statement of rebellion, a celebration of the human spirit in a world dominated by technology. It became an instant icon, worn by the elite of Neo-Tokyo and inspiring countless imitations.And so, the Black Dress became a symbol of hope and empowerment in the cyberpunk dystopia, a reminder that even in the darkest of times, beauty and individuality could prevail.",
+  "word count": 166,
   "dialog": [
     {
       "Billy":
-        "I never thought I'd be reading about portals between worlds! What did you guys think of the novel?",
-    },
-    {
-      "Meg":
-        "I loved how the scientists were so excited to test out the telegraph cable. It's like they discovered a whole new dimension!",
+        "Wow! The 'Black Dress' sounds amazing! I wonder how the cybernetic implants work.",
     },
     {
       "Kerry":
-        "Yeah, and the way the messages got all garbled was so cool! Like, what even is happening?",
+        "Yeah, I bet it's like something out of a futuristic movie! Maybe it gives the wearer special powers or something.",
+    },
+    {
+      "Meg":
+        "I think it's more than just a garment. It's a symbol of hope and rebellion against the cyberpunk society.",
     },
     {
       "Lui":
-        "Well, it's clear that the novel is trying to say something about the power of communication. But I'm not sure I agree with the idea that every message creates a new realm...",
+        "Indeed, Meg. The 'Black Dress' represents the human spirit's triumph over technology, a reminder that individuality can prevail even in the most artificial of worlds.",
     },
     {
       "Billy":
-        "That's what I love about this book - it makes you think! And the way it explores the connection between science and magic is amazing.",
-    },
-    {
-      "Meg":
-        "I know, right? It's like the author is saying that there's no such thing as 'just' a simple message. Every word has power!",
+        "I'd love to see it in person. Maybe it's on display at some museum in Neo-Tokyo.",
     },
     {
       "Kerry":
-        "Totally agree. And what about the themes of discovery and exploration? The authors really nailed it.",
+        "Or maybe we could find someone who owns it and convince them to show it to us. Like, a famous fashion designer or something.",
     },
     {
       "Lui":
-        "Yes, those are important themes. But I still have some reservations about the portrayal of scientific discovery as magical or supernatural...",
+        "While that may be difficult, the search for the 'Black Dress' could become an adventure in itself. Who knows what we might discover about the history of Neo-Tokyo or ourselves along the way.",
     },
   ],
   "quiz": [
     {
-      "question": "What was the significance of May 25th, 1858?",
+      "question": "Who is the fashion icon that created the 'Black Dress'?",
       "options": [
-        "The day the novel ends",
-        "The completion date of the first transatlantic telegraph cable",
-        "The beginning of World War I",
-        "The start of the Industrial Revolution",
-        "The discovery of America",
+        "Coco Chanel",
+        "Anya",
+        "Lui",
+        "Billy",
+        "Kerry",
       ],
       "answer": 1,
     },
     {
-      "question": "What happened to the messages sent across the Atlantic?",
+      "question": "Where was the 'Black Dress' first unveiled?",
       "options": [
-        "They were delivered promptly and without error",
-        "They became garbled and nonsensical",
-        "They disappeared into thin air",
-        "They were intercepted by aliens",
-        "They were ignored",
+        "A fashion show",
+        "A techno club",
+        "A museum",
+        "A fashion magazine",
+        "A private party",
       ],
       "answer": 1,
     },
     {
-      "question": "What did the scientists, Dr. Jane and Dr. Jack, discover?",
+      "question": "What is the 'Black Dress' described as being?",
       "options": [
-        "A new species of fish",
-        "The secrets of the universe",
-        "The cure for a disease",
-        "The key to eternal life",
-        "That every message creates a new realm",
+        "A symbol of power and style",
+        "A celebration of the human spirit",
+        "A work of art",
+        "A piece of technology",
+        "All of the above",
       ],
       "answer": 4,
     },
     {
-      "question": "What is one theme explored in the novel?",
+      "question":
+        "What is the significance of the 'Black Dress' in the cyberpunk dystopia?",
       "options": [
-        "The power of magic",
-        "The importance of science",
-        "The connection between science and magic",
-        "The consequences of war",
-        "The impact of technology",
+        "It is a symbol of hope and empowerment",
+        "It is a warning against the dangers of technology",
+        "It is a reminder of the past",
+        "It is a sign of wealth and status",
+        "It is none of the above",
       ],
-      "answer": 2,
+      "answer": 0,
     },
     {
-      "question": "Who is discussing the novel in the dialogue?",
+      "question":
+        "What do the characters in the dialogue suggest doing to find the 'Black Dress'?",
       "options": [
-        "Dr. Jane, Dr. Jack, and their colleagues",
-        "Billy, Meg, Kerry, and Lui",
-        "A group of scientists at CERN",
-        "The authors themselves",
-        "A panel of experts",
+        "Searching for it in a museum",
+        "Asking a famous fashion designer",
+        "Going on an adventure",
+        "All of the above",
+        "None of the above",
       ],
-      "answer": 2,
+      "answer": 3,
     },
   ],
+  "params": {
+    "theme": "Fashion",
+    "flavor": "Cyberpunk",
+    "models": {
+      "main": "gemini",
+      "novel": "gemini",
+    },
+  },
   "descriptions": {
     "grammar": {
       "patterns": [
         {
           "pattern": "S + V",
-          "explanation": "Simple statement with a subject and verb",
+          "explanation": "The subject performs the action of the verb.",
           "usage": [
-            "The world was a vast expanse of mystery, connected by the whispers of wind and water.",
+            "In the neon-drenched labyrinth of Neo-Tokyo, where technology reigned supreme, there lived a fashion icon named Anya.",
           ],
           "words": [
             {
               "S": [
-                "The world",
+                "Anya",
               ],
             },
             {
               "V": [
-                "was",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + C",
-          "explanation":
-            "Simple statement with a subject, verb, and complement",
-          "usage": [
-            "As they watched the message flash across the screen, they couldn't help but feel a sense of wonder and excitement.",
-          ],
-          "words": [
-            {
-              "S": [
-                "they",
-              ],
-            },
-            {
-              "V": [
-                "watched",
-              ],
-            },
-            {
-              "C": [
-                "a sense of wonder and excitement",
+                "lived",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O",
-          "explanation": "Simple statement with a subject, verb, and object",
+          "explanation":
+            "The subject performs the action of the verb and the object receives the action.",
           "usage": [
-            "With this new technology, messages could travel faster than ever before.",
+            "Inspired by the legendary Coco Chanel, Anya sought to create a garment that would transcend time and become the ultimate symbol of power and style in the cybernetic realm.",
           ],
           "words": [
             {
               "S": [
-                "this",
+                "Anya",
               ],
             },
             {
               "V": [
-                "travel",
+                "sought",
+                "create",
               ],
             },
             {
               "O": [
-                "messages",
+                "a garment",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O + O",
-          "explanation": "Simple statement with a subject, verb, two objects",
+          "explanation":
+            "The subject performs the action of the verb and the two objects receive the action.",
           "usage": [
-            "Two scientists, Dr. Jack, were eager to test out the capabilities of the new cable.",
+            "One fateful night, amidst the pulsating rhythms of a techno club, Anya unveiled her masterpiece - the 'Black Dress.",
           ],
           "words": [
             {
               "S": [
-                "two scientists",
+                "Anya",
               ],
             },
             {
               "V": [
-                "were",
+                "unveiled",
               ],
             },
             {
               "O": [
-                "Dr. Jack",
-                "the capabilities",
+                "her masterpiece",
+                "the 'Black Dress",
               ],
             },
           ],
@@ -200,30 +184,56 @@ const data: QuizData = {
         {
           "pattern": "S + V + O + C",
           "explanation":
-            "Simple statement with a subject, verb, object, and complement",
+            "The subject performs the action of the verb and the object receives the action and the complement provides additional information.",
           "usage": [
-            "As they began to exchange messages with their colleagues on the other side of the Atlantic, strange things started to happen.",
+            "As Anya graced the runway, the crowd gasped in awe.",
           ],
           "words": [
             {
               "S": [
-                "they",
+                "Anya",
               ],
             },
             {
               "V": [
-                "began",
+                "graced",
               ],
             },
             {
               "O": [
-                "messages",
-                "their colleagues",
+                "the runway",
               ],
             },
             {
               "C": [
-                "strange things",
+                "in awe",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation":
+            "The subject performs the action of the verb and the complement provides additional information.",
+          "usage": [
+            "The Black Dress was more than just a garment; it was a statement of rebellion, a celebration of the human spirit in a world dominated by technology.",
+          ],
+          "words": [
+            {
+              "S": [
+                "The Black Dress",
+              ],
+            },
+            {
+              "V": [
+                "was",
+              ],
+            },
+            {
+              "C": [
+                "more than just a garment",
+                "a statement of rebellion",
+                "a celebration of the human spirit in a world dominated by technology",
               ],
             },
           ],
@@ -232,109 +242,109 @@ const data: QuizData = {
       "vocabularies": [
         {
           "class": "Noun",
-          "word": "expanse",
-          "meaning": "a large area or distance of something",
+          "word": "labyrinth",
+          "meaning": "a complex and confusing network of paths or passages",
           "usage": [
-            "The world was a vast expanse of mystery",
-            "The universe is an endless expanse",
+            "In the neon-drenched labyrinth of Neo-Tokyo, where technology reigned supreme, there lived a fashion icon named Anya.",
           ],
-          "pronounce": "/ɛksˈpæns/",
-          "example": "The beauty of the desert landscape is a true expanse.",
-        },
-        {
-          "class": "Verb",
-          "word": "whisper",
-          "meaning": "to speak very softly",
-          "usage": [
-            "But as the first transatlantic telegraph cable was completed on May 25th, 1858, the possibilities seemed endless.",
-            "She whispered a secret in my ear.",
-          ],
-          "pronounce": "/ˈwɪspər/",
-          "example": "The wind whispers through the trees.",
-        },
-        {
-          "class": "Adverb",
-          "word": "endlessly",
-          "meaning": "without end or limit",
-          "usage": [
-            "With this new technology, messages could travel faster than ever before.",
-            "She loved to read books endlessly.",
-          ],
-          "pronounce": "/ɛnˈdli//",
-          "example": "The possibilities of the new technology seemed endless.",
-        },
-        {
-          "class": "Adjective",
-          "word": "garbled",
-          "meaning": "made unintelligible or unclear",
-          "usage": [
-            "But as they began to exchange messages with their colleagues on the other side of the Atlantic, strange things started to happen.",
-            "The garbled transmission made no sense.",
-          ],
-          "pronounce": "/ˈɡɑrbəld/",
-          "example": "The message was garbled and didn't make sense.",
-        },
-        {
-          "class": "Noun",
-          "word": "universe",
-          "meaning": "the whole creation regarded as an orderly system",
-          "usage": [
-            "With this new technology, messages could travel faster than ever before.",
-            "She studied the universe to understand its secrets.",
-          ],
-          "pronounce": "/juːˈnɪvər.s/",
-          "example": "The universe is a vast and complex place.",
-        },
-        {
-          "class": "Verb",
-          "word": "transmit",
-          "meaning": "to send or convey (information, etc.)",
-          "usage": [
-            "As they watched the message flash across the screen, they couldn't help but feel a sense of wonder and excitement.",
-            "She transmitted the message to her team.",
-          ],
-          "pronounce": "/trænˈsɪt/",
+          "pronounce": "/ˈlæbərɪnθ/",
           "example":
-            "The new technology allowed us to transmit messages instantly.",
-        },
-        {
-          "class": "Adverb",
-          "word": "minutely",
-          "meaning": "in great detail or precision",
-          "usage": [
-            "As they watched the message flash across the screen, they couldn't help but feel a sense of wonder and excitement.",
-            "She examined the data minutely.",
-          ],
-          "pronounce": "/mɪˈnjuːtli//",
-          "example": "We analyzed the data minutely to find the pattern.",
+            "The labyrinthine streets of the old city were a maze of narrow alleys and hidden courtyards.",
         },
         {
           "class": "Noun",
-          "word": "realm",
+          "word": "garment",
+          "meaning": "an article of clothing",
+          "usage": [
+            "Inspired by the legendary Coco Chanel, Anya sought to create a garment that would transcend time and become the ultimate symbol of power and style in the cybernetic realm.",
+          ],
+          "pronounce": "/ˈɡɑːrmənt/",
+          "example":
+            "The designer's latest collection featured a range of elegant and sophisticated garments.",
+        },
+        {
+          "class": "Noun",
+          "word": "masterpiece",
+          "meaning": "a work of outstanding skill or artistry",
+          "usage": [
+            "One fateful night, amidst the pulsating rhythms of a techno club, Anya unveiled her masterpiece - the 'Black Dress.'",
+          ],
+          "pronounce": "/ˈmɑːstərpis/",
+          "example":
+            "The artist's masterpiece was a breathtaking painting that captured the beauty of the natural world.",
+        },
+        {
+          "class": "Noun",
+          "word": "imitation",
           "meaning":
-            "a kingdom or domain, especially one thought of as being otherworldly",
+            "an act or instance of copying or imitating someone or something",
           "usage": [
-            "And as they continued to send messages back and forth, they began to unravel the secrets of the universe, one garbled message at a time.",
-            "She entered a realm of magic and wonder.",
+            "It became an instant icon, worn by the elite of Neo-Tokyo and inspiring countless imitations.",
           ],
-          "pronounce": "/rɛlm/",
+          "pronounce": "/ˌɪmɪˈteɪʃən/",
           "example":
-            "The fantasy novel transported me to a realm of adventure.",
+            "The counterfeit goods were a poor imitation of the original designer items.",
+        },
+        {
+          "class": "Noun",
+          "word": "dystopia",
+          "meaning":
+            "an imaginary place or state in which everything is bad or unpleasant",
+          "usage": [
+            "And so, the Black Dress became a symbol of hope and empowerment in the cyberpunk dystopia, a reminder that even in the darkest of times, beauty and individuality could prevail.",
+          ],
+          "pronounce": "/dɪsˈtəʊpiə/",
+          "example":
+            "The novel depicted a dystopian future where society was controlled by a totalitarian government.",
+        },
+        {
+          "class": "Noun",
+          "word": "cyberpunk",
+          "meaning":
+            "a genre of science fiction that deals with the impact of advanced technology on society",
+          "usage": [
+            "And so, the Black Dress became a symbol of hope and empowerment in the cyberpunk dystopia, a reminder that even in the darkest of times, beauty and individuality could prevail.",
+          ],
+          "pronounce": "/ˈsʌɪbərpʌŋk/",
+          "example":
+            "The cyberpunk film explored the themes of technology, identity, and the human condition.",
+        },
+        {
+          "class": "Noun",
+          "word": "symbol",
+          "meaning": "a thing that represents or stands for something else",
+          "usage": [
+            "And so, the Black Dress became a symbol of hope and empowerment in the cyberpunk dystopia, a reminder that even in the darkest of times, beauty and individuality could prevail.",
+          ],
+          "pronounce": "/ˈsɪmbəl/",
+          "example": "The dove is a symbol of peace and harmony.",
+        },
+        {
+          "class": "Noun",
+          "word": "individuality",
+          "meaning": "the quality or state of being an individual",
+          "usage": [
+            "And so, the Black Dress became a symbol of hope and empowerment in the cyberpunk dystopia, a reminder that even in the darkest of times, beauty and individuality could prevail.",
+          ],
+          "pronounce": "/ˌɪndɪvɪˈdʒuːəlɪti/",
+          "example":
+            "She values her individuality and refuses to conform to societal norms.",
         },
       ],
     },
     "keywords": [
-      "mystery",
-      "connection",
-      "technology",
-      "messages",
-      "speed",
-      "scientists",
-      "plan",
-      "excitement",
-      "communication",
-      "portal",
-      "universe",
+      "Neo-Tokyo",
+      "Cyberpunk",
+      "Anya",
+      "Coco Chanel",
+      "Black Dress",
+      "Cybernetic implants",
+      "Technology",
+      "Style",
+      "Rebellion",
+      "Human spirit",
+      "Hope",
+      "Empowerment",
     ],
   },
 };
