@@ -95,7 +95,7 @@ export default function TopLayout() {
           id="mainContent"
           className={"flex w-full bg-slate-100 md:w-4/5 md:print:w-full md:peer-checked/sideMenuToggle:w-full pt-8"}
         >
-          <main>
+          <main className={"w-full"}>
             <Partial name="content">
               <div className="min-h-screen p-8">
                 <section id="usage" className={"mb-16"}>
