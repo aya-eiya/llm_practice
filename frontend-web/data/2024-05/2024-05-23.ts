@@ -115,192 +115,219 @@ const data: QuizData = {
       "patterns": [
         {
           "pattern": "S + V",
-          "explanation": "Subject performs an action without a direct object.",
+          "explanation": "A sentence with only a subject and a verb.",
           "usage": [
-            "In the depths of an opulent Art Deco mansion, shadows danced ominously.",
+            "The world is a very different place.",
           ],
           "words": [
             {
               "S": [
-                "Shadows",
+                "The world",
               ],
             },
             {
               "V": [
-                "danced",
+                "is",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + C",
-          "explanation":
-            "Subject performs an action with a complement that completes the meaning of the verb.",
+          "explanation": "A sentence with a subject, a verb, and a complement.",
           "usage": [
-            "Sharp angles and gleaming chrome masked a sinister secret.",
+            "The defenestration of Prague serves as a warning to the world.",
           ],
           "words": [
             {
               "S": [
-                "Sharp angles",
-                "gleaming chrome",
+                "The defenestration of Prague",
               ],
             },
             {
               "V": [
-                "masked",
+                "serves",
               ],
             },
             {
               "C": [
-                "a sinister secret",
+                "as a warning to the world",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O",
-          "explanation":
-            "Subject performs an action with a direct object that receives the action.",
+          "explanation": "A sentence with a subject, a verb, and an object.",
           "usage": [
-            "As the night crept in, the eerie glow of geometric lamps cast haunting shadows, revealing a grotesque figure lurking within.",
+            "One such conflict is brewing in the city of Prague.",
           ],
           "words": [
             {
               "S": [
-                "The eerie glow of geometric lamps",
+                "One such conflict",
               ],
             },
             {
               "V": [
-                "cast",
+                "is brewing",
               ],
             },
             {
               "O": [
-                "haunting shadows",
+                "in the city of Prague",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O + O",
-          "explanation": "Subject performs an action with two direct objects.",
+          "explanation": "A sentence with a subject, a verb, and two objects.",
           "usage": [],
           "words": [],
         },
         {
           "pattern": "S + V + O + C",
           "explanation":
-            "Subject performs an action with a direct object and a complement that completes the meaning of the verb.",
-          "usage": [],
-          "words": [],
+            "A sentence with a subject, a verb, an object, and a complement.",
+          "usage": [
+            "The government is desperate to stop them, but their efforts have been met with fierce resistance.",
+          ],
+          "words": [
+            {
+              "S": [
+                "The government",
+              ],
+            },
+            {
+              "V": [
+                "is desperate to stop them",
+              ],
+            },
+            {
+              "O": [
+                "their efforts",
+              ],
+            },
+            {
+              "C": [
+                "with fierce resistance",
+              ],
+            },
+          ],
         },
       ],
       "vocabularies": [
         {
           "class": "Noun",
-          "word": "Depths",
-          "meaning": "The lowest or most hidden part of something.",
+          "word": "Conflict",
+          "meaning":
+            "A serious disagreement or argument, typically one that involves violence.",
           "usage": [
-            "In the depths of an opulent Art Deco mansion, shadows danced ominously.",
-            "The Deco Reaper, they whispered, a harbinger of terror inspired by the heartless beauty of the era.",
+            "One such conflict is brewing in the city of Prague.",
+            "The potential for conflict is always present, and it can erupt at any moment.",
           ],
-          "pronounce": "/dɛpθs/",
+          "pronounce": "/ˈkɑːnflɪkt/",
           "example":
-            "The diver explored the depths of the ocean, searching for sunken treasure.",
+            "The conflict between the two countries has been going on for years.",
         },
         {
           "class": "Adjective",
-          "word": "Ominously",
-          "meaning": "In a way that suggests something bad is going to happen.",
+          "word": "Exponential",
+          "meaning": "Increasing at a very rapid rate.",
           "usage": [
-            "In the depths of an opulent Art Deco mansion, shadows danced ominously.",
+            "Technology has advanced at an unprecedented rate, and with it, the potential for conflict has grown exponentially.",
           ],
-          "pronounce": "/ˈɑːmɪnəsli/",
+          "pronounce": "/ˌɛkspəˈnɛnʃəl/",
           "example":
-            "The ominous clouds gathered overhead, threatening to bring a storm.",
+            "The population of the city has grown exponentially in the last decade.",
         },
         {
           "class": "Noun",
-          "word": "Mansion",
-          "meaning": "A large, impressive house.",
+          "word": "Scientist",
+          "meaning":
+            "A person who is trained in science and who does scientific research.",
           "usage": [
-            "In the depths of an opulent Art Deco mansion, shadows danced ominously.",
-            "The mansion's grand hall, a lavish party raged on, oblivious to the horror unfolding within.",
+            "A group of rogue scientists have developed a new type of weapon, one that could potentially destroy the entire city.",
+            "The rogue scientists take their weapons to the top of Prague Castle.",
           ],
-          "pronounce": "/ˈmænʃən/",
+          "pronounce": "/ˈsaɪəntɪst/",
           "example":
-            "The wealthy family lived in a grand mansion on the outskirts of town.",
+            "The scientist was awarded the Nobel Prize for his work in physics.",
         },
         {
           "class": "Noun",
-          "word": "Reaper",
-          "meaning": "A person or thing that causes death.",
+          "word": "Weapon",
+          "meaning":
+            "An object, such as a gun or a bomb, that is used to kill or injure people or to destroy property.",
           "usage": [
-            "The Deco Reaper, they whispered, a harbinger of terror inspired by the heartless beauty of the era.",
+            "A group of rogue scientists have developed a new type of weapon, one that could potentially destroy the entire city.",
+            "They threaten to use them unless the government meets their demands.",
           ],
-          "pronounce": "/ˈriːpər/",
-          "example": "The grim reaper came to take the dying man's soul.",
+          "pronounce": "/ˈwɛpən/",
+          "example":
+            "The police confiscated a number of weapons from the criminals.",
         },
         {
           "class": "Noun",
-          "word": "Horror",
-          "meaning": "A feeling of intense fear, shock, or disgust.",
+          "word": "Government",
+          "meaning":
+            "The group of people who have the power to make and enforce laws in a country or state.",
           "usage": [
-            "As the clock struck midnight, the Deco Reaper emerged, its cold embrace claiming its victims one by one.",
-            "But as the clock struck midnight, the Deco Reaper emerged, its cold embrace claiming its victims one by one.",
+            "The government is desperate to stop them, but their efforts have been met with fierce resistance.",
+            "The government refuses, and a standoff ensues.",
           ],
-          "pronounce": "/ˈhɒrər/",
-          "example": "The horror of the car crash left her traumatized.",
-        },
-        {
-          "class": "Adjective",
-          "word": "Macabre",
-          "meaning": "Gruesome or horrifying.",
-          "usage": [
-            "Amidst the splendor and decadence, the mansion became a stage for a macabre dance of death, a chilling testament to the darkness that lurked beneath the alluring surface of Art Deco.",
-          ],
-          "pronounce": "/məˈkɑːbrə/",
-          "example":
-            "The macabre tales of Edgar Allan Poe are known for their dark and unsettling themes.",
-        },
-        {
-          "class": "Adjective",
-          "word": "Chilling",
-          "meaning": "Causing a feeling of intense cold or fear.",
-          "usage": [
-            "Its every step echoed with the chilling chime of a crystal chandelier, its presence sending shivers down the spines of all who dared to approach.",
-          ],
-          "pronounce": "/ˈtʃɪlɪŋ/",
-          "example":
-            "The chilling wind whipped through the trees, making the leaves shake.",
+          "pronounce": "/ˈgʌvənmənt/",
+          "example": "The government has promised to reduce taxes.",
         },
         {
           "class": "Noun",
-          "word": "Surface",
-          "meaning": "The outer boundary of something.",
+          "word": "Defenestration",
+          "meaning":
+            "The act of throwing someone or something out of a window.",
           "usage": [
-            "Amidst the splendor and decadence, the mansion became a stage for a macabre dance of death, a chilling testament to the darkness that lurked beneath the alluring surface of Art Deco.",
+            "The defenestration of Prague serves as a warning to the world.",
           ],
-          "pronounce": "/ˈsɜːrfəs/",
-          "example": "The surface of the water was calm and still.",
+          "pronounce": "/dɪˌfɛnəˈstreɪʃən/",
+          "example": "The defenestration of the two men was a tragic event.",
+        },
+        {
+          "class": "Noun",
+          "word": "Potential",
+          "meaning":
+            "The possibility that something will happen or be the case.",
+          "usage": [
+            "The potential for conflict is always present, and it can erupt at any moment.",
+          ],
+          "pronounce": "/pəˈtɛntʃəl/",
+          "example":
+            "There is the potential for a lot of damage if the dam breaks.",
+        },
+        {
+          "class": "Verb",
+          "word": "Erupt",
+          "meaning": "To burst forth suddenly and violently.",
+          "usage": [
+            "The potential for conflict is always present, and it can erupt at any moment.",
+          ],
+          "pronounce": "/ɪˈrʌpt/",
+          "example": "The volcano erupted and sent ash and lava into the air.",
         },
       ],
     },
     "keywords": [
-      "Art Deco",
-      "Sinister",
-      "Grotesque",
-      "Geometric",
-      "Porcelain",
-      "Deco Reaper",
-      "Chilling",
-      "Crystal chandelier",
-      "Lavish party",
-      "Midnight",
-      "Macabre",
-      "Darkness",
+      "2042",
+      "Advanced technology",
+      "Potential for conflict",
+      "Rogue scientists",
+      "Prague",
+      "Destructive weapon",
+      "Government",
+      "Resistance",
+      "Prague Castle",
+      "Scientist's death",
+      "Negotiation",
+      "Defenestration of Prague",
     ],
   },
 };

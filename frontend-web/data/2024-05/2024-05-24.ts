@@ -114,30 +114,24 @@ const data: QuizData = {
       "patterns": [
         {
           "pattern": "S + V",
-          "explanation":
-            "Contains a subject and a verb, but no object or complement.",
+          "explanation": "The subject performs the verb.",
           "usage": [
             "In the heart of the bustling metropolis, where skyscrapers pierce the heavens, there stood the Flatiron Building.",
-            "But beneath its iconic facade lay a hidden portal, a gateway to a realm of cosmic wonders.",
-            "Time seemed to warp and fold upon itself as they navigated through this ethereal realm.",
-            "I've never read anything like this before.",
           ],
           "words": [
             {
               "S": [
-                "skyscrapers",
-                "portal",
-                "Time",
-                "I",
+                "In the heart of the bustling metropolis, where skyscrapers pierce the heavens",
               ],
             },
             {
               "V": [
                 "stood",
-                "lay",
-                "seemed to warp and fold",
-                "navigated",
-                "read",
+              ],
+            },
+            {
+              "O": [
+                "the Flatiron Building",
               ],
             },
           ],
@@ -145,37 +139,24 @@ const data: QuizData = {
         {
           "pattern": "S + V + C",
           "explanation":
-            "Contains a subject, a verb, and a complement, but no object.",
+            "The subject performs the verb and is complemented by the complement.",
           "usage": [
-            "One fateful night, a group of daring explorers stumbled upon the secret, their hearts pounding with anticipation.",
-            "Floating islands dotted the iridescent sky, and radiant energies danced through the void.",
-            "Dark forces lurked in the depths, seeking to devour the explorers' souls.",
-            "It's like a blend of 'Doctor Who' and 'The Hitchhiker's Guide to the Galaxy'.",
+            "But beneath its iconic facade lay a hidden portal, a gateway to a realm of cosmic wonders.",
           ],
           "words": [
             {
               "S": [
-                "explorers",
-                "islands",
-                "forces",
-                "It",
+                "But beneath its iconic facade",
               ],
             },
             {
               "V": [
-                "stumbled",
-                "dotted",
-                "danced",
-                "lurked",
-                "is",
+                "lay",
               ],
             },
             {
               "C": [
-                "with anticipation",
-                "through the void",
-                "in the depths",
-                "a blend of 'Doctor Who' and 'The Hitchhiker's Guide to the Galaxy'",
+                "a hidden portal, a gateway to a realm of cosmic wonders",
               ],
             },
           ],
@@ -183,102 +164,84 @@ const data: QuizData = {
         {
           "pattern": "S + V + O",
           "explanation":
-            "Contains a subject, a verb, and an object, but no complement.",
+            "The subject performs the verb and acts upon the object.",
           "usage": [
-            "They encountered enigmatic beings from distant galaxies, creatures of light and shadow, and witnessed the birth and death of stars.",
-            "With courage and ingenuity, they faced these cosmic threats, their bond unyielding.",
-            "In the end, they emerged from the Flatiron Dimension forever changed, carrying the secrets and wonders of that extraordinary realm within their hearts.",
-            "I loved the part where they encountered the enigmatic beings from distant galaxies.",
+            "One fateful night, a group of daring explorers stumbled upon the secret, their hearts pounding with anticipation.",
           ],
           "words": [
             {
               "S": [
-                "They",
-                "They",
-                "They",
-                "I",
+                "One fateful night, a group of daring explorers",
               ],
             },
             {
               "V": [
-                "encountered",
-                "faced",
-                "emerged",
-                "carrying",
-                "loved",
+                "stumbled upon",
               ],
             },
             {
               "O": [
-                "enigmatic beings from distant galaxies, creatures of light and shadow, and witnessed the birth and death of stars",
-                "these cosmic threats",
-                "the secrets and wonders of that extraordinary realm within their hearts",
-                "the part where they encountered the enigmatic beings from distant galaxies",
+                "the secret",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O + O",
-          "explanation": "Contains a subject, a verb, and two objects.",
-          "usage": [],
-          "words": [],
-        },
-        {
-          "pattern": "S + V + O + C",
           "explanation":
-            "Contains a subject, a verb, an object, and a complement.",
+            "The subject performs the verb and acts upon two objects.",
           "usage": [
-            "Well, you have to remember, Kerry, that this is a work of fiction.",
-            "The author is not trying to write a war story.",
-            "They're trying to create a sense of wonder and exploration.",
-            "I agree with Mr.",
-            "I think the author did a great job of capturing the sense of awe and mystery that comes with exploring the unknown.",
-            "Yeah, it's like when you're looking up at the stars at night.",
-            "You can't help but wonder what's out there, and what kind of amazing things are waiting to be discovered.",
+            "Floating islands dotted the iridescent sky, and radiant energies danced through the void.",
           ],
           "words": [
             {
               "S": [
-                "you",
-                "Kerry",
-                "the author",
-                "They",
-                "I",
-                "I",
-                "you",
+                "Floating islands",
               ],
             },
             {
               "V": [
-                "have to remember",
-                "is not trying to write",
-                "are trying to create",
-                "agree",
-                "think",
-                "did a great job of capturing",
-                "can't help but wonder",
+                "dotted",
               ],
             },
             {
               "O": [
-                "this is a work of fiction",
-                "a war story",
-                "a sense of wonder and exploration",
-                "Mr.",
-                "the sense of awe and mystery that comes with exploring the unknown",
-                "what's out there",
-                "what kind of amazing things are waiting to be discovered",
+                "the iridescent sky",
+              ],
+            },
+            {
+              "O": [
+                "radiant energies",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + O + C",
+          "explanation":
+            "The subject performs the verb, acts upon the object, and is complemented by the complement.",
+          "usage": [
+            "They encountered enigmatic beings from distant galaxies, creatures of light and shadow, and witnessed the birth and death of stars.",
+          ],
+          "words": [
+            {
+              "S": [
+                "They",
+              ],
+            },
+            {
+              "V": [
+                "encountered",
+              ],
+            },
+            {
+              "O": [
+                "enigmatic beings from distant galaxies, creatures of light and shadow",
               ],
             },
             {
               "C": [
-                "that this is a work of fiction",
-                "you have to remember",
-                "Kerry",
-                "with Mr",
-                "at night",
-                "and what kind of amazing things are waiting to be discovered",
+                "and witnessed the birth and death of stars",
               ],
             },
           ],
@@ -288,84 +251,91 @@ const data: QuizData = {
         {
           "class": "Noun",
           "word": "metropolis",
-          "meaning": "A large, densely populated city",
+          "meaning": "a large and busy city",
           "usage": [
             "In the heart of the bustling metropolis, where skyscrapers pierce the heavens, there stood the Flatiron Building.",
+            "They stumbled upon the secret amidst the towering skyscrapers and bustling crowds of the metropolis.",
           ],
           "pronounce": "/məˈtrɑːpəlɪs/",
-          "example": "The metropolis was a bustling hub of activity.",
+          "example":
+            "The vibrant metropolis was a hub of commerce and culture.",
         },
         {
           "class": "Noun",
           "word": "facade",
-          "meaning": "The front of a building, especially the main entrance",
+          "meaning": "the front of a building",
           "usage": [
             "But beneath its iconic facade lay a hidden portal, a gateway to a realm of cosmic wonders.",
           ],
           "pronounce": "/fəˈsɑːd/",
           "example":
-            "The facade of the building was adorned with intricate carvings.",
+            "The crumbling facade of the old mansion hinted at its long history.",
         },
         {
           "class": "Noun",
           "word": "portal",
-          "meaning":
-            "A gateway or entrance, especially to another world or realm",
+          "meaning": "a doorway or gate",
           "usage": [
-            "But beneath its iconic facade lay a hidden portal, a gateway to a realm of cosmic wonders.",
+            "Beneath its iconic facade lay a hidden portal, a gateway to a realm of cosmic wonders.",
+            "They stumbled upon the secret, their hearts pounding with anticipation as they approached the ancient portal.",
           ],
-          "pronounce": "/ˈpɔːrtl/",
-          "example": "The portal led to a world of endless possibilities.",
-        },
-        {
-          "class": "Noun",
-          "word": "realm",
-          "meaning": "A kingdom, domain, or sphere of activity",
-          "usage": [
-            "But beneath its iconic facade lay a hidden portal, a gateway to a realm of cosmic wonders.",
-          ],
-          "pronounce": "/relm/",
-          "example": "The realm of imagination is vast and limitless.",
+          "pronounce": "/ˈpɔːrtəl/",
+          "example":
+            "The portal shimmered with otherworldly energy, inviting them to step into the unknown.",
         },
         {
           "class": "Noun",
           "word": "dimension",
-          "meaning": "A particular level of existence or reality",
+          "meaning": "a realm of existence",
           "usage": [
             "As they stepped through the portal, they were transported to a dimension beyond comprehension.",
           ],
-          "pronounce": "/dəˈmɛnʃən/",
-          "example": "The dimension of time is often difficult to comprehend.",
+          "pronounce": "/dɪˈmɛnʃən/",
+          "example":
+            "They found themselves transported to a parallel dimension where the laws of physics were different.",
         },
         {
-          "class": "Noun",
-          "word": "void",
-          "meaning": "An empty space or area",
+          "class": "Adjective",
+          "word": "ethereal",
+          "meaning": "not of this world",
           "usage": [
-            "Floating islands dotted the iridescent sky, and radiant energies danced through the void.",
+            "They navigated through this ethereal realm, where time seemed to warp and fold upon itself.",
           ],
-          "pronounce": "/vɔɪd/",
-          "example": "The void of space is vast and mysterious.",
+          "pronounce": "/ɪˈθɪəriəl/",
+          "example": "The ethereal beauty of the forest enchanted them.",
         },
         {
           "class": "Noun",
-          "word": "threat",
-          "meaning": "A danger or risk",
+          "word": "peril",
+          "meaning": "danger",
           "usage": [
             "But their journey was not without peril. Dark forces lurked in the depths, seeking to devour the explorers' souls.",
           ],
-          "pronounce": "/θrɛt/",
-          "example": "The threat of war loomed over the region.",
+          "pronounce": "/ˈpɛrəl/",
+          "example":
+            "They braved the perils of the stormy seas in search of adventure.",
         },
         {
           "class": "Noun",
-          "word": "secrets",
-          "meaning": "Something kept hidden from others",
+          "word": "bond",
+          "meaning": "a connection or tie",
           "usage": [
-            "In the end, they emerged from the Flatiron Dimension forever changed, carrying the secrets and wonders of that extraordinary realm within their hearts.",
+            "With courage and ingenuity, they faced these cosmic threats, their bond unyielding.",
           ],
-          "pronounce": "/ˈsiːkrɪts/",
-          "example": "The secrets of the universe are still a mystery to us.",
+          "pronounce": "/bɑːnd/",
+          "example":
+            "The strong bond between the siblings kept them close throughout life.",
+        },
+        {
+          "class": "Noun",
+          "word": "realm",
+          "meaning": "a kingdom or domain",
+          "usage": [
+            "They emerged from the Flatiron Dimension forever changed, carrying the secrets and wonders of that extraordinary realm within their hearts.",
+          ],
+          "pronounce": "/relm/",
+          "example":
+            "The realm of imagination is a boundless place where anything is possible.",
         },
       ],
     },
@@ -373,15 +343,15 @@ const data: QuizData = {
       "Flatiron Building",
       "Hidden portal",
       "Cosmic wonders",
-      "Daring explorers",
       "Floating islands",
       "Radiant energies",
       "Enigmatic beings",
+      "Birth and death of stars",
       "Time warp",
       "Dark forces",
+      "Cosmic threats",
       "Courage and ingenuity",
-      "Unbreakable bond",
-      "Altered perspectives",
+      "Secrets and wonders",
     ],
   },
 };
