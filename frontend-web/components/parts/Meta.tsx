@@ -47,7 +47,7 @@ export default function Meta(
       />
       <meta
         property="og:site_name"
-        content="Daily AI-Generated English Novels & Learning Test Questions"
+        content="Daily English Reading & Listening Quiz"
       />
       <meta property="og:type" content="website" />
       <meta

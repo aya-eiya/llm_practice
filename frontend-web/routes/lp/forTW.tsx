@@ -1,32 +1,31 @@
 import { Head } from "$fresh/runtime.ts";
 import { PageProps } from "$fresh/server.ts";
 
-export default function forJP({ url }: PageProps) {
+export default function forTW({ url }: PageProps) {
   return (
     <>
       <Head>
-        <title>AIがサポートする毎日の英語トレーニング</title>
+        <title>AI支持的日常英语培训</title>
         <meta name="robots" content="index, follow" />
-
         <meta
           property="og:site_name"
           content="Daily English Reading & Listening Quiz"
         />
         <meta
           name="description"
-          content="AIを活用した毎日の英語短文と読解力テストで、効率的に英語力を向上させる方法をご紹介。リスニング力も強化できます。"
+          content="介紹一種通過利用AI生成的每日英語短文和閱讀理解測試來高效提高英語能力的方法。這也可以增強聽力能力"
         />
         <meta
           name="keywords"
-          content="英語学習, AI, 読解力テスト, リスニング, 毎日更新, 英語力向上, 効果的な英語学習"
+          content="英语學習、AI、閱讀理解測試、聽力、每日更新、英語能力提升、有效的英語學習"
         />
         <meta
           property="og:title"
-          content="AIがサポートする毎日の英語トレーニング"
+          content="AI支持的日常英语培训"
         />
         <meta
           property="og:description"
-          content="AIを活用した毎日の英語短文と読解力テストで、効率的に英語力を向上させる方法をご紹介。リスニング力も強化できます。"
+          content="介紹一種通過利用AI生成的每日英語短文和閱讀理解測試來高效提高英語能力的方法。這也可以增強聽力能力"
         />
         <meta
           property="og:image"
@@ -40,11 +39,11 @@ export default function forJP({ url }: PageProps) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="AIがサポートする毎日の英語トレーニング"
+          content="AI支持的日常英语培训"
         />
         <meta
           name="twitter:description"
-          content="AIを活用した毎日の英語短文と読解力テストで、効率的に英語力を向上させる方法をご紹介。リスニング力も強化できます。"
+          content="介紹一種通過利用AI生成的每日英語短文和閱讀理解測試來高效提高英語能力的方法。這也可以增強聽力能力"
         />
         <meta
           name="twitter:image"
@@ -54,22 +53,20 @@ export default function forJP({ url }: PageProps) {
       <div className="bg-gray-100">
         <header className="bg-gray-800 text-white py-4">
           <div className="container mx-auto flex justify-between items-center">
-            <h1 className="text-2xl">AIがサポートする毎日の英語トレーニング</h1>
+            <h1 className="text-2xl">AI支持的日常英语培训</h1>
             <nav>
               <ul className="flex space-x-4">
                 <li>
-                  <a href="#features" className="hover:underline">特徴</a>
+                  <a href="#features" className="hover:underline">特征</a>
                 </li>
                 <li>
-                  <a href="#recommend" className="hover:underline">おすすめ</a>
+                  <a href="#recommend" className="hover:underline">推荐</a>
                 </li>
                 <li>
                   <a href="#how-to" className="hover:underline">利用方法</a>
                 </li>
                 <li>
-                  <a href="#contact" className="hover:underline">
-                    お問い合わせ
-                  </a>
+                  <a href="#contact" className="hover:underline">询问</a>
                 </li>
               </ul>
             </nav>
@@ -81,82 +78,84 @@ export default function forJP({ url }: PageProps) {
           style={{ backgroundImage: "url('/lp/forAll/mono_book.jpg.webp')" }}
         >
           <div className="text-center">
-            <h1 className="text-5xl mb-4">毎日短時間で効果的な英語力向上！</h1>
+            <h1 className="text-5xl mb-4">
+              每天在短時間內有效提升你的英語能力！
+            </h1>
             <p className="text-xl">
-              AIが毎日出題する英語の短文と読解力テストで、楽しく学びましょう。
+              透過人工智慧每天提出的簡短英語文章和閱讀理解測試，享受學習的樂趣
             </p>
           </div>
         </div>
 
         <div className="container mx-auto py-8">
           <section id="features" className="my-8">
-            <h2 className="text-3xl text-center mb-6">サービスの特徴</h2>
+            <h2 className="text-3xl text-center mb-6">服務特色</h2>
             <div className="flex flex-wrap justify-around">
               <FeatureBox
                 imgSrc={"/lp/forAll/you_got_mail.jpg.webp"}
-                imgAlt="毎日更新のテスト"
-                title="毎日更新"
-                description="AIが生成する英語の短文と読解力テストが毎日出題されます。"
+                imgAlt="每日更新"
+                title="每日更新"
+                description="每天都會詢問人工智慧產生的英文短文和閱讀理解測驗"
               />
               <FeatureBox
                 imgSrc={"/lp/forAll/take_note.jpg.webp"}
-                imgAlt="読解力テスト"
-                title="読解力テスト"
-                description="5問のクイズで、理解度を確認しながら英語力を向上させます。"
+                imgAlt="閱讀理解測試"
+                title="閱讀理解測試"
+                description="透過 5 個問題的測驗來檢查您的理解程度，同時提高您的英語技能"
               />
               <FeatureBox
                 imgSrc={"/lp/forAll/hearing.jpg.webp"}
-                imgAlt="リスニング練習"
-                title="リスニング練習"
-                description="AIによる音声読み上げ機能を利用して、リスニング力も鍛えられます。"
+                imgAlt="聽力練習"
+                title="聽力練習"
+                description="您還可以使用基於人工智慧的語音朗讀功能來訓練您的聽力技能"
               />
             </div>
           </section>
 
           <section id="recommend" className="my-8">
-            <h2 className="text-3xl text-center mb-6">どんな方におすすめ？</h2>
+            <h2 className="text-3xl text-center mb-6">推薦給誰？</h2>
             <div className="flex flex-wrap justify-around">
               <FeatureBox
                 imgSrc={"/lp/forAll/busy_woman.jpg.webp"}
-                imgAlt="忙しい方"
-                title="忙しい方"
-                description="短時間で効率的に英語を学びたい方に最適です。"
+                imgAlt="忙碌的人"
+                title="忙碌的人"
+                description="非常適合想要在短時間內有效學習英語的人"
               />
               <FeatureBox
                 imgSrc={"/lp/forAll/meeting.jpg.webp"}
-                imgAlt="バランス良く学びたい方"
-                title="バランス良く学びたい方"
-                description="読解力とリスニング力をバランスよく向上させたい方におすすめです。"
+                imgAlt="想要均衡學習的人"
+                title="想要均衡學習的人"
+                description="推薦給那些想要以均衡的方式提高閱讀和聽力技能的人"
               />
               <FeatureBox
                 imgSrc={"/lp/forAll/jog.jpg.webp"}
-                imgAlt="毎日続けたい方"
-                title="毎日続けたい方"
-                description="毎日のルーティンとして楽しく学びたい方にピッタリです。"
+                imgAlt="想要繼續每一天的人"
+                title="想要繼續每一天的人"
+                description="非常適合想要將學習作為日常生活一部分的人"
               />
             </div>
           </section>
 
           <section id="how-to" className="my-8">
-            <h2 className="text-3xl text-center mb-6">利用方法は簡単！</h2>
+            <h2 className="text-3xl text-center mb-6">使用方便！</h2>
             <div className="flex flex-wrap justify-around">
               <FeatureBox
                 imgSrc={"/lp/forAll/internet.jpg.webp"}
-                imgAlt="サイトにアクセス"
-                title="サイトにアクセス"
-                description="簡単に始められます。"
+                imgAlt="造訪網站"
+                title="造訪網站"
+                description="上手很容易"
               />
               <FeatureBox
                 imgSrc={"/lp/forAll/scheduler.jpg.webp"}
-                imgAlt="毎日取り組む"
-                title="毎日取り組む"
-                description="毎日更新される短文とクイズにチャレンジ！"
+                imgAlt="每天都在努力"
+                title="每天都在努力"
+                description="挑戰每日更新的短句和測驗!"
               />
               <FeatureBox
                 imgSrc={"/lp/forAll/ear.jpg.webp"}
-                imgAlt="リスニングも強化"
-                title="リスニングも強化"
-                description="AI音声でリスニング練習も忘れずに！"
+                imgAlt="也加強聽力"
+                title="也加強聽力"
+                description="別忘了用人工智慧語音練習聽力!"
               />
             </div>
           </section>
@@ -166,14 +165,14 @@ export default function forJP({ url }: PageProps) {
               href="https://daily-ai-generated-quiz.deno.dev/"
               className="bg-blue-500 text-white py-3 px-6 rounded hover:bg-blue-700 transition duration-300"
             >
-              今すぐ始める
+              現在開始
             </a>
           </div>
 
           <section id="contact" className="my-8">
-            <h2 className="text-3xl text-center mb-6">お問い合わせ</h2>
+            <h2 className="text-3xl text-center mb-6">詢問</h2>
             <p className="text-center mb-4">
-              ご不明点やご意見がありましたら、いつでもお気軽にお問い合わせください。
+              如果您有任何疑問或意見，請隨時與我們聯繫
             </p>
             <p className="text-center flex flex-row justify-center">
               <a

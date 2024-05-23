@@ -7,7 +7,11 @@ import * as $_app from "./routes/_app.tsx";
 import * as $ads_txt from "./routes/ads.txt.ts";
 import * as $bookshelf from "./routes/bookshelf.ts";
 import * as $index from "./routes/index.tsx";
+import * as $lp_forCN from "./routes/lp/forCN.tsx";
+import * as $lp_forES from "./routes/lp/forES.tsx";
 import * as $lp_forJP from "./routes/lp/forJP.tsx";
+import * as $lp_forPT from "./routes/lp/forPT.tsx";
+import * as $lp_forTW from "./routes/lp/forTW.tsx";
 import * as $pages_date_ from "./routes/pages/[date].tsx";
 import * as $report from "./routes/report.tsx";
 import * as $sitemap_xml from "./routes/sitemap.xml.ts";
@@ -25,7 +29,11 @@ const manifest = {
     "./routes/ads.txt.ts": $ads_txt,
     "./routes/bookshelf.ts": $bookshelf,
     "./routes/index.tsx": $index,
+    "./routes/lp/forCN.tsx": $lp_forCN,
+    "./routes/lp/forES.tsx": $lp_forES,
     "./routes/lp/forJP.tsx": $lp_forJP,
+    "./routes/lp/forPT.tsx": $lp_forPT,
+    "./routes/lp/forTW.tsx": $lp_forTW,
     "./routes/pages/[date].tsx": $pages_date_,
     "./routes/report.tsx": $report,
     "./routes/sitemap.xml.ts": $sitemap_xml,

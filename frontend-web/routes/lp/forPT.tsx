@@ -1,32 +1,27 @@
 import { Head } from "$fresh/runtime.ts";
 import { PageProps } from "$fresh/server.ts";
 
-export default function forJP({ url }: PageProps) {
+export default function forPT({ url }: PageProps) {
   return (
     <>
       <Head>
-        <title>AIがサポートする毎日の英語トレーニング</title>
+        <title>ATreinamento diário de inglês apoiado por IA</title>
         <meta name="robots" content="index, follow" />
-
-        <meta
-          property="og:site_name"
-          content="Daily English Reading & Listening Quiz"
-        />
         <meta
           name="description"
-          content="AIを活用した毎日の英語短文と読解力テストで、効率的に英語力を向上させる方法をご紹介。リスニング力も強化できます。"
+          content="Apresentamos um método eficiente para melhorar suas habilidades em inglês utilizando textos curtos diários gerados por IA e testes de compreensão de leitura. Isso também pode fortalecer suas habilidades de escuta.。"
         />
         <meta
           name="keywords"
-          content="英語学習, AI, 読解力テスト, リスニング, 毎日更新, 英語力向上, 効果的な英語学習"
+          content="Aprendizado de inglês, IA, testes de compreensão de leitura, escuta, atualizações diárias, melhoria das habilidades em inglês, aprendizado eficaz de inglês"
         />
         <meta
           property="og:title"
-          content="AIがサポートする毎日の英語トレーニング"
+          content="Treinamento diário de inglês apoiado por IA"
         />
         <meta
           property="og:description"
-          content="AIを活用した毎日の英語短文と読解力テストで、効率的に英語力を向上させる方法をご紹介。リスニング力も強化できます。"
+          content="Apresentamos um método eficiente para melhorar suas habilidades em inglês utilizando textos curtos diários gerados por IA e testes de compreensão de leitura. Isso também pode fortalecer suas habilidades de escuta."
         />
         <meta
           property="og:image"
@@ -40,11 +35,11 @@ export default function forJP({ url }: PageProps) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="AIがサポートする毎日の英語トレーニング"
+          content="Treinamento diário de inglês apoiado por IA"
         />
         <meta
           name="twitter:description"
-          content="AIを活用した毎日の英語短文と読解力テストで、効率的に英語力を向上させる方法をご紹介。リスニング力も強化できます。"
+          content="Apresentamos um método eficiente para melhorar suas habilidades em inglês utilizando textos curtos diários gerados por IA e testes de compreensão de leitura. Isso também pode fortalecer suas habilidades de escuta."
         />
         <meta
           name="twitter:image"
@@ -54,21 +49,27 @@ export default function forJP({ url }: PageProps) {
       <div className="bg-gray-100">
         <header className="bg-gray-800 text-white py-4">
           <div className="container mx-auto flex justify-between items-center">
-            <h1 className="text-2xl">AIがサポートする毎日の英語トレーニング</h1>
+            <h1 className="text-2xl">
+              Treinamento diário de inglês apoiado por IA
+            </h1>
             <nav>
               <ul className="flex space-x-4">
                 <li>
-                  <a href="#features" className="hover:underline">特徴</a>
+                  <a href="#features" className="hover:underline">
+                    Características
+                  </a>
                 </li>
                 <li>
-                  <a href="#recommend" className="hover:underline">おすすめ</a>
+                  <a href="#recommend" className="hover:underline">
+                    recomendação
+                  </a>
                 </li>
                 <li>
-                  <a href="#how-to" className="hover:underline">利用方法</a>
+                  <a href="#how-to" className="hover:underline">Como usar</a>
                 </li>
                 <li>
                   <a href="#contact" className="hover:underline">
-                    お問い合わせ
+                    investigação
                   </a>
                 </li>
               </ul>
@@ -81,82 +82,88 @@ export default function forJP({ url }: PageProps) {
           style={{ backgroundImage: "url('/lp/forAll/mono_book.jpg.webp')" }}
         >
           <div className="text-center">
-            <h1 className="text-5xl mb-4">毎日短時間で効果的な英語力向上！</h1>
+            <h1 className="text-5xl mb-4">
+              Melhore suas habilidades de inglês de forma eficaz em pouco tempo,
+              todos os dias!
+            </h1>
             <p className="text-xl">
-              AIが毎日出題する英語の短文と読解力テストで、楽しく学びましょう。
+              Divirta-se aprendendo com pequenos trechos de inglês e testes de
+              compreensão de leitura solicitados pela IA todos os dias.
             </p>
           </div>
         </div>
 
         <div className="container mx-auto py-8">
           <section id="features" className="my-8">
-            <h2 className="text-3xl text-center mb-6">サービスの特徴</h2>
+            <h2 className="text-3xl text-center mb-6">Recursos de serviço</h2>
             <div className="flex flex-wrap justify-around">
               <FeatureBox
                 imgSrc={"/lp/forAll/you_got_mail.jpg.webp"}
-                imgAlt="毎日更新のテスト"
-                title="毎日更新"
-                description="AIが生成する英語の短文と読解力テストが毎日出題されます。"
+                imgAlt="Atualizado diariamente"
+                title="Atualizado diariamente"
+                description="Pequenos trechos de inglês gerados por IA e testes de compreensão de leitura serão solicitados todos os dias."
               />
               <FeatureBox
                 imgSrc={"/lp/forAll/take_note.jpg.webp"}
-                imgAlt="読解力テスト"
-                title="読解力テスト"
-                description="5問のクイズで、理解度を確認しながら英語力を向上させます。"
+                imgAlt="teste de compreensão de leitura"
+                title="teste de compreensão de leitura"
+                description="Melhore suas habilidades em inglês enquanto verifica sua compreensão com um questionário de 5 perguntas."
               />
               <FeatureBox
                 imgSrc={"/lp/forAll/hearing.jpg.webp"}
-                imgAlt="リスニング練習"
-                title="リスニング練習"
-                description="AIによる音声読み上げ機能を利用して、リスニング力も鍛えられます。"
+                imgAlt="prática de escutar"
+                title="prática de escutar"
+                description="Você também pode treinar suas habilidades auditivas usando a função de leitura de voz baseada em IA."
               />
             </div>
           </section>
 
           <section id="recommend" className="my-8">
-            <h2 className="text-3xl text-center mb-6">どんな方におすすめ？</h2>
+            <h2 className="text-3xl text-center mb-6">
+              Para quem é recomendado?
+            </h2>
             <div className="flex flex-wrap justify-around">
               <FeatureBox
                 imgSrc={"/lp/forAll/busy_woman.jpg.webp"}
-                imgAlt="忙しい方"
-                title="忙しい方"
-                description="短時間で効率的に英語を学びたい方に最適です。"
+                imgAlt="Pessoa ocupada"
+                title="Pessoa ocupada"
+                description="Ideal para quem quer aprender inglês de forma eficiente e em pouco tempo."
               />
               <FeatureBox
                 imgSrc={"/lp/forAll/meeting.jpg.webp"}
-                imgAlt="バランス良く学びたい方"
-                title="バランス良く学びたい方"
-                description="読解力とリスニング力をバランスよく向上させたい方におすすめです。"
+                imgAlt="Aqueles que querem aprender de maneira equilibrada"
+                title="Aqueles que querem aprender de maneira equilibrada"
+                description="Recomendado para quem deseja melhorar suas habilidades de leitura e compreensão auditiva de maneira equilibrada."
               />
               <FeatureBox
                 imgSrc={"/lp/forAll/jog.jpg.webp"}
-                imgAlt="毎日続けたい方"
-                title="毎日続けたい方"
-                description="毎日のルーティンとして楽しく学びたい方にピッタリです。"
+                imgAlt="Aqueles que querem continuar todos os dias"
+                title="Aqueles que querem continuar todos os dias"
+                description="Perfeito para quem quer aproveitar o aprendizado como parte do dia a dia."
               />
             </div>
           </section>
 
           <section id="how-to" className="my-8">
-            <h2 className="text-3xl text-center mb-6">利用方法は簡単！</h2>
+            <h2 className="text-3xl text-center mb-6">Fácil de usar!</h2>
             <div className="flex flex-wrap justify-around">
               <FeatureBox
                 imgSrc={"/lp/forAll/internet.jpg.webp"}
-                imgAlt="サイトにアクセス"
-                title="サイトにアクセス"
-                description="簡単に始められます。"
+                imgAlt="Visite o site"
+                title="Visite o site"
+                description="É fácil começar."
               />
               <FeatureBox
                 imgSrc={"/lp/forAll/scheduler.jpg.webp"}
-                imgAlt="毎日取り組む"
-                title="毎日取り組む"
-                description="毎日更新される短文とクイズにチャレンジ！"
+                imgAlt="trabalhe nisso todos os dias"
+                title="trabalhe nisso todos os dias"
+                description="Desafie frases curtas e questionários atualizados diariamente!"
               />
               <FeatureBox
                 imgSrc={"/lp/forAll/ear.jpg.webp"}
-                imgAlt="リスニングも強化"
-                title="リスニングも強化"
-                description="AI音声でリスニング練習も忘れずに！"
+                imgAlt="Também fortalece a escuta"
+                title="Também fortalece a escuta"
+                description="Não se esqueça de praticar a escuta com voz de IA!"
               />
             </div>
           </section>
@@ -166,14 +173,15 @@ export default function forJP({ url }: PageProps) {
               href="https://daily-ai-generated-quiz.deno.dev/"
               className="bg-blue-500 text-white py-3 px-6 rounded hover:bg-blue-700 transition duration-300"
             >
-              今すぐ始める
+              Comece agora
             </a>
           </div>
 
           <section id="contact" className="my-8">
-            <h2 className="text-3xl text-center mb-6">お問い合わせ</h2>
+            <h2 className="text-3xl text-center mb-6">investigação</h2>
             <p className="text-center mb-4">
-              ご不明点やご意見がありましたら、いつでもお気軽にお問い合わせください。
+              Se você tiver alguma dúvida ou comentário, não hesite em nos
+              contatar a qualquer momento.
             </p>
             <p className="text-center flex flex-row justify-center">
               <a

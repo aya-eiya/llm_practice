@@ -21,6 +21,27 @@ export const handler: Handlers = {
   <url>
     <loc>${baseUrl}/lp/forJP</loc>
     <changefreq>monthly</changefreq>
+    <priority> 0.5</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/lp/forTW</loc>
+    <changefreq>monthly</changefreq>
+    <priority> 0.5</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/lp/forCH</loc>
+    <changefreq>monthly</changefreq>
+    <priority> 0.5</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/lp/forES</loc>
+    <changefreq>monthly</changefreq>
+    <priority> 0.5</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/lp/forPT</loc>
+    <changefreq>monthly</changefreq>
+    <priority> 0.5</priority>
   </url>
 ${
       dates.map((date) => {
@@ -29,7 +50,7 @@ ${
      <loc>${baseUrl}/pages/${date}</loc>
      <lastmod>${date}</lastmod>
      <changefreq>${isThisMonth(date) ? "daily" : "monthly"}</changefreq>
-    <priority>${isThisMonth(date) ? "0.8" : "0.5"}</priority>
+     <priority>${isThisMonth(date) ? "0.8" : "0.5"}</priority>
    </url>
 `;
       }).join("")
