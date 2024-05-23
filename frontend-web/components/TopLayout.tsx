@@ -101,7 +101,7 @@ export default function TopLayout() {
                 <section id="usage" className={"mb-16"}>
                   <header className="text-center mb-4">
                     <h2 className="text-4xl font-bold text-slate-800 mb-8">
-                      Last 7 Daily Quiz
+                      Last 7 Daily Quizzes
                     </h2>
                     <div className={"flex justify-center"}>
                       <ul
@@ -141,11 +141,24 @@ export default function TopLayout() {
                     </p>
                   </header>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                    <h3
-                      className={"text-2xl font-bold text-slate-800 mb-4 md:col-span-2"}
-                    >
-                      Reading
-                    </h3>
+                    <div className={"md:col-span-2"}>
+                      <h3
+                        className={"text-2xl font-bold text-slate-800"}
+                      >
+                        Reading
+                      </h3>
+                      <ul className={"mx-4"}>
+                        <li className={"mt-2"}>
+                          The reading passages are AI-generated fiction based on
+                          real historical events.
+                        </li>
+                        <li className={"mt-2"}>
+                          The layout is print-friendly, so you can create lesson
+                          handouts or portable PDF files for offline study using
+                          the 🖨️ button.
+                        </li>
+                      </ul>
+                    </div>
                     <div className={"md:col-span-1 p-4 bg-slate-50"}>
                       <h4 className="text-xl font-bold text-slate-800 mb-4">
                         Step 1: Read the Passage
@@ -175,10 +188,31 @@ export default function TopLayout() {
                       >
                         Listening
                       </h3>
-                      <p>
-                        Some quiz has read up audio for listening. you can study
-                        with AI-generated audio voice.
-                      </p>
+                      <ul className={"mx-4"}>
+                        <li className={"mt-2"}>
+                          Some quizzes feature AI-generated audio for listening
+                          practice, allowing you to study with ease.
+                        </li>
+                        <li className={"mt-2"}>
+                          Quizzes that include listening exercises have a 🎧
+                          icon next to their titles.
+                        </li>
+                        <li className={"mt-2"}>
+                          You can play the audio directly from the on-screen
+                          audio player, or you can also watch it on YouTube.
+                        </li>
+                        <li className={"mt-2"}>
+                          If you use YouTube Music, you can{" "}
+                          <a
+                            className={"underline font-bold"}
+                            href="https://music.youtube.com/playlist?list=PLe8rBiAN890boqEdONetsgS6v0vVDtLSB&si=oUGTmYobBeOx8d0D"
+                          >
+                            subscribe to our podcast
+                          </a>{" "}
+                          to automatically receive new listening audio as it
+                          becomes available.
+                        </li>
+                      </ul>
                     </div>
                     <div className={"md:col-span-1 p-4 bg-white"}>
                       <h4 className="text-xl font-bold text-slate-800 mb-4">
