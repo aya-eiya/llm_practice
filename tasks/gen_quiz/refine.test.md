@@ -3,7 +3,7 @@
 ## original
 
 ```llama3.tmp.md
-### The Mysterious Inheritance
+# The Mysterious Inheritance
 
 It was a chilly autumn morning when Emma received the letter. She had been living abroad for years, but her grandfather's passing still felt like a distant memory.
 
