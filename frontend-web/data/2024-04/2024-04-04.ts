@@ -100,5 +100,11 @@ const data: QuizData = {
       "answer": 2,
     },
   ],
+  "params": {
+    "theme": "Dance",
+    "flavor": "Science",
+    "models": { "main": "llama", "novel": "llava" },
+    "level": "Level_5",
+  },
 };
 export default data;

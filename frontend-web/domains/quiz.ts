@@ -48,13 +48,22 @@ export type QuizData = {
     options: string[];
     answer: number;
   }[];
-  params?: {
+  params: {
     theme: string;
     flavor: string;
     models: {
       main: string;
       novel: string;
     };
+    level:
+      | "Level_1"
+      | "Level_2"
+      | "Level_3"
+      | "Level_4"
+      | "Level_5"
+      | "Level_6"
+      | "Level_7"
+      | "Level_8";
   };
   descriptions?: {
     keywords?: string[];

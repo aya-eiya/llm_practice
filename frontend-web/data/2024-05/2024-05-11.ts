@@ -104,6 +104,12 @@ const data: QuizData = {
       "answer": 4,
     },
   ],
+  "params": {
+    "theme": "Urban",
+    "flavor": "Young Adult",
+    "models": { "main": "llama", "novel": "llava" },
+    "level": "Level_5",
+  },
   "descriptions": {
     "grammar": {
       "patterns": [

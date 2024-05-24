@@ -1,305 +1,362 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "Panic of 1873",
+    "event": "Bauhaus School founded in Weimar, Germany",
     "details":
-      "The Panic of 1873 was a financial crisis that began in the United States on September 18, 1873, and spread to Europe. The crisis was caused by a combination of factors, including the overexpansion of the railroad industry, the collapse of the Vienna Stock Exchange, and the failure of the banking firm Jay Cooke & Company. The Panic of 1873 led to a severe economic depression in the United States that lasted for several years.",
+      "The Bauhaus School was founded by Walter Gropius in Weimar, Germany, on April 12, 1919. The school was a merger of the Weimar Saxon School of Arts and Crafts and the Weimar Academy of Fine Art. The Bauhaus School was a center for the study of art, architecture, and design. The school's curriculum was based on the idea that art and technology should be combined to create functional and beautiful objects. The Bauhaus School was closed by the Nazis in 1933, but its influence on modern art and design continues to this day.",
   },
   "date": "2024-05-26",
-  "title": "The Panic",
+  "title": "A Thriller Novel Inspired by the Bauhaus School",
   "body":
-    "In the heart of the roaring twenties, as the economy boomed and life seemed full of promise, a shadow was lurking, waiting to strike. It was the Panic of 1929, a financial crisis that would change the course of history forever.\n\nAs the stock market soared to unprecedented heights, greed and speculation ran rampant. People poured their life savings into the market, dreaming of quick riches. But like a house of cards, the market came crashing down, leaving behind shattered dreams and financial ruin.\n\nIn the aftermath of the crash, the world was plunged into a decade-long depression. Unemployment skyrocketed, businesses closed their doors, and families were torn apart. The once-booming cities became ghost towns, filled with despair and poverty.\n\nAmidst the chaos and suffering, a sinister force emerged. Driven by desperation, people turned to crime and violence. The streets were haunted by fear as gangs roamed freely, preying on the weak and vulnerable.\n\nIn the darkness, a young woman named Mary found herself alone and adrift. Her family had lost everything in the crash, and she was left to fend for herself. As she wandered the desolate streets, she felt a growing sense of dread. Something was watching her, lurking in the shadows, waiting for the perfect moment to strike.",
-  "word count": 211,
+    "As I stepped into the room, I was immediately struck by the modern art and design that surrounded me. The walls were adorned with abstract paintings, their bold colors and shapes creating a vibrant backdrop for the scene. Furniture pieces, sleek and minimalist in style, filled the space, their clean lines and geometric forms embodying the Bauhaus School's philosophy.I couldn't believe my eyes as I gazed at each piece of art and design. The craftsmanship was impeccable, every detail meticulously crafted to create something truly unique and innovative. I knew that I had stumbled upon a place where creativity and technology came together in perfect harmony.As I explored further, I realized that this wasn't just an art school, it was a testament to the Bauhaus School's vision of combining art and technology for a better future. Every piece of furniture, every painting, and even the buildings themselves were designed with functionality in mind. The school was more than just a place for students; it was a beacon of hope for those who sought to break free from conventional thinking and forge a new path forward.I left that day with an newfound appreciation for the Bauhaus School's impact on modern design and art. I knew that I had witnessed something truly remarkable, a testament to human ingenuity and creativity. The experience stayed with me forever, inspiring me to strive for excellence in everything I do.",
+  "word count": 234,
   "dialog": [
     {
-      "Meg": "This novel was so captivating! I couldn't put it down!",
-    },
-    {
-      "Lui":
-        "Indeed, the author did a remarkable job of capturing the tumultuous era of the 1920s and the devastating impact of the Panic of 1929.",
+      "Billy":
+        "I was so amazed by the modern art at that art school, Kerry. It was like nothing I'd ever seen before.",
     },
     {
       "Kerry":
-        "I was particularly drawn to the character of Mary. Her struggle to survive in such desperate times was both heartbreaking and inspiring.",
-    },
-    {
-      "Billy":
-        "I found the historical context fascinating. It's incredible to think how a financial crisis could have such far-reaching consequences.",
+        "I know, right?! The colors and shapes were so bold. It was like they were jumping off the walls at me.",
     },
     {
       "Meg":
-        "I agree, Billy. The novel really highlighted the fragility of our economic systems and the importance of financial literacy.",
+        "I especially loved the Bauhaus furniture. It was so sleek and minimalist. I could totally see myself living in a house furnished like that.",
     },
     {
       "Lui":
-        "Furthermore, it's a sobering reminder of the consequences of greed and speculation.",
+        "The Bauhaus School was a really important movement in design, you guys. It was all about combining art and technology to create a better future.",
     },
     {
       "Kerry":
-        "Yeah, it made me wonder how we can prevent history from repeating itself.",
+        "That's so cool! I never knew that. I'm going to have to learn more about them.",
     },
     {
       "Billy":
-        "Maybe through education and regulation. By understanding the mistakes of the past, we can be better equipped to avoid them in the future.",
+        "Me too! I think the Bauhaus School had a lot of great ideas that we can still use today.",
+    },
+    {
+      "Meg":
+        "I agree. I love how they used technology to make art more accessible to people.",
+    },
+    {
+      "Lui":
+        "Exactly. The Bauhaus School was all about making art that was functional and beautiful.",
     },
   ],
   "quiz": [
     {
-      "question": "What was the major cause of the Panic of 1929?",
+      "question":
+        "What was the most striking feature of the room that the speaker entered?",
       "options": [
-        "A political crisis",
-        "A financial crisis",
-        "A natural disaster",
-        "A military conflict",
-        "A technological advancement",
+        "The classical art and design",
+        "The modern art and design",
+        "The antique furniture and paintings",
+        "The lush greenery and natural light",
+        "The large windows and high ceilings",
+      ],
+      "answer": 1,
+    },
+    {
+      "question": "What was the style of the furniture in the room?",
+      "options": [
+        "Ornate and elaborate",
+        "Sleek and minimalist",
+        "Rustic and cozy",
+        "Traditional and antique",
+        "Colorful and eclectic",
       ],
       "answer": 1,
     },
     {
       "question":
-        "What was the primary motivation for people investing heavily in the stock market during the 1920s?",
+        "What was the primary intention behind the Bauhaus School's design principles?",
       "options": [
-        "To secure their retirement savings",
-        "To support local businesses",
-        "To gain quick riches",
-        "To protect against inflation",
-        "To fulfill a patriotic duty",
-      ],
-      "answer": 2,
-    },
-    {
-      "question":
-        "What was one of the long-term consequences of the Panic of 1929?",
-      "options": [
-        "A rapid increase in the standard of living",
-        "A sustained period of economic prosperity",
-        "A decade-long depression",
-        "A major expansion of the welfare state",
-        "A strengthening of international relations",
-      ],
-      "answer": 2,
-    },
-    {
-      "question":
-        "What is the significance of the character Mary in the novel?",
-      "options": [
-        "She represents the hope for a better future",
-        "She embodies the resilience of the American people",
-        "She highlights the struggles faced by individuals during the Depression",
-        "She symbolizes the corruption that led to the Panic",
-        "She represents the rise of organized crime",
-      ],
-      "answer": 2,
-    },
-    {
-      "question":
-        "According to the dialogue, what is one lesson that can be learned from the Panic of 1929?",
-      "options": [
-        "The stock market is always a safe investment",
-        "Financial crises can have devastating consequences",
-        "History has no impact on present events",
-        "Government intervention is always harmful",
-        "Personal wealth is more important than community well-being",
+        "To create art for the sake of beauty",
+        "To combine art and technology for functionality",
+        "To promote traditional craftsmanship",
+        "To encourage abstract and experimental art",
+        "To preserve historical architectural styles",
       ],
       "answer": 1,
+    },
+    {
+      "question": "How did the speaker feel after visiting the art school?",
+      "options": [
+        "Disappointed and underwhelmed",
+        "Inspired and amazed",
+        "Confused and bewildered",
+        "Indifferent and uninterested",
+        "Critical and judgmental",
+      ],
+      "answer": 1,
+    },
+    {
+      "question":
+        "According to the dialogue, what did the characters believe the Bauhaus School's ideas can still be relevant today?",
+      "options": [
+        "Combining art and technology",
+        "Using technology to enhance accessibility",
+        "Creating functional and beautiful art",
+        "Breaking away from conventional thinking",
+        "All of the above",
+      ],
+      "answer": 4,
     },
   ],
   "params": {
-    "theme": "Economy",
-    "flavor": "Horror",
+    "theme": "Design",
+    "flavor": "Thriller",
     "models": {
       "main": "gemini",
-      "novel": "gemini",
+      "novel": "llava-llama3",
     },
+    "level": "Level_2",
   },
   "descriptions": {
     "grammar": {
       "patterns": [
         {
           "pattern": "S + V",
-          "explanation": "A sentence with a subject and a verb.",
+          "explanation": "Subject + Verb",
           "usage": [
-            "A shadow was lurking, waiting to strike.",
+            "I was immediately struck by the modern art and design that surrounded me.",
+            "The walls were adorned with abstract paintings, their bold colors and shapes creating a vibrant backdrop for the scene.",
+            "Furniture pieces, sleek and minimalist in style, filled the space, their clean lines and geometric forms embodying the Bauhaus School's philosophy.",
           ],
           "words": [
             {
               "S": [
-                "A shadow",
+                "I",
+                "The walls",
+                "Furniture pieces",
               ],
             },
             {
               "V": [
-                "was lurking",
-                "waiting",
+                "struck",
+                "were adorned",
+                "filled",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + C",
-          "explanation": "A sentence with a subject, a verb, and a complement.",
+          "explanation": "Subject + Verb + Complement",
           "usage": [
-            "People poured their life savings into the market, dreaming of quick riches.",
+            "I couldn't believe my eyes as I gazed at each piece of art and design.",
+            "The craftsmanship was impeccable, every detail meticulously crafted to create something truly unique and innovative.",
           ],
           "words": [
             {
               "S": [
-                "People",
+                "I",
+                "The craftsmanship",
               ],
             },
             {
               "V": [
-                "poured",
-                "dreaming",
+                "couldn't believe",
+                "was",
               ],
             },
             {
               "C": [
-                "of quick riches",
+                "as I gazed at each piece of art and design",
+                "every detail meticulously crafted to create something truly unique and innovative",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O",
-          "explanation": "A sentence with a subject, a verb, and an object.",
+          "explanation": "Subject + Verb + Object",
           "usage": [
-            "It was the Panic of 1929, a financial crisis that would change the course of history forever.",
+            "I knew that I had stumbled upon a place where creativity and technology came together in perfect harmony.",
+            "As I explored further, I realized that this wasn't just an art school, it was a testament to the Bauhaus School's vision of combining art and technology for a better future.",
           ],
           "words": [
             {
               "S": [
-                "It",
+                "I",
+                "I",
               ],
             },
             {
               "V": [
-                "was",
+                "knew",
+                "realized",
               ],
             },
             {
               "O": [
-                "the Panic of 1929",
-                "a financial crisis",
+                "that I had stumbled upon a place where creativity and technology came together in perfect harmony",
+                "that this wasn't just an art school, it was a testament to the Bauhaus School's vision of combining art and technology for a better future",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O + O",
-          "explanation": "A sentence with a subject, a verb, and two objects.",
-          "usage": [],
-          "words": [],
+          "explanation": "Subject + Verb + Object + Object",
+          "usage": [
+            "Every piece of furniture, every painting, and even the buildings themselves were designed with functionality in mind.",
+            "The school was more than just a place for students; it was a beacon of hope for those who sought to break free from conventional thinking and forge a new path forward.",
+          ],
+          "words": [
+            {
+              "S": [
+                "Every piece of furniture, every painting, and even the buildings themselves",
+                "The school",
+              ],
+            },
+            {
+              "V": [
+                "were designed",
+                "was",
+              ],
+            },
+            {
+              "O": [
+                "with functionality in mind",
+                "more than just a place for students",
+              ],
+            },
+            {
+              "O": [
+                "it was a beacon of hope for those who sought to break free from conventional thinking and forge a new path forward",
+              ],
+            },
+          ],
         },
         {
           "pattern": "S + V + O + C",
-          "explanation":
-            "A sentence with a subject, a verb, an object, and a complement.",
-          "usage": [],
-          "words": [],
+          "explanation": "Subject + Verb + Object + Complement",
+          "usage": [
+            "I left that day with an newfound appreciation for the Bauhaus School's impact on modern design and art.",
+          ],
+          "words": [
+            {
+              "S": [
+                "I",
+              ],
+            },
+            {
+              "V": [
+                "left",
+              ],
+            },
+            {
+              "O": [
+                "that day with an newfound appreciation for the Bauhaus School's impact on modern design and art",
+              ],
+            },
+          ],
         },
       ],
       "vocabularies": [
         {
           "class": "Noun",
-          "word": "leviathan",
-          "meaning": "a large sea monster",
+          "word": "backdrop",
+          "meaning": "Something that forms a background or setting",
           "usage": [
-            "In a dream, I saw a leviathan swimming through the depths of the ocean.",
-            "The leviathan opened its mouth and began to speak.",
-            "The leviathan's words filled me with fear, but I also felt a strange sense of awe.",
+            "The bold colors and shapes creating a vibrant backdrop for the scene.",
           ],
-          "pronounce": "/lɪˈvaɪəθən/",
+          "pronounce": "/ˈbakˌdrɑːp/",
           "example":
-            "The sailors were terrified of the leviathan that was attacking their ship.",
+            "The backdrop of the stage was a beautiful painting of a forest.",
         },
         {
           "class": "Noun",
-          "word": "scales",
+          "word": "craftsmanship",
+          "meaning": "The skill or art of making something",
+          "usage": [
+            "The craftsmanship was impeccable, every detail meticulously crafted to create something truly unique and innovative.",
+          ],
+          "pronounce": "/ˈkrɑːftsmənʃɪp/",
+          "example": "The craftsmanship of the furniture was exquisite.",
+        },
+        {
+          "class": "Noun",
+          "word": "harmony",
           "meaning":
-            "the hard, overlapping plates that cover the body of a fish or reptile",
+            "The combination of different things in a way that is pleasing to the eye or the ear",
           "usage": [
-            "Its scales were like diamonds, and its eyes were like fire.",
+            "I knew that I had stumbled upon a place where creativity and technology came together in perfect harmony.",
           ],
-          "pronounce": "/skeɪlz/",
-          "example": "The fish's scales were shimmering in the sunlight.",
+          "pronounce": "/ˈhɑːrməni/",
+          "example": "The colors in the painting were in perfect harmony.",
         },
         {
           "class": "Noun",
-          "word": "eyes",
-          "meaning": "the organ of sight",
+          "word": "ingenuity",
+          "meaning": "The quality of being clever or original",
           "usage": [
-            "Its eyes were like fire.",
-            "The leviathan looked at me with its fiery eyes.",
+            "I knew that I had witnessed something truly remarkable, a testament to human ingenuity and creativity.",
           ],
-          "pronounce": "/aɪz/",
-          "example": "The cat's eyes were glowing in the dark.",
+          "pronounce": "/ˌɪndʒəˈnuːɪti/",
+          "example":
+            "The inventor's ingenuity was evident in the design of the new machine.",
         },
         {
           "class": "Noun",
-          "word": "power",
-          "meaning": "the ability to do or act",
+          "word": "testament",
+          "meaning": "Something that is evidence of something else",
           "usage": [
-            "It was a creature of immense power and beauty.",
+            "Every piece of furniture, every painting, and even the buildings themselves were designed with functionality in mind.",
+            "The school was more than just a place for students; it was a beacon of hope for those who sought to break free from conventional thinking and forge a new path forward.",
           ],
-          "pronounce": "/paʊər/",
-          "example": "The superhero had the power to fly.",
+          "pronounce": "/ˈtɛstəmɛnt/",
+          "example":
+            "The old building is a testament to the city's rich history.",
         },
         {
           "class": "Noun",
-          "word": "beauty",
-          "meaning": "the quality of being pleasing to the eye",
+          "word": "vision",
+          "meaning": "The ability to think about or plan the future",
           "usage": [
-            "It was a creature of immense power and beauty.",
+            "I realized that this wasn't just an art school, it was a testament to the Bauhaus School's vision of combining art and technology for a better future.",
           ],
-          "pronounce": "/ˈbjuːti/",
-          "example": "The painting was a masterpiece of beauty.",
+          "pronounce": "/ˈvɪʒən/",
+          "example":
+            "The company's vision is to be the world's leading provider of green energy.",
         },
         {
-          "class": "Noun",
-          "word": "voice",
-          "meaning": "the sound produced by a person or animal",
+          "class": "Adjective",
+          "word": "impressive",
+          "meaning": "Making a strong or favorable impression",
           "usage": [
-            "Its voice was like the sound of thunder.",
+            "I couldn't believe my eyes as I gazed at each piece of art and design.",
           ],
-          "pronounce": "/vɔɪs/",
-          "example": "The singer had a beautiful voice.",
+          "pronounce": "/ɪmˈprɛsɪv/",
+          "example": "The students' work was very impressive.",
         },
         {
-          "class": "Noun",
-          "word": "master",
-          "meaning": "a person who has control over others",
+          "class": "Adjective",
+          "word": "vibrant",
+          "meaning": "Full of life, energy, or color",
           "usage": [
-            "I am the Leviathan, and I am the master of the sea.",
+            "The bold colors and shapes creating a vibrant backdrop for the scene.",
           ],
-          "pronounce": "/ˈmæstər/",
-          "example": "The master of the house was a kind and generous man.",
-        },
-        {
-          "class": "Noun",
-          "word": "king",
-          "meaning": "a male ruler of a country",
-          "usage": [
-            "I am the king of all creatures.",
-          ],
-          "pronounce": "/kɪŋ/",
-          "example": "The king was a wise and just ruler.",
+          "pronounce": "/ˈvaɪbrənt/",
+          "example": "The city was full of vibrant energy.",
         },
       ],
     },
     "keywords": [
-      "leviathan",
-      "ocean",
-      "diamonds",
-      "fire",
-      "power",
-      "beauty",
-      "thunder",
-      "master",
-      "king",
-      "prophet",
-      "fear",
-      "awe",
+      "Modern Art",
+      "Abstract Paintings",
+      "Bauhaus School",
+      "Sleek Furniture",
+      "Minimalism",
+      "Geometric Forms",
+      "Craftsmanship",
+      "Innovation",
+      "Creativity",
+      "Functionality",
+      "Visionary",
+      "Inspirational",
     ],
   },
 };

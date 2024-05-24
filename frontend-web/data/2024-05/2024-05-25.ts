@@ -1,182 +1,216 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "Coco Chanel Presents the Little Black Dress",
+    "event": "Bauhaus Founded",
     "details":
-      "On May 25, 1926, Coco Chanel debuted her revolutionary little black dress in the pages of Vogue magazine. The simple yet elegant design quickly became a staple in women's wardrobes and remains a timeless fashion icon today.",
+      "On May 25, 1919, Walter Gropius founded the Staatliches Bauhaus in Weimar, Germany, a school of art, architecture, and design that would come to have a profound influence on the development of modernism.",
   },
   "date": "2024-05-25",
-  "title": "The Black Dress",
+  "title": "A New Beginning",
   "body":
-    "In the neon-drenched labyrinth of Neo-Tokyo, where technology reigned supreme, there lived a fashion icon named Anya. Inspired by the legendary Coco Chanel, Anya sought to create a garment that would transcend time and become the ultimate symbol of power and style in the cybernetic realm.One fateful night, amidst the pulsating rhythms of a techno club, Anya unveiled her masterpiece - the 'Black Dress.' Its sleek, synthetic fabric shimmered like a thousand tiny stars, adorned with intricate cybernetic implants that responded to the wearer's every move.As Anya graced the runway, the crowd gasped in awe. The Black Dress was more than just a garment; it was a statement of rebellion, a celebration of the human spirit in a world dominated by technology. It became an instant icon, worn by the elite of Neo-Tokyo and inspiring countless imitations.And so, the Black Dress became a symbol of hope and empowerment in the cyberpunk dystopia, a reminder that even in the darkest of times, beauty and individuality could prevail.",
-  "word count": 166,
+    "On that fateful day in May, Walter Gropius founded the Staatliches Bauhaus in Weimar, Germany. This school of art, architecture, and design would go on to have a profound impact on the development of modernism.The students were eager to learn and explore new ideas. They began with basic sentence structures and tenses, focusing on understanding the differences between affirmation, negation, and interrogation. As they progressed, they learned about modals and perfect tenses, as well as comparing and contrasting adjectives and adverbs.As they continued their journey, they encountered more complex grammar topics such as passive voice, relative clauses, conditionals, and participial constructions. But they were determined to master every concept on the way to success.Gerunds and infinitives proved to be challenging at first, but with practice, they became proficient in using them correctly. They also learned about reported speech and question tags, which allowed them to express themselves more effectively.The final level tested their understanding of advanced sentence structures and phrasal verbs, as well as articles and quantifiers. But the students were ready for the challenge and successfully passed the course.",
+  "word count": 180,
   "dialog": [
     {
-      "Billy":
-        "Wow! The 'Black Dress' sounds amazing! I wonder how the cybernetic implants work.",
+      "Kerry":
+        "Billy, I just finished the novel about the founding of the Bauhaus school!",
     },
     {
-      "Kerry":
-        "Yeah, I bet it's like something out of a futuristic movie! Maybe it gives the wearer special powers or something.",
+      "Billy":
+        "Oh, that sounds really interesting, Kerry. I've never heard of it before.",
     },
     {
       "Meg":
-        "I think it's more than just a garment. It's a symbol of hope and rebellion against the cyberpunk society.",
-    },
-    {
-      "Lui":
-        "Indeed, Meg. The 'Black Dress' represents the human spirit's triumph over technology, a reminder that individuality can prevail even in the most artificial of worlds.",
-    },
-    {
-      "Billy":
-        "I'd love to see it in person. Maybe it's on display at some museum in Neo-Tokyo.",
+        "It was a great story, Billy! It's about this group of artists and architects that came together to change the way we think about art and design.",
     },
     {
       "Kerry":
-        "Or maybe we could find someone who owns it and convince them to show it to us. Like, a famous fashion designer or something.",
+        "Yeah, and they had some really amazing ideas. Like, they believed that art should be functional and accessible to everyone.",
     },
     {
       "Lui":
-        "While that may be difficult, the search for the 'Black Dress' could become an adventure in itself. Who knows what we might discover about the history of Neo-Tokyo or ourselves along the way.",
+        "I think that's a fantastic idea! I've always believed that art should be for everyone, not just the elite.",
+    },
+    {
+      "Meg":
+        "I agree, Lui. Art can be so powerful in bringing people together and creating a better world.",
+    },
+    {
+      "Billy":
+        "I wish I could have been there to see it. It must have been so exciting.",
+    },
+    {
+      "Lui":
+        "Even though we weren't there, we can still learn from their ideas and try to implement them in our own lives.",
+    },
+    {
+      "Kerry":
+        "That's a great point, Lui. We can use their ideas to make our own art and design more meaningful.",
     },
   ],
   "quiz": [
     {
-      "question": "Who is the fashion icon that created the 'Black Dress'?",
+      "question": "When was the Staatliches Bauhaus founded?",
       "options": [
-        "Coco Chanel",
-        "Anya",
-        "Lui",
-        "Billy",
-        "Kerry",
-      ],
-      "answer": 1,
-    },
-    {
-      "question": "Where was the 'Black Dress' first unveiled?",
-      "options": [
-        "A fashion show",
-        "A techno club",
-        "A museum",
-        "A fashion magazine",
-        "A private party",
-      ],
-      "answer": 1,
-    },
-    {
-      "question": "What is the 'Black Dress' described as being?",
-      "options": [
-        "A symbol of power and style",
-        "A celebration of the human spirit",
-        "A work of art",
-        "A piece of technology",
-        "All of the above",
-      ],
-      "answer": 4,
-    },
-    {
-      "question":
-        "What is the significance of the 'Black Dress' in the cyberpunk dystopia?",
-      "options": [
-        "It is a symbol of hope and empowerment",
-        "It is a warning against the dangers of technology",
-        "It is a reminder of the past",
-        "It is a sign of wealth and status",
-        "It is none of the above",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
       ],
       "answer": 0,
     },
     {
-      "question":
-        "What do the characters in the dialogue suggest doing to find the 'Black Dress'?",
+      "question": "Who founded the Staatliches Bauhaus?",
       "options": [
-        "Searching for it in a museum",
-        "Asking a famous fashion designer",
-        "Going on an adventure",
-        "All of the above",
-        "None of the above",
+        "Walter Gropius",
+        "Ludwig Mies van der Rohe",
+        "Marcel Breuer",
+        "Wassily Kandinsky",
+        "Paul Klee",
       ],
-      "answer": 3,
+      "answer": 0,
+    },
+    {
+      "question": "What was the main goal of the Bauhaus school?",
+      "options": [
+        "To promote traditional art forms",
+        "To develop new and innovative approaches to art and design",
+        "To educate students in the history of art",
+        "To create a new style of architecture",
+        "To train students in the skills needed for industrial production",
+      ],
+      "answer": 1,
+    },
+    {
+      "question":
+        "What did the students learn in their first year at the Bauhaus school?",
+      "options": [
+        "Advanced sentence structures and phrasal verbs",
+        "Basic sentence structures and tenses",
+        "Grammar topics such as passive voice and relative clauses",
+        "Reported speech and question tags",
+        "Articles and quantifiers",
+      ],
+      "answer": 1,
+    },
+    {
+      "question":
+        "According to Lui, what can we do with the ideas of the Bauhaus artists?",
+      "options": [
+        "Ignore them because they are outdated",
+        "Try to implement them in our own lives",
+        "Use them to create art that is meaningless",
+        "Use them to decorate our homes",
+        "Use them to make ourselves rich",
+      ],
+      "answer": 1,
     },
   ],
   "params": {
-    "theme": "Fashion",
-    "flavor": "Cyberpunk",
+    "theme": "Design",
+    "flavor": "Thriller",
     "models": {
       "main": "gemini",
-      "novel": "gemini",
+      "novel": "llava-llama3",
     },
+    "level": "Level_2",
   },
   "descriptions": {
     "grammar": {
       "patterns": [
         {
           "pattern": "S + V",
-          "explanation": "The subject performs the action of the verb.",
+          "explanation": "A sentence with only a subject and a verb.",
           "usage": [
-            "In the neon-drenched labyrinth of Neo-Tokyo, where technology reigned supreme, there lived a fashion icon named Anya.",
+            "Walter Gropius founded the Staatliches Bauhaus in Weimar, Germany.",
           ],
           "words": [
             {
               "S": [
-                "Anya",
+                "Walter Gropius",
               ],
             },
             {
               "V": [
-                "lived",
+                "founded",
+              ],
+            },
+          ],
+        },
+        {
+          "pattern": "S + V + C",
+          "explanation": "A sentence with a subject, a verb, and a complement.",
+          "usage": [
+            "The students were eager to learn and explore new ideas.",
+          ],
+          "words": [
+            {
+              "S": [
+                "The students",
+              ],
+            },
+            {
+              "V": [
+                "were",
+              ],
+            },
+            {
+              "C": [
+                "eager to learn and explore new ideas",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O",
-          "explanation":
-            "The subject performs the action of the verb and the object receives the action.",
+          "explanation": "A sentence with a subject, a verb, and an object.",
           "usage": [
-            "Inspired by the legendary Coco Chanel, Anya sought to create a garment that would transcend time and become the ultimate symbol of power and style in the cybernetic realm.",
+            "This school of art, architecture, and design would go on to have a profound impact on the development of modernism.",
           ],
           "words": [
             {
               "S": [
-                "Anya",
+                "This school of art, architecture, and design",
               ],
             },
             {
               "V": [
-                "sought",
-                "create",
+                "would go on to have",
               ],
             },
             {
               "O": [
-                "a garment",
+                "a profound impact on the development of modernism",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O + O",
-          "explanation":
-            "The subject performs the action of the verb and the two objects receive the action.",
+          "explanation": "A sentence with a subject, a verb, and two objects.",
           "usage": [
-            "One fateful night, amidst the pulsating rhythms of a techno club, Anya unveiled her masterpiece - the 'Black Dress.",
+            "They began with basic sentence structures and tenses, focusing on understanding the differences between affirmation, negation, and interrogation.",
           ],
           "words": [
             {
               "S": [
-                "Anya",
+                "They",
               ],
             },
             {
               "V": [
-                "unveiled",
+                "began",
               ],
             },
             {
               "O": [
-                "her masterpiece",
-                "the 'Black Dress",
+                "with basic sentence structures and tenses",
+              ],
+            },
+            {
+              "O": [
+                "focusing on understanding the differences between affirmation, negation, and interrogation",
               ],
             },
           ],
@@ -184,56 +218,29 @@ const data: QuizData = {
         {
           "pattern": "S + V + O + C",
           "explanation":
-            "The subject performs the action of the verb and the object receives the action and the complement provides additional information.",
+            "A sentence with a subject, a verb, an object, and a complement.",
           "usage": [
-            "As Anya graced the runway, the crowd gasped in awe.",
+            "But they were determined to master every concept on the way to success.",
           ],
           "words": [
             {
               "S": [
-                "Anya",
+                "they",
               ],
             },
             {
               "V": [
-                "graced",
+                "were determined to master",
               ],
             },
             {
               "O": [
-                "the runway",
+                "every concept",
               ],
             },
             {
               "C": [
-                "in awe",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + C",
-          "explanation":
-            "The subject performs the action of the verb and the complement provides additional information.",
-          "usage": [
-            "The Black Dress was more than just a garment; it was a statement of rebellion, a celebration of the human spirit in a world dominated by technology.",
-          ],
-          "words": [
-            {
-              "S": [
-                "The Black Dress",
-              ],
-            },
-            {
-              "V": [
-                "was",
-              ],
-            },
-            {
-              "C": [
-                "more than just a garment",
-                "a statement of rebellion",
-                "a celebration of the human spirit in a world dominated by technology",
+                "on the way to success",
               ],
             },
           ],
@@ -242,109 +249,99 @@ const data: QuizData = {
       "vocabularies": [
         {
           "class": "Noun",
-          "word": "labyrinth",
-          "meaning": "a complex and confusing network of paths or passages",
+          "word": "day",
+          "meaning": "a period of 24 hours",
           "usage": [
-            "In the neon-drenched labyrinth of Neo-Tokyo, where technology reigned supreme, there lived a fashion icon named Anya.",
+            "On that fateful day in May, Walter Gropius founded the Staatliches Bauhaus in Weimar, Germany.",
           ],
-          "pronounce": "/ˈlæbərɪnθ/",
-          "example":
-            "The labyrinthine streets of the old city were a maze of narrow alleys and hidden courtyards.",
+          "pronounce": "/deɪ/",
+          "example": "I had a great day yesterday.",
         },
         {
           "class": "Noun",
-          "word": "garment",
-          "meaning": "an article of clothing",
+          "word": "school",
+          "meaning": "an institution for learning",
           "usage": [
-            "Inspired by the legendary Coco Chanel, Anya sought to create a garment that would transcend time and become the ultimate symbol of power and style in the cybernetic realm.",
+            "This school of art, architecture, and design would go on to have a profound impact on the development of modernism.",
           ],
-          "pronounce": "/ˈɡɑːrmənt/",
-          "example":
-            "The designer's latest collection featured a range of elegant and sophisticated garments.",
+          "pronounce": "/skuːl/",
+          "example": "I went to school for 12 years.",
         },
         {
           "class": "Noun",
-          "word": "masterpiece",
-          "meaning": "a work of outstanding skill or artistry",
+          "word": "impact",
+          "meaning": "a strong effect",
           "usage": [
-            "One fateful night, amidst the pulsating rhythms of a techno club, Anya unveiled her masterpiece - the 'Black Dress.'",
+            "This school of art, architecture, and design would go on to have a profound impact on the development of modernism.",
           ],
-          "pronounce": "/ˈmɑːstərpis/",
-          "example":
-            "The artist's masterpiece was a breathtaking painting that captured the beauty of the natural world.",
+          "pronounce": "/ˈɪmpækt/",
+          "example": "The impact of the new law was felt immediately.",
         },
         {
           "class": "Noun",
-          "word": "imitation",
-          "meaning":
-            "an act or instance of copying or imitating someone or something",
+          "word": "journey",
+          "meaning": "a trip or voyage",
           "usage": [
-            "It became an instant icon, worn by the elite of Neo-Tokyo and inspiring countless imitations.",
+            "As they continued their journey, they encountered more complex grammar topics such as passive voice, relative clauses, conditionals, and participial constructions.",
           ],
-          "pronounce": "/ˌɪmɪˈteɪʃən/",
-          "example":
-            "The counterfeit goods were a poor imitation of the original designer items.",
+          "pronounce": "/ˈdʒɜːrni/",
+          "example": "I'm going on a journey to find myself.",
         },
         {
           "class": "Noun",
-          "word": "dystopia",
-          "meaning":
-            "an imaginary place or state in which everything is bad or unpleasant",
+          "word": "concept",
+          "meaning": "an abstract idea",
           "usage": [
-            "And so, the Black Dress became a symbol of hope and empowerment in the cyberpunk dystopia, a reminder that even in the darkest of times, beauty and individuality could prevail.",
+            "They were determined to master every concept on the way to success.",
           ],
-          "pronounce": "/dɪsˈtəʊpiə/",
-          "example":
-            "The novel depicted a dystopian future where society was controlled by a totalitarian government.",
+          "pronounce": "/ˈkɑːnsept/",
+          "example": "The concept of love is difficult to define.",
         },
         {
           "class": "Noun",
-          "word": "cyberpunk",
-          "meaning":
-            "a genre of science fiction that deals with the impact of advanced technology on society",
+          "word": "practice",
+          "meaning": "the action of doing something regularly",
           "usage": [
-            "And so, the Black Dress became a symbol of hope and empowerment in the cyberpunk dystopia, a reminder that even in the darkest of times, beauty and individuality could prevail.",
+            "with practice, they became proficient in using them correctly",
           ],
-          "pronounce": "/ˈsʌɪbərpʌŋk/",
-          "example":
-            "The cyberpunk film explored the themes of technology, identity, and the human condition.",
+          "pronounce": "/ˈpræktɪs/",
+          "example": "I need more practice on my golf swing.",
         },
         {
           "class": "Noun",
-          "word": "symbol",
-          "meaning": "a thing that represents or stands for something else",
+          "word": "understanding",
+          "meaning": "the ability to understand",
           "usage": [
-            "And so, the Black Dress became a symbol of hope and empowerment in the cyberpunk dystopia, a reminder that even in the darkest of times, beauty and individuality could prevail.",
+            "The final level tested their understanding of advanced sentence structures and phrasal verbs, as well as articles and quantifiers.",
           ],
-          "pronounce": "/ˈsɪmbəl/",
-          "example": "The dove is a symbol of peace and harmony.",
+          "pronounce": "/ˌʌndərˈstændɪŋ/",
+          "example": "I have a good understanding of the subject matter.",
         },
         {
           "class": "Noun",
-          "word": "individuality",
-          "meaning": "the quality or state of being an individual",
+          "word": "challenge",
+          "meaning": "a difficult task",
           "usage": [
-            "And so, the Black Dress became a symbol of hope and empowerment in the cyberpunk dystopia, a reminder that even in the darkest of times, beauty and individuality could prevail.",
+            "But the students were ready for the challenge and successfully passed the course.",
           ],
-          "pronounce": "/ˌɪndɪvɪˈdʒuːəlɪti/",
-          "example":
-            "She values her individuality and refuses to conform to societal norms.",
+          "pronounce": "/ˈtʃælɪndʒ/",
+          "example": "I'm up for any challenge.",
         },
       ],
     },
     "keywords": [
-      "Neo-Tokyo",
-      "Cyberpunk",
-      "Anya",
-      "Coco Chanel",
-      "Black Dress",
-      "Cybernetic implants",
-      "Technology",
-      "Style",
-      "Rebellion",
-      "Human spirit",
-      "Hope",
-      "Empowerment",
+      "Bauhaus",
+      "Walter Gropius",
+      "Modernism",
+      "Art",
+      "Architecture",
+      "Design",
+      "Education",
+      "Grammar",
+      "Syntax",
+      "Sentences",
+      "Tenses",
+      "Advanced grammar",
     ],
   },
 };

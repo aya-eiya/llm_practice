@@ -105,5 +105,11 @@ const data: QuizData = {
       "answer": 1,
     },
   ],
+  "params": {
+    "theme": "Photography",
+    "flavor": "Post-Apocalyptic",
+    "models": { "main": "llama", "novel": "llava" },
+    "level": "Level_5",
+  },
 };
 export default data;

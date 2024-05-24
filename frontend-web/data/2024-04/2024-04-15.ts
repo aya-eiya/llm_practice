@@ -108,5 +108,11 @@ const data: QuizData = {
       "answer": 3,
     },
   ],
+  "params": {
+    "theme": "Art",
+    "flavor": "Steampunk",
+    "models": { "main": "llama", "novel": "llava" },
+    "level": "Level_5",
+  },
 };
 export default data;
