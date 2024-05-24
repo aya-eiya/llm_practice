@@ -86,7 +86,7 @@ const data: QuizData = {
   "params": {
     "theme": "Art",
     "flavor": "Steampunk",
-    "models": { "main": "llama", "novel": "llava" },
+    "models": { "main": "llama3", "novel": "llava" },
     "level": "Level_5",
   },
 };

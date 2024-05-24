@@ -4,6 +4,10 @@ import Header from "./parts/Header.tsx";
 import SideNavi from "./parts/SideNavi.tsx";
 import data, { dates } from "../data/index.ts";
 import { isVideoDate } from "../data/videoData.ts";
+import { getLevelEmoji, paramsLevelValues } from "../domains/level.ts";
+import { getLevelTag } from "../domains/level.ts";
+import { getLevelTitle } from "../domains/level.ts";
+import { getLevelDetails } from "../domains/level.ts";
 
 const descriptions = {
   system:
@@ -181,7 +185,7 @@ export default function TopLayout() {
                       </p>
                     </div>
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                     <div className={"md:col-span-2"}>
                       <h3
                         className={"text-2xl font-bold text-slate-800"}
@@ -234,6 +238,55 @@ export default function TopLayout() {
                         critical thinking skills, helping you engage with the
                         text.
                       </p>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div className={"md:col-span-2"}>
+                      <h3
+                        className={"text-2xl font-bold text-slate-800"}
+                      >
+                        Level
+                      </h3>
+                      <ul className={"mx-4"}>
+                        <li className={"mt-2"}>
+                          The quizzes are categorized into different levels
+                          based on the complexity of the grammar and vocabulary
+                          used. The levels range from beginner to advanced,
+                          allowing users to choose quizzes that match their
+                          proficiency.
+                        </li>
+                        <li className={"mt-2"}>
+                          Level information is provided at the top of each quiz
+                        </li>
+                      </ul>
+                      <div className={"mt-4 md:px-4"}>
+                        <dl
+                          className={"grid grid-cols-12 border-y"}
+                        >
+                          {paramsLevelValues().map((level) => (
+                            <>
+                              <dt
+                                className={"col-span-4 sm:col-span-3 md:col-span-2 border-y py-2"}
+                              >
+                                {getLevelTag(level)}
+                              </dt>
+                              <dd className={"col-span-1 border-y py-2"}>
+                                {getLevelEmoji(level)}
+                              </dd>
+                              <dd
+                                className={"col-span-7 sm:col-span-3 md:col-span-4 border-y py-2"}
+                              >
+                                {getLevelTitle(level)}
+                              </dd>
+                              <dd
+                                className={"hidden sm:block sm:col-span-5 md:col-span-5 border-y py-2"}
+                              >
+                                {getLevelDetails(level)}
+                              </dd>
+                            </>
+                          ))}
+                        </dl>
+                      </div>
                     </div>
                   </div>
                 </section>

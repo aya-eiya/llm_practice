@@ -1,3 +1,5 @@
+import { type LevelParamValue } from "./level.ts";
+
 type Event = { "event": string; "details": string };
 type Dialog = (
   | {
@@ -55,15 +57,7 @@ export type QuizData = {
       main: string;
       novel: string;
     };
-    level:
-      | "Level_1"
-      | "Level_2"
-      | "Level_3"
-      | "Level_4"
-      | "Level_5"
-      | "Level_6"
-      | "Level_7"
-      | "Level_8";
+    level: LevelParamValue;
   };
   descriptions?: {
     keywords?: string[];

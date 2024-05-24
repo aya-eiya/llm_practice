@@ -107,7 +107,7 @@ const data: QuizData = {
   "params": {
     "theme": "Technology",
     "flavor": "Horror",
-    "models": { "main": "llama", "novel": "llava" },
+    "models": { "main": "llama3", "novel": "llava" },
     "level": "Level_5",
   },
 };

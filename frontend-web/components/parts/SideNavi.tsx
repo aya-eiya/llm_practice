@@ -3,6 +3,8 @@ import dailyData, { dates } from "../../data/index.ts";
 import prs from "../../pr/index.ts";
 import { LazyLoadOGP } from "../../islands/LazyLoadOGP.tsx";
 import { isVideoDate } from "../../data/videoData.ts";
+import { getLevelEmoji } from "../../domains/level.ts";
+import { getLevelTag } from "../../domains/level.ts";
 
 export default function SideNavi() {
   const ads = useSignal(prs);
@@ -19,11 +21,15 @@ export default function SideNavi() {
                 <a
                   className={"hover:underline block ml-1 align-top"}
                   href={`/pages/${date}`}
+                  title={dailyData[date].title + " | " +
+                    getLevelTag(dailyData[date].params.level) +
+                    (isVideoDate(date) ? " | Listening available" : "")}
                 >
                   {date}{" "}
                   <span class={"font-bold"}>
                     {dailyData[date].title}
-                  </span>
+                  </span>{" "}
+                  {getLevelEmoji(dailyData[date].params.level)}
                   {isVideoDate(date) ? " 🎧" : ""}
                 </a>
               </li>
