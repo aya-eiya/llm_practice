@@ -1,5 +1,5 @@
 import { PageProps } from "$fresh/server.ts";
-import ForAll from "../../components/lp/forAll.tsx";
+import ForAll from "../../components/lp/ForAll.tsx";
 
 const contentText = {
   title: "AI 支持的每日英语训练",
