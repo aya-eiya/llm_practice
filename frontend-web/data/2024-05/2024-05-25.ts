@@ -1,118 +1,111 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "Bauhaus Founded",
+    "event": "Knoll Associates Founded",
     "details":
-      "On May 25, 1919, Walter Gropius founded the Staatliches Bauhaus in Weimar, Germany, a school of art, architecture, and design that would come to have a profound influence on the development of modernism.",
+      "Knoll Associates was founded on May 25, 1938 by Hans Knoll and Florence Knoll. The company is known for its modern furniture designs, which have been used in homes, offices, and public spaces around the world.",
   },
   "date": "2024-05-25",
-  "title": "A New Beginning",
+  "title": "The Knoll Family Tree",
   "body":
-    "On that fateful day in May, Walter Gropius founded the Staatliches Bauhaus in Weimar, Germany. This school of art, architecture, and design would go on to have a profound impact on the development of modernism.The students were eager to learn and explore new ideas. They began with basic sentence structures and tenses, focusing on understanding the differences between affirmation, negation, and interrogation. As they progressed, they learned about modals and perfect tenses, as well as comparing and contrasting adjectives and adverbs.As they continued their journey, they encountered more complex grammar topics such as passive voice, relative clauses, conditionals, and participial constructions. But they were determined to master every concept on the way to success.Gerunds and infinitives proved to be challenging at first, but with practice, they became proficient in using them correctly. They also learned about reported speech and question tags, which allowed them to express themselves more effectively.The final level tested their understanding of advanced sentence structures and phrasal verbs, as well as articles and quantifiers. But the students were ready for the challenge and successfully passed the course.",
-  "word count": 180,
+    "In a small town nestled amidst rolling hills, a peculiar tree stood tall in the town square. Its leaves were a vibrant shade of emerald, and its branches reached towards the heavens like grasping arms. The townsfolk whispered tales of the tree's magical properties, saying that it could grant wishes and fulfill dreams.One ordinary afternoon, a young girl named Lily approached the tree. With trembling hands, she uttered a wish: for a family to fill her lonely heart. To her astonishment, as the words left her lips, a golden acorn fell from the tree's branches, landing softly in her palm.Lily planted the acorn in her backyard, and as days turned into weeks, a family of minuscule beings emerged from the soil. The father was a skilled carpenter, the mother a talented weaver, and the children were as playful as kittens. From that day forward, Lily's life was filled with love, laughter, and the knowledge that the magical Knoll Family Tree had made her dream come true.",
+  "word count": 166,
   "dialog": [
     {
-      "Kerry":
-        "Billy, I just finished the novel about the founding of the Bauhaus school!",
-    },
-    {
-      "Billy":
-        "Oh, that sounds really interesting, Kerry. I've never heard of it before.",
-    },
-    {
       "Meg":
-        "It was a great story, Billy! It's about this group of artists and architects that came together to change the way we think about art and design.",
-    },
-    {
-      "Kerry":
-        "Yeah, and they had some really amazing ideas. Like, they believed that art should be functional and accessible to everyone.",
+        "I loved the magical tree and the little family. It was like a fairy tale come true!",
     },
     {
       "Lui":
-        "I think that's a fantastic idea! I've always believed that art should be for everyone, not just the elite.",
-    },
-    {
-      "Meg":
-        "I agree, Lui. Art can be so powerful in bringing people together and creating a better world.",
+        "The story is well-written, with a clear and engaging plot. It's a great example of how imagination can bring happiness into our lives.",
     },
     {
       "Billy":
-        "I wish I could have been there to see it. It must have been so exciting.",
-    },
-    {
-      "Lui":
-        "Even though we weren't there, we can still learn from their ideas and try to implement them in our own lives.",
+        "I wonder if there are any real trees that have magical powers. It would be amazing to find one!",
     },
     {
       "Kerry":
-        "That's a great point, Lui. We can use their ideas to make our own art and design more meaningful.",
+        "I think the story is a metaphor. It shows us that even when we feel lonely, there's always hope that we'll find happiness and love.",
+    },
+    {
+      "Meg":
+        "I agree. The story is about more than just a magical tree. It's about the power of hope and the importance of friendship.",
+    },
+    {
+      "Lui":
+        "It's important to remember that no matter how difficult life may seem, there is always hope. This story is a reminder of that.",
+    },
+    {
+      "Billy":
+        "I think I'll write a story about a magical tree in my backyard. It will grant wishes and make all my dreams come true!",
+    },
+    {
+      "Kerry": "That sounds like a great idea, Billy. I can't wait to read it!",
     },
   ],
   "quiz": [
     {
-      "question": "When was the Staatliches Bauhaus founded?",
+      "question": "What was the color of the tree's leaves?",
       "options": [
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
+        "Emerald",
+        "Jade",
+        "Green",
+        "Turquoise",
+        "Teal",
       ],
       "answer": 0,
     },
     {
-      "question": "Who founded the Staatliches Bauhaus?",
+      "question": "What did Lily wish for from the tree?",
       "options": [
-        "Walter Gropius",
-        "Ludwig Mies van der Rohe",
-        "Marcel Breuer",
-        "Wassily Kandinsky",
-        "Paul Klee",
+        "A new toy",
+        "A family",
+        "A new dress",
+        "A pet",
+        "A million dollars",
+      ],
+      "answer": 1,
+    },
+    {
+      "question": "What emerged from the acorn that Lily planted?",
+      "options": [
+        "A family of small beings",
+        "A giant pumpkin",
+        "A talking frog",
+        "A pot of gold",
+        "A beautiful flower",
       ],
       "answer": 0,
     },
     {
-      "question": "What was the main goal of the Bauhaus school?",
+      "question": "According to Kerry, what is the story a metaphor for?",
       "options": [
-        "To promote traditional art forms",
-        "To develop new and innovative approaches to art and design",
-        "To educate students in the history of art",
-        "To create a new style of architecture",
-        "To train students in the skills needed for industrial production",
+        "The power of hope and friendship",
+        "The importance of hard work",
+        "The dangers of magic",
+        "The value of family",
+        "The beauty of nature",
       ],
-      "answer": 1,
+      "answer": 0,
     },
     {
-      "question":
-        "What did the students learn in their first year at the Bauhaus school?",
+      "question": "What does Billy plan to do after reading the story?",
       "options": [
-        "Advanced sentence structures and phrasal verbs",
-        "Basic sentence structures and tenses",
-        "Grammar topics such as passive voice and relative clauses",
-        "Reported speech and question tags",
-        "Articles and quantifiers",
+        "Write a story about a magical tree",
+        "Visit the tree in the town square",
+        "Make a wish to the tree",
+        "Plant an acorn in his backyard",
+        "Tell the story to his friends",
       ],
-      "answer": 1,
-    },
-    {
-      "question":
-        "According to Lui, what can we do with the ideas of the Bauhaus artists?",
-      "options": [
-        "Ignore them because they are outdated",
-        "Try to implement them in our own lives",
-        "Use them to create art that is meaningless",
-        "Use them to decorate our homes",
-        "Use them to make ourselves rich",
-      ],
-      "answer": 1,
+      "answer": 0,
     },
   ],
   "params": {
     "theme": "Design",
-    "flavor": "Thriller",
+    "flavor": "Magical Realism",
     "models": {
       "main": "gemini",
-      "novel": "llava-llama3",
+      "novel": "gemini",
     },
     "level": "Level_2",
   },
@@ -121,96 +114,107 @@ const data: QuizData = {
       "patterns": [
         {
           "pattern": "S + V",
-          "explanation": "A sentence with only a subject and a verb.",
+          "explanation": "Subject followed by a verb.",
           "usage": [
-            "Walter Gropius founded the Staatliches Bauhaus in Weimar, Germany.",
+            "In a small town nestled amidst rolling hills, a peculiar tree stood tall in the town square.",
+            "Its leaves were a vibrant shade of emerald, and its branches reached towards the heavens like grasping arms.",
+            "With trembling hands, she uttered a wish: for a family to fill her lonely heart.",
+            "The townsfolk whispered tales of the tree's magical properties, saying that it could grant wishes and fulfill dreams.",
           ],
           "words": [
             {
               "S": [
-                "Walter Gropius",
+                "In a small town",
+                "Its leaves",
+                "Lily",
+                "The townsfolk",
               ],
             },
             {
               "V": [
-                "founded",
+                "stood",
+                "were",
+                "uttered",
+                "whispered",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + C",
-          "explanation": "A sentence with a subject, a verb, and a complement.",
+          "explanation": "Subject followed by a verb and a complement.",
           "usage": [
-            "The students were eager to learn and explore new ideas.",
+            "Lily planted the acorn in her backyard, and as days turned into weeks, a family of minuscule beings emerged from the soil.",
+            "To her astonishment, as the words left her lips, a golden acorn fell from the tree's branches, landing softly in her palm.",
           ],
           "words": [
             {
               "S": [
-                "The students",
+                "Lily",
+                "A golden acorn",
               ],
             },
             {
               "V": [
-                "were",
+                "planted",
+                "fell",
               ],
             },
             {
               "C": [
-                "eager to learn and explore new ideas",
+                "in her backyard",
+                "to her astonishment",
+                "from the tree's branches",
+                "landing softly in her palm",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O",
-          "explanation": "A sentence with a subject, a verb, and an object.",
+          "explanation": "Subject followed by a verb and an object.",
           "usage": [
-            "This school of art, architecture, and design would go on to have a profound impact on the development of modernism.",
+            "One ordinary afternoon, a young girl named Lily approached the tree.",
           ],
           "words": [
             {
               "S": [
-                "This school of art, architecture, and design",
+                "A young girl named Lily",
               ],
             },
             {
               "V": [
-                "would go on to have",
+                "approached",
               ],
             },
             {
               "O": [
-                "a profound impact on the development of modernism",
+                "the tree",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O + O",
-          "explanation": "A sentence with a subject, a verb, and two objects.",
+          "explanation": "Subject followed by a verb and two objects.",
           "usage": [
-            "They began with basic sentence structures and tenses, focusing on understanding the differences between affirmation, negation, and interrogation.",
+            "From that day forward, Lily's life was filled with love, laughter, and the knowledge that the magical Knoll Family Tree had made her dream come true.",
           ],
           "words": [
             {
               "S": [
-                "They",
+                "Lily's life",
               ],
             },
             {
               "V": [
-                "began",
+                "was filled",
               ],
             },
             {
               "O": [
-                "with basic sentence structures and tenses",
-              ],
-            },
-            {
-              "O": [
-                "focusing on understanding the differences between affirmation, negation, and interrogation",
+                "with love",
+                "laughter",
               ],
             },
           ],
@@ -218,130 +222,114 @@ const data: QuizData = {
         {
           "pattern": "S + V + O + C",
           "explanation":
-            "A sentence with a subject, a verb, an object, and a complement.",
-          "usage": [
-            "But they were determined to master every concept on the way to success.",
-          ],
-          "words": [
-            {
-              "S": [
-                "they",
-              ],
-            },
-            {
-              "V": [
-                "were determined to master",
-              ],
-            },
-            {
-              "O": [
-                "every concept",
-              ],
-            },
-            {
-              "C": [
-                "on the way to success",
-              ],
-            },
-          ],
+            "Subject followed by a verb, an object, and a complement.",
+          "usage": [],
+          "words": [],
         },
       ],
       "vocabularies": [
         {
           "class": "Noun",
-          "word": "day",
-          "meaning": "a period of 24 hours",
+          "word": "tree",
+          "meaning":
+            "a woody perennial plant, typically having a single stem or trunk growing to a considerable height and bearing lateral branches at some distance from the ground.",
           "usage": [
-            "On that fateful day in May, Walter Gropius founded the Staatliches Bauhaus in Weimar, Germany.",
+            "In a small town nestled amidst rolling hills, a peculiar tree stood tall in the town square.",
+            "One ordinary afternoon, a young girl named Lily approached the tree.",
           ],
-          "pronounce": "/deɪ/",
-          "example": "I had a great day yesterday.",
+          "pronounce": "/triː/",
+          "example": "The oak tree in our backyard is over 100 years old.",
+        },
+        {
+          "class": "Adjective",
+          "word": "vibrant",
+          "meaning": "full of life and energy; lively.",
+          "usage": [
+            "Its leaves were a vibrant shade of emerald",
+          ],
+          "pronounce": "/ˈvaɪbrənt/",
+          "example": "The vibrant colors of the sunset filled the sky.",
+        },
+        {
+          "class": "Verb",
+          "word": "grant",
+          "meaning":
+            "give (someone) something, especially as a right or privilege.",
+          "usage": [
+            "townsfolk whispered tales of the tree's magical properties, saying that it could grant wishes and fulfill dreams.",
+          ],
+          "pronounce": "/ɡrænt/",
+          "example":
+            "The king granted the knight permission to leave the kingdom.",
         },
         {
           "class": "Noun",
-          "word": "school",
-          "meaning": "an institution for learning",
+          "word": "acorn",
+          "meaning":
+            "the nut of the oak tree, used as food for animals and humans.",
           "usage": [
-            "This school of art, architecture, and design would go on to have a profound impact on the development of modernism.",
+            "To her astonishment, as the words left her lips, a golden acorn fell from the tree's branches, landing softly in her palm.",
           ],
-          "pronounce": "/skuːl/",
-          "example": "I went to school for 12 years.",
+          "pronounce": "/ˈeɪkɔːrn/",
+          "example": "The squirrels were busy gathering acorns for the winter.",
+        },
+        {
+          "class": "Adjective",
+          "word": "minuscule",
+          "meaning": "extremely small.",
+          "usage": [
+            "a family of minuscule beings emerged from the soil.",
+          ],
+          "pronounce": "/ˈmɪnɪskjuːl/",
+          "example":
+            "The minuscule insects were barely visible to the naked eye.",
         },
         {
           "class": "Noun",
-          "word": "impact",
-          "meaning": "a strong effect",
+          "word": "carpenter",
+          "meaning": "a person who makes and repairs wooden objects.",
           "usage": [
-            "This school of art, architecture, and design would go on to have a profound impact on the development of modernism.",
+            "The father was a skilled carpenter",
           ],
-          "pronounce": "/ˈɪmpækt/",
-          "example": "The impact of the new law was felt immediately.",
+          "pronounce": "/ˈkɑːrpəntər/",
+          "example":
+            "The carpenter built a beautiful oak table for the dining room.",
         },
         {
           "class": "Noun",
-          "word": "journey",
-          "meaning": "a trip or voyage",
+          "word": "weaver",
+          "meaning": "a person who weaves cloth or yarn.",
           "usage": [
-            "As they continued their journey, they encountered more complex grammar topics such as passive voice, relative clauses, conditionals, and participial constructions.",
+            "the mother a talented weaver",
           ],
-          "pronounce": "/ˈdʒɜːrni/",
-          "example": "I'm going on a journey to find myself.",
+          "pronounce": "/ˈwiːvər/",
+          "example": "The weaver created a beautiful tapestry for the castle.",
         },
         {
           "class": "Noun",
-          "word": "concept",
-          "meaning": "an abstract idea",
+          "word": "laughter",
+          "meaning": "the act of laughing.",
           "usage": [
-            "They were determined to master every concept on the way to success.",
+            "From that day forward, Lily's life was filled with love, laughter, and the knowledge that the magical Knoll Family Tree had made her dream come true.",
           ],
-          "pronounce": "/ˈkɑːnsept/",
-          "example": "The concept of love is difficult to define.",
-        },
-        {
-          "class": "Noun",
-          "word": "practice",
-          "meaning": "the action of doing something regularly",
-          "usage": [
-            "with practice, they became proficient in using them correctly",
-          ],
-          "pronounce": "/ˈpræktɪs/",
-          "example": "I need more practice on my golf swing.",
-        },
-        {
-          "class": "Noun",
-          "word": "understanding",
-          "meaning": "the ability to understand",
-          "usage": [
-            "The final level tested their understanding of advanced sentence structures and phrasal verbs, as well as articles and quantifiers.",
-          ],
-          "pronounce": "/ˌʌndərˈstændɪŋ/",
-          "example": "I have a good understanding of the subject matter.",
-        },
-        {
-          "class": "Noun",
-          "word": "challenge",
-          "meaning": "a difficult task",
-          "usage": [
-            "But the students were ready for the challenge and successfully passed the course.",
-          ],
-          "pronounce": "/ˈtʃælɪndʒ/",
-          "example": "I'm up for any challenge.",
+          "pronounce": "/ˈlæftər/",
+          "example": "The children's laughter filled the house with joy.",
         },
       ],
     },
     "keywords": [
-      "Bauhaus",
-      "Walter Gropius",
-      "Modernism",
-      "Art",
-      "Architecture",
-      "Design",
-      "Education",
-      "Grammar",
-      "Syntax",
-      "Sentences",
-      "Tenses",
-      "Advanced grammar",
+      "Magical tree",
+      "Emerald leaves",
+      "Grasping branches",
+      "Townsfolk whispers",
+      "Wish-granting tree",
+      "Young girl named Lily",
+      "Golden acorn",
+      "Minuscule beings",
+      "Carpenter father",
+      "Weaver mother",
+      "Playful children",
+      "Knoll Family Tree",
     ],
   },
 };

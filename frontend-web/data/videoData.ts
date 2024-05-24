@@ -38,6 +38,11 @@ const videoData = {
     "title":
       "[2024-05-24][Daily English Novels For Learners] The Flatiron Dimension",
   },
+  "2024-05-25": {
+    "id": "X9axkTfgWJg",
+    "title":
+      "[2024-05-25][Daily English Novels For Learners] The Knoll Family Tree",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
