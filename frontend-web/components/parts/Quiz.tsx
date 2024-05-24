@@ -1,5 +1,7 @@
 import { isVideoDate } from "../../data/videoData.ts";
 import { type AudioData } from "../../domains/audio.ts";
+import { getLevelTag } from "../../domains/level.ts";
+import { getLevelEmoji } from "../../domains/level.ts";
 import { type QuizData } from "../../domains/quiz.ts";
 import { playerId } from "../../infras/audio/youtube.ts";
 import { Printer } from "../../islands/Printer.tsx";
@@ -166,7 +168,6 @@ export default function Quiz(
         <div className={"px-4"}>
           <h2 className={"text-3xl"}>
             {data.title}
-            {isVideoDate(data.date) ? "🎧" : ""}
           </h2>
           <div className={"flex flex-row justify-end px-4 select-none"}>
             {aiParams.length > 0 && (
@@ -271,6 +272,24 @@ export default function Quiz(
                 </ul>
               </div>
             </aside>
+            <aside className={"mr-4"}>
+              <div
+                className={"text-base cursor-default select-none"}
+                title={getLevelTag(data.params.level)}
+              >
+                {getLevelEmoji(data.params.level)}
+              </div>
+            </aside>
+            {isVideoDate(data.date) && (
+              <aside className={"mr-4"}>
+                <div
+                  className={"text-base cursor-default select-none"}
+                  title="listening available"
+                >
+                  🎧
+                </div>
+              </aside>
+            )}
             <div className={"flex items-center"}>
               <p
                 className={"notranslate text-sm text-right"}
@@ -289,7 +308,7 @@ export default function Quiz(
                 {index === 0 &&
                   (
                     <div
-                      className={"flex flex-col w-full sm:w-56 md:w-80 sm:ml-4 sm:mb-4 sm:float-right"}
+                      className={"flex flex-col w-full mb-4 sm:w-56 md:w-80 sm:ml-4 sm:float-right"}
                     >
                       {audio && (
                         <div
@@ -307,9 +326,11 @@ export default function Quiz(
                         }}
                       >
                       </div>
-                      <div className={"-mt-6"}>
-                        {audio && <Audio data={audio} />}
-                      </div>
+                      {audio && (
+                        <div className={"sm:-mt-6"}>
+                          <Audio data={audio} />
+                        </div>
+                      )}
                     </div>
                   )}
                 <p

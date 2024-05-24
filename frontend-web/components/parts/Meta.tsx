@@ -1,5 +1,6 @@
 import { PageProps } from "$fresh/server.ts";
 import example from "../../data/example.ts";
+import { getLevelTitle } from "../../domains/level.ts";
 import { QuizData } from "../../domains/quiz.ts";
 
 export default function Meta(
@@ -15,6 +16,7 @@ export default function Meta(
     "daily novels",
     "learning tools",
     ...(quiz?.descriptions?.keywords ?? []),
+    ...(quiz?.params.level ? [getLevelTitle(quiz.params.level)] : []),
   ];
   const title = quiz?.title
     ? `${quiz.title} - ${quiz.date}`
