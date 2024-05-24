@@ -1,115 +1,121 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "Bauhaus School founded in Weimar, Germany",
+    "event": "Watson defeats human champion in chess",
     "details":
-      "The Bauhaus School was founded by Walter Gropius in Weimar, Germany, on April 12, 1919. The school was a merger of the Weimar Saxon School of Arts and Crafts and the Weimar Academy of Fine Art. The Bauhaus School was a center for the study of art, architecture, and design. The school's curriculum was based on the idea that art and technology should be combined to create functional and beautiful objects. The Bauhaus School was closed by the Nazis in 1933, but its influence on modern art and design continues to this day.",
+      "On May 26, 1997, IBM's Deep Blue computer defeated world chess champion Garry Kasparov in a six-game match, becoming the first computer to beat a reigning world chess champion under tournament conditions.",
   },
   "date": "2024-05-26",
-  "title": "A Thriller Novel Inspired by the Bauhaus School",
+  "title": "The Mechanical Mind",
   "body":
-    "As I stepped into the room, I was immediately struck by the modern art and design that surrounded me. The walls were adorned with abstract paintings, their bold colors and shapes creating a vibrant backdrop for the scene. Furniture pieces, sleek and minimalist in style, filled the space, their clean lines and geometric forms embodying the Bauhaus School's philosophy.I couldn't believe my eyes as I gazed at each piece of art and design. The craftsmanship was impeccable, every detail meticulously crafted to create something truly unique and innovative. I knew that I had stumbled upon a place where creativity and technology came together in perfect harmony.As I explored further, I realized that this wasn't just an art school, it was a testament to the Bauhaus School's vision of combining art and technology for a better future. Every piece of furniture, every painting, and even the buildings themselves were designed with functionality in mind. The school was more than just a place for students; it was a beacon of hope for those who sought to break free from conventional thinking and forge a new path forward.I left that day with an newfound appreciation for the Bauhaus School's impact on modern design and art. I knew that I had witnessed something truly remarkable, a testament to human ingenuity and creativity. The experience stayed with me forever, inspiring me to strive for excellence in everything I do.",
-  "word count": 234,
+    "In a realm where gears and steam intertwined, a groundbreaking spectacle unfolded at the Grand Coliseum. The colossal chessboard, adorned with intricate cogs and glowing runes, awaited the clash between a brilliant mind and an ingenious machine. Lady Anya Petrova, renowned for her strategic brilliance, faced off against the enigmatic Automaton, crafted by the legendary inventor Professor von Braun. The air crackled with anticipation as gears whirred and pistons hissed, signaling the commencement of the fateful match. With each move, Anya's keen intellect grappled with the Automaton's relentless logic. The room held its breath as the game reached its climax, and in a moment of sheer audacity, Anya sacrificed her queen to deliver a crushing blow. The crowd erupted in applause, marveling at the triumph of human ingenuity over mechanical precision. In the annals of history, the legend of Lady Anya and the Mechanical Mind would forever be etched, a testament to the harmonious coexistence between the brilliance of the human spirit and the marvels of the mechanical age.",
+  "word count": 169,
   "dialog": [
     {
-      "Billy":
-        "I was so amazed by the modern art at that art school, Kerry. It was like nothing I'd ever seen before.",
+      "Lui":
+        "Hello, class. We've finished reading the novel about the chess match between the woman and machine.",
     },
     {
-      "Kerry":
-        "I know, right?! The colors and shapes were so bold. It was like they were jumping off the walls at me.",
+      "Billy": "I think the machine should have won.",
     },
     {
-      "Meg":
-        "I especially loved the Bauhaus furniture. It was so sleek and minimalist. I could totally see myself living in a house furnished like that.",
+      "Kerry": "Why? The woman was really smart.",
     },
     {
       "Lui":
-        "The Bauhaus School was a really important movement in design, you guys. It was all about combining art and technology to create a better future.",
+        "Billy, can you explain why you think the machine should have won?",
+    },
+    {
+      "Billy": "Because machines are always smarter than humans.",
+    },
+    {
+      "Meg": "That's not true. Humans are more creative than machines.",
     },
     {
       "Kerry":
-        "That's so cool! I never knew that. I'm going to have to learn more about them.",
-    },
-    {
-      "Billy":
-        "Me too! I think the Bauhaus School had a lot of great ideas that we can still use today.",
-    },
-    {
-      "Meg":
-        "I agree. I love how they used technology to make art more accessible to people.",
+        "Yeah, and we have feelings and emotions that machines don't have.",
     },
     {
       "Lui":
-        "Exactly. The Bauhaus School was all about making art that was functional and beautiful.",
+        "These are all good points. It's important to remember that humans and machines have different strengths and weaknesses.",
+    },
+    {
+      "Meg":
+        "I think the novel showed that humans and machines can work together to achieve great things.",
+    },
+    {
+      "Billy":
+        "I guess you're right. Maybe I was wrong to think that machines are always better than humans.",
+    },
+    {
+      "Kerry": "Well, at least we can all agree that this was a great novel!",
     },
   ],
   "quiz": [
     {
       "question":
-        "What was the most striking feature of the room that the speaker entered?",
+        "What was the setting of the chess match described in the novel?",
       "options": [
-        "The classical art and design",
-        "The modern art and design",
-        "The antique furniture and paintings",
-        "The lush greenery and natural light",
-        "The large windows and high ceilings",
+        "A small tavern",
+        "A bustling marketplace",
+        "The Grand Coliseum",
+        "A dark and stormy forest",
+        "A secluded library",
+      ],
+      "answer": 2,
+    },
+    {
+      "question": "Who was Lady Anya Petrova known for?",
+      "options": [
+        "Her skill as a chess player",
+        "Her strategic brilliance",
+        "Her beauty and charm",
+        "Her mathematical abilities",
+        "Her invention of the steam engine",
       ],
       "answer": 1,
     },
     {
-      "question": "What was the style of the furniture in the room?",
+      "question": "What was Billy's initial belief about machines?",
       "options": [
-        "Ornate and elaborate",
-        "Sleek and minimalist",
-        "Rustic and cozy",
-        "Traditional and antique",
-        "Colorful and eclectic",
+        "They are always superior to humans",
+        "They have no place in human society",
+        "They are inferior to dogs",
+        "They are a necessary evil",
+        "They are capable of great good",
       ],
-      "answer": 1,
-    },
-    {
-      "question":
-        "What was the primary intention behind the Bauhaus School's design principles?",
-      "options": [
-        "To create art for the sake of beauty",
-        "To combine art and technology for functionality",
-        "To promote traditional craftsmanship",
-        "To encourage abstract and experimental art",
-        "To preserve historical architectural styles",
-      ],
-      "answer": 1,
-    },
-    {
-      "question": "How did the speaker feel after visiting the art school?",
-      "options": [
-        "Disappointed and underwhelmed",
-        "Inspired and amazed",
-        "Confused and bewildered",
-        "Indifferent and uninterested",
-        "Critical and judgmental",
-      ],
-      "answer": 1,
+      "answer": 0,
     },
     {
       "question":
-        "According to the dialogue, what did the characters believe the Bauhaus School's ideas can still be relevant today?",
+        "What did Meg suggest about the relationship between humans and machines?",
       "options": [
-        "Combining art and technology",
-        "Using technology to enhance accessibility",
-        "Creating functional and beautiful art",
-        "Breaking away from conventional thinking",
-        "All of the above",
+        "They should never interact",
+        "Machines should be controlled by humans",
+        "Humans should be subservient to machines",
+        "Humans and machines can work together",
+        "Machines will eventually replace humans",
       ],
-      "answer": 4,
+      "answer": 3,
+    },
+    {
+      "question": "What is the main idea of the novel?",
+      "options": [
+        "The superiority of human intelligence",
+        "The inevitability of technological progress",
+        "The importance of collaboration between humans and machines",
+        "The dangers of artificial intelligence",
+        "The futility of chess as a game",
+      ],
+      "answer": 2,
     },
   ],
   "params": {
-    "theme": "Design",
-    "flavor": "Thriller",
+    "theme": "Science",
+    "flavor": "Steampunk",
     "models": {
       "main": "gemini",
-      "novel": "llava-llama3",
+      "novel": "gemini",
     },
     "level": "Level_2",
   },
@@ -118,138 +124,160 @@ const data: QuizData = {
       "patterns": [
         {
           "pattern": "S + V",
-          "explanation": "Subject + Verb",
+          "explanation":
+            "Subject performs an action, without a direct object or complement.",
           "usage": [
-            "I was immediately struck by the modern art and design that surrounded me.",
-            "The walls were adorned with abstract paintings, their bold colors and shapes creating a vibrant backdrop for the scene.",
-            "Furniture pieces, sleek and minimalist in style, filled the space, their clean lines and geometric forms embodying the Bauhaus School's philosophy.",
+            "In a realm where gears and steam intertwined, a groundbreaking spectacle unfolded at the Grand Coliseum.",
+            "Hello, class.",
           ],
           "words": [
             {
               "S": [
-                "I",
-                "The walls",
-                "Furniture pieces",
+                "In a realm where gears and steam intertwined",
+                "Hello",
               ],
             },
             {
               "V": [
-                "struck",
-                "were adorned",
-                "filled",
+                "unfolded",
+                "class",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + C",
-          "explanation": "Subject + Verb + Complement",
+          "explanation":
+            "Subject performs an action, complemented by an additional piece of information.",
           "usage": [
-            "I couldn't believe my eyes as I gazed at each piece of art and design.",
-            "The craftsmanship was impeccable, every detail meticulously crafted to create something truly unique and innovative.",
+            "We've finished reading the novel about the chess match between the woman and machine.",
+            "I think the machine should have won.",
+            "Billy, can you explain why you think the machine should have won?",
+            "It's important to remember that humans and machines have different strengths and weaknesses.",
+            "Well, at least we can all agree that this was a great novel!",
           ],
           "words": [
             {
               "S": [
+                "We",
                 "I",
-                "The craftsmanship",
+                "Billy",
+                "It",
+                "we",
               ],
             },
             {
               "V": [
-                "couldn't believe",
-                "was",
+                "finished reading",
+                "think",
+                "explain",
+                "remember",
+                "agree",
               ],
             },
             {
               "C": [
-                "as I gazed at each piece of art and design",
-                "every detail meticulously crafted to create something truly unique and innovative",
+                "the novel about the chess match between the woman and machine.",
+                "the machine should have won.",
+                "why you think the machine should have won?",
+                "that humans and machines have different strengths and weaknesses.",
+                "this was a great novel!",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O",
-          "explanation": "Subject + Verb + Object",
+          "explanation":
+            "Subject performs an action, directly affecting an object.",
           "usage": [
-            "I knew that I had stumbled upon a place where creativity and technology came together in perfect harmony.",
-            "As I explored further, I realized that this wasn't just an art school, it was a testament to the Bauhaus School's vision of combining art and technology for a better future.",
+            "The colossal chessboard, adorned with intricate cogs and glowing runes, awaited the clash between a brilliant mind and an ingenious machine.",
+            "Lady Anya Petrova, renowned for her strategic brilliance, faced off against the enigmatic Automaton, crafted by the legendary inventor Professor von Braun.",
+            "With each move, Anya's keen intellect grappled with the Automaton's relentless logic.",
+            "The woman was really smart.",
           ],
           "words": [
             {
               "S": [
-                "I",
-                "I",
+                "The colossal chessboard",
+                "Lady Anya Petrova",
+                "Anya's keen intellect",
+                "The woman",
               ],
             },
             {
               "V": [
-                "knew",
-                "realized",
+                "awaited",
+                "faced off",
+                "grappled",
               ],
             },
             {
               "O": [
-                "that I had stumbled upon a place where creativity and technology came together in perfect harmony",
-                "that this wasn't just an art school, it was a testament to the Bauhaus School's vision of combining art and technology for a better future",
+                "the clash between a brilliant mind and an ingenious machine.",
+                "the enigmatic Automaton, crafted by the legendary inventor Professor von Braun.",
+                "the Automaton's relentless logic.",
+                "really smart.",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O + O",
-          "explanation": "Subject + Verb + Object + Object",
+          "explanation":
+            "Subject performs an action, directly affecting two objects.",
           "usage": [
-            "Every piece of furniture, every painting, and even the buildings themselves were designed with functionality in mind.",
-            "The school was more than just a place for students; it was a beacon of hope for those who sought to break free from conventional thinking and forge a new path forward.",
+            "The room held its breath as the game reached its climax, and in a moment of sheer audacity, Anya sacrificed her queen to deliver a crushing blow.",
           ],
           "words": [
             {
               "S": [
-                "Every piece of furniture, every painting, and even the buildings themselves",
-                "The school",
+                "The room",
               ],
             },
             {
               "V": [
-                "were designed",
-                "was",
+                "held its breath",
               ],
             },
             {
               "O": [
-                "with functionality in mind",
-                "more than just a place for students",
-              ],
-            },
-            {
-              "O": [
-                "it was a beacon of hope for those who sought to break free from conventional thinking and forge a new path forward",
+                "the game",
+                "a crushing blow",
               ],
             },
           ],
         },
         {
           "pattern": "S + V + O + C",
-          "explanation": "Subject + Verb + Object + Complement",
+          "explanation":
+            "Subject performs an action, directly affecting an object, and complemented by additional information.",
           "usage": [
-            "I left that day with an newfound appreciation for the Bauhaus School's impact on modern design and art.",
+            "The crowd erupted in applause, marveling at the triumph of human ingenuity over mechanical precision.",
+            "Humans are more creative than machines.",
           ],
           "words": [
             {
               "S": [
-                "I",
+                "The crowd",
+                "Humans",
               ],
             },
             {
               "V": [
-                "left",
+                "erupted",
+                "are",
               ],
             },
             {
               "O": [
-                "that day with an newfound appreciation for the Bauhaus School's impact on modern design and art",
+                "applause",
+                "more creative than machines",
+              ],
+            },
+            {
+              "C": [
+                "marveling at the triumph of human ingenuity over mechanical precision.",
               ],
             },
           ],
@@ -258,105 +286,105 @@ const data: QuizData = {
       "vocabularies": [
         {
           "class": "Noun",
-          "word": "backdrop",
-          "meaning": "Something that forms a background or setting",
+          "word": "realm",
+          "meaning": "a kingdom or domain",
           "usage": [
-            "The bold colors and shapes creating a vibrant backdrop for the scene.",
+            "In a realm where gears and steam intertwined...",
+            "The colossal chessboard, adorned with intricate cogs and glowing runes, awaited the clash between a brilliant mind and an ingenious machine.",
           ],
-          "pronounce": "/ˈbakˌdrɑːp/",
+          "pronounce": "/rɛlm/",
+          "example": "The realm of dreams is a vast and mysterious place.",
+        },
+        {
+          "class": "Noun",
+          "word": "spectacle",
+          "meaning": "a public show or display",
+          "usage": [
+            "a groundbreaking spectacle unfolded at the Grand Coliseum.",
+          ],
+          "pronounce": "/ˈspɛktəkəl/",
+          "example": "The fireworks display was a spectacular sight.",
+        },
+        {
+          "class": "Noun",
+          "word": "automaton",
+          "meaning": "a machine that is able to move and act on its own",
+          "usage": [
+            "Lady Anya Petrova, renowned for her strategic brilliance, faced off against the enigmatic Automaton, crafted by the legendary inventor Professor von Braun.",
+          ],
+          "pronounce": "/ɔːˈtɒmətɒn/",
+          "example": "The robot moved with the precision of an automaton.",
+        },
+        {
+          "class": "Noun",
+          "word": "intellect",
+          "meaning": "the ability to understand and reason",
+          "usage": [
+            "With each move, Anya's keen intellect grappled with the Automaton's relentless logic.",
+          ],
+          "pronounce": "/ˈɪntlɛkt/",
           "example":
-            "The backdrop of the stage was a beautiful painting of a forest.",
+            "She has a brilliant intellect that allows her to solve complex problems.",
         },
         {
           "class": "Noun",
-          "word": "craftsmanship",
-          "meaning": "The skill or art of making something",
+          "word": "triumph",
+          "meaning": "a victory or success",
           "usage": [
-            "The craftsmanship was impeccable, every detail meticulously crafted to create something truly unique and innovative.",
+            "The crowd erupted in applause, marveling at the triumph of human ingenuity over mechanical precision.",
           ],
-          "pronounce": "/ˈkrɑːftsmənʃɪp/",
-          "example": "The craftsmanship of the furniture was exquisite.",
-        },
-        {
-          "class": "Noun",
-          "word": "harmony",
-          "meaning":
-            "The combination of different things in a way that is pleasing to the eye or the ear",
-          "usage": [
-            "I knew that I had stumbled upon a place where creativity and technology came together in perfect harmony.",
-          ],
-          "pronounce": "/ˈhɑːrməni/",
-          "example": "The colors in the painting were in perfect harmony.",
-        },
-        {
-          "class": "Noun",
-          "word": "ingenuity",
-          "meaning": "The quality of being clever or original",
-          "usage": [
-            "I knew that I had witnessed something truly remarkable, a testament to human ingenuity and creativity.",
-          ],
-          "pronounce": "/ˌɪndʒəˈnuːɪti/",
+          "pronounce": "/ˈtraɪəmf/",
           "example":
-            "The inventor's ingenuity was evident in the design of the new machine.",
-        },
-        {
-          "class": "Noun",
-          "word": "testament",
-          "meaning": "Something that is evidence of something else",
-          "usage": [
-            "Every piece of furniture, every painting, and even the buildings themselves were designed with functionality in mind.",
-            "The school was more than just a place for students; it was a beacon of hope for those who sought to break free from conventional thinking and forge a new path forward.",
-          ],
-          "pronounce": "/ˈtɛstəmɛnt/",
-          "example":
-            "The old building is a testament to the city's rich history.",
-        },
-        {
-          "class": "Noun",
-          "word": "vision",
-          "meaning": "The ability to think about or plan the future",
-          "usage": [
-            "I realized that this wasn't just an art school, it was a testament to the Bauhaus School's vision of combining art and technology for a better future.",
-          ],
-          "pronounce": "/ˈvɪʒən/",
-          "example":
-            "The company's vision is to be the world's leading provider of green energy.",
+            "The team's triumph was a testament to their hard work and dedication.",
         },
         {
           "class": "Adjective",
-          "word": "impressive",
-          "meaning": "Making a strong or favorable impression",
+          "word": "colossal",
+          "meaning": "very large or impressive",
           "usage": [
-            "I couldn't believe my eyes as I gazed at each piece of art and design.",
+            "The colossal chessboard, adorned with intricate cogs and glowing runes, awaited the clash between a brilliant mind and an ingenious machine.",
           ],
-          "pronounce": "/ɪmˈprɛsɪv/",
-          "example": "The students' work was very impressive.",
+          "pronounce": "/kəˈlɒsəl/",
+          "example":
+            "The colossal statue of Zeus was one of the Seven Wonders of the Ancient World.",
         },
         {
           "class": "Adjective",
-          "word": "vibrant",
-          "meaning": "Full of life, energy, or color",
+          "word": "ingenious",
+          "meaning": "clever or inventive",
           "usage": [
-            "The bold colors and shapes creating a vibrant backdrop for the scene.",
+            "Lady Anya Petrova, renowned for her strategic brilliance, faced off against the enigmatic Automaton, crafted by the legendary inventor Professor von Braun.",
           ],
-          "pronounce": "/ˈvaɪbrənt/",
-          "example": "The city was full of vibrant energy.",
+          "pronounce": "/ɪnˈdʒiːniəs/",
+          "example":
+            "The engineer came up with an ingenious solution to the problem.",
+        },
+        {
+          "class": "Adjective",
+          "word": "mechanical",
+          "meaning": "relating to or operated by machinery",
+          "usage": [
+            "In the annals of history, the legend of Lady Anya and the Mechanical Mind would forever be etched, a testament to the harmonious coexistence between the brilliance of the human spirit and the marvels of the mechanical age.",
+          ],
+          "pronounce": "/məˈkænɪkəl/",
+          "example":
+            "The mechanical pencil is a convenient writing instrument.",
         },
       ],
     },
     "keywords": [
-      "Modern Art",
-      "Abstract Paintings",
-      "Bauhaus School",
-      "Sleek Furniture",
-      "Minimalism",
-      "Geometric Forms",
-      "Craftsmanship",
-      "Innovation",
-      "Creativity",
-      "Functionality",
-      "Visionary",
-      "Inspirational",
+      "chess",
+      "steam",
+      "Grand Coliseum",
+      "colossal chessboard",
+      "Lady Anya Petrova",
+      "Automaton",
+      "Professor von Braun",
+      "gears",
+      "pistons",
+      "mechanical precision",
+      "human ingenuity",
+      "mechanical age",
     ],
   },
 };

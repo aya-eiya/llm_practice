@@ -3,6 +3,7 @@
     "Grammar": {
       "Topic": "Basic Sentence Structure and Tenses & Continuous and Future Tenses",
       "Overview": "Understanding basic sentence structures and present/past tenses & Using continuous tenses and expressing the future",
+      "SimpleDescription": "Learn how to make simple sentences, talk about now and before, and say what will happen later.",
       "Detailed_Items": [
         "Subject and verb",
         "Affirmative, negative, and interrogative sentences",
@@ -19,6 +20,7 @@
     "Grammar": {
       "Topic": "Modals and Perfect Tenses & Comparatives and Adjectives/Adverbs",
       "Overview": "Understanding modals and perfect tenses & Using comparative forms and modifiers",
+      "SimpleDescription": "Learn about words like \"can\" and \"must\" and \"may\" talk about things that finished and things that are still happening, and compare things.",
       "Detailed_Items": [
         "Modals (can, must, should, may, etc.)",
         "Present perfect tense (experience, completion, continuation)",
@@ -33,6 +35,7 @@
     "Grammar": {
       "Topic": "Passive Voice and Relative Clauses & Conditionals and Participial Constructions",
       "Overview": "Using passive voice and relative clauses & Understanding conditionals and participial constructions",
+      "SimpleDescription": "Learn how to talk about things that happened to something or someone else, join ideas together, and talk about things that might happen.",
       "Detailed_Items": [
         "Passive voice (be + past participle)",
         "Relative clauses (who, which, that)",
@@ -46,6 +49,7 @@
     "Grammar": {
       "Topic": "Gerunds and Infinitives & Reported Speech and Question Tags",
       "Overview": "Understanding and using gerunds and infinitives & Using reported speech and question tags",
+      "SimpleDescription": "Learn about doing actions and talking about doing actions, how to tell someone else's words, and asking little questions at the end of a sentence.",
       "Detailed_Items": [
         "Gerunds (verb + ing)",
         "Infinitives (to + verb)",
@@ -61,6 +65,7 @@
     "Grammar": {
       "Topic": "Phrasal Verbs and Idioms & Articles and Quantifiers",
       "Overview": "Understanding and using phrasal verbs and idiomatic expressions & Correct usage of articles and quantifiers",
+      "SimpleDescription": "Learn about tricky action words and sayings, and how to talk about things when you know which thing you mean or how much of something.",
       "Detailed_Items": [
         "Common phrasal verbs",
         "Separable and inseparable phrasal verbs",
@@ -76,6 +81,7 @@
     "Grammar": {
       "Topic": "Noun Clauses and Adjective Clauses & Conditionals Advanced",
       "Overview": "Using noun clauses and adjective clauses & Advanced usage of conditional sentences",
+      "SimpleDescription": "Learn how to talk about things that might happen and things that describe other things.",
       "Detailed_Items": [
         "Noun clauses (that, if/whether)",
         "Adjective clauses (who, which, that)",
@@ -88,6 +94,7 @@
     "Grammar": {
       "Topic": "Advanced Sentence Structures & Review and Application",
       "Overview": "Mastering complex sentence structures & Reviewing and applying all grammar concepts",
+      "SimpleDescription": "Learn how to make really complicated sentences, check everything you learned, and practice using it by writing and talking.",
       "Detailed_Items": [
         "Inversion in sentences",
         "Ellipsis and substitution",
@@ -103,6 +110,7 @@
     "Grammar": {
       "Topic": "Advanced Sentence Structures & Review and Application",
       "Overview": "Mastering complex sentence structures & Reviewing and applying all grammar concepts",
+      "SimpleDescription": "Learn how to make really complicated sentences, check everything you learned, and practice using it by writing and talking.",
       "Detailed_Items": [
         "Inversion in sentences",
         "Ellipsis and substitution",
