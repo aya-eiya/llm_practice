@@ -101,6 +101,12 @@ const data: QuizData = {
       "answer": 3,
     },
   ],
+  "params": {
+    "theme": "Society",
+    "flavor": "Mystery",
+    "models": { "main": "llama", "novel": "llava" },
+    "level": "Level_5",
+  },
   "descriptions": {
     "grammar": {
       "patterns": [

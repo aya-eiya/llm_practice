@@ -120,6 +120,12 @@ const data: QuizData = {
       "answer": 3,
     },
   ],
+  "params": {
+    "theme": "Ethics",
+    "flavor": "Crime",
+    "models": { "main": "llama", "novel": "llava" },
+    "level": "Level_5",
+  },
   "descriptions": {
     "grammar": {
       "patterns": [

@@ -102,5 +102,11 @@ const data: QuizData = {
       "answer": 2,
     },
   ],
+  "params": {
+    "theme": "Art",
+    "flavor": "Gothic",
+    "models": { "main": "llama", "novel": "llava" },
+    "level": "Level_5",
+  },
 };
 export default data;

@@ -90,6 +90,12 @@ const data: QuizData = {
       "answer": 2,
     },
   ],
+  "params": {
+    "theme": "Design",
+    "flavor": "Magical",
+    "models": { "main": "llama", "novel": "llava" },
+    "level": "Level_5",
+  },
   "descriptions": {
     "grammar": {
       "patterns": [

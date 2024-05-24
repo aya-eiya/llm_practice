@@ -114,6 +114,12 @@ const data: QuizData = {
       "answer": 0,
     },
   ],
+  "params": {
+    "theme": "Photography",
+    "flavor": "Historical",
+    "models": { "main": "llama", "novel": "llava" },
+    "level": "Level_5",
+  },
   "descriptions": {
     "grammar": {
       "patterns": [

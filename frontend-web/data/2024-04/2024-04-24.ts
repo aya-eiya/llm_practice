@@ -99,5 +99,11 @@ const data: QuizData = {
       "answer": 1,
     },
   ],
+  "params": {
+    "theme": "Ethics",
+    "flavor": "Crime",
+    "models": { "main": "llama", "novel": "llava" },
+    "level": "Level_5",
+  },
 };
 export default data;

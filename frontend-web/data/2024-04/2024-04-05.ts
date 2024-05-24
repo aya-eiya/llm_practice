@@ -97,5 +97,11 @@ const data: QuizData = {
       "answer": 0,
     },
   ],
+  "params": {
+    "theme": "Fashion",
+    "flavor": "Cyberpunk",
+    "models": { "main": "llama", "novel": "llava" },
+    "level": "Level_5",
+  },
 };
 export default data;

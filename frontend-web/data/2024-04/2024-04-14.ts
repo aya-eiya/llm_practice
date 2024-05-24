@@ -108,5 +108,11 @@ const data: QuizData = {
       "answer": 1,
     },
   ],
+  "params": {
+    "theme": "Economy",
+    "flavor": "Thriller",
+    "models": { "main": "llama", "novel": "llava" },
+    "level": "Level_5",
+  },
 };
 export default data;

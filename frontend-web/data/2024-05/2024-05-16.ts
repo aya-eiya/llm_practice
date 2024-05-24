@@ -111,6 +111,12 @@ const data: QuizData = {
       "answer": 2,
     },
   ],
+  "params": {
+    "theme": "Politics",
+    "flavor": "Science",
+    "models": { "main": "llama", "novel": "llava" },
+    "level": "Level_5",
+  },
   "descriptions": {
     "grammar": {
       "patterns": [

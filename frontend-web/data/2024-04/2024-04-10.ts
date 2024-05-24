@@ -120,5 +120,11 @@ const data: QuizData = {
       "answer": 0,
     },
   ],
+  "params": {
+    "theme": "Architecture",
+    "flavor": "Fantasy",
+    "models": { "main": "llama", "novel": "llava" },
+    "level": "Level_5",
+  },
 };
 export default data;

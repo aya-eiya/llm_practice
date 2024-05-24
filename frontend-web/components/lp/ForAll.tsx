@@ -1,5 +1,4 @@
 import { Head } from "$fresh/runtime.ts";
-import { PageProps } from "$fresh/server.ts";
 
 type ContentText = {
   title: string;

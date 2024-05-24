@@ -102,5 +102,11 @@ const data: QuizData = {
       "answer": 1,
     },
   ],
+  "params": {
+    "theme": "Music",
+    "flavor": "Romance",
+    "models": { "main": "llama", "novel": "llava" },
+    "level": "Level_5",
+  },
 };
 export default data;

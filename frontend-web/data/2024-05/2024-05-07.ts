@@ -116,6 +116,12 @@ const data: QuizData = {
       "answer": 4,
     },
   ],
+  "params": {
+    "theme": "Art",
+    "flavor": "Gothic",
+    "models": { "main": "llama", "novel": "llava" },
+    "level": "Level_5",
+  },
   "descriptions": {
     "grammar": {
       "patterns": [

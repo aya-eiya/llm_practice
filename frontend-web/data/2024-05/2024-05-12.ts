@@ -109,6 +109,12 @@ const data: QuizData = {
       "answer": 0,
     },
   ],
+  "params": {
+    "theme": "Film",
+    "flavor": "Post-Apocalyptic",
+    "models": { "main": "llama", "novel": "llava" },
+    "level": "Level_5",
+  },
   "descriptions": {
     "grammar": {
       "patterns": [

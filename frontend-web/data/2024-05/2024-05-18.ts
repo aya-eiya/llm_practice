@@ -110,6 +110,7 @@ const data: QuizData = {
       "main": "llama3",
       "novel": "llava-llama3",
     },
+    "level": "Level_5",
   },
   "descriptions": {
     "grammar": {
