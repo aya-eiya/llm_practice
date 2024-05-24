@@ -109,7 +109,7 @@ const data: QuizData = {
   "params": {
     "theme": "Culture",
     "flavor": "Historical",
-    "models": { "main": "llama", "novel": "llava" },
+    "models": { "main": "llama3", "novel": "llava" },
     "level": "Level_5",
   },
 };

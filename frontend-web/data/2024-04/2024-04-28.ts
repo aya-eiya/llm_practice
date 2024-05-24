@@ -106,7 +106,7 @@ const data: QuizData = {
   "params": {
     "theme": "Philosophy",
     "flavor": "Surrealism",
-    "models": { "main": "llama", "novel": "llava" },
+    "models": { "main": "llama3", "novel": "llava" },
     "level": "Level_5",
   },
 };
