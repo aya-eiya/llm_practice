@@ -54,6 +54,8 @@ init_tmp () {
 main_model="llama3"
 novel_model="llava-llama3"
 
+level="Level_2"
+
 # Functions
 
 ## Event
@@ -101,7 +103,17 @@ Event:
 ${event}
 \`\`\`
 
+Curriculum:
+\`\`\`
+$(cat ${CURRENT_DIR}/curriculum.json)
+\`\`\`
+
 Create short ${flavor} novel that is inspired by the concept of the event and be written with about 180 words.
+Also, the novel must be suitable for ${level} in the curriculum for ESL learner.
+
+Do not include the prompt in the output and keep it clean.
+Do not include other information except the JSON with the title and body.
+
 The output is a JSON formatted as 
 \`\`\`
 {
@@ -112,10 +124,12 @@ The output is a JSON formatted as
 And the output JSON only."
 
   echo "${novel}" > $tmp_prompt_novel
-  $run_llm_novel "$novel" \
+  timeout 120 $run_llm_novel "$novel" \
   | tee $tmp_out_novel \
   | tr -d '\n' \
+  | sed -e 's/^<body"\s:/"body":/p' \
   | sed -n -e 's/^.*\({.*}\).*$/\1/p' \
+  | sed -e 's/,}$/}/g' \
   | jq '{ "title": .title, "body": (.body| if (.|split(" ")|length|.<160 or .>260) then ("body word length error\n"|halt_error(1)) else . end) }' \
   | jq -s "{\"event\": ${event} ,\"date\": \"${fulldate}\"} * .[0]"
   # TODO: sanitize body not to include the name in real
@@ -125,7 +139,7 @@ gen_novel() {
   local cnt=0
   local event=$(cat $tmp_json_event)
   while true; do
-    try_gen_novel "${event}" 2> /dev/null
+    try_gen_novel "${event}" # 2> /dev/null
     if [ $? -eq 0 ]; then
       break
     fi
@@ -150,8 +164,15 @@ ${kerry}
 ${meg}
 ${lui}
 \`\`\`
+
+Curriculum:
+\`\`\`
+$(cat ${CURRENT_DIR}/curriculum.json)
+\`\`\`
+
 Create conversation of \"Readers\" about the novel after read it.
 Order of the speaker is random, and each speaker talks at least 2 times.
+Also, each conversation line must be suitable for ${level} in the curriculum for ESL learner.
 
 The output must be a JSON object, its type is described following typescript code.
 \`\`\`
@@ -292,7 +313,8 @@ make_json() {
       \"params\": {
         \"theme\": .[3].theme,
         \"flavor\": .[3].flavor,
-        \"models\": .[3].models
+        \"models\": .[3].models,
+        \"level\": .[3].level,
       }
     }" \
     "$tmp_json_novel" "$tmp_json_conversation" "$tmp_json_quiz" "$tmp_json_params"
@@ -347,6 +369,8 @@ while getopts ":d:e:s:t:f:m:n:-:" opt; do
       main_model="$OPTARG";;
     n|novelModel) # novel model to use
       novel_model="$OPTARG";;
+    l|level) # level 1 to 8
+      level="Level_$OPTARG";;
     s|steps) # steps to generate
       steps=()
       IFS=', ' read -r -a steps <<< "$OPTARG";;
@@ -395,6 +419,7 @@ cat <<OPTS | jq > $tmp_json_params
   "date": "$date",
   "theme": "$theme",
   "flavor": "$flavor",
+  "level": "$level",
   "models": {
     "main": "$main_model",
     "novel": "$novel_model"
