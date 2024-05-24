@@ -33,6 +33,11 @@ const videoData = {
     "title":
       "[2024-05-23][Daily English Novels For Learners] The Defenestration of Prague",
   },
+  "2024-05-24": {
+    "id": "bYiOWC6aBsw",
+    "title":
+      "[2024-05-24][Daily English Novels For Learners] The Flatiron Dimension",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
