@@ -113,7 +113,7 @@ const data: QuizData = {
   ],
   "params": {
     "theme": "Politics",
-    "flavor": "Science",
+    "flavor": "Science Fiction",
     "models": { "main": "llama", "novel": "llava" },
     "level": "Level_5",
   },
