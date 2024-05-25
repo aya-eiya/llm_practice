@@ -1,7 +1,8 @@
 import { type PageProps } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
+import OnTranslatedEvent from "../islands/OnTranslatedEvent.tsx";
 
-export default function App({ Component, config }: PageProps) {
+export default function App({ Component, config, url }: PageProps) {
   return (
     <>
       <Head>
@@ -39,6 +40,9 @@ export default function App({ Component, config }: PageProps) {
       </Head>
       <body>
         <Component />
+        <OnTranslatedEvent
+          url={url}
+        />
       </body>
     </>
   );
