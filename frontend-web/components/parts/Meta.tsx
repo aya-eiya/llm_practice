@@ -20,7 +20,7 @@ export default function Meta(
   ];
   const title = quiz?.title
     ? `${quiz.title} - ${quiz.date}`
-    : "Daily AI-Generated English Novels & Learning Test Questions";
+    : "MyniQ - Daily AI-Generated English Novels & Learning Test Questions";
   const description = quiz
     ? `Daily English Novel & Quiz for ESL Learners. Today's episode is "${quiz.title}". Let's try the quiz!`
     : "Daily AI-generated English novels and learning-focused test questions to improve English proficiency.";
@@ -49,7 +49,7 @@ export default function Meta(
       />
       <meta
         property="og:site_name"
-        content="Daily English Reading & Listening Quiz"
+        content="MyniQ"
       />
       <meta property="og:type" content="website" />
       <meta

@@ -60,7 +60,7 @@ export default function ForAll(
 
         <meta
           property="og:site_name"
-          content={"Daily English Reading & Listening Quiz"}
+          content={"MyniQ"}
         />
         <meta
           name="description"
