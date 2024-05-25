@@ -2,7 +2,7 @@ import { PageProps } from "$fresh/server.ts";
 import ForAll from "../../components/lp/ForAll.tsx";
 
 const contentText = {
-  title: "AI 支持的每日英語訓練",
+  title: "MyniQ - AI 支持的每日英語訓練",
   description:
     "通過 AI 生成的每日英語短文和閱讀理解測試，提高您的英語水平，同時也可以增強聽力能力。",
   keywords:
