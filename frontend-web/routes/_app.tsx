@@ -7,7 +7,7 @@ export default function App({ Component, config, url }: PageProps) {
     <>
       <Head>
         <title className={"notranslate"}>
-          Daily AI-Generated English Novels & Learning Test Questions
+          MyniQ [ /ˈmaɪ-nɪk/ ]
         </title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
