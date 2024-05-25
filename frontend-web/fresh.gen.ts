@@ -18,6 +18,7 @@ import * as $sitemap_xml from "./routes/sitemap.xml.ts";
 import * as $terms from "./routes/terms.tsx";
 import * as $GtagEvent from "./islands/GtagEvent.tsx";
 import * as $LazyLoadOGP from "./islands/LazyLoadOGP.tsx";
+import * as $OnTranslatedEvent from "./islands/OnTranslatedEvent.tsx";
 import * as $Printer from "./islands/Printer.tsx";
 import * as $YoutubeAudio from "./islands/YoutubeAudio.tsx";
 import { type Manifest } from "$fresh/server.ts";
@@ -42,6 +43,7 @@ const manifest = {
   islands: {
     "./islands/GtagEvent.tsx": $GtagEvent,
     "./islands/LazyLoadOGP.tsx": $LazyLoadOGP,
+    "./islands/OnTranslatedEvent.tsx": $OnTranslatedEvent,
     "./islands/Printer.tsx": $Printer,
     "./islands/YoutubeAudio.tsx": $YoutubeAudio,
   },

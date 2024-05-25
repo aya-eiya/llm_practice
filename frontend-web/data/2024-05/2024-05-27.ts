@@ -1,401 +1,324 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "Bob Dylan Goes Electric",
-    "details":
-      "On May 27th, 1965, Bob Dylan performed at the Newport Folk Festival, one of the most important events in music history. Dylan had previously been known for his acoustic folk songs, but at this festival, he performed with an electric band, which caused a great deal of controversy among the folk purists in the audience. Dylan's performance marked a turning point in his career and in the history of folk music.",
+    "event": "The Beatles release Sgt. Pepper's Lonely Hearts Club Band",
+    "details": "Sgt. Pepper's Lonely Hearts Club Band is the eighth studio album by the English rock band The Beatles, released on June 1, 1967 in the United Kingdom and on June 26, 1967 in the United States. It is often referred to as one of the most influential albums in the history of popular music."
   },
   "date": "2024-05-27",
-  "title": "The Electric Nightmare",
-  "body":
-    "In the dim recesses of an abandoned barn, the air crackled with an eerie silence. Dust motes danced in the feeble moonlight that filtered through the cracks in the crumbling walls. Suddenly, a surge of electricity coursed through the barn, illuminating the grotesque figure of a man. His skin was pale and translucent, his eyes glowing an unnatural red. In his hands, he held a guitar, its strings trembling as if they were alive.The man began to play, his fingers dancing over the strings with an otherworldly speed. The notes that emerged were not music, but a cacophony of discordant wails that tore through the night. As he played, the barn began to tremble, its walls groaning and creaking like an ancient beast.Outside, the once-peaceful night sky turned a sickly shade of green. The wind howled like a banshee, carrying with it the sound of the man's macabre symphony. The barn became a vortex of pure terror, its inhabitants frozen in a nightmare that seemed to have no end.",
-  "word count": 169,
+  "title": "Love in Bloom",
+  "body": "As I walked into the garden, I couldn't help but feel a sense of nostalgia wash over me. The scent of blooming flowers filled the air, transporting me back to the summer I spent with my love, Alex.It was as if time stood still when we were together. We'd spend hours talking about our dreams, our fears, and our passions. And now, as I gazed upon the vibrant colors surrounding me, I couldn't help but think of him.The memories came flooding back - the way he'd hold my hand, the way his eyes would sparkle in the sunlight, and the way he'd make me laugh with his silly jokes. It was a love that was pure and true, one that I had never experienced before or since.As I stood there, lost in thought, I felt a gentle touch on my shoulder. I turned to see Alex standing behind me, a smile spreading across his face. 'I've been thinking about you too,' he said, his voice low and husky.In that moment, it was as if the entire world had come to a standstill. All that mattered was us, and the love we shared. And as we stood there, surrounded by the beauty of nature, I knew that our love would always be in bloom.",
+  "word count": 213,
   "dialog": [
     {
-      "Kerry":
-        "Wow, that story was creepy! I couldn't believe how the barn started to shake and groan.",
+      "Billy": "I loved the garden setting in this novel. It was so peaceful."
     },
     {
-      "Billy": "I know, right? It was like something out of a horror movie.",
+      "Meg": "Yeah, I agree. The author did an amazing job of describing the flowers and trees."
     },
     {
-      "Meg":
-        "I loved the part where the man's eyes glowed red. It was so eerie.",
+      "Kerry": "I didn't even notice that at first. But after reading it again, I noticed how much detail there was."
     },
     {
-      "Lui":
-        "The author did a great job of creating a sense of atmosphere. I could really feel the tension and suspense.",
+      "Lui": "For me, the garden represented a sense of freedom and escape from daily life."
     },
     {
-      "Billy":
-        "I wonder what the man's guitar was made of. It sounded like it was made of bone or something.",
+      "Billy": "That's so true! The characters seemed to find solace in their own little world."
     },
     {
-      "Kerry":
-        "Maybe it was a magic guitar. Like the one in the movie 'The Last Unicorn'.",
+      "Meg": "And the way the author used descriptive language made it feel like I was right there with them."
     },
     {
-      "Meg":
-        "I think it was just a normal guitar, but the man was playing it with such power that it made it sound like it was made of something else.",
+      "Kerry": "I loved how the garden was a symbol of growth and renewal for the characters."
     },
     {
-      "Lui":
-        "Whatever it was, it was definitely a powerful instrument. It was able to control the weather and everything.",
-    },
-    {
-      "Kerry": "I wonder what happened to the man after the story ended.",
-    },
-    {
-      "Billy": "I think he just disappeared. Into the night.",
-    },
+      "Lui": "Exactly! It was like they were pruning their own lives, getting rid of old patterns and habits."
+    }
   ],
   "quiz": [
     {
-      "question": "What was the setting of the story?",
+      "question": "What was the author's purpose in describing the garden setting?",
       "options": [
-        "A haunted house",
-        "An abandoned barn",
-        "A dark forest",
-        "A graveyard",
-        "A hospital",
+        "To set a romantic mood",
+        "To describe a peaceful atmosphere",
+        "To symbolize growth and renewal",
+        "To show the characters' daily life",
+        "To introduce the main character"
       ],
-      "answer": 1,
+      "answer": 2
     },
     {
-      "question": "What color did the man's eyes glow?",
+      "question": "What did the garden represent for Lui?",
       "options": [
-        "Blue",
-        "Green",
-        "Red",
-        "Yellow",
-        "Purple",
+        "A place to escape from daily life",
+        "A symbol of love and relationships",
+        "A reminder of past experiences",
+        "A source of inspiration",
+        "A means of relaxation"
       ],
-      "answer": 2,
+      "answer": 0
     },
     {
-      "question": "What sound did the man's music make?",
+      "question": "How did the author use descriptive language in the text?",
       "options": [
-        "Beautiful melodies",
-        "Discordant wails",
-        "Uplifting anthems",
-        "Calming lullabies",
-        "Energetic dance music",
+        "To summarize the story",
+        "To create vivid images",
+        "To introduce new characters",
+        "To provide background information",
+        "To describe a peaceful atmosphere"
       ],
-      "answer": 1,
+      "answer": 1
     },
     {
-      "question": "What happened to the barn as the man played?",
+      "question": "What was the significance of the garden to the main character?",
       "options": [
-        "It collapsed",
-        "It caught fire",
-        "It started to shake and groan",
-        "It turned into a giant monster",
-        "It became invisible",
+        "It reminded them of their past experiences",
+        "It represented freedom and escape from daily life",
+        "It symbolized growth and renewal",
+        "It showed a peaceful atmosphere",
+        "It introduced new characters"
       ],
-      "answer": 2,
+      "answer": 1
     },
     {
-      "question":
-        "What do you think happened to the man at the end of the story?",
+      "question": "What was the author trying to convey through the characters' experiences in the garden?",
       "options": [
-        "He was captured by the police",
-        "He was killed by a ghost",
-        "He disappeared into the night",
-        "He was arrested for disturbing the peace",
-        "He became a famous musician",
+        "The importance of love and relationships",
+        "The value of freedom and escape from daily life",
+        "The significance of personal growth and renewal",
+        "The impact of past experiences on current lives",
+        "The power of nature"
       ],
-      "answer": 2,
-    },
+      "answer": 2
+    }
   ],
   "params": {
     "theme": "Music",
-    "flavor": "Horror",
+    "flavor": "Romance",
     "models": {
-      "main": "gemini",
-      "novel": "gemini",
+      "main": "llama3",
+      "novel": "llama3"
     },
-    "level": "Level_5",
+    "level": "Level_2"
   },
   "descriptions": {
     "grammar": {
       "patterns": [
         {
           "pattern": "S + V",
-          "explanation": "Subject + Verb, no objects or complements.",
+          "explanation": "Simple sentence with a subject and verb.",
           "usage": [
-            "In the dim recesses of an abandoned barn, the air crackled with an eerie silence.",
-            "Dust motes danced in the feeble moonlight that filtered through the cracks in the crumbling walls.",
-            "Wow, that story was creepy!",
-            "I couldn't believe how the barn started to shake and groan.",
+            "As I walked into the garden, I couldn't help but feel a sense of nostalgia wash over me."
           ],
           "words": [
             {
               "S": [
-                "air",
-                "dust motes",
-              ],
+                "As I",
+                "I"
+              ]
             },
             {
               "V": [
-                "crackled",
-                "danced",
-              ],
-            },
-            {
-              "C": [],
-            },
-            {
-              "O": [],
-            },
-          ],
+                "walked",
+                "help",
+                "feel"
+              ]
+            }
+          ]
         },
         {
           "pattern": "S + V + O",
-          "explanation": "Subject + Verb + Object, no complements.",
+          "explanation": "Sentence with a subject, verb, and object.",
           "usage": [
-            "Suddenly, a surge of electricity coursed through the barn, illuminating the grotesque figure of a man.",
-            "His skin was pale and translucent, his eyes glowing an unnatural red.",
-            "He held a guitar in his hands, its strings trembling as if they were alive.",
-            "The notes that emerged were not music, but a cacophony of discordant wails that tore through the night.",
+            "The scent of blooming flowers filled the air, transporting me back to the summer I spent with my love, Alex."
           ],
           "words": [
             {
               "S": [
-                "surge",
-                "he",
-                "man",
-                "notes",
-              ],
+                "The",
+                "I"
+              ]
             },
             {
               "V": [
-                "coursed",
-                "was",
-                "held",
-                "emerged",
-              ],
+                "filled",
+                "transporting"
+              ]
             },
             {
               "O": [
-                "figure",
-                "skin",
-                "guitar",
-                "wails",
-              ],
-            },
-            {
-              "C": [],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O + O",
-          "explanation": "Subject + Verb + Object + Object, no complements.",
-          "usage": [
-            "As he played, the barn began to tremble, its walls groaning and creaking like an ancient beast.",
-            "Outside, the once-peaceful night sky turned a sickly shade of green.",
-          ],
-          "words": [
-            {
-              "S": [
-                "he",
-                "night sky",
-              ],
-            },
-            {
-              "V": [
-                "played",
-                "turned",
-              ],
-            },
-            {
-              "O": [
-                "barn",
-                "shade",
-              ],
-            },
-            {
-              "C": [],
-            },
-          ],
+                "the air",
+                "Alex"
+              ]
+            }
+          ]
         },
         {
           "pattern": "S + V + C",
-          "explanation": "Subject + Verb + Complement, no objects.",
+          "explanation": "Sentence with a subject, verb, and complement.",
           "usage": [
-            "The wind howled like a banshee, carrying with it the sound of the man's macabre symphony.",
-            "The barn became a vortex of pure terror, its inhabitants frozen in a nightmare that seemed to have no end.",
+            "It was as if time stood still when we were together."
           ],
           "words": [
             {
               "S": [
-                "wind",
-                "barn",
-              ],
+                "It",
+                "we"
+              ]
             },
             {
               "V": [
-                "howled",
-                "became",
-              ],
-            },
-            {
-              "O": [],
+                "was",
+                "stood"
+              ]
             },
             {
               "C": [
-                "like a banshee",
-                "a vortex of pure terror",
-              ],
-            },
-          ],
+                "as if time stood still"
+              ]
+            }
+          ]
         },
         {
           "pattern": "S + V + O + C",
-          "explanation": "Subject + Verb + Object + Complement, no objects.",
+          "explanation": "Sentence with a subject, verb, object, and complement.",
           "usage": [
-            "I know, right?",
-            "It was like something out of a horror movie.",
-            "It sounded like it was made of bone or something.",
-            "It was able to control the weather and everything.",
-            "It was just a normal guitar, but the man was playing it with such power that it made it sound like it was made of something else.",
+            "The memories came flooding back - the way he'd hold my hand, the way his eyes would sparkle in the sunlight, and the way he'd make me laugh with his silly jokes."
           ],
           "words": [
             {
               "S": [
-                "I",
-                "it",
-                "sound",
-                "guitar",
-                "it",
-              ],
+                "The",
+                "I"
+              ]
             },
             {
               "V": [
-                "know",
-                "was",
-                "sounded",
-                "was able",
-                "it",
-              ],
+                "came",
+                "hold",
+                "sparkle",
+                "make"
+              ]
             },
             {
-              "O": [],
+              "O": [
+                "memories",
+                "my hand",
+                "his eyes",
+                "me"
+              ]
             },
             {
               "C": [
-                "like something out of a horror movie",
-                "like it was made of bone or something",
-                "to control the weather and everything",
-                "just a normal guitar",
-                "with such power",
-              ],
-            },
-          ],
-        },
+                "- the way he'd hold my hand",
+                "- the way his eyes would sparkle in the sunlight",
+                "- and the way he'd make me laugh with his silly jokes"
+              ]
+            }
+          ]
+        }
       ],
       "vocabularies": [
         {
           "class": "Noun",
-          "word": "recesses",
-          "meaning": "a secluded or hidden place",
-          "usage": [],
-          "pronounce": "rɪˈsɛsɪz",
-          "example":
-            "The team retreated to the recesses of the forest to regroup.",
-        },
-        {
-          "class": "Noun",
-          "word": "mote",
-          "meaning": "a tiny speck of dust or other matter",
+          "word": "garden",
+          "meaning": "a piece of land, often with a variety of plants and flowers",
           "usage": [
-            "Dust motes danced in the feeble moonlight that filtered through the cracks in the crumbling walls.",
+            "As I walked into the garden, I couldn't help but feel..."
           ],
-          "pronounce": "moʊt",
-          "example": "Motes of pollen floated in the air.",
+          "pronounce": "/ˈɡɑrdn/",
+          "example": "The beautiful garden was my favorite place to relax."
         },
         {
           "class": "Adjective",
-          "word": "feeble",
-          "meaning": "weak or lacking in strength",
+          "word": "vibrant",
+          "meaning": "full of life, energy, and color",
           "usage": [
-            "Dust motes danced in the feeble moonlight that filtered through the cracks in the crumbling walls.",
+            "The vibrant colors surrounding me..."
           ],
-          "pronounce": "ˈfiːbəl",
-          "example":
-            "The old man's feeble attempts to walk were heartbreaking.",
+          "pronounce": "/ˈvaɪbrənt/",
+          "example": "The vibrant music filled the entire room."
+        },
+        {
+          "class": "Adverb",
+          "word": "completely",
+          "meaning": "to a very great extent or degree",
+          "usage": [
+            "It was as if time stood still when we were together, completely..."
+          ],
+          "pronounce": "/kəmˈpɪtli/",
+          "example": "I have always loved reading books completely by myself."
+        },
+        {
+          "class": "Pronoun",
+          "word": "he",
+          "meaning": "a person or thing previously mentioned",
+          "usage": [
+            "The way he'd hold my hand...",
+            "He'd make me laugh with his silly jokes."
+          ],
+          "pronounce": "/hiː/",
+          "example": "He is the best friend a person could ask for."
         },
         {
           "class": "Noun",
-          "word": "surge",
-          "meaning": "a sudden increase or rush of something",
+          "word": "love",
+          "meaning": "a strong feeling of affection or attachment",
           "usage": [
-            "Suddenly, a surge of electricity coursed through the barn, illuminating the grotesque figure of a man.",
+            "It was a love that was pure and true...",
+            "All that mattered was us, and the love we shared."
           ],
-          "pronounce": "sɜːrdʒ",
-          "example":
-            "A surge of adrenaline coursed through his body when he saw the danger.",
+          "pronounce": "/ˈlʌv/",
+          "example": "The love I have for my family is beyond words."
         },
         {
-          "class": "Adjective",
-          "word": "grotesque",
-          "meaning": "causing a sense of horror or revulsion",
+          "class": "Verb",
+          "word": "think",
+          "meaning": "to consider or ponder something",
           "usage": [
-            "Suddenly, a surge of electricity coursed through the barn, illuminating the grotesque figure of a man.",
+            "As I stood there, lost in thought, I felt a gentle touch on my shoulder. I turned to see Alex standing behind me, thinking about you too."
           ],
-          "pronounce": "ɡroʊˈtɛsk",
-          "example":
-            "The grotesque creature had sharp claws and glowing red eyes.",
+          "pronounce": "/θɪŋk/",
+          "example": "I have been thinking about taking a vacation for some time now."
         },
         {
-          "class": "Noun",
-          "word": "cacophony",
-          "meaning": "a harsh or discordant mixture of sounds",
+          "class": "Preposition",
+          "word": "of",
+          "meaning": "belonging to or connected with something",
           "usage": [
-            "The notes that emerged were not music, but a cacophony of discordant wails that tore through the night.",
+            "the way he'd hold my hand of...",
+            "the love we shared of..."
           ],
-          "pronounce": "kəˈkɑːfəni",
-          "example": "The cacophony of car horns made it difficult to think.",
+          "pronounce": "/ɒv/",
+          "example": "The book is about a story of adventure."
         },
         {
-          "class": "Noun",
-          "word": "vortex",
-          "meaning":
-            "a swirling mass of water or air, especially a whirlpool or tornado",
+          "class": "Conjunction",
+          "word": "and",
+          "meaning": "used to connect two words, phrases, or clauses",
           "usage": [
-            "The barn became a vortex of pure terror, its inhabitants frozen in a nightmare that seemed to have no end.",
+            "And now, as I gazed upon the vibrant colors surrounding me...",
+            "And all that mattered was us, and the love we shared."
           ],
-          "pronounce": "ˈvɔːrtɛks",
-          "example":
-            "The tornado created a vortex that lifted houses into the air.",
-        },
-        {
-          "class": "Noun",
-          "word": "banshee",
-          "meaning":
-            "a female spirit in Irish folklore that wails before a death",
-          "usage": [
-            "The wind howled like a banshee, carrying with it the sound of the man's macabre symphony.",
-          ],
-          "pronounce": "ˈbænʃiː",
-          "example": "The banshee's wail pierced the night air.",
-        },
-      ],
+          "pronounce": "/ənd/",
+          "example": "I want to go to the store and buy some milk."
+        }
+      ]
     },
     "keywords": [
-      "eerie",
-      "grotesque",
-      "unnatural",
-      "discordant",
-      "banshee",
-      "macabre",
-      "vortex",
-      "terror",
-      "nightmare",
-      "supernatural",
-      "otherworldly",
-      "haunting",
-    ],
-  },
-};
+      "nostalgia",
+      "love",
+      "memories",
+      "passion",
+      "dreams",
+      "fears",
+      "nature",
+      "beauty",
+      "romance",
+      "intimacy",
+      "togetherness",
+      "uniqueness",
+      "timelessness"
+    ]
+  }
+}
 export default data;

@@ -9,7 +9,11 @@ import { getLevelTag } from "../../domains/level.ts";
 export default function SideNavi() {
   const ads = useSignal(prs);
   return (
-    <nav id="sideMenuNavi" f-client-nav className={"px-2 py-4 relative"}>
+    <nav
+      id="sideMenuNavi"
+      f-client-nav
+      className={"px-2 py-4 relative"}
+    >
       <h2>Updates (latest: {dates[dates.length - 1]})</h2>
       <div className={"overflow-y-scroll h-[80vh]"}>
         <ul className={"ml-4"}>
