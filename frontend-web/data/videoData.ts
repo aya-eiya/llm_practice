@@ -2,46 +2,45 @@ const videoData = {
   "2024-05-16": {
     "id": "qVxVq4fylGk",
     "title":
-      "[2024-05-16][Daily English Novels For Learners] Echoes of Versailles",
+      "[2024-05-16][MyniQ] Echoes of Versailles [English Listening Quiz]",
   },
   "2024-05-18": {
     "id": "2IzenF7Iq7k",
     "title":
-      "[2024-05-18][Daily English Novels For Learners] The Siege of Syracuse",
+      "[2024-05-18][MyniQ] The Siege of Syracuse [English Listening Quiz]",
   },
   "2024-05-19": {
     "id": "tk_jvyA3Obg",
     "title":
-      "[2024-05-19][Daily English Novels For Learners] Disco Fever: A Tale of Rhythm and Glamour",
+      "[2024-05-19][MyniQ] Disco Fever: A Tale of Rhythm and Glamour [English Listening Quiz]",
   },
   "2024-05-20": {
     "id": "T9XPzbgvk6U",
-    "title": "[2024-05-20][Daily English Novels For Learners] Eclipse of Style",
+    "title": "[2024-05-20][MyniQ] Eclipse of Style [English Listening Quiz]",
   },
   "2024-05-21": {
     "id": "KFUOuZiT4vg",
-    "title":
-      "[2024-05-21][Daily English Novels For Learners] A Night to Remember",
+    "title": "[2024-05-21][MyniQ] A Night to Remember [English Listening Quiz]",
   },
   "2024-05-22": {
     "id": "rwzIQdKS9bM",
     "title":
-      "[2024-05-22][Daily English Novels For Learners] Starry Night Over the Rhone Steampunk",
+      "[2024-05-22][MyniQ] Starry Night Over the Rhone Steampunk [English Listening Quiz]",
   },
   "2024-05-23": {
     "id": "ZAeeQmmQ91c",
     "title":
-      "[2024-05-23][Daily English Novels For Learners] The Defenestration of Prague",
+      "[2024-05-23][MyniQ] The Defenestration of Prague [English Listening Quiz]",
   },
   "2024-05-24": {
     "id": "bYiOWC6aBsw",
     "title":
-      "[2024-05-24][Daily English Novels For Learners] The Flatiron Dimension",
+      "[2024-05-24][MyniQ] The Flatiron Dimension [English Listening Quiz]",
   },
   "2024-05-25": {
     "id": "X9axkTfgWJg",
     "title":
-      "[2024-05-25][Daily English Novels For Learners] The Knoll Family Tree",
+      "[2024-05-25][MyniQ] The Knoll Family Tree [English Listening Quiz]",
   },
 } as const;
 

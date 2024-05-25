@@ -38,9 +38,14 @@ def __concatenate_wav_files_with_silence(file_paths, text_paths, silence_duratio
     if len(file_paths) == len(text_paths):
         with open(output_path.replace(".wav", ".srt"), "w", encoding="utf-8") as f:
             merge = ""
+            prev_speaker = ""
+            speaker = ""
             for i, (start, end) in enumerate(zip(chapter[:-1], chapter[1:])):
                 with open(text_paths[i], "r", encoding="utf-8") as t:
+                    speaker = re.match(r"[^_]+_(\w+).txt", text_paths[i]).group(1)
                     line=t.read().strip()
+                    if prev_speaker != speaker and speaker not in ("Narrator", "System"):
+                        line = f"{speaker}) {line}"
                     if merge != "":
                         line = merge + line
                         merge = ""
@@ -63,6 +68,7 @@ def __concatenate_wav_files_with_silence(file_paths, text_paths, silence_duratio
                     if line in ("E.", "E!"):
                         merge = line = "E) "
                     f.write(f"{i+1}\n")
+                    line = line.replace("My-niq", "MyniQ[/ˈmaɪ-nɪk/]")
                     # hours:minutes:seconds,milliseconds (00:00:00,000) --> hours:minutes:seconds,milliseconds (00:00:00,000)
                     f.write(f"{start//1000//60//60:02}:{start//1000//60%60:02}:{start//1000%60:02},{start%1000:03} --> ")
                     f.write(f"{end//1000//60//60:02}:{end//1000//60%60:02}:{end//1000%60:02},{end%1000:03}\n")
@@ -70,13 +76,13 @@ def __concatenate_wav_files_with_silence(file_paths, text_paths, silence_duratio
                     f.write(line)
                     f.write("\n\n")
                     f.write("\n")
+                    prev_speaker = speaker
 
 
     print(f"結合した音声ファイルを保存しました: {output_path} ({chapter})")
 
 
 wav,text = __get_dialog_files("outputs")
-print(len(wav),len(text))
 __concatenate_wav_files_with_silence(
     wav, text, silence_duration_ms=300, output_path="outputs/dialog.wav"
 )

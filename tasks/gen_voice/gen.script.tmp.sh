@@ -5,7 +5,7 @@ inputfile="../gen_quiz/outputs/${fulldate}.json"
 curriculum="../gen_quiz/scripts/curriculum.json"
 
 jq -s "[
-  {\"System\": \"Hello everyone, and welcome to Daily AI-Generated Novels and Learning Tests Podcast!\" },
+  {\"System\": \"Hello everyone, and welcome to My-niq Podcast!\" },
   {\"System\": \"I'm your host, and I'll be sharing short English stories and conversations with you every day.\" },
   {\"System\": \"Today's epsode is \" },
   {\"System\": .[0].title },
