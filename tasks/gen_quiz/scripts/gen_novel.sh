@@ -54,7 +54,7 @@ init_tmp () {
 main_model="llama3"
 novel_model="llava-llama3"
 
-level="Level_2"
+level=""
 
 # Functions
 
@@ -171,8 +171,9 @@ $(cat ${CURRENT_DIR}/curriculum.json)
 \`\`\`
 
 Create conversation of \"Readers\" about the novel after read it.
+The content of the conversation has no bearing on the curriculum, just the grammar and vocabulary levels that used in in the dialog must be suitable for ${level} in the ESL learner curriculum.
+Do not include any information about the curriculum in the conversation, just use it as the level of text difficulty.
 Order of the speaker is random, and each speaker talks at least 2 times.
-Also, each conversation line must be suitable for ${level} in the curriculum for ESL learner.
 
 The output must be a JSON object, its type is described following typescript code.
 \`\`\`
@@ -399,6 +400,10 @@ if [ "$date" = "" ]; then
   )
   # date='April 1st'
   date=$(date -j -f "%Y-%m-%d" "$fulldate" "+%B ${date_th}")
+fi
+
+if [ "$level" = "" ]; then
+  level="Level_$(($(date -j -f "%Y-%m-%d" "$fulldate" "+%w") + 1))"
 fi
 
 init_tmp
