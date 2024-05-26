@@ -1,0 +1,3 @@
+*.wav
+*.mp3
+!example.mp3
