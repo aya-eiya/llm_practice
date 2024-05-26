@@ -2,9 +2,9 @@ from audiocraft.models import MusicGen
 from audiocraft.data.audio import audio_write
 
 model = MusicGen.get_pretrained("facebook/musicgen-small")
-model.set_generation_params(duration=30) # seconds
+model.set_generation_params(duration=1) # seconds
 
-descriptions = ["japanese gagaku, insen scale, sakura pentatonic scale, diatonic chord, perfect fourths harmony"] * 3
+descriptions = [",".join(["night club music", "sad", "piano", "trumpet", "moody", "jazz", "slow beat"])]
 
 wav = model.generate(descriptions, progress=True)
 

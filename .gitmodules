@@ -1,3 +1,6 @@
 [submodule "open_voice"]
 	path = tasks/gen_voice/gen_voice_model
 	url = https://github.com/aya-eiya/OpenVoice
+[submodule "tasks/gen_music/audiocraft"]
+	path = tasks/gen_music/audiocraft
+	url = https://github.com/aya-eiya/audiocraft
