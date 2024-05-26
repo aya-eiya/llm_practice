@@ -23,27 +23,46 @@ def __concatenate_wav_files_with_silence(file_paths, text_paths, silence_duratio
     for file_path in file_paths:
         # WAVファイルを読み込む
         audio = AudioSegment.from_wav(file_path)
+        # 音量を調整
+        while len(audio) != 0 and audio.dBFS != -float('inf') and audio.dBFS < -30:
+            audio += 2
+        while len(audio) != 0 and audio.dBFS != -float('inf') and audio.dBFS > -20:
+            audio -= 2
         # 音声を追加し、その後に無音区間を追加
-        combined += audio + silence
+        combined += audio + silence if len(audio) > 0 else audio
         chapter.append(len(combined))
     # 最後の無音区間を削除
     combined = combined[:-silence_duration_ms]
     chapter.pop()
     chapter.append(len(combined))
 
-    # 結合した音声を保存
-    combined.export(output_path, format="wav")
-
+    effect_chanel=AudioSegment.empty()
     # chapter と text から字幕(.srt)ファイルを作成
     if len(file_paths) == len(text_paths):
         with open(output_path.replace(".wav", ".srt"), "w", encoding="utf-8") as f:
             merge = ""
             prev_speaker = ""
             speaker = ""
+            step = 0
             for i, (start, end) in enumerate(zip(chapter[:-1], chapter[1:])):
                 with open(text_paths[i], "r", encoding="utf-8") as t:
                     speaker = re.match(r"[^_]+_(\w+).txt", text_paths[i]).group(1)
                     line=t.read().strip()
+                    if speaker == "Effect":
+                        effect_chanel += AudioSegment.silent(duration=start-len(effect_chanel))
+                        fade_cmd = line.split(",")
+                        music_file, music_duration, music_start_time, fade_in_out_time = fade_cmd if len(fade_cmd) == 4 else (None,None,None,None)
+                        if music_file is None:
+                            continue
+                        music = AudioSegment.from_wav(music_file) if music_file.endswith(".wav") else AudioSegment.from_mp3(music_file)
+                        # 音量を調整
+                        while len(music) != 0 and music.dBFS != -float('inf') and music.dBFS > -30:
+                            music -= 2
+                        d = int(music_duration) if re.match(r"\d+",music_duration) is not None else chapter[file_paths.index(music_duration)] - start
+                        print(f"music_duration: {music_file} {d}")
+                        segment = music[int(music_start_time):int(music_start_time) + d]
+                        effect_chanel += segment.fade_in(int(fade_in_out_time)).fade_out(int(fade_in_out_time))
+                        continue
                     if prev_speaker != speaker and speaker not in ("Narrator", "System"):
                         line = f"{speaker}) {line}"
                     if merge != "":
@@ -67,7 +86,8 @@ def __concatenate_wav_files_with_silence(file_paths, text_paths, silence_duratio
                     # E. は E) に変更する さらに 次の行も同じステップ（i）に追加する
                     if line in ("E.", "E!"):
                         merge = line = "E) "
-                    f.write(f"{i+1}\n")
+                    step += 1
+                    f.write(f"{step}\n")
                     line = line.replace("My-niq", "MyniQ[/ˈmaɪ-nɪk/]")
                     # hours:minutes:seconds,milliseconds (00:00:00,000) --> hours:minutes:seconds,milliseconds (00:00:00,000)
                     f.write(f"{start//1000//60//60:02}:{start//1000//60%60:02}:{start//1000%60:02},{start%1000:03} --> ")
@@ -78,6 +98,8 @@ def __concatenate_wav_files_with_silence(file_paths, text_paths, silence_duratio
                     f.write("\n")
                     prev_speaker = speaker
 
+    # 結合した音声を保存
+    combined.overlay(effect_chanel - 6).export(output_path, format="wav")
 
     print(f"結合した音声ファイルを保存しました: {output_path} ({chapter})")
 
@@ -91,5 +113,4 @@ __concatenate_wav_files_with_silence(
 # ffmpeg -i "outputs/dialog.wav" -vn -ac 2 -ar 44100 -ab 256k -acodec libmp3lame -f mp3 "example.mp3"
 
 # mp4に変換する場合
-# ffmpeg -loop 1 -i "sample_mp4_back.jpg" -i "outputs/dialog.wav" -vcodec libx264 -acodec aac -ab 160k -ac 2 -ar 48000 -pix_fmt yuv420p -shortest example.mp4 \
-#   && ffmpeg -i example.mp4 -i outputs/dialog.srt -c copy -c:s mov_text -metadata:s:s:0 language=eng example.sub.mp4
+# ffmpeg -loop 1 -i "/tmp/.gen_voice_img.jpg" -i "outputs/dialog.wav" -vcodec libx264 -acodec aac -ab 160k -ac 2 -ar 48000 -pix_fmt yuv420p -shortest example.mp4
