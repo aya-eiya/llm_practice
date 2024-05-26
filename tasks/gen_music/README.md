@@ -14,5 +14,6 @@ brew install ffmpeg
 # xformers が M1 で動かないので llvm のコンパイラでビルドする
 brew install llvm
 MACOSX_DEPLOYMENT_TARGET=10.9 CC=/opt/homebrew/opt/llvm/bin/clang CXX=/opt/homebrew/opt/llvm/bin/clang++ pip install git+https://github.com/facebookresearch/audiocraft.git
-# M1 MBA だと techno
+# M1 MBA だと Small Model が限界かな
+python gen.sample.py
 ```
