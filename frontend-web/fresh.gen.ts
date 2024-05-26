@@ -14,6 +14,7 @@ import * as $lp_forPT from "./routes/lp/forPT.tsx";
 import * as $lp_forTW from "./routes/lp/forTW.tsx";
 import * as $pages_date_ from "./routes/pages/[date].tsx";
 import * as $report from "./routes/report.tsx";
+import * as $robots_txt from "./routes/robots.txt.ts";
 import * as $sitemap_xml from "./routes/sitemap.xml.ts";
 import * as $terms from "./routes/terms.tsx";
 import * as $GtagEvent from "./islands/GtagEvent.tsx";
@@ -37,6 +38,7 @@ const manifest = {
     "./routes/lp/forTW.tsx": $lp_forTW,
     "./routes/pages/[date].tsx": $pages_date_,
     "./routes/report.tsx": $report,
+    "./routes/robots.txt.ts": $robots_txt,
     "./routes/sitemap.xml.ts": $sitemap_xml,
     "./routes/terms.tsx": $terms,
   },

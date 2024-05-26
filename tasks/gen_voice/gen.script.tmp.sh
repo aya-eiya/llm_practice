@@ -4,7 +4,7 @@ fulldate=${1}
 inputfile="../gen_quiz/outputs/${fulldate}.json"
 curriculum="../gen_quiz/scripts/curriculum.json"
 
-curl -X GET "http://localhost:8000/bookshelf\?date\=${fulldate}\&img\=jpg" --output /tmp/.gen_voice_img.jpg
+curl -X GET "http://localhost:8000/bookshelf?date=${fulldate}&img=jpg" --output /tmp/.gen_voice_img.jpg
 
 jq -s "[
   { \"Effect\": \"silence=5000,fade_music=[\\\"musics/Opening_2.mp3\\\",duration=:header,start=0,fade=2000]\" },

@@ -42,6 +42,10 @@ const videoData = {
     "title":
       "[2024-05-25][MyniQ] The Knoll Family Tree [English Listening Quiz]",
   },
+  "2024-05-27": {
+    "id": "c0rM9NMzm1c",
+    "title": "[2024-05-27][MyniQ] Love in Bloom [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
