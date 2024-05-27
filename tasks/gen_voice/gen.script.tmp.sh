@@ -27,7 +27,7 @@ jq -s "[
   { \"Effect\": \"silence=1500,label=:header\" },
   { \"Narrator\": .[0].title }
 ]" "${inputfile}" "${curriculum}" > /tmp/gen_voice_header.json
-jq '(.body|gsub("(?<a>[.?!]+)(?<b>.)"; "\(.a)[!SENT!]\(.b)"))|split("[!SENT!]")|map({"Narrator":.|gsub("^ +| +$"; "")})' "${inputfile}" > /tmp/gen_voice_body.json
+jq '(.body|gsub("(<a>Mr|Dr|Ms|Mis|Ph). "; "\(.a).&nbsp;")|gsub("(?<a>[.?!]+ )(?<b>.)"; "\(.a)[!SENT!]\(.b)"))|split("[!SENT!]")|map({"Narrator":.|gsub("^ +| +$"; "")|gsub("&npsp;"; " ")})' "${inputfile}" > /tmp/gen_voice_body.json
 jq -n "[
   { \"Effect\": \"silence=1500\" },
   { \"System\": \"Now, let's move on to the conversation between Billy, Meg, Kelly, and their teacher, Lui, after reading the novel.\" }
