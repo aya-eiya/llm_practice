@@ -1,349 +1,116 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event":
-      "The French Academy of Sciences announces the discovery of Neptune",
+    "event": "Le Corbusier's Villa Savoye Completed",
     "details":
-      "The discovery of the planet Neptune was announced to the French Academy of Sciences on May 31, 1846 by Urbain Le Verrier.",
+      "May 31st, 1931 marks the completion of Villa Savoye, a pioneering work in modernist architecture designed by Le Corbusier and built on the outskirts of Paris. The building's innovative design features a pilotis foundation, horizontal lines, and an emphasis on functional simplicity.",
   },
   "date": "2024-05-31",
-  "title": "The Discovery of Neptune",
+  "title": "The Echoes of Villa Savoye",
   "body":
-    "In a dimly lit room within the hallowed halls of the French Academy of Sciences, a hushed anticipation hung in the air. The year was 1846, and the world was poised on the brink of a scientific revelation.Urbain Le Verrier, a brilliant astronomer, stood before his colleagues, his eyes gleaming with excitement. For years, he had tirelessly studied the irregularities in the orbit of Uranus, convinced that they were caused by the gravitational pull of another, unseen planet beyond.With trembling hands, Le Verrier revealed his calculations. He had predicted the existence and location of a new world, which he named Neptune. A wave of astonishment swept through the academy, followed by an eruption of cheers.The discovery of Neptune was a triumph for science. It not only confirmed Le Verrier's theories but also expanded the known boundaries of our solar system. As the stars twinkled above Paris that night, astronomers gazed up at the heavens, filled with a sense of wonder and the boundless possibilities that lay beyond the darkness.",
-  "word count": 169,
+    "As Dr. Elara stepped out of her time-traveling vessel, the once-modern lines of Villa Savoye blurred into a haze of nostalgia and curiosity. The pilotis foundation, now cracked and worn, seemed to whisper secrets of the past. She wandered through the abandoned halls, her footsteps echoing off the cold marble walls.The air was thick with the scent of forgotten memories, each step revealing whispers of conversations long since silenced. Elara's eyes adjusted to the dim light, and she saw it: a holographic projection of Le Corbusier himself, standing before the villa's iconic columns.He spoke in hushed tones, his words dissolving into the wind like sandcastles on a beach. Yet, Elara felt an inexplicable connection, as if the architect's vision had transcended time and space to reach her. She listened intently, absorbing every whispered phrase, every architectural detail that had shaped this enigmatic masterpiece.As she left Villa Savoye behind, Elara knew that the echoes of its innovative design would linger within her, inspiring new creations that would forever bridge the chasm between past and future.",
+  "word count": 174,
   "dialog": [
     {
       "Billy":
-        "Wow, I can't believe the discovery of Neptune was made possible through math and science. It's amazing how we can learn about the universe by studying the movements of faraway objects.",
+        "I loved how Dr. Elara stepped back in time and explored Villa Savoye! It's like she entered a whole new world.",
     },
     {
       "Kerry":
-        "Totally dude! It's like, a cosmic detective story. Le Verrier was like a celestial Sherlock Holmes, using clues from Uranus' orbit to track down Neptune.",
+        "Yeah, me too! And can you believe Le Corbusier's hologram was still there? That's some crazy tech right there!",
     },
     {
       "Meg":
-        "I wonder what other mysteries are hidden in the vastness of space. It's like there's a whole other world of possibilities out there, waiting to be explored.",
+        "I'm so impressed by Dr. Elara's passion for architecture and history. She's like a real-life Indiana Jones!",
     },
     {
       "Lui":
-        "Indeed, my young scholars. The pursuit of scientific knowledge is an ongoing journey, with each discovery paving the way for new questions and the potential to expand our understanding of the universe.",
-    },
-    {
-      "Kerry":
-        "So, basically, Neptune's discovery was like a giant cosmic upgrade. It made our solar system bigger and cooler.",
-    },
-    {
-      "Meg":
-        "Right! It's like when you get a new toy and it totally revolutionizes your playtime. Imagine how excited astronomers must have been when they realized there was a whole new planet hanging out just beyond Uranus.",
+        "Actually, I think the novel highlights the importance of preserving our cultural heritage. We must learn from the past to build a better future.",
     },
     {
       "Billy":
-        "And it's not just about the excitement, it's about the incredible precision and dedication of scientists like Le Verrier. Years of tireless calculations and observations, all leading up to this groundbreaking moment.",
+        "That's so true, Mr. Lui! And I loved how the novel showed how Villa Savoye's design has inspired new creations. It's like the architect's vision kept evolving even after he was gone.",
+    },
+    {
+      "Kerry":
+        "Yeah, and it made me think about how our own actions can have a ripple effect on the world. We might not be architects or scientists, but we can still make a difference in our own way.",
+    },
+    {
+      "Meg":
+        "I agree! The novel showed that even seemingly small actions can add up to something big. It's all about perspective and being open to new ideas.",
     },
     {
       "Lui":
-        "Absolutely, Billy. Scientific discoveries are the culmination of hard work, perseverance, and a deep curiosity about the world around us. Neptune's discovery is a testament to the power of human ingenuity and the boundless potential of scientific inquiry.",
+        "Well said, Meg. And I think that's what makes this novel so special – it encourages us to look beyond the surface and find connections between different eras and cultures.",
     },
   ],
   "quiz": [
     {
-      "question": "In what year was the discovery of Neptune made?",
-      "options": [
-        "1845",
-        "1846",
-        "1847",
-        "1848",
-        "1849",
-      ],
-      "answer": 1,
-    },
-    {
-      "question": "Who is credited with predicting the existence of Neptune?",
-      "options": [
-        "Albert Einstein",
-        "Isaac Newton",
-        "Copernicus",
-        "Galileo Galilei",
-        "Urbain Le Verrier",
-      ],
-      "answer": 4,
-    },
-    {
       "question":
-        "What was the name given to the new planet discovered beyond Uranus?",
+        "What was Dr. Elara stepping out of when she arrived at Villa Savoye?",
       "options": [
-        "Pluto",
-        "Mercury",
-        "Venus",
-        "Neptune",
-        "Saturn",
+        "A time-traveling vessel",
+        "A futuristic car",
+        "A historical book",
+        "An architectural blueprint",
+        "A holographic projection",
       ],
-      "answer": 3,
+      "answer": 0,
     },
     {
-      "question":
-        "What is the main idea conveyed by the word 'triumph' as used in the text?",
+      "question": "What was Le Corbusier doing when Dr. Elara saw him?",
       "options": [
-        "A feeling of great joy and success",
-        "A minor setback",
-        "A sense of failure",
-        "A surprising discovery",
-        "A minor inconvenience",
+        "Standing before the villa's iconic columns",
+        "Exploring the abandoned halls",
+        "Discussing with Billy and Kerry",
+        "Designing a new building",
+        "Writing in his journal",
       ],
       "answer": 0,
     },
     {
       "question":
-        "According to the dialogue, what is one of the potential outcomes of scientific discoveries?",
+        "What did Dr. Elara learn from her experience at Villa Savoye?",
       "options": [
-        "Expanding our understanding of the universe",
-        "Making our lives easier",
-        "Curing all diseases",
-        "Ending wars",
-        "Creating new technologies",
+        "How to build a better future",
+        "The importance of preserving cultural heritage",
+        "The secrets of the past",
+        "New architectural techniques",
+        "How to travel through time",
+      ],
+      "answer": 1,
+    },
+    {
+      "question": "What did Billy say he loved about Dr. Elara's experience?",
+      "options": [
+        "Stepping back in time and exploring Villa Savoye",
+        "Meeting Le Corbusier's hologram",
+        "Learning about architectural design",
+        "Discovering new cultural heritage",
+        "Traveling through time",
+      ],
+      "answer": 0,
+    },
+    {
+      "question": "What did the novel encourage readers to do?",
+      "options": [
+        "To look beyond the surface and find connections between different eras and cultures",
+        "To focus on the present moment",
+        "To travel through time",
+        "To learn about architectural design",
+        "To preserve cultural heritage",
       ],
       "answer": 0,
     },
   ],
   "params": {
-    "theme": "Culture",
-    "flavor": "Historical Fiction",
+    "theme": "Architecture",
+    "flavor": "Science Fiction",
     "models": {
-      "main": "gemini",
-      "novel": "gemini",
+      "main": "llama3",
+      "novel": "llama3",
     },
-    "level": "Level_5",
-  },
-  "descriptions": {
-    "grammar": {
-      "patterns": [
-        {
-          "pattern": "S + V",
-          "explanation": "Subject followed by a verb, no object or complement.",
-          "usage": [
-            "Urbain Le Verrier, a brilliant astronomer, stood before his colleagues, his eyes gleaming with excitement.",
-          ],
-          "words": [
-            {
-              "S": [
-                "Urbain Le Verrier",
-                "a brilliant astronomer",
-              ],
-            },
-            {
-              "V": [
-                "stood",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O",
-          "explanation": "Subject followed by a verb and an object.",
-          "usage": [
-            "For years, he had tirelessly studied the irregularities in the orbit of Uranus",
-          ],
-          "words": [
-            {
-              "S": [
-                "he",
-              ],
-            },
-            {
-              "V": [
-                "had studied",
-              ],
-            },
-            {
-              "O": [
-                "the irregularities in the orbit of Uranus",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O + O",
-          "explanation": "Subject followed by a verb and two objects.",
-          "usage": [
-            "He had predicted the existence and location of a new world",
-          ],
-          "words": [
-            {
-              "S": [
-                "He",
-              ],
-            },
-            {
-              "V": [
-                "had predicted",
-              ],
-            },
-            {
-              "O": [
-                "the existence",
-                "location",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O + C",
-          "explanation":
-            "Subject followed by a verb, an object, and a complement.",
-          "usage": [
-            "It not only confirmed Le Verrier's theories but also expanded the known boundaries of our solar system.",
-          ],
-          "words": [
-            {
-              "S": [
-                "It",
-              ],
-            },
-            {
-              "V": [
-                "confirmed",
-                "expanded",
-              ],
-            },
-            {
-              "O": [
-                "Le Verrier's theories",
-                "the known boundaries of our solar system",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + C",
-          "explanation": "Subject followed by a verb and a complement.",
-          "usage": [
-            "With trembling hands, Le Verrier revealed his calculations.",
-          ],
-          "words": [
-            {
-              "S": [
-                "Le Verrier",
-              ],
-            },
-            {
-              "V": [
-                "revealed",
-              ],
-            },
-            {
-              "C": [
-                "his calculations",
-              ],
-            },
-          ],
-        },
-      ],
-      "vocabularies": [
-        {
-          "class": "Noun",
-          "word": "room",
-          "meaning":
-            "a separate and enclosed space within a building, used for a particular purpose",
-          "usage": [
-            "In a dimly lit room within the hallowed halls of the French Academy of Sciences, a hushed anticipation hung in the air.",
-          ],
-          "pronounce": "/rum/",
-          "example": "I went to the living room to watch TV.",
-        },
-        {
-          "class": "Noun",
-          "word": "academy",
-          "meaning":
-            "a society of scholars, artists, or scientists founded for the promotion of a particular subject or field",
-          "usage": [
-            "The French Academy of Sciences",
-          ],
-          "pronounce": "/əˈkædᵊmē/",
-          "example":
-            "The National Academy of Sciences is a private, nonprofit organization of scientists and engineers dedicated to the furtherance of science and its use for the general welfare.",
-        },
-        {
-          "class": "Noun",
-          "word": "anticipation",
-          "meaning":
-            "the feeling of excitement or eagerness that you have before something is going to happen",
-          "usage": [
-            "a hushed anticipation hung in the air",
-          ],
-          "pronounce": "/ænˌtɪsəˈpeɪʃən/",
-          "example":
-            "I couldn't sleep the night before my trip because of anticipation.",
-        },
-        {
-          "class": "Adjective",
-          "word": "brilliant",
-          "meaning": "very intelligent or talented",
-          "usage": [
-            "Urbain Le Verrier, a brilliant astronomer",
-          ],
-          "pronounce": "/ˈbrɪljənt/",
-          "example":
-            "She is a brilliant student who excels in all her classes.",
-        },
-        {
-          "class": "Noun",
-          "word": "astronomer",
-          "meaning":
-            "a scientist who studies the stars, planets, and other objects in space",
-          "usage": [
-            "Urbain Le Verrier, a brilliant astronomer",
-          ],
-          "pronounce": "/əˈstrɑːnəmər/",
-          "example":
-            "My uncle is an astronomer who works at the local university.",
-        },
-        {
-          "class": "Verb",
-          "word": "stood",
-          "meaning": "to be in an upright position on your feet",
-          "usage": [
-            "Urbain Le Verrier, a brilliant astronomer, stood before his colleagues",
-          ],
-          "pronounce": "/stud/",
-          "example": "The boy stood up to answer the question.",
-        },
-        {
-          "class": "Adjective",
-          "word": "trembling",
-          "meaning":
-            "shaking or quivering, especially because of fear, excitement, or weakness",
-          "usage": [
-            "With trembling hands, Le Verrier revealed his calculations.",
-          ],
-          "pronounce": "/ˈtrɛmblɪŋ/",
-          "example": "He was trembling with fear as he stood before the judge.",
-        },
-        {
-          "class": "Verb",
-          "word": "revealed",
-          "meaning": "to make something known or visible",
-          "usage": [
-            "With trembling hands, Le Verrier revealed his calculations.",
-          ],
-          "pronounce": "/rɪˈviːld/",
-          "example": "The scientist revealed his findings to the world.",
-        },
-      ],
-    },
-    "keywords": [
-      "scientific discovery",
-      "French Academy of Sciences",
-      "Urbain Le Verrier",
-      "astronomer",
-      "irregularities in the orbit of Uranus",
-      "gravitational pull",
-      "new planet",
-      "Neptune",
-      "astounded",
-      "expanded the known boundaries of our solar system",
-      "wonder",
-      "boundless possibilities",
-    ],
+    "level": "Level_6",
   },
 };
 export default data;
