@@ -1,356 +1,132 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "First Successful Flight of the Learjet 23",
+    "event": "Opening of Paris's first department store, Le Bon Marché",
     "details":
-      "On May 29, 1964, the Learjet 23, the first purpose-built business jet, made its maiden flight. It was developed by Bill Lear, who had previously designed the Learstar, the first business jet conversion of an existing aircraft. The Learjet 23 was a revolutionary aircraft, with a sleek design and a top speed of 540 mph. It was also the first business jet to be certified by the Federal Aviation Administration. The Learjet 23 was a commercial success, and it helped to establish Learjet as a leading manufacturer of business jets.",
+      "On May 29th, 1852, Aristide Boucicaut and his wife opened the doors to Le Bon Marché, a revolutionary concept in retailing that would change the face of fashion shopping forever. Located on the Rue de Sèvres in Paris, this innovative store offered a wide range of products under one roof, including clothing, accessories, and home goods.",
   },
   "date": "2024-05-29",
-  "title": "First Flight",
+  "title": "Neon Dreams",
   "body":
-    "In the year 2042, the world was a very different place. Technology had advanced at an unprecedented rate, and with it, the human race had taken to the stars. The Learjet 23, the first purpose-built business jet, had long since been retired, but its legacy lived on.On a distant planet, a young woman named Anya stood on the tarmac, staring up at the sleek, silver spacecraft before her. She was about to embark on her first flight into space, and she couldn't help but feel a sense of awe.Anya had always dreamed of flying among the stars, and now her dream was about to come true. She climbed into the cockpit and took her place at the controls. As she powered up the engines, she felt a surge of excitement coursing through her body.With a roar, the spacecraft lifted off the ground and ascended into the sky. Anya looked out the window and marveled at the beauty of the planet below. She could see mountains, rivers, and oceans, all dwarfed by the vastness of space.As the spacecraft reached orbit, Anya turned to look at the stars. They were more beautiful than she had ever imagined. She felt a sense of peace and tranquility wash over her.Anya knew that she was destined to fly among the stars. She had a thirst for adventure and a desire to explore the unknown. And with the Learjet 23 as her guide, she knew that she would go far.",
-  "word count": 244,
+    "May 29th, 2052, was a night that would change everything for me. Le Bon Marché, the legendary department store in Neo-Paris, had opened its doors to the public once more. The sleek, silver skyscrapers of the Champs-Élysées glittered like diamonds against the dark, rain-soaked sky as I walked into the store. I had heard whispers about a new prototype that would revolutionize shopping, and I was determined to find out what it was.As I entered the store, I was struck by the sheer scale of the interior. Towering shelves lined the walls, stacked high with goods from all corners of the world. The air was thick with the scent of freshly brewed coffee and the hum of holographic advertisements floated through the air like ethereal whispers. I followed the trail of LED lights to a sleek, black pedestal at the center of the store.There, on display, lay the prototype: a slender, crystalline device that pulsed with an otherworldly energy. The sales associate, dressed in a sharp, neon-green jumpsuit, approached me with a knowing smile. 'This is it,' she said, her voice low and husky. 'This is the future.' I took one look at the prototype and knew that nothing would ever be the same again.",
+  "word count": 205,
   "dialog": [
     {
       "Billy":
-        "This novel about Anya's space adventure was fascinating! I'm curious, Ms. Lui, do you think it's realistic that the Learjet 23 could be used for space travel in the future?",
-    },
-    {
-      "Lui":
-        "That's an interesting question, Billy. While the Learjet 23 was an impressive business jet in its time, it's important to remember that the conditions of space travel are vastly different from Earth's atmosphere. The novel's depiction of the Learjet 23 being repurposed for space exploration may be a creative license taken for the sake of the story.",
-    },
-    {
-      "Meg":
-        "I loved how the novel captured the sense of wonder and awe that comes with space travel. It made me feel like I was right there with Anya, gazing out the window at the stars.",
-    },
-    {
-      "Lui":
-        "Meg, that's a beautiful way to put it. Literature has the power to transport us to different worlds and experiences, and this novel certainly achieved that.",
+        "I loved how the author described the department store! It felt like I was right there with them.",
     },
     {
       "Kerry":
-        "I also enjoyed how the novel highlighted Anya's determination and passion for space exploration. It's inspiring to see a young woman pursuing her dreams with such enthusiasm.",
-    },
-    {
-      "Billy":
-        "Yes, Anya's character was very relatable. Her journey reminded me of the importance of believing in yourself and never giving up on your dreams.",
+        "Yeah, and what about that prototype? Do you think it's really going to change everything?",
     },
     {
       "Meg":
-        "I wonder what Anya's future holds. Do you think she'll continue her space adventures, or will she find a new passion?",
+        "I'm more interested in the characters. Can we talk about Lui's character development? He seemed so strict at first...",
     },
     {
       "Lui":
-        "That's a great question, Meg. The novel leaves us with a sense of possibility for Anya's future. It's up to our imaginations to decide what lies ahead for her.",
+        "Ah, yes! As an educator, I appreciated how Lui was portrayed as a mentor and friend. It showed that even those who appear tough can have a soft spot.",
+    },
+    {
+      "Billy":
+        "I agree with Meg about the characters. But what really stood out to me was the way the author explored the intersection of technology and humanity.",
+    },
+    {
+      "Kerry":
+        "Ooh, ooh! And don't forget about the symbolism of the department store itself! It represented a world where anything is possible...",
+    },
+    {
+      "Meg":
+        "That's so true! The store felt like a magical place. I wish we could see more of it in the story.",
+    },
+    {
+      "Lui":
+        "I think that would be interesting, but perhaps not necessary. The focus on the characters and their reactions to the prototype was enough to drive home the themes.",
+    },
+    {
+      "Billy":
+        "Yeah, I think Lui's right. But what do you guys think about the implications of this technology? Could it really change everything?",
+    },
+    {
+      "Kerry":
+        "Absolutely! Just imagine being able to access any product or service in the world instantly...",
+    },
+    {
+      "Meg":
+        "And what about the environmental impact? If people can get anything they want, will we ever stop wanting more?",
+    },
+    {
+      "Lui":
+        "Excellent points all around. It's clear that this technology raises many questions and challenges our values as a society.",
     },
   ],
   "quiz": [
     {
-      "question": "What year was the story set in?",
+      "question": "What was the date that would change everything for Lui?",
       "options": [
-        "2000",
-        "2023",
-        "2042",
-        "2050",
-        "2075",
+        "May 29th, 2052",
+        "June 1st, 2050",
+        "July 4th, 2049",
+        "August 15th, 2053",
+        "September 22nd, 2051",
       ],
-      "answer": 2,
-    },
-    {
-      "question": "What type of aircraft was the Learjet 23?",
-      "options": [
-        "A military jet",
-        "A commercial jet",
-        "A business jet",
-        "A private jet",
-        "A space shuttle",
-      ],
-      "answer": 2,
-    },
-    {
-      "question": "What was Anya's dream?",
-      "options": [
-        "To become a doctor",
-        "To fly among the stars",
-        "To become a teacher",
-        "To get married and have children",
-        "To become an artist",
-      ],
-      "answer": 1,
-    },
-    {
-      "question": "What emotion did Anya feel as she entered orbit?",
-      "options": [
-        "Excitement",
-        "Fear",
-        "Sadness",
-        "Anger",
-        "Peace",
-      ],
-      "answer": 4,
+      "answer": 0,
     },
     {
       "question":
-        "According to Ms. Lui, is it likely that the Learjet 23 could be used for space travel in the future?",
+        "What was the name of the department store where Lui found the prototype?",
       "options": [
-        "Yes, it is likely.",
-        "No, it is not likely.",
-        "The novel does not provide enough information to determine.",
-        "It is a matter of opinion.",
-        "The author does not answer this question.",
+        "Le Bon Marché",
+        "Neon Dreams",
+        "Champs-Élysées",
+        "Neo-Paris",
+        "Silver Skies",
+      ],
+      "answer": 0,
+    },
+    {
+      "question":
+        "Who approached Lui with a knowing smile to show him the prototype?",
+      "options": [
+        "The sales associate",
+        "Billy",
+        "Kerry",
+        "Meg",
+        "Lui",
+      ],
+      "answer": 0,
+    },
+    {
+      "question": "What did the prototype look like?",
+      "options": [
+        "A small, round device",
+        "A slender, crystalline device",
+        "A large, boxy machine",
+        "A holographic display",
+        "A bookshelf",
       ],
       "answer": 1,
     },
+    {
+      "question": "According to Lui, what did the prototype represent?",
+      "options": [
+        "The past",
+        "The present",
+        "The future",
+        "Technology",
+        "Humanity",
+      ],
+      "answer": 2,
+    },
   ],
   "params": {
-    "theme": "Engineering",
-    "flavor": "Science Fiction",
+    "theme": "Fashion",
+    "flavor": "Cyberpunk",
     "models": {
-      "main": "gemini",
-      "novel": "gemini",
+      "main": "llama3",
+      "novel": "llama3",
     },
-    "level": "Level_5",
-  },
-  "descriptions": {
-    "grammar": {
-      "patterns": [
-        {
-          "pattern": "S + V",
-          "explanation": "Simple subject and verb.",
-          "usage": [
-            "The Learjet 23, the first purpose-built business jet, had long since been retired.",
-          ],
-          "words": [
-            {
-              "S": [
-                "The Learjet 23, the first purpose-built business jet",
-              ],
-            },
-            {
-              "V": [
-                "had long since been retired",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + C",
-          "explanation": "Subject, verb, and complement.",
-          "usage": [
-            "She was about to embark on her first flight into space.",
-            "Anya had always dreamed of flying among the stars.",
-          ],
-          "words": [
-            {
-              "S": [
-                "She",
-                "Anya",
-              ],
-            },
-            {
-              "V": [
-                "was about to embark",
-                "had always dreamed",
-              ],
-            },
-            {
-              "C": [
-                "on her first flight into space",
-                "of flying among the stars",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O",
-          "explanation": "Subject, verb, and object.",
-          "usage": [
-            "She climbed into the cockpit and took her place at the controls.",
-            "As she powered up the engines, she felt a surge of excitement coursing through her body.",
-          ],
-          "words": [
-            {
-              "S": [
-                "She",
-                "she",
-              ],
-            },
-            {
-              "V": [
-                "climbed",
-                "took",
-                "powered up",
-                "felt",
-              ],
-            },
-            {
-              "O": [
-                "into the cockpit",
-                "her place at the controls",
-                "the engines",
-                "a surge of excitement",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O + O",
-          "explanation": "Subject, verb, two objects.",
-          "usage": [
-            "Anya looked out the window and marveled at the beauty of the planet below.",
-          ],
-          "words": [
-            {
-              "S": [
-                "Anya",
-              ],
-            },
-            {
-              "V": [
-                "looked",
-                "marveled",
-              ],
-            },
-            {
-              "O": [
-                "out the window",
-                "the beauty of the planet below",
-              ],
-            },
-          ],
-        },
-        {
-          "pattern": "S + V + O + C",
-          "explanation": "Subject, verb, object, and complement.",
-          "usage": [
-            "With a roar, the spacecraft lifted off the ground and ascended into the sky.",
-          ],
-          "words": [
-            {
-              "S": [
-                "With a roar, the spacecraft",
-              ],
-            },
-            {
-              "V": [
-                "lifted off",
-                "ascended",
-              ],
-            },
-            {
-              "O": [
-                "the ground",
-                "the sky",
-              ],
-            },
-          ],
-        },
-      ],
-      "vocabularies": [
-        {
-          "class": "Noun",
-          "word": "technology",
-          "meaning":
-            "the application of scientific knowledge for practical purposes, especially in industry",
-          "usage": [
-            "Technology had advanced at an unprecedented rate, and with it, the human race had taken to the stars.",
-            "With a roar, the spacecraft lifted off the ground and ascended into the sky.",
-          ],
-          "pronounce": "/ˈtɛknələdʒi/",
-          "example":
-            "The new technology has made it possible to communicate with people all over the world.",
-        },
-        {
-          "class": "Noun",
-          "word": "legacy",
-          "meaning": "something handed down from the past",
-          "usage": [
-            "The Learjet 23, the first purpose-built business jet, had long since been retired, but its legacy lived on.",
-          ],
-          "pronounce": "/ˈlɛgəsi/",
-          "example":
-            "The legacy of the ancient Greeks includes their philosophy, art, and architecture.",
-        },
-        {
-          "class": "Noun",
-          "word": "awe",
-          "meaning": "a feeling of respect mixed with fear or wonder",
-          "usage": [
-            "She was about to embark on her first flight into space, and she couldn't help but feel a sense of awe.",
-          ],
-          "pronounce": "/ɔː/",
-          "example":
-            "The awe-inspiring beauty of the Grand Canyon left me speechless.",
-        },
-        {
-          "class": "Noun",
-          "word": "dream",
-          "meaning":
-            "a series of thoughts, images, and sensations occurring in a person's mind during sleep",
-          "usage": [
-            "Anya had always dreamed of flying among the stars, and now her dream was about to come true.",
-          ],
-          "pronounce": "/driːm/",
-          "example": "I had a dream last night that I was flying.",
-        },
-        {
-          "class": "Noun",
-          "word": "adventure",
-          "meaning": "an exciting or unusual experience",
-          "usage": [
-            "Anya had a thirst for adventure and a desire to explore the unknown.",
-          ],
-          "pronounce": "/ədˈvɛntʃər/",
-          "example": "I'm looking for a new adventure that will challenge me.",
-        },
-        {
-          "class": "Noun",
-          "word": "unknown",
-          "meaning": "not known or identified",
-          "usage": [
-            "Anya had a thirst for adventure and a desire to explore the unknown.",
-          ],
-          "pronounce": "/ʌnˈnoʊn/",
-          "example": "The explorers ventured into the unknown territory.",
-        },
-        {
-          "class": "Noun",
-          "word": "guide",
-          "meaning": "a person who shows someone the way or provides advice",
-          "usage": [
-            "And with the Learjet 23 as her guide, she knew that she would go far.",
-          ],
-          "pronounce": "/gaɪd/",
-          "example": "The tour guide led the group through the museum.",
-        },
-        {
-          "class": "Noun",
-          "word": "star",
-          "meaning":
-            "a large, self-luminous ball of hot gas that emits its own light",
-          "usage": [
-            "Anya had always dreamed of flying among the stars.",
-            "As the spacecraft reached orbit, Anya turned to look at the stars.",
-          ],
-          "pronounce": "/stɑːr/",
-          "example": "The stars twinkled in the night sky.",
-        },
-      ],
-    },
-    "keywords": [
-      "2042",
-      "Anya",
-      "business jet",
-      "cockpit",
-      "first flight",
-      "Learjet 23",
-      "space",
-      "spacecraft",
-      "stars",
-      "technology",
-      "tarmac",
-      "unknown",
-    ],
+    "level": "Level_4",
   },
 };
 export default data;

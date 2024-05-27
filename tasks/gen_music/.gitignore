@@ -1,3 +1,4 @@
 *.wav
 *.mp3
+*.tmp.py
 !example.mp3

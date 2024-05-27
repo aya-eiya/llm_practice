@@ -2,9 +2,9 @@ from audiocraft.models import MusicGen
 from audiocraft.data.audio import audio_write
 
 model = MusicGen.get_pretrained("facebook/musicgen-small")
-model.set_generation_params(duration=1) # seconds
+model.set_generation_params(duration=10) # seconds
 
-descriptions = [",".join(["night club music", "sad", "piano", "trumpet", "moody", "jazz", "slow beat"])]
+descriptions = [",".join(["night club music", "sad", "piano", "trumpet", "moody", "jazz", "slow beat"])] * 3
 
 wav = model.generate(descriptions, progress=True)
 

@@ -109,7 +109,7 @@ $(cat ${CURRENT_DIR}/curriculum.json)
 \`\`\`
 
 Create short ${flavor} novel that is inspired by the concept of the event and be written with about 180 words.
-Also, The grammar and vocabulary levels that used in in the novel must be suitable for ${level} in the ESL learner curriculum.
+The novel is for a part of a test for ESL learners of ${level} in the curriculum, so that its grammar and vocabulary levels must be suitable for the level.
 
 Do not include the prompt in the output and keep it clean.
 Do not include other information except the JSON with the title and body.
@@ -165,14 +165,8 @@ ${meg}
 ${lui}
 \`\`\`
 
-Curriculum:
-\`\`\`
-$(cat ${CURRENT_DIR}/curriculum.json)
-\`\`\`
-
 Create conversation of \"Readers\" about the novel after read it.
-The content of the conversation has no bearing on the curriculum, just the grammar and vocabulary levels that used in in the dialog must be suitable for ${level} in the ESL learner curriculum.
-Do not include any information about the curriculum in the conversation, just use it as the level of text difficulty.
+
 Order of the speaker is random, and each speaker talks at least 2 times.
 
 The output must be a JSON object, its type is described following typescript code.
@@ -214,8 +208,9 @@ try_gen_quiz() {
 ${1}
 \`\`\`
 
-From the above novel text and dialogue, create five questions to test the English reading comprehension skills used in ESL classes.
-The format for answering the questions should be a one-choice format with five options to choose from.
+From the above novel text and dialogue, create five quizzes to test the English reading comprehension skills.
+
+The format for answering the quizzes should be a one-choice format with five options to choose from.
 
 The output must be a JSON object, its type is described following typescript code.
 \`\`\`
@@ -235,6 +230,7 @@ type Quize = {
   | tr -d '\n' \
   | sed -e 's/```json/```/g' \
   | sed -n -e 's/^.*```\s*\({.*}\)```.*$/\1/p' \
+  | sed -e 's/"quizzes"/"quiz"/g' \
   | jq 'if (.quiz | length | . != 5 ) then ("quiz count error\n" | halt_error(1)) else . end' \
   | jq 'if (.quiz[0].options | length | . != 5 ) then ("quiz options count error\n" | halt_error(1)) else . end'
   # TODO: check the ansewer is correct

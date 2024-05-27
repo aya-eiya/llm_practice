@@ -21,12 +21,12 @@ export default function Footer() {
           <li
             className={"underline text-center md:px-12"}
           >
-            <a href="https://twitter.com/hatano_ay">X</a>
+            <a href="https://twitter.com/myniq_en">X</a>
           </li>
           <li
             className={"underline text-center md:px-12"}
           >
-            <a href="https://www.facebook.com/ay.llc.page/">Facebook</a>
+            <a href="https://www.facebook.com/myniq_en">Facebook</a>
           </li>
           <li
             className={"underline text-center md:px-12"}
