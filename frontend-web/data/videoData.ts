@@ -42,13 +42,18 @@ const videoData = {
     "title":
       "[2024-05-25][MyniQ] The Knoll Family Tree [English Listening Quiz]",
   },
+  "2024-05-26": {
+    "id": "HzNqrEuvfp0",
+    "title": "[2024-05-26][MyniQ] The Mechanical Mind [English Listening Quiz]",
+  },
   "2024-05-27": {
     "id": "c0rM9NMzm1c",
     "title": "[2024-05-27][MyniQ] Love in Bloom [English Listening Quiz]",
   },
-  "2024-05-26": {
-    "id": "HzNqrEuvfp0",
-    "title": "[2024-05-26][MyniQ] The Mechanical Mind [English Listening Quiz]",
+  "2024-05-28": {
+    "id": "XRdp5iKRk74",
+    "title":
+      "[2024-05-28][MyniQ] Ghost in the Machine [English Listening Quiz]",
   },
 } as const;
 
