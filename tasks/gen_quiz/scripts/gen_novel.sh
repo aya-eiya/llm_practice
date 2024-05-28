@@ -153,7 +153,7 @@ gen_novel() {
 ## Conversation
 try_gen_conversation() {
   local conversation="
-Novel:\`\`\`
+\`\`\`
 ${1}
 \`\`\`
 
