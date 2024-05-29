@@ -3,6 +3,7 @@ import { type AudioData } from "../../domains/audio.ts";
 import { getLevelTag } from "../../domains/level.ts";
 import { getLevelEmoji } from "../../domains/level.ts";
 import { type QuizData } from "../../domains/quiz.ts";
+import { segment } from "../../domains/text.ts";
 import { playerId } from "../../infras/audio/youtube.ts";
 import { Printer } from "../../islands/Printer.tsx";
 import Audio from "../../islands/YoutubeAudio.tsx";
@@ -300,10 +301,7 @@ export default function Quiz(
           </div>
           <div className={"w-0 h-0"} id={playerId} />
           <div className={"md:pr-12"}>
-            {data.body.replace(/(Mr|Dr|Ms|Mis|Ph). /, "$1.&nbsp;").replace(
-              /(\.+ |[!?]+)/g,
-              "$1\n",
-            ).split("\n").map(
+            {segment(data.body).map(
               (
                 line,
                 index,
