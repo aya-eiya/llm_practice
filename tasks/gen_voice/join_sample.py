@@ -114,3 +114,4 @@ __concatenate_wav_files_with_silence(
 
 # mp4に変換する場合
 print('ffmpeg -loop 1 -i "/tmp/.gen_voice_img.jpg" -i "outputs/dialog.wav" -vcodec libx264 -acodec aac -ab 160k -ac 2 -ar 48000 -pix_fmt yuv420p -shortest example.mp4')
+print('ffmpeg -i example.mp4 -vf subtitles=outputs/dialog.srt:force_style="FontName=/System/Library/Fonts/Times.ttc" -c:a copy example.sub.mp4')
