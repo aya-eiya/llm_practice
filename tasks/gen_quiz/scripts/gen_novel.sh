@@ -121,16 +121,44 @@ The output is a JSON formatted as
   \"body\": string
 }
 \`\`\`
-And the output JSON only."
+And the output JSON only.
+The body must be between 160 and 260 words.
+Mark every paragraph with a \"[:paragraph #No]\" lebel.
+Paragraph label must be the exact format, if it's paragraph No.1 then \"[:paragraph #1]\".
+"
 
   echo "${novel}" > $tmp_prompt_novel
   timeout 120 $run_llm_novel "$novel" \
   | tee $tmp_out_novel \
-  | tr -d '\n' \
+  | tr '\n' ' ' \
+  | sed -e 's/\s+/ /g' \
   | sed -e 's/^<body"\s:/"body":/p' \
   | sed -n -e 's/^.*\({.*}\).*$/\1/p' \
   | sed -e 's/,}$/}/g' \
-  | jq '{ "title": .title, "body": (.body| if (.|split(" ")|length|.<160 or .>260) then ("body word length error\n"|halt_error(1)) else . end) }' \
+  | jq '{
+      "title": .title,
+      "body": (
+        .body |
+        if (
+          . | test("\\[:paragraph #?\\d+\\]") | not
+        ) then (
+          "paragraph label not foud.\n" | halt_error(1)
+        )
+        else .
+        end |
+        gsub("\\[:paragraph #?\\d+\\]"; "\n\n") |
+        gsub("(^\\s+|\\s+$)"; "") |
+        if (
+          . | gsub("[^\\w]+"; " ") |
+          gsub("(^\\s+|\\s+$)"; "") |
+          split(" ") | length | .<160 or .>260
+        ) then (
+          "body word length error\n" | halt_error(1)
+        )
+        else .
+        end
+      )
+  }' \
   | jq -s "{\"event\": ${event} ,\"date\": \"${fulldate}\"} * .[0]"
   # TODO: sanitize body not to include the name in real
 }
@@ -191,11 +219,8 @@ type Dialog = {
 }
 
 gen_conversation() {
-  local cnt=0
-  local input=('')
-  local in; while read -r in; do input+=("${in}" '\n') ;done
   while true; do
-    try_gen_conversation "${input[*]}" 2> /dev/null && break
+    try_gen_conversation "${1}" 2> /dev/null && break
     cnt=$((cnt + 1))
     if [ $cnt -eq 5 ]; then return 1; fi
   done
@@ -453,9 +478,7 @@ if [[ " ${steps[@]} " =~ "novel" ]]; then
 fi
 
 if [[ " ${steps[@]} " =~ "conversation" ]]; then
-  cat $tmp_json_novel \
-    | jq -r '.body' \
-    | gen_conversation > $tmp_json_conversation
+  gen_conversation "$(jq -r '.body' $tmp_json_novel)" > $tmp_json_conversation
   if [ $? -ne 0 ]; then
     make_prompt_log_md > $OUTPUTS_DIR/${fulldate}.prompt.md
     echo "Failed to generate conversation." >&2
