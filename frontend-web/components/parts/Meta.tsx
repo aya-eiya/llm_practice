@@ -1,4 +1,3 @@
-import { PageProps } from "$fresh/server.ts";
 import example from "../../data/example.ts";
 import { getLevelTitle } from "../../domains/level.ts";
 import { QuizData } from "../../domains/quiz.ts";
