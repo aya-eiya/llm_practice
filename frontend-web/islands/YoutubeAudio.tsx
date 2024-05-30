@@ -32,6 +32,8 @@ declare global {
   }
 }
 
+let seekTapTimeout: ReturnType<typeof setTimeout> | undefined = undefined;
+
 export default function YoutubeAudio({ data }: { data: AudioData }) {
   const { date, title, url } = data as AudioDataWithEmbedUrl;
   const { id } = data as AudioDataWithId;
@@ -42,6 +44,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
   const state = useSignal<StateValue>(STATE.UNSTARTED);
   const currentTime = useSignal(0);
   const durationTime = useSignal(0);
+  const currentVolume = useSignal(0);
   const beforeMuteVolume = useSignal(0);
   const events = useMemo(() => ({
     onError: (e: never) => {
@@ -127,6 +130,12 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
     };
   }, [player, currentTime.value, state.value]);
 
+  useEffect(() => {
+    currentVolume.value = beforeMuteVolume.value === 0 && player.value
+      ? player.value.getVolume() / 100
+      : 0;
+  }, [player, beforeMuteVolume.value, currentVolume.value]);
+
   if (url) {
     return (
       <>
@@ -158,14 +167,23 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
               name={"seek"}
               value={currentTime.value / durationTime.value * 100}
               className="w-full h-2 bg-transparent border-2 rounded-lg appearance-none cursor-pointer"
-              onDrag={(e) => {
-                e.preventDefault();
-              }}
-              onChange={(e) => {
+              onMouseDown={() => {
                 if (player.value) {
+                  seekTapTimeout = setTimeout(() => {
+                    player.value.pauseVideo();
+                  }, 100);
+                }
+              }}
+              onMouseUp={(e) => {
+                const value = durationTime.value / 100 *
+                  Number(e.currentTarget.value);
+                if (player.value) {
+                  clearTimeout(seekTapTimeout);
+                  player.value.pauseVideo();
                   player.value.seekTo(
-                    durationTime.value / 100 * Number(e.currentTarget.value),
+                    value,
                   );
+                  player.value.playVideo();
                 }
               }}
             />
@@ -278,9 +296,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
                   min={0}
                   max={1}
                   step={0.01}
-                  value={beforeMuteVolume.value === 0 && player.value
-                    ? player.value.getVolume() / 100
-                    : 0}
+                  value={currentVolume.value}
                   onChange={(e) => {
                     player.value.setVolume(Number(e.currentTarget.value) * 100);
                   }}
