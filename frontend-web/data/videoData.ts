@@ -59,6 +59,11 @@ const videoData = {
     "id": "qAQdDbeW-jU",
     "title": "[2024-05-29][MyniQ] Swan Magic [English Listening Quiz]",
   },
+  "2024-05-30": {
+    "id": "DfJF4pj8nbw",
+    "title":
+      "[2024-05-30][MyniQ] The Chicago Firecracker [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
