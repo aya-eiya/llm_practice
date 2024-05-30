@@ -8,8 +8,6 @@ import { getLevelEmoji, paramsLevelValues } from "../domains/level.ts";
 import { getLevelTag } from "../domains/level.ts";
 import { getLevelTitle } from "../domains/level.ts";
 import { getLevelDetails } from "../domains/level.ts";
-import OnTranslatedEvent from "../islands/OnTranslatedEvent.tsx";
-import { useSignal } from "@preact/signals";
 
 const descriptions = {
   system:
@@ -69,7 +67,6 @@ const CharacterCard = (
 
 export default function TopLayout() {
   const last7dates = [...dates].reverse().slice(0, 7);
-  const translateSignal = useSignal<number>(0);
   return (
     <>
       <Header />
