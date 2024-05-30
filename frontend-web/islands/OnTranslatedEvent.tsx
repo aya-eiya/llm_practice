@@ -6,7 +6,7 @@ export default function OnTranslatedEvent(
   { onReload, url }: { onReload?: Signal<number>; url: URL },
 ) {
   useEffect(() => {
-    const pageReloadObserver = new MutationObserver((e) => {
+    const pageReloadObserver = new MutationObserver(() => {
       if (onReload) {
         onReload.value = new Date().getTime();
       } else {
