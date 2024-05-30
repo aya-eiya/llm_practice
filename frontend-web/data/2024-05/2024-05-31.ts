@@ -1,111 +1,109 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "Le Corbusier's Villa Savoye Completed",
+    "event": "The premiere of Star Wars: The Phantom Menace",
     "details":
-      "May 31st, 1931 marks the completion of Villa Savoye, a pioneering work in modernist architecture designed by Le Corbusier and built on the outskirts of Paris. The building's innovative design features a pilotis foundation, horizontal lines, and an emphasis on functional simplicity.",
+      "The film was released in 1999 and marked the beginning of the Star Wars prequel trilogy.",
   },
   "date": "2024-05-31",
-  "title": "The Echoes of Villa Savoye",
+  "title": "The Last Refuge",
   "body":
-    "As Dr. Elara stepped out of her time-traveling vessel, the once-modern lines of Villa Savoye blurred into a haze of nostalgia and curiosity. The pilotis foundation, now cracked and worn, seemed to whisper secrets of the past. She wandered through the abandoned halls, her footsteps echoing off the cold marble walls.The air was thick with the scent of forgotten memories, each step revealing whispers of conversations long since silenced. Elara's eyes adjusted to the dim light, and she saw it: a holographic projection of Le Corbusier himself, standing before the villa's iconic columns.He spoke in hushed tones, his words dissolving into the wind like sandcastles on a beach. Yet, Elara felt an inexplicable connection, as if the architect's vision had transcended time and space to reach her. She listened intently, absorbing every whispered phrase, every architectural detail that had shaped this enigmatic masterpiece.As she left Villa Savoye behind, Elara knew that the echoes of its innovative design would linger within her, inspiring new creations that would forever bridge the chasm between past and future.",
-  "word count": 174,
+    "The world as we knew it was gone. The once blue skies were now a permanent grey, and the air reeked of smoke and ash. I trudged through the desolate wasteland, my boots kicking up clouds of dust with each step. My mind wandered back to the days before the Great Upheaval, when life was simple and the sun shone bright.  \n\n As I walked, I stumbled upon a small cluster of buildings that had managed to withstand the devastation. It was an old school, its walls cracked but still standing. I cautiously made my way inside, my heart racing with every creak of the old wooden floorboards.  \n\n The silence was oppressive, broken only by the sound of my own ragged breathing. I moved from room to room, taking in the remnants of a life long forgotten. Books lay scattered on the floor, their pages torn and yellowed. Desks were overturned, chairs shattered. It was as if time had stood still since that fateful day.  \n\n And yet, amidst the ruins, I felt a glimmer of hope. This old school could be our last refuge, a place to start anew. The thought sent a spark of determination coursing through my veins. I would rebuild, I would thrive in this desolate world.",
+  "word count": 209,
   "dialog": [
     {
       "Billy":
-        "I loved how Dr. Elara stepped back in time and explored Villa Savoye! It's like she entered a whole new world.",
+        "I loved how the novel explored the themes of hope and resilience in the face of adversity. It really made me think about what I would do if I were in their shoes.",
     },
     {
       "Kerry":
-        "Yeah, me too! And can you believe Le Corbusier's hologram was still there? That's some crazy tech right there!",
+        "Totally agree with Billy! The way the author described the desolate wasteland was so vivid, it felt like I was right there with them",
     },
     {
       "Meg":
-        "I'm so impressed by Dr. Elara's passion for architecture and history. She's like a real-life Indiana Jones!",
+        "I loved how the novel highlighted the importance of community and human connection. It made me realize that even in the darkest times, we can find strength in each other",
     },
     {
       "Lui":
-        "Actually, I think the novel highlights the importance of preserving our cultural heritage. We must learn from the past to build a better future.",
+        "As an educator, I appreciated how the novel showed the power of education and knowledge in helping people rebuild and move forward",
     },
     {
       "Billy":
-        "That's so true, Mr. Lui! And I loved how the novel showed how Villa Savoye's design has inspired new creations. It's like the architect's vision kept evolving even after he was gone.",
+        "I also loved how the characters had to rely on their own resourcefulness and ingenuity to survive. It was like a big puzzle they had to figure out together",
     },
     {
       "Kerry":
-        "Yeah, and it made me think about how our own actions can have a ripple effect on the world. We might not be architects or scientists, but we can still make a difference in our own way.",
+        "Yeah, and I loved how the novel didn't shy away from the harsh realities of the world. It made me realize that even in the worst-case scenarios, there's always hope for a better tomorrow",
     },
     {
       "Meg":
-        "I agree! The novel showed that even seemingly small actions can add up to something big. It's all about perspective and being open to new ideas.",
+        "I think what really struck me was how the characters found beauty in the smallest things - like the old school building or the way the sunlight filtered through the dust clouds",
     },
     {
       "Lui":
-        "Well said, Meg. And I think that's what makes this novel so special – it encourages us to look beyond the surface and find connections between different eras and cultures.",
+        "Ah, yes! The symbolism of those small moments was so powerful. It reminded me that even in the darkest times, we can find moments of beauty and joy if we look for them",
     },
   ],
   "quiz": [
     {
-      "question":
-        "What was Dr. Elara stepping out of when she arrived at Villa Savoye?",
+      "question": "What was the state of the world before the Great Upheaval?",
       "options": [
-        "A time-traveling vessel",
-        "A futuristic car",
-        "A historical book",
-        "An architectural blueprint",
-        "A holographic projection",
+        "A dark and desolate wasteland",
+        "A peaceful and prosperous society",
+        "A place with simple life but no sun",
+        "The once blue skies were now a permanent grey",
+        "None of the above",
       ],
-      "answer": 0,
+      "answer": 3,
     },
     {
-      "question": "What was Le Corbusier doing when Dr. Elara saw him?",
+      "question": "What did the narrator find in the old school building?",
       "options": [
-        "Standing before the villa's iconic columns",
-        "Exploring the abandoned halls",
-        "Discussing with Billy and Kerry",
-        "Designing a new building",
-        "Writing in his journal",
+        "Books, desks, and chairs all intact",
+        "A pile of rubble with no sign of life",
+        "Scattered books and broken furniture",
+        "Nothing at all",
+        "The answer is not mentioned in the text",
       ],
-      "answer": 0,
+      "answer": 2,
     },
     {
-      "question":
-        "What did Dr. Elara learn from her experience at Villa Savoye?",
+      "question": "What was Billy's observation about the novel?",
       "options": [
-        "How to build a better future",
-        "The importance of preserving cultural heritage",
-        "The secrets of the past",
-        "New architectural techniques",
-        "How to travel through time",
+        "It was too long and boring",
+        "I loved how it explored themes of hope and resilience",
+        "It was okay but nothing special",
+        "The characters were not well developed",
+        "I didn't finish reading it",
       ],
       "answer": 1,
     },
     {
-      "question": "What did Billy say he loved about Dr. Elara's experience?",
+      "question": "What did the narrator think about the old school building?",
       "options": [
-        "Stepping back in time and exploring Villa Savoye",
-        "Meeting Le Corbusier's hologram",
-        "Learning about architectural design",
-        "Discovering new cultural heritage",
-        "Traveling through time",
+        "It was a worthless ruin",
+        "It could be their last refuge",
+        "It was just a pile of rubble",
+        "They shouldn't have gone inside",
+        "The answer is not mentioned in the dialogue",
       ],
-      "answer": 0,
+      "answer": 1,
     },
     {
-      "question": "What did the novel encourage readers to do?",
+      "question": "What did Kerry like about the novel?",
       "options": [
-        "To look beyond the surface and find connections between different eras and cultures",
-        "To focus on the present moment",
-        "To travel through time",
-        "To learn about architectural design",
-        "To preserve cultural heritage",
+        "How it described the characters' emotions",
+        "The way the author wrote the setting",
+        "The vivid description of the desolate wasteland",
+        "It was too predictable and boring",
+        "Nothing in particular",
       ],
-      "answer": 0,
+      "answer": 2,
     },
   ],
   "params": {
-    "theme": "Architecture",
-    "flavor": "Science Fiction",
+    "theme": "Film",
+    "flavor": "Post-Apocalyptic",
     "models": {
       "main": "llama3",
       "novel": "llama3",

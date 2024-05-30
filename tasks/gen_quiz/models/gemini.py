@@ -8,7 +8,7 @@ genai.configure(api_key=API_KEY)
 
 prompt = sys.argv.pop(1)
 
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-1.5-pro-latest')
 response = model.generate_content([prompt])
 
 print(response.text)
