@@ -1,5 +1,6 @@
 import json
 import os
+import re
 
 titles = ['Mr.', 'Mrs.', 'Ms.', 'Dr.', 'Prof.', 'Rev.', 'Sr.', 'Jr.', 'St.']
 
@@ -12,6 +13,10 @@ def _segment(paragraph):
     i = 0
     while i < len(paragraph):
         char = paragraph[i]
+
+        if char == '\n':
+            i += 1
+            continue
 
         # Handle the start or end of quotes
         if (char == '\'' or char == '\"') and (i == 0 or paragraph[i - 1] in [' ', '.', ',']):
@@ -39,7 +44,7 @@ def _segment(paragraph):
                 continue
 
             # Check if next character is end of string or a space followed by an uppercase letter (indicative of a new sentence)
-            if i == len(paragraph) - 1 or (paragraph[i + 1] == ' ' and (i + 2 < len(paragraph) and paragraph[i + 2].isupper())):
+            if i == len(paragraph) - 1 or (re.match(r'\s',paragraph[i + 1]) and (i + 2 < len(paragraph) and paragraph[i + 2].isupper())):
                 segments.append(current_sentence.strip())
                 current_sentence = ''
 
