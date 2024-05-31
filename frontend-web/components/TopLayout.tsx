@@ -1,7 +1,5 @@
-import { Partial } from "$fresh/runtime.ts";
 import Footer from "./parts/Footer.tsx";
 import Header from "./parts/Header.tsx";
-import SideNavi from "./parts/SideNavi.tsx";
 import data, { dates } from "../data/index.ts";
 import { isVideoDate } from "../data/videoData.ts";
 import { getLevelEmoji, paramsLevelValues } from "../domains/level.ts";
