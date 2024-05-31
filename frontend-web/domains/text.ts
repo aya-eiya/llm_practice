@@ -59,7 +59,7 @@ export function segment(paragraph: string): string[] {
       // Check if next character is end of string or a space followed by an uppercase letter (indicative of a new sentence)
       if (
         i === paragraph.length - 1 ||
-        (paragraph[i + 1] === " " && /[A-Z]/.test(paragraph[i + 2]))
+        (paragraph[i + 1].match(/\s/) && /[A-Z]/.test(paragraph[i + 2]))
       ) {
         segments.push(currentSentence.trim());
         currentSentence = "";
