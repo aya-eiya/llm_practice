@@ -301,49 +301,60 @@ export default function Quiz(
           </div>
           <div className={"w-0 h-0"} id={playerId} />
           <div className={"md:pr-12"}>
-            {segment(data.body).map(
-              (
-                line,
-                index,
-              ) => (
-                <>
-                  {index === 0 &&
-                    (
-                      <div
-                        className={"flex flex-col w-full mb-4 sm:w-56 md:w-80 sm:ml-4 sm:float-right"}
-                      >
-                        {audio && (
-                          <div
-                            className={"rounded-t-xl w-full bg-slate-800 h-8"}
-                          />
-                        )}
+            {data.body.split("\n\n").map(
+              (body, index) => {
+                return (
+                  <>
+                    {index === 0 &&
+                      (
                         <div
-                          className={"w-full h-auto sm:w-56 sm:h-auto md:w-80 md:h-auto bg-slate-800 bg-cover bg-center" +
-                            (audio
-                              ? " aspect-video"
-                              : " rounded-xl aspect-[17/13]")}
-                          style={{
-                            backgroundImage:
-                              `url('/bookshelf?date=${data.date}&img=webp')`,
-                          }}
+                          className={"flex flex-col w-full mb-4 sm:w-56 md:w-80 sm:ml-4 sm:float-right"}
                         >
-                        </div>
-                        {audio && (
-                          <div className={"sm:-mt-6"}>
-                            <Audio data={audio} />
+                          {audio && (
+                            <div
+                              className={"rounded-t-xl w-full bg-slate-800 h-8"}
+                            />
+                          )}
+                          <div
+                            className={"w-full h-auto sm:w-56 sm:h-auto md:w-80 md:h-auto bg-slate-800 bg-cover bg-center" +
+                              (audio
+                                ? " aspect-video"
+                                : " rounded-xl aspect-[17/13]")}
+                            style={{
+                              backgroundImage:
+                                `url('/bookshelf?date=${data.date}&img=webp')`,
+                            }}
+                          >
                           </div>
-                        )}
-                      </div>
-                    )}
-                  <p
-                    key={index}
-                    className={"font-mono whitespace-pre-wrap mb-2"}
-                  >
-                    {index === 0 ? " " : ""}
-                    {line.replaceAll(/(\s|&nbsp;)+/g, " ")}
-                  </p>
-                </>
-              ),
+                          {audio && (
+                            <div className={"sm:-mt-6"}>
+                              <Audio data={audio} />
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    <p
+                      key={`${data.date}-${index}`}
+                      className={"mb-4 font-mono whitespace-pre-wrap"}
+                    >
+                      {segment(body).map(
+                        (
+                          line,
+                          lineIndex,
+                        ) => (
+                          <span
+                            key={`${data.date}-${index}-${lineIndex}`}
+                            className={"font-mono whitespace-pre-wrap"}
+                          >
+                            {" "}
+                            {line.replaceAll(/(\s|&nbsp;)+/g, " ")}
+                          </span>
+                        ),
+                      )}
+                    </p>
+                  </>
+                );
+              },
             )}
           </div>
           <p className={"notranslate px-8 text-right"}>
