@@ -18,7 +18,7 @@ export default function Header({ square }: { square?: boolean }) {
                   className={"aspect-square rounded-full border-8 bg-slate-300 border-slate-200 w-3/5 min-w-48 max-w-80 absolute"}
                 />
                 <img
-                  src={"/img/logo.sq.png.webp"}
+                  src={"/img/logo.sq.min.svg"}
                   className={"w-full relative"}
                 />
               </a>
@@ -47,10 +47,10 @@ export default function Header({ square }: { square?: boolean }) {
                 title={"MyniQ [ /ˈmaɪ-nɪk/ ]"}
               >
                 <div
-                  className={"aspect-square rounded-full border-8 md:border-4 w-24 md:w-1/3 bg-slate-300 border-slate-200 absolute left-0"}
+                  className={"aspect-square rounded-full border-8 md:border-4 w-24 md:w-1/2 bg-slate-300 border-slate-200 absolute left-0"}
                 />
                 <img
-                  src={"/img/logo.banner.png.webp"}
+                  src={"/img/logo.banner.min.svg"}
                   className={"h-24 md:h-auto relative"}
                 />
               </a>
