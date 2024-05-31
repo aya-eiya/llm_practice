@@ -337,10 +337,10 @@ export default function Quiz(
                     )}
                   <p
                     key={index}
-                    className={"mb-2 font-mono whitespace-pre-wrap"}
+                    className={"font-mono whitespace-pre-wrap mb-2"}
                   >
-                    {(index === 0 ? " " : "") +
-                      line.replaceAll(/(\s|&nbsp;)+/g, " ")}
+                    {index === 0 ? " " : ""}
+                    {line.replaceAll(/(\s|&nbsp;)+/g, " ")}
                   </p>
                 </>
               ),
