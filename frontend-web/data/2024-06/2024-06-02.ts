@@ -1,129 +1,123 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": 'Alvin Ailey American Dance Theater\'s Premiere of "Revelations"',
+    "event": "First Aerial Photograph Taken in the United States",
     "details":
-      'On June 2nd, 1960, Alvin Ailey American Dance Theater premiered "Revelations" at the 92nd Street Y in New York City. This three-part masterpiece, rooted in African American cultural heritage and exploring themes of faith, hope, and perseverance, quickly became one of the most acclaimed and widely seen modern dance works of the 20th century, solidifying Ailey\'s place as a pivotal figure in dance history.',
+      'On June 2, 1860, James Wallace Black took the first successful aerial photograph in the United States.  He captured a picture of Boston, Massachusetts from a hot air balloon floating at an altitude of 1,200 feet. The photograph, titled "Boston, as the Eagle and the Wild Goose See It," is a remarkable achievement in early aerial photography.',
   },
   "date": "2024-06-02",
-  "title": "The Guardian of Revelations",
+  "title": "Aerial Affection",
   "body":
-    "In the mystical realm of Aethereia, where the moon dipped into the horizon, a young apprentice named Lyra stumbled upon an ancient tome. The cover, adorned with strange symbols, seemed to whisper secrets only meant for her ears.\n\nAs she delved deeper into the book's mysteries, Lyra discovered that the tome held the power to unlock the gates of Revelations, a realm where ancient wisdom and forgotten knowledge awaited. But a dark force, known as the Shadow Weaver, sought to claim the tome's power for its own nefarious purposes.\n\nWith courage in her heart and determination in her soul, Lyra embarked on a perilous journey to safeguard the tome and thwart the Shadow Weaver's plans. Along the way, she encountered enigmatic allies and overcame treacherous obstacles, ultimately leading her to the threshold of Revelations itself.\n\nIn this mystical realm, Lyra discovered hidden truths about the universe and herself, unlocking a new path forward as a guardian of revelations.",
-  "word count": 158,
+    "As the hot air balloon soared above Boston, Emily gazed out at the breathtaking view. It was June 2, 1860, and James Wallace Black had just taken the first successful aerial photograph in the United States. She couldn't help but feel a sense of excitement and wonder as she watched the city unfold before her.  \n\n Emily had always been fascinated by the sky and the way it seemed to stretch on forever. As an amateur photographer herself, she was thrilled to see Black's achievement up close. The two of them chatted excitedly about the possibilities of aerial photography and the stories they could tell through their work.  \n\n As the sun began to set, Emily knew it was time to return to reality. She thanked Black for showing her his incredible photograph and promised to keep in touch. Little did she know that this chance encounter would lead to a lifelong passion for capturing life's moments from above.",
+  "word count": 157,
   "dialog": [
     {
-      "Meg":
-        "Oh my goodness, that was incredible! I can't believe Lyra found a whole other realm hidden within a book. Imagine the stories it holds!",
-    },
-    {
       "Kerry":
-        "Yeah, that Revelations place sounds pretty epic. Like a superhero headquarters, but with ancient knowledge instead of gadgets.",
+        "Whoa, imagine taking a photo from a hot air balloon! That James Black guy must have been crazy brave!",
     },
     {
       "Billy":
-        "I wonder what kind of knowledge? Was it scientific formulas, historical records, or maybe even mathematical theorems lost to time?",
-    },
-    {
-      "Lui":
-        "A fascinating thought, Billy.  The pursuit of knowledge, especially lost knowledge, is a powerful motivator.  It's what drives historians and archaeologists alike.",
-    },
-    {
-      "Kerry":
-        "But what about the Shadow Weaver?  He sounded like a classic villain, trying to steal the magic for himself.",
+        "He was a pioneer!  I wonder what kind of camera he used back then.  It couldn't have been easy taking a clear picture while floating in the air.",
     },
     {
       "Meg":
-        "He did seem pretty menacing. I wonder if he represents ignorance trying to extinguish enlightenment?",
+        "I know! It's like something out of a Jules Verne novel!  Emily sounds cool too. She reminds me of a character I'm writing about, always dreaming of adventures.",
     },
     {
       "Lui":
-        "An interesting interpretation, Meg.  The struggle between light and darkness, knowledge and ignorance, is a recurring theme throughout literature and history.",
+        "This story highlights a pivotal moment in history. Photography was still a relatively new invention in 1860.  Black's aerial photograph wasn't just a picture; it was a glimpse into the future of image-making.",
+    },
+    {
+      "Kerry":
+        "Think people back then even knew what to make of it? A photo from the sky? They probably thought it was magic!",
+    },
+    {
+      "Meg":
+        "That's what I love about photography.  It's like capturing a little piece of magic, a moment frozen in time.  I bet Emily felt that too.",
     },
     {
       "Billy":
-        "I wonder if the symbols on the book had anything to do with Lyra's ability to unlock the realm.  Maybe they were some kind of ancient code or language.",
-    },
-    {
-      "Kerry":
-        "Maybe Lyra will learn to decipher them and unlock even more secrets in the next book!",
-    },
-    {
-      "Meg":
-        "Oh, I hope so! I can't wait to see what adventures await Lyra in Revelations.",
+        "Imagine what it must have been like to see those photos for the first time.  People had never seen cities and landscapes from that perspective before. It must have blown their minds!",
     },
     {
       "Lui":
-        "It certainly leaves one eager for the next chapter.  A well-written story can ignite our imaginations and transport us to other worlds.",
+        "Absolutely, Billy. These images provided a completely new understanding of the world around us.  It's fascinating how technology can alter our perceptions.",
+    },
+    {
+      "Kerry":
+        "Makes you wonder what cool stuff we'll be able to do with pictures in the future. Maybe we'll even have holographic photos!",
+    },
+    {
+      "Meg": "Or maybe we'll have cameras that can capture our dreams!",
     },
   ],
   "quiz": [
     {
       "question":
-        "What is the name of the mystical realm where the story takes place?",
+        "What was significant about James Wallace Black's photograph?",
       "options": [
-        "Eldoria",
-        "Atheria",
-        "Aethereia",
-        "Ethereia",
-        "Arthia",
+        "It was the first photograph taken in Boston.",
+        "It was the first aerial photograph taken in the United States.",
+        "It was the first photograph of a hot air balloon.",
+        "It was the first photograph taken in color.",
+        "It was the first photograph published in a newspaper.",
+      ],
+      "answer": 1,
+    },
+    {
+      "question": "How did Emily feel about seeing Black's photograph?",
+      "options": [
+        "Confused and skeptical",
+        "Amused and indifferent",
+        "Excited and inspired",
+        "Disappointed and bored",
+        "Envious and competitive",
       ],
       "answer": 2,
     },
     {
-      "question": "What is the name of the ancient tome Lyra discovers?",
+      "question": "What was Emily's hobby?",
       "options": [
-        "The Book of Shadows",
-        "The Grimoire of Secrets",
-        "The Tome of Revelations",
-        "The Text of Aethereia",
-        "The story doesn't say",
-      ],
-      "answer": 4,
-    },
-    {
-      "question": "Who is the antagonist seeking to claim the tome's power?",
-      "options": [
-        "The Night Weaver",
-        "The Dark Lord",
-        "The Shadow Weaver",
-        "The Shadow King",
-        "The Dream Eater",
+        "Painting",
+        "Writing",
+        "Photography",
+        "Hot air ballooning",
+        "Collecting antique cameras",
       ],
       "answer": 2,
     },
     {
       "question":
-        "What did Lui say is a recurring theme throughout literature?",
+        "According to Lui, what was the historical significance of early aerial photography?",
       "options": [
-        "Good vs. Evil",
-        "Love and Loss",
-        "The Power of Friendship",
-        "The Pursuit of Happiness",
-        "Light and Darkness",
+        "It revolutionized warfare.",
+        "It provided a new perspective on the world.",
+        "It made air travel safer.",
+        "It led to the invention of the airplane.",
+        "It helped to map unexplored territories.",
       ],
-      "answer": 4,
+      "answer": 1,
     },
     {
-      "question":
-        "What do the friends hope Lyra will be able to do in the future?",
+      "question": "What did Kerry speculate about the future of photography?",
       "options": [
-        "Defeat the Shadow Weaver",
-        "Find true love",
-        "Return to the ordinary world",
-        "Decipher the symbols on the book",
-        "Become the ruler of Revelations",
+        "Cameras would become smaller and more portable.",
+        "Photographs would be able to capture sound.",
+        "Photos could be developed instantly.",
+        "We might have holographic photos.",
+        "Cameras would be able to predict the future.",
       ],
       "answer": 3,
     },
   ],
   "params": {
-    "theme": "Dance",
-    "flavor": "Fantasy",
+    "theme": "Photography",
+    "flavor": "Historical Romance",
     "models": {
       "main": "gemini",
       "novel": "llama3",
     },
-    "level": "Level_1",
+    "level": "Level_2",
   },
 };
 export default data;

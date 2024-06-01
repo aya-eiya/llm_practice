@@ -424,7 +424,7 @@ if [ "$date" = "" ]; then
 fi
 
 if [ "$level" = "" ]; then
-  level="Level_$(($(date -j -f "%Y-%m-%d" "$fulldate" "+%w") + 1))"
+  level="Level_$(($(date -j -f "%Y-%m-%d" "$fulldate" "+%w") + 2))"
 fi
 
 init_tmp
