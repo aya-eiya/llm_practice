@@ -364,10 +364,10 @@ export default function Quiz(
           <ul className={"px-4 mb-4"}>
             {data.dialog &&
               data.dialog.map((line, index) => (
-                <li key={index} className={"flex flex-row"}>
-                  <strong className={"block mr-2"}>
+                <li key={index} className={"flex flex-row mb-1"}>
+                  <span className={"block mr-2 font-bold"}>
                     {Object.keys(line)[0]}:
-                  </strong>
+                  </span>
                   <p>{Object.values(line)[0]}</p>
                 </li>
               ))}
@@ -379,21 +379,24 @@ export default function Quiz(
               <div key={qIdx} className={"mb-4 px-4"}>
                 <dl>
                   <dt>
-                    <h4>
+                    <h4 id={`quiz_${qIdx}`}>
                       <span className={"notranslate"}>
                         Question {qIdx + 1}.
                       </span>
-                      <p className={"px-4"}>
-                        <strong>{question.question}</strong>
+                      <p className={"px-4 font-bold text-lg"}>
+                        {question.question}
                       </p>
                     </h4>
                   </dt>
+                  <dd className={"mx-4 my-2 print:hidden"}>
+                    Tap or click from following options to select your answer.
+                  </dd>
                   <dd>
                     <ul>
                       {question.options.map((option, oIdx) => (
                         <li
                           key={oIdx}
-                          className={"mx-8 pl-1 " +
+                          className={"mx-8 pl-1 py-1 " +
                             ([
                               "marker:content-['A)']",
                               "marker:content-['B)']",
@@ -415,6 +418,9 @@ export default function Quiz(
                 </dl>
               </div>
             ))}
+          <div
+            className={"h-[50vh] print:hidden flex flex-col justify-end items-end"}
+          />
         </div>
         <div
           className={"w-full px-2 sm:px-8 sticky print:relative bottom-0 bg-slate-200 border-slate-500"}
@@ -425,7 +431,8 @@ export default function Quiz(
             {data.quiz && data.quiz
               .map((quiz, qIdx) => {
                 return (
-                  <div
+                  <a
+                    href={`#quiz_${qIdx}`}
                     key={`q${qIdx}`}
                     className={"w-1/6 h-8 border border-slate-500 items-center flex flex-row"}
                   >
@@ -475,7 +482,7 @@ export default function Quiz(
                         );
                       })}
                     </div>
-                  </div>
+                  </a>
                 );
               })
               .flat()}
