@@ -128,7 +128,7 @@ Paragraph label must be the exact format, if it's paragraph No.1 then \"[:paragr
 "
 
   echo "${novel}" > $tmp_prompt_novel
-  timeout 120 $run_llm_novel "$novel" \
+  $run_llm_novel "$novel" \
   | tee $tmp_out_novel \
   | tr '\n' ' ' \
   | sed -e 's/\s+/ /g' \
