@@ -396,7 +396,7 @@ export default function Quiz(
                       {question.options.map((option, oIdx) => (
                         <li
                           key={oIdx}
-                          className={"mx-8 pl-1 py-1 " +
+                          className={"ml-16 mr-4 pl-1 py-1 marker:font-mono " +
                             ([
                               "marker:content-['A)']",
                               "marker:content-['B)']",
@@ -407,7 +407,7 @@ export default function Quiz(
                         >
                           <label
                             htmlFor={`select-q${qIdx}-o${oIdx}`}
-                            className={"cursor-pointer"}
+                            className={"cursor-pointer border-b print:border-b-0 border-slate-800 inline-block"}
                           >
                             {option}
                           </label>
