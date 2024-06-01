@@ -1,126 +1,66 @@
 {
   "Level_1": {
     "Grammar": {
-      "Topic": "Basic Sentence Structure and Tenses & Continuous and Future Tenses",
       "Overview": "Understanding basic sentence structures and present/past tenses & Using continuous tenses and expressing the future",
       "SimpleDescription": "Learn how to make simple sentences, talk about now and before, and say what will happen later.",
-      "Detailed_Items": [
-        "Subject and verb",
-        "Affirmative, negative, and interrogative sentences",
-        "Present tense (habits, general facts)",
-        "Past tense (events in the past)",
-        "Present continuous tense",
-        "Past continuous tense",
-        "Future tense (will, be going to)"
-      ],
-      "Vocabulary": "Flesch-Kincaid: 0 to 3"
-    }
+      "Topic": "Basic Sentence Structure and Tenses & Continuous and Future Tenses"
+    },
+    "Vocabulary": "3th grade in school level. Very easy to read. Easily understood by an average 9-year-old student."
   },
   "Level_2": {
     "Grammar": {
-      "Topic": "Modals and Perfect Tenses & Comparatives and Adjectives/Adverbs",
       "Overview": "Understanding modals and perfect tenses & Using comparative forms and modifiers",
       "SimpleDescription": "Learn about words like \"can\" and \"must\" and \"may\" talk about things that finished and things that are still happening, and compare things.",
-      "Detailed_Items": [
-        "Modals (can, must, should, may, etc.)",
-        "Present perfect tense (experience, completion, continuation)",
-        "Adjectives and adverbs",
-        "Comparative and superlative forms",
-        "Rules and expressions for comparison"
-      ],
-      "Vocabulary": "Flesch-Kincaid: down to 6"
-    }
+      "Topic": "Modals and Perfect Tenses & Comparatives and Adjectives/Adverbs"
+    },
+    "Vocabulary": "6th grade in school level. Easy to read. Conversational English for consumers."
   },
   "Level_3": {
     "Grammar": {
-      "Topic": "Passive Voice and Relative Clauses & Conditionals and Participial Constructions",
       "Overview": "Using passive voice and relative clauses & Understanding conditionals and participial constructions",
       "SimpleDescription": "Learn how to talk about things that happened to something or someone else, join ideas together, and talk about things that might happen.",
-      "Detailed_Items": [
-        "Passive voice (be + past participle)",
-        "Relative clauses (who, which, that)",
-        "Conditionals (present, past)",
-        "Participial constructions (using present and past participles)"
-      ],
-      "Vocabulary": "Flesch-Kincaid: down to 11"
-    }
+      "Topic": "Passive Voice and Relative Clauses & Conditionals and Participial Constructions"
+    },
+    "Vocabulary": "7th grade in school level. Fairly easy to read."
   },
   "Level_4": {
     "Grammar": {
-      "Topic": "Gerunds and Infinitives & Reported Speech and Question Tags",
       "Overview": "Understanding and using gerunds and infinitives & Using reported speech and question tags",
       "SimpleDescription": "Learn about doing actions and talking about doing actions, how to tell someone else's words, and asking little questions at the end of a sentence.",
-      "Detailed_Items": [
-        "Gerunds (verb + ing)",
-        "Infinitives (to + verb)",
-        "Functions and usage differences",
-        "Direct and indirect speech",
-        "Reporting verbs",
-        "Question tags (confirmation and emphasis)"
-      ],
-      "Vocabulary": "Flesch-Kincaid: down to 12"
-    }
+      "Topic": "Gerunds and Infinitives & Reported Speech and Question Tags"
+    },
+    "Vocabulary": "9th grade in school level. Plain English. Easily understood by 13- to 15-year-old students."
   },
   "Level_5": {
     "Grammar": {
-      "Topic": "Phrasal Verbs and Idioms & Articles and Quantifiers",
       "Overview": "Understanding and using phrasal verbs and idiomatic expressions & Correct usage of articles and quantifiers",
       "SimpleDescription": "Learn about tricky action words and sayings, and how to talk about things when you know which thing you mean or how much of something.",
-      "Detailed_Items": [
-        "Common phrasal verbs",
-        "Separable and inseparable phrasal verbs",
-        "Everyday idioms and their meanings",
-        "Definite and indefinite articles (the, a, an)",
-        "Zero article",
-        "Quantifiers (some, any, many, much, few, little)"
-      ],
-      "Vocabulary": "Flesch-Kincaid: down to 13"
-    }
+      "Topic": "Phrasal Verbs and Idioms & Articles and Quantifiers"
+    },
+    "Vocabulary": "12th grade in school level. Fairly difficult to read."
   },
   "Level_6": {
     "Grammar": {
-      "Topic": "Noun Clauses and Adjective Clauses & Conditionals Advanced",
       "Overview": "Using noun clauses and adjective clauses & Advanced usage of conditional sentences",
       "SimpleDescription": "Learn how to talk about things that might happen and things that describe other things.",
-      "Detailed_Items": [
-        "Noun clauses (that, if/whether)",
-        "Adjective clauses (who, which, that)",
-        "Conditionals (advanced)"
-      ],
-      "Vocabulary": "Flesch-Kincaid: down to 14"
-    }
+      "Topic": "Noun Clauses and Adjective Clauses & Conditionals Advanced"
+    },
+    "Vocabulary": "College level. Difficult to read for ESL learner."
   },
   "Level_7": {
     "Grammar": {
-      "Topic": "Advanced Sentence Structures & Review and Application",
       "Overview": "Mastering complex sentence structures & Reviewing and applying all grammar concepts",
       "SimpleDescription": "Learn how to make really complicated sentences, check everything you learned, and practice using it by writing and talking.",
-      "Detailed_Items": [
-        "Inversion in sentences",
-        "Ellipsis and substitution",
-        "Nominalization",
-        "Comprehensive review of major topics",
-        "Application through writing and speaking tasks",
-        "Error analysis and correction"
-      ],
-      "Vocabulary": "Flesch-Kincaid: down to 15"
-    }
+      "Topic": "Advanced Sentence Structures & Review and Application"
+    },
+    "Vocabulary": "College graduate level. Very difficult to read for ESL learner. Best understood by university graduates."
   },
   "Level_8": {
     "Grammar": {
-      "Topic": "Advanced Sentence Structures & Review and Application",
       "Overview": "Mastering complex sentence structures & Reviewing and applying all grammar concepts",
       "SimpleDescription": "Learn how to make really complicated sentences, check everything you learned, and practice using it by writing and talking.",
-      "Detailed_Items": [
-        "Inversion in sentences",
-        "Ellipsis and substitution",
-        "Nominalization",
-        "Comprehensive review of major topics",
-        "Application through writing and speaking tasks",
-        "Error analysis and correction"
-      ],
-      "Vocabulary": "Flesch-Kincaid: down to 16"
-    }
+      "Topic": "Advanced Sentence Structures & Review and Application"
+    },
+    "Vocabulary": "Literary profession level. May use technical or academic terminology."
   }
 }
-
