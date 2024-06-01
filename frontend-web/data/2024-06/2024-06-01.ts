@@ -1,111 +1,109 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "Signing of the Magna Carta",
+    "event": "Signing of the Morrill Tariff",
     "details":
-      "On June 1, 1215, King John of England was forced to sign the Magna Carta, a document that established certain rights and liberties for the nobility and common people, limiting the power of the monarch. This event is considered one of the most important in English history.",
+      "On June 1, 1861, President Abraham Lincoln signed the Morrill Tariff Act, a significant milestone in American education history. The act imposed a protective tariff on imported goods to support domestic industries and provided funding for land-grant colleges, which would go on to play a crucial role in shaping the country's higher education system.",
   },
   "date": "2024-06-01",
-  "title": "The Last Charter",
+  "title": "The Turning Point",
   "body":
-    "In the year 2254, humanity had finally reached a new era of peace and cooperation. The signing of the Galactic Magna Carta had established a unified government and protected the rights of all sentient beings across the galaxy. But as with any great achievement, there were those who sought to exploit its power for their own gain. A group of rogue corporations, led by the powerful Omicron Industries, began secretly manipulating the charter to further their own interests. \n\n It was up to Captain Orion Blackwood and his crew on the spaceship Nova Spire to uncover the truth behind the corporations' sinister plans. With their advanced technology and quick thinking, they managed to outwit the corporations at every turn. But as the stakes grew higher, Blackwood began to realize that the fate of the galaxy hung precariously in the balance. \n\n In a desperate bid to stop Omicron Industries, Blackwood and his crew launched a daring attack on their headquarters. The battle was fierce and intense, but in the end, justice was served. The Galactic Magna Carta was preserved, and the galaxy was forever changed.",
-  "word count": 183,
+    "As the sun set over the fields of Virginia, the sound of hammering on metal grew louder. It was June 1861 and the Morrill Tariff Act had just been signed into law by President Abraham Lincoln. For Emily, a young seamstress from a small town, this event marked a turning point in her life.  \n\n Emily's family had always struggled to make ends meet, but with the new tariff laws, they would finally have access to the resources they needed to build a better future. She envisioned a world where she could open her own tailor shop and provide for her community. But as she looked out at the fields, she knew that there was more to life than just making money.  \n\n The next day, Emily walked into town, determined to make a change. She approached the local merchant, Mr. Johnson, with an idea: to use the new tariffs to her advantage and start a small industry in her town. Mr. Johnson saw the potential and agreed to support her venture. As the days turned into weeks, Emily's tailor shop began to flourish, bringing hope and prosperity to her community. It was a turning point not just for her, but for all those around her.",
+  "word count": 204,
   "dialog": [
     {
       "Billy":
-        "I loved how the author wove together science, history, and adventure! It felt like a true space opera.",
+        "I loved how Emily's passion for her tailor shop brought hope to her community. It's so inspiring!",
     },
     {
       "Kerry":
-        "Totally agree, Billy! The way Captain Orion Blackwood outsmarted Omicron Industries was so cool. I want to be just like him when I grow up.",
+        "Yeah, and I liked how Mr. Johnson supported her venture even when it seemed like a risk. That shows you don't have to be a genius to make a difference.",
     },
     {
       "Meg":
-        "I loved Meg's imagination and creativity! She really brought the characters to life for me.",
+        "I agree with Billy, Emily's story really made me think about the power of small actions. It's not just about making money, but also about creating positive change.",
     },
     {
       "Lui":
-        "As a history teacher, I appreciated how the novel highlighted the importance of cooperation and unity in achieving a better future.",
+        "That's what I love about this novel - it shows how ordinary people can make a big impact when they work together and believe in themselves.",
     },
     {
       "Billy":
-        "Yeah, it was amazing to see how the Galactic Magna Carta brought peace and prosperity to the galaxy. I wish we could have something like that on Earth!",
+        "Exactly! And I think Emily's story is especially important right now, because we need more positivity and hope in the world.",
     },
     {
       "Kerry":
-        "Ha! Yeah, it would be awesome if our planet had a galactic government too. Can you imagine having alien friends over for pizza parties?",
+        "Absolutely. We should all strive to be like Emily - finding ways to use our talents and resources to make a difference.",
     },
     {
       "Meg":
-        "I think what I loved most was how the characters' passions and interests were woven throughout the story. It made me want to learn more about science and history.",
+        "I love how the novel highlights the importance of community and collaboration. It's not just about one person achieving their goals, but also about lifting others up along the way.",
     },
     {
       "Lui":
-        "That's the mark of a great book, Meg! It inspires you to explore new ideas and perspectives. And who knows, maybe one day we'll have our own Nova Spire exploring the cosmos!",
+        "Well said, Meg. And I think that's what makes this novel so special - it reminds us that we're all in this together, and that even small actions can have a big impact when we work together.",
     },
   ],
   "quiz": [
     {
-      "question":
-        "What was the outcome of Captain Orion Blackwood's attack on Omicron Industries' headquarters?",
+      "question": "What marked a turning point in Emily's life?",
       "options": [
-        "The battle was lost, and Omicron Industries gained power",
-        "Justice was served, and the Galactic Magna Carta was preserved",
-        "Captain Blackwood was killed in action",
-        "Omicron Industries' plans were foiled, but at a great cost",
-        "The outcome is unknown",
-      ],
-      "answer": 1,
-    },
-    {
-      "question": "What did Billy love about the author's writing style?",
-      "options": [
-        "How it combined science and history",
-        "The way it explored the characters' passions",
-        "The inclusion of alien species",
-        "The use of advanced technology",
-        "The sense of adventure",
+        "The signing of the Morrill Tariff Act",
+        "Emily opening her own tailor shop",
+        "Mr. Johnson supporting Emily's venture",
+        "The end of the Civil War",
+        "Emily's family moving to another town",
       ],
       "answer": 0,
     },
     {
-      "question": "What did Meg appreciate about the novel?",
+      "question": "What was Mr. Johnson's response to Emily's idea?",
       "options": [
-        "How it highlighted cooperation and unity",
-        "The way it brought characters to life",
-        "The inclusion of a galactic government",
-        "The exploration of science and history",
-        "The sense of adventure",
+        "He rejected her idea",
+        "He agreed to support her venture",
+        "He asked for more information before making a decision",
+        "He told her she wasn't qualified",
+        "He didn't care",
       ],
       "answer": 1,
     },
     {
-      "question":
-        "What did Lui, as a history teacher, appreciate about the novel?",
+      "question": "What did Emily's tailor shop bring to her community?",
       "options": [
-        "How it showed the importance of cooperation",
-        "The way it explored advanced technology",
-        "The inclusion of alien species",
-        "The sense of adventure",
-        "The use of science and history",
+        "Only money",
+        "Hope and prosperity",
+        "Conflict and division",
+        "No change at all",
+        "Nothing good or bad",
       ],
-      "answer": 0,
+      "answer": 1,
     },
     {
-      "question": "What did Kerry wish for after reading the novel?",
+      "question": "Who supported Emily in her venture?",
       "options": [
-        "A galactic government on Earth",
-        "Alien friends over for pizza parties",
-        "A Nova Spire spaceship to explore the cosmos",
-        "To be Captain Orion Blackwood when they grow up",
-        "To have a sense of adventure",
+        "Billy",
+        "Mr. Johnson",
+        "Kerry",
+        "Meg",
+        "Lui",
+      ],
+      "answer": 1,
+    },
+    {
+      "question": "What was the main theme of the novel?",
+      "options": [
+        "The importance of individual success",
+        "The power of small actions to create positive change",
+        "The struggle between different social classes",
+        "The impact of government policies on everyday people",
+        "Nothing special",
       ],
       "answer": 1,
     },
   ],
   "params": {
-    "theme": "Politics",
-    "flavor": "Science Fiction",
+    "theme": "Education",
+    "flavor": "Young Adult",
     "models": {
       "main": "llama3",
       "novel": "llama3",
