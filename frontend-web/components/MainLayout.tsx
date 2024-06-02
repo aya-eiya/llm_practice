@@ -20,7 +20,7 @@ export default function Main({ data }: { data: QuizData }) {
   return (
     <>
       <Header />
-      <div className={"flex flex-row relative"}>
+      <div className={"flex flex-row relative text-slate-800"}>
         <input
           type="checkbox"
           id="menuToggle"

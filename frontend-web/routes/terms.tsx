@@ -14,7 +14,7 @@ export default function Terms() {
         />
       </Head>
       <Header />
-      <div className={"bg-slate-50 pt-4 pb-24 text-slate-800"}>
+      <main className={"bg-slate-50 pt-4 pb-24 text-slate-800"}>
         <div
           className={"max-w-2xl mx-auto flex flex-col justify-center items-center"}
         >
@@ -98,7 +98,7 @@ export default function Terms() {
             </ol>
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </>
   );

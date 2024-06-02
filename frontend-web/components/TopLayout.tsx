@@ -6,6 +6,7 @@ import { getLevelEmoji, paramsLevelValues } from "../domains/level.ts";
 import { getLevelTag } from "../domains/level.ts";
 import { getLevelTitle } from "../domains/level.ts";
 import { getLevelDetails } from "../domains/level.ts";
+import Bookshelf from "../islands/Bookshelf.tsx";
 
 const descriptions = {
   system:
@@ -58,8 +59,8 @@ const CharacterCard = (
     <h3 className="text-2xl font-semibold mb-2">
       {name}
     </h3>
-    <h4 className="text-lg text-gray-700 mb-2">{role}</h4>
-    <p className="text-gray-600">{description}</p>
+    <h4 className="text-lg mb-2">{role}</h4>
+    <p className="text-slate-600">{description}</p>
   </div>
 );
 
@@ -72,41 +73,23 @@ export default function TopLayout() {
         className={"flex flex-col bg-slate-100 items-center"}
       >
         <Header square />
-        <main className={"w-full md:max-w-6xl"}>
+        <main className={"w-full md:max-w-6xl text-slate-800"}>
           <div className="min-h-screen p-8">
             <section id="usage" className={"mb-16"}>
               <header className="text-center mb-4">
-                <h2 className="text-4xl font-bold text-slate-800 mb-8">
-                  Last 7 Daily Quizzes
+                <h2 className="text-4xl font-bold mb-8">
+                  Last 7 Episodes
                 </h2>
-                <div className={"flex justify-center"}>
-                  <ul>
-                    {last7dates.map((date) => (
-                      <li
-                        key={date}
-                        className={"text-left"}
-                      >
-                        <a
-                          href={`/pages/${date}`}
-                          className="block text-xl text-slate-800 hover:underline mb-2"
-                        >
-                          {date}:{" "}
-                          <span
-                            className={"font-bold"}
-                          >
-                            {data[date].title}
-                          </span>
-                          {isVideoDate(date) ? " 🎧" : ""}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+                <div
+                  className={"overflow-hidden py-16"}
+                >
+                  <Bookshelf data={last7dates.map((d) => data[d])} />
                 </div>
               </header>
             </section>
             <section id="usage" className={"mb-16"}>
               <header className="text-center mb-4">
-                <h2 className="text-4xl font-bold text-slate-800 mb-4">
+                <h2 className="text-4xl font-bold mb-4">
                   How to Use
                 </h2>
                 <p className="mt-2 text-xl">
@@ -117,7 +100,7 @@ export default function TopLayout() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div className={"md:col-span-2"}>
                   <h3
-                    className={"text-2xl font-bold text-slate-800"}
+                    className={"text-2xl font-bold"}
                   >
                     Reading
                   </h3>
@@ -134,7 +117,7 @@ export default function TopLayout() {
                   </ul>
                 </div>
                 <div className={"md:col-span-1 p-4 bg-slate-50"}>
-                  <h4 className="text-xl font-bold text-slate-800 mb-4">
+                  <h4 className="text-xl font-bold mb-4">
                     Step 1: Read the Passage
                   </h4>
                   <p className="text-lg">
@@ -144,7 +127,7 @@ export default function TopLayout() {
                   </p>
                 </div>
                 <div className={"md:col-span-1 p-4 bg-slate-50"}>
-                  <h4 className="text-xl font-bold text-slate-800 mb-4">
+                  <h4 className="text-xl font-bold mb-4">
                     Step 2: Answer the Questions
                   </h4>
                   <p className="text-lg">
@@ -157,7 +140,7 @@ export default function TopLayout() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div className={"md:col-span-2"}>
                   <h3
-                    className={"text-2xl font-bold text-slate-800"}
+                    className={"text-2xl font-bold"}
                   >
                     Listening
                   </h3>
@@ -188,7 +171,7 @@ export default function TopLayout() {
                   </ul>
                 </div>
                 <div className={"md:col-span-1 p-4 bg-white"}>
-                  <h4 className="text-xl font-bold text-slate-800 mb-4">
+                  <h4 className="text-xl font-bold mb-4">
                     Step 1: Listen to the Passage
                   </h4>
                   <p className="text-lg">
@@ -198,7 +181,7 @@ export default function TopLayout() {
                   </p>
                 </div>
                 <div className={"md:col-span-1 p-4 bg-white"}>
-                  <h4 className="text-xl font-bold text-slate-800 mb-4">
+                  <h4 className="text-xl font-bold mb-4">
                     Step 2: Answer the Questions
                   </h4>
                   <p className="text-lg">
@@ -211,7 +194,7 @@ export default function TopLayout() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div className={"md:col-span-2"}>
                   <h3
-                    className={"text-2xl font-bold text-slate-800"}
+                    className={"text-2xl font-bold"}
                   >
                     Level
                   </h3>
@@ -259,7 +242,7 @@ export default function TopLayout() {
             </section>
             <section id="voices" className={"mb-8"}>
               <header className={"text-center mb-8"}>
-                <h2 className={"text-4xl font-bold text-slate-800"}>
+                <h2 className={"text-4xl font-bold"}>
                   Introduction of the characters
                 </h2>
                 <p className={"mt-2 text-xl mb-4"}>
