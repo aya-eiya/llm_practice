@@ -1,7 +1,6 @@
 import Footer from "./parts/Footer.tsx";
 import Header from "./parts/Header.tsx";
 import data, { dates } from "../data/index.ts";
-import { isVideoDate } from "../data/videoData.ts";
 import { getLevelEmoji, paramsLevelValues } from "../domains/level.ts";
 import { getLevelTag } from "../domains/level.ts";
 import { getLevelTitle } from "../domains/level.ts";
