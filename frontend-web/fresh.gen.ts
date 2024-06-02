@@ -17,6 +17,7 @@ import * as $report from "./routes/report.tsx";
 import * as $robots_txt from "./routes/robots.txt.ts";
 import * as $sitemap_xml from "./routes/sitemap.xml.ts";
 import * as $terms from "./routes/terms.tsx";
+import * as $Bookshelf from "./islands/Bookshelf.tsx";
 import * as $GtagEvent from "./islands/GtagEvent.tsx";
 import * as $LazyLoadOGP from "./islands/LazyLoadOGP.tsx";
 import * as $OnTranslatedEvent from "./islands/OnTranslatedEvent.tsx";
@@ -43,6 +44,7 @@ const manifest = {
     "./routes/terms.tsx": $terms,
   },
   islands: {
+    "./islands/Bookshelf.tsx": $Bookshelf,
     "./islands/GtagEvent.tsx": $GtagEvent,
     "./islands/LazyLoadOGP.tsx": $LazyLoadOGP,
     "./islands/OnTranslatedEvent.tsx": $OnTranslatedEvent,
