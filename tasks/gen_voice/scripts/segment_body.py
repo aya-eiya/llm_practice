@@ -38,7 +38,7 @@ def _segment(paragraph):
 
         current_sentence += char
 
-        if not inside_quotes and char == '.':
+        if not inside_quotes and char in ['.', '?', '!']:
             if any(paragraph[i - len(title) + 1:i + 1] == title for title in titles):
                 i += 1
                 continue

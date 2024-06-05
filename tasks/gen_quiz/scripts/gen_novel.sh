@@ -12,6 +12,8 @@ kerry="Kerry, a lively 12-year-old filled with curiosity and mischief. With his 
 meg="Meg, a 12-year-old with an insatiable love for books and boundless imagination. Always immersed in a novel or lost in her writing, she's a true bookworm with a penchant for the extraordinary. Meg's creativity knows no limits as she dreams up fantastical worlds and characters. While some may find her 'quirky,' she embraces her uniqueness, seeing magic in everyday moments."
 lui="Lui, a veteran educator with over 20 years of experience teaching social studies and history. At 42, known for his strictness and attention to detail, Lui instills values of honesty and hard work in his students. Despite his tough exterior, he's a trusted mentor and friend, inspiring a love of learning beyond the classroom."
 
+short_intro="Billy (11 years old, boy), Kerry (12 years old, boy), Meg (12 years old, girl), Lui (42 years old, male teacher)"
+
 ## Steps
 steps=('event' 'novel' 'conversation' 'quiz' 'make')
 
@@ -140,13 +142,13 @@ Paragraph label must be the exact format, if it's paragraph No.1 then \"[:paragr
       "body": (
         .body |
         if (
-          . | test("\\[:paragraph #?\\d+\\]") | not
+          . | test("\\[\\s*:paragraph\\s*#?\\d+\\s*\\]") | not
         ) then (
           "paragraph label not foud.\n" | halt_error(1)
         )
         else .
         end |
-        gsub("\\[:paragraph #?\\d+\\]"; "\n\n") |
+        gsub("\\[\\s*:paragraph\\s*#?\\d+\\s*\\]"; "\n\n") |
         gsub("(^\\s+|\\s+$)"; "") |
         if (
           . | gsub("[^\\w]+"; " ") |
@@ -234,6 +236,7 @@ ${1}
 \`\`\`
 
 From the above novel text and dialogue, create five quizzes to test the English reading comprehension skills.
+note that the dialog characters are ${short_intro}.
 
 The format for answering the quizzes should be a one-choice format with five options to choose from.
 

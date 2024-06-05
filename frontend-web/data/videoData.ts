@@ -81,6 +81,15 @@ const videoData = {
     "title":
       "[2024-06-03][MyniQ] The Portrait of Shadows [English Listening Quiz]",
   },
+  "2024-06-04": {
+    "id": "g954QcLxp2s",
+    "title":
+      "[2024-06-04][MyniQ] The Last Roll of Film [English Listening Quiz]",
+  },
+  "2024-06-05": {
+    "id": "ZtDKb7m07u8",
+    "title": "[2024-06-05][MyniQ] In Rainbows of Love [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;

@@ -20,7 +20,7 @@ jq -s "[
     . as \$r |
     \$r[0].params.level as \$l |
     (\$l | split(\"_\") | .[1] ) + \", \" +
-    (\$r[1] | to_entries | map(select(.key == \$l) | .value) | .[0].Grammar.SimpleDescription ) + \".\"
+    (\$r[1] | to_entries | map(select(.key == \$l) | .value) | .[0].Grammar.SimpleDescription )
   )) },
   { \"System\": \"Stick around till the end for five quick questions to test your understanding.\" },
   { \"System\": \"Alright then, let's get listening!\" },
