@@ -239,6 +239,7 @@ export default function Quiz(
                       className={"underline py-1"}
                       target={"_blank"}
                       href={`/report?page=/pages/${data.date}&reason=page%20broken`}
+                      rel={"nofollow"}
                     >
                       Broken page
                     </a>
@@ -248,6 +249,7 @@ export default function Quiz(
                       className={"underline py-1"}
                       target={"_blank"}
                       href={`/report?page=/pages/${data.date}&reason=meaningless%20content`}
+                      rel={"nofollow"}
                     >
                       Meaningless Content
                     </a>
@@ -257,6 +259,7 @@ export default function Quiz(
                       className={"underline py-1"}
                       target={"_blank"}
                       href={`/report?page=/pages/${data.date}&reason=inappropriate%20content`}
+                      rel={"nofollow"}
                     >
                       Inappropriate Content
                     </a>
@@ -264,8 +267,9 @@ export default function Quiz(
                   <li className={"mb-1"}>
                     <a
                       className={"underline py-1"}
-                      href={`/report?page=/pages/${data.date}&reason=copyright%20violation`}
                       target={"_blank"}
+                      href={`/report?page=/pages/${data.date}&reason=copyright%20violation`}
+                      rel={"nofollow"}
                     >
                       Copyright Violation
                     </a>
