@@ -22,3 +22,86 @@
 18. **Phonics Practice** - 英語の音と文字の関係に焦点を当てた練習。
 19. **Story Time** - 短い物語を読み聞かせ、その後に続いて練習。
 20. **Fun Facts** - 英語に関する面白い事実やトリビア。
+
+## prompt
+
+### Daily Vocabulary
+
+```
+I will make short movie for ESL lesson course to upload youtube.
+
+The movie title is "Daily Vocabulary".
+
+Create the script for the movie by pickup 5 vocabularies as VOCABULARY_1 to VOCABULARY_5 from following novel text that be used in listening lesson of the day.
+
+\`\`\`
+$(jq '.body' "../gen_quiz/outputs/2024-06-02.json")
+\`\`\`
+
+The course level is for beginner.
+
+the output script format is following. {xxxx} segment in the format is the command or hint to generate the script.
+
+\`\`\`
+Hi everyone! Welcome to Daily Vocabulary, where we explore everyday words and phrases that can help you communicate more effectively in English.
+Let's pickup 5 important vocabularies from today's episode.
+
+First Vocabulary is {VOCABULARY_1}.
+
+"{the VOCABULARY_1 usage line from the novel}"
+
+{VOCABULARY_1} means {VOCABULARY_1 description}
+
+and other usage of {VOCABULARY_1}
+
+{generate 3 example statements of VOCABULARY_1}
+
+
+Next Vocabulary is {VOCABULARY_2}.
+
+"{the VOCABULARY_2 usage line from the novel}"
+
+{VOCABULARY_2} means {VOCABULARY_2 description}
+
+and other usage of {VOCABULARY_2}
+
+{generate 3 example statements of VOCABULARY_2}
+
+
+Next Vocabulary is {VOCABULARY_3}.
+
+"{the VOCABULARY_3 usage line from the novel}"
+
+{VOCABULARY_3} means {VOCABULARY_3 description}
+
+and other usage of {VOCABULARY_3}
+
+{generate 3 example statements of VOCABULARY_3}
+
+
+Next Vocabulary is {VOCABULARY_4}.
+
+"{the VOCABULARY_4 usage line from the novel}"
+
+{VOCABULARY_4} means {VOCABULARY_4 description}
+
+and other usage of {VOCABULARY_4}
+
+{generate 3 example statements of VOCABULARY_4}
+
+
+The Last Vocabulary is {VOCABULARY_5}.
+
+"{the VOCABULARY_5 usage line from the novel}"
+
+{VOCABULARY_5} means {VOCABULARY_5 description}
+
+and other usage of {VOCABULARY_5}
+
+{generate 3 example statements of VOCABULARY_5}
+
+
+Thank you to listening! Please send good and follow my channel.
+\`\`\`
+
+```
