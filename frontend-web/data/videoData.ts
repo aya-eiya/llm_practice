@@ -90,6 +90,20 @@ const videoData = {
     "id": "ZtDKb7m07u8",
     "title": "[2024-06-05][MyniQ] In Rainbows of Love [English Listening Quiz]",
   },
+  "2024-06-06": {
+    "id": "71Tks6K8Lko",
+    "title":
+      "[2024-06-06][MyniQ] The Fading Light of D-Day [English Listening Quiz]",
+  },
+  "2024-06-07": {
+    "id": "fDrQH-u1zAM",
+    "title":
+      "[2024-06-07][MyniQ] The Architect of Tomorrow [English Listening Quiz]",
+  },
+  "2024-06-08": {
+    "id": "Quoy7kqB8dI",
+    "title": "[2024-06-08][MyniQ] The Last Code [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
