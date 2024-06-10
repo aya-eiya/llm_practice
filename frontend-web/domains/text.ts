@@ -74,14 +74,3 @@ export function segment(paragraph: string): string[] {
 
   return segments;
 }
-
-const paragraph =
-  '"Hello, Anya," said the swan. "I am the Swan Queen." The Swan Queen reached into the water.';
-console.log(JSON.stringify(segment(paragraph)));
-
-[
-  '"Hello, Anya,"',
-  "said the swan.",
-  '"I am the Swan Queen."',
-  "The Swan Queen reached into the water.",
-];
