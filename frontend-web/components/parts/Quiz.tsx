@@ -316,7 +316,7 @@ export default function Quiz(
                         >
                           {audio && (
                             <div
-                              className={"rounded-t-xl w-full bg-slate-800 h-8"}
+                              className={"rounded-t-xl w-full bg-slate-800 h-4"}
                             />
                           )}
                           <div
