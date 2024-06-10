@@ -52,7 +52,7 @@ Book-Shelf
 
 11. **Engineering / Science Fiction**
     ```
-    one girl, Futuristic engineering lab, advanced machinery, innovative projects, protagonist working, groundbreaking invention, sci-fi elements, bright tones, modern design
+    one girl, wearing a white coat, platinum blonde hair, Determined expression, Futuristic engineering lab, advanced machinery, innovative projects, protagonist working, groundbreaking invention, sci-fi elements, bright tones, modern design
     ```
 
 12. **Science / Steampunk**
