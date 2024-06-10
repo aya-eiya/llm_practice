@@ -12,7 +12,7 @@ Book-Shelf
 
 3. **Architecture / Science Fiction**
    ```
-   three girls, Futuristic city, innovative architectural designs, floating buildings, advanced technology, sleek structures, sci-fi elements, bright colors, modern atmosphere
+   three girls, portrait, Futuristic city, innovative architectural designs, floating buildings, advanced technology, sleek structures, sci-fi elements, bright colors, modern atmosphere
    ```
 
 4. **Film / Horror**
