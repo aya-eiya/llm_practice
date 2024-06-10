@@ -322,7 +322,7 @@ export default function Quiz(
                           <div
                             className={"w-full h-auto sm:w-56 sm:h-auto md:w-80 md:h-auto bg-slate-800 bg-cover bg-center" +
                               (audio
-                                ? " aspect-video"
+                                ? " aspect-[16/11]"
                                 : " rounded-xl aspect-[17/13]")}
                             style={{
                               backgroundImage:

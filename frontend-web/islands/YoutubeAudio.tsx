@@ -125,16 +125,27 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
     }
     return () => {
       if (timeout) {
-        clearInterval(timeout);
+        clearTimeout(timeout);
       }
     };
   }, [player, currentTime.value, state.value]);
 
   useEffect(() => {
-    currentVolume.value = beforeMuteVolume.value === 0 && player.value
-      ? player.value.getVolume() / 100
-      : 0;
-  }, [player, beforeMuteVolume.value, currentVolume.value]);
+    let timeout: number | undefined;
+    if (player.value && state.value === STATE.PLAYING) {
+      timeout = setTimeout(() => {
+        const vol = player.value && player.value.getVolume();
+        currentVolume.value = beforeMuteVolume.value === 0 && vol && !isNaN(vol)
+          ? vol / 100
+          : 0;
+      }, 30);
+    }
+    return () => {
+      if (timeout) {
+        clearTimeout(timeout);
+      }
+    };
+  }, [player, beforeMuteVolume.value, currentVolume.value, state.value]);
 
   if (url) {
     return (
@@ -156,7 +167,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
     return (
       <>
         <div
-          className={"flex flex-row bg-slate-800 items-center rounded-b-xl relative px-1"}
+          className={"flex flex-row bg-slate-800 items-center rounded-b-xl relative px-1 print:hidden"}
         >
           <div className={"w-16"}>
             <button
@@ -178,7 +189,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
               {state.value === STATE.PLAYING
                 ? (
                   <svg
-                    className="w-12 h-12"
+                    className="w-8 h-8"
                     viewBox="0 0 300 300"
                   >
                     <g>
@@ -257,7 +268,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
                     const tmp = player.value.getVolume();
                     player.value.setVolume(0);
                     beforeMuteVolume.value = tmp;
-                  } else {
+                  } else if (!isNaN(beforeMuteVolume.value)) {
                     player.value.setVolume(beforeMuteVolume.value);
                     beforeMuteVolume.value = 0;
                   }
@@ -293,7 +304,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
                 min={0}
                 max={1}
                 step={0.01}
-                value={currentVolume.value}
+                defaultValue={String(currentVolume.value)}
                 onChange={(e) => {
                   player.value.setVolume(Number(e.currentTarget.value) * 100);
                 }}
