@@ -125,16 +125,27 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
     }
     return () => {
       if (timeout) {
-        clearInterval(timeout);
+        clearTimeout(timeout);
       }
     };
   }, [player, currentTime.value, state.value]);
 
   useEffect(() => {
-    currentVolume.value = beforeMuteVolume.value === 0 && player.value
-      ? player.value.getVolume() / 100
-      : 0;
-  }, [player, beforeMuteVolume.value, currentVolume.value]);
+    let timeout: number | undefined;
+    if (player.value && state.value === STATE.PLAYING) {
+      timeout = setTimeout(() => {
+        const vol = player.value && player.value.getVolume();
+        currentVolume.value = beforeMuteVolume.value === 0 && vol && !isNaN(vol)
+          ? vol / 100
+          : 0;
+      }, 30);
+    }
+    return () => {
+      if (timeout) {
+        clearTimeout(timeout);
+      }
+    };
+  }, [player, beforeMuteVolume.value, currentVolume.value, state.value]);
 
   if (url) {
     return (
@@ -156,9 +167,66 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
     return (
       <>
         <div
-          className={"w-full flex flex-col print:hidden"}
+          className={"flex flex-row bg-slate-800 items-center rounded-b-xl relative px-1 print:hidden"}
         >
-          <div className={"w-full h-6"}>
+          <div className={"w-16"}>
+            <button
+              name={player.value && state.value === STATE.PLAYING
+                ? "pause"
+                : "play"}
+              onClick={() => {
+                if (!player.value) {
+                  return;
+                }
+                if (state.value === STATE.PLAYING) {
+                  player.value.pauseVideo();
+                } else {
+                  player.value.playVideo();
+                }
+              }}
+              className={"focus:outline-none"}
+            >
+              {state.value === STATE.PLAYING
+                ? (
+                  <svg
+                    className="w-8 h-8"
+                    viewBox="0 0 300 300"
+                  >
+                    <g>
+                      <rect
+                        className={"stroke-slate-100 fill-slate-100 stroke-[12]"}
+                        x="100"
+                        y="100"
+                        width="20"
+                        height="100"
+                      />
+                      <rect
+                        className={"stroke-slate-100 fill-slate-100 stroke-[12]"}
+                        x="180"
+                        y="100"
+                        width="20"
+                        height="100"
+                      />
+                    </g>
+                  </svg>
+                )
+                : (
+                  <svg
+                    className="w-8 h-8"
+                    viewBox="0 0 300 300"
+                  >
+                    <g>
+                      <polygon
+                        className={"stroke-slate-100 fill-slate-100 stroke-[12]"}
+                        strokeLinejoin="round"
+                        points="120,100 120,200 200,150"
+                      />
+                    </g>
+                  </svg>
+                )}
+            </button>
+          </div>
+          <div className={"w-full h-8"}>
             <input
               type={"range"}
               min={0}
@@ -188,136 +256,76 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
               }}
             />
           </div>
-          <div
-            className={"flex flex-row bg-slate-800 items-center rounded-b-xl"}
-          >
-            <div className={"w-16"}>
+          <div className={"w-24 flex flex-row"}>
+            <div>
               <button
-                name={player.value && state.value === STATE.PLAYING
-                  ? "pause"
-                  : "play"}
+                name={beforeMuteVolume.value === 0 ? "mute" : "unmute"}
                 onClick={() => {
                   if (!player.value) {
                     return;
                   }
-                  if (state.value === STATE.PLAYING) {
-                    player.value.pauseVideo();
-                  } else {
-                    player.value.playVideo();
+                  if (beforeMuteVolume.value === 0) {
+                    const tmp = player.value.getVolume();
+                    player.value.setVolume(0);
+                    beforeMuteVolume.value = tmp;
+                  } else if (!isNaN(beforeMuteVolume.value)) {
+                    player.value.setVolume(beforeMuteVolume.value);
+                    beforeMuteVolume.value = 0;
                   }
                 }}
                 className={"focus:outline-none"}
               >
-                {state.value === STATE.PLAYING
-                  ? (
-                    <svg
-                      className="w-12 h-12"
-                      viewBox="0 0 300 300"
-                    >
-                      <g>
-                        <rect
-                          className={"stroke-slate-100 fill-slate-100 stroke-[12]"}
-                          x="100"
-                          y="100"
-                          width="20"
-                          height="100"
-                        />
-                        <rect
-                          className={"stroke-slate-100 fill-slate-100 stroke-[12]"}
-                          x="180"
-                          y="100"
-                          width="20"
-                          height="100"
-                        />
-                      </g>
-                    </svg>
-                  )
-                  : (
-                    <svg
-                      className="w-12 h-12"
-                      viewBox="0 0 300 300"
-                    >
-                      <g>
-                        <polygon
-                          className={"stroke-slate-100 fill-slate-100 stroke-[12]"}
-                          strokeLinejoin="round"
-                          points="120,100 120,200 200,150"
-                        />
-                      </g>
-                    </svg>
-                  )}
+                <svg
+                  className="w-8 h-8"
+                  viewBox="0 0 300 300"
+                >
+                  <rect
+                    x="58"
+                    y="120"
+                    width="42"
+                    height="60"
+                    className={beforeMuteVolume.value == 0
+                      ? "stroke-slate-100 fill-slate-100 stroke-[12]"
+                      : "stroke-slate-600 fill-slate-600 stroke-[12]"}
+                  />
+                  <polygon
+                    points="60,150 175,90 175,210"
+                    className={beforeMuteVolume.value == 0
+                      ? "stroke-slate-100 fill-slate-100 stroke-[12]"
+                      : "stroke-slate-600 fill-slate-600 stroke-[12]"}
+                  />
+                </svg>
               </button>
             </div>
-            <div className={"w-32 flex flex-row"}>
-              <div>
-                <button
-                  name={beforeMuteVolume.value === 0 ? "mute" : "unmute"}
-                  onClick={() => {
-                    if (!player.value) {
-                      return;
-                    }
-                    if (beforeMuteVolume.value === 0) {
-                      const tmp = player.value.getVolume();
-                      player.value.setVolume(0);
-                      beforeMuteVolume.value = tmp;
-                    } else {
-                      player.value.setVolume(beforeMuteVolume.value);
-                      beforeMuteVolume.value = 0;
-                    }
-                  }}
-                  className={"focus:outline-none"}
-                >
-                  <svg
-                    className="w-12 h-12"
-                    viewBox="0 0 300 300"
-                  >
-                    <rect
-                      x="58"
-                      y="120"
-                      width="42"
-                      height="60"
-                      className={beforeMuteVolume.value == 0
-                        ? "stroke-slate-100 fill-slate-100 stroke-[12]"
-                        : "stroke-slate-600 fill-slate-600 stroke-[12]"}
-                    />
-                    <polygon
-                      points="60,150 175,90 175,210"
-                      className={beforeMuteVolume.value == 0
-                        ? "stroke-slate-100 fill-slate-100 stroke-[12]"
-                        : "stroke-slate-600 fill-slate-600 stroke-[12]"}
-                    />
-                  </svg>
-                </button>
-              </div>
-              <div className={"flex items-center w-32"}>
-                <input
-                  type={"range"}
-                  name={"volume"}
-                  min={0}
-                  max={1}
-                  step={0.01}
-                  value={currentVolume.value}
-                  onChange={(e) => {
-                    player.value.setVolume(Number(e.currentTarget.value) * 100);
-                  }}
-                  className="w-full h-2 bg-transparent border-2 rounded-lg appearance-none cursor-pointer"
-                />
-              </div>
+            <div className={"flex items-center w-12 h-8"}>
+              <input
+                type={"range"}
+                name={"volume"}
+                min={0}
+                max={1}
+                step={0.01}
+                defaultValue={String(currentVolume.value)}
+                onChange={(e) => {
+                  player.value.setVolume(Number(e.currentTarget.value) * 100);
+                }}
+                className="w-full h-2 bg-transparent border-2 rounded-lg appearance-none cursor-pointer"
+              />
             </div>
-
-            <div className={"bg-white ml-3 p-1 rounded"}>
-              <a
-                href={`https://www.youtube.com/watch?v=${id}`}
-                target={"_blank"}
-                rel={"noreferrer"}
-              >
-                <img
-                  title="watch on youtube"
-                  src={"/img/YT_logo.svg"}
-                  className={"w-24 block relative"}
-                />
-              </a>
-            </div>
+          </div>
+          <div
+            className={"bg-white ml-1 p-1 rounded absolute bottom-10 right-1"}
+          >
+            <a
+              href={`https://www.youtube.com/watch?v=${id}`}
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
+              <img
+                title="watch on youtube"
+                src={"/img/YT_logo.svg"}
+                className={"w-16 block relative"}
+              />
+            </a>
           </div>
         </div>
       </>
