@@ -1,119 +1,126 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": 'Premiere of "The Blacks"',
+    "event": "Jacques-Henri Lartigue's Photographic Discovery",
     "details":
-      'On June 11, 1959, Jean Genet\'s controversial play "The Blacks: A Clown Show" premiered in Paris at the Théâtre de Lutèce. This groundbreaking work, exploring themes of race, colonialism, and identity, would go on to have a significant impact on both French and American theater.',
+      "While June 11th doesn't mark a singular major event in photography history, it's worth noting that on June 11, 1963, the world was introduced to the extensive and impressive photographic work of Jacques-Henri Lartigue at the Museum of Modern Art (MoMA) in New York. Lartigue, initially known as a painter and socialite, had been capturing captivating images since childhood in the late 19th and early 20th centuries. This MoMA exhibition, featuring his rediscovered photographic diary, brought him international acclaim as a photographer and provided a unique window into the past through his lens.",
   },
   "date": "2024-06-11",
-  "title": "The Curtain Rises",
+  "title": "A Moment in Time",
   "body":
-    "As I walked into the dimly lit theater, the air was electric with anticipation. The premiere of Jean Genet's provocative play, \"The Blacks,\" had finally arrived in Paris. I had heard whispers about its controversial themes and bold storytelling, but nothing could have prepared me for the emotions that would unfold on stage.  \n\n As the lights dimmed, a sea of black faces stared back at us, their eyes gleaming with a mixture of sadness and defiance. The story unfolded like a tapestry, weaving together tales of colonialism, identity, and the struggles of the African diaspora. I felt my heart beating in tandem with the rhythms of the actors' voices, as they poured out their souls onto the stage.  \n\n As the curtain fell, I was left breathless, my mind reeling with the weight of the performances. The play had left me questioning everything I thought I knew about race, power, and humanity. In that moment, I realized that art has the power to challenge our perspectives, to make us see the world through different eyes.",
-  "word count": 174,
+    "As the sun dipped below the horizon on that fateful June evening, Jacques-Henri Lartigue's photographic diary came to life at the Museum of Modern Art. The world was introduced to his extensive and impressive work, a treasure trove of memories frozen in time. Amidst the bustling streets of New York, the atmosphere was alive with anticipation as art enthusiasts gathered to behold the rediscovered photographs.  \n\n Lartigue's journey began as a painter and socialite, but it was his passion for photography that truly set his soul ablaze. As he captured life's moments on film, his unique perspective and creative vision shone through, leaving an indelible mark on the world of photography. In this moment, his artistry transcended time and space, allowing viewers to step into the past and experience the beauty of bygone eras.  \n\n As the evening drew to a close, the museum's visitors carried with them more than just memories of Lartigue's remarkable photographs – they also bore witness to the power of art to bridge the gaps between time and space. And so, Jacques-Henri Lartigue's photographic discovery remained etched in their minds, a testament to the enduring allure of the past and the limitless potential of the human spirit.",
+  "word count": 200,
   "dialog": [
     {
-      "Kerry":
-        "Whoa, that play sounds intense!  All those eyes staring back... kinda creepy, but cool creepy, you know?",
-    },
-    {
       "Meg":
-        "I know, right? Imagine the emotions!  It's like their stories were leaping off the stage and grabbing you.",
+        "Wow, imagining all those moments from the past coming to life in New York City... it's like something out of one of my stories!",
     },
     {
       "Billy":
-        "I wonder what historical events they were talking about? Colonialism is a pretty big topic. Were they talking about a specific country?",
-    },
-    {
-      "Lui":
-        "That's a great question, Billy.  'The Blacks' is known for using allegory, so it's not always about direct historical events. It's more about the overall experience of oppression and fighting for your identity.",
+        "I know, right? It's like time travel, but instead of a time machine, you have photographs.",
     },
     {
       "Kerry":
-        "So like, they were superheroes, but in real life? Fighting against bad guys, but the bad guys were... ideas?",
+        "I bet those photos were super old and crinkly! Did they have people riding dinosaurs? Or maybe aliens?",
+    },
+    {
+      "Lui":
+        "Haha, not quite, Kerry. Lartigue captured everyday life in the early 20th century.  Think of it as a window into the past, showing how people lived, worked, and dressed.",
     },
     {
       "Meg":
-        "Kind of!  Except the play makes you realize it's way more complicated than just good versus evil. Everyone's got their own story.",
+        "That's even better!  I love imagining what it was like to live in a different time. Did they have flying cars, Mr. Lui?",
     },
     {
       "Lui":
-        "Exactly, Meg.  Genet wanted to shake people up, make them uncomfortable and really think about race and power dynamics.",
+        "Not quite flying cars, Meg. But they did have some amazing new inventions back then - automobiles, airplanes, even moving pictures!  Lartigue's photos probably captured some of those innovations.",
     },
     {
-      "Billy": "Did it work? Did people change their minds after seeing it?",
-    },
-    {
-      "Lui":
-        "That's the thing about art, Billy. You can't force change, but you can plant seeds.  The play sparked a lot of debate, which is what Genet wanted.",
+      "Billy":
+        "It's incredible how one person's photographs can have such an impact, bridging the gap between the past and present.",
     },
     {
       "Kerry":
-        "Makes you think, that's for sure.  Bet those actors were amazing to pull it off.",
+        "I wonder if people will look back at our photos someday and think the same thing.  'Look at those silly clothes they wore!'",
+    },
+    {
+      "Meg":
+        "Or maybe they'll marvel at our advanced technology! Imagine someone finding a picture of a smartphone a hundred years from now.",
+    },
+    {
+      "Lui":
+        "Exactly! Each photograph is a time capsule, a snapshot of a specific moment in history. That's what makes Lartigue's work so fascinating.",
+    },
+    {
+      "Billy":
+        "I need to learn more about this Lartigue guy.  His passion for photography really comes through in the way they described his work.",
     },
   ],
   "quiz": [
     {
       "question":
-        "What makes the narrator think the play will be interesting even before watching it?",
+        "What was Jacques-Henri Lartigue's original profession before he became known for photography?",
       "options": [
-        "The theater is dimly lit and creates a mysterious atmosphere.",
-        "The narrator has heard that the play is controversial and bold.",
-        "The narrator is a big fan of Jean Genet's other works.",
-        "The play is a premiere, meaning it is the first time it's shown.",
-        "The narrator sees many familiar faces in the audience.",
-      ],
-      "answer": 1,
-    },
-    {
-      "question":
-        "How does Kerry describe the feeling of all the actors' eyes staring back?",
-      "options": [
-        "Inspiring and powerful.",
-        "Sad and moving.",
-        "Creepy but cool.",
-        "Confusing and unsettling.",
-        "Angry and intimidating.",
+        "A museum curator",
+        "A writer",
+        "A painter and socialite",
+        "A scientist",
+        "An architect",
       ],
       "answer": 2,
     },
     {
-      "question": "According to Lui, what is 'The Blacks' really about?",
+      "question":
+        "Where did the exhibition of Lartigue's rediscovered photographs take place?",
       "options": [
-        "Specific historical events during colonialism.",
-        "The lives of famous African heroes.",
-        "The struggles and triumphs of a particular African tribe.",
-        "The universal experience of oppression and the fight for identity.",
-        "A fictional superhero story with allegorical meaning.",
+        "The Louvre Museum in Paris",
+        "The Metropolitan Museum of Art",
+        "The Museum of Modern Art",
+        "The Art Institute of Chicago",
+        "The National Gallery in London",
       ],
-      "answer": 3,
+      "answer": 2,
     },
     {
       "question":
-        "What does the phrase 'plant seeds' mean in the context of Lui's explanation?",
+        "According to the text, what makes Lartigue's photography so special?",
       "options": [
-        "To force people to change their opinions.",
-        "To secretly spread propaganda to a large audience.",
-        "To start a revolution through art.",
-        "To introduce ideas that might lead to change over time.",
-        "To inspire people to become activists.",
-      ],
-      "answer": 3,
-    },
-    {
-      "question": "How does the narrator feel after watching the play?",
-      "options": [
-        "Confused and overwhelmed.",
-        "Angry and motivated to fight injustice.",
-        "Deeply moved and intellectually stimulated.",
-        "Disappointed by the play's message.",
-        "Inspired to become a playwright.",
+        "His use of special cameras and lenses",
+        "His focus on capturing famous historical events",
+        "His unique perspective and creative vision",
+        "His photographs of exotic locations around the world",
+        "His abstract and experimental photographic techniques",
       ],
       "answer": 2,
+    },
+    {
+      "question":
+        "In the dialogue, what does Lui describe Lartigue's photos as?",
+      "options": [
+        "Time machines",
+        "Magical portals",
+        "Windows into the past",
+        "Talking portraits",
+        "Dreamscapes",
+      ],
+      "answer": 2,
+    },
+    {
+      "question":
+        "What do the children in the dialogue find interesting about Lartigue's photographs?",
+      "options": [
+        "The possibility of seeing dinosaurs and aliens",
+        "The opportunity to learn about fashion from the past",
+        "The chance to see how technology has changed over time",
+        "The ability to experience life in a different era",
+        "The beauty of the old and crinkly photographs themselves",
+      ],
+      "answer": 3,
     },
   ],
   "params": {
-    "theme": "Theater",
-    "flavor": "Romance",
+    "theme": "Photography",
+    "flavor": "Historical Romance",
     "models": {
       "main": "gemini",
       "novel": "llama3",
