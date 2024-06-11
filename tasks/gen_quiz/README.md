@@ -5,6 +5,7 @@
 * [ollama](https://ollama.com/)
 * [jq](https://jqlang.github.io/jq/)
 * [huggingface hub cli](https://huggingface.co/docs/huggingface_hub/en/guides/cli)
+* [node](https://nodejs.org/en)
 
 ## モデルのダウンロード
 

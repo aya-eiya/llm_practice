@@ -5,10 +5,17 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 DATA_DIR=${CURRENT_DIR}/../data
 # Generate data for the project
 
+find --version 1>/dev/null 2>&1
+if [ $? ] ; then
+  echo gfind=find
+  shopt -s expand_aliases
+  alias gfind='find'
+fi
+
 gen() {
   local YYYY_MM=${1}
   cd "${YYYY_MM}"
-  find . -name "*-*-*.ts" -type f -depth 1 | sort | (
+  gfind . -maxdepth 1 -mindepth 1 -name "*-*-*.ts" -type f | sort | (
     local imports=()
     local exports=()
     while read file; do
@@ -33,7 +40,7 @@ EOF
 }
 
 cd "${DATA_DIR}"
-find . -name "*-*" -type d -depth 1 | while read dir; do
+gfind . -maxdepth 1 -mindepth 1 -name "*-*" -type d | while read dir; do
     gen ${dir}
 done
 cd "${CURRENT_DIR}/.."
