@@ -217,9 +217,6 @@ thus, the output must be a JSON object with the key \"dialog\" and the value is 
 {
   \"dialog\": [
     { \"Billy\": \"I love the novel!\" },
-    { \"Kerry\": \"Me too!\" },
-    { \"Meg\": \"It's so magical!\" },
-    { \"Lui\": \"I'm glad you enjoyed it.\" },
     ...
   ]
 }

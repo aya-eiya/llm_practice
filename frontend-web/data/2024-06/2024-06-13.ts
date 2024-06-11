@@ -1,104 +1,120 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "Invention of the Daguerreotype",
-    "details": "On June 7th, which is close to June culedle), Louis-Jacques Mandé Daguerre introduced his invention, the daguerreotype process. The announcement was made by François Arago before the Académie des Sciences of France on January 7, 1839. However, public demonstrations and sales began shortly thereafter. Although it is not precisely on June 13th, this event marks a significant milestone in photography history."
+    "event":
+      "Opening Night of The Phantom of the Opera at Her Majesty's Theatre",
+    "details":
+      "On June 13th, 1986, Andrew Lloyd Webber's 'The Phantom of the Opera' made its debut on Broadway at Her Majesty'cups Theatre in London. This iconic musical went on to become one of the most successful shows in theatre history with numerous awards and a lasting legacy.",
   },
-  "date": "Jun 13th",
-  "title": "A Glimpse of the Past",
-  "body": "It was June 7th, 1839, a day that would change the course of history. Louis-Jacques Mandé Daguerre had just introduced his invention, the daguerreotype process, to the world. As I stood in the midst of the bustling crowd, I couldn't help but feel a sense of wonder and awe at the magical images being revealed before my eyes.  \n\n The soft glow of the camera's mercury vapor lamp illuminated the scene, casting an ethereal light on the subjects. It was as if time itself had been captured, suspended in mid-air for all to see. I watched with rapt attention as the first photographs were displayed, each one a testament to the power of innovation and human ingenuity.  \n\n As I gazed upon the daguerreotypes, my thoughts turned to the countless moments that lay hidden in the annals of history, waiting to be uncovered. The past, once shrouded in mystery, was slowly beginning to reveal its secrets. And it was all thanks to the tireless efforts of pioneers like Daguerre, who dared to dream big and challenge the status quo.  \n\n In that instant, I knew that my own life's work would be dedicated to preserving the stories of our collective past. The daguerreotype process had awakened something deep within me – a sense of purpose and duty to bear witness to the events that shaped our world.",
-  "word count": 223,
+  "date": "2024-06-13",
+  "title": "The Phantom of the Opera: A Steampunk Tale",
+  "body":
+    "In the fog-shrouded streets of London, a mysterious figure emerged from the shadows. The Phantom, a master of clockwork contraptions and steam-powered machinery, had been hiding in plain sight for years. His true identity remained a mystery, but his reputation as a genius inventor spread far and wide.  \n\n One fateful evening, he received an invitation to attend the opening night of Andrew Lloyd Webber's 'The Phantom of the Opera' at Her Majesty's Theatre. The event was a spectacle unlike any other, with intricate clockwork mechanisms and steam-powered special effects woven into the performance.  \n\n As the curtain rose, the Phantom took his seat in the audience, mesmerized by the majesty of the opera house and the wonders of the show. His eyes locked onto Christine Daaé, the beautiful soprano who sang with an otherworldly voice. The Phantom's heart skipped a beat as he realized that this was the moment he had been waiting for – to finally reveal his true identity and unite with Christine in a world of steam-powered magic.",
+  "word count": 169,
+  "dialog": [
+    {
+      "Billy":
+        "This novel really captured my imagination! The way the author combined steam-powered technology with Victorian London is fascinamooring!",
+    },
+    {
+      "Kerry":
+        "I agree, Billy! It's like 'Sweeney Todd' and 'Doctor Who' had a baby. I never thought clockwork mechanics could be so cool.",
+    },
+    {
+      "Meg":
+        "Did you guys notice how the character of The Phantom was kind of inspired by Gaston Leroux’s original novel? It adds such an interesting layer to the story!",
+    },
+    {
+      "Lui":
+        "That's a keen observation, Meg. I appreciate your attention to historical details.",
+    },
+    {
+      "Billy":
+        "I especially loved how they incorporated elements of mathematics and engineering into the plot. The inventions were so cleverly designed!",
+    },
+    {
+      "Kerry":
+        "And let’s not forget about Christine's character! I wonder if she could be seen as a precursor to strong, independent female characters like Hermione Granger.",
+    },
+    {
+      "Meg":
+        "I love that you brought up Hermione, Kerry. This book really reminds me of how much depth can be added to a story when exploring themes of friendship and courage.",
+    },
+    {
+      "Lui":
+        "Indeed, Meg. Literature often reflects the society it originates from – in this case, Victorian England with its gender roles and societal expectations. This novel challenges those norms beautifully.",
+    },
+  ],
   "quiz": [
     {
-      "question": "How old is Billy?",
+      "question":
+        "In which city does 'The Phantom of the Opera: A Steampunk Tale' primarily take place?",
       "options": [
-        "10 years old",
-        "11 years old",
-        "12 years old",
-        "9 years old",
-        "8 years old"
+        "New York",
+        "Paris",
+        "London",
+        "Rome",
+        "Vienna",
       ],
-      "answer": 1
+      "answer": 2,
     },
     {
-      "question": "What age group does Kerry belong to?",
+      "question":
+        "What was unique about the opening night of 'The Phantom of the Opera' that the Phantom attended?",
       "options": [
-        "6-10 years old",
-        "11-13 years old",
-        "14-16 years old",
-        "17+ years old",
-        "Under 5 years old"
+        "It featured real steam-powered machine.",
+        "It had a surprise appearance by Gaston Leroux.",
+        "Clockwork mechanisms were incorporated into the performance.",
+        "The show was performed entirely in silence.",
+        "The opera house itself was floating on air.",
       ],
-      "answer": 1
+      "answer": 2,
     },
     {
-      "question": "Who is the teacher in the story?",
+      "question":
+        "Which character from 'Harry Potter' does Kerry compare Christine to?",
       "options": [
-        "Billy",
-        "Kerry",
-        "Meg",
-        "Lui",
-        "None of them"
+        "Hermione Granger",
+        "Ginny Weasley",
+        "Luna Lovegood",
+        "Cho Chang",
+        "Nymphadora Tonks",
       ],
-      "nswer": 3
+      "answer": 0,
     },
     {
-      "question": "What type of setting does the novel take place in?",
+      "question":
+        "What element does Meg point out as being inspired by Gaston Leroux’s original novel in the Phantom's character?",
       "options": [
-        "A modern city school",
-        "An ancient castle",
-        "A space station",
-        "An old mansion",
-        "On a deserted island"
+        "Steampunk technology",
+        "Clockwork mechanics",
+        "Victorian London setting",
+        "Mathematical and engineering elements",
+        "The Opera Ghost",
       ],
-      "answer": 3
+      "answer": 4,
     },
     {
-      "question": "What is the primary relationship depicted in this dialogue?",
+      "question":
+        "What societal aspects of Victorian England are challenged in 'The Phantom of the Opera: A Steampunk Tale'?",
       "options": [
-        "Friends hanging out after school",
-        "Teacher scolding students for misbehavior",
-        "Students and teacher discussing a project",
-        "A family dinner conversation",
-        "Colleagues planning a surprise party"
+        "Technological advancements and innovation.",
+        "Gender roles and societal expectations.",
+        "Religious beliefs and practices.",
+        "Economic class divisions.",
+        "Colonial expansion.",
       ],
-      "answer": 2
-    }
-  ],
-  "fulldate": "2024-06-13",
-  "theme": "Photography",
-  "flavor": "Historical Romance",
-  "level": "Level_6",
-  "models": {
-    "main": "phi3:14b",
-    "novel": "llama3"
-  },
-  "steps": [
-    "event",
-    "novel",
-    "conversation",
-    "quiz",
-    "make"
-  ],
-  "temp_files": [
-    "/tmp/.research_event_2024-06-13.prompt",
-    "/tmp/.gen_novel_2024-06-13.prompt",
-    "/tmp/.gen_quiz_2024-06-13.prompt",
-    "/tmp/.gen_event_2024-06-13.raw.txt",
-    "/tmp/.gen_novel_2024-06-13.raw.txt",
-    "/tmp/.gen_conversation_2024-06-13.raw.txt",
-    "/tmp/.gen_quiz_2024-06-13.raw.txt",
-    "/tmp/.gen_params_2024-06-13.json",
-    "/tmp/.gen_event_2024-06-13.json",
-    "/tmp/.gen_novel_2024-06-13.json",
-    "/tmp/.gen_conversation_2024-06-13.json",
-    "/tmp/.gen_quiz_2024-06-13.json"
+      "answer": 1,
+    },
   ],
   "params": {
-    "theme": null,
-    "flavor": null,
-    "models": null,
-    "level": null
-  }
-}
+    "theme": "Economy",
+    "flavor": "Steampunk",
+    "models": {
+      "main": "phi3:14b",
+      "novel": "llama3",
+    },
+    "level": "Level_6",
+  },
+};
 export default data;
