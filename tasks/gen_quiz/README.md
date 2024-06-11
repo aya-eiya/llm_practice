@@ -26,6 +26,14 @@ ollama server を起動する
 ollama start
 ```
 
+## Macの場合は date コマンドには GNU date を使うようにエイリアス設定する
+
+```sh
+brew install coreutils
+alias date='gdate'
+# ~/.bashrc にも alias date='gdate' を設定
+```
+
 ## 小説と問題の出力
 
 ```sh
@@ -41,7 +49,7 @@ ollama start
 ```
 
 
-```
+```txt
 # theme example
 1. Political History: Focuses on the study of political institutions, leaders, and events, examining the development of governmental systems, policies, and power dynamics over time.
 2. Social History: Explores the everyday lives, customs, beliefs, and interactions of ordinary people throughout history, examining topics such as family structures, social classes, gender roles, and cultural practices.
@@ -104,7 +112,7 @@ cat ./outputs/2024-04-25.md
 ./scripts/translate_ja.sh "2024-04-25"
 ```
 
-### 出力確認
+### 出力確認(日本語)
 
 ```sh
 ls ./outputs/
