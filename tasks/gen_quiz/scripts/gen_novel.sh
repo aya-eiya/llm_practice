@@ -199,7 +199,8 @@ Create conversation of \"Readers\" about the novel after read it.
 
 Order of the speaker is random, and each speaker talks at least 2 times.
 
-The output must be a JSON object, its type is described following typescript code.
+Output the \"dialog\" as JSON, its type is described following typescript code.
+
 \`\`\`
 type SpeakerName= 'Billy' | 'Kerry' | 'Meg' | 'Lui'
 type Dialog = {
@@ -208,7 +209,22 @@ type Dialog = {
   }[] // array of conversation objects
 }
 \`\`\`
-\"dialog\" is the root key, and array of conversation objects."
+
+\"dialog\" is the root key, and array of conversation objects.
+
+thus, the output must be a JSON object with the key \"dialog\" and the value is an array of conversation objects like following example.
+\`\`\`
+{
+  \"dialog\": [
+    { \"Billy\": \"I love the novel!\" },
+    { \"Kerry\": \"Me too!\" },
+    { \"Meg\": \"It's so magical!\" },
+    { \"Lui\": \"I'm glad you enjoyed it.\" },
+    ...
+  ]
+}
+\`\`\`
+"
 
   echo "${conversation}" > $tmp_prompt_conversation
   $run_llm "$conversation" \
