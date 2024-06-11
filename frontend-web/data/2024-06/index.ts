@@ -9,6 +9,7 @@ import data20240608 from "./2024-06-08.ts";
 import data20240609 from "./2024-06-09.ts";
 import data20240610 from "./2024-06-10.ts";
 import data20240611 from "./2024-06-11.ts";
+import data20240612 from "./2024-06-12.ts";
 
 const dailyData = {
   "2024-06-01": data20240601,
@@ -22,6 +23,7 @@ const dailyData = {
   "2024-06-09": data20240609,
   "2024-06-10": data20240610,
   "2024-06-11": data20240611,
+  "2024-06-12": data20240612,
 };
 
 export default dailyData;
