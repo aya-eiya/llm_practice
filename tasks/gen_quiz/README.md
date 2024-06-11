@@ -26,14 +26,6 @@ ollama server を起動する
 ollama start
 ```
 
-## Macの場合は date コマンドには GNU date を使うようにエイリアス設定する
-
-```sh
-brew install coreutils
-alias date='gdate'
-# ~/.bashrc にも alias date='gdate' を設定
-```
-
 ## 小説と問題の出力
 
 ```sh
@@ -47,7 +39,6 @@ alias date='gdate'
 # -n,--novelModel= : sub model to use in generate novel part. default 'llava' 
 # -s,--steps= : steps to generate. default 'event,novel,conversation,quiz,make'
 ```
-
 
 ```txt
 # theme example

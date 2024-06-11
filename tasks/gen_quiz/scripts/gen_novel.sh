@@ -416,18 +416,18 @@ fi
 if [ "$date" = "" ]; then
   date_th=$(
     p=('1st' '2nd' '3rd');
-    d=$(($(date -j -f "%Y-%m-%d" "$fulldate" "+%d")));
+    d=$(node -p -e "new Date('${fulldate}').getDate()");
     if [ $d -gt 3 ];
       then echo -n "${d}th"
       else echo -n "${p[$(($d - 1))]}"
     fi
   )
   # date='April 1st'
-  date=$(date -j -f "%Y-%m-%d" "$fulldate" "+%B ${date_th}")
+  date="$(node -p -e "new Date('${fulldate}').toLocaleString('default', { month: 'short' })") ${date_th}"
 fi
 
 if [ "$level" = "" ]; then
-  level="Level_$(($(date -j -f "%Y-%m-%d" "$fulldate" "+%w") + 2))"
+  level="Level_$(node -p -e "new Date('${fulldate}').getDay()+2")"
 fi
 
 init_tmp
