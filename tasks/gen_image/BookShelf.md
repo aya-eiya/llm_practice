@@ -107,7 +107,7 @@ Book-Shelf
 
 22. **Architecture / Fantasy**
     ```
-    onr girl, Whimsical architecture, otherworldly structures, magical elements, floating islands, enchanting atmosphere, bright colors, imaginative design, fantasy landscape
+    one girl, Whimsical architecture, otherworldly structures, magical elements, floating islands, enchanting atmosphere, bright colors, imaginative design, fantasy landscape
     ```
 
 23. **Music / Romance**
@@ -117,7 +117,7 @@ Book-Shelf
 
 24. **Film / Post-Apocalyptic**
     ```
-    Ruined movie theater, deserted streets, post-apocalyptic landscape, dramatic scene, dark tones, desolation, eerie atmosphere, abandoned setting
+    one girl, exhausted expression, disheveled hair, sooty and dusty outfit, dramatic posed, Ruined movie theater, deserted streets, post-apocalyptic landscape, dramatic scene, dark tones, desolation, eerie atmosphere, abandoned setting
     ```
 
 25. **Theater / Steampunk**
