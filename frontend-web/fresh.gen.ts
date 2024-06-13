@@ -16,7 +16,10 @@ import * as $pages_date_ from "./routes/pages/[date].tsx";
 import * as $report from "./routes/report.tsx";
 import * as $robots_txt from "./routes/robots.txt.ts";
 import * as $sitemap_xml from "./routes/sitemap.xml.ts";
+import * as $tags_flavor_flavor_ from "./routes/tags/flavor/[flavor].tsx";
+import * as $tags_flavor_theme_flavor_theme_ from "./routes/tags/flavor/theme/[flavor]/[theme].tsx";
 import * as $terms from "./routes/terms.tsx";
+import * as $words_word_ from "./routes/words/[word].tsx";
 import * as $Bookshelf from "./islands/Bookshelf.tsx";
 import * as $GtagEvent from "./islands/GtagEvent.tsx";
 import * as $LazyLoadOGP from "./islands/LazyLoadOGP.tsx";
@@ -41,7 +44,11 @@ const manifest = {
     "./routes/report.tsx": $report,
     "./routes/robots.txt.ts": $robots_txt,
     "./routes/sitemap.xml.ts": $sitemap_xml,
+    "./routes/tags/flavor/[flavor].tsx": $tags_flavor_flavor_,
+    "./routes/tags/flavor/theme/[flavor]/[theme].tsx":
+      $tags_flavor_theme_flavor_theme_,
     "./routes/terms.tsx": $terms,
+    "./routes/words/[word].tsx": $words_word_,
   },
   islands: {
     "./islands/Bookshelf.tsx": $Bookshelf,
