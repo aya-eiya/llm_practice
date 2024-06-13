@@ -15,7 +15,7 @@ DEVICE = "cpu"
 OUTPUT_DIR = "outputs"
 
 # skip if files exists
-skip = True
+skip = False
 
 tone_color_converter = ToneColorConverter(f"{CONVERTER}/config.json", device=DEVICE)
 tone_color_converter.load_ckpt(f"{CONVERTER}/checkpoint.pth")
@@ -62,6 +62,7 @@ for index, line in enumerate(texts):
     speaker, text = list(line.items())[0]
     line_num = str(index + 10).zfill(3)
     if speaker == "Effect":
+        print(f"Effect:")
         match_silence = re.search(r"silence=(\d+)", text)
         # fade_music=["music.wav",duration=1000,start=0,fade=1000] // filename, duration of music play or label name to stop, start time in the music file, fade in out time
         match_fade = re.search(r"fade_music=\[\"(.+\.(wav|mp3))\",duration=(\d+|:\w+),start=(\d+),fade=(\d+)\]", text)
@@ -78,7 +79,7 @@ for index, line in enumerate(texts):
         #save text
         (fade_music, music_duration, music_start_time, fade_in_out_time) = (match_fade.group(1), match_fade.group(3), match_fade.group(4), match_fade.group(5)) if match_fade is not None else ("", "", "", "")
         effect_text = f"{fade_music},{music_duration},{music_start_time},{fade_in_out_time}" if match_fade is not None else ""
-        if re.match(r":\w+",music_duration) is not None:
+        if re.match(r":\w+", music_duration) is not None:
             effect_labels[music_duration] = text_path
         if match_label is not None and effect_labels[match_label.group(1)]:
             with open(effect_labels[match_label.group(1)], "r+", encoding="utf-8") as f:

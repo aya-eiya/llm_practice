@@ -122,7 +122,7 @@ Book-Shelf
 
 25. **Theater / Steampunk**
     ```
-    Theater performance, steam-powered props, Victorian costumes, dramatic lighting, steampunk aesthetics, elegant details, warm colors, vintage style
+    one girl, Theater performance, steam-powered props, Victorian costumes, dramatic lighting, steampunk aesthetics, elegant details, warm colors, vintage style
     ```
 
 26. **Dance / Science Fiction**
@@ -148,4 +148,9 @@ Book-Shelf
 30. **Music / Horror**
     ```
     Dark abandoned concert hall, ghostly figures, eerie instruments, shadowy tones, ominous atmosphere, haunting scene, dark colors, creepy setting
+    ```
+
+31. **Economy / SteamPunk**
+    ```
+    One girl, steam-powered props, steampunk aesthetics, High-stakes scenario, finance elements, money and power, dark tones, dynamic composition, tense atmosphere, intrigue, urban setting
     ```

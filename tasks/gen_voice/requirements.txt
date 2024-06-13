@@ -9,7 +9,7 @@ anyio==4.3.0
 async-timeout==4.0.3
 attrs==23.2.0
 audioread==3.0.1
-av==10.0.0
+av==12.*
 Babel==2.15.0
 bangla==0.0.2
 blinker==1.8.2
@@ -101,7 +101,7 @@ langcodes==3.4.0
 langid==1.1.6
 language_data==1.2.0
 lazy_loader==0.4
-librosa==0.9.1
+librosa==0.10.2
 llvmlite==0.42.0
 loguru==0.7.2
 marisa-trie==1.1.1
