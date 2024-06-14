@@ -1,22 +1,21 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
-import dailyData, { dates as dataDates } from "../../../../../data/index.ts";
-import Meta from "../../../../../components/parts/Meta.tsx";
-import Header from "../../../../../components/parts/Header.tsx";
-import Footer from "../../../../../components/parts/Footer.tsx";
-import SearchResults from "../../../../../components/parts/SearchResults.tsx";
+import dailyData, { dates as dataDates } from "../../../data/index.ts";
+import Meta from "../../../components/parts/Meta.tsx";
+import Header from "../../../components/parts/Header.tsx";
+import Footer from "../../../components/parts/Footer.tsx";
+import SearchResults from "../../../components/parts/SearchResults.tsx";
 
 const PAGE_SIZE = 10;
 
 export const handler: Handlers = {
   GET(req, ctx) {
-    let { flavor, theme } = ctx.params;
-    if (theme === undefined || flavor === undefined) {
-      return ctx.render({ dates: [], flavor: "", theme: "", maxCount: 0 }, {
+    let { theme } = ctx.params;
+    if (theme === undefined) {
+      return ctx.render({ dates: [], theme: "", maxCount: 0 }, {
         status: 404,
       });
     }
-    flavor = decodeURI(flavor);
     theme = decodeURI(theme);
     const _page = new URL(req.url).searchParams.get("page");
     const page = Math.max(_page ? Number(_page) : 1, 1);
@@ -24,24 +23,22 @@ export const handler: Handlers = {
     for (let i = dataDates.length - 1; i >= 0; i--) {
       const key = dataDates[i];
       if (
-        dailyData[key].params.theme.toLowerCase() === theme.toLowerCase() &&
-        dailyData[key].params.flavor.toLowerCase() === flavor.toLowerCase()
+        dailyData[key].params.theme.toLowerCase() === theme.toLowerCase()
       ) {
         find.push(dailyData[key].date);
       }
     }
     const dates = find.slice(PAGE_SIZE * (page - 1), PAGE_SIZE * page);
-    return ctx.render({ dates, flavor, theme, maxCount: find.length, page }, {
+    return ctx.render({ dates, theme, maxCount: find.length, page }, {
       status: find.length > 0 ? 200 : 404,
     });
   },
 };
 
 function Pager(
-  { page, theme, flavor, maxCount }: {
+  { page, theme, maxCount }: {
     page: number;
     theme: string;
-    flavor: string;
     maxCount: number;
   },
 ) {
@@ -51,7 +48,7 @@ function Pager(
         {page > 1
           ? (
             <a
-              href={`/tags/flavor/theme/${flavor}/${theme}?page=${page - 1}`}
+              href={`/tags/theme/${theme}?page=${page - 1}`}
             >
               {"<"}
             </a>
@@ -68,7 +65,7 @@ function Pager(
                   ? <span className={"font-bold"}>{_page}</span>
                   : (
                     <a
-                      href={`/tags/flavor/theme/${flavor}/${theme}?page=${_page}`}
+                      href={`/tags/theme/${theme}?page=${_page}`}
                       className={"underline"}
                     >
                       {_page}
@@ -83,7 +80,7 @@ function Pager(
         {page * PAGE_SIZE < maxCount
           ? (
             <a
-              href={`/tags/flavor/theme/${flavor}/${theme}?page=${page + 1}`}
+              href={`/tags/theme/${theme}?page=${page + 1}`}
             >
               {">"}
             </a>
@@ -95,21 +92,15 @@ function Pager(
 }
 
 export default function SearchPage(
-  { data: { dates, page, flavor, theme, maxCount }, url }: {
+  { data: { dates, page, theme, maxCount }, url }: {
     data: {
       dates: (keyof typeof dailyData)[];
-      flavor: string;
       theme: string;
       page: number;
       maxCount: number;
     };
   } & Pick<PageProps, "url">,
 ) {
-  const flavors = Object.keys(dailyData).reduce((tags, date) => {
-    const { flavor: f } = dailyData[date as keyof typeof dailyData].params;
-    tags.add(f);
-    return tags;
-  }, new Set<string>());
   const themes = Object.keys(dailyData).reduce((tags, date) => {
     const { theme: t } = dailyData[date as keyof typeof dailyData].params;
     tags.add(t);
@@ -119,7 +110,7 @@ export default function SearchPage(
     <>
       <Head>
         <title>
-          MyniQ | Search results for flavor{flavor} and theme:{theme}
+          MyniQ | Search results for theme:{theme}
         </title>
         <Meta origin={url.origin} />
       </Head>
@@ -139,21 +130,6 @@ export default function SearchPage(
             </div>
             <div className={"mb-4"}>
               <ul className={"flex flex-row flex-wrap w-[60vw]"}>
-                <li className={"m-1 px-2"}>Flavor:</li>
-                {Array.from(flavors).map((f) => (
-                  <li
-                    key={f}
-                    className={"bg-slate-200 m-1 px-2 rounded-full" +
-                      (flavor.toLowerCase() === f.toLowerCase()
-                        ? " border border-slate-800"
-                        : "")}
-                  >
-                    <a href={`/tags/flavor/theme/${f}/${theme}`}>{f}</a>
-                  </li>
-                ))}
-              </ul>
-              <ul className={"flex flex-row flex-wrap w-[60vw]"}>
-                <li className={"m-1 px-2"}>Theme:</li>
                 {Array.from(themes).map((t) => (
                   <li
                     key={t}
@@ -162,26 +138,16 @@ export default function SearchPage(
                         ? " border border-slate-800"
                         : "")}
                   >
-                    <a href={`/tags/flavor/theme/${flavor}/${t}`}>{t}</a>
+                    <a href={`/tags/theme/${t}`}>{t}</a>
                   </li>
                 ))}
               </ul>
             </div>
           </header>
           <section className={"mb-8"}>
-            <Pager
-              page={page}
-              flavor={flavor}
-              theme={theme}
-              maxCount={maxCount}
-            />
+            <Pager page={page} theme={theme} maxCount={maxCount} />
             <SearchResults dates={dates} />
-            <Pager
-              page={page}
-              flavor={flavor}
-              theme={theme}
-              maxCount={maxCount}
-            />
+            <Pager page={page} theme={theme} maxCount={maxCount} />
           </section>
         </main>
       </div>
