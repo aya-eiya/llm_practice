@@ -48,7 +48,9 @@ function Pager(
         {page > 1
           ? (
             <a
-              href={`/tags/flavor/${flavor}?page=${page - 1}`}
+              href={`/tags/flavor/${flavor}${
+                page === 2 ? "" : `?page=${page - 1}`
+              }`}
             >
               {"<"}
             </a>
@@ -65,7 +67,9 @@ function Pager(
                   ? <span className={"font-bold"}>{_page}</span>
                   : (
                     <a
-                      href={`/tags/flavor/${flavor}?page=${_page}`}
+                      href={`/tags/flavor/${flavor}${
+                        _page === 1 ? "" : `?page=${_page}`
+                      }`}
                       className={"underline"}
                     >
                       {_page}

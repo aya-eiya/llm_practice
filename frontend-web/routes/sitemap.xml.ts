@@ -1,5 +1,5 @@
 import { Handlers } from "$fresh/server.ts";
-import { dates, isThisMonth } from "../data/index.ts";
+import dailyData, { dates, isThisMonth } from "../data/index.ts";
 
 export const handler: Handlers = {
   GET(_req, _ctx) {
@@ -7,10 +7,30 @@ export const handler: Handlers = {
     const baseUrl = `${url.protocol}//${url.hostname}${
       url.hostname === "localhost" ? (":" + url.port) : ""
     }`;
+    const lastMod = dates[dates.length - 1];
+    const lastModFlavors = new Map<string, string>();
+    const lastModThemes = new Map<string, string>();
+    const flavors = Object.keys(dailyData).reduce((tags, date) => {
+      const f = encodeURI(
+        dailyData[date as keyof typeof dailyData].params.flavor,
+      );
+      tags.add(f);
+      lastModFlavors.set(f, date);
+      return tags;
+    }, new Set<string>());
+    const themes = Object.keys(dailyData).reduce((tags, date) => {
+      const t = encodeURI(
+        dailyData[date as keyof typeof dailyData].params.theme,
+      );
+      tags.add(t);
+      lastModThemes.set(t, date);
+      return tags;
+    }, new Set<string>());
     const doc = `<?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>${baseUrl}/</loc>
+    <lastmod>${lastMod}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -53,6 +73,42 @@ ${
      <priority>${isThisMonth(date) ? "0.8" : "0.5"}</priority>
    </url>
 `;
+      }).join("")
+    }
+    <url>
+      <loc>${baseUrl}/tags/flavor/</loc>
+      <lastmod>${lastMod}</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.7</priority>
+    </url>
+    ${
+      Array.from(flavors).map((flavor) => {
+        return `
+    <url>
+      <loc>${baseUrl}/tags/flavor/${flavor}</loc>
+      <lastmod>${lastModFlavors.get(flavor)}</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.7</priority>
+    </url>
+    `;
+      }).join("")
+    }
+    <url>
+      <loc>${baseUrl}/tags/theme/</loc>
+      <lastmod>${lastMod}</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.7</priority>
+    </url>
+    ${
+      Array.from(themes).map((theme) => {
+        return `
+    <url>
+      <loc>${baseUrl}/tags/theme/${theme}</loc>
+      <lastmod>${lastModThemes.get(theme)}</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.7</priority>
+    </url>
+    `;
       }).join("")
     }
 </urlset>
