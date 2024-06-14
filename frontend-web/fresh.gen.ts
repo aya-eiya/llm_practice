@@ -28,6 +28,7 @@ import * as $Bookshelf from "./islands/Bookshelf.tsx";
 import * as $GtagEvent from "./islands/GtagEvent.tsx";
 import * as $LazyLoadOGP from "./islands/LazyLoadOGP.tsx";
 import * as $OnTranslatedEvent from "./islands/OnTranslatedEvent.tsx";
+import * as $PRBox from "./islands/PRBox.tsx";
 import * as $Printer from "./islands/Printer.tsx";
 import * as $YoutubeAudio from "./islands/YoutubeAudio.tsx";
 import { type Manifest } from "$fresh/server.ts";
@@ -64,6 +65,7 @@ const manifest = {
     "./islands/GtagEvent.tsx": $GtagEvent,
     "./islands/LazyLoadOGP.tsx": $LazyLoadOGP,
     "./islands/OnTranslatedEvent.tsx": $OnTranslatedEvent,
+    "./islands/PRBox.tsx": $PRBox,
     "./islands/Printer.tsx": $Printer,
     "./islands/YoutubeAudio.tsx": $YoutubeAudio,
   },
