@@ -17,7 +17,11 @@ import * as $report from "./routes/report.tsx";
 import * as $robots_txt from "./routes/robots.txt.ts";
 import * as $sitemap_xml from "./routes/sitemap.xml.ts";
 import * as $tags_flavor_flavor_ from "./routes/tags/flavor/[flavor].tsx";
+import * as $tags_flavor_index from "./routes/tags/flavor/index.tsx";
 import * as $tags_flavor_theme_flavor_theme_ from "./routes/tags/flavor/theme/[flavor]/[theme].tsx";
+import * as $tags_flavor_theme_flavor_index from "./routes/tags/flavor/theme/[flavor]/index.tsx";
+import * as $tags_theme_theme_ from "./routes/tags/theme/[theme].tsx";
+import * as $tags_theme_index from "./routes/tags/theme/index.tsx";
 import * as $terms from "./routes/terms.tsx";
 import * as $words_word_ from "./routes/words/[word].tsx";
 import * as $Bookshelf from "./islands/Bookshelf.tsx";
@@ -45,8 +49,13 @@ const manifest = {
     "./routes/robots.txt.ts": $robots_txt,
     "./routes/sitemap.xml.ts": $sitemap_xml,
     "./routes/tags/flavor/[flavor].tsx": $tags_flavor_flavor_,
+    "./routes/tags/flavor/index.tsx": $tags_flavor_index,
     "./routes/tags/flavor/theme/[flavor]/[theme].tsx":
       $tags_flavor_theme_flavor_theme_,
+    "./routes/tags/flavor/theme/[flavor]/index.tsx":
+      $tags_flavor_theme_flavor_index,
+    "./routes/tags/theme/[theme].tsx": $tags_theme_theme_,
+    "./routes/tags/theme/index.tsx": $tags_theme_index,
     "./routes/terms.tsx": $terms,
     "./routes/words/[word].tsx": $words_word_,
   },
