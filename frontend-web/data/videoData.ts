@@ -126,6 +126,15 @@ const videoData = {
     "title":
       "[2024-06-13][MyniQ] The Phantom of the Opera: A Steampunk Tale [English Listening Quiz]",
   },
+  "2024-06-14": {
+    "id": "WSkvwiZD1zY",
+    "title": "[2024-06-14][MyniQ] The Echoes of Ebony [English Listening Quiz]",
+  },
+  "2024-06-15": {
+    "id": "Q8BAT9rY_44",
+    "title":
+      "[2024-06-15][MyniQ] The Celestial Cartographer [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
