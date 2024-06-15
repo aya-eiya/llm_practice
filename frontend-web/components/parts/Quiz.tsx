@@ -335,6 +335,22 @@ export default function Quiz(
                               <Audio data={audio} />
                             </div>
                           )}
+                          <div className={"flex flex-row text-sm mt-1"}>
+                            <a href={`/tags/flavor/${data.params.flavor}`}>
+                              <div
+                                className={"before:content-['flavor:_'] bg-slate-200 rounded-full px-2"}
+                              >
+                                {data.params.flavor}
+                              </div>
+                            </a>
+                            <a href={`/tags/theme/${data.params.theme}`}>
+                              <div
+                                className={"before:content-['theme:_'] bg-slate-200 rounded-full px-2 ml-2"}
+                              >
+                                {data.params.theme}
+                              </div>
+                            </a>
+                          </div>
                         </div>
                       )}
                     <p

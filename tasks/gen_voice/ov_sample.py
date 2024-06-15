@@ -9,9 +9,9 @@ from gen_voice_model.openvoice.se_extractor import get_se
 
 CONVERTER = "gen_voice_model/checkpoints_v2/converter"
 SPEAKER = "gen_voice_model/checkpoints_v2/base_speakers/ses"
-# DEVICE = "cuda:0" if torch.cuda.is_available(."}, {"System": "else "cpu"
-# DEVICE = "cuda:0" if torch.cuda.is_available(."}, {"System": "else "mps" if torch.backends.mps.is_available(."}, {"System": "else "cpu"
-DEVICE = "cpu"
+# DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
+DEVICE = "cuda:0" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
+# DEVICE = "cpu"
 OUTPUT_DIR = "outputs"
 
 # skip if files exists
