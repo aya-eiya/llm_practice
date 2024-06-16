@@ -10,12 +10,12 @@ from gen_voice_model.openvoice.se_extractor import get_se
 CONVERTER = "gen_voice_model/checkpoints_v2/converter"
 SPEAKER = "gen_voice_model/checkpoints_v2/base_speakers/ses"
 # DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
-DEVICE = "cuda:0" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
-# DEVICE = "cpu"
+# DEVICE = "cuda:0" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
+DEVICE = "cpu"
 OUTPUT_DIR = "outputs"
 
 # skip if files exists
-skip = False
+skip = True
 
 tone_color_converter = ToneColorConverter(f"{CONVERTER}/config.json", device=DEVICE)
 tone_color_converter.load_ckpt(f"{CONVERTER}/checkpoint.pth")
@@ -61,19 +61,18 @@ effect_labels = {}
 for index, line in enumerate(texts):
     speaker, text = list(line.items())[0]
     line_num = str(index + 10).zfill(3)
+    save_path = f"{OUTPUT_DIR}/{line_num}_{speaker}.wav"
+    text_path = f"{OUTPUT_DIR}/{line_num}_{speaker}.txt"
+    # if files exists then skip
+    if skip and os.path.exists(save_path) and os.path.exists(text_path):
+        continue
     if speaker == "Effect":
-        print(f"Effect:")
         match_silence = re.search(r"silence=(\d+)", text)
         # fade_music=["music.wav",duration=1000,start=0,fade=1000] // filename, duration of music play or label name to stop, start time in the music file, fade in out time
         match_fade = re.search(r"fade_music=\[\"(.+\.(wav|mp3))\",duration=(\d+|:\w+),start=(\d+),fade=(\d+)\]", text)
         match_label = re.search(r"label=(:\w+)", text)
         match_talk_speed = re.search(r"talk_speed=(\d+(\.\d+)?)", text)
         duration = int(match_silence.group(1)) if match_silence is not None else 0
-        save_path = f"{OUTPUT_DIR}/{line_num}_{speaker}.wav"
-        text_path = f"{OUTPUT_DIR}/{line_num}_{speaker}.txt"
-        # if files exists then skip
-        if skip and os.path.exists(save_path) and os.path.exists(text_path):
-            continue
         print(f"create silent {duration}[ms]: {save_path}")
         AudioSegment.silent(duration=duration).export(save_path, format="wav")
         #save text

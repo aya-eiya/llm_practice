@@ -72,7 +72,7 @@ Book-Shelf
 
 15. **Ethics / Crime**
     ```
-    one girl, Crime scene, moral dilemmas, detective, shadows, contrasting light, gritty atmosphere, tense scenario, dark colors, urban setting
+    one girl, lean against wall, full body, Crime scene, moral dilemmas, detective, shadows, contrasting light, gritty atmosphere, tense scenario, dark colors, urban setting
     ```
 
 16. **Culture / Historical Fiction**
@@ -97,7 +97,7 @@ Book-Shelf
 
 20. **Education / Young Adult**
     ```
-    boys and girls, Contemporary school environment, diverse young characters, books, elements of learning, optimistic vibe, energetic atmosphere, vibrant colors, modern setting
+    boys and girls, Contemporary school environment, diverse young characters, books, elements of learning, optimistic vibe, energetic atmosphere, vibrant colors, modern setting, realistic art
     ```
 
 21. **Art / Gothic**
@@ -153,4 +153,9 @@ Book-Shelf
 31. **Economy / SteamPunk**
     ```
     One girl, steam-powered props, steampunk aesthetics, High-stakes scenario, finance elements, money and power, dark tones, dynamic composition, tense atmosphere, intrigue, urban setting
+    ```
+
+99. **Undefined / Undefined**
+    ```
+    One girl, pre teen, happy expression, light skin, reading book, headphone, blond hair, soft atmosphere, modern setting, full body, wooden chair
     ```
