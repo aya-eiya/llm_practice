@@ -9,9 +9,7 @@ const dailyData = {
 };
 
 const devDate = Deno.env.get("DEV_DATE");
-const now = devDate && Object.keys(dailyData).includes(devDate)
-  ? new Date(devDate)
-  : new Date();
+const now = devDate ? new Date(devDate) : new Date();
 
 export default dailyData;
 export const today = (() => {
