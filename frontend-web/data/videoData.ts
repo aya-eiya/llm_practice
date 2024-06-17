@@ -140,6 +140,11 @@ const videoData = {
     "title":
       "[2024-06-16][MyniQ] The Clockwork Conundrum [English Listening Quiz]",
   },
+  "2024-06-17": {
+    "id": "xt-ThRMWPG0",
+    "title":
+      "[2024-06-17][MyniQ] Neon Secrets: A New Eden Mystery [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
