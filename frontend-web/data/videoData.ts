@@ -145,6 +145,16 @@ const videoData = {
     "title":
       "[2024-06-17][MyniQ] Neon Secrets: A New Eden Mystery [English Listening Quiz]",
   },
+  "2024-06-18": {
+    "id": "mfP0FAAugK8",
+    "title":
+      "[2024-06-18][MyniQ] The Silk Road Revival [English Listening Quiz]",
+  },
+  "2024-06-19": {
+    "id": "aQZgVI7oVII",
+    "title":
+      "[2024-06-19][MyniQ] The Red Door: A Fashionista's Secret [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
