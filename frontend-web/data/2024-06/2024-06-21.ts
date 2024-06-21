@@ -1,112 +1,109 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "Microsoft Releases Windows 95",
+    "event": "The Battle of Teutoberg Forest",
     "details":
-      "Windows 95, a consumer-oriented operating system, was released by Microsoft on June 21, 1995. It was a major update to the Windows 3.x series and introduced many innovative features such as the Start menu, Taskbar, and Plug and Play hardware detection.",
+      "A major battle fought between the Roman Empire and Germanic tribes led by Arminius and Segimerus, resulting in a decisive victory for the Germanic forces. The battle took place on June 21st, 9 AD.",
   },
   "date": "2024-06-21",
-  "title": "System Crash",
+  "title": "Rebel's Quest",
   "body":
-    "In the dark alleys of Neo-Tokyo, whispers spread like wildfire: Microsoft's latest operating system, Windows 95, had finally arrived on the streets. The cyber-underworld was abuzz with rumors of its revolutionary features - seamless connectivity, advanced security protocols, and a user-friendly interface that would make even the most hardened hackers weep with joy.  \n\n As night fell over the city's towering skyscrapers, I made my way to the seedy underbelly of the Net. There, I found a group of rogue programmers huddled around a flickering console, their eyes glued to the screen as they pored over lines of code. They spoke in hushed tones of Windows 95's capabilities - how it could bring forth a new era of digital anarchy, where the boundaries between man and machine would blur like the neon lights on the city's streets.  \n\n I watched as they worked their magic, weaving together threads of code that shimmered like the holographic projections dancing across the city's rooftops. Their laughter echoed through the shadows as they whispered sweet nothings to the machines, coaxing forth secrets hidden deep within the digital realm. And I knew then that Windows 95 was more than just an operating system - it was a key to unlocking the very fabric of our reality.",
-  "word count": 209,
+    "In a dystopian future, where corporations ruled supreme and humans were reduced to mere machines, a young rebel named Zara embarked on a perilous quest. She was driven by the desire to avenge her family's death at the hands of the ruthless Teutoberg Corporation. The corporation had exploited and enslaved countless people, including Zara's loved ones.  \n\n Zara's journey took her through the dark alleys and neon-lit streets of Neo-Tokyo. She encountered various factions vying for power, from the enigmatic syndicate to the idealistic resistance movement. As she delved deeper into the world of cyber-enhanced mercenaries and corporate espionage, Zara discovered that nothing was as it seemed.  \n\n With her trusty cyberdeck by her side, Zara infiltrated Teutoberg's heavily fortified headquarters, determined to expose their sinister plans. But as she navigated the labyrinthine corridors, she realized that the corporation's true intentions went far beyond mere exploitation. The fate of humanity hung in the balance, and Zara was running out of time.",
+  "word count": 159,
   "dialog": [
     {
-      "Kerry":
-        "Whoa, that Windows 95 thing sounds like sci-fi! Is it really going to change everything?",
-    },
-    {
-      "Lui":
-        "Well, I think what's fascinating is how the author weaves together technological advancements and societal implications. It's not just about an operating system, but about the people who use it.",
-    },
-    {
-      "Meg":
-        "I know, right? The way they described the city and the hackers was so vivid! I felt like I was there in Neo-Tokyo.",
-    },
-    {
       "Billy":
-        "Yeah, the author really has a knack for world-building. And the themes of digital anarchy and reality-bending are super thought-provoking.",
+        "I loved how Zara's journey was so immersive! I felt like I was right there with her exploring Neo-Tokyo.",
     },
     {
       "Kerry":
-        "Exactly! It makes me wonder what kind of impact technology will have on our lives in the future. Are we headed towards a utopia or dystopia?",
-    },
-    {
-      "Lui":
-        "That's a great question, Kerry. As educators, it's our responsibility to prepare students for the challenges and opportunities that come with technological advancements.",
+        "Yeah, and the way the corporation was portrayed as this massive, unstoppable force was really chilling. It made me think about the power of big corporations in our own world.",
     },
     {
       "Meg":
-        "I think what I loved most about the novel was how it highlighted the importance of creativity and imagination in the face of technological change. It's not just about machines; it's about people and their place in the world.",
+        "I'm so glad we got to see Zara's backstory and understand what motivated her to take on Teutoberg. It made her character feel so much more real.",
+    },
+    {
+      "Lui":
+        "Absolutely, Meg. And I appreciated how the novel explored the themes of exploitation and rebellion in a way that felt both thought-provoking and entertaining.",
+    },
+    {
+      "Kerry":
+        "I'm still trying to wrap my head around the cyberdeck technology. Did anyone else find it a bit confusing?",
     },
     {
       "Billy":
-        "Totally agree, Meg! And I love how the author didn't shy away from exploring the darker aspects of technology, like the cyber-underworld. It was so cool!",
+        "Yeah, I had trouble following some of the technical aspects at first, but once I got the hang of it, it was really cool.",
+    },
+    {
+      "Meg":
+        "I loved how the novel balanced action and suspense with deeper themes and character development. It made for a really engaging read.",
+    },
+    {
+      "Lui":
+        "Well said, Meg. And I think one of the strengths of the novel was its ability to balance these elements while still leaving room for interpretation and reflection.",
     },
   ],
   "quiz": [
     {
       "question":
-        "What was the latest operating system to arrive in Neo-Tokyo?",
+        "What was Zara's motivation for taking on Teutoberg Corporation?",
       "options": [
-        "Windows 95",
-        "Windows 98",
-        "Macintosh OS X",
-        "Linux",
-        "BSD",
+        "To avenge her family's death",
+        "To gain power and wealth",
+        "To escape Neo-Tokyo",
+        "To expose corporate espionage",
+        "To join the resistance movement",
       ],
       "answer": 0,
     },
     {
-      "question":
-        "Who is the main character watching the group of rogue programmers",
+      "question": "Where did Zara's journey take her?",
       "options": [
-        "The author",
-        "Kerry",
-        "Lui",
-        "Meg",
-        "Billy",
-      ],
-      "answer": 3,
-    },
-    {
-      "question": "What was the theme that the novel highlighted?",
-      "options": [
-        "Digital anarchy",
-        "Cyber-underworld",
-        "Creativity and imagination",
-        "Technological advancements",
-        "Reality-bending",
-      ],
-      "answer": 2,
-    },
-    {
-      "question":
-        "Who mentioned the importance of creativity and imagination in the face of technological change?",
-      "options": [
-        "Kerry",
-        "Lui",
-        "Meg",
-        "Billy",
-        "The author",
-      ],
-      "answer": 3,
-    },
-    {
-      "question":
-        "What was the tone of the dialogue between Kerry, Lui, Meg, and Billy?",
-      "options": [
-        "Formal",
-        "Informal",
-        "Hypothetical",
-        "Expository",
-        "Narrative",
+        "Through a magical forest",
+        "Through dark alleys and neon-lit streets of Neo-Tokyo",
+        "Through a futuristic city",
+        "Through ancient ruins",
+        "Through a desolate wasteland",
       ],
       "answer": 1,
     },
+    {
+      "question": "What did Zara use to infiltrate Teutoberg's headquarters?",
+      "options": [
+        "Her fists and determination",
+        "Her cyberdeck",
+        "A magic spellbook",
+        "A high-tech gadget",
+        "Her charm and charisma",
+      ],
+      "answer": 1,
+    },
+    {
+      "question":
+        "Who were some of the factions Zara encountered on her journey?",
+      "options": [
+        "The enigmatic syndicate and the idealistic resistance movement",
+        "The magical guild and the scientific community",
+        "The corrupt government and the rebellion",
+        "The corporate elite and the underground resistance",
+      ],
+      "answer": 0,
+    },
+    {
+      "question": "What did Kerry find a bit confusing?",
+      "options": [
+        "The cyberdeck technology",
+        "The themes of exploitation and rebellion",
+        "The character development",
+        "The plot twists",
+        "The setting of Neo-Tokyo",
+      ],
+      "answer": 0,
+    },
   ],
   "params": {
-    "theme": "Technology",
+    "theme": "Politics",
     "flavor": "Cyberpunk",
     "models": {
       "main": "llama3",
