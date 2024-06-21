@@ -155,6 +155,14 @@ const videoData = {
     "title":
       "[2024-06-19][MyniQ] The Red Door: A Fashionista's Secret [English Listening Quiz]",
   },
+  "2024-06-20": {
+    "id": "h9Y5ljeThJw",
+    "title": "[2024-06-20][MyniQ] Woodstock Dreams [English Listening Quiz]",
+  },
+  "2024-06-21": {
+    "id": "q_PEOCQfL3g",
+    "title": "[2024-06-21][MyniQ] Reboot [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
