@@ -163,6 +163,16 @@ const videoData = {
     "id": "q_PEOCQfL3g",
     "title": "[2024-06-21][MyniQ] Reboot [English Listening Quiz]",
   },
+  "2024-06-22": {
+    "id": "_TXofJxbsnM",
+    "title":
+      "[2024-06-22][MyniQ] The Treaty of Versailles: A Cosmic Legacy [English Listening Quiz]",
+  },
+  "2024-06-31": {
+    "id": "apxq2CdU7QI",
+    "title":
+      "[2024-06-31][MyniQ] The Soviet Union's Demise [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
