@@ -168,10 +168,10 @@ const videoData = {
     "title":
       "[2024-06-22][MyniQ] The Treaty of Versailles: A Cosmic Legacy [English Listening Quiz]",
   },
-  "2024-06-31": {
+  "2024-06-23": {
     "id": "apxq2CdU7QI",
     "title":
-      "[2024-06-31][MyniQ] The Soviet Union's Demise [English Listening Quiz]",
+      "[2024-06-23][MyniQ] Love in San Francisco [English Listening Quiz]",
   },
 } as const;
 
