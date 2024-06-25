@@ -171,7 +171,16 @@ const videoData = {
   "2024-06-23": {
     "id": "apxq2CdU7QI",
     "title":
-      "[2024-06-23][MyniQ] Love in San Francisco [English Listening Quiz]",
+      "[2024-06-23][MyniQ] The Soviet Union's Demise [English Listening Quiz]",
+  },
+  "2024-06-24": {
+    "id": "BywSSZnj3Vo",
+    "title":
+      "[2024-06-24][MyniQ] The Ballet of Dreams [English Listening Quiz]",
+  },
+  "2024-06-25": {
+    "id": "1w2iTMrMvqg",
+    "title": "[2024-06-25][MyniQ] The Last Sketch [English Listening Quiz]",
   },
 } as const;
 
