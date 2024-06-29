@@ -9,7 +9,8 @@ html {
 @media print {
   #google-anno-sa,
   #ipr-container,
-  ins {
-    display: none;
+  ins,
+  ins * {
+    display: none !important;
   }
 }
