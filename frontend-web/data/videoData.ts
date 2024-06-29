@@ -182,6 +182,25 @@ const videoData = {
     "id": "1w2iTMrMvqg",
     "title": "[2024-06-25][MyniQ] The Last Sketch [English Listening Quiz]",
   },
+  "2024-06-26": {
+    "id": "kyvFm_kMbg0",
+    "title":
+      "[2024-06-26][MyniQ] The Eternal Return of Immanuel Kant [English Listening Quiz]",
+  },
+  "2024-06-27": {
+    "id": "U7tzT2tON9U",
+    "title":
+      "[2024-06-27][MyniQ] The Rite of Spring: A Fantasy Novel [English Listening Quiz]",
+  },
+  "2024-06-28": {
+    "id": "znVEyQICIWk",
+    "title":
+      "[2024-06-28][MyniQ] The Cogwheel Concerto [English Listening Quiz]",
+  },
+  "2024-06-29": {
+    "id": "nG9rkUV_H_o",
+    "title": "[2024-06-29][MyniQ] The Last Broadcast [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
