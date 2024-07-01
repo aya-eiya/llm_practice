@@ -5,7 +5,7 @@ const data: QuizData = {
     "details":
       "On July 1st, 1991, the Soviet Union officially ceased to exist as a sovereign state when it was dissolved by Boris Yeltsin, who became the first President of Russia",
   },
-  "date": "2024-06-31",
+  "date": "2024-07-01",
   "title": "The Soviet Union's Demise",
   "body":
     "As the clock struck midnight on July 1st, 1991, the once-mighty Soviet Union ceased to exist as a sovereign state. The news sent shockwaves around the world, leaving many wondering what had led to its collapse.  \n\n In the midst of chaos and uncertainty, Detective Jameson was tasked with solving a string of mysterious robberies in Moscow's Red Square. With rumors of stolen jewels and valuable artifacts circulating, the detective knew he had to act fast to unravel the tangled web of deceit.  \n\n As Jameson delved deeper into the case, he discovered that each robbery was linked to an ancient Soviet-era artifact. The trail led him to a small antique shop on the outskirts of Moscow, where he met a reclusive collector willing to share cryptic clues.  \n\n With the clock ticking away and the robberies escalating in frequency, Jameson's determination only grew stronger. He knew that solving this case would not only bring justice but also shed light on the Soviet Union's mysterious demise.",
