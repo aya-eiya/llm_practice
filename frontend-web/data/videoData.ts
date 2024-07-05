@@ -201,6 +201,32 @@ const videoData = {
     "id": "nG9rkUV_H_o",
     "title": "[2024-06-29][MyniQ] The Last Broadcast [English Listening Quiz]",
   },
+  "2024-06-30": {
+    "id": "taT8QnENM9o",
+    "title": "[2024-06-30][MyniQ] The Disco Dream [English Listening Quiz]",
+  },
+  "2024-07-01": {
+    "id": "Ckhv01aBt2o",
+    "title": "[2024-07-01][MyniQ] The Last Projection [English Listening Quiz]",
+  },
+  "2024-07-02": {
+    "id": "s2jDhk1ge8c",
+    "title": "[2024-07-02][MyniQ] Neon Dreams [English Listening Quiz]",
+  },
+  "2024-07-03": {
+    "id": "-z0_KOTKdgU",
+    "title":
+      "[2024-07-03][MyniQ] The Dark Side of Woodstock [English Listening Quiz]",
+  },
+  "2024-07-04": {
+    "id": "YDMzmhPFltY",
+    "title": "[2024-07-04][MyniQ] Echoes of Woodstock [English Listening Quiz]",
+  },
+  "2024-07-05": {
+    "id": "RxbzwZnLMKc",
+    "title":
+      "[2024-07-05][MyniQ] The Missing Bastille Prisoner [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
