@@ -227,6 +227,11 @@ const videoData = {
     "title":
       "[2024-07-05][MyniQ] The Missing Bastille Prisoner [English Listening Quiz]",
   },
+  "2024-07-06": {
+    "id": "2bWbyVn5NRk",
+    "title":
+      "[2024-07-06][MyniQ] The Copper Lady's Arrival [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
