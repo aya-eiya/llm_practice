@@ -232,6 +232,11 @@ const videoData = {
     "title":
       "[2024-07-06][MyniQ] The Copper Lady's Arrival [English Listening Quiz]",
   },
+  "2024-07-07": {
+    "id": "LUNBt3OSr9k",
+    "title":
+      "[2024-07-07][MyniQ] The Shadow of Nuremberg [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
