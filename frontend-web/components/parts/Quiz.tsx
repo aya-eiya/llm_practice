@@ -286,7 +286,7 @@ export default function Quiz(
               </div>
             </aside>
             {isVideoDate(data.date) && (
-              <aside className={"mr-4"}>
+              <aside className={"mr-4 print:hidden"}>
                 <div
                   className={"text-base cursor-default select-none"}
                   title="listening available"
@@ -312,7 +312,7 @@ export default function Quiz(
                     {index === 0 &&
                       (
                         <div
-                          className={"flex flex-col w-full mb-4 sm:w-56 md:w-80 sm:ml-4 sm:float-right"}
+                          className={"flex flex-col w-full mb-4 sm:w-56 md:w-80 sm:ml-4 sm:float-right print:sm:hidden"}
                         >
                           {audio && (
                             <div
@@ -335,7 +335,9 @@ export default function Quiz(
                               <Audio data={audio} />
                             </div>
                           )}
-                          <div className={"flex flex-row text-sm mt-1"}>
+                          <div
+                            className={"flex flex-row text-sm mt-1 print:hidden"}
+                          >
                             <a href={`/tags/flavor/${data.params.flavor}`}>
                               <div
                                 className={"before:content-['flavor:_'] bg-slate-200 rounded-full px-2"}
