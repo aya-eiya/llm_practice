@@ -110,6 +110,12 @@ export default function SearchPage(
     tags.add(f);
     return tags;
   }, new Set<string>());
+
+  const actualPageNum = Math.min(
+    Math.max(page, 1),
+    Math.floor(maxCount / PAGE_SIZE) + 1,
+  );
+  const pageParam = actualPageNum > 1 ? `?page=${actualPageNum}` : "";
   return (
     <>
       <Head>
@@ -117,6 +123,10 @@ export default function SearchPage(
           MyniQ | Search results for flavor:{flavor}
         </title>
         <Meta origin={url.origin} />
+        <link
+          rel="canonical"
+          href={`${url.origin}/tags/flavor/${flavor}${pageParam}`}
+        />
       </Head>
       <div
         id="mainContent"

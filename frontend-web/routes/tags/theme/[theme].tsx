@@ -110,6 +110,12 @@ export default function SearchPage(
     tags.add(t);
     return tags;
   }, new Set<string>());
+
+  const actualPageNum = Math.min(
+    Math.max(page, 1),
+    Math.floor(maxCount / PAGE_SIZE) + 1,
+  );
+  const pageParam = actualPageNum > 1 ? `?page=${actualPageNum}` : "";
   return (
     <>
       <Head>
@@ -117,6 +123,10 @@ export default function SearchPage(
           MyniQ | Search results for theme:{theme}
         </title>
         <Meta origin={url.origin} />
+        <link
+          rel="canonical"
+          href={`${url.origin}/tags/theme/${theme}${pageParam}`}
+        />
       </Head>
       <div
         id="mainContent"
