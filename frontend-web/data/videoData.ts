@@ -237,6 +237,10 @@ const videoData = {
     "title":
       "[2024-07-07][MyniQ] The Shadow of Nuremberg [English Listening Quiz]",
   },
+  "2024-07-08": {
+    "id": "kxW5SgPJKtY",
+    "title": "[2024-07-08][MyniQ] Neon Dreams [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;

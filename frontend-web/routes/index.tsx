@@ -8,6 +8,7 @@ export default function Home({ url }: PageProps) {
     <>
       <Head>
         <Meta origin={url.origin} />
+        <link rel="canonical" href={url.origin} />
       </Head>
       <TopLayout />
     </>

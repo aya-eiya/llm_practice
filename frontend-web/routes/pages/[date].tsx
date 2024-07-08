@@ -26,6 +26,10 @@ export default function DailyQuiz(
           {data.title} - {data.date}
         </title>
         <Meta origin={url.origin} quiz={data} />
+        <link
+          rel="canonical"
+          href={`${url.origin}/pages/${data.date}`}
+        />
       </Head>
       <MainLayout data={data} />
     </>

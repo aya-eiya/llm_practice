@@ -12,6 +12,7 @@ export default function Terms() {
           rel="icon"
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📃</text></svg>"
         />
+        <link rel="canonical" href="https://myniq.app/terms" />
       </Head>
       <Header />
       <main className={"bg-slate-50 pt-4 pb-24 text-slate-800"}>
