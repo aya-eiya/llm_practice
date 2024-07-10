@@ -241,6 +241,16 @@ const videoData = {
     "id": "kxW5SgPJKtY",
     "title": "[2024-07-08][MyniQ] Neon Dreams [English Listening Quiz]",
   },
+  "2024-07-09": {
+    "id": "WmlL77Q69o0",
+    "title":
+      "[2024-07-09][MyniQ] Love at Elsinore Castle [English Listening Quiz]",
+  },
+  "2024-07-10": {
+    "id": "wQqBOeG94zU",
+    "title":
+      "[2024-07-10][MyniQ] The One-Room Schoolhouse [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
