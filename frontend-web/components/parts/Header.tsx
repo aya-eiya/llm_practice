@@ -20,7 +20,9 @@ export default function Header({ square }: { square?: boolean }) {
                 <img
                   src={"/img/logo.sq.min.svg"}
                   className={"w-full relative"}
+                  alt="MyniQ [ /ˈmaɪ-nɪk/ ]"
                 />
+                <span class={"text-transparent"}>MyniQ</span>
               </a>
             </h1>
             <div className={"py-12"}>
@@ -52,7 +54,9 @@ export default function Header({ square }: { square?: boolean }) {
                 <img
                   src={"/img/logo.banner.min.svg"}
                   className={"h-24 md:h-auto relative"}
+                  alt="MyniQ [ /ˈmaɪ-nɪk/ ]"
                 />
+                <span class={"text-transparent"}>MyniQ</span>
               </a>
             </h1>
             <div className={"py-4"}>

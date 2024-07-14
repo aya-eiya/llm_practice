@@ -255,6 +255,15 @@ const videoData = {
     "id": "a08l6fp8OOY",
     "title": "[2024-07-11][MyniQ] A Night to Remember [English Listening Quiz]",
   },
+  "2024-07-12": {
+    "id": "2vPegl9qJEg",
+    "title":
+      "[2024-07-12][MyniQ] The Dark Side of Woodstock [English Listening Quiz]",
+  },
+  "2024-07-13": {
+    "id": "KbtpFLz-VNU",
+    "title": "[2024-07-13][MyniQ] The Masquerade Ball [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
