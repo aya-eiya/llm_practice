@@ -264,6 +264,23 @@ const videoData = {
     "id": "KbtpFLz-VNU",
     "title": "[2024-07-13][MyniQ] The Masquerade Ball [English Listening Quiz]",
   },
+  "2024-07-15": {
+    "id": "o5ByFDqxMWM",
+    "title": "[2024-07-15][MyniQ] The Cosmic Ballet [English Listening Quiz]",
+  },
+  "2024-07-16": {
+    "id": "zXHCqIu7OKc",
+    "title":
+      "[2024-07-16][MyniQ] The Assassination of Archduke Zorvath [English Listening Quiz]",
+  },
+  "2024-07-17": {
+    "id": "oCu1fW9RjMc",
+    "title": "[2024-07-17][MyniQ] The Rite of Spring [English Listening Quiz]",
+  },
+  "2024-07-18": {
+    "id": "xdE1FAJOsRI",
+    "title": "[2024-07-18][MyniQ] The Art of Decay [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
