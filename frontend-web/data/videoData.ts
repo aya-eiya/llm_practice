@@ -281,6 +281,14 @@ const videoData = {
     "id": "xdE1FAJOsRI",
     "title": "[2024-07-18][MyniQ] The Art of Decay [English Listening Quiz]",
   },
+  "2024-07-19": {
+    "id": "2Y2k0QuCYVM",
+    "title": "[2024-07-19][MyniQ] The Ancient Treaty [English Listening Quiz]",
+  },
+  "2024-07-20": {
+    "id": "0-ETxkdI2Cs",
+    "title": "[2024-07-20][MyniQ] The Echoes of Kant [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
