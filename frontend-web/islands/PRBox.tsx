@@ -10,10 +10,10 @@ export default function PRBox() {
   }, []);
   return (
     <aside className={"absolute bottom-0 w-[20vw] px-2"}>
-      <p className={"text-xs w-64"}>
+      <div className={"text-xs w-64"}>
         [PR]
         <hr className={"my-1 w-[18vw]"} />
-      </p>
+      </div>
       <div>
         <LazyLoadOGP signal={ads} />
         <ul className={"flex flex-row flex-wrap"}>
