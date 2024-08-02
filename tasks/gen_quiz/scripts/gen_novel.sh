@@ -53,7 +53,7 @@ init_tmp () {
   )
 }
 ## models
-main_model="llama3"
+main_model="llama3.1"
 novel_model="llava-llama3"
 
 level=""
@@ -71,7 +71,9 @@ The output is JSON of
   "details": string // event detail
 }
 \`\`\`
-And the output JSON only."
+And the output JSON only.
+Do not include the prompt in the output and keep it clean.
+Do not include any code or other information except the JSON with the event."
 
   echo "${event}" > $tmp_prompt_event
   $run_llm "${event}" \
@@ -221,7 +223,11 @@ thus, the output must be a JSON object with the key \"dialog\" and the value is 
   ]
 }
 \`\`\`
-"
+
+Do not include the prompt in the output and keep it clean.
+Do not include other information except the JSON of the \"quize\" and its code quote \"\`\`\`\".
+Do not include typescript code.
+Make sure the output is a valid JSON and quoted by \"\`\`\`\" mark."
 
   echo "${conversation}" > $tmp_prompt_conversation
   $run_llm "$conversation" \
@@ -263,7 +269,12 @@ type Quize = {
   }[] // length must be 5
 }
 \`\`\`
-\"quiz\" is the root key and the object must have 5 question object."
+\"quiz\" is the root key and the object must have 5 question object.
+
+Do not include the prompt in the output and keep it clean.
+Do not include other information except the JSON of the \"quize\" and its code quote \"\`\`\`\".
+Do not include typescript code.
+Make sure the output is a valid JSON and quoted by \"\`\`\`\" mark."
 
   echo "${quiz}" > $tmp_prompt_quiz
   $run_llm "${quiz}" \

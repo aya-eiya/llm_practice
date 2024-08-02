@@ -42,7 +42,7 @@ init_tmp () {
 
 
 ## models
-main_model="llama3"
+main_model="llama3.1"
 
 try_gen_pattern() {
   local lines="${1}"

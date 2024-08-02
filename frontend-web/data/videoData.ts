@@ -289,6 +289,19 @@ const videoData = {
     "id": "0-ETxkdI2Cs",
     "title": "[2024-07-20][MyniQ] The Echoes of Kant [English Listening Quiz]",
   },
+  "2024-07-21": {
+    "id": "de4ceHnNbaU",
+    "title":
+      "[2024-07-21][MyniQ] The Eternal Meditation [English Listening Quiz]",
+  },
+  "2024-07-22": {
+    "id": "hJIlLMenTr8",
+    "title": "[2024-07-22][MyniQ] The Daguerreotype [English Listening Quiz]",
+  },
+  "2024-07-23": {
+    "id": "6RtiBhgVUi0",
+    "title": "[2024-07-23][MyniQ] The Last Roll [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
