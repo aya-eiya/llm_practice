@@ -302,6 +302,33 @@ const videoData = {
     "id": "6RtiBhgVUi0",
     "title": "[2024-07-23][MyniQ] The Last Roll [English Listening Quiz]",
   },
+  "2024-07-24": {
+    "id": "fxQgVt68MGk",
+    "title": "[2024-07-24][MyniQ] The Forgotten Dance [English Listening Quiz]",
+  },
+  "2024-07-25": {
+    "id": "0q-umXcakvA",
+    "title":
+      "[2024-07-25][MyniQ] The Labyrinth of Memories [English Listening Quiz]",
+  },
+  "2024-07-26": {
+    "id": "S2XxAmPb7cI",
+    "title":
+      "[2024-07-26][MyniQ] The Clockwork Premiere [English Listening Quiz]",
+  },
+  "2024-07-27": {
+    "id": "o8hle0cIzV4",
+    "title": "[2024-07-27][MyniQ] Echoes of Moonlight [English Listening Quiz]",
+  },
+  "2024-07-28": {
+    "id": "EP3gf08CLR0",
+    "title":
+      "[2024-07-28][MyniQ] The Heart of Invention [English Listening Quiz]",
+  },
+  "2024-07-29": {
+    "id": "9O1oUxBzp_k",
+    "title": "[2024-07-29][MyniQ] A Night to Remember [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
