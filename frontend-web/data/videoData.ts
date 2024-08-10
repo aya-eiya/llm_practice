@@ -344,6 +344,11 @@ const videoData = {
     "title":
       "[2024-08-01][MyniQ] The Dark Reflection of 'A Trip to the Moon' [English Listening Quiz]",
   },
+  "2024-08-02": {
+    "id": "KxMAv7FsMnE",
+    "title":
+      "[2024-08-02][MyniQ] Love Under the Stars [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
