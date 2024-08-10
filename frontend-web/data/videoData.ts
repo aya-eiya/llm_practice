@@ -329,6 +329,21 @@ const videoData = {
     "id": "9O1oUxBzp_k",
     "title": "[2024-07-29][MyniQ] A Night to Remember [English Listening Quiz]",
   },
+  "2024-07-30": {
+    "id": "Tq8QU3HRe_E",
+    "title":
+      "[2024-07-30][MyniQ] The Warsaw Pact Conspiracy [English Listening Quiz]",
+  },
+  "2024-07-31": {
+    "id": "KGEw4W9_Cts",
+    "title":
+      "[2024-07-31][MyniQ] The Black Tuesday Heist [English Listening Quiz]",
+  },
+  "2024-08-01": {
+    "id": "TguootoLxgE",
+    "title":
+      "[2024-08-01][MyniQ] The Dark Reflection of 'A Trip to the Moon' [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
