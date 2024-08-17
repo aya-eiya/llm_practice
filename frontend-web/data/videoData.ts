@@ -381,6 +381,19 @@ const videoData = {
     "title":
       "[2024-08-09][MyniQ] The Clockwork Rebellion [English Listening Quiz]",
   },
+  "2024-08-10": {
+    "id": "jfN8DG3VK24",
+    "title": "[2024-08-10][MyniQ] Inferno [English Listening Quiz]",
+  },
+  "2024-08-11": {
+    "id": "dohx6QhACR0",
+    "title": "[2024-08-11][MyniQ] The Last Refuge [English Listening Quiz]",
+  },
+  "2024-08-12": {
+    "id": "NoryuMcxSmU",
+    "title":
+      "[2024-08-12][MyniQ] The Last Star of Elyria [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
