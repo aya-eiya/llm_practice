@@ -349,6 +349,38 @@ const videoData = {
     "title":
       "[2024-08-02][MyniQ] Love Under the Stars [English Listening Quiz]",
   },
+  "2024-08-03": {
+    "id": "5KfnLz9gpxo",
+    "title":
+      "[2024-08-03][MyniQ] The Last City on Mars [English Listening Quiz]",
+  },
+  "2024-08-04": {
+    "id": "lH6LpZNzO4U",
+    "title": "[2024-08-04][MyniQ] Neon Dreams [English Listening Quiz]",
+  },
+  "2024-08-05": {
+    "id": "voWb9ulZGtM",
+    "title": "[2024-08-05][MyniQ] The Enchanted Tower [English Listening Quiz]",
+  },
+  "2024-08-06": {
+    "id": "D04NeL82c9k",
+    "title": "[2024-08-06][MyniQ] The Swan of Dreams [English Listening Quiz]",
+  },
+  "2024-08-07": {
+    "id": "m95Y5xELj9k",
+    "title":
+      "[2024-08-07][MyniQ] The Last Hope of Elyria [English Listening Quiz]",
+  },
+  "2024-08-08": {
+    "id": "Rv3ETK3jcDc",
+    "title":
+      "[2024-08-08][MyniQ] The Transcontinental Tunnel [English Listening Quiz]",
+  },
+  "2024-08-09": {
+    "id": "QLAttzK4JXA",
+    "title":
+      "[2024-08-09][MyniQ] The Clockwork Rebellion [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
