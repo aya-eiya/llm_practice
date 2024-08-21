@@ -394,6 +394,44 @@ const videoData = {
     "title":
       "[2024-08-12][MyniQ] The Last Star of Elyria [English Listening Quiz]",
   },
+  "2024-08-13": {
+    "id": "UtL0vnB-_y8",
+    "title":
+      "[2024-08-13][MyniQ] The Shadows of Mantua [English Listening Quiz]",
+  },
+  "2024-08-14": {
+    "id": "letq8xXDgtM",
+    "title": "[2024-08-14][MyniQ] The Blackout [English Listening Quiz]",
+  },
+  "2024-08-15": {
+    "id": "scb766S1KTY",
+    "title":
+      "[2024-08-15][MyniQ] The Unexpected Student [English Listening Quiz]",
+  },
+  "2024-08-16": {
+    "id": "O5_Oi4Ji_bg",
+    "title":
+      "[2024-08-16][MyniQ] The Shadow of Black Tuesday [English Listening Quiz]",
+  },
+  "2024-08-17": {
+    "id": "ucn2ZN5VUGA",
+    "title":
+      "[2024-08-17][MyniQ] The Shadow of Pretoria [English Listening Quiz]",
+  },
+  "2024-08-18": {
+    "id": "GnyndvDTFdA",
+    "title":
+      "[2024-08-18][MyniQ] The Great Fire of London [English Listening Quiz]",
+  },
+  "2024-08-19": {
+    "id": "93uZ0rbs40c",
+    "title": "[2024-08-19][MyniQ] Neon Dreams [English Listening Quiz]",
+  },
+  "2024-08-21": {
+    "id": "BIdETm-sntQ",
+    "title":
+      "[2024-08-21][MyniQ] The Shadow of Black Tuesday [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
