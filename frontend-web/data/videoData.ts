@@ -432,6 +432,20 @@ const videoData = {
     "title":
       "[2024-08-21][MyniQ] The Shadow of Black Tuesday [English Listening Quiz]",
   },
+  "2024-08-22": {
+    "id": "CCohLDujsU8",
+    "title": "[2024-08-22][MyniQ] The Moonlit Journey [English Listening Quiz]",
+  },
+  "2024-08-23": {
+    "id": "tm0xvvDgYrU",
+    "title":
+      "[2024-08-23][MyniQ] The University of Edinburgh [English Listening Quiz]",
+  },
+  "2024-08-24": {
+    "id": "NGxv24UpEgo",
+    "title":
+      "[2024-08-24][MyniQ] The Silent Television [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
