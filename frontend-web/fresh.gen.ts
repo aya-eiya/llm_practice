@@ -31,7 +31,7 @@ import * as $OnTranslatedEvent from "./islands/OnTranslatedEvent.tsx";
 import * as $PRBox from "./islands/PRBox.tsx";
 import * as $Printer from "./islands/Printer.tsx";
 import * as $YoutubeAudio from "./islands/YoutubeAudio.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
