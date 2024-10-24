@@ -24,6 +24,7 @@ import data20241023 from "./2024-10-23.ts";
 import data20241024 from "./2024-10-24.ts";
 import data20241025 from "./2024-10-25.ts";
 import data20241026 from "./2024-10-26.ts";
+import data20241027 from "./2024-10-27.ts";
 import data20241028 from "./2024-10-28.ts";
 import data20241029 from "./2024-10-29.ts";
 import data20241030 from "./2024-10-30.ts";
@@ -56,6 +57,7 @@ const dailyData = {
   "2024-10-24": data20241024,
   "2024-10-25": data20241025,
   "2024-10-26": data20241026,
+  "2024-10-27": data20241027,
   "2024-10-28": data20241028,
   "2024-10-29": data20241029,
   "2024-10-30": data20241030,
