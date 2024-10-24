@@ -559,6 +559,102 @@ const videoData = {
     "id": "6NYsaU2ai00",
     "title": "[2024-09-18][MyniQ] Neon Dreams [English Listening Quiz]",
   },
+  "2024-09-19": {
+    "id": "vlFHH81knAE",
+    "title": "[2024-09-19][MyniQ] The Blackout [English Listening Quiz]",
+  },
+  "2024-09-20": {
+    "id": "IDqntrpInyA",
+    "title":
+      "[2024-09-20][MyniQ] Love in the Shadows of Light [English Listening Quiz]",
+  },
+  "2024-09-21": {
+    "id": "ZjvoR98QwQg",
+    "title":
+      "[2024-09-21][MyniQ] The Last Ember of London [English Listening Quiz]",
+  },
+  "2024-09-22": {
+    "id": "kUL9s0W3IXc",
+    "title":
+      "[2024-09-22][MyniQ] The Last Inhabitant of a Dying Planet [English Listening Quiz]",
+  },
+  "2024-09-23": {
+    "id": "CgYXA7y1yAU",
+    "title":
+      "[2024-09-23][MyniQ] The Lost City of St. Peter [English Listening Quiz]",
+  },
+  "2024-09-24": {
+    "id": "7p_YHeoNgqw",
+    "title":
+      "[2024-09-24][MyniQ] The Clockwork Conspiracy [English Listening Quiz]",
+  },
+  "2024-09-25": {
+    "id": "m-XAZSQTk6o",
+    "title": "[2024-09-25][MyniQ] Neon Dreams [English Listening Quiz]",
+  },
+  "2024-09-26": {
+    "id": "dt5xsVIo8Iw",
+    "title": "[2024-09-26][MyniQ] Echoes of Eternity [English Listening Quiz]",
+  },
+  "2024-09-27": {
+    "id": "O3cC1iKs1lA",
+    "title":
+      "[2024-09-27][MyniQ] The Magical Swan Dance [English Listening Quiz]",
+  },
+  "2024-09-28": {
+    "id": "54SMd0cA__I",
+    "title":
+      "[2024-09-28][MyniQ] The Shadow of Deceit [English Listening Quiz]",
+  },
+  "2024-09-29": {
+    "id": "fJQVQw7wUcg",
+    "title": "[2024-09-29][MyniQ] The Clockwork Crown [English Listening Quiz]",
+  },
+  "2024-09-30": {
+    "id": "uChST0u0Bm4",
+    "title":
+      "[2024-09-30][MyniQ] The Last Memory of Eternity [English Listening Quiz]",
+  },
+  "2024-10-01": {
+    "id": "s5-oGZJsDGI",
+    "title": "[2024-10-01][MyniQ] Last Hope [English Listening Quiz]",
+  },
+  "2024-10-02": {
+    "id": "wzx7AdeNFSo",
+    "title":
+      "[2024-10-02][MyniQ] The Dark Castle of Dreams [English Listening Quiz]",
+  },
+  "2024-10-03": {
+    "id": "CfUVRCb-xao",
+    "title":
+      "[2024-10-03][MyniQ] The Death of Plato in Dreams [English Listening Quiz]",
+  },
+  "2024-10-04": {
+    "id": "6RGu4Qei_Z4",
+    "title":
+      "[2024-10-04][MyniQ] The Shadow of Athens [English Listening Quiz]",
+  },
+  "2024-10-05": {
+    "id": "BfMZtvondoU",
+    "title": "[2024-10-05][MyniQ] A Love Beyond Time [English Listening Quiz]",
+  },
+  "2024-10-06": {
+    "id": "uxinmed-_PQ",
+    "title":
+      "[2024-10-06][MyniQ] The Time Traveler's Dilemma [English Listening Quiz]",
+  },
+  "2024-10-07": {
+    "id": "PYU2juaJ-Cs",
+    "title": "[2024-10-07][MyniQ] Neon Dreams [English Listening Quiz]",
+  },
+  "2024-10-08": {
+    "id": "qZkehABpw7s",
+    "title": "[2024-10-08][MyniQ] Love at The Globe [English Listening Quiz]",
+  },
+  "2024-10-09": {
+    "id": "_WKOGc358f4",
+    "title": "[2024-10-09][MyniQ] The Panic of 1907 [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;

@@ -5,6 +5,7 @@ import data202407 from "./2024-07/index.ts";
 import data202408 from "./2024-08/index.ts";
 import data202409 from "./2024-09/index.ts";
 import data202410 from "./2024-10/index.ts";
+import data202411 from "./2024-11/index.ts";
 
 const dailyData = {
   ...data202404,
@@ -14,6 +15,7 @@ const dailyData = {
   ...data202408,
   ...data202409,
   ...data202410,
+  ...data202411,
 };
 
 const devDate = Deno.env.get("DEV_DATE");
