@@ -114,6 +114,7 @@ $(cat ${CURRENT_DIR}/curriculum.json)
 
 Create short ${flavor} novel that is inspired by the concept of the event and be written with about 180 words.
 The novel is for a part of a test for ESL learners of ${level} in the curriculum, so that its grammar and vocabulary levels must be suitable for the level.
+The title must be a unique and catchy phrase.
 
 Do not include the prompt in the output and keep it clean.
 Do not include other information except the JSON with the title and body.

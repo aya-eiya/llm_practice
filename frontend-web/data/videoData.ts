@@ -446,6 +446,119 @@ const videoData = {
     "title":
       "[2024-08-24][MyniQ] The Silent Television [English Listening Quiz]",
   },
+  "2024-08-25": {
+    "id": "_aUoc5P_k04",
+    "title":
+      "[2024-08-25][MyniQ] The Stock Exchange Conspiracy [English Listening Quiz]",
+  },
+  "2024-08-26": {
+    "id": "OebOayDgS50",
+    "title":
+      "[2024-08-26][MyniQ] The Dark Castle of Jamestown [English Listening Quiz]",
+  },
+  "2024-08-27": {
+    "id": "rW3aTkyChIg",
+    "title":
+      "[2024-08-27][MyniQ] The Elevator of Memories [English Listening Quiz]",
+  },
+  "2024-08-28": {
+    "id": "3X8PG-yunuk",
+    "title": "[2024-08-28][MyniQ] The Lost Diary [English Listening Quiz]",
+  },
+  "2024-08-29": {
+    "id": "MP_thxjEu7o",
+    "title": "[2024-08-29][MyniQ] Neon Dreams [English Listening Quiz]",
+  },
+  "2024-08-30": {
+    "id": "0itBUGt6_ww",
+    "title":
+      "[2024-08-30][MyniQ] The Climb to Nowhere [English Listening Quiz]",
+  },
+  "2024-08-31": {
+    "id": "beg0Rd2ydQM",
+    "title": "[2024-08-31][MyniQ] Neon Dreams [English Listening Quiz]",
+  },
+  "2024-09-01": {
+    "id": "foCa06mF-8E",
+    "title":
+      "[2024-09-01][MyniQ] The Transatlantic Telegraph [English Listening Quiz]",
+  },
+  "2024-09-02": {
+    "id": "8ZZ5ZTB9CTQ",
+    "title": "[2024-09-02][MyniQ] Neon Dreams [English Listening Quiz]",
+  },
+  "2024-09-03": {
+    "id": "Pt4XLzHSdbU",
+    "title": "[2024-09-03][MyniQ] The Magic Painter [English Listening Quiz]",
+  },
+  "2024-09-04": {
+    "id": "Zk0IBfxSLlU",
+    "title":
+      "[2024-09-04][MyniQ] The Eiffel Tower in Space [English Listening Quiz]",
+  },
+  "2024-09-05": {
+    "id": "5opP-O8Dd3M",
+    "title":
+      "[2024-09-05][MyniQ] The First Olympic Games [English Listening Quiz]",
+  },
+  "2024-09-06": {
+    "id": "3xxw0xzr8KE",
+    "title": "[2024-09-06][MyniQ] Echoes of Silence [English Listening Quiz]",
+  },
+  "2024-09-07": {
+    "id": "yZf55i8Uy3g",
+    "title": "[2024-09-07][MyniQ] The Blackout [English Listening Quiz]",
+  },
+  "2024-09-08": {
+    "id": "_-snIOeFVhM",
+    "title":
+      "[2024-09-08][MyniQ] The Time Traveler's Dilemma [English Listening Quiz]",
+  },
+  "2024-09-09": {
+    "id": "S11vJpWZ4FE",
+    "title": "[2024-09-09][MyniQ] The Mouse of Memory [English Listening Quiz]",
+  },
+  "2024-09-10": {
+    "id": "E-XjYDiWRJk",
+    "title":
+      "[2024-09-10][MyniQ] The Mysterious Case of the Missing Heirloom [English Listening Quiz]",
+  },
+  "2024-09-11": {
+    "id": "MvEr9QFcQw8",
+    "title": "[2024-09-11][MyniQ] The Clockwork Cog [English Listening Quiz]",
+  },
+  "2024-09-12": {
+    "id": "nN4xBsFwFOM",
+    "title":
+      "[2024-09-12][MyniQ] The Fire at Willow Manor [English Listening Quiz]",
+  },
+  "2024-09-13": {
+    "id": "iZ9GkpAxr6M",
+    "title":
+      "[2024-09-13][MyniQ] The Haunting of Mark II [English Listening Quiz]",
+  },
+  "2024-09-14": {
+    "id": "4ydf2XJKHo8",
+    "title": "[2024-09-14][MyniQ] Echoes of Eternity [English Listening Quiz]",
+  },
+  "2024-09-15": {
+    "id": "xkePHRxjl10",
+    "title": "[2024-09-15][MyniQ] The Olympic Dreams [English Listening Quiz]",
+  },
+  "2024-09-16": {
+    "id": "3ejO6BFlM9I",
+    "title":
+      "[2024-09-16][MyniQ] The Moonlit Serenade [English Listening Quiz]",
+  },
+  "2024-09-17": {
+    "id": "2SP-M9o9-9k",
+    "title":
+      "[2024-09-17][MyniQ] A Love in the Shadows of Fashion [English Listening Quiz]",
+  },
+  "2024-09-18": {
+    "id": "6NYsaU2ai00",
+    "title": "[2024-09-18][MyniQ] Neon Dreams [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
