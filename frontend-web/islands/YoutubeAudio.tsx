@@ -37,9 +37,9 @@ let seekTapTimeout: ReturnType<typeof setTimeout> | undefined = undefined;
 export default function YoutubeAudio({ data }: { data: AudioData }) {
   const { date, title, url } = data as AudioDataWithEmbedUrl;
   const { id } = data as AudioDataWithId;
-  const YT = globalThis.window.YT;
+  const YT = globalThis.window?.YT;
   // deno-lint-ignore no-explicit-any
-  const player = useSignal<any | undefined>(globalThis.window.player);
+  const player = useSignal<any | undefined>(globalThis.window?.player);
   const isError = useSignal(false);
   const state = useSignal<StateValue>(STATE.UNSTARTED);
   const currentTime = useSignal(0);

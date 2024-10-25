@@ -10,7 +10,7 @@ export default function OnTranslatedEvent(
       if (onReload) {
         onReload.value = new Date().getTime();
       } else {
-        globalThis.window.location.reload();
+        globalThis.window?.location.reload();
       }
     });
     const translationObserver = new MutationObserver((e) => {
