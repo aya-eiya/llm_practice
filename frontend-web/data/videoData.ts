@@ -655,6 +655,79 @@ const videoData = {
     "id": "_WKOGc358f4",
     "title": "[2024-10-09][MyniQ] The Panic of 1907 [English Listening Quiz]",
   },
+  "2024-10-10": {
+    "id": "-vImWhLS6QI",
+    "title":
+      "[2024-10-10][MyniQ] The Silent Telegraph [English Listening Quiz]",
+  },
+  "2024-10-11": {
+    "id": "JZWFXIYOtb0",
+    "title":
+      "[2024-10-11][MyniQ] The Last Hope of Humanity [English Listening Quiz]",
+  },
+  "2024-10-12": {
+    "id": "0T9xF8H7uFE",
+    "title": "[2024-10-12][MyniQ] The Celestial Dream [English Listening Quiz]",
+  },
+  "2024-10-13": {
+    "id": "dp7kl8EizMU",
+    "title": "[2024-10-13][MyniQ] The Last Flight [English Listening Quiz]",
+  },
+  "2024-10-14": {
+    "id": "Y0NkzmXHYFM",
+    "title":
+      "[2024-10-14][MyniQ] The Clockwork Conspiracy [English Listening Quiz]",
+  },
+  "2024-10-15": {
+    "id": "qGnNTvey8hM",
+    "title":
+      "[2024-10-15][MyniQ] The Gilded Palace of Bilbao [English Listening Quiz]",
+  },
+  "2024-10-16": {
+    "id": "JFF8Oqb9ssU",
+    "title": "[2024-10-16][MyniQ] The Balloonist [English Listening Quiz]",
+  },
+  "2024-10-17": {
+    "id": "pdYKMpSChp0",
+    "title": "[2024-10-17][MyniQ] A House of Dreams [English Listening Quiz]",
+  },
+  "2024-10-18": {
+    "id": "Lc2f31QvgS8",
+    "title":
+      "[2024-10-18][MyniQ] The Athletes of Eternity [English Listening Quiz]",
+  },
+  "2024-10-19": {
+    "id": "6aIHMB4XSz4",
+    "title": "[2024-10-19][MyniQ] The Quantum Dreamer [English Listening Quiz]",
+  },
+  "2024-10-20": {
+    "id": "SErcNzWtKNs",
+    "title":
+      "[2024-10-20][MyniQ] The Telephone Whisperer [English Listening Quiz]",
+  },
+  "2024-10-21": {
+    "id": "K-BvYmkRZG4",
+    "title":
+      "[2024-10-21][MyniQ] The Last Hope of Mars [English Listening Quiz]",
+  },
+  "2024-10-22": {
+    "id": "8XaHErc2xxU",
+    "title": "[2024-10-22][MyniQ] Neon Dreams [English Listening Quiz]",
+  },
+  "2024-10-23": {
+    "id": "fd4IA8J-ZKA",
+    "title":
+      "[2024-10-23][MyniQ] The Mysterious Telephone Call [English Listening Quiz]",
+  },
+  "2024-10-24": {
+    "id": "R75t2yFWxjM",
+    "title": "[2024-10-24][MyniQ] Echoes in Eternity [English Listening Quiz]",
+  },
+  "2024-10-25": {
+    "id": "nCm1yIyc0o0",
+    "title":
+      "[2024-10-25][MyniQ] The Clockwork Rebellion [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
