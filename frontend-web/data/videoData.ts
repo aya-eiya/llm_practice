@@ -728,6 +728,10 @@ const videoData = {
     "title":
       "[2024-10-25][MyniQ] The Clockwork Rebellion [English Listening Quiz]",
   },
+  "2024-10-26": {
+    "id": "ekcLjBiQnK4",
+    "title": "[2024-10-26][MyniQ] The Lost Diary [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
