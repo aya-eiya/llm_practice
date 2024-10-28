@@ -732,6 +732,15 @@ const videoData = {
     "id": "ekcLjBiQnK4",
     "title": "[2024-10-26][MyniQ] The Lost Diary [English Listening Quiz]",
   },
+  "2024-10-27": {
+    "id": "S57ztp6h0YE",
+    "title": "[2024-10-27][MyniQ] After The Fire [English Listening Quiz]",
+  },
+  "2024-10-28": {
+    "id": "GRK_d6B9wZc",
+    "title":
+      "[2024-10-28][MyniQ] The Time Traveler's Dilemma [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
