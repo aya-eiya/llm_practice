@@ -759,6 +759,29 @@ const videoData = {
     "title":
       "[2024-11-01][MyniQ] Shadows of Compiègne [English Listening Quiz]",
   },
+  "2024-11-02": {
+    "id": "fDg6qkepj8o",
+    "title": "[2024-11-02][MyniQ] Love at Trafalgar [English Listening Quiz]",
+  },
+  "2024-11-03": {
+    "id": "bs7x_iLnDio",
+    "title":
+      "[2024-11-03][MyniQ] The Academy of Broken Dreams [English Listening Quiz]",
+  },
+  "2024-11-04": {
+    "id": "aMSxthmT56o",
+    "title":
+      "[2024-11-04][MyniQ] Neon Dreams of Paris [English Listening Quiz]",
+  },
+  "2024-11-05": {
+    "id": "Pr9BOt-vrAA",
+    "title": "[2024-11-05][MyniQ] Ashes of Tomorrow [English Listening Quiz]",
+  },
+  "2024-11-06": {
+    "id": "IFaF4RkaNGI",
+    "title":
+      "[2024-11-06][MyniQ] Beyond the Celestial Gates [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
