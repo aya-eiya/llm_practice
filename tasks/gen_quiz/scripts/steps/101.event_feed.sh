@@ -56,8 +56,9 @@ output_json () {
 
 category=""
 main_model="llama3.1"
+verbose=false
 
-while getopts ":d:e:s:t:f:m:n:-:" opt; do
+while getopts ":c:m:v:-:" opt; do
   if [ "$opt" = "-" ]; then
     opt="${OPTARG%%=*}"
     OPTARG="${OPTARG#$opt}"
@@ -68,6 +69,8 @@ while getopts ":d:e:s:t:f:m:n:-:" opt; do
       category="$OPTARG";;
     m|model) # main model to use
       main_model="$OPTARG";;
+    v|verbose) # verbose mode
+      verbose=true;;
     \?)
       echo "Invalid option: -"$OPTARG"" >&2
       exit 1;;
@@ -81,5 +84,13 @@ if [ "$category" = "" ]; then # random category
   category=$(for i in ${CATEGORIES[@]}; do echo $i; done | shuf -n 1)
 fi
 
+show_options() {
+  echo "Category: ${category}" >&2
+  echo "Model: ${main_model}" >&2
+}
+
+if [ $verbose = true ]; then
+  show_options
+fi
 output_json
 

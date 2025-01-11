@@ -1,3 +1,4 @@
 **/*.log
 **/*.bk
 **/.DS_Store
+**/node_modules

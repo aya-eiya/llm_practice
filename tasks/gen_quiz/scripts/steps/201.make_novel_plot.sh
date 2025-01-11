@@ -10,7 +10,7 @@ TEMPLATE="
   \"summary\": \"The original text\",
   \"title\": \"The title of the story\",
   \"flavor\": \"The flavor of the story\",
-  \"theme\": \"The sutiable theme of the novel plot from the original news\",
+  \"theme\": \"The suitable theme of the novel plot from the original news\",
   \"plots\": {
     \"introduction\": \"Introduction of the story\",
     \"development\": \"Development of the story\",
@@ -42,11 +42,9 @@ THEMES=(
 )
 
 
-anonymization_text() {
+make_novel() {
   local themes=`echo ${THEMES[*]} | sed -e 's/ /,/g'`
-  echo $themes
-  local prompt=`
-cat<<EOF
+  local prompt="
 Create a plot of a stroy from following a short real ${category} news summary:
 \`\`\`
 ${1}
@@ -54,37 +52,36 @@ ${1}
 And generate JSON array in the following format:
 \`\`\`
 ${TEMPLATE}
-\`\`\`,
+\`\`\`
 This order is not for generate runnable code, just output JSON data.
 The output must keep the rules strictly:
-* The story flavor should be a "${flavor}" novel.
-* Pickup a sutiable theme of the news to create a attractive plot from the folloing list: "${themes}"
-* The "theme" property is the pickuped theme of the story, must one word of in the list.
-* The "title" property is the title of the story.
-* The "flavor" property must set exact value as "${flavor}".
-* The "summary" property is the original text.
-* The "plots" property is an object with the keys "introduction", "development", "climax", and "conclusion".
-* The "visions" property is an array of considerations in creating the plot of the story.
+* The story flavor should be a \"${flavor}\" novel.
+* Pickup a suitable theme of the news to create a attractive plot from the following list: \"${themes}\"
+* The \"theme\" property is the picked theme of the story, must one word of in the list.
+* The \"title\" property is the title of the story.
+* The \"flavor\" property must set exact value as \"${flavor}\".
+* The \"summary\" property is the original text.
+* The \"plots\" property is an object with the keys \"introduction\", \"development\", \"climax\", and \"conclusion\".
+* The \"visions\" property is an array of considerations in creating the plot of the story.
 * The output is only a JSON object.
 * Entire output message is proper JSON format.
-* Must not include chat message like "Here is ..." or "Here are ..." or other talk block or output description block.
+* Must not include chat message like \"Here is ...\" or \"Here are ...\" or other talk block or output description block.
 * Do not start with your reply.
-* Must not include code block quote "\`\`\`" marks.
-EOF
-`
+* Must not include code block quote \"\`\`\`\" marks.
+"
   ollama run ${main_model} "${prompt}" | sed -e 's/\`\`\`(?json)//'
 }
 
 output_json () {
-  anonymization_text "${summary}" # | jq
+  make_novel "${summary}" | jq
 }
 
 main_model="llama3.1"
 category="latest"
-summary="Ben Baldanza, 62, Dies; Brought No-Frills Flying to Spirit Airlines"
+summary=""
 flavor="mystery"
-
-while getopts ":c:f:m:s:-:" opt; do
+verbose=false
+while getopts ":c:f:m:s:v:-:" opt; do
   if [ "$opt" = "-" ]; then
     opt="${OPTARG%%=*}"
     OPTARG="${OPTARG#$opt}"
@@ -97,8 +94,10 @@ while getopts ":c:f:m:s:-:" opt; do
       flavor="$OPTARG";;
     m|model) # main model to use
       main_model="$OPTARG";;
-    s:summary) # summary of the event
+    s|summary) # summary of the event
       summary="$OPTARG";;
+    v|verbose) # verbose mode
+      verbose=true;;
     \?)
       echo "Invalid option: -"$OPTARG"" >&2
       exit 1;;
@@ -112,4 +111,14 @@ if [ "$flavor" = "" ]; then # random category
   flavor=$(for i in ${FLAVORS[@]}; do echo $i; done | shuf -n 1)
 fi
 
+show_options() {
+  echo "Category: ${category}" >&2
+  echo "Flavor: ${flavor}" >&2
+  echo "Model: ${main_model}" >&2
+  echo "Summary: ${summary}" >&2
+}
+
+if [ $verbose = true ]; then
+  show_options
+fi
 output_json

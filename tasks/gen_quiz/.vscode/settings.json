@@ -1,5 +1,6 @@
 {
   "cSpell.words": [
+    "anonymization",
     "CEFR",
     "coreutils",
     "fulldate",
@@ -13,6 +14,7 @@
     "Modelfile",
     "Nominalization",
     "ollama",
+    "shuf",
     "suzume"
   ]
 }

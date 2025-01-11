@@ -66,76 +66,11 @@ output_json () {
 
 main_model="llama3.1"
 level=""
-novel=`
-cat<<EOF
-{
-  "title": "The Man Who Changed the Way We Fly: A Mystery",
-  "flavor": "mystery",
-  "level": "ESL Beginner",
-  "theme": "Innovation and perseverance in shaping industry trends",
-  "body": [
-    "Ben Baldanza was a very good man. He wanted to make flying cheaper.",
-    "One day, he saw an article about Spirit Airlines. They were not doing well. Ben thought this could be his chance to change things.",
-    "He worked very hard to get people to give him money for his idea. But they did not think it would work. 'Why would people pay less for a flight?' they asked. Ben knew that people wanted to fly without problems.",
-    "After a long time, Ben finally got the money he needed. He became the boss of Spirit Airlines and wanted to make flying better.",
-    "The first days were hard. There were many meetings with investors and people did not like the idea of no extras on flights.",
-    "But Ben was very strong. He kept working to make things better, cheaper and faster.",
-    "As Spirit Airlines started to grow, people noticed that flying had changed. Other airlines also wanted to be cheap and easy.",
-    "This was a big change. Many people could now fly who never thought they could.",
-    "Ben's work inspired others in the industry. He kept pushing for new ideas and making flying better.",
-    "Years later, when Ben died at 62, he had left a big mark on flying. His strong spirit and hard work had changed flying forever.",
-    "When people heard that Ben was gone, they thanked him for making flying cheaper."
-  ]
-}
-EOF
-`
-dialogue=`
-cat<<EOF
-{
-  "novelTitle": "The Man Who Changed the Way We Fly: A Mystery",
-  "level": "ESL Beginner",
-  "speakers": [
-    "Billy",
-    "Kerry",
-    "Meg",
-    "Lui"
-  ],
-  "dialogues": [
-    {
-      "Billy": "Ben Baldanza was a very good man. He wanted to make flying cheaper."
-    },
-    {
-      "Lui": "He worked very hard to get people to give him money for his idea. But they did not think it would work."
-    },
-    {
-      "Meg": "Why would people pay less for a flight?"
-    },
-    {
-      "Billy": "Ben knew that people wanted to fly without problems."
-    },
-    {
-      "Kerry": "But Ben was very strong. He kept working to make things better, cheaper and faster."
-    },
-    {
-      "Lui": "As Spirit Airlines started to grow, people noticed that flying had changed."
-    },
-    {
-      "Meg": "Many people could now fly who never thought they could."
-    },
-    {
-      "Billy": "Ben's work inspired others in the industry. He kept pushing for new ideas and making flying better."
-    },
-    {
-      "Kerry": "Years later, when Ben died at 62, he had left a big mark on flying. His strong spirit and hard work had changed flying forever."
-    },
-    {
-      "Lui": "When people heard that Ben was gone, they thanked him for making flying cheaper."
-    }
-  ]
-}
-EOF
-`
-while getopts ":m:n:-:" opt; do
+novel=""
+dialogue=""
+verbose=false
+
+while getopts ":m:n:v:-:" opt; do
   if [ "$opt" = "-" ]; then
     opt="${OPTARG%%=*}"
     OPTARG="${OPTARG#$opt}"
@@ -148,6 +83,8 @@ while getopts ":m:n:-:" opt; do
       novel="$OPTARG";;
     d|dialogue) # main model to use
       dialogue="$OPTARG";;
+    v|verbose) # verbose mode
+      verbose=true;;
     \?)
       echo "Invalid option: -"$OPTARG"" >&2
       exit 1;;
@@ -156,5 +93,17 @@ while getopts ":m:n:-:" opt; do
       exit 1;;
   esac
 done
+
+show_options() {
+  echo "Model: ${main_model}" >&2
+  echo "Novel:
+${novel}" >&2
+  echo "Dialogue:
+${dialogue}" >&2
+}
+
+if [ $verbose = true ]; then
+  show_options
+fi
 
 output_json

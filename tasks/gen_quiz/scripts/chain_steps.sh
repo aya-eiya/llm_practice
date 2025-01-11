@@ -21,4 +21,60 @@ STEP_601="${STEP_DIR}/601.generate_pr_text.sh"
 
 mkdir -p "${OUTPUT_DIR}"
 
-bash $STEP_101 | tee "${OUTPUT_DIR}/101.json"
+if [ -e "${OUTPUT_DIR}/101.json" ]; then
+  echo "Already exists 101.json"
+else
+  bash $STEP_101 | tee "${OUTPUT_DIR}/101.json"
+fi
+
+if [ -e "${OUTPUT_DIR}/102.json" ]; then
+  echo "Already exists 102.json"
+else
+  DATA=`jq -r '.[0].summary' "${OUTPUT_DIR}/101.json"`
+  bash $STEP_102 --text="$DATA" | tee "${OUTPUT_DIR}/102.json"
+fi
+
+if [ -e "${OUTPUT_DIR}/201.json" ]; then
+  echo "Already exists 201.json"
+else
+  DATA=`jq -r '.mod' "${OUTPUT_DIR}/102.json"`
+  bash $STEP_201 --summary="$DATA" | tee "${OUTPUT_DIR}/201.json"
+fi
+
+if [ -e "${OUTPUT_DIR}/202.json" ]; then
+  echo "Already exists 202.json"
+else
+  DATA=`jq -r '.' "${OUTPUT_DIR}/201.json"`
+  bash $STEP_202 --plot="$DATA" | tee "${OUTPUT_DIR}/202.json"
+fi
+
+if [ -e "${OUTPUT_DIR}/203.json" ]; then
+  echo "Already exists 203.json"
+else
+  DATA=`jq -r '.' "${OUTPUT_DIR}/202.json"`
+  bash $STEP_203 --novel="$DATA" | tee "${OUTPUT_DIR}/203.json"
+fi
+
+if [ -e "${OUTPUT_DIR}/302.json" ]; then
+  echo "Already exists 302.json"
+else
+  DATA=`jq -r '.' "${OUTPUT_DIR}/203.json"`
+  bash $STEP_302 --novel="$DATA" --level="1" | tee "${OUTPUT_DIR}/302.json"
+fi
+
+if [ -e "${OUTPUT_DIR}/401.json" ]; then
+  echo "Already exists 401.json"
+else
+  DATA=`jq -r '.' "${OUTPUT_DIR}/302.json"`
+  bash $STEP_401 --novel="$DATA" | tee "${OUTPUT_DIR}/401.json"
+fi
+
+
+if [ -e "${OUTPUT_DIR}/501.json" ]; then
+  echo "Already exists 501.json"
+else
+  DATA1=`jq -r '.' "${OUTPUT_DIR}/302.json"`
+  DATA2=`jq -r '.' "${OUTPUT_DIR}/401.json"`
+  bash $STEP_501 --novel="$DATA1" --dialogue="$DATA2" | tee "${OUTPUT_DIR}/501.json"
+fi
+

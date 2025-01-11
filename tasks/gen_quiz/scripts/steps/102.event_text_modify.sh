@@ -21,7 +21,7 @@ TEMPLATE="
 "
 
 anonymization_text() {
-  ollama run ${main_model} "Anonimize following text:
+  ollama run ${main_model} "Anonymize following text:
   \`\`\`
   ${1}
   \`\`\`
@@ -33,7 +33,7 @@ anonymization_text() {
   The output must keep the rules strictly:
   * Remove the unique characteristics of the writer from the text and make it impossible to tell who wrote it.
   * Proper names of people, products, companies, etc. should be fictitious names that are a play on the name of the person, product, or company.
-  * No need for gender neutralization.
+  * No need for gender neutralization, and no need to change numbers or dates, and no need to change location such as country name or prefecture name.
   * \"org\" is the original text.
   * \"mod\" is the anonymized text.
   * \"changes\" is an array of changes, including \"orgWord\" and \"modWord\" and \"reason\".
@@ -51,8 +51,9 @@ output_json () {
 
 main_model="llama3.1"
 text=""
+verbose=false
 
-while getopts ":t:m:-:" opt; do
+while getopts ":t:m:v:-:" opt; do
   if [ "$opt" = "-" ]; then
     opt="${OPTARG%%=*}"
     OPTARG="${OPTARG#$opt}"
@@ -61,8 +62,10 @@ while getopts ":t:m:-:" opt; do
   case $opt in
     m|model) # main model to use
       main_model="$OPTARG";;
-    t:text) # text to modify
+    t|text) # text to modify
       text="$OPTARG";;
+    v|verbose) # verbose mode
+      verbose=true;;
     \?)
       echo "Invalid option: -"$OPTARG"" >&2
       exit 1;;
@@ -72,5 +75,13 @@ while getopts ":t:m:-:" opt; do
   esac
 done
 
+show_options() {
+  echo "Model: ${main_model}" >&2
+  echo "Text:
+${text}" >&2
+}
 
+if [ $verbose = true ]; then
+  show_options
+fi
 output_json
