@@ -8,7 +8,7 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 TEMPLATE="
 {
   \"novelTitle\": \"The title of the novel\",
-  \"level\": \"The grammar level of conversation\",
+  \"level\": \"The grammar level of the quizzes\",
   \"quizzes\": [
     {
       \"question\": \"The question of the quiz\",
@@ -29,7 +29,7 @@ TEMPLATE="
 
 create_quiz () {
   local level=`echo "${novel}" | jq -r ".level"`
-  ollama run ${main_model} "Read following novel and dialogues about the novel, and create 5 quizzes about the novel, as for ESL larners:
+  ollama run ${main_model} "Read following novel and dialogues about the novel, and create 5 quizzes about the novel, as for ESL learners:
   The novel is following:
   \`\`\`
   ${1}
@@ -51,7 +51,7 @@ create_quiz () {
     * "quiz object" is a JSON object with \"quiz\" as the question,
       and \"options\" as the 5 length array of the option includes 4 wrong options and 1 correct answer, and \"answer\" is index of correct answer in the \"options\",
       and \"reason\" is the logical reason for the answer.
-  * The using words and grammer should be suitable for the level.
+  * The using words and grammar should be suitable for the level.
   * The output is only a JSON object.
   * Entire output message is proper JSON format.
   * Must not include chat message like \"Here is ...\" or \"Here are ...\" or other talk block or output description block.

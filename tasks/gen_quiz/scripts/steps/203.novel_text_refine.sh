@@ -28,6 +28,7 @@ output_json () {
 
 main_model="llama3.1"
 novel=""
+verbose=false
 
 while getopts ":m:n:v:-:" opt; do
   if [ "$opt" = "-" ]; then

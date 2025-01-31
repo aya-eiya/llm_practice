@@ -46,7 +46,7 @@ create_chat() {
   \`\`\`,
   This order is not for generate runnable code, just output JSON data.
   The output must keep the rules strictly:
-  * Keep the original story, context and meaning, just change its grammar and word difficulty level.
+  * A character makes two or three statements. Other characters should respond and develop the discussion in the form of a formal conversation. The order of the statements shall be in no particular order.
   * The \"novelTitle\" property is the title of the novel, keep original title.
   * The \"level\" property is exact \"${level}\", Do not change any word.
   * The \"speakers\" property is array of speakers name.

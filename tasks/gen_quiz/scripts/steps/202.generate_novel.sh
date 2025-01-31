@@ -84,4 +84,5 @@ ${plot}" >&2
 if [ $verbose = true ]; then
   show_options
 fi
+
 output_json
