@@ -162,7 +162,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
     );
   } else {
     if (isError.value) {
-      return undefined;
+      return <></>;
     }
     return (
       <>

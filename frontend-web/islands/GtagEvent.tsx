@@ -22,5 +22,5 @@ export function GtagEvent(
       value: value,
     });
   }
-  return undefined;
+  return <></>;
 }
