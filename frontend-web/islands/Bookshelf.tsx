@@ -38,10 +38,8 @@ export default function Bookshelf(
     selectedCursor.value,
   ]);
   return (
-    <nav className={"flex flex-col items-center"}>
-      <div
-        className={"flex flex-row justify-center overflow-visible text-nowrap"}
-      >
+    <nav className="flex flex-col items-center">
+      <div className="flex flex-row justify-center overflow-visible text-nowrap">
         {last7dates
           .map((book, idx) => (
             <div
@@ -61,15 +59,13 @@ export default function Bookshelf(
                 href={`/pages/${book.date}`}
               >
                 <section
-                  className={"h-[50vh] w-[31vh] flex flex-col justify-end bg-cover bg-center drop-shadow-lg rounded-md"}
+                  className="h-[50vh] w-[31vh] flex flex-col justify-end bg-cover bg-center drop-shadow-lg rounded-md"
                   style={{
                     backgroundImage:
                       `url(/bookshelf?date=${book.date}&img=webp)`,
                   }}
                 >
-                  <div
-                    className={"overflow-hidden mb-4 bg-slate-800"}
-                  >
+                  <div className="overflow-hidden mb-4 bg-slate-800">
                     <h1
                       className={"text-slate-100 px-4 text-right " +
                         (
@@ -87,12 +83,10 @@ export default function Bookshelf(
                     >
                       {book.title}
                       {isVideoDate(book.date) && (
-                        <span className={"text-lg"}>{" "}🎧</span>
+                        <span className="text-lg">🎧</span>
                       )}
                     </h1>
-                    <p
-                      className={"text-slate-100 px-4 text-right pb-2"}
-                    >
+                    <p className="text-slate-100 px-4 text-right pb-2">
                       {book.date}
                     </p>
                   </div>
@@ -102,16 +96,15 @@ export default function Bookshelf(
           ))}
         <div
           key={"bookshelf_end_" + animate}
-          className={"w-[62vh] animate-bookshelf_end"}
+          className="w-[62vh] animate-bookshelf_end"
         />
       </div>
-      <div
-        className={"w-48 flex flex-row justify-between py-4 text-slate-500"}
-      >
+      <div className="w-48 flex flex-row justify-between py-4 text-slate-500">
         {last7dates.map((book, idx) => (
           <button
+            type="button"
             key={`${book.date}_${idx}`}
-            className={"block p-2"}
+            className="block p-2"
             onClick={() => selectedCursor.value = idx}
           >
             {cursor.value === idx ? "●" : "⚪"}

@@ -16,19 +16,19 @@ function Grammar(
   return (
     <>
       {grammar && (
-        <section className={"bg-slate-200 px-4 sm:px-8 md:px-24"}>
-          <div className={"pb-4 flex flex-col px-4"}>
-            <details className={"px-2 sm:px-4"}>
+        <section className="bg-slate-200 px-4 sm:px-8 md:px-24">
+          <div className="pb-4 flex flex-col px-4">
+            <details className="px-2 sm:px-4">
               <summary>
-                <h3 className={"notranslate mb-2 text-lg inline"}>[Grammar]</h3>
+                <h3 className="notranslate mb-2 text-lg inline">[Grammar]</h3>
                 <div>
                   [Beta:] Show grammar and vocabulary description for the text.
                 </div>
               </summary>
               {grammar.patterns && (
-                <details className={"px-2 sm:px-4"}>
+                <details className="px-2 sm:px-4">
                   <summary>
-                    <h4 className={"notranslate inline"}>[Patterns]</h4>
+                    <h4 className="notranslate inline">[Patterns]</h4>
                   </summary>
                   {grammar.patterns?.map((
                     pattern,
@@ -36,20 +36,18 @@ function Grammar(
                   ) => (
                     <div
                       key={`p${pIdx}`}
-                      className={"mb-4 px-4"}
+                      className="mb-4 px-4"
                     >
                       <h4>
-                        <strong className={"notranslate"}>
+                        <strong className="notranslate">
                           {pattern.pattern}
                         </strong>{" "}
                         Pattern
                       </h4>
-                      <ul className={"list-decimal ml-4 mb-2"}>
+                      <ul className="list-decimal ml-4 mb-2">
                         {pattern.usage?.map((usage, eIdx) => (
                           <li key={`p${pIdx}-${eIdx}`}>
-                            <pre
-                              className={"notranslate whitespace-pre-wrap"}
-                            >{usage}</pre>
+                            <pre className="notranslate whitespace-pre-wrap">{usage}</pre>
                           </li>
                         ))}
                       </ul>
@@ -61,9 +59,9 @@ function Grammar(
                 </details>
               )}
               {grammar.vocabularies && (
-                <details className={"px-2 sm:px-4"}>
+                <details className="px-2 sm:px-4">
                   <summary>
-                    <h4 className={"inline"}>[Vocabularies]</h4>
+                    <h4 className="inline">[Vocabularies]</h4>
                   </summary>
                   {grammar.vocabularies?.map(
                     (
@@ -81,52 +79,42 @@ function Grammar(
                         <>
                           <div
                             key={`v${pIdx}`}
-                            className={"mb-4 px-4"}
+                            className="mb-4 px-4"
                           >
-                            <dl className={""}>
-                              <dt
-                                className={"notranslate inline-block text-lg font-bold"}
-                              >
+                            <dl className="">
+                              <dt className="notranslate inline-block text-lg font-bold">
                                 {word}
                               </dt>
-                              <dd
-                                className={"notranslate inline-block pl-4"}
-                              >
+                              <dd className="notranslate inline-block pl-4">
                                 {pronounce}
                               </dd>
-                              <dd
-                                className={""}
-                              >
-                                <ul className={"notranslate ml-4 mb-2"}>
+                              <dd className="">
+                                <ul className="notranslate ml-4 mb-2">
                                   {usage?.map((ex, eIdx) => (
                                     <li
                                       key={`p${pIdx}-${eIdx}`}
-                                      className={"italic"}
+                                      className="italic"
                                     >
                                       {ex.replace(
                                         new RegExp(word, "g"),
                                         "<strong>" + word + "</strong>",
                                       ).split(/<\/?strong>/).map((w) => {
                                         return w === word
-                                          ? <strong>{w}</strong>
+                                          ? <strong key={w}>{w}</strong>
                                           : w;
                                       })}
                                     </li>
                                   ))}
                                 </ul>
                               </dd>
-                              <dd
-                                className={"ml-4"}
-                              >
+                              <dd className="ml-4">
                                 {wordClass}
                               </dd>
-                              <dd
-                                className={"ml-4"}
-                              >
-                                <p className={"pl-4"}>
+                              <dd className="ml-4">
+                                <p className="pl-4">
                                   {meaning}
                                 </p>
-                                <p className={"notranslate italic pl-4"}>
+                                <p className="notranslate italic pl-4">
                                   {example}
                                 </p>
                               </dd>
@@ -165,26 +153,24 @@ export default function Quiz(
   ].filter((p) => !!p);
   return (
     <>
-      <section id={"quiz"}>
-        <div className={"px-4"}>
-          <h2 className={"text-3xl"}>
+      <section id="quiz">
+        <div className="px-4">
+          <h2 className="text-3xl">
             {data.title}
           </h2>
-          <div className={"flex flex-row justify-end px-4 select-none"}>
+          <div className="flex flex-row justify-end px-4 select-none">
             {aiParams.length > 0 && (
-              <aside
-                className={"mr-4 print:hidden md:flex md:flex-row-reverse"}
-              >
+              <aside className="mr-4 print:hidden md:flex md:flex-row-reverse">
                 <input
                   key={data.date}
                   type="checkbox"
-                  id={"aiParams"}
-                  className={"hidden peer/aiParams"}
+                  id="aiParams"
+                  className="hidden peer/aiParams"
                 />
-                <div className={"flex items-center"}>
+                <div className="flex items-center">
                   <label
-                    htmlFor={"aiParams"}
-                    className={"z-10 cursor-pointer"}
+                    htmlFor="aiParams"
+                    className="z-10 cursor-pointer"
                     title="AI Params"
                   >
                     🤖
@@ -194,11 +180,11 @@ export default function Quiz(
                   className={"hidden peer-checked/aiParams:block absolute bg-slate-50 border border-slate-400 p-2" +
                     "md:bg-transparent md:border-0 md:p-0 md:relative"}
                 >
-                  <ul className={"md:flex flex-row md:text-xs"}>
+                  <ul className="md:flex flex-row md:text-xs">
                     {aiParams.map((param, idx) => (
                       <li
                         key={idx}
-                        className={"h-5 md:pb-1 md:mr-1 px-2 md:border-slate-400 md:rounded-full md:bg-slate-200"}
+                        className="h-5 md:pb-1 md:mr-1 px-2 md:border-slate-400 md:rounded-full md:bg-slate-200"
                       >
                         {param}
                       </li>
@@ -207,69 +193,67 @@ export default function Quiz(
                 </div>
               </aside>
             )}
-            <aside className={"mr-4 hidden md:flex print:hidden items-center"}>
+            <aside className="mr-4 hidden md:flex print:hidden items-center">
               <div>
                 <Printer />
               </div>
             </aside>
-            <aside className={"mr-4 print:hidden"}>
+            <aside className="mr-4 print:hidden">
               <input
                 key={data.date}
                 type="checkbox"
-                id={"reportProblem"}
-                className={"hidden peer/reportProblem"}
+                id="reportProblem"
+                className="hidden peer/reportProblem"
               />
-              <div className={"flex items-center"}>
-                <label htmlFor={"reportProblem"} className={"cursor-pointer"}>
+              <div className="flex items-center">
+                <label htmlFor="reportProblem" className="cursor-pointer">
                   📢
                 </label>
               </div>
-              <div
-                className={"hidden peer-checked/reportProblem:block md:text-xs absolute bg-slate-50 border border-slate-400 p-2"}
-              >
+              <div className="hidden peer-checked/reportProblem:block md:text-xs absolute bg-slate-50 border border-slate-400 p-2">
                 <label
-                  htmlFor={"reportProblem"}
-                  className={"cursor-pointer font-bold"}
+                  htmlFor="reportProblem"
+                  className="cursor-pointer font-bold"
                 >
                   [x]&nbsp;&nbsp;&nbsp;Report Problem
                 </label>
                 <ul>
-                  <li className={"mt-2 mb-1"}>
+                  <li className="mt-2 mb-1">
                     <a
-                      className={"underline py-1"}
-                      target={"_blank"}
+                      className="underline py-1"
+                      target="_blank"
                       href={`/report?page=/pages/${data.date}&reason=page%20broken`}
-                      rel={"nofollow"}
+                      rel="nofollow"
                     >
                       Broken page
                     </a>
                   </li>
-                  <li className={"mb-1"}>
+                  <li className="mb-1">
                     <a
-                      className={"underline py-1"}
-                      target={"_blank"}
+                      className="underline py-1"
+                      target="_blank"
                       href={`/report?page=/pages/${data.date}&reason=meaningless%20content`}
-                      rel={"nofollow"}
+                      rel="nofollow"
                     >
                       Meaningless Content
                     </a>
                   </li>
-                  <li className={"mb-1"}>
+                  <li className="mb-1">
                     <a
-                      className={"underline py-1"}
-                      target={"_blank"}
+                      className="underline py-1"
+                      target="_blank"
                       href={`/report?page=/pages/${data.date}&reason=inappropriate%20content`}
-                      rel={"nofollow"}
+                      rel="nofollow"
                     >
                       Inappropriate Content
                     </a>
                   </li>
-                  <li className={"mb-1"}>
+                  <li className="mb-1">
                     <a
-                      className={"underline py-1"}
-                      target={"_blank"}
+                      className="underline py-1"
+                      target="_blank"
                       href={`/report?page=/pages/${data.date}&reason=copyright%20violation`}
-                      rel={"nofollow"}
+                      rel="nofollow"
                     >
                       Copyright Violation
                     </a>
@@ -277,47 +261,41 @@ export default function Quiz(
                 </ul>
               </div>
             </aside>
-            <aside className={"mr-4"}>
+            <aside className="mr-4">
               <div
-                className={"text-base cursor-default select-none"}
+                className="text-base cursor-default select-none"
                 title={getLevelTag(data.params.level)}
               >
                 {getLevelEmoji(data.params.level)}
               </div>
             </aside>
             {isVideoDate(data.date) && (
-              <aside className={"mr-4 print:hidden"}>
+              <aside className="mr-4 print:hidden">
                 <div
-                  className={"text-base cursor-default select-none"}
+                  className="text-base cursor-default select-none"
                   title="listening available"
                 >
                   🎧
                 </div>
               </aside>
             )}
-            <div className={"flex items-center"}>
-              <p
-                className={"notranslate text-sm text-right"}
-              >
+            <div className="flex items-center">
+              <p className="notranslate text-sm text-right">
                 generated at {data.date}
               </p>
             </div>
           </div>
-          <div className={"w-0 h-0"} id={playerId} />
-          <div className={"md:pr-12"}>
+          <div className="w-0 h-0" id={playerId} />
+          <div className="md:pr-12">
             {data.body.split("\n\n").map(
               (body, index) => {
                 return (
                   <>
                     {index === 0 &&
                       (
-                        <div
-                          className={"flex flex-col w-full mb-4 sm:w-56 md:w-80 sm:ml-4 sm:float-right print:sm:hidden"}
-                        >
+                        <div className="flex flex-col w-full mb-4 sm:w-56 md:w-80 sm:ml-4 sm:float-right print:sm:hidden">
                           {audio && (
-                            <div
-                              className={"rounded-t-xl w-full bg-slate-800 h-4"}
-                            />
+                            <div className="rounded-t-xl w-full bg-slate-800 h-4" />
                           )}
                           <div
                             className={"w-full h-auto sm:w-56 sm:h-auto md:w-80 md:h-auto bg-slate-800 bg-cover bg-center" +
@@ -331,24 +309,18 @@ export default function Quiz(
                           >
                           </div>
                           {audio && (
-                            <div className={"sm:-mt-6"}>
+                            <div className="sm:-mt-6">
                               <Audio data={audio} />
                             </div>
                           )}
-                          <div
-                            className={"flex flex-row text-sm mt-1 print:hidden"}
-                          >
+                          <div className="flex flex-row text-sm mt-1 print:hidden">
                             <a href={`/tags/flavor/${data.params.flavor}`}>
-                              <div
-                                className={"before:content-['flavor:_'] bg-slate-200 rounded-full px-2"}
-                              >
+                              <div className="before:content-['flavor:_'] bg-slate-200 rounded-full px-2">
                                 {data.params.flavor}
                               </div>
                             </a>
                             <a href={`/tags/theme/${data.params.theme}`}>
-                              <div
-                                className={"before:content-['theme:_'] bg-slate-200 rounded-full px-2 ml-2"}
-                              >
+                              <div className="before:content-['theme:_'] bg-slate-200 rounded-full px-2 ml-2">
                                 {data.params.theme}
                               </div>
                             </a>
@@ -357,7 +329,7 @@ export default function Quiz(
                       )}
                     <p
                       key={`${data.date}-${index}`}
-                      className={"mb-4 font-mono whitespace-pre-wrap"}
+                      className="mb-4 font-mono whitespace-pre-wrap"
                     >
                       {segment(body).map(
                         (
@@ -366,7 +338,7 @@ export default function Quiz(
                         ) => (
                           <span
                             key={`${data.date}-${index}-${lineIndex}`}
-                            className={"font-mono whitespace-pre-wrap"}
+                            className="font-mono whitespace-pre-wrap"
                           >
                             {" "}
                             {line.replaceAll(/(\s|&nbsp;)+/g, " ")}
@@ -379,38 +351,38 @@ export default function Quiz(
               },
             )}
           </div>
-          <p className={"notranslate px-8 text-right"}>
+          <p className="notranslate px-8 text-right">
             (Word Count: {data["word count"]})
           </p>
-          <h3 className={"notranslate mb-2 text-lg"}>[Dialog]</h3>
-          <ul className={"px-4 mb-4"}>
+          <h3 className="notranslate mb-2 text-lg">[Dialog]</h3>
+          <ul className="px-4 mb-4">
             {data.dialog &&
               data.dialog.map((line, index) => (
-                <li key={index} className={"flex flex-row mb-1"}>
-                  <span className={"block mr-2 font-bold"}>
+                <li key={index} className="flex flex-row mb-1">
+                  <span className="block mr-2 font-bold">
                     {Object.keys(line)[0]}:
                   </span>
                   <p>{Object.values(line)[0]}</p>
                 </li>
               ))}
           </ul>
-          <hr className={"mb-2"} />
-          <h3 className={"notranslate mb-2 text-lg"}>[Quiz]</h3>
+          <hr className="mb-2" />
+          <h3 className="notranslate mb-2 text-lg">[Quiz]</h3>
           {data.quiz &&
             data.quiz.map((question, qIdx) => (
-              <div key={qIdx} className={"mb-4 px-4"}>
+              <div key={qIdx} className="mb-4 px-4">
                 <dl>
                   <dt>
                     <h4 id={`quiz_${qIdx}`}>
-                      <span className={"notranslate"}>
+                      <span className="notranslate">
                         Question {qIdx + 1}.
                       </span>
-                      <p className={"px-4 font-bold text-lg"}>
+                      <p className="px-4 font-bold text-lg">
                         {question.question}
                       </p>
                     </h4>
                   </dt>
-                  <dd className={"mx-4 my-2 print:hidden"}>
+                  <dd className="mx-4 my-2 print:hidden">
                     Tap or click from following options to select your answer.
                   </dd>
                   <dd>
@@ -429,7 +401,7 @@ export default function Quiz(
                         >
                           <label
                             htmlFor={`select-q${qIdx}-o${oIdx}`}
-                            className={"cursor-pointer border-b print:border-b-0 border-slate-800 inline-block"}
+                            className="cursor-pointer border-b print:border-b-0 border-slate-800 inline-block"
                           >
                             {option}
                           </label>
@@ -440,30 +412,22 @@ export default function Quiz(
                 </dl>
               </div>
             ))}
-          <div
-            className={"h-[50vh] print:hidden flex flex-col justify-end items-end"}
-          />
+          <div className="h-[50vh] print:hidden flex flex-col justify-end items-end" />
         </div>
-        <div
-          className={"w-full px-2 sm:px-8 sticky print:relative bottom-0 bg-slate-200 border-slate-500"}
-        >
-          <div
-            className={"flex flex-row justify-between items-center w-full h-16 break-inside-avoid"}
-          >
+        <div className="w-full px-2 sm:px-8 sticky print:relative bottom-0 bg-slate-200 border-slate-500">
+          <div className="flex flex-row justify-between items-center w-full h-16 break-inside-avoid">
             {data.quiz && data.quiz
               .map((quiz, qIdx) => {
                 return (
                   <a
                     href={`#quiz_${qIdx}`}
                     key={`q${qIdx}`}
-                    className={"w-1/6 h-8 border border-slate-500 items-center flex flex-row"}
+                    className="w-1/6 h-8 border border-slate-500 items-center flex flex-row"
                   >
-                    <div
-                      className={"border-r border-slate-500 flex px-1 sm:px-2 items-center h-full"}
-                    >
-                      <div className={"notranslate"}>Q{qIdx + 1}</div>
+                    <div className="border-r border-slate-500 flex px-1 sm:px-2 items-center h-full">
+                      <div className="notranslate">Q{qIdx + 1}</div>
                     </div>
-                    <div className={"w-full h-full flex items-center"}>
+                    <div className="w-full h-full flex items-center">
                       {quiz.options.map((_, oIdx) => {
                         return (
                           <>
@@ -496,7 +460,7 @@ export default function Quiz(
                                   ? "bg-blue-400"
                                   : "bg-red-400")}
                             >
-                              <div className={"notranslate"}>
+                              <div className="notranslate">
                                 {String.fromCharCode(oIdx + 65)}
                               </div>
                             </div>
@@ -510,7 +474,7 @@ export default function Quiz(
               .flat()}
           </div>
           <div
-            className={"flex flex-row justify-evenly pb-2 print:hidden"}
+            className="flex flex-row justify-evenly pb-2 print:hidden"
             f-client-nav
           >
             <a

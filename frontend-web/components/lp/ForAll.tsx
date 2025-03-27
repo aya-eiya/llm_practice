@@ -60,7 +60,7 @@ export default function ForAll(
 
         <meta
           property="og:site_name"
-          content={"MyniQ"}
+          content="MyniQ"
         />
         <meta
           name="description"
@@ -215,8 +215,8 @@ export default function ForAll(
             <p className="text-center flex flex-row justify-center">
               <a
                 href={contentText.contact.sns.x}
-                title={"X"}
-                className={"block mx-2"}
+                title="X"
+                className="block mx-2"
               >
                 <svg
                   width="24"
@@ -225,14 +225,14 @@ export default function ForAll(
                 >
                   <path
                     d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"
-                    className={"fill-black"}
+                    className="fill-black"
                   />
                 </svg>
               </a>
               <a
                 href={contentText.contact.sns.facebook}
-                title={"Facebook"}
-                className={"block mx-2"}
+                title="Facebook"
+                className="block mx-2"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -242,11 +242,11 @@ export default function ForAll(
                 >
                   <path
                     d="M22.675 0h-21.35C.596 0 0 .596 0 1.325v21.351C0 23.404.596 24 1.325 24h11.497v-9.294H9.691v-3.622h3.131V8.413c0-3.1 1.894-4.788 4.66-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.92.001c-1.505 0-1.796.715-1.796 1.763v2.312h3.588l-.467 3.622h-3.121V24h6.116C23.404 24 24 23.404 24 22.676V1.325C24 .596 23.404 0 22.675 0z"
-                    className={"fill-[#1877F2]"}
+                    className="fill-[#1877F2]"
                   />
                   <path
                     d="M16.671 24v-9.294h3.121l.467-3.622h-3.588V8.772c0-1.048.292-1.763 1.796-1.763l1.92-.001V3.768c-.334-.044-1.472-.143-2.797-.143-2.766 0-4.66 1.688-4.66 4.788v2.67H9.691v3.622h3.131V24h3.849z"
-                    className={"fill-white"}
+                    className="fill-white"
                   />
                 </svg>
               </a>

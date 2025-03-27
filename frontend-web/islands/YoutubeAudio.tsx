@@ -151,7 +151,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
     return (
       <>
         <iframe
-          className={"w-24 h-12 print:hidden"}
+          className="w-24 h-12 print:hidden"
           src={url}
           title={title}
           frameBorder={0}
@@ -162,15 +162,14 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
     );
   } else {
     if (isError.value) {
-      return <></>;
+      return undefined;
     }
     return (
       <>
-        <div
-          className={"flex flex-row bg-slate-800 items-center rounded-b-xl relative px-1 print:hidden"}
-        >
-          <div className={"w-16"}>
+        <div className="flex flex-row bg-slate-800 items-center rounded-b-xl relative px-1 print:hidden">
+          <div className="w-16">
             <button
+              type="button"
               name={player.value && state.value === STATE.PLAYING
                 ? "pause"
                 : "play"}
@@ -184,7 +183,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
                   player.value.playVideo();
                 }
               }}
-              className={"focus:outline-none"}
+              className="focus:outline-none"
             >
               {state.value === STATE.PLAYING
                 ? (
@@ -194,14 +193,14 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
                   >
                     <g>
                       <rect
-                        className={"stroke-slate-100 fill-slate-100 stroke-[12]"}
+                        className="stroke-slate-100 fill-slate-100 stroke-[12]"
                         x="100"
                         y="100"
                         width="20"
                         height="100"
                       />
                       <rect
-                        className={"stroke-slate-100 fill-slate-100 stroke-[12]"}
+                        className="stroke-slate-100 fill-slate-100 stroke-[12]"
                         x="180"
                         y="100"
                         width="20"
@@ -217,7 +216,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
                   >
                     <g>
                       <polygon
-                        className={"stroke-slate-100 fill-slate-100 stroke-[12]"}
+                        className="stroke-slate-100 fill-slate-100 stroke-[12]"
                         strokeLinejoin="round"
                         points="120,100 120,200 200,150"
                       />
@@ -226,13 +225,13 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
                 )}
             </button>
           </div>
-          <div className={"w-full h-8"}>
+          <div className="w-full h-8">
             <input
-              type={"range"}
+              type="range"
               min={0}
               step={0.05}
               max={100}
-              name={"seek"}
+              name="seek"
               value={currentTime.value / durationTime.value * 100}
               className="w-full h-2 bg-transparent border-2 rounded-lg appearance-none cursor-pointer"
               onMouseDown={() => {
@@ -256,9 +255,10 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
               }}
             />
           </div>
-          <div className={"w-24 flex flex-row"}>
+          <div className="w-24 flex flex-row">
             <div>
               <button
+                type="button"
                 name={beforeMuteVolume.value === 0 ? "mute" : "unmute"}
                 onClick={() => {
                   if (!player.value) {
@@ -273,7 +273,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
                     beforeMuteVolume.value = 0;
                   }
                 }}
-                className={"focus:outline-none"}
+                className="focus:outline-none"
               >
                 <svg
                   className="w-8 h-8"
@@ -297,10 +297,10 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
                 </svg>
               </button>
             </div>
-            <div className={"flex items-center w-12 h-8"}>
+            <div className="flex items-center w-12 h-8">
               <input
-                type={"range"}
-                name={"volume"}
+                type="range"
+                name="volume"
                 min={0}
                 max={1}
                 step={0.01}
@@ -312,18 +312,16 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
               />
             </div>
           </div>
-          <div
-            className={"bg-white ml-1 p-1 rounded absolute bottom-10 right-1"}
-          >
+          <div className="bg-white ml-1 p-1 rounded absolute bottom-10 right-1">
             <a
               href={`https://www.youtube.com/watch?v=${id}`}
-              target={"_blank"}
-              rel={"noreferrer"}
+              target="_blank"
+              rel="noreferrer"
             >
               <img
                 title="watch on youtube"
-                src={"/img/YT_logo.svg"}
-                className={"w-16 block relative"}
+                src="/img/YT_logo.svg"
+                className="w-16 block relative"
               />
             </a>
           </div>

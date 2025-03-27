@@ -1,6 +1,10 @@
 export function Printer() {
   return (
-    <button onClick={() => globalThis.window?.print()} title="Print">
+    <button
+      type="button"
+      onClick={() => globalThis.window?.print()}
+      title="Print"
+    >
       🖨️
     </button>
   );

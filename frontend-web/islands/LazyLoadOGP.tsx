@@ -24,5 +24,5 @@ export function LazyLoadOGP(
       console.error(e);
     }
   });
-  return <></>;
+  return <div className="hidden"></div>;
 }

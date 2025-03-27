@@ -43,7 +43,7 @@ function Pager(
   },
 ) {
   return (
-    <div className={"flex flex-row justify-between"}>
+    <div className="flex flex-row justify-between">
       <div>
         {page > 1
           ? (
@@ -57,20 +57,20 @@ function Pager(
           )
           : <span>{"<"}</span>}
       </div>
-      <div className={"flex flex-row justify-center"}>
+      <div className="flex flex-row justify-center">
         {[...new Array(Math.floor(maxCount / PAGE_SIZE) + 1)].map(
           (_, p) => {
             const _page = p + 1;
             return (
-              <div key={_page} className={"px-2 py-1 mx-1 bg-slate-200"}>
+              <div key={_page} className="px-2 py-1 mx-1 bg-slate-200">
                 {_page === page
-                  ? <span className={"font-bold"}>{_page}</span>
+                  ? <span className="font-bold">{_page}</span>
                   : (
                     <a
                       href={`/tags/theme/${theme}${
                         _page === 1 ? "" : `page=${_page}`
                       }`}
-                      className={"underline"}
+                      className="underline"
                     >
                       {_page}
                     </a>
@@ -130,20 +130,20 @@ export default function SearchPage(
       </Head>
       <div
         id="mainContent"
-        className={"flex flex-col bg-slate-100 items-center"}
+        className="flex flex-col bg-slate-100 items-center"
       >
         <Header />
         <main>
           <header>
-            <h1 className={"text-xl"}>Tag Search Page</h1>
-            <div className={"text-right"}>
-              <p className={"before:content-['Search_results_for_theme:']"}>
+            <h1 className="text-xl">Tag Search Page</h1>
+            <div className="text-right">
+              <p className="before:content-['Search_results_for_theme:']">
                 <strong>{theme}</strong>
               </p>
               <p>{maxCount} results found</p>
             </div>
-            <div className={"mb-4"}>
-              <ul className={"flex flex-row flex-wrap w-[60vw]"}>
+            <div className="mb-4">
+              <ul className="flex flex-row flex-wrap w-[60vw]">
                 {Array.from(themes).map((t) => (
                   <li
                     key={t}
@@ -158,7 +158,7 @@ export default function SearchPage(
               </ul>
             </div>
           </header>
-          <section className={"mb-8"}>
+          <section className="mb-8">
             <Pager page={page} theme={theme} maxCount={maxCount} />
             <SearchResults dates={dates} />
             <Pager page={page} theme={theme} maxCount={maxCount} />
