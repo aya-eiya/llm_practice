@@ -41,7 +41,7 @@ const CharacterCard = (
   },
 ) => (
   <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-start items-center">
-    <div className={"relative w-fit mb-4"}>
+    <div className="relative w-fit mb-4">
       <a href={`https://youtu.be/o8BVav3ZR6g?t=${ytTime}`}>
         <img
           src={imgUrl}
@@ -49,7 +49,7 @@ const CharacterCard = (
           className="w-3/4 aspect-square mx-auto rounded-full"
         />
         <img
-          className={"w-1/3 max-w-16 absolute bottom-0 right-0"}
+          className="w-1/3 max-w-16 absolute bottom-0 right-0"
           alt="youtube"
           src="/img/YT_icon.svg"
         />
@@ -69,24 +69,24 @@ export default function TopLayout() {
     <>
       <div
         id="mainContent"
-        className={"flex flex-col bg-slate-100 items-center"}
+        className="flex flex-col bg-slate-100 items-center"
       >
         <Header square />
-        <main className={"w-full md:max-w-6xl text-slate-800"}>
+        <main className="w-full md:max-w-6xl text-slate-800">
           <div className="min-h-screen p-8">
-            <section id="usage" className={"mb-16"}>
+            <section id="usage" className="mb-16">
               <header className="text-center mb-4">
                 <h2 className="text-4xl font-bold mb-8">
                   Last 7 Episodes
                 </h2>
                 <div
-                  className={"overflow-hidden py-16"}
+                  className="overflow-hidden py-16"
                 >
                   <Bookshelf data={last7dates.map((d) => data[d])} />
                 </div>
               </header>
             </section>
-            <section id="usage" className={"mb-16"}>
+            <section id="usage" className="mb-16">
               <header className="text-center mb-4">
                 <h2 className="text-4xl font-bold mb-4">
                   How to Use
@@ -97,25 +97,25 @@ export default function TopLayout() {
                 </p>
               </header>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                <div className={"md:col-span-2"}>
+                <div className="md:col-span-2">
                   <h3
-                    className={"text-2xl font-bold"}
+                    className="text-2xl font-bold"
                   >
                     Reading
                   </h3>
-                  <ul className={"mx-4"}>
-                    <li className={"mt-2"}>
+                  <ul className="mx-4">
+                    <li className="mt-2">
                       The reading passages are AI-generated fiction based on
                       real historical events.
                     </li>
-                    <li className={"mt-2"}>
+                    <li className="mt-2">
                       The layout is print-friendly, so you can create lesson
                       handouts or portable PDF files for offline study using the
                       🖨️ button.
                     </li>
                   </ul>
                 </div>
-                <div className={"md:col-span-1 p-4 bg-slate-50"}>
+                <div className="md:col-span-1 p-4 bg-slate-50">
                   <h4 className="text-xl font-bold mb-4">
                     Step 1: Read the Passage
                   </h4>
@@ -125,7 +125,7 @@ export default function TopLayout() {
                     content for users to enjoy.
                   </p>
                 </div>
-                <div className={"md:col-span-1 p-4 bg-slate-50"}>
+                <div className="md:col-span-1 p-4 bg-slate-50">
                   <h4 className="text-xl font-bold mb-4">
                     Step 2: Answer the Questions
                   </h4>
@@ -137,29 +137,29 @@ export default function TopLayout() {
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                <div className={"md:col-span-2"}>
+                <div className="md:col-span-2">
                   <h3
-                    className={"text-2xl font-bold"}
+                    className="text-2xl font-bold"
                   >
                     Listening
                   </h3>
-                  <ul className={"mx-4"}>
-                    <li className={"mt-2"}>
+                  <ul className="mx-4">
+                    <li className="mt-2">
                       Some quizzes feature AI-generated audio for listening
                       practice, allowing you to study with ease.
                     </li>
-                    <li className={"mt-2"}>
+                    <li className="mt-2">
                       Quizzes that include listening exercises have a 🎧 icon
                       next to their titles.
                     </li>
-                    <li className={"mt-2"}>
+                    <li className="mt-2">
                       You can play the audio directly from the on-screen audio
                       player, or you can also watch it on YouTube.
                     </li>
-                    <li className={"mt-2"}>
+                    <li className="mt-2">
                       If you use YouTube Music, you can{" "}
                       <a
-                        className={"underline font-bold"}
+                        className="underline font-bold"
                         href="https://music.youtube.com/playlist?list=PLe8rBiAN890boqEdONetsgS6v0vVDtLSB&si=oUGTmYobBeOx8d0D"
                       >
                         subscribe to our podcast
@@ -169,7 +169,7 @@ export default function TopLayout() {
                     </li>
                   </ul>
                 </div>
-                <div className={"md:col-span-1 p-4 bg-white"}>
+                <div className="md:col-span-1 p-4 bg-white">
                   <h4 className="text-xl font-bold mb-4">
                     Step 1: Listen to the Passage
                   </h4>
@@ -179,7 +179,7 @@ export default function TopLayout() {
                     helping you immerse yourself in the text.
                   </p>
                 </div>
-                <div className={"md:col-span-1 p-4 bg-white"}>
+                <div className="md:col-span-1 p-4 bg-white">
                   <h4 className="text-xl font-bold mb-4">
                     Step 2: Answer the Questions
                   </h4>
@@ -191,44 +191,44 @@ export default function TopLayout() {
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                <div className={"md:col-span-2"}>
+                <div className="md:col-span-2">
                   <h3
-                    className={"text-2xl font-bold"}
+                    className="text-2xl font-bold"
                   >
                     Level
                   </h3>
-                  <ul className={"mx-4"}>
-                    <li className={"mt-2"}>
+                  <ul className="mx-4">
+                    <li className="mt-2">
                       The quizzes are categorized into different levels based on
                       the complexity of the grammar and vocabulary used. The
                       levels range from beginner to advanced, allowing users to
                       choose quizzes that match their proficiency.
                     </li>
-                    <li className={"mt-2"}>
+                    <li className="mt-2">
                       Level information is provided at the top of each quiz
                     </li>
                   </ul>
-                  <div className={"mt-4 md:px-4"}>
+                  <div className="mt-4 md:px-4">
                     <dl
-                      className={"grid grid-cols-12 border-y"}
+                      className="grid grid-cols-12 border-y"
                     >
                       {paramsLevelValues().map((level) => (
                         <>
                           <dt
-                            className={"col-span-4 sm:col-span-3 md:col-span-2 border-y py-2"}
+                            className="col-span-4 sm:col-span-3 md:col-span-2 border-y py-2"
                           >
                             {getLevelTag(level)}
                           </dt>
-                          <dd className={"col-span-1 border-y py-2"}>
+                          <dd className="col-span-1 border-y py-2">
                             {getLevelEmoji(level)}
                           </dd>
                           <dd
-                            className={"col-span-7 sm:col-span-3 md:col-span-4 border-y py-2"}
+                            className="col-span-7 sm:col-span-3 md:col-span-4 border-y py-2"
                           >
                             {getLevelTitle(level)}
                           </dd>
                           <dd
-                            className={"hidden sm:block sm:col-span-5 md:col-span-5 border-y py-2"}
+                            className="hidden sm:block sm:col-span-5 md:col-span-5 border-y py-2"
                           >
                             {getLevelDetails(level)}
                           </dd>
@@ -239,27 +239,27 @@ export default function TopLayout() {
                 </div>
               </div>
             </section>
-            <section id="voices" className={"mb-8"}>
-              <header className={"text-center mb-8"}>
-                <h2 className={"text-4xl font-bold"}>
+            <section id="voices" className="mb-8">
+              <header className="text-center mb-8">
+                <h2 className="text-4xl font-bold">
                   Introduction of the characters
                 </h2>
-                <p className={"mt-2 text-xl mb-4"}>
+                <p className="mt-2 text-xl mb-4">
                   The unique characters in the daily quiz have AI-generated
                   voices
                 </p>
-                <p className={"flex flex-row justify-center"}>
+                <p className="flex flex-row justify-center">
                   <a
-                    className={"flex flex-row items-center"}
+                    className="flex flex-row items-center"
                     href="https://youtu.be/o8BVav3ZR6g?si=gl3yUiTHhJGO1Uj3"
                     title="check voice on youtube"
                   >
-                    <span className={"block text-xl font-bold mr-2"}>
+                    <span className="block text-xl font-bold mr-2">
                       CHECK VOICE ON
                     </span>
                     <img
-                      className={"w-32 block"}
-                      src={"/img/YT_logo.svg"}
+                      className="w-32 block"
+                      src="/img/YT_logo.svg"
                       alt="youtube logo"
                     />
                   </a>
@@ -267,8 +267,8 @@ export default function TopLayout() {
               </header>
 
               <div className="grid grid-cols-1 md:grid-cols-6 gap-8 mb-8">
-                <div className={"hidden md:block md:col-span-1"} />
-                <div className={"md:col-span-2"}>
+                <div className="hidden md:block md:col-span-1" />
+                <div className="md:col-span-2">
                   <CharacterCard
                     name="Host Girl"
                     ytTime={YT_times.system}
@@ -278,7 +278,7 @@ export default function TopLayout() {
                   />
                 </div>
 
-                <div className={"md:col-span-2"}>
+                <div className="md:col-span-2">
                   <CharacterCard
                     name="Narrator Man"
                     ytTime={YT_times.narrator}
@@ -287,7 +287,7 @@ export default function TopLayout() {
                     imgUrl="/top/Narrator.jpg.webp"
                   />
                 </div>
-                <div className={"hidden md:block md:col-span-1"} />
+                <div className="hidden md:block md:col-span-1" />
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8">

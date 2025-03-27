@@ -54,23 +54,23 @@ export default function Report({ data: { data } }: PageProps) {
         />
       </Head>
       <div
-        className={"bg-slate-200 h-[100vh] w-full flex justify-center items-center"}
+        className="bg-slate-200 h-[100vh] w-full flex justify-center items-center"
       >
         <div
-          className={"bg-slate-50 drop-shadow-lg px-4 md:px-20 py-4 flex flex-col"}
+          className="bg-slate-50 drop-shadow-lg px-4 md:px-20 py-4 flex flex-col"
         >
-          <h1 className={"text-xl font-bold mb-4"}>
+          <h1 className="text-xl font-bold mb-4">
             Thank you for report problem!
           </h1>
-          <dl className={"grid grid-cols-2"}>
-            <dt className={"font-bold"}>Page</dt>
-            <dd className={""}>{reportParam.page}</dd>
-            <dt className={"font-bold"}>Reason</dt>
-            <dd className={""}>{reportParam.reason}</dd>
+          <dl className="grid grid-cols-2">
+            <dt className="font-bold">Page</dt>
+            <dd className="">{reportParam.page}</dd>
+            <dt className="font-bold">Reason</dt>
+            <dd className="">{reportParam.reason}</dd>
             {reportParam.reason === "wrong quiz" && (
               <>
-                <dt className={"font-bold"}>Question Number</dt>
-                <dd className={""}>{reportParam.questionNumber}</dd>
+                <dt className="font-bold">Question Number</dt>
+                <dd className="">{reportParam.questionNumber}</dd>
               </>
             )}
           </dl>

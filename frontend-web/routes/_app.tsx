@@ -6,7 +6,7 @@ export default function App({ Component, config, url }: PageProps) {
   return (
     <>
       <Head>
-        <title className={"notranslate"}>
+        <title className="notranslate">
           MyniQ [ /ˈmaɪ-nɪk/ ]
         </title>
         <meta charset="utf-8" />
