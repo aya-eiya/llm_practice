@@ -13,15 +13,9 @@ export default function SearchResults(
           const data = dailyData[date];
           return (
             <a href={`/pages/${date}`} key={date}>
-              <ul
-                className="flex flex-col md:flex-row mb-2 mt-2 rounded-md w-[90vw] md:w-[60vw] border border-slate-200"
-              >
-                <li
-                  className="flex flex-col items-center md:items-baseline md:justify-start bg-slate-200 p-2"
-                >
-                  <p
-                    className="text-lg"
-                  >
+              <ul className="flex flex-col md:flex-row mb-2 mt-2 rounded-md w-[90vw] md:w-[60vw] border border-slate-200">
+                <li className="flex flex-col items-center md:items-baseline md:justify-start bg-slate-200 p-2">
+                  <p className="text-lg">
                     {date}
                   </p>
                   <div className="md:p-4 pt-0">
@@ -35,9 +29,7 @@ export default function SearchResults(
                 <li className="md:w-[45vw] p-4">
                   <dl className="w-full m-0 p-0">
                     <dt>
-                      <p
-                        className="text-xl"
-                      >
+                      <p className="text-xl">
                         {data.title}
                         {isVideoDate(date) ? " 🎧" : ""}
                       </p>
@@ -45,18 +37,12 @@ export default function SearchResults(
                     <dd className="before:content-['flavor:_'] ml-4">
                       {data.params.flavor}
                     </dd>
-                    <dd
-                      className="before:content-['theme:_'] ml-4 text-slate-400"
-                    >
+                    <dd className="before:content-['theme:_'] ml-4 text-slate-400">
                       {data.params.theme}
                     </dd>
-                    <dd
-                      className="before:content-['level:_'] ml-4"
-                    >
+                    <dd className="before:content-['level:_'] ml-4">
                       {data.params.level} = {getLevelTag(data.params.level)}
-                      <span
-                        className="text-xs text-slate-400 inline-block ml-4"
-                      >
+                      <span className="text-xs text-slate-400 inline-block ml-4">
                         *{getLevelTitle(data.params.level)}
                       </span>
                     </dd>
@@ -71,9 +57,7 @@ export default function SearchResults(
                         </li>
                       </ul>
                     </dd>
-                    <dd
-                      className="ml-4 mt-4 after:content-['...'] italic"
-                    >
+                    <dd className="ml-4 mt-4 after:content-['...'] italic">
                       {data.body.slice(0, 180)}
                     </dd>
                   </dl>

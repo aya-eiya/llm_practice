@@ -3,20 +3,14 @@ export default function Header({ square }: { square?: boolean }) {
     <header id="mainHeader">
       {square
         ? (
-          <div
-            className="text-center bg-slate-100 bg-center bg-contain pt-12 z-0"
-          >
-            <h1
-              className="flex items-center justify-center"
-            >
+          <div className="text-center bg-slate-100 bg-center bg-contain pt-12 z-0">
+            <h1 className="flex items-center justify-center">
               <a
                 className="w-3/5 min-w-48 max-w-80"
                 href="/"
                 title="MyniQ [ /ˈmaɪ-nɪk/ ]"
               >
-                <div
-                  className="aspect-square rounded-full border-8 bg-slate-300 border-slate-200 w-3/5 min-w-48 max-w-80 absolute"
-                />
+                <div className="aspect-square rounded-full border-8 bg-slate-300 border-slate-200 w-3/5 min-w-48 max-w-80 absolute" />
                 <img
                   src="/img/logo.sq.min.svg"
                   className="w-full relative"
@@ -37,20 +31,14 @@ export default function Header({ square }: { square?: boolean }) {
           </div>
         )
         : (
-          <div
-            className="text-center md:flex md:flex-row md:items-end bg-slate-100 md:text-left bg-center bg-contain"
-          >
-            <h1
-              className="px-4 py-4 md:w-1/5 flex items-center justify-center"
-            >
+          <div className="text-center md:flex md:flex-row md:items-end bg-slate-100 md:text-left bg-center bg-contain">
+            <h1 className="px-4 py-4 md:w-1/5 flex items-center justify-center">
               <a
                 className="relative"
                 href="/"
                 title="MyniQ [ /ˈmaɪ-nɪk/ ]"
               >
-                <div
-                  className="aspect-square rounded-full border-8 md:border-4 w-24 md:w-1/2 bg-slate-300 border-slate-200 absolute left-0"
-                />
+                <div className="aspect-square rounded-full border-8 md:border-4 w-24 md:w-1/2 bg-slate-300 border-slate-200 absolute left-0" />
                 <img
                   src="/img/logo.banner.min.svg"
                   className="h-24 md:h-auto relative"

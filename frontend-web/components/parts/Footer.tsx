@@ -5,32 +5,20 @@ export default function Footer() {
       className="notranslate bg-slate-900 text-slate-50"
     >
       <nav className="print:hidden">
-        <ul
-          className="flex flex-row justify-evenly md:justify-center pt-4 mb-2"
-        >
-          <li
-            className="underline text-center md:px-12"
-          >
+        <ul className="flex flex-row justify-evenly md:justify-center pt-4 mb-2">
+          <li className="underline text-center md:px-12">
             <a href="/">Top</a>
           </li>
-          <li
-            className="underline text-center md:px-12"
-          >
+          <li className="underline text-center md:px-12">
             <a href="https://www.aya-eiya.work">Company</a>
           </li>
-          <li
-            className="underline text-center md:px-12"
-          >
+          <li className="underline text-center md:px-12">
             <a href="https://twitter.com/myniq_en">X</a>
           </li>
-          <li
-            className="underline text-center md:px-12"
-          >
+          <li className="underline text-center md:px-12">
             <a href="https://www.facebook.com/myniq_en">Facebook</a>
           </li>
-          <li
-            className="underline text-center md:px-12"
-          >
+          <li className="underline text-center md:px-12">
             <a href="/terms">Terms of Service</a>
           </li>
         </ul>

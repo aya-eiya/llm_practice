@@ -16,9 +16,7 @@ export default function SideNavi() {
         <ul className="ml-4">
           {[...dates].reverse().map((date) => {
             return (
-              <li
-                className="mt-2 marker:content-['📗'] hover:marker:content-['📖']"
-              >
+              <li className="mt-2 marker:content-['📗'] hover:marker:content-['📖']">
                 <a
                   className="hover:underline block ml-1 align-top"
                   href={`/pages/${date}`}
