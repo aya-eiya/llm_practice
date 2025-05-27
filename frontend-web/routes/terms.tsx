@@ -16,9 +16,7 @@ export default function Terms() {
       </Head>
       <Header />
       <main className="bg-slate-50 pt-4 pb-24 text-slate-800">
-        <div
-          className="max-w-2xl mx-auto flex flex-col justify-center items-center"
-        >
+        <div className="max-w-2xl mx-auto flex flex-col justify-center items-center">
           <div className="flex flex-col">
             <h1 className="text-xl mb-2">Terms</h1>
 

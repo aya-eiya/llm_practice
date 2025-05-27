@@ -79,9 +79,7 @@ export default function TopLayout() {
                 <h2 className="text-4xl font-bold mb-8">
                   Last 7 Episodes
                 </h2>
-                <div
-                  className="overflow-hidden py-16"
-                >
+                <div className="overflow-hidden py-16">
                   <Bookshelf data={last7dates.map((d) => data[d])} />
                 </div>
               </header>
@@ -98,9 +96,7 @@ export default function TopLayout() {
               </header>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div className="md:col-span-2">
-                  <h3
-                    className="text-2xl font-bold"
-                  >
+                  <h3 className="text-2xl font-bold">
                     Reading
                   </h3>
                   <ul className="mx-4">
@@ -138,9 +134,7 @@ export default function TopLayout() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div className="md:col-span-2">
-                  <h3
-                    className="text-2xl font-bold"
-                  >
+                  <h3 className="text-2xl font-bold">
                     Listening
                   </h3>
                   <ul className="mx-4">
@@ -192,9 +186,7 @@ export default function TopLayout() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div className="md:col-span-2">
-                  <h3
-                    className="text-2xl font-bold"
-                  >
+                  <h3 className="text-2xl font-bold">
                     Level
                   </h3>
                   <ul className="mx-4">
@@ -209,27 +201,19 @@ export default function TopLayout() {
                     </li>
                   </ul>
                   <div className="mt-4 md:px-4">
-                    <dl
-                      className="grid grid-cols-12 border-y"
-                    >
+                    <dl className="grid grid-cols-12 border-y">
                       {paramsLevelValues().map((level) => (
                         <>
-                          <dt
-                            className="col-span-4 sm:col-span-3 md:col-span-2 border-y py-2"
-                          >
+                          <dt className="col-span-4 sm:col-span-3 md:col-span-2 border-y py-2">
                             {getLevelTag(level)}
                           </dt>
                           <dd className="col-span-1 border-y py-2">
                             {getLevelEmoji(level)}
                           </dd>
-                          <dd
-                            className="col-span-7 sm:col-span-3 md:col-span-4 border-y py-2"
-                          >
+                          <dd className="col-span-7 sm:col-span-3 md:col-span-4 border-y py-2">
                             {getLevelTitle(level)}
                           </dd>
-                          <dd
-                            className="hidden sm:block sm:col-span-5 md:col-span-5 border-y py-2"
-                          >
+                          <dd className="hidden sm:block sm:col-span-5 md:col-span-5 border-y py-2">
                             {getLevelDetails(level)}
                           </dd>
                         </>

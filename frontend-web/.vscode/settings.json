@@ -32,5 +32,8 @@
   },
   "css.customData": [
     ".vscode/tailwind.json"
-  ]
+  ],
+  "files.exclude": {
+    "data/*/*.ts": true
+  }
 }
