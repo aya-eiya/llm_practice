@@ -3,7 +3,6 @@ import { PageProps } from "$fresh/server.ts";
 import Header from "../components/parts/Header.tsx";
 import Footer from "../components/parts/Footer.tsx";
 import Meta from "../components/parts/Meta.tsx";
-import Search404 from "../islands/Search404.tsx";
 
 export default function Error404({ url }: PageProps) {
   // Extract the attempted path for potential recommendations
