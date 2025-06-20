@@ -891,6 +891,130 @@ const videoData = {
     "id": "h5cq5CbIpTo",
     "title": "[2024-11-30][MyniQ] Echoes of Silence [English Listening Quiz]",
   },
+  "2025-04-01": {
+    "id": "jHkkOCyN6hc",
+    "title": "[2025-04-01][MyniQ] Shadow of Deception [English Listening Quiz]",
+  },
+  "2025-04-02": {
+    "id": "QuFBQdN0xGM",
+    "title": "[2025-04-02][MyniQ] Shadows of Freedom [English Listening Quiz]",
+  },
+  "2025-04-03": {
+    "id": "u4bTYV6503g",
+    "title":
+      "[2025-04-03][MyniQ] The Dark Web of April 3 [English Listening Quiz]",
+  },
+  "2025-04-04": {
+    "id": "pEQVAuus3bg",
+    "title": "[2025-04-04][MyniQ] Aether's Requiem [English Listening Quiz]",
+  },
+  "2025-04-05": {
+    "id": "Da2Fhib5cls",
+    "title": "[2025-04-05][MyniQ] Echoes of Eternity [English Listening Quiz]",
+  },
+  "2025-04-06": {
+    "id": "keAgVy5lUKc",
+    "title": "[2025-04-06][MyniQ] Signal from Nowhere [English Listening Quiz]",
+  },
+  "2025-04-07": {
+    "id": "q9X_M39JWKA",
+    "title":
+      "[2025-04-07][MyniQ] Beyond the Last Horizon [English Listening Quiz]",
+  },
+  "2025-04-08": {
+    "id": "r1GIIwuttuA",
+    "title": "[2025-04-08][MyniQ] Shadows in Space [English Listening Quiz]",
+  },
+  "2025-04-09": {
+    "id": "5OupSCcFLQE",
+    "title":
+      "[2025-04-09][MyniQ] Beyond the Sakura Tree [English Listening Quiz]",
+  },
+  "2025-04-10": {
+    "id": "nGodYg165-g",
+    "title": "[2025-04-10][MyniQ] When Flames Rise [English Listening Quiz]",
+  },
+  "2025-04-11": {
+    "id": "r0p10Bz85cw",
+    "title":
+      "[2025-04-11][MyniQ] The Time Traveler's Dilemma [English Listening Quiz]",
+  },
+  "2025-04-12": {
+    "id": "HweIVC-kG7g",
+    "title":
+      "[2025-04-12][MyniQ] Love in the Shadows of Fashion [English Listening Quiz]",
+  },
+  "2025-04-13": {
+    "id": "vzBkB7ZOwFg",
+    "title": "[2025-04-13][MyniQ] Love in the Shadows [English Listening Quiz]",
+  },
+  "2025-04-14": {
+    "id": "IN2BB3AV-yo",
+    "title": "[2025-04-14][MyniQ] Moonlit Dreamweaver [English Listening Quiz]",
+  },
+  "2025-04-15": {
+    "id": "2Q6BYkY1xuo",
+    "title": "[2025-04-15][MyniQ] Neon Dreams [English Listening Quiz]",
+  },
+  "2025-04-16": {
+    "id": "m007_d6ux2Q",
+    "title": "[2025-04-16][MyniQ] Moonlit Madness [English Listening Quiz]",
+  },
+  "2025-04-17": {
+    "id": "XKdxdXBK3d4",
+    "title": "[2025-04-17][MyniQ] When Love Found Us [English Listening Quiz]",
+  },
+  "2025-04-18": {
+    "id": "4yNjhBIxYew",
+    "title":
+      "[2025-04-18][MyniQ] The Chairmaker's Dream [English Listening Quiz]",
+  },
+  "2025-04-19": {
+    "id": "Jrd3m__-WCA",
+    "title": "[2025-04-19][MyniQ] Quantum Uprising [English Listening Quiz]",
+  },
+  "2025-04-20": {
+    "id": "ftyWamSdl88",
+    "title":
+      "[2025-04-20][MyniQ] The Typewriter's Secret [English Listening Quiz]",
+  },
+  "2025-04-21": {
+    "id": "aRukTQeW2rA",
+    "title": "[2025-04-21][MyniQ] Aether and Brass [English Listening Quiz]",
+  },
+  "2025-04-22": {
+    "id": "Ia7YjbMKy3g",
+    "title":
+      "[2025-04-22][MyniQ] The Elixir of Dreams [English Listening Quiz]",
+  },
+  "2025-04-23": {
+    "id": "b_yLrjR2bN4",
+    "title":
+      "[2025-04-23][MyniQ] Neon Dreams in a Synthetic World [English Listening Quiz]",
+  },
+  "2025-04-24": {
+    "id": "v5D183LEjDw",
+    "title":
+      "[2025-04-24][MyniQ] Neon Dreams in the Dark [English Listening Quiz]",
+  },
+  "2025-04-25": {
+    "id": "eIjE1LmI-6s",
+    "title": "[2025-04-25][MyniQ] The ENIAC Nightmare [English Listening Quiz]",
+  },
+  "2025-04-26": {
+    "id": "TYE4c5jwCyQ",
+    "title":
+      "[2025-04-26][MyniQ] The Whispering Earth [English Listening Quiz]",
+  },
+  "2025-04-27": {
+    "id": "RC09Uu4pe3E",
+    "title":
+      "[2025-04-27][MyniQ] The Secret of Compulsory Education [English Listening Quiz]",
+  },
+  "2025-04-28": {
+    "id": "JVGHhaJAbRk",
+    "title": "[2025-04-28][MyniQ] Neon Dreams [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
