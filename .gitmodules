@@ -4,3 +4,6 @@
 [submodule "tasks/gen_music/audiocraft"]
 	path = tasks/gen_music/audiocraft
 	url = https://github.com/aya-eiya/audiocraft
+[submodule "tasks/gen_voice/MeloTTS"]
+	path = tasks/gen_voice/MeloTTS
+	url = https://github.com/aya-eiya/MeloTTS
