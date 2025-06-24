@@ -38,7 +38,7 @@ export default function Bookshelf(
     selectedCursor.value,
   ]);
   return (
-    <nav className="flex flex-col items-center no-ad">
+    <nav className="flex flex-col items-center">
       <div className="flex flex-row justify-center overflow-visible text-nowrap">
         {last7dates
           .map((book, idx) => (
