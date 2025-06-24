@@ -40,7 +40,7 @@ const CharacterCard = (
     imgUrl: string;
   },
 ) => (
-  <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-start items-center">
+  <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-start items-center no-ad">
     <div className="relative w-fit mb-4">
       <a href={`https://youtu.be/o8BVav3ZR6g?t=${ytTime}`}>
         <img
@@ -232,7 +232,7 @@ export default function TopLayout() {
                   The unique characters in the daily quiz have AI-generated
                   voices
                 </p>
-                <p className="flex flex-row justify-center">
+                <p className="flex flex-row justify-center no-ad">
                   <a
                     className="flex flex-row items-center"
                     href="https://youtu.be/o8BVav3ZR6g?si=gl3yUiTHhJGO1Uj3"
