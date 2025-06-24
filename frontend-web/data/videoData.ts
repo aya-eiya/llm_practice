@@ -1015,6 +1015,92 @@ const videoData = {
     "id": "JVGHhaJAbRk",
     "title": "[2025-04-28][MyniQ] Neon Dreams [English Listening Quiz]",
   },
+  "2025-04-29": {
+    "id": "81GasyWrKgU",
+    "title": "[2025-04-29][MyniQ] The Last Message [English Listening Quiz]",
+  },
+  "2025-04-30": {
+    "id": "3W2aTKZatkc",
+    "title":
+      "[2025-04-30][MyniQ] The Dark Side of Woodstock [English Listening Quiz]",
+  },
+  "2025-05-01": {
+    "id": "y50zWfSo7aU",
+    "title": "[2025-05-01][MyniQ] Shadows of May [English Listening Quiz]",
+  },
+  "2025-05-02": {
+    "id": "5fVS9kshaIw",
+    "title": "[2025-05-02][MyniQ] Echoes in the Ashes [English Listening Quiz]",
+  },
+  "2025-05-03": {
+    "id": "p_9RZBr0zcQ",
+    "title":
+      "[2025-05-03][MyniQ] Time Travelers' Dilemma [English Listening Quiz]",
+  },
+  "2025-05-04": {
+    "id": "ROxQOnFeHdI",
+    "title":
+      "[2025-05-04][MyniQ] May The Last Hope Be With You [English Listening Quiz]",
+  },
+  "2025-05-05": {
+    "id": "4VIRAEHQgvE",
+    "title": "[2025-05-05][MyniQ] Surviving Elysium [English Listening Quiz]",
+  },
+  "2025-05-06": {
+    "id": "MSAukqjKyek",
+    "title":
+      "[2025-05-06][MyniQ] Moonlit Rite of Dreams [English Listening Quiz]",
+  },
+  "2025-05-07": {
+    "id": "A0ikC3PEe-Q",
+    "title": "[2025-05-07][MyniQ] Moonlit Masquerade [English Listening Quiz]",
+  },
+  "2025-05-08": {
+    "id": "dKRdg7rxVWc",
+    "title": "[2025-05-08][MyniQ] Shadows in Space [English Listening Quiz]",
+  },
+  "2025-05-09": {
+    "id": "zkLKLRB38GI",
+    "title":
+      "[2025-05-09][MyniQ] The Shadow of Hemlock [English Listening Quiz]",
+  },
+  "2025-05-10": {
+    "id": "piJkIPUXe7M",
+    "title": "[2025-05-10][MyniQ] Echoes of Silence [English Listening Quiz]",
+  },
+  "2025-05-11": {
+    "id": "-ZDqj6JUpCc",
+    "title":
+      "[2025-05-11][MyniQ] Neon Dreams of Windows 95 [English Listening Quiz]",
+  },
+  "2025-05-12": {
+    "id": "wtdALrJGK2Q",
+    "title": "[2025-05-12][MyniQ] Rite of Chaos [English Listening Quiz]",
+  },
+  "2025-05-13": {
+    "id": "z1rL_RIa6Xs",
+    "title": "[2025-05-13][MyniQ] The OS/2 Shadow [English Listening Quiz]",
+  },
+  "2025-05-14": {
+    "id": "w4IVCqFEj7k",
+    "title":
+      "[2025-05-14][MyniQ] The Woodstock of Woe [English Listening Quiz]",
+  },
+  "2025-05-15": {
+    "id": "aS5PVXLfILM",
+    "title":
+      "[2025-05-15][MyniQ] Love Like a Rolling Stone [English Listening Quiz]",
+  },
+  "2025-05-16": {
+    "id": "ISBqpjkDBQE",
+    "title":
+      "[2025-05-16][MyniQ] Ink Stains on the Facade [English Listening Quiz]",
+  },
+  "2025-05-17": {
+    "id": "V1c99nCaZvo",
+    "title":
+      "[2025-05-17][MyniQ] Cogtopia's Enigmatic Sculptress [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
