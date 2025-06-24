@@ -166,7 +166,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
     }
     return (
       <>
-        <div className="flex flex-row bg-slate-800 items-center rounded-b-xl relative px-1 print:hidden">
+        <div className="flex flex-row bg-slate-800 items-center rounded-b-xl relative px-1 no-ad print:hidden">
           <div className="w-16">
             <button
               type="button"
