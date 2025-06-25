@@ -1101,6 +1101,27 @@ const videoData = {
     "title":
       "[2025-05-17][MyniQ] Cogtopia's Enigmatic Sculptress [English Listening Quiz]",
   },
+  "2025-05-18": {
+    "id": "VUMoPBA5zow",
+    "title": "[2025-05-18][MyniQ] The City of Dreams [English Listening Quiz]",
+  },
+  "2025-05-19": {
+    "id": "PkSMY1RQ8iU",
+    "title": "[2025-05-19][MyniQ] Split [English Listening Quiz]",
+  },
+  "2025-05-20": {
+    "id": "ue1uLlOwSa4",
+    "title": "[2025-05-20][MyniQ] When Time Tablets [English Listening Quiz]",
+  },
+  "2025-05-21": {
+    "id": "qawMyzrJA1k",
+    "title":
+      "[2025-05-21][MyniQ] Timekeeper's Rebellion [English Listening Quiz]",
+  },
+  "2025-05-22": {
+    "id": "YnxQ1_mPaec",
+    "title": "[2025-05-22][MyniQ] Neon Dreams [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
