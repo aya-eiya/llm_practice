@@ -1122,6 +1122,102 @@ const videoData = {
     "id": "YnxQ1_mPaec",
     "title": "[2025-05-22][MyniQ] Neon Dreams [English Listening Quiz]",
   },
+  "2025-05-23": {
+    "id": "6LDePhRXYLo",
+    "title":
+      "[2025-05-23][MyniQ] Gearhaven: The Whispers of Picasso [English Listening Quiz]",
+  },
+  "2025-05-24": {
+    "id": "oDPbXzm3w0w",
+    "title": "[2025-05-24][MyniQ] Bridging Borders[English Listening Quiz]",
+  },
+  "2025-05-25": {
+    "id": "hZpphXzppuc",
+    "title":
+      "[2025-05-25][MyniQ] The Shadow of The Muppet Movie [English Listening Quiz]",
+  },
+  "2025-05-26": {
+    "id": "WROlPqGQSvY",
+    "title": "[2025-05-26][MyniQ] Beyond Jewels [English Listening Quiz]",
+  },
+  "2025-05-27": {
+    "id": "JxrEKYgtxLo",
+    "title":
+      "[2025-05-27][MyniQ] Neon Dreams in the City of Light [English Listening Quiz]",
+  },
+  "2025-05-28": {
+    "id": "mMwCM4b0aos",
+    "title":
+      "[2025-05-28][MyniQ] Shadows of Yesterday [English Listening Quiz]",
+  },
+  "2025-05-29": {
+    "id": "7jVEyIwLbNQ",
+    "title":
+      "[2025-05-29][MyniQ] The Melting of Reality [English Listening Quiz]",
+  },
+  "2025-05-30": {
+    "id": "XIvruonwC60",
+    "title":
+      "[2025-05-30][MyniQ] Beyond the Beaubourg [English Listening Quiz]",
+  },
+  "2025-05-31": {
+    "id": "hidw9JzYprE",
+    "title":
+      "[2025-05-31][MyniQ] The Ephemeral Nature of Inequality [English Listening Quiz]",
+  },
+  "2025-06-01": {
+    "id": "uMDbfvBHkV8",
+    "title": "[2025-06-01][MyniQ] Neon Dreams [English Listening Quiz]",
+  },
+  "2025-06-02": {
+    "id": "nWkQTBhHGvY",
+    "title":
+      "[2025-06-02][MyniQ] Gearhaven Dreamscape [English Listening Quiz]",
+  },
+  "2025-06-03": {
+    "id": "Ro1JHb1wBfU",
+    "title":
+      "[2025-06-03][MyniQ] The Mouse in the Time Machine [English Listening Quiz]",
+  },
+  "2025-06-04": {
+    "id": "ozk5zyHaF9s",
+    "title": "[2025-06-04][MyniQ] Shadows of Atlanta [English Listening Quiz]",
+  },
+  "2025-06-05": {
+    "id": "PvL5qjZC3vM",
+    "title": "[2025-06-05][MyniQ] When Silence Falls [English Listening Quiz]",
+  },
+  "2025-06-06": {
+    "id": "Jg8gE85NRUY",
+    "title": "[2025-06-06][MyniQ] Shadows of Auvers [English Listening Quiz]",
+  },
+  "2025-06-07": {
+    "id": "B5ujWi28R_w",
+    "title": "[2025-06-07][MyniQ] Echoes of Eternity [English Listening Quiz]",
+  },
+  "2025-06-08": {
+    "id": "34WK4pQjeoI",
+    "title":
+      "[2025-06-08][MyniQ] Tall Towers of Tomorrow [English Listening Quiz]",
+  },
+  "2025-06-09": {
+    "id": "YJw0dcgCjbo",
+    "title":
+      "[2025-06-09][MyniQ] The Shadow of Inquisition [English Listening Quiz]",
+  },
+  "2025-06-10": {
+    "id": "LRaYwy-5taU",
+    "title": "[2025-06-10][MyniQ] Echoes of Inferno [English Listening Quiz]",
+  },
+  "2025-06-11": {
+    "id": "7qq8YhdWrac",
+    "title":
+      "[2025-06-11][MyniQ] Timekeeper's Rebellion [English Listening Quiz]",
+  },
+  "2025-06-12": {
+    "id": "Zt1Eui1ylaQ",
+    "title": "[2025-06-12][MyniQ] Gears of Fate [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
