@@ -9,12 +9,14 @@
     "generativeai",
     "ggml",
     "gguf",
+    "gsub",
     "huggingface",
     "llava",
     "Modelfile",
     "Nominalization",
     "ollama",
     "shuf",
-    "suzume"
+    "suzume",
+    "tostring"
   ]
 }
