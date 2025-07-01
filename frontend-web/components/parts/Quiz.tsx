@@ -135,10 +135,17 @@ function Grammar(
 }
 
 export default function Quiz(
-  { data, audio, next, prev }: { data: QuizData } & { audio?: AudioData } & {
+  { data, audio, next, prev, shares }: { data: QuizData } & {
+    audio?: AudioData;
+  } & {
     next?: QuizData["date"];
   } & {
     prev?: QuizData["date"];
+  } & {
+    shares?: {
+      xHref?: string;
+      fbHref?: string;
+    };
   },
 ) {
   const aiParams = [
@@ -198,6 +205,40 @@ export default function Quiz(
                 <Printer />
               </div>
             </aside>
+            {(shares && (shares.xHref || shares.fbHref)) && (
+              <aside className="mr-4 hidden md:flex print:hidden items-center">
+                {shares.xHref && (
+                  <div>
+                    <a
+                      href={shares?.xHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="/img/X_logo.svg"
+                        alt="Share on X"
+                        className="inline-block w-4 h-4 mr-1"
+                      />
+                    </a>
+                  </div>
+                )}
+                {shares.fbHref && (
+                  <div>
+                    <a
+                      href={shares?.fbHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="/img/fb_logo.svg"
+                        alt="Share on Facebook"
+                        className="inline-block w-4 h-4 mr-1"
+                      />
+                    </a>
+                  </div>
+                )}
+              </aside>
+            )}
             <aside className="mr-4 print:hidden">
               <input
                 key={data.date}

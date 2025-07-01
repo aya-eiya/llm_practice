@@ -8,7 +8,9 @@ import Quiz from "./parts/Quiz.tsx";
 import SideNavi from "./parts/SideNavi.tsx";
 import { getAudioData } from "../infras/audio/youtube.ts";
 
-export default function Main({ data }: { data: QuizData }) {
+const BASE_URL = "https://daily-ai-generated-quiz.deno.dev" as const;
+
+export default function Main({ data, url }: { data: QuizData; url: URL }) {
   const next = containsKey(data.date) &&
       dates.indexOf(data.date) !== dates.length - 1
     ? dates[dates.indexOf(data.date) + 1]
@@ -17,6 +19,13 @@ export default function Main({ data }: { data: QuizData }) {
       dates.indexOf(data.date) !== 0
     ? dates[dates.indexOf(data.date) - 1]
     : undefined;
+  const summary =
+    `The story is based on the event "${data.event.event}" and includes themes of ${data.params.theme} and ${data.params.flavor}. Read the AI-generated novel and take on the quiz!`;
+  const shareText = `${
+    data.date === dates[dates.length - 1] ? "New Episode! " : ""
+  } ${data.title}
+
+${summary}`;
   return (
     <>
       <Header />
@@ -51,7 +60,7 @@ export default function Main({ data }: { data: QuizData }) {
         >
           <main className="w-full">
             <Partial name="content">
-              <p className="text-lg px-4 mb-4">
+              <p className="text-lg px-4 mb-1">
                 Explore a daily quiz inspired by an AI-generated novel and its
                 accompanying dialogue. Immerse yourself in the story and engage
                 with a series of questions to test your comprehension.
@@ -61,6 +70,12 @@ export default function Main({ data }: { data: QuizData }) {
                 audio={getAudioData(data.date)}
                 prev={prev}
                 next={next}
+                shares={{
+                  xHref: `https://x.com/intent/post?url=${
+                    encodeURIComponent(BASE_URL + url.pathname)
+                  }&text=${encodeURIComponent(shareText)}&via=myniq_en`,
+                  fbHref: undefined,
+                }}
               />
             </Partial>
           </main>
