@@ -1,112 +1,121 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "The Great Fire of London",
+    "event": "Death of Pierre de Fermat",
     "details":
-      "On September 2, 1666 (though I believe you meant a different date), the Great Fire of London destroyed much of the medieval City of London inside the old Roman Walls. The fire began on Thomas Farriner's bakery in Pudding Lane and quickly spread through the narrow streets. Despite attempts to stop it, the fire burned for four days and nights, destroying approximately 13,200 houses, 87 churches, and St. Paul's Cathedral.",
+      "Pierre de Fermat, the French lawyer who made significant contributions to number theory, probability theory, analytic geometry, and calculus, died on August 2nd, 1665. He was known for his 'Fermat's Last Theorem' which states that no three positive integers a, b, and c can satisfy the equation a^n + b^n = c^n for any integer value of n greater than 2.",
   },
   "date": "2025-08-02",
-  "title": "Flames of Destiny",
+  "title": "Fermat's Shadow",
   "body":
-    "The ancient city of Alderston slumbered beneath a veil of morning mist, its medieval architecture a testament to centuries past. Like the Great Fire of London, which had consumed much of its counterpart in another realm, the conflagration that would shake this very world was stirring within the depths of Mount Pyroth.\n\n\n\n Dr. Elara Vex, a brilliant scholar specializing in fire-magic anomalies, discovered an ancient prophecy hidden within the forbidden archives of Alderston University. The text spoke of a catastrophic event that would reshape reality itself - much like the legendary Great Fire had altered the course of history.\n\n\n\n As flames erupted from Mount Pyroth's core, Elara rushed to gather her research team and their most trusted allies. Together, they embarked on a perilous journey through time and space, seeking to prevent the impending catastrophe that would engulf both worlds in eternal inferno.\n\n\n\n But as they delved deeper into the heart of darkness, they discovered a horrifying truth: some flames were meant to consume, not just buildings or cities, but entire timelines themselves. The Great Fire was merely a prelude to an even greater and more catastrophic event - one that would change the very fabric of reality.",
-  "word count": 198,
+    "The city had long forgotten Fermat's words, etched in its ancient stone monuments: 'There is no solution.' Now, the streets echoed with whispers of a paradox that defied all logic. In the depths of the underground archives, where once Pierre de Fermat had studied his theorems, a new generation of mathematicians uncovered secrets hidden for centuries.\n\n\n\nDr. Elena Voss led the clandestine research team, delving into mysteries her predecessors thought impossible to solve. Her colleagues called her 'The Last Theorem,' mocking both her name and their fear that she might crack the code. But in the sterile white corridors of their underground facility, something was stirring.\n\n\n\nThe city above was oblivious to the revolution brewing beneath its feet. News networks reported on mundane matters while the team below made breakthroughs in number theory that would reshape humanity's understanding of mathematics forever.\n\n\n\nAs Elena pieced together Fermat's lost theorems, she realized they were more than just mathematical puzzles. They contained hidden truths about time, space, and existence itself. The ancient equations had predicted a paradox: if all numbers followed his rules, then no three positive integers could satisfy his equation for any integer value of n greater than 2.\n\n\n\nBut the greatest revelation came when Elena discovered that Fermat's Last Theorem was not just a mathematical impossibility—it was a door to another dimension. A reality where numbers behaved according to different laws, and where the very fabric of existence could be woven into new patterns.",
+  "word count": 244,
   "dialog": [
     {
-      "Billy":
-        "The way they wove fire magic into historical events was brilliant! The Great Fire of London connection really made it relatable.",
-    },
-    {
       "Meg":
-        "I can totally picture Mount Pyroth erupting in flames, and Elara's team racing against time. It reminds me of the adventure stories I love to read!",
+        "The concept of dimensions beyond our understanding was so fascinating!",
     },
     {
-      "Kerry":
-        "But wait, isn't fire just a natural phenomenon? How come they're making it sound like some kind of supernatural force?",
+      "Billy": "I'm amazed how they connected mathematics with reality itself!",
+    },
+    {
+      "Kerry": "That Dr. Elena Voss character is super cool, right?",
     },
     {
       "Lui":
-        "Ah, that's where the science meets the mystery, young one. Fire is both natural and magical - it's all in how we perceive it.",
-    },
-    {
-      "Billy":
-        "I love how Dr. Vex combines historical research with this fantastical element! It makes learning about fires so much more exciting!",
+        "While the story takes some creative liberties, it effectively illustrates the importance of mathematical rigor.",
     },
     {
       "Meg":
-        "The ancient prophecy hidden in the forbidden archives sounds like something from my favorite fantasy novels. I bet there are more secrets waiting to be discovered!",
+        "The way they portrayed the underground archives was so detailed and immersive!",
+    },
+    {
+      "Billy":
+        "I especially loved how they incorporated historical figures into the narrative. Fermat's story was both intriguing and educational!",
     },
     {
       "Kerry":
-        "I'm a bit confused about how time travel works here. Is it just regular physics or some magical loophole?",
+        "But what really got me was the paradox aspect of the story. It made me question everything I thought I knew about math!",
     },
     {
       "Lui":
-        "Good question, Kerry. In this story, the author uses fire as a metaphor for both destruction and transformation - much like real-world events.",
+        "The character development, particularly Dr. Elena Voss's determination to uncover the truth behind Fermat's Last Theorem, adds depth to the narrative.",
+    },
+    {
+      "Meg":
+        "I can't wait to read more stories that blend mathematics and science fiction!",
+    },
+    {
+      "Billy":
+        "This novel definitely inspired me to dive deeper into number theory!",
+    },
+    {
+      "Kerry":
+        "The way they portrayed the underground facility with its sterile white corridors really set the mood. I could totally imagine being down there!",
     },
   ],
   "quiz": [
     {
-      "question":
-        "According to Dr. Vex's discovery, what was hidden in Alderston University's forbidden archives?",
+      "question": "What type of facility did Dr. Elena Voss's team work in?",
       "options": [
-        "A meteor impact prediction",
-        "The Great Fire of London records",
-        "Ancient prophecy about flames consuming timelines",
-        "A lost city map",
-        "Mount Pyroth eruption charts",
+        "A school library",
+        "An underground research center",
+        "A public museum",
+        "A university laboratory",
+        "A science fiction studio",
       ],
-      "answer": 2,
+      "answer": 1,
     },
     {
       "question":
-        "What perspective does Lui provide when explaining the fire phenomenon?",
+        "According to the text, what was Fermat's Last Theorem a door to?",
       "options": [
-        "Purely scientific explanation without magic elements",
-        "Only magical aspects with no natural science",
-        "Both natural and magical perspectives",
-        "Historical context only",
-        "Time travel mechanics alone",
+        "Ancient history",
+        "Another dimension",
+        "Modern technology",
+        "Mathematical theories only",
+        "Scientific discoveries",
       ],
-      "answer": 2,
+      "answer": 1,
     },
     {
-      "question": "What is Billy's main appreciation about Dr. Vex's research?",
+      "question": "How old is Billy according to the character description?",
       "options": [
-        "How she uses time travel technology",
-        "Her focus on Mount Pyroth predictions",
-        "Her combination of historical research with fantasy elements",
-        "The ancient prophecy connection",
-        "Her fire magic anomaly studies",
+        "8 years old",
+        "11 years old",
+        "13 years old",
+        "16 years old",
+        "19 years old",
       ],
-      "answer": 3,
+      "answer": 1,
+    },
+    {
+      "question": "What did Kerry find most interesting about the story?",
+      "options": [
+        "The historical figures",
+        "The paradox aspect",
+        "The underground facility description",
+        "The mathematical connections",
+        "The character development",
+      ],
+      "answer": 1,
     },
     {
       "question":
-        "Which character expresses concern about the natural science behind fire?",
+        "Which of these best describes Lui's perspective on the story?",
       "options": [
-        "Billy when discussing Mount Pyroth",
-        "Meg when talking about timeline consumption",
-        "Kerry when questioning fire's magical nature",
-        "Lui when explaining fire perception",
-        "All characters without exception",
+        "It was too childish for his taste",
+        "It effectively illustrated mathematical concepts",
+        "He found it boring and uninteresting",
+        "He preferred science fiction stories instead",
+        "The historical aspects were inaccurate",
       ],
-      "answer": 3,
-    },
-    {
-      "question": "What is Meg's main interest in Dr. Vex's research journey?",
-      "options": [
-        "Time travel mechanics",
-        "Fire magic anomaly studies",
-        "Ancient prophecy discoveries",
-        "Mount Pyroth eruption details",
-        "Historical context of the Great Fire",
-      ],
-      "answer": 3,
+      "answer": 1,
     },
   ],
   "params": {
-    "theme": "Architecture",
-    "flavor": "Fantasy",
+    "theme": "Mathematics",
+    "flavor": "Dystopian",
     "models": {
       "main": "cogito",
       "novel": "cogito",

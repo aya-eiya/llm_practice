@@ -1218,6 +1218,15 @@ const videoData = {
     "id": "Zt1Eui1ylaQ",
     "title": "[2025-06-12][MyniQ] Gears of Fate [English Listening Quiz]",
   },
+  "2025-06-13": {
+    "id": "ODYiZ9lwTNI",
+    "title": "[2025-06-13][MyniQ] Echoes of Silence [English Listening Quiz]",
+  },
+  "2025-06-15": {
+    "id": "8oYR9qdbuAE",
+    "title":
+      "[2025-06-15][MyniQ] Time Traveler's Dilemma [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
