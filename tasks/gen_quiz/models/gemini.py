@@ -1,14 +1,22 @@
 import os
 import sys
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 
 # read ENV
 API_KEY = os.environ.get('GEMINI_API_KEY')
-genai.configure(api_key=API_KEY)
+client = genai.Client(
+  api_key=API_KEY,
+)
 
 prompt = sys.argv.pop(1)
 
-model = genai.GenerativeModel('gemini-1.5-pro-latest')
-response = model.generate_content([prompt])
+response = client.models.generate_content(
+    model="gemini-2.5-flash",
+    contents=[prompt],
+    config=types.GenerateContentConfig(
+        thinking_config=types.ThinkingConfig(thinking_budget=0) # Disables thinking
+    ),
+)
 
 print(response.text)

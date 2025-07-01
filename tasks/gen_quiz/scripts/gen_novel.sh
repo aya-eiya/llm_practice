@@ -22,7 +22,7 @@ create_llm_cmd() {
   if [ -f "${CURRENT_DIR}/../models/${model}.py" ]; then
     echo python "${CURRENT_DIR}/../models/${model}.py"
   else
-    echo "ollama run ${model}"
+    echo "ollama run ${model} --hidethinking --nowordwrap"
   fi
 }
 
@@ -46,7 +46,7 @@ init_tmp () {
   tmp_json_quiz=/tmp/.gen_quiz_${fulldate}.json
   
   tmp_files=(
-    $tmp_prompt_event $tmp_prompt_novel $tmp_prompt_conversationl $tmp_prompt_quiz
+    $tmp_prompt_event $tmp_prompt_novel $tmp_prompt_conversation $tmp_prompt_quiz
     $tmp_out_event $tmp_out_novel $tmp_out_conversation $tmp_out_quiz
     $tmp_json_params
     $tmp_json_event $tmp_json_novel $tmp_json_conversation $tmp_json_quiz
@@ -128,7 +128,7 @@ The output is a JSON formatted as
 \`\`\`
 And the output JSON only.
 The body must be between 160 and 260 words.
-Mark every paragraph with a \"[:paragraph #No]\" lebel.
+Mark every paragraph with a \"[:paragraph #No]\" level.
 Paragraph label must be the exact format, if it's paragraph No.1 then \"[:paragraph #1]\".
 "
 
@@ -147,7 +147,7 @@ Paragraph label must be the exact format, if it's paragraph No.1 then \"[:paragr
         if (
           . | test("\\[\\s*:paragraph\\s*#?\\d+\\s*\\]") | not
         ) then (
-          "paragraph label not foud.\n" | halt_error(1)
+          "paragraph label not found.\n" | halt_error(1)
         )
         else .
         end |
@@ -226,7 +226,7 @@ thus, the output must be a JSON object with the key \"dialog\" and the value is 
 \`\`\`
 
 Do not include the prompt in the output and keep it clean.
-Do not include other information except the JSON of the \"quize\" and its code quote \"\`\`\`\".
+Do not include other information except the JSON of the \"quiz\" and its code quote \"\`\`\`\".
 Do not include typescript code.
 Make sure the output is a valid JSON and quoted by \"\`\`\`\" mark."
 
@@ -262,7 +262,7 @@ The format for answering the quizzes should be a one-choice format with five opt
 
 The output must be a JSON object, its type is described following typescript code.
 \`\`\`
-type Quize = {
+type Quiz = {
   \"quiz\": { // required root key
     \"question\": string,
     \"options\": string[], // length must be 5
@@ -273,7 +273,7 @@ type Quize = {
 \"quiz\" is the root key and the object must have 5 question object.
 
 Do not include the prompt in the output and keep it clean.
-Do not include other information except the JSON of the \"quize\" and its code quote \"\`\`\`\".
+Do not include other information except the JSON of the \"quiz\" and its code quote \"\`\`\`\".
 Do not include typescript code.
 Make sure the output is a valid JSON and quoted by \"\`\`\`\" mark."
 
@@ -286,7 +286,7 @@ Make sure the output is a valid JSON and quoted by \"\`\`\`\" mark."
   | sed -e 's/"quizzes"/"quiz"/g' \
   | jq 'if (.quiz | length | . != 5 ) then ("quiz count error\n" | halt_error(1)) else . end' \
   | jq 'if (.quiz[0].options | length | . != 5 ) then ("quiz options count error\n" | halt_error(1)) else . end'
-  # TODO: check the ansewer is correct
+  # TODO: check the answer is correct
 }
 
 gen_quiz() {
@@ -298,7 +298,7 @@ gen_quiz() {
   done
 }
 
-## Make Outpus
+## Make Outputs
 make_prompt_log_md() {
   local e=$(cat $tmp_prompt_event | sed -e 's/```/\\`\\`\\`/g')
   local n=$(cat $tmp_prompt_novel | sed -e 's/```/\\`\\`\\`/g')

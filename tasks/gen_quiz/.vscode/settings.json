@@ -9,12 +9,16 @@
     "generativeai",
     "ggml",
     "gguf",
+    "gsub",
+    "hidethinking",
     "huggingface",
     "llava",
     "Modelfile",
     "Nominalization",
+    "nowordwrap",
     "ollama",
     "shuf",
-    "suzume"
+    "suzume",
+    "tostring"
   ]
 }
