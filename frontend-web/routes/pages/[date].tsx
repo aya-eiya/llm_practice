@@ -31,7 +31,7 @@ export default function DailyQuiz(
           href={`${url.origin}/pages/${data.date}`}
         />
       </Head>
-      <MainLayout data={data} />
+      <MainLayout data={data} url={url} />
     </>
   );
 }
