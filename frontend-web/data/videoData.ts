@@ -1227,6 +1227,99 @@ const videoData = {
     "title":
       "[2025-06-15][MyniQ] Time Traveler's Dilemma [English Listening Quiz]",
   },
+  "2025-06-16": {
+    "id": "prC8_bfcTng",
+    "title": "[2025-06-16][MyniQ] Ashes of Memories [English Listening Quiz]",
+  },
+  "2025-06-17": {
+    "id": "-EoUjvShi5c",
+    "title": "[2025-06-17][MyniQ] Electric Dreams [English Listening Quiz]",
+  },
+  "2025-06-18": {
+    "id": "vBIhTnarrWA",
+    "title":
+      "[2025-06-18][MyniQ] Ruin of Ephemeral Dreams [English Listening Quiz]",
+  },
+  "2025-06-19": {
+    "id": "SIHOwWD6TNk",
+    "title": "[2025-06-19][MyniQ] Shadows of Saigon [English Listening Quiz]",
+  },
+  "2025-06-20": {
+    "id": "ykPebvyHtWc",
+    "title": "[2025-06-20][MyniQ] Moonlit Versace [English Listening Quiz]",
+  },
+  "2025-06-21": {
+    "id": "YJ9d-jTBfUE",
+    "title": "[2025-06-21][MyniQ] The Soviet Starfall [English Listening Quiz]",
+  },
+  "2025-06-22": {
+    "id": "7HD7bQN9BoA",
+    "title": "[2025-06-22][MyniQ] Moonlit Masquerade [English Listening Quiz]",
+  },
+  "2025-06-23": {
+    "id": "t8tP_6AySZ8",
+    "title":
+      "[2025-06-23][MyniQ] The Forgotten Architect of St. Peter's [English Listening Quiz]",
+  },
+  "2025-06-24": {
+    "id": "vxuqOsD2dFI",
+    "title": "[2025-06-24][MyniQ] Love in Focus [English Listening Quiz]",
+  },
+  "2025-06-25": {
+    "id": "FPP_qiUmFm4",
+    "title":
+      "[2025-06-25][MyniQ] The Evolution of Deceit [English Listening Quiz]",
+  },
+  "2025-06-26": {
+    "id": "USfvB1XQypI",
+    "title":
+      "[2025-06-26][MyniQ] Echoes of a Futuristic Tate [English Listening Quiz]",
+  },
+  "2025-06-27": {
+    "id": "vZ4xHFeHh34",
+    "title": "[2025-06-27][MyniQ] The Timeless Throne [English Listening Quiz]",
+  },
+  "2025-06-28": {
+    "id": "KARsOXWO2rQ",
+    "title": "[2025-06-28][MyniQ] Moonlit Masquerade [English Listening Quiz]",
+  },
+  "2025-06-29": {
+    "id": "hsnz_J6PjEo",
+    "title":
+      "[2025-06-29][MyniQ] Timekeepers of the Eiffel Tower [English Listening Quiz]",
+  },
+  "2025-06-30": {
+    "id": "QUoH-SVpN9E",
+    "title":
+      "[2025-06-30][MyniQ] The Shadow of the First iPhone [English Listening Quiz]",
+  },
+  "2025-07-01": {
+    "id": "rC0P9xtPoe0",
+    "title": "[2025-07-01][MyniQ] The Last Rail [English Listening Quiz]",
+  },
+  "2025-07-02": {
+    "id": "6JsC_vT-pBs",
+    "title": "[2025-07-02][MyniQ] Quantum Waltz [English Listening Quiz]",
+  },
+  "2025-07-03": {
+    "id": "JO623pNRjRE",
+    "title":
+      "[2025-07-03][MyniQ] Fading Colors of Love [English Listening Quiz]",
+  },
+  "2025-07-04": {
+    "id": "EuxS7k1K4Hs",
+    "title": "[2025-07-04][MyniQ] Clockwork Serenade [English Listening Quiz]",
+  },
+  "2025-07-05": {
+    "id": "aRNWkPnIGB0",
+    "title":
+      "[2025-07-05][MyniQ] Echoes of the Bauhaus [English Listening Quiz]",
+  },
+  "2025-07-06": {
+    "id": "QXXXGFwbFDU",
+    "title":
+      "[2025-07-06][MyniQ] The Birth of Plato's Dream [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
