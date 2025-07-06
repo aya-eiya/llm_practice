@@ -1,20 +1,51 @@
-from TTS.api import TTS
+from melo.api import TTS
+import torch
+import os
 
-# 各キャラクターの声色を持つ音声モデルの設定
-narrator_tts = TTS(model_name="tts_models/en/jenny/jenny")
-character_tts = TTS(model_name="tts_models/en/vctk/vits")
+from gen_voice_model.openvoice.api import ToneColorConverter
+from gen_voice_model.openvoice.se_extractor import get_se
 
-#
-en_male_speakers = {
-  'Midwest': 'p230',
+CONVERTER = "gen_voice_model/checkpoints_v2/converter"
+SPEAKER = "gen_voice_model/checkpoints_v2/base_speakers/ses"
+# DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
+DEVICE = "cuda:0" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
+# DEVICE = "cpu"
+
+languages = ["EN", "JP"]
+texts = {
+  "EN": "T-T-S is a text-to-speech system that can generate human-like speech from text input. It uses deep learning techniques to synthesize speech that sounds natural and expressive.",
+  "JP": "ティーティーエスは、テキスト入力から人間のような音声を生成できるテキスト音声合成システムです。深層学習技術を使用して、自然で表現豊かな音声を合成します。"
 }
-en_female_speakers = {
-  'American': 'p227',
-}
+tone_color_converter = ToneColorConverter(f"{CONVERTER}/config.json", device=DEVICE)
+tone_color_converter.load_ckpt(f"{CONVERTER}/checkpoint.pth")
+# list of ./voice_sample/{cv}.wav as voices using os module
+voices = {}
+for dirpath, dirnames, filenames in os.walk("./voice_sample"):
+    for filename in filenames:
+        if filename.endswith(".wav"):
+            cv = filename.split("/")[-1].split(".")[0]
+            voices[cv] = filename
 
-# 文章を読み上げて保存
-narrator_tts.tts_to_file(text="It was a dark and stormy night.", file_path="narrator.wav")
-# character_tts.tts_to_file(text="What was that sound?", speaker=en_male_speakers["Midwest"], file_path="character1.wav")
-# character_tts.tts_to_file(text="I think it came from the attic.", speaker=en_female_speakers["American"], file_path="character2.wav")
-# character_tts.tts_to_file(text="Let's go check it out.", speaker=en_male_speakers["Midwest"], file_path="character3.wav")
-# character_tts.tts_to_file(text="Are you sure it's safe?", speaker=en_female_speakers["American"], file_path="character4.wav")
+target_se = {}
+for cv, audio_path in voices.items():
+    se, _ = get_se(audio_path, tone_color_converter, target_dir=".sample/")
+    target_se[cv] = se
+
+for language in languages:
+    model = TTS(language=language, device=DEVICE)
+    speaker_ids = model.hps.data.spk2id # pylint: disable=no-member
+    speakers = list(speaker_ids.keys())
+    for speaker in speakers:
+        speaker_id = speaker_ids[speaker]
+        print(f"Generating speech for speaker: {speaker} with ID: {speaker_id}")
+        if not os.path.exists(f".sample/{speaker}.wav"):
+            model.tts_to_file(text=texts[language], speaker_id=speaker_id, output_path=f".sample/{speaker}.wav")
+        for cv, audio_path in voices.items():
+          source_se = torch.load(f"{SPEAKER}/en-us.pth", map_location=DEVICE)
+          tone_color_converter.convert(
+            audio_src_path=f".sample/{speaker}.wav",
+            src_se=source_se,
+            tgt_se=target_se[cv],
+            output_path=f".sample/{speaker}_{cv}.wav",
+            message="sample",
+          )
