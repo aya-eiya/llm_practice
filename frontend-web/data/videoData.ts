@@ -1320,6 +1320,15 @@ const videoData = {
     "title":
       "[2025-07-06][MyniQ] The Birth of Plato's Dream [English Listening Quiz]",
   },
+  "2025-07-07": {
+    "id": "ePRqo6PvWVM",
+    "title": "[2025-07-07][MyniQ] Flames of Tomorrow [English Listening Quiz]",
+  },
+  "2025-07-08": {
+    "id": "3eICfZGKjA8",
+    "title":
+      "[2025-07-08][MyniQ] The Memory Keeper of Nijinsky [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
