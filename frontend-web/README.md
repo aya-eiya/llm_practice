@@ -1,15 +1,21 @@
 # Daily AI-Generated English Novels & Learning Test Questions
 
-This project is a web application designed for English learners, offering daily AI-generated short novels and accompanying test questions to enhance English proficiency. The content is structured by difficulty level, allowing users to learn step-by-step.
+This project is a web application designed for English learners, offering daily
+AI-generated short novels and accompanying test questions to enhance English
+proficiency. The content is structured by difficulty level, allowing users to
+learn step-by-step.
 
 **Live Site:** https://daily-ai-generated-quiz.deno.dev/
 
 ## ✨ Features
 
 - **Daily Content:** New stories and quizzes are provided every day.
-- **Level-Based Learning:** Content is categorized into 8 difficulty levels, from beginner to master.
-- **Comprehensive Learning:** In addition to reading comprehension, the app provides detailed explanations of grammar patterns and vocabulary.
-- **Audio Support:** Listening materials are available to help improve listening skills.
+- **Level-Based Learning:** Content is categorized into 8 difficulty levels,
+  from beginner to master.
+- **Comprehensive Learning:** In addition to reading comprehension, the app
+  provides detailed explanations of grammar patterns and vocabulary.
+- **Audio Support:** Listening materials are available to help improve listening
+  skills.
 
 ## 🛠️ Tech Stack
 
@@ -22,19 +28,23 @@ This project is a web application designed for English learners, offering daily 
 
 ### Prerequisites
 
-Ensure you have [Deno](https://deno.com/manual@v1.x/getting_started/installation) installed on your system.
+Ensure you have
+[Deno](https://deno.com/manual@v1.x/getting_started/installation) installed on
+your system.
 
 ### Running the Development Server
 
-1.  Clone the repository.
-2.  Navigate to the project directory.
-3.  Start the development server by running:
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Start the development server by running:
 
-    ```sh
-    deno task start
-    ```
+   ```sh
+   deno task start
+   ```
 
-4.  The application will be available at `http://localhost:8000`. The server will automatically reload when files in the `routes/` or `static/` directories are changed.
+4. The application will be available at `http://localhost:8000`. The server will
+   automatically reload when files in the `routes/` or `static/` directories are
+   changed.
 
 ## 📜 Available Scripts
 
