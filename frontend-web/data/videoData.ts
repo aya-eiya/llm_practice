@@ -1329,6 +1329,10 @@ const videoData = {
     "title":
       "[2025-07-08][MyniQ] The Memory Keeper of Nijinsky [English Listening Quiz]",
   },
+  "2025-07-09": {
+    "id": "FlhYm1uVxy0",
+    "title": "[2025-07-09][MyniQ] Ashes to Infinity [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
