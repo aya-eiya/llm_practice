@@ -1333,6 +1333,34 @@ const videoData = {
     "id": "FlhYm1uVxy0",
     "title": "[2025-07-09][MyniQ] Ashes to Infinity [English Listening Quiz]",
   },
+  "2025-07-10": {
+    "id": "vQJJRVlyqgs",
+    "title":
+      "[2025-07-10][MyniQ] Whispers of Ephemeral Souls [English Listening Quiz]",
+  },
+  "2025-07-11": {
+    "id": "l2wozReVYqM",
+    "title":
+      "[2025-07-11][MyniQ] Shadows of Mont Saint-Victoire [English Listening Quiz]",
+  },
+  "2025-07-12": {
+    "id": "mIzM1As0fd0",
+    "title": "[2025-07-12][MyniQ] Echoes of Eternity [English Listening Quiz]",
+  },
+  "2025-07-13": {
+    "id": "SVbvZk3GYPA",
+    "title": "[2025-07-13][MyniQ] Ashes of Eternity [English Listening Quiz]",
+  },
+  "2025-07-14": {
+    "id": "3-ftzp1lnAk",
+    "title":
+      "[2025-07-14][MyniQ] Rise of the Neon Revolution [English Listening Quiz]",
+  },
+  "2025-07-15": {
+    "id": "0ut5qVTokE0",
+    "title":
+      "[2025-07-15][MyniQ] Beyond the Euphrates [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
