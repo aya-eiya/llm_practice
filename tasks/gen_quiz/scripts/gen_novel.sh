@@ -22,7 +22,7 @@ create_llm_cmd() {
   if [ -f "${CURRENT_DIR}/../models/${model}.py" ]; then
     echo python "${CURRENT_DIR}/../models/${model}.py"
   else
-    echo "ollama run ${model} --hidethinking --nowordwrap"
+    echo "ollama run ${model} --hidethinking --nowordwrap --think=false"
   fi
 }
 
