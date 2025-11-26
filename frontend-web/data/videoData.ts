@@ -1361,6 +1361,26 @@ const videoData = {
     "title":
       "[2025-07-15][MyniQ] Beyond the Euphrates [English Listening Quiz]",
   },
+  "2025-07-16": {
+    "id": "Z_FwXof7iVs",
+    "title":
+      "[2025-07-16][MyniQ] Beneath the Glass Ceiling [English Listening Quiz]",
+  },
+  "2025-07-17": {
+    "id": "hX_tIIqpKBg",
+    "title":
+      "[2025-07-17][MyniQ] Astronauts' Last Hope [English Listening Quiz]",
+  },
+  "2025-07-19": {
+    "id": "NRz_cgH3uVQ",
+    "title":
+      "[2025-07-19][MyniQ] Whispers of Manhattan Magic [English Listening Quiz]",
+  },
+  "2025-07-20": {
+    "id": "QPQtIfOGYqg",
+    "title":
+      "[2025-07-20][MyniQ] Clockwork Dreams and Midnight Tears [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
