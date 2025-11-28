@@ -44,15 +44,15 @@ export default function Bookshelf(
           .map((book, idx) => (
             <div
               key={`${book.date}_${idx}`}
-              className={"text-left relative bottom-0 origin-bottom ease-in-out duration-1000 " +
+              className={"text-left relative bottom-0 origin-bottom" +
                 [
-                  "z-10 animate-bookshelf_0 left-72  scale-[.6]",
-                  "z-20 animate-bookshelf_1 left-36  scale-[.6]",
-                  "z-30 animate-bookshelf_2 left-16  scale-[.7]",
-                  "z-40 animate-bookshelf_3 left-4   scale-[.8]",
-                  "z-30 animate-bookshelf_4 right-0  scale-[1.]",
-                  "z-20 animate-bookshelf_5 right-4  scale-[.8]",
-                  "z-10 animate-bookshelf_6 right-16 scale-[.7]",
+                  "z-10 animate-bookshelf_0",
+                  "z-20 animate-bookshelf_1",
+                  "z-30 animate-bookshelf_2",
+                  "z-40 animate-bookshelf_3",
+                  "z-30 animate-bookshelf_4",
+                  "z-20 animate-bookshelf_5",
+                  "z-10 animate-bookshelf_6",
                 ].at(idx)}
             >
               <a
