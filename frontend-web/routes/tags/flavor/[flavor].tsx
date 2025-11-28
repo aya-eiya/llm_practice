@@ -1,16 +1,15 @@
-import { PageProps } from "fresh";
+import { Context, PageProps } from "fresh";
 import { Head } from "fresh/runtime";
 import dailyData, { dates as dataDates } from "../../../data/index.ts";
 import Meta from "../../../components/parts/Meta.tsx";
 import Header from "../../../components/parts/Header.tsx";
 import Footer from "../../../components/parts/Footer.tsx";
 import SearchResults from "../../../components/parts/SearchResults.tsx";
-import { define } from "../../../tools/utils.ts";
 
 const PAGE_SIZE = 10;
 
-export const handler = define.handlers({
-  GET(ctx) {
+export const handler = {
+  GET(ctx: Context<unknown>) {
     const req = ctx.req;
     let { flavor } = ctx.params;
     if (flavor === undefined) {
@@ -37,7 +36,7 @@ export const handler = define.handlers({
       status: find.length > 0 ? 200 : 404,
     };
   },
-});
+};
 
 function Pager(
   { page, flavor, maxCount }: {

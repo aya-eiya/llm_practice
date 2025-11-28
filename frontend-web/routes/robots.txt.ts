@@ -1,7 +1,7 @@
-import { define } from "../tools/utils.ts";
+import { Context } from "fresh";
 
-export const handler = define.handlers({
-  GET(_ctx) {
+export const handler = {
+  GET(_ctx: Context<unknown>) {
     const doc = `\
 User-agent: *
 disallow: /report
@@ -15,4 +15,4 @@ sitemap: ${_ctx.url.origin}/sitemap.xml
       },
     );
   },
-});
+};

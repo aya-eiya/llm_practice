@@ -1,11 +1,11 @@
+import { Context } from "fresh";
 import dailyData, { dates as dataDates } from "../../../data/index.ts";
-import { define } from "../../../tools/utils.ts";
 import SearchPage from "./[flavor].tsx";
 
 const PAGE_SIZE = 10;
 
-export const handler = define.handlers({
-  GET(ctx) {
+export const handler = {
+  GET(ctx: Context<unknown>) {
     const req = ctx.req;
     const { flavor } = dailyData[dataDates[dataDates.length - 1]].params;
     const _page = new URL(req.url).searchParams.get("page");
@@ -25,6 +25,6 @@ export const handler = define.handlers({
       status: find.length > 0 ? 200 : 404,
     };
   },
-});
+};
 
 export default SearchPage;

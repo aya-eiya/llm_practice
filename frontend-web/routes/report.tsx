@@ -1,7 +1,6 @@
-import { PageProps } from "fresh";
+import { Context, PageProps } from "fresh";
 import { Head } from "fresh/runtime";
 import { HttpError } from "fresh";
-import { define } from "../tools/utils.ts";
 
 export type ReportReasons =
   | "page broken"
@@ -19,8 +18,8 @@ export type ReportParams = {
   questionNumber: 1 | 2 | 3 | 4 | 5;
 };
 
-export const handler = define.handlers({
-  GET(ctx) {
+export const handler = {
+  GET(ctx: Context<unknown>) {
     const page = ctx.url.searchParams.get("page");
     const reason = ctx.url.searchParams.get("reason");
     const questionNumber = ctx.url.searchParams.get("questionNumber");
@@ -42,7 +41,7 @@ export const handler = define.handlers({
       },
     };
   },
-});
+};
 
 export default function Report(
   { data: { data } }: PageProps<{ data: ReportParams }, unknown>,

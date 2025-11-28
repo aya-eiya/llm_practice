@@ -1,8 +1,8 @@
+import { Context } from "fresh";
 import dailyData, { dates, isThisMonth } from "../data/index.ts";
-import { define } from "../tools/utils.ts";
 
-export const handler = define.handlers({
-  GET(_ctx) {
+export const handler = {
+  GET(_ctx: Context<unknown>) {
     const url = new URL(_ctx.req.url);
     const baseUrl = `${url.protocol}//${url.hostname}${
       url.hostname === "localhost" ? (":" + url.port) : ""
@@ -121,4 +121,4 @@ ${
       },
     );
   },
-});
+};
