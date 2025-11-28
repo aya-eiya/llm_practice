@@ -1,8 +1,8 @@
-import { Head } from "$fresh/runtime.ts";
-import { PageProps } from "$fresh/server.ts";
-import Header from "../components/parts/Header.tsx";
-import Footer from "../components/parts/Footer.tsx";
-import Meta from "../components/parts/Meta.tsx";
+import { Head } from "fresh/runtime";
+import { PageProps } from "fresh";
+import Header from "../parts/Header.tsx";
+import Footer from "../parts/Footer.tsx";
+import Meta from "../parts/Meta.tsx";
 
 export default function Error404({ url }: PageProps) {
   // Extract the attempted path for potential recommendations

@@ -1,13 +1,20 @@
-/// <reference no-default-lib="true" />
-/// <reference lib="dom" />
-/// <reference lib="dom.iterable" />
-/// <reference lib="dom.asynciterable" />
-/// <reference lib="deno.ns" />
-import { load } from "@std/dotenv";
+import { App, staticFiles, trailingSlashes } from "fresh";
 
-import { start } from "$fresh/server.ts";
-import manifest from "./fresh.gen.ts";
-import config from "./fresh.config.ts";
-
-load();
-await start(manifest, config);
+export const app = new App<{ lang: string }>()
+  .use(staticFiles())
+  .use(trailingSlashes("never"))
+  .use((ctx) => {
+    if (ctx.url.pathname.includes("forJP")) {
+      ctx.state.lang = "ja";
+    } else if (ctx.url.pathname.includes("forCN")) {
+      ctx.state.lang = "zh";
+    } else if (ctx.url.pathname.includes("forTW")) {
+      ctx.state.lang = "zh";
+    } else if (ctx.url.pathname.includes("forES")) {
+      ctx.state.lang = "es";
+    } else if (ctx.url.pathname.includes("forPT")) {
+      ctx.state.lang = "pt";
+    }
+    return ctx.next();
+  })
+  .fsRoutes();

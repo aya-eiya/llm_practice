@@ -476,7 +476,6 @@ export default function Quiz(
                               type="radio"
                               key={`q${data.date}-${qIdx}-o${oIdx}-input`}
                               id={`select-q${qIdx}-o${oIdx}`}
-                              radioGroup={`select-q${qIdx}`}
                               name={`select-q${qIdx}`}
                               value={oIdx}
                               className={"appearance-none hidden " + ([

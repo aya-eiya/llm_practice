@@ -1,5 +1,5 @@
-import { type PageProps } from "$fresh/server.ts";
-import { Head } from "$fresh/runtime.ts";
+import { type PageProps } from "fresh";
+import { Head } from "fresh/runtime";
 import OnTranslatedEvent from "../islands/OnTranslatedEvent.tsx";
 
 export default function App({ Component, config, url }: PageProps) {
@@ -13,7 +13,7 @@ export default function App({ Component, config, url }: PageProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="AY.LLC" />
         <link rel="stylesheet" href="/styles.css" />
-        {!config.dev && (
+        {config.mode !== "development" && (
           <>
             <meta
               name="google-site-verification"

@@ -1,6 +1,6 @@
 import { containsKey } from "../data/index.ts";
 import { dates } from "../data/index.ts";
-import { Partial } from "$fresh/runtime.ts";
+import { Partial } from "fresh/runtime";
 import { type QuizData } from "../domains/quiz.ts";
 import Footer from "./parts/Footer.tsx";
 import Header from "./parts/Header.tsx";

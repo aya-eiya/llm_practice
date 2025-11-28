@@ -1,5 +1,5 @@
-import { Handlers } from "$fresh/server.ts";
 import dailyData, { containsKey } from "../data/index.ts";
+import { define } from "../tools/utils.ts";
 
 const notfoundSVG =
   `<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152 28"><text y=".9em" font-size="24">NOT FOUND</text></svg>`;
@@ -12,8 +12,9 @@ const notfound = () =>
     },
   );
 
-export const handler: Handlers = {
-  GET(req, ctx) {
+export const handler = define.handlers({
+  GET(ctx) {
+    const req = ctx.req;
     let date: string | undefined = undefined;
     const qDate = new URL(req.url).searchParams.get("date") ?? undefined;
     if (qDate?.match(/^\d{4}-\d{2}-\d{2}$/)) {
@@ -41,7 +42,7 @@ export const handler: Handlers = {
       / /g,
       "-",
     ).replace(/(science-fiction|sci-fi)/, "sf");
-    const dir = ctx.config.staticDir + "/img/bookshelf";
+    const dir = Deno.cwd() + "/static/img/bookshelf";
     const stDir = Deno.readDirSync(dir);
     const qImg = new URL(req.url).searchParams.get("img") ?? "webp";
     const format = qImg === "jpg" ? "jpg" : "webp";
@@ -74,4 +75,4 @@ export const handler: Handlers = {
       },
     });
   },
-};
+});

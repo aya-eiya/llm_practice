@@ -1,9 +1,9 @@
-import { Handlers } from "$fresh/server.ts";
 import dailyData, { dates, isThisMonth } from "../data/index.ts";
+import { define } from "../tools/utils.ts";
 
-export const handler: Handlers = {
-  GET(_req, _ctx) {
-    const url = new URL(_req.url);
+export const handler = define.handlers({
+  GET(_ctx) {
+    const url = new URL(_ctx.req.url);
     const baseUrl = `${url.protocol}//${url.hostname}${
       url.hostname === "localhost" ? (":" + url.port) : ""
     }`;
@@ -121,4 +121,4 @@ ${
       },
     );
   },
-};
+});
