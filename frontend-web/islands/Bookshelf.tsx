@@ -29,8 +29,8 @@ export default function Bookshelf(
         }
       },
       selectedCursor.value !== undefined && cursor.value != selectedCursor.value
-        ? 30
-        : 5000,
+        ? 6
+        : 8000,
     );
     return () => clearTimeout(timeout.value);
   }, [
@@ -44,7 +44,7 @@ export default function Bookshelf(
           .map((book, idx) => (
             <div
               key={`${book.date}_${idx}`}
-              className={"text-left relative bottom-0 origin-bottom" +
+              className={"text-left relative bottom-0 origin-bottom items-end" +
                 [
                   "z-10 animate-bookshelf_0",
                   "z-20 animate-bookshelf_1",
