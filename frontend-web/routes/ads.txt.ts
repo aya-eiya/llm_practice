@@ -1,7 +1,7 @@
-import { Handlers } from "$fresh/server.ts";
+import { define } from "../tools/utils.ts";
 
-export const handler: Handlers = {
-  GET(_req, _ctx) {
+export const handler = define.handlers({
+  GET(_ctx) {
     const doc = `
 # Google AdSense
 google.com, pub-4228655180940549, DIRECT, f08c47fec0942fa0
@@ -13,4 +13,4 @@ google.com, pub-4228655180940549, DIRECT, f08c47fec0942fa0
       },
     );
   },
-};
+});

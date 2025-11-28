@@ -1,4 +1,4 @@
-import { Head } from "$fresh/runtime.ts";
+import { Head } from "fresh/runtime";
 import Footer from "../components/parts/Footer.tsx";
 import Header from "../components/parts/Header.tsx";
 

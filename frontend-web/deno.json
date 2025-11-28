@@ -1,34 +1,44 @@
 {
-  "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
-  "exclude": ["**/_fresh/*"],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  },
+  "exclude": [
+    "**/_fresh/*"
+  ],
   "imports": {
-    "$fresh/": "https://deno.land/x/fresh@1.7.3/",
-    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
-    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
+    "@preact/signals": "npm:@preact/signals@^2.5.0",
     "@std/dotenv": "jsr:@std/dotenv@^0.225.5",
-    "preact": "https://esm.sh/preact@10.22.0",
-    "preact/": "https://esm.sh/preact@10.22.0/",
-    "tailwindcss": "npm:tailwindcss@3.4.17",
-    "tailwindcss/": "npm:/tailwindcss@3.4.17/",
-    "tailwindcss/plugin": "npm:/tailwindcss@3.4.17/plugin.js"
+    "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.1.17",
+    "fresh": "jsr:@fresh/core@^2.2.0",
+    "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@^1.0.8",
+    "preact": "npm:preact@^10.27.2",
+    "preact/": "https://esm.sh/preact@10.27.2/",
+    "tailwindcss": "npm:tailwindcss@4.1.17",
+    "tailwindcss/": "npm:/tailwindcss@4.1.17/",
+    "tailwindcss/plugin": "npm:/tailwindcss@4.1.17/plugin.js",
+    "vite": "npm:vite"
   },
   "lint": {
     "rules": {
-      "exclude": ["jsx-no-useless-fragment", "jsx-curly-braces"],
-      "tags": ["fresh", "recommended"]
+      "exclude": [
+        "jsx-no-useless-fragment",
+        "jsx-curly-braces"
+      ],
+      "tags": [
+        "fresh",
+        "recommended"
+      ]
     }
   },
-  "lock": false,
   "nodeModulesDir": "auto",
   "tasks": {
-    "build": "deno task gen:data; deno task check && deno run -A dev.ts build",
+    "build": "deno task gen:data; deno task check && vite build",
     "check": "deno task gen:data; deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
-    "cli": "echo \"import '\\$fresh/src/dev/cli.ts'\" | deno run --unstable -A -",
     "gen:data": "./scripts/generate_data.sh && deno fmt",
     "gen:voice_list": "./scripts/generate_voice_list.sh && deno fmt",
-    "manifest": "deno task cli manifest $(pwd)",
-    "preview": "deno task gen:data; deno task check && deno run -A main.ts",
-    "start": "deno task gen:data; deno run -A --watch=static/,routes/ dev.ts",
-    "update": "deno run -A -r https://fresh.deno.dev/update ."
+    "preview": "deno task gen:data; deno task check && deno serve -A _fresh/server.js",
+    "start": "deno task gen:data; vite",
+    "update": "deno run -A -r jsr:@fresh/update ."
   }
 }

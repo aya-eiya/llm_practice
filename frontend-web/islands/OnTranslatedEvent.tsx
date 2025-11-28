@@ -1,4 +1,4 @@
-import { Head } from "$fresh/runtime.ts";
+import { Head } from "fresh/runtime";
 import { Signal } from "@preact/signals";
 import { useEffect } from "preact/hooks";
 

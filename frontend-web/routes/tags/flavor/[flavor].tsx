@@ -1,20 +1,23 @@
-import { Handlers, PageProps } from "$fresh/server.ts";
-import { Head } from "$fresh/runtime.ts";
+import { PageProps } from "fresh";
+import { Head } from "fresh/runtime";
 import dailyData, { dates as dataDates } from "../../../data/index.ts";
 import Meta from "../../../components/parts/Meta.tsx";
 import Header from "../../../components/parts/Header.tsx";
 import Footer from "../../../components/parts/Footer.tsx";
 import SearchResults from "../../../components/parts/SearchResults.tsx";
+import { define } from "../../../tools/utils.ts";
 
 const PAGE_SIZE = 10;
 
-export const handler: Handlers = {
-  GET(req, ctx) {
+export const handler = define.handlers({
+  GET(ctx) {
+    const req = ctx.req;
     let { flavor } = ctx.params;
     if (flavor === undefined) {
-      return ctx.render({ dates: [], flavor: "", maxCount: 0 }, {
+      return {
+        data: { dates: [], flavor: "", maxCount: 0, page: 0 },
         status: 404,
-      });
+      };
     }
     flavor = decodeURI(flavor);
     const _page = new URL(req.url).searchParams.get("page");
@@ -29,11 +32,12 @@ export const handler: Handlers = {
       }
     }
     const dates = find.slice(PAGE_SIZE * (page - 1), PAGE_SIZE * page);
-    return ctx.render({ dates, flavor, maxCount: find.length, page }, {
+    return {
+      data: { dates, flavor, maxCount: find.length, page },
       status: find.length > 0 ? 200 : 404,
-    });
+    };
   },
-};
+});
 
 function Pager(
   { page, flavor, maxCount }: {

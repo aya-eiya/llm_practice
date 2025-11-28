@@ -1,4 +1,4 @@
-import { PageProps } from "$fresh/server.ts";
+import { PageProps } from "fresh";
 import ForAll from "../../components/lp/ForAll.tsx";
 
 const contentText = {

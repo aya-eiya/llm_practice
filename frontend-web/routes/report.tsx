@@ -1,5 +1,7 @@
-import { Handlers, PageProps } from "$fresh/server.ts";
-import { Head } from "$fresh/runtime.ts";
+import { PageProps } from "fresh";
+import { Head } from "fresh/runtime";
+import { HttpError } from "fresh";
+import { define } from "../tools/utils.ts";
 
 export type ReportReasons =
   | "page broken"
@@ -17,13 +19,13 @@ export type ReportParams = {
   questionNumber: 1 | 2 | 3 | 4 | 5;
 };
 
-export const handler: Handlers = {
-  GET(_, ctx) {
+export const handler = define.handlers({
+  GET(ctx) {
     const page = ctx.url.searchParams.get("page");
     const reason = ctx.url.searchParams.get("reason");
     const questionNumber = ctx.url.searchParams.get("questionNumber");
     if (page === null || (reason === "wrong quiz" && questionNumber === null)) {
-      return ctx.renderNotFound();
+      throw new HttpError(404);
     }
     const data = {
       page,
@@ -32,17 +34,20 @@ export const handler: Handlers = {
         ? undefined
         : Number(questionNumber),
     };
-    return ctx.render({ data }, {
+    return {
+      data,
       headers: {
         "Cache-Control": "no-store",
         "X-Robots-Tag": "noindex, nofollow",
       },
-    });
+    };
   },
-};
+});
 
-export default function Report({ data: { data } }: PageProps) {
-  const reportParam = data as ReportParams;
+export default function Report(
+  { data: { data } }: PageProps<{ data: ReportParams }, unknown>,
+) {
+  const reportParam = data;
   return (
     <>
       <Head>

@@ -1,5 +1,5 @@
-import { Head } from "$fresh/runtime.ts";
-import { PageProps } from "$fresh/server.ts";
+import { Head } from "fresh/runtime";
+import { PageProps } from "fresh";
 import TopLayout from "../components/TopLayout.tsx";
 import Meta from "../components/parts/Meta.tsx";
 
