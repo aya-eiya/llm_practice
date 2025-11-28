@@ -1,5 +1,80 @@
 @import "tailwindcss";
 
+@theme {
+  --animate-bookshelf_0: bookshelf_0 1s ease-in-out forwards;
+  --animate-bookshelf_1: bookshelf_1 1s ease-in-out forwards;
+  --animate-bookshelf_2: bookshelf_2 1s ease-in-out forwards;
+  --animate-bookshelf_3: bookshelf_3 1s ease-in-out forwards;
+  --animate-bookshelf_4: bookshelf_4 1s ease-in-out forwards;
+  --animate-bookshelf_5: bookshelf_5 1s ease-in-out forwards;
+  --animate-bookshelf_6: bookshelf_6 1s ease-in-out forwards;
+
+  @keyframes bookshelf_0 {
+    0% {
+      transform: translateX(100%) scale(40%);
+    }
+    100% {
+      transform: translateX(0) scale(0%);
+    }
+  }
+  @keyframes bookshelf_1 {
+    0% {
+      transform: translateX(100%) scale(60%);
+    }
+    100% {
+      transform: translateX(0) scale(40%);
+    }
+  }
+  @keyframes bookshelf_2 {
+    0% {
+      transform: translateX(100%) scale(80%);
+    }
+    100% {
+      transform: translateX(0) scale(60%);
+    }
+  }
+  @keyframes bookshelf_3 {
+    0% {
+      transform: translateX(100%) scale(100%);
+    }
+    100% {
+      transform: translateX(0) scale(80%);
+    }
+  }
+  @keyframes bookshelf_4 {
+    0% {
+      transform: translateX(100%) scale(80%);
+    }
+    100% {
+      transform: translateX(0) scale(100%);
+    }
+  }
+  @keyframes bookshelf_5 {
+    0% {
+      transform: translateX(100%) scale(60%);
+    }
+    100% {
+      transform: translateX(0) scale(80%);
+    }
+  }
+  @keyframes bookshelf_6 {
+    0% {
+      transform: translateX(100%) scale(40%);
+    }
+    100% {
+      transform: translateX(0) scale(60%);
+    }
+  }
+  @keyframes bookshelf_end {
+    0% {
+      transform: scale(0%);
+    }
+    100% {
+      transform: scale(40%);
+    }
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

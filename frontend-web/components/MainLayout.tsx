@@ -38,7 +38,7 @@ ${summary}`;
         />
         <label
           htmlFor="menuToggle"
-          className="absolute top-2 px-2 py-1 z-20 text-xs md:left-[18.5vw] hidden md:block md:peer-checked/sideMenuToggle:hidden border bg-slate-200 rounded-full md:print:hidden"
+          className="absolute top-2 px-2 py-1 z-20 text-xs md:left-18.5vw hidden md:block md:peer-checked/sideMenuToggle:hidden border bg-slate-200 rounded-full md:print:hidden"
         >
           {"<<<"}
         </label>
