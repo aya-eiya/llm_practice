@@ -11,18 +11,18 @@
 
   @keyframes bookshelf_0 {
     0% {
-      transform: translateX(100%) scale(40%);
+      transform: translateX(160%) scale(40%);
     }
     100% {
-      transform: translateX(0) scale(0%);
+      transform: translateX(60%) scale(0%);
     }
   }
   @keyframes bookshelf_1 {
     0% {
-      transform: translateX(100%) scale(60%);
+      transform: translateX(120%) scale(60%);
     }
     100% {
-      transform: translateX(0) scale(40%);
+      transform: translateX(60%) scale(40%);
     }
   }
   @keyframes bookshelf_2 {
@@ -30,7 +30,7 @@
       transform: translateX(100%) scale(80%);
     }
     100% {
-      transform: translateX(0) scale(60%);
+      transform: translateX(20%) scale(60%);
     }
   }
   @keyframes bookshelf_3 {
@@ -38,7 +38,7 @@
       transform: translateX(100%) scale(100%);
     }
     100% {
-      transform: translateX(0) scale(80%);
+      transform: translateX(0%) scale(80%);
     }
   }
   @keyframes bookshelf_4 {
@@ -51,7 +51,7 @@
   }
   @keyframes bookshelf_5 {
     0% {
-      transform: translateX(100%) scale(60%);
+      transform: translateX(80%) scale(60%);
     }
     100% {
       transform: translateX(0) scale(80%);
@@ -59,18 +59,18 @@
   }
   @keyframes bookshelf_6 {
     0% {
-      transform: translateX(100%) scale(40%);
+      transform: translateX(40%) scale(40%);
     }
     100% {
-      transform: translateX(0) scale(60%);
+      transform: translateX(-20%) scale(60%);
     }
   }
   @keyframes bookshelf_end {
     0% {
-      transform: scale(0%);
+      transform: translateX(20%) scale(0%);
     }
     100% {
-      transform: scale(40%);
+      transform: translateX(-20%) scale(40%);
     }
   }
 }
