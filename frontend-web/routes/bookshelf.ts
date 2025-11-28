@@ -1,5 +1,5 @@
+import { Context } from "fresh";
 import dailyData, { containsKey } from "../data/index.ts";
-import { define } from "../tools/utils.ts";
 
 const notfoundSVG =
   `<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152 28"><text y=".9em" font-size="24">NOT FOUND</text></svg>`;
@@ -12,8 +12,8 @@ const notfound = () =>
     },
   );
 
-export const handler = define.handlers({
-  GET(ctx) {
+export const handler = {
+  GET(ctx: Context<unknown>) {
     const req = ctx.req;
     let date: string | undefined = undefined;
     const qDate = new URL(req.url).searchParams.get("date") ?? undefined;
@@ -75,4 +75,4 @@ export const handler = define.handlers({
       },
     });
   },
-});
+};

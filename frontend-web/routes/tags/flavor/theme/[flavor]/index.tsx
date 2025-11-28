@@ -1,11 +1,10 @@
+import { Context } from "fresh";
 import dailyData, { dates as dataDates } from "../../../../../data/index.ts";
 import SearchPage from "./[theme].tsx";
-import { define } from "../../../../../tools/utils.ts";
-
 const PAGE_SIZE = 10;
 
-export const handler = define.handlers({
-  GET(ctx) {
+export const handler = {
+  GET(ctx: Context<unknown>) {
     const req = ctx.req;
     const { flavor, theme } = dailyData[dataDates[dataDates.length - 1]].params;
     const _page = new URL(req.url).searchParams.get("page");
@@ -23,6 +22,6 @@ export const handler = define.handlers({
     const dates = find.slice(PAGE_SIZE * (page - 1), PAGE_SIZE * page);
     return { data: { dates, flavor, theme, maxCount: find.length, page } };
   },
-});
+};
 
 export default SearchPage;

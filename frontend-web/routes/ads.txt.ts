@@ -1,7 +1,7 @@
-import { define } from "../tools/utils.ts";
+import { Context } from "fresh";
 
-export const handler = define.handlers({
-  GET(_ctx) {
+export const handler = {
+  GET(_ctx: Context<unknown>) {
     const doc = `
 # Google AdSense
 google.com, pub-4228655180940549, DIRECT, f08c47fec0942fa0
@@ -13,4 +13,4 @@ google.com, pub-4228655180940549, DIRECT, f08c47fec0942fa0
       },
     );
   },
-});
+};

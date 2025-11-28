@@ -1,14 +1,13 @@
-import { PageProps } from "fresh";
+import { Context, PageProps } from "fresh";
 import { Head } from "fresh/runtime";
 import MainLayout from "../../components/MainLayout.tsx";
 import { QuizData } from "../../domains/quiz.ts";
 import dailyData, { containsKey } from "../../data/index.ts";
 import Meta from "../../components/parts/Meta.tsx";
 import { HttpError } from "fresh";
-import { define } from "../../tools/utils.ts";
 
-export const handler = define.handlers({
-  GET(ctx) {
+export const handler = {
+  GET(ctx: Context<unknown>) {
     const { date } = ctx.params;
     if (!containsKey(date)) {
       throw new HttpError(404);
@@ -16,7 +15,7 @@ export const handler = define.handlers({
     const data = dailyData[date];
     return { data };
   },
-});
+};
 
 export default function DailyQuiz(
   { data, url }: { data: QuizData } & PageProps,

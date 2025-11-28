@@ -31,5 +31,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: 'daily-ai-generated-quiz' # 📝 Update the deploy project name if necessary
-          entrypoint: './main.ts' # 📝 Update the entrypoint if necessary
+          entrypoint: '_fresh/server.js' # 📝 Update the entrypoint if necessary
           root: 'frontend-web'
