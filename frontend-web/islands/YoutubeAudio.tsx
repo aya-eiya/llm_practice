@@ -193,14 +193,14 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
                   >
                     <g>
                       <rect
-                        className="stroke-slate-100 fill-slate-100 stroke-[12]"
+                        className="stroke-slate-100 fill-slate-100 stroke-12"
                         x="100"
                         y="100"
                         width="20"
                         height="100"
                       />
                       <rect
-                        className="stroke-slate-100 fill-slate-100 stroke-[12]"
+                        className="stroke-slate-100 fill-slate-100 stroke-12"
                         x="180"
                         y="100"
                         width="20"
@@ -216,7 +216,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
                   >
                     <g>
                       <polygon
-                        className="stroke-slate-100 fill-slate-100 stroke-[12]"
+                        className="stroke-slate-100 fill-slate-100 stroke-12"
                         strokeLinejoin="round"
                         points="120,100 120,200 200,150"
                       />
@@ -285,14 +285,14 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
                     width="42"
                     height="60"
                     className={beforeMuteVolume.value == 0
-                      ? "stroke-slate-100 fill-slate-100 stroke-[12]"
-                      : "stroke-slate-600 fill-slate-600 stroke-[12]"}
+                      ? "stroke-slate-100 fill-slate-100 stroke-12"
+                      : "stroke-slate-600 fill-slate-600 stroke-12"}
                   />
                   <polygon
                     points="60,150 175,90 175,210"
                     className={beforeMuteVolume.value == 0
-                      ? "stroke-slate-100 fill-slate-100 stroke-[12]"
-                      : "stroke-slate-600 fill-slate-600 stroke-[12]"}
+                      ? "stroke-slate-100 fill-slate-100 stroke-12"
+                      : "stroke-slate-600 fill-slate-600 stroke-12"}
                   />
                 </svg>
               </button>
