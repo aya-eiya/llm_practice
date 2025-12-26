@@ -37,7 +37,7 @@
     "gen:data": "./scripts/generate_data.sh && deno fmt",
     "gen:voice_list": "./scripts/generate_voice_list.sh && deno fmt",
     "preview": "deno task gen:data; deno task check && deno serve -A _fresh/server.js",
-    "start": "deno task gen:data; vite",
+    "start": "deno task gen:data; vite --port=8000",
     "update": "deno run -A -r jsr:@fresh/update ."
   }
 }

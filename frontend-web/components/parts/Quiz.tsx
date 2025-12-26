@@ -341,8 +341,8 @@ export default function Quiz(
                           <div
                             className={"w-full h-auto sm:w-56 sm:h-auto md:w-80 md:h-auto bg-slate-800 bg-cover bg-center" +
                               (audio
-                                ? " aspect-[16/11]"
-                                : " rounded-xl aspect-[17/13]")}
+                                ? " aspect-16/11"
+                                : " rounded-xl aspect-17/13")}
                             style={{
                               backgroundImage:
                                 `url('/bookshelf?date=${data.date}&img=webp')`,

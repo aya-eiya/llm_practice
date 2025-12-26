@@ -57,7 +57,7 @@ export default function Report(
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📢</text></svg>"
         />
       </Head>
-      <div className="bg-slate-200 h-[100vh] w-full flex justify-center items-center">
+      <div className="bg-slate-200 h-screen w-full flex justify-center items-center">
         <div className="bg-slate-50 drop-shadow-lg px-4 md:px-20 py-4 flex flex-col">
           <h1 className="text-xl font-bold mb-4">
             Thank you for report problem!
