@@ -2,16 +2,16 @@
   "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
   "exclude": ["**/_fresh/*"],
   "imports": {
-    "@preact/signals": "npm:@preact/signals@^2.5.1",
+    "@preact/signals": "npm:@preact/signals@^2.7.0",
     "@std/dotenv": "jsr:@std/dotenv@^0.225.6",
     "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.1.18",
     "fresh": "jsr:@fresh/core@^2.2.0",
     "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@1.0.8",
-    "preact": "npm:preact@^10.28.1",
+    "preact": "npm:preact@^10.28.3",
     "tailwindcss": "npm:tailwindcss@4.1.18",
     "tailwindcss/": "npm:/tailwindcss@4.1.18/",
     "tailwindcss/plugin": "npm:/tailwindcss@4.1.18/plugin.js",
-    "vite": "npm:vite@7.3.0"
+    "vite": "npm:vite@7.3.1"
   },
   "lint": {
     "rules": {
