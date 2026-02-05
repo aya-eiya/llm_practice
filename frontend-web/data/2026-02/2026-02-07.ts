@@ -1,116 +1,114 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "First public demonstration of Apple Newton MessagePad",
+    "event": "The Armory Show (1913)",
     "details":
-      "Steve Jobs demonstrated the revolutionary handwriting recognition technology of the Apple Newton, a personal digital assistant that could translate handwritten notes into digital text.",
+      "The first large-scale exhibition of modernist art in the United States, featuring works by artists such as Marcel Duchamp, Pablo Picasso, and Constantin Brancusi. The show was organized by Alfred Stieglitz and was a groundbreaking event that helped to introduce European avant-garde art to American audiences.",
   },
   "date": "2026-02-07",
-  "title": "Technological Revolutions: The Apple Newton Legacy",
+  "title": "Shadows in the Armory",
   "body":
-    "Steve Jobs' demonstration of the Apple Newton in 1993 marked a pivotal moment in personal digital assistant technology, showcasing the potential of handwriting recognition systems that could translate handwritten notes into digital text. This revolutionary device represented a significant leap forward in human-computer interaction, challenging traditional input methods and opening new possibilities for information management.  \n\n The Newton's sophisticated recognition algorithms and advanced software architecture established new standards for personal computing devices, incorporating features like calendar management, note-taking capabilities, and document annotation tools that were unprecedented at the time. Its innovative user interface, designed to resemble paper notebooks, made complex digital tasks more intuitive and accessible to everyday users.  \n\n The historical significance of this technological milestone extends beyond its immediate impact on personal computing. It demonstrated how advances in artificial intelligence, machine learning algorithms, and pattern recognition could be applied to solve real-world problems through interactive, user-friendly interfaces. Today's touch-screen devices and stylus-enabled tablets owe much of their functionality to the foundational research and development efforts embodied in the Apple Newton's groundbreaking technology.",
-  "word count": 172,
+    "The darkness crept into the grand halls of the Armory Show, where the masters of modernity had gathered to showcase their twisted creations. The air was heavy with the scent of innovation and rebellion. Among the exhibits, one piece stood out - Marcel Duchamp's 'Fountain', a urinal cast in bronze, mocking the very foundations of art.  \n\n I wandered through the crowds, lost in a sea of surrealist landscapes and fragmented forms. The works seemed to whisper secrets in my ear, their twisted beauty drawing me deeper into the abyss. And then, I saw her - a vision of loveliness amidst the chaos. She stood before Brancusi's 'Bird in Space', her eyes locked on the sculpted form as if transfixed by some unseen force.  \n\n As the night wore on, the shadows deepened, and the crowd grew more frenzied. The art itself seemed to pulse with a life of its own, feeding off the emotions of those who gazed upon it. And in that moment, I knew that nothing would ever be the same again. The Armory Show had unleashed a maelstrom of creativity, a torrent of madness that would sweep through the world, leaving in its wake a trail of shattered norms and conventions.",
+  "word count": 203,
   "dialog": [
     {
-      "Lui":
-        "The historical significance of this technological milestone extends beyond its immediate impact on personal computing.",
-    },
-    {
       "Kerry":
-        "This stuff is totally cool! I mean, who wouldn't want a device that can translate their handwriting into digital text?",
-    },
-    {
-      "Billy":
-        "And it laid the foundation for all modern touch-screen devices and stylus-enabled tablets. Just mind-blowing!",
-    },
-    {
-      "Meg":
-        "The way they describe the Newton's user interface as resembling paper notebooks is so creative. It makes me wonder about future innovations in digital devices.",
-    },
-    {
-      "Kerry":
-        "You know what I love most? How it challenged traditional input methods. That's like, revolutionary stuff right there!",
-    },
-    {
-      "Billy":
-        "The recognition algorithms and software architecture were way ahead of their time. I mean, think about how much farther we've come since then.",
-    },
-    {
-      "Meg":
-        "I keep imagining all the possibilities for future devices based on this technology. It's so inspiring to read about such groundbreaking innovations!",
+        "I don't get why everyone's making such a big deal about the Armory Show. It's just some weird art pieces, right?",
     },
     {
       "Lui":
-        "As a teacher, I appreciate how this text connects past innovations to present-day technology. It helps students understand the progression of technological advancements.",
+        "Actually, Kerry, the Armory Show was a pivotal moment in modern art history. It challenged traditional notions of what constitutes art and paved the way for avant-garde movements like Dadaism and Surrealism.",
+    },
+    {
+      "Billy":
+        "Whoa, I love the part where it says that the art itself seems to pulse with life! That's so cool!",
+    },
+    {
+      "Meg":
+        "I know, right? It's like the author is saying that art can be this living, breathing thing that interacts with us in a way that nothing else can. I totally get why the characters were blown away by it.",
+    },
+    {
+      "Kerry":
+        "But what about the part where it says the Armory Show unleashed a maelstrom of creativity? Is that supposed to mean something bad or good?",
+    },
+    {
+      "Lui":
+        "Well, Kerry, in this context, 'maelstrom' means a powerful and overwhelming force. So, it's saying that the Armory Show had a profound impact on the art world, pushing boundaries and challenging conventions in ways that would be felt for generations to come.",
+    },
+    {
+      "Billy":
+        "I wish we could have seen some of these art pieces in real life! I bet they were super weird and amazing at the same time.",
+    },
+    {
+      "Meg":
+        "I totally agree with Billy. I would love to see what kind of inspiration the Armory Show sparked for people. Maybe we can even try creating our own avant-garde art pieces!",
     },
   ],
   "quiz": [
     {
-      "question": "Who demonstrated the Apple Newton in 1993?",
+      "question": "What was Marcel Duchamp's contribution to the Armory Show?",
       "options": [
-        "Steve Jobs",
-        "Bill Gates",
-        "Tim Cook",
-        "Elon Musk",
-        "Mark Zuckerberg",
+        "A sculpture of a bird",
+        "A painting of a cityscape",
+        "A urinal cast in bronze",
+        "A surrealist landscape",
+        "A fragmented form",
       ],
-      "answer": 0,
+      "answer": 2,
     },
     {
       "question":
-        "What feature made the Apple Newton revolutionary compared to other devices of its time?",
+        "What did the narrator feel when they saw the art at the Armory Show?",
       "options": [
-        "Its touchscreen display",
-        "Its handwriting recognition system",
-        "Its calendar management software",
-        "Its note-taking capabilities",
-        "Its document annotation tools",
+        "Confusion and disappointment",
+        "Excitement and inspiration",
+        "Skepticism and doubt",
+        "Disgust and revulsion",
+        "Boredom and indifference",
       ],
       "answer": 1,
     },
     {
-      "question":
-        "Which character in the dialog is a teacher and speaks about connecting past innovations to present-day technology?",
+      "question": "Who stood before Brancusi's 'Bird in Space'?",
       "options": [
-        "Billy",
-        "Kerry",
-        "Meg",
-        "Lui",
-        "None of them",
+        "A young boy named Billy",
+        "A girl named Meg",
+        "The narrator of the story",
+        "Someone described as a vision of loveliness",
+        "Lui, the teacher",
       ],
       "answer": 3,
     },
     {
-      "question":
-        "What modern devices are said to owe their functionality to the Apple Newton's groundbreaking technology?",
+      "question": "What was the impact of the Armory Show according to Lui?",
       "options": [
-        "Smartphones and laptops",
-        "Touch-screen tablets and stylus-enabled devices",
-        "Desktop computers and gaming consoles",
-        "Wearable tech like smartwatches and fitness trackers",
-        "3D printers and robotics",
-      ],
-      "answer": 1,
-    },
-    {
-      "question":
-        "Which character in the dialog describes the Newton's user interface as resembling paper notebooks?",
-      "options": [
-        "Billy",
-        "Kerry",
-        "Meg",
-        "Lui",
-        "None of them",
+        "It had little effect on modern art history",
+        "It challenged traditional notions of what constitutes art and paved the way for avant-garde movements",
+        "It increased the popularity of abstract art",
+        "It reduced the role of museums in modern art",
+        "It shifted the focus from painting to sculpture",
       ],
       "answer": 2,
     },
+    {
+      "question":
+        "How did Billy describe his reaction to the story about the Armory Show?",
+      "options": [
+        "He was unimpressed and thought it was boring",
+        "He loved the part where it says that the art itself seems to pulse with life",
+        "He found it confusing and didn't understand what all the fuss was about",
+        "He hated the story and wished they had never heard of the Armory Show",
+        "He didn't say anything at all",
+      ],
+      "answer": 1,
+    },
   ],
   "params": {
-    "theme": "Technology",
-    "flavor": "Academic Essay",
+    "theme": "Art",
+    "flavor": "Gothic",
     "models": {
-      "main": "cogito",
-      "novel": "cogito",
+      "main": "llama3.1",
+      "novel": "llama3.1",
     },
     "level": "Level_8",
   },

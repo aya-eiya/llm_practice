@@ -255,12 +255,38 @@ try_gen_quiz() {
 ${1}
 \`\`\`
 
-From the above novel text and dialogue, create five quizzes to test the English reading comprehension skills.
-note that the dialog characters are ${short_intro}.
+NOTE: dialogue characters are ${short_intro}
 
-The format for answering the quizzes should be a one-choice format with five options to choose from.
+**Task**
 
-The output must be a JSON object, its type is described following typescript code.
+Based on the novel text and dialogue above, generate five English reading-comprehension quizzes.
+
+**Source separation rules**
+
+* Treat the novel narration and the dialogue section as distinct sources:
+  * The narration involves the story’s characters (e.g., the narrator, Detective Jameson, the mysterious woman).
+  * The dialogue involves readers discussing the story.
+* Do not attribute dialogue speakers to events in the story.
+* Do not treat story characters as dialogue speakers.
+* Questions must clearly refer to either the story events or the discussion in the dialogue, not both.
+
+**Content rules**
+
+* Questions must be answerable only from the given text and dialogue.
+* Base every question strictly on information explicitly present in the text.
+* Do not infer identities, roles, or actions by mixing narration and dialogue.
+* Do not use or mention the character metadata provided in the NOTE section.
+* Each quiz must be multiple-choice with exactly one correct answer.
+
+**Format rules**
+
+* Each question must have **five answer options**.
+* Use a **one-choice (single correct answer) format**.
+* The output must be a **single JSON object** with the root key \"quiz\".
+* The \"quiz\" array must contain **exactly five question objects**.
+
+**Schema**
+
 \`\`\`
 type Quiz = {
   \"quiz\": { // required root key
@@ -270,12 +296,21 @@ type Quiz = {
   }[] // length must be 5
 }
 \`\`\`
+
 \"quiz\" is the root key and the object must have 5 question object.
 
-Do not include the prompt in the output and keep it clean.
-Do not include other information except the JSON of the \"quiz\" and its code quote \"\`\`\`\".
-Do not include typescript code.
-Make sure the output is a valid JSON and quoted by \"\`\`\`\" mark."
+* Each question object must contain:
+  * \"question\": a string
+  * \"options\": an array of exactly 5 strings
+  * \"answer\": a number indicating the index (0–4) of the correct option
+
+**Output constraints**
+
+* Output only the JSON object.
+* Do not include the prompt, explanations, comments, or any extra text.
+* Do not include TypeScript or schema definitions.
+* Wrap the JSON output in triple backticks (\`\`\`).
+* Ensure the JSON is strictly valid."
 
   echo "${quiz}" > $tmp_prompt_quiz
   $run_llm "${quiz}" \
@@ -515,7 +550,7 @@ if [[ " ${steps[@]} " =~ "conversation" ]]; then
 fi
 
 if [[ " ${steps[@]} " =~ "quiz" ]]; then
-  gen_quiz "$(jq -s -r '"# " + .[0].title + "\n\n" + .[0].body + "\n\n" + (.[1].dialog | map(keys[0] + ": " + .[keys[0]]) | "## Dialog\n\n" + join("\n"))' $tmp_json_novel $tmp_json_conversation)" >  $tmp_json_quiz
+  gen_quiz "$(jq -s -r '"# " + .[0].title + "\n\n" + .[0].body + "\n\n" + (.[1].dialog | map(keys[0] + ": " + .[keys[0]] + "\n") | "## Dialog\n\n" + join("\n"))' $tmp_json_novel $tmp_json_conversation)" >  $tmp_json_quiz
   if [ $? -ne 0 ]; then
     make_prompt_log_md > $OUTPUTS_DIR/${fulldate}.prompt.md
     echo "Failed to generate quiz." >&2
