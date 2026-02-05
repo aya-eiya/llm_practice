@@ -255,8 +255,10 @@ try_gen_quiz() {
 ${1}
 \`\`\`
 
+NOTE: dialogue characters are ${short_intro}
+
 From the above novel text and dialogue, create five quizzes to test the English reading comprehension skills.
-note that the dialog characters are ${short_intro}.
+Do not include to quizzes the noted character information.
 
 The format for answering the quizzes should be a one-choice format with five options to choose from.
 
@@ -515,7 +517,7 @@ if [[ " ${steps[@]} " =~ "conversation" ]]; then
 fi
 
 if [[ " ${steps[@]} " =~ "quiz" ]]; then
-  gen_quiz "$(jq -s -r '"# " + .[0].title + "\n\n" + .[0].body + "\n\n" + (.[1].dialog | map(keys[0] + ": " + .[keys[0]]) | "## Dialog\n\n" + join("\n"))' $tmp_json_novel $tmp_json_conversation)" >  $tmp_json_quiz
+  gen_quiz "$(jq -s -r '"# " + .[0].title + "\n\n" + .[0].body + "\n\n" + (.[1].dialog | map(keys[0] + ": " + .[keys[0]] + "\n") | "## Dialog\n\n" + join("\n"))' $tmp_json_novel $tmp_json_conversation)" >  $tmp_json_quiz
   if [ $? -ne 0 ]; then
     make_prompt_log_md > $OUTPUTS_DIR/${fulldate}.prompt.md
     echo "Failed to generate quiz." >&2
