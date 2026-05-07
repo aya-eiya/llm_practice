@@ -21,12 +21,12 @@
   },
   "nodeModulesDir": "auto",
   "tasks": {
-    "build": "deno task gen:data; deno task check && vite --configLoader=native build",
+    "build": "deno task gen:data; deno task check && vite build",
     "check": "deno task gen:data; deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
     "gen:data": "./scripts/generate_data.sh && deno fmt",
     "gen:voice_list": "./scripts/generate_voice_list.sh && deno fmt",
     "preview": "deno task gen:data; deno task check && deno serve -A _fresh/server.js",
-    "start": "deno task gen:data; vite --configLoader=native --port=8000",
+    "start": "deno task gen:data; vite --port=8000",
     "update": "deno run -A -r jsr:@fresh/update ."
   }
 }
