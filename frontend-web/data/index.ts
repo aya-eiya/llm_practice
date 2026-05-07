@@ -1,6 +1,3 @@
-import data202503 from "./2025-03/index.ts";
-import data202504 from "./2025-04/index.ts";
-import data202505 from "./2025-05/index.ts";
 import data202506 from "./2025-06/index.ts";
 import data202507 from "./2025-07/index.ts";
 import data202508 from "./2025-08/index.ts";
@@ -12,11 +9,9 @@ import data202601 from "./2026-01/index.ts";
 import data202602 from "./2026-02/index.ts";
 import data202603 from "./2026-03/index.ts";
 import data202604 from "./2026-04/index.ts";
+import data202605 from "./2026-05/index.ts";
 
 const dailyData = {
-  ...data202503,
-  ...data202504,
-  ...data202505,
   ...data202506,
   ...data202507,
   ...data202508,
@@ -28,6 +23,7 @@ const dailyData = {
   ...data202602,
   ...data202603,
   ...data202604,
+  ...data202605,
 };
 
 const devDate = Deno.env.get("DEV_DATE");

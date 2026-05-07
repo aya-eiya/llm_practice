@@ -2,12 +2,12 @@
   "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
   "exclude": ["**/_fresh/*"],
   "imports": {
-    "@preact/signals": "npm:@preact/signals@^2.7.1",
+    "@preact/signals": "npm:@preact/signals@^2.9.0",
     "@std/dotenv": "jsr:@std/dotenv@^0.225.6",
-    "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.2.2",
-    "fresh": "jsr:@fresh/core@^2.2.2",
-    "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@1.0.8",
-    "preact": "npm:preact@^10.28.3",
+    "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.2.4",
+    "fresh": "jsr:@fresh/core@^2.3.3",
+    "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@1.1.2",
+    "preact": "npm:preact@^10.29.1",
     "tailwindcss": "npm:tailwindcss@4.2.2",
     "tailwindcss/": "npm:/tailwindcss@4.2.2/",
     "tailwindcss/plugin": "npm:/tailwindcss@4.2.2/plugin.js",
@@ -21,12 +21,12 @@
   },
   "nodeModulesDir": "auto",
   "tasks": {
-    "build": "deno task gen:data; deno task check && vite build",
+    "build": "deno task gen:data; deno task check && vite --configLoader=native build",
     "check": "deno task gen:data; deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
     "gen:data": "./scripts/generate_data.sh && deno fmt",
     "gen:voice_list": "./scripts/generate_voice_list.sh && deno fmt",
     "preview": "deno task gen:data; deno task check && deno serve -A _fresh/server.js",
-    "start": "deno task gen:data; vite --port=8000",
+    "start": "deno task gen:data; vite --configLoader=native --port=8000",
     "update": "deno run -A -r jsr:@fresh/update ."
   }
 }
