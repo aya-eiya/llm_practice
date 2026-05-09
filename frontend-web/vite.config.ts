@@ -7,4 +7,7 @@ export default defineConfig({
     fresh(),
     tailwindcss(),
   ],
+  optimizeDeps: {
+    include: ["@fresh/plugin-vite", "fresh:client-entry"],
+  },
 });
