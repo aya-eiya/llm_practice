@@ -16,7 +16,7 @@ export default function App({ Component, config, url }: PageProps) {
           <>
             <meta
               name="google-site-verification"
-              content="m2hwol8GGWwXv_en0E1VXrKXk3i1XcCtWkCEsbfJsX0"
+              content="7kSERnEQeg59zIDhceMur15WrY6TnUkPR4r2Rj8tEwY"
             />
             <script
               async
