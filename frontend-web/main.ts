@@ -1,5 +1,4 @@
 import { App, staticFiles, trailingSlashes } from "fresh";
-import { env } from "node:process";
 
 export const app = new App<{ lang: string }>()
   .use(staticFiles())
