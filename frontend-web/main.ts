@@ -18,13 +18,14 @@ export const app = new App<{ lang: string }>()
     return ctx.next();
   })
   .use((ctx) => {
+    console.log(ctx.info.remoteAddr, ctx.url);
     if (
       ctx.url.host.includes("deno.dev") ||
       ctx.url.host.startsWith("aya-eiya.work")
     ) {
       const url = new URL(ctx.url);
       url.host = "mynig.aya-eiya.work";
-      ctx.redirect(url.toString(), 302);
+      return ctx.redirect(url.toString(), 301);
     }
     return ctx.next();
   })
