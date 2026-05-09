@@ -24,7 +24,7 @@ export const app = new App<{ lang: string }>()
       ctx.url.host.startsWith("aya-eiya.work")
     ) {
       const url = new URL(ctx.url);
-      url.host = "mynig.aya-eiya.work";
+      url.host = "myniq.aya-eiya.work";
       return ctx.redirect(url.toString(), 301);
     }
     return ctx.next();
