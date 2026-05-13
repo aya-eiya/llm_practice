@@ -8,7 +8,7 @@ import Quiz from "./parts/Quiz.tsx";
 import SideNavi from "./parts/SideNavi.tsx";
 import { getAudioData } from "../infras/audio/youtube.ts";
 
-const BASE_URL = "https://daily-ai-generated-quiz.deno.dev" as const;
+const BASE_URL = "https://myniq.aya-eiya.work" as const;
 
 export default function Main({ data, url }: { data: QuizData; url: URL }) {
   const next = containsKey(data.date) &&

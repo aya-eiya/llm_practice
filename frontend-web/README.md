@@ -5,7 +5,7 @@ AI-generated short novels and accompanying test questions to enhance English
 proficiency. The content is structured by difficulty level, allowing users to
 learn step-by-step.
 
-**Live Site:** https://daily-ai-generated-quiz.deno.dev/
+**Live Site:** https://myniq.aya-eiya.work/
 
 ## ✨ Features
 

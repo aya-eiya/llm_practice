@@ -198,7 +198,7 @@ export default function ForAll(
 
           <div className="text-center my-8">
             <a
-              href="https://daily-ai-generated-quiz.deno.dev/"
+              href="https://myniq.aya-eiya.work/"
               className="bg-blue-500 text-white py-3 px-6 rounded hover:bg-blue-700 transition duration-300"
             >
               {contentText.startNow}

@@ -1,12 +1,17 @@
 {
-  "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
-  "exclude": ["**/_fresh/*"],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  },
+  "exclude": [
+    "**/_fresh/*"
+  ],
   "imports": {
+    "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@1.1.2",
     "@preact/signals": "npm:@preact/signals@^2.9.0",
     "@std/dotenv": "jsr:@std/dotenv@^0.225.6",
     "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.2.4",
     "fresh": "jsr:@fresh/core@^2.3.3",
-    "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@1.1.2",
     "preact": "npm:preact@^10.29.1",
     "tailwindcss": "npm:tailwindcss@4.2.4",
     "tailwindcss/": "npm:/tailwindcss@4.2.4/",
@@ -15,13 +20,20 @@
   },
   "lint": {
     "rules": {
-      "exclude": ["jsx-no-useless-fragment", "jsx-curly-braces"],
-      "tags": ["fresh", "recommended"]
+      "exclude": [
+        "jsx-no-useless-fragment",
+        "jsx-curly-braces"
+      ],
+      "tags": [
+        "fresh",
+        "recommended"
+      ]
     }
   },
   "nodeModulesDir": "auto",
   "tasks": {
-    "build": "deno task gen:data; deno task check && vite build --configLoader=native",
+    "build": "deno task gen:data; deno task check && deno --allow-run vite_build.ts",
+    "build:try": "vite build --configLoader=native",
     "check": "deno task gen:data; deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
     "gen:data": "./scripts/generate_data.sh && deno fmt",
     "gen:voice_list": "./scripts/generate_voice_list.sh && deno fmt",
