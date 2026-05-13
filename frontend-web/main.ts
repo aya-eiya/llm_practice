@@ -19,14 +19,13 @@ export const app = new App<{ lang: string }>()
   })
   .use((ctx) => {
     console.log(ctx.info.remoteAddr, ctx.url);
-    if (ctx.url.host.startsWith("aya-eiya.work") && ctx.url.pathname === "/") {
+    if (ctx.url.host.startsWith("aya-eiya.work")) {
       const url = new URL(ctx.url);
       url.host = "www.aya-eiya.work";
       return ctx.redirect(url.toString(), 301);
     }
     if (
-      ctx.url.host.includes("deno.dev") ||
-      ctx.url.host.startsWith("aya-eiya.work")
+      ctx.url.host.includes("deno.dev")
     ) {
       const url = new URL(ctx.url);
       url.host = "myniq.aya-eiya.work";
