@@ -1,109 +1,113 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "The Trial of Galileo",
+    "event": "The Beatles Perform at the Cavern Club for the Last Time",
     "details":
-      "On April 29, 1633, Italian astronomer and physicist Galileo Galilei was put on trial by the Catholic Church for his support of the Copernican heliocentric model of the universe.",
+      "On April 29, 1963, The Beatles performed at the Cavern Club in Liverpool for the last time before their rapid rise to fame.",
   },
   "date": "2026-04-29",
-  "title": "Love Beyond the Cosmos",
+  "title": "The Luminous Melody of Liverpool",
   "body":
-    "In the midst of the Tuscan countryside, Alessia found herself lost in thought, pondering the trials of Galileo, a man who dared to defy the conventions of his time. Her own heart yearned for freedom, just as the stars yearned to be untethered from their celestial bounds.  \n\n As she strolled through the vineyards, Alessia's gaze fell upon a figure in the distance, and her pulse quickened. It was him – Leonardo, a man with eyes that shone like the night sky, and a smile that could launch a thousand ships. Their love was forbidden, just as Galileo's ideas were deemed heretical.  \n\n Yet, they couldn't help but be drawn to each other, like planets orbiting around a central sun. In secret trysts, they would whisper words of adoration, their love growing stronger with each passing day. But the weight of societal expectations threatened to tear them apart, just as the Church's condemnation had silenced Galileo's voice.  \n\n Would their love be strong enough to overcome the obstacles that lay ahead, or would it succumb to the gravitational pull of convention? Only time would tell, but one thing was certain – their love shone brighter than any star in the vast expanse of the universe.",
-  "word count": 202,
+    "In the mystical realm of Aethereia, where music was woven into the fabric of reality, a legendary quartet emerged to capture the essence of the enchanted city of Liverpool. Their names whispered in awe by the denizens of this mystical world were Lyra, Kaida, Zephyr, and Thorne – the Luminous Lyres.  \n\n As they took the stage at the Starlight Cavern, a radiant aura enveloped them, infusing their melodies with an otherworldly charm. Their performance was a symphony of wonder, transporting all who listened to realms beyond mortal comprehension. The music danced on the wind, carrying the hopes and dreams of Aethereia's inhabitants.  \n\n Yet, as the night wore on, a bittersweet melancholy crept into their harmonies. For Lyra, Kaida, Zephyr, and Thorne knew that this was to be their final performance at the Starlight Cavern. As they bid farewell to their enchanted audience, their Luminous Melody of Liverpool echoed through the ages, forever entwining itself with the fabric of Aethereia's collective memory.",
+  "word count": 161,
   "dialog": [
     {
       "Billy":
-        "I love how they used Galileo as an example to explain their forbidden love!",
-    },
-    {
-      "Kerry":
-        "Yeah, it's like when we read about Romeo and Juliet in class. I get why the adults don't want them together.",
-    },
-    {
-      "Meg":
-        "But that's what makes it so beautiful! The way they're willing to risk everything for each other is just... wow!",
+        "I'm still trying to wrap my head around this mystical realm of Aethereia. How did you guys find it?",
     },
     {
       "Lui":
-        "Exactly, Meg. And it's not just about the romance, but also about the themes of freedom and individuality.",
+        "Well, I think the author did a great job world-building. The concept of music being woven into reality is fascinating.",
+    },
+    {
+      "Meg":
+        "Ooh, I loved that part too! But what really got me was the idea of the Luminous Lyres' final performance at the Starlight Cavern. It's like they were sharing a secret with the readers.",
+    },
+    {
+      "Kerry":
+        "Yeah, it's like their music is still echoing through Aethereia even though we're not there anymore. That's some deep stuff right there.",
     },
     {
       "Billy":
-        "I was wondering, though, what if their love wasn't forbidden? Do you think they would have ended up together?",
-    },
-    {
-      "Kerry":
-        "Hmm, that's a tough one. I think it would've been harder for them to be together because of the societal pressures, but maybe they could've found a way.",
-    },
-    {
-      "Meg":
-        "I think it's interesting how their love is compared to the stars in the sky. It makes me wonder if love can conquer all, even gravity itself!",
+        "I know what you mean! I kept thinking about how this novel could be a metaphor for real-life experiences. Maybe the Luminous Lyres represent our own creativity and passions?",
     },
     {
       "Lui":
-        "Well, as we discussed in class, the novel isn't just about romance, but also about the power of human relationships and the importance of standing up for what you believe in.",
+        "That's an interesting interpretation, Billy. But I think it's more about the power of art to transcend time and space.",
+    },
+    {
+      "Meg":
+        "I love that idea, Mr. Lui! And what about the themes of farewell and memory? How do you guys feel about those?",
+    },
+    {
+      "Kerry":
+        "Dude, it got me thinking about my own relationships with friends and family. What happens when we have to say goodbye?",
     },
   ],
   "quiz": [
     {
       "question":
-        "What was Alessia pondering about as she strolled through the vineyards?",
+        "What is the name of the legendary quartet that emerged to capture the essence of Liverpool?",
       "options": [
-        "Her own heart's desires",
-        "The trials of Leonardo",
-        "The conventions of her time",
-        "The celestial bounds of the stars",
-        "The weight of societal expectations",
+        "The Starlight Serenaders",
+        "The Luminous Lyres",
+        "The Melodic Muses",
+        "The Sonic Sages",
+        "The Harmonious Horizons",
       ],
-      "answer": 3,
+      "answer": 1,
     },
     {
-      "question": "What was forbidden about Alessia and Leonardo's love?",
+      "question": "Where did the legendary quartet take the stage?",
       "options": [
-        "They were from different social classes",
-        "Their love was deemed heretical by the Church",
-        "They were not allowed to be together because of societal pressures",
-        "Leonardo was already married",
+        "The Starlight Cavern",
+        "The Liverpool Arena",
+        "The Music Hall",
+        "The Concert Venue",
+        "The Grand Theater",
+      ],
+      "answer": 0,
+    },
+    {
+      "question":
+        "What was special about the Luminous Lyres' performance at the Starlight Cavern?",
+      "options": [
+        "It was their first performance together",
+        "They played to a full house",
+        "Their music was infused with an otherworldly charm",
+        "They were accompanied by a live orchestra",
+        "Their setlist included only classical pieces",
       ],
       "answer": 2,
     },
     {
       "question":
-        "What did Billy think about how Galileo was used as an example in the story?",
+        "Why did the Luminous Lyres know that their performance at the Starlight Cavern would be their final one?",
       "options": [
-        "He thought it was a weak comparison",
-        "He loved how they used Galileo to explain their love",
-        "It didn't make sense to him",
-        "He wanted more context",
+        "Because they were leaving Aethereia to tour other worlds",
+        "Their manager wanted them to focus on songwriting",
+        "They had a disagreement among band members",
+        "It was their farewell performance before disbanding",
+        "There was no reason given in the text",
+      ],
+      "answer": 3,
+    },
+    {
+      "question":
+        "What idea did Lui mention as an interpretation of the novel?",
+      "options": [
+        "The Luminous Lyres represent real-life experiences",
+        "Their music is a metaphor for our own creativity and passions",
+        "Aethereia's inhabitants have no concept of art or music",
+        "Their final performance was just a one-time event",
+        "Nothing related to Aethereia",
       ],
       "answer": 1,
     },
-    {
-      "question":
-        "What theme is mentioned in the dialogue as being part of the story?",
-      "options": [
-        "The power of human relationships and individuality",
-        "Love conquering all, even gravity itself",
-        "Freedom and social pressures",
-        "Romance and societal expectations",
-      ],
-      "answer": 0,
-    },
-    {
-      "question":
-        "What was Lui's interpretation of what their love is compared to in the story?",
-      "options": [
-        "The stars in the sky",
-        "A beautiful painting",
-        "A novel by Tolstoy",
-        "A historical event from the past",
-      ],
-      "answer": 0,
-    },
   ],
   "params": {
-    "theme": "Philosophy",
-    "flavor": "Romance",
+    "theme": "Dance",
+    "flavor": "Fantasy",
     "models": {
       "main": "llama3.1",
       "novel": "llama3.1",

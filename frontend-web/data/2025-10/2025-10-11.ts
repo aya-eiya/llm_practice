@@ -77,6 +77,7 @@ const data: QuizData = {
         "You press the button, we do the rest",
         "Preserve your memories",
         "Take a photo, take a memory",
+        "Connecting Your World",
       ],
       "answer": 1,
     },

@@ -1,112 +1,111 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "First Apple Macintosh Computer Goes on Sale",
+    "event": "Launch of Christian Dior's New Look",
     "details":
-      "Apple Inc.'s first successful foray into personal computers, the Apple Macintosh 128k, was released in a highly publicized event on this day.",
+      "On May 22, 1947, Christian Dior introduced his iconic 'New Look' collection at a fashion show in Paris, revolutionizing women's fashion and marking a significant shift away from the austerity of World War II.",
   },
   "date": "2026-05-22",
-  "title": "Revolutionizing Computing: The Apple Macintosh Era",
+  "title": "Gearworks of Elegance",
   "body":
-    'The introduction of the Apple Macintosh computer in 1984 marked a significant turning point in the history of personal computing. This revolutionary device, with its user-friendly interface and intuitive design, made it accessible to a wider audience. As described by one critic, "the Macintosh was more than just a computer; it was an experience."[  \n\nThe impact of the Macintosh on the industry was substantial, as it paved the way for future innovations in user-friendly interface design and graphical user interfaces (GUIs). The success of the Macintosh also led to increased competition among manufacturers, driving down prices and improving overall quality. This, in turn, contributed to the widespread adoption of personal computers in homes and businesses.  \n\nHowever, the Macintosh was not without its limitations. Critics argued that its lack of expandability and limited software capabilities hindered its potential as a truly powerful tool. Nevertheless, the Macintosh remains an iconic symbol of innovation and design excellence, influencing generations of computer users and manufacturers alike.',
-  "word count": 162,
+    "In the fog-shrouded streets of Paris, a revolution was brewing. Christian Dior, a visionary designer, had created a collection that would change the face of fashion forever. His 'New Look' was not just a style, but a movement that would liberate women from the drudgery of wartime austerity.  \n\nAs I, Inspector Emilia Grey, walked through the grand halls of Dior's atelier, I couldn't help but notice the whirring gears and ticking clocks that adorned the walls. It was as if the very essence of steampunk had been distilled into these exquisite creations. The models glided down the catwalk with an elegance that belied the mechanized underpinnings.  \n\nI watched in awe as a young woman, her hair styled in a sleek bob, emerged from the fog with a gown that shimmered like the moon. It was as if she had been assembled from gears and springs, yet moved with an ethereal beauty that defied explanation. Dior's New Look had not only transformed fashion but had also conjured up a new era of elegance and sophistication.",
+  "word count": 174,
   "dialog": [
     {
-      "Billy": "I loved reading about the Apple Macintosh computer!",
-    },
-    {
-      "Lui":
-        "Yes, it was indeed a significant turning point in personal computing history.",
-    },
-    {
       "Meg":
-        "I wish they talked more about the users' experiences with the Macintosh. It would've been fascinating to hear their stories!",
+        "I loved how the author wove together steampunk elements with historical events, it was so unique!",
     },
     {
       "Kerry":
-        "Dude, did you know that the Macintosh was actually a response to IBM's failure to create a user-friendly computer?",
+        "Totally agree Meg! The way they described Christian Dior's designs was amazing, I felt like I was right there in Paris.",
+    },
+    {
+      "Lui":
+        "Yes, well done on capturing the essence of the era, but I must say, I found some historical inaccuracies and wish they had been more precise.",
     },
     {
       "Billy":
-        "Whoa, that's so cool! I had no idea. But I do think the author could've gone deeper into its impact on society.",
-    },
-    {
-      "Lui":
-        "Actually, Billy, the article did discuss how the Macintosh paved the way for future innovations in interface design and graphical user interfaces.",
+        "Whoa, Lui, you're always so picky about facts! But I have to agree, the steampunk details were incredible. Can someone explain what 'whirring gears' means in the context of fashion?",
     },
     {
       "Meg":
-        "I'm more interested in learning about the people behind the computer. Can we read a biography of Steve Jobs next?",
+        "I think it's a metaphor for how women were being transformed by Dior's designs, like they were being reassembled into something new and beautiful.",
     },
     {
       "Kerry":
-        "Ugh, don't get me started on Steve Jobs! He was all about the tech, not about helping anyone. Let's read something else.",
+        "Exactly! And I loved how the author used words like 'gears' and 'springs' to describe the dresses, it was like they were mechanical creations or something!",
     },
     {
       "Lui":
-        "Alright, alright. We'll find something that suits everyone's taste.",
+        "While I appreciate the creativity, I still think there should be more attention to historical accuracy. It's not just about being pretty, but also about getting the facts right.",
+    },
+    {
+      "Billy":
+        "I see what you mean Lui, but don't you think that's kind of boring? I mean, history can be fun too!",
     },
   ],
   "quiz": [
     {
-      "question": "In what year was the Apple Macintosh computer introduced?",
+      "question": "What revolution was brewing in Paris?",
       "options": [
-        "1982",
-        "1984",
-        "1985",
-        "1990",
-        "2000",
+        "Industrial Revolution",
+        "Fashion Revolution",
+        "Steampunk Revolution",
+        "Christian Dior's New Look Revolution",
+        "Renaissance",
       ],
-      "answer": 1,
+      "answer": 3,
     },
     {
-      "question":
-        "According to one critic, what was the Macintosh considered to be?",
+      "question": "Who is the visionary designer mentioned in the text?",
       "options": [
-        "a revolutionary device",
-        "an experience",
-        "just a computer",
-        "a powerful tool",
-        "a failure",
-      ],
-      "answer": 1,
-    },
-    {
-      "question":
-        "What impact did the success of the Macintosh have on manufacturers?",
-      "options": [
-        "it led to decreased competition",
-        "prices increased and quality improved",
-        "it paved the way for future innovations in user-friendly interface design and graphical user interfaces",
-      ],
-      "answer": 2,
-    },
-    {
-      "question":
-        "Who responded to IBM's failure to create a user-friendly computer with the Macintosh?",
-      "options": [
-        "Apple",
-        "IBM",
-        "Microsoft",
-        "Google",
-        "Facebook",
+        "Christian Dior",
+        "Inspector Emilia Grey",
+        "Meg",
+        "Kerry",
+        "Lui",
       ],
       "answer": 0,
     },
     {
-      "question": "What did Billy wish the article had discussed more about?",
+      "question":
+        "What was the name of Christian Dior's collection that changed the face of fashion forever?",
       "options": [
-        "the technical specifications of the Macintosh",
-        "its impact on society",
-        "the people behind the computer",
-        "users' experiences with the Macintosh",
+        "New Look",
+        "Steampunk Fashion",
+        "French Revolution",
+        "Industrial Age",
+        "Elegance Collection",
       ],
-      "answer": 3,
+      "answer": 0,
+    },
+    {
+      "question":
+        "According to Lui, what is missing from the author's description?",
+      "options": [
+        "More steampunk elements",
+        "Historical inaccuracies",
+        "More attention to fashion trends",
+        "A more detailed account of Christian Dior's life",
+        "A clearer explanation of the New Look",
+      ],
+      "answer": 1,
+    },
+    {
+      "question": "What did Meg love about the author's description?",
+      "options": [
+        "The way they described Christian Dior's designs was amazing",
+        "The use of steampunk elements was creative but inaccurate",
+        "I loved how the author wove together steampunk elements with historical events, it was so unique!",
+        "I wish they had been more precise in their descriptions",
+        "I felt like I was right there in Paris",
+      ],
+      "answer": 2,
     },
   ],
   "params": {
-    "theme": "Technology",
-    "flavor": "Academic Essay",
+    "theme": "Fashion",
+    "flavor": "Steampunk",
     "models": {
       "main": "llama3.1",
       "novel": "llama3.1",
