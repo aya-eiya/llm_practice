@@ -1,111 +1,114 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "The Rite of Spring Ballet Premiere",
+    "event": "The Chernobyl Disaster",
     "details":
-      "The ballet premiered on March 11, 1913, at the Théâtre du Champs-Élysées in Paris, France. It was choreographed by Vaslav Nijinsky to a score by Igor Stravinsky and was part of the Ballets Russes' production.",
+      "On April 26, 1986 is wrong, this one is on March 11th, 1945 - A fire at the Gestapo headquarters in Berlin caused by an Allied bombing raid and Soviet artillery fire set off a massive blaze that destroyed most of the building and its records. However there was another event: On March 11th, 2011 - A magnitude 9 earthquake hit northeastern Japan, causing a tsunami that affected several coastal cities, leading to one of the worst nuclear disasters in history with the Fukushima Daiichi Nuclear Power Plant.",
   },
   "date": "2026-03-11",
-  "title": "The Rite of Spring Awakening",
+  "title": "Flames that Flicker",
   "body":
-    "In the mystical forest of Aethereia, where the ancient trees whispered secrets to the wind, a young apprentice named Lyra stumbled upon an enchanted spring. As she gazed into its crystal-clear waters, she felt an eerie energy emanating from within. The air grew thick with anticipation as a primordial force began to stir.  \n\n Unbeknownst to Lyra, this spring was the focal point of an ancient ritual, one that had been dormant for centuries. As the moon reached its zenith, the forces of nature converged upon the clearing. Vaslav, a powerful sorcerer from the distant land of Russavia, led the assembly in a choreographed dance, weaving a complex pattern of magic and movement.  \n\n The Rite of Spring Awakening had begun, and Lyra was unwittingly drawn into its midst. As she joined the dancers, her feet seemed to move of their own accord, guided by an unseen force that echoed the primal rhythms of the forest. The air vibrated with tension as the participants wove a tapestry of sound and motion, culminating in a climactic release of energy that shook the very foundations of Aethereia.",
-  "word count": 183,
+    "The Gestapo headquarters in Berlin was ablaze, its records reduced to ashes. On March 11th, 1945, a massive fire had engulfed the building, fueled by an Allied bombing raid and Soviet artillery fire. As the flames raged on, the once-mighty structure now stood as a charred skeleton, its secrets lost forever.  \n\n Amidst the chaos of war, a young journalist named Anna risked her life to salvage what she could from the burning building. With a sense of urgency, she navigated through the smoldering ruins, dodging debris and leaping over flames. Her heart pounded in her chest as she rummaged through the charred remains, searching for any shred of evidence that might reveal the truth about the Nazi regime.  \n\n As Anna emerged from the wreckage, covered in soot and dust, she stumbled upon a cryptic message scrawled on a burnt page. It was a hint at a larger conspiracy, one that could shake the very foundations of the war effort. With this newfound information, Anna knew she had to get her story out to the world, no matter the cost.",
+  "word count": 179,
   "dialog": [
     {
-      "Meg":
-        "I think Lyra's journey into the mystical forest was so beautifully described, don't you all agree?",
-    },
-    {
       "Kerry":
-        "Totally! I love how the author wove together mythology and fantasy elements. It's like a treasure hunt for the reader!",
-    },
-    {
-      "Billy":
-        "I noticed that the author used a lot of sensory details to bring the forest to life. The way he described the sound of the spring and the feeling of the wind is amazing!",
-    },
-    {
-      "Lui":
-        "Yes, excellent observation, Billy! The use of sensory language is a hallmark of great storytelling. I'm curious, what did you all think of Vaslav's character? Did you find him intriguing?",
+        "I loved how Anna risked her life to get the story out! What do you guys think about that?",
     },
     {
       "Meg":
-        "Oh, absolutely! I loved how he was introduced as this mysterious sorcerer from Russavia. It added an extra layer of depth to the story!",
-    },
-    {
-      "Kerry":
-        "Agreed! And what about Lyra's connection to the forest? Did anyone pick up on that?",
-    },
-    {
-      "Billy":
-        "Hmm, I think I did. It felt like she had a special bond with nature. Maybe it's because she's an apprentice or something?",
+        "Ooh, I know right? It's so cool how she was willing to sacrifice everything for the truth.",
     },
     {
       "Lui":
-        "That's a great point, Billy! The author does hint at Lyra's connection to the natural world. But what about the themes of the novel? What resonated with you all?",
+        "Well, it's a classic example of journalistic bravery. But let's not forget the historical context in which this story takes place.",
+    },
+    {
+      "Billy":
+        "I'm curious, Mr. Lui, what do you think about the conspiracy hint? Do you think it was real or just a fabrication?",
+    },
+    {
+      "Meg":
+        "I think it's so fascinating! I would love to see what other secrets were hidden in those records. Maybe there's more to the story than we know.",
+    },
+    {
+      "Kerry":
+        "But isn't it weird that Anna found this cryptic message? It seems like a plot twist out of nowhere!",
+    },
+    {
+      "Lui":
+        "Not necessarily, Kerry. Sometimes real-life events can be just as surprising and unexpected as fiction. But I agree with you, it is an interesting plot point.",
+    },
+    {
+      "Billy":
+        "I've been thinking... what if Anna's story was the only one that got out? What would have happened to the war effort if the truth wasn't revealed?",
     },
   ],
   "quiz": [
     {
-      "question": "What type of forest was Lyra found in?",
+      "question":
+        "On what date did a massive fire engulf the Gestapo headquarters in Berlin?",
       "options": [
-        "Mystical Forest",
-        "Dark Forest",
-        "Enchanted Forest",
-        "Ancient Forest",
-        "Forgotten Forest",
+        "March 10th, 1945",
+        "March 11th, 1945",
+        "March 12th, 1945",
+        "April 1st, 1945",
+        "May 15th, 1945",
+      ],
+      "answer": 1,
+    },
+    {
+      "question":
+        "What was the reason for the fire that engulfed the Gestapo headquarters?",
+      "options": [
+        "An Allied bombing raid and Soviet artillery fire",
+        "A gas leak from a nearby building",
+        "Electrical malfunction in the building",
+        "A group of rebels set the building on fire",
+        "Natural causes",
       ],
       "answer": 0,
     },
     {
       "question":
-        "Who led the assembly in a choreographed dance during the Rite of Spring Awakening?",
+        "Who was the young journalist who risked her life to salvage records from the burning building?",
       "options": [
-        "Lyra",
-        "Vaslav",
-        "Meg",
+        "Anna",
         "Kerry",
+        "Meg",
+        "Lui",
         "Billy",
       ],
-      "answer": 1,
+      "answer": 0,
     },
     {
       "question":
-        "What was Lyra doing when she felt an eerie energy emanating from the spring?",
+        "What did Anna find in the burnt remains of the Gestapo headquarters?",
       "options": [
-        "She was drinking from it",
-        "She was gazing into its crystal-clear waters",
-        "She was dancing with Vaslav",
-        "She was talking to Meg and Kerry",
-      ],
-      "answer": 1,
-    },
-    {
-      "question":
-        "What did Lyra's feet seem to move of their own accord, guided by?",
-      "options": [
-        "The moon",
-        "An unseen force that echoed the primal rhythms of the forest",
-        "Vaslav's magic",
-        "The sound of the spring",
-      ],
-      "answer": 1,
-    },
-    {
-      "question":
-        "What was the Rite of Spring Awakening described as culminating in?",
-      "options": [
-        "A climactic release of energy",
-        "A gentle breeze",
-        "A soft rain",
-        "A peaceful silence",
-        "A dark storm",
+        "A cryptic message hinting at a larger conspiracy",
+        "A set of valuable jewels",
+        "A cache of secret documents",
+        "A mysterious device that could change the course of the war",
+        "A note with her own name",
       ],
       "answer": 0,
+    },
+    {
+      "question":
+        "What was the significance of the cryptic message Anna found?",
+      "options": [
+        "It revealed a plot to assassinate Hitler",
+        "It hinted at a larger conspiracy that could shake the foundations of the war effort",
+        "It contained a list of secret Nazi passwords",
+        "It was a fake document created by Anna herself",
+        "It was a love letter from a soldier",
+      ],
+      "answer": 1,
     },
   ],
   "params": {
-    "theme": "Dance",
-    "flavor": "Fantasy",
+    "theme": "Culture",
+    "flavor": "Historical Fiction",
     "models": {
       "main": "llama3.1",
       "novel": "llama3.1",

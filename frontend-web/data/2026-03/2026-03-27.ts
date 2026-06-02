@@ -1,112 +1,113 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "The First Performance of Stravinsky's 'The Rite of Spring'",
+    "event": "March on Washington for Jobs and Freedom",
     "details":
-      "The ballet, composed by Igor Stravinsky to choreography by Vaslav Nijinsky, premiered at the Théâtre du Champs-Élysées in Paris on March 27, 1913. The event was a major scandal and is often cited as one of the most influential cultural moments of the 20th century.",
+      "A major civil rights event where Martin Luther King Jr. delivered his famous 'I Have a Dream' speech, advocating for an end to racism and equal rights for African Americans.",
   },
   "date": "2026-03-27",
-  "title": "Shadows Danced in the Théâtre du Champs-Élysées",
+  "title": "Beyond the Dream",
   "body":
-    "It was a night like any other on March 27, 1913, as the moon cast its silvery glow over the City of Light. But little did anyone know that this evening would forever be etched in history as the first performance of Stravinsky's 'The Rite of Spring'. The air was alive with anticipation as the audience filed into the Théâtre du Champs-Élysées, their eyes fixed upon the stage.  \n\n Vaslav Nijinsky's choreography danced across the canvas like a madman's brushstrokes, weaving a tale of ancient rituals and primal fury. The music pulsed through the theatre like a living thing, its discordant notes striking fear into the hearts of those who dared to listen. And yet, amidst the chaos, there was something beautiful, something that spoke to the very soul.  \n\n But beauty is often a fleeting thing, and on this fateful night, it would be extinguished by the flames of controversy. The scandal that erupted from the performance would go down in history as one of the most infamous moments of the 20th century. And yet, even amidst the chaos, there was something sublime, something that would continue to haunt the imagination for generations to come.",
-  "word count": 194,
+    "The air was thick with anticipation as I stepped into the National Mall. It had been decades since the March on Washington for Jobs and Freedom, but its echoes still resonated through my mind. Dr. King's words, like a siren's call, beckoned me to march forward. \n\n As I walked among the sea of faces, I felt an unshakeable sense of purpose. We were not just marching for equality; we were fighting against the very fabric of society that seemed determined to hold us back. The echoes of Dr. King's 'I Have a Dream' speech still lingered in my ears, and I knew I was not alone. \n\n Our footsteps merged into a powerful crescendo as we reached the Lincoln Memorial. It was there, beneath the watchful eyes of the 16th President, that Dr. King had declared his dream. As I gazed up at the statue, I realized my own dreams were not so different from those he had proclaimed. We all wanted to break free from the shackles of oppression and forge a new path, one where justice and equality walked hand in hand.",
+  "word count": 183,
   "dialog": [
     {
-      "Meg": "Wow, this novel really brought history to life!",
-    },
-    {
-      "Lui":
-        "I'm glad you liked it, Meg. The author did an excellent job of recreating the emotions and atmosphere of that night.",
-    },
-    {
       "Billy":
-        "Yeah, I loved how they described Stravinsky's music as 'discordant notes striking fear into the hearts of those who dared to listen'!",
+        "I felt like I was right there with you in Washington D.C., it's amazing how Dr. King's words still resonate today.",
     },
     {
       "Kerry":
-        "Ha! That part was so cool! I can see why people were shocked by it back then.",
+        "Totally! And I loved how the author connected the past to our present, showing us how far we've come but also how much work is left to do.",
     },
     {
       "Meg":
-        "I know, right? The way they wove together music, dance, and storytelling... it's like nothing I've ever read before!",
+        "I was on edge the whole time, wondering if they would actually achieve their goals. It's so powerful to see the impact of one person's determination.",
     },
     {
       "Lui":
-        "The author did an excellent job of capturing the essence of the performance. It's not just about a night in Paris, but about how art can change us.",
-    },
-    {
-      "Billy":
-        "I never realized that music could be so powerful! Can we talk more about it?",
+        "As an educator, I appreciate how this novel uses history to teach us about social justice and activism. It's a valuable lesson for young people like you all.",
     },
     {
       "Kerry":
-        "Yeah, let's discuss it! But first, I want to ask... did you guys feel like the author was trying to say something specific with all this controversy?",
+        "I was thinking, what if we didn't have someone like Dr. King? Would things be different today?",
+    },
+    {
+      "Billy":
+        "That's a good question! I think it shows how one person can make a difference, but also how much work is needed to create real change.",
+    },
+    {
+      "Meg":
+        "I liked how the author highlighted the importance of perseverance and community. It's not just about individual actions, but also about coming together for a common cause.",
+    },
+    {
+      "Lui":
+        "Well said, Meg! And Billy, you're right that one person can make a difference, but it takes many people working together to create lasting change.",
     },
   ],
   "quiz": [
     {
-      "question":
-        "What was the date of the performance of Stravinsky's 'The Rite of Spring'?",
+      "question": "Where did Dr. King declare his dream?",
       "options": [
-        "March 27, 1912",
-        "March 27, 1913",
-        "March 28, 1913",
-        "April 1, 1913",
-        "May 1, 1913",
+        "The Lincoln Memorial",
+        "The National Mall",
+        "Washington D.C.",
+        "Dr. King's home",
+        "The White House",
+      ],
+      "answer": 0,
+    },
+    {
+      "question":
+        "According to the dialogue, what is the significance of Dr. King's words today?",
+      "options": [
+        "They are no longer relevant.",
+        "They inspire people to take action.",
+        "They have been forgotten.",
+        "They have not made a difference.",
+        "We don't know why they're significant.",
       ],
       "answer": 1,
     },
     {
       "question":
-        "Who choreographed the dance for Stravinsky's 'The Rite of Spring'?",
+        "Who said, 'It's so powerful to see the impact of one person's determination'?",
       "options": [
-        "Pavel Pavlovich Nijinsky",
-        "Vaslav Nijinsky",
-        "Leonid Massine",
-        "George Balanchine",
-        "Kurt Jooss",
+        "Billy",
+        "Kerry",
+        "Meg",
+        "Lui",
+        "The narrator",
+      ],
+      "answer": 2,
+    },
+    {
+      "question":
+        "What is the theme of perseverance and community highlighted in the dialogue?",
+      "options": [
+        "It's about individual actions, not collective efforts.",
+        "It's only important for young people.",
+        "It's crucial for creating lasting change.",
+        "It's not mentioned at all.",
+        "It's only relevant to social justice",
+      ],
+      "answer": 3,
+    },
+    {
+      "question":
+        "According to the dialogue, what if we didn't have someone like Dr. King?",
+      "options": [
+        "We wouldn't be discussing his legacy today.",
+        "Things might be different today.",
+        "Dr. King would still exist.",
+        "We can't know for sure.",
+        "Nothing would change.",
       ],
       "answer": 1,
-    },
-    {
-      "question":
-        "What was the reaction of the audience to Stravinsky's music during the performance?",
-      "options": [
-        "They were bored and fell asleep.",
-        "They were entertained and applauded wildly.",
-        "They were struck with fear by its discordant notes.",
-        "They were confused but ultimately enjoyed it.",
-        "They didn't notice anything out of the ordinary.",
-      ],
-      "answer": 2,
-    },
-    {
-      "question":
-        "According to Meg, what did the author do well in recreating?",
-      "options": [
-        "The characters' conversations and relationships.",
-        "The setting and time period of the story.",
-        "The emotions and atmosphere of that night.",
-        "The plot twists and surprises.",
-        "The historical context.",
-      ],
-      "answer": 2,
-    },
-    {
-      "question":
-        "What did Billy say he loved about how Stravinsky's music was described?",
-      "options": [
-        "It was beautiful and soothing.",
-        "It was complex and challenging to follow.",
-        "It was discordant notes striking fear into the hearts of those who dared to listen.",
-        "It was a perfect accompaniment to the dance.",
-      ],
-      "answer": 2,
     },
   ],
   "params": {
-    "theme": "Art",
-    "flavor": "Gothic",
+    "theme": "Society",
+    "flavor": "Mystery",
     "models": {
       "main": "llama3.1",
       "novel": "llama3.1",

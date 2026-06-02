@@ -88,6 +88,7 @@ const data: QuizData = {
         "The palace seemed to awaken with each passing day",
         "It was just another ancient ruin",
         "There were no mysterious inscriptions or symbols",
+        "It was non-fiction story",
       ],
       "answer": 1,
     },

@@ -1,103 +1,120 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "The Death of Caravaggio",
+    "event": "Wenceslas Square Protests",
     "details":
-      "Renaissance artist Michelangelo Merisi da Caravaggio was killed in a fight at a tavern in Porto Ercole, Italy.",
+      "Mass protests broke out in Prague's Wenceslas Square against Soviet-led occupation, marking a significant moment in the Velvet Revolution that led to the fall of communism in Czechoslovakia.",
   },
   "date": "2026-05-19",
-  "title": "A Brush with Mortality",
+  "title": "Beneath the Velvet Veil",
   "body":
-    "The Death of Caravaggio marked a turning point in the artistic world of Renaissance Italy. Michelangelo Merisi da Caravaggio, a renowned painter known for his dramatic use of light and shadow, met his untimely demise in a tavern brawl in Porto Ercole.  \n\n His turbulent life was a testament to the struggles of creative genius. A rebellious spirit, Caravaggio often found himself at odds with the artistic establishment. His innovative style, however, earned him both praise and criticism from his contemporaries.  \n\n As news of his death spread, the art world was left in shock. Many artists who had been influenced by his bold brushstrokes and dramatic compositions mourned the loss of a true innovator. In the years that followed, Caravaggio's legacy continued to inspire generations of artists, cementing his place as one of the greatest painters in history.  \n\n The impact of his death on the art world was profound. His style, characterized by intense emotion and dramatic lighting, influenced a new wave of artists who sought to push the boundaries of creative expression. As we reflect on the life and legacy of Michelangelo Merisi da Caravaggio, it is clear that his tragic fate only served to heighten his artistic impact.",
-  "word count": 199,
+    "The streets of Prague were always a mystery to me, but nothing could have prepared me for this night. I had heard whispers of protests brewing in Wenceslas Square, but I never thought it would come to this. The Soviet-led occupation had been suffocating the city for years, and now the people had finally reached their breaking point.  \n\n As I walked through the square, I saw a sea of faces, all united against the regime that had held them down for so long. Some were chanting slogans, others waving flags, but they all shared one thing in common: a desire for freedom. But amidst the chaos, I noticed something that made my blood run cold. A group of men in black, watching us with an air of superiority.  \n\n I tried to brush it off as paranoia, but deep down, I knew I wasn't imagining things. These men were not protesters; they were observers, waiting for the perfect moment to strike. And as the night wore on, their presence seemed to grow more menacing by the minute. I knew then that I had stumbled into something much bigger than a simple protest, something that would change the course of history forever.",
+  "word count": 200,
   "dialog": [
     {
-      "Meg": "I'm still thinking about Caravaggio's life, it was so tragic.",
-    },
-    {
-      "Billy":
-        "Yeah, I know what you mean! He died in a tavern brawl at the age of 38.",
+      "Kerry":
+        "Whoa, this novel was crazy! I loved how it showed the struggle for freedom in Prague.",
     },
     {
       "Lui":
-        "That's right, Billy. His turbulent life was a testament to his creative genius and the struggles he faced as an artist.",
-    },
-    {
-      "Kerry":
-        "I'm more interested in how his style influenced other artists. I mean, who wouldn't want to paint like him?",
+        "I'm glad you guys enjoyed it. It's a powerful story that highlights the importance of standing up against oppression.",
     },
     {
       "Meg":
-        "I think it's not just about painting. His use of light and shadow created a whole new level of emotion in art.",
+        "I completely agree with Lui. The novel really made me think about how my own actions can make a difference in the world.",
     },
     {
-      "Lui":
-        "Exactly, Meg. And that's why his legacy continues to inspire artists today. He was truly a master of his craft.",
-    },
-    {
-      "Billy": "I'm going to look up more about his art now. This is so cool!",
+      "Billy":
+        "Yeah, I loved how the author described the protests and the atmosphere in the square. It felt so real!",
     },
     {
       "Kerry":
-        "Yeah, me too! But I also want to know more about the art world back then. It's like, what was it like to be an artist in Renaissance Italy?",
+        "And what was with those men in black? They were so creepy! Do you think they were part of the regime or something?",
+    },
+    {
+      "Lui":
+        "Good question, Kerry. The author does a great job of leaving some things to our imagination. But I think it's clear that they were not protesters.",
+    },
+    {
+      "Meg":
+        "I know, right? It was like they were watching us, waiting for something to happen. Chills down my spine just thinking about it!",
+    },
+    {
+      "Billy":
+        "Yeah, and the way the author described the city as a mystery at first... it was so clever! I love how he built up the tension throughout the story.",
+    },
+    {
+      "Kerry":
+        "Tension? It was more like 'what's going to happen next?' I couldn't put the book down!",
+    },
+    {
+      "Lui":
+        "Well, I'm glad you all enjoyed it. And I think we can all take something away from this story about standing up for what's right.",
     },
   ],
   "quiz": [
     {
-      "question": "Where did Caravaggio meet his untimely demise?",
+      "question":
+        "What was the main reason for the protests in Wenceslas Square?",
       "options": [
-        "A tavern brawl in Rome",
-        "A tavern brawl in Porto Ercole",
-        "In a studio accident in Florence",
-        "At the hands of a jealous artist",
-        "Due to old age",
+        "The people wanted to celebrate a festival",
+        "The Soviet-led occupation had been suffocating the city for years",
+        "The government announced new tax laws",
+        "The people were unhappy with the local sports team",
+        "The protesters were just looking for something to do",
       ],
       "answer": 1,
     },
     {
-      "question": "What was a characteristic of Caravaggio's style?",
+      "question":
+        "What was notable about the men in black watching the protests?",
       "options": [
-        "Subdued colors and gentle lighting",
-        "Intense emotion and dramatic lighting",
-        "Realistic depiction of everyday life",
-        "Innovative use of textures and patterns",
+        "They were wearing bright colors to blend in",
+        "They seemed to be watching and waiting for something to happen",
+        "They were holding flowers to calm down the protesters",
+        "They were all wearing funny hats",
+        "They were completely unaware of what was happening",
       ],
       "answer": 1,
     },
     {
-      "question": "What did the art world do after Caravaggio's death?",
+      "question": "According to Kerry, what did he love about the novel?",
       "options": [
-        "It continued as usual, unaffected by his passing",
-        "It was left in shock, mourning the loss of a true innovator",
-        "It celebrated with a grand exhibition of his work",
-        "It became more conservative and traditional",
+        "The way it described the protests and the atmosphere in the square",
+        "The way it showed the struggle for freedom in Prague",
+        "The way it was full of action and adventure",
+        "The way it had a happy ending",
+        "The way it had a simple plot",
       ],
       "answer": 1,
     },
     {
-      "question": "Who was influenced by Caravaggio's style?",
+      "question": "What did Lui say the author does well?",
       "options": [
-        "Only his direct students",
-        "A new wave of artists who sought to push the boundaries of creative expression",
-        "None, as his work was not well-known during his lifetime",
+        "Leaving some things to our imagination",
+        "Describing the protests and atmosphere in great detail",
+        "Making up new words for difficult concepts",
+        "Writing a very short story",
+        "Showing all possible outcomes",
       ],
-      "answer": 1,
+      "answer": 0,
     },
     {
-      "question": "How old was Caravaggio when he died?",
+      "question":
+        "What did Meg say made her think about how her own actions can make a difference?",
       "options": [
-        "25 years old",
-        "32 years old",
-        "38 years old",
-        "45 years old",
-        "50 years old",
+        "The protests in the novel",
+        "The way the author wrote the story",
+        "The men in black watching the protesters",
+        "The atmosphere of the square",
+        "The way the people were united against the regime",
       ],
-      "answer": 2,
+      "answer": 4,
     },
   ],
   "params": {
-    "theme": "Art",
-    "flavor": "Academic Essay",
+    "theme": "Ethics",
+    "flavor": "Crime",
     "models": {
       "main": "llama3.1",
       "novel": "llama3.1",

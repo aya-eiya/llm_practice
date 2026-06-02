@@ -38,6 +38,18 @@ type VocabularyDescriptions = {
   example: string;
 };
 
+type _Array<
+  T,
+  N extends number,
+  R extends T[] = [],
+> = R["length"] extends N ? R : _Array<T, N, [...R, T]>;
+
+type Quiz = {
+  question: string;
+  options: _Array<string, 5>;
+  answer: number;
+};
+
 export type QuizData = {
   date: string;
   event: Event;
@@ -45,11 +57,7 @@ export type QuizData = {
   body: string;
   "word count": number;
   dialog: Dialog;
-  quiz: {
-    question: string;
-    options: string[];
-    answer: number;
-  }[];
+  quiz: _Array<Quiz, 5>;
   params: {
     theme: string;
     flavor: string;

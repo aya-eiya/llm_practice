@@ -1,104 +1,111 @@
 import { QuizData } from "../../domains/quiz.ts";
 const data: QuizData = {
   "event": {
-    "event": "May 9th, 1922: Discovery of King Tut's Tomb",
+    "event":
+      "The American Ballet Theatre's Opening at the Metropolitan Opera House",
     "details":
-      "Howard Carter discovers the tomb of Pharaoh Tutankhamun in Egypt's Valley of the Kings, sparking a global fascination with ancient Egyptian culture and archaeology.",
+      "On May 9, 1940, The American Ballet Theatre (ABT) made its debut at the Metropolitan Opera House in New York City, marking a significant milestone in the development of classical ballet in the United States.",
   },
   "date": "2026-05-09",
-  "title": "The Pharaoh's Secret",
+  "title": "Symphony of Steel",
   "body":
-    "The sun had just set over the Valley of the Kings, casting a golden glow over the ancient tombs. Dr. Maria Rodriguez, a renowned archaeologist, stood before the entrance to King Tut's tomb, her heart racing with anticipation. She had spent years searching for this moment, and finally, she had discovered the hidden passageway that led to the pharaoh's resting place.  \n\n As she stepped into the tomb, Maria was struck by the eerie silence that filled the air. The walls were adorned with intricate hieroglyphics, telling the story of Tutankhamun's life and reign. She walked deeper into the tomb, her eyes scanning the chamber for any sign of the pharaoh's treasures.  \n\n Suddenly, Maria stumbled upon a hidden compartment, cleverly concealed behind a false stone wall. Inside, she found a collection of ancient artifacts, including a golden ankh and a silver scarab bead. But it was what lay next to them that left her breathless - a tattered papyrus scroll, bearing the pharaoh's own handwriting.  \n\n The implications were staggering. This discovery could rewrite the history of ancient Egypt, revealing secrets that had been lost for millennia. Maria knew she had stumbled upon something much bigger than herself, and she was determined to unravel the mystery of King Tut's tomb once and for all.",
-  "word count": 212,
+    "In the year 2154, humanity had colonized the distant planet of Nova Terra. The once-barren landscape now flourished with towering cities and vast networks of quantum-entangled highways. But as the world's premier ballet troupe, the Stellar Dancers, prepared to take the stage for their most anticipated performance yet, a catastrophic event shook the foundations of their art form.\n\n\n\nThe Metropolis Opera House, where the company had been scheduled to perform, was suddenly beset by an inexplicable phenomenon: its very fabric began to warp and distort, as if reality itself was being rewritten. The dancers found themselves trapped in a maelstrom of impossible movements and counterintuitive gravity.\n\n\n\nAs the troupe's lead dancer, Lyra, struggled to comprehend the nature of this anomaly, she discovered an eerie affinity with the strange energies now governing their performance. Her body began to move in harmony with the shifting gravitational waves, as if her very being had become a conduit for the underlying symphony of Nova Terra itself.\n\n\n\nIn that moment, Lyra realized that the boundaries between art and reality were dissolving, and that the true essence of ballet lay not in its technical precision, but in its capacity to transcend the limits of human understanding.",
+  "word count": 200,
   "dialog": [
     {
-      "Kerry":
-        "Whoa, this novel was crazy! I loved how they discovered that hidden passageway to King Tut's tomb.",
-    },
-    {
       "Meg":
-        "I know, right? The way Maria described the pharaoh's treasures and the papyrus scroll had me on edge. And what if it's true that she really did discover something groundbreaking?",
-    },
-    {
-      "Billy":
-        "It's like a real-life adventure! I loved how they found all those artifacts and the tattered scroll with King Tut's own handwriting on it.",
-    },
-    {
-      "Lui":
-        "Well, students, let's not get ahead of ourselves. We need to separate fact from fiction here. Let's analyze what we know about ancient Egypt and the Valley of the Kings.",
+        "I know, right? The idea that reality itself can be rewritten is just mind-blowing!",
     },
     {
       "Kerry":
-        "But isn't that the point? To explore new ideas and challenge our understanding? It's what makes history so cool!",
-    },
-    {
-      "Meg":
-        "I agree with Kerry. And I think it's amazing how Maria's discovery could change everything we thought we knew about King Tut. It's like a mystery waiting to be solved.",
+        "I'm more interested in the technology behind it. How does quantum entanglement work?",
     },
     {
       "Billy":
-        "And the best part is, it's not just about the past – it's about how it can shape our understanding of the world today.",
+        "Actually, Kerry, it's not just about the tech. I think what makes this story so great is how it explores the connection between art and reality.",
     },
     {
       "Lui":
-        "Okay, let's keep the discussion civil and on topic. We're exploring the historical context, remember?",
+        "A good point, Billy. The novel highlights the importance of understanding the world beyond our immediate perceptions.",
+    },
+    {
+      "Meg":
+        "And I love how Lyra's character evolves throughout the story. Her struggles to comprehend the anomaly are so relatable!",
+    },
+    {
+      "Kerry":
+        "But what about the implications of this technology? Could it be used for good or evil?",
+    },
+    {
+      "Billy":
+        "That's a great question, Kerry! I think that's what makes science fiction so important - it encourages us to consider the consequences of our actions.",
+    },
+    {
+      "Lui":
+        "Well said, Billy. And Meg, your observation about Lyra's character is spot on. She's a great example of how art can be a reflection of ourselves and our world.",
     },
   ],
   "quiz": [
     {
-      "question": "What had Dr. Maria Rodriguez spent years searching for?",
+      "question": "What phenomenon occurs to the Metropolis Opera House?",
       "options": [
-        "The hidden passageway to King Tut's tomb",
-        "A collection of ancient artifacts",
-        "A tattered papyrus scroll",
-        "The Valley of the Kings",
-        "Ancient Egypt's history",
+        "Gravity changes",
+        "Time dilation",
+        "Reality rewriting",
+        "Space-time distortion",
+        "Quantum entanglement",
+      ],
+      "answer": 2,
+    },
+    {
+      "question": "What do the dancers find themselves trapped in?",
+      "options": [
+        "A maelstrom of impossible movements and counterintuitive gravity",
+        "A storm of unpredictable wind and rain",
+        "A vortex of swirling colors and patterns",
+        "A whirlpool of rushing water and sounds",
+        "A tornado of debris and destruction",
       ],
       "answer": 0,
     },
     {
-      "question": "What was inside the hidden compartment?",
+      "question": "Who is the lead dancer, Lyra?",
       "options": [
-        "Only a golden ankh and a silver scarab bead",
-        "Only a tattered papyrus scroll",
-        "A collection of ancient artifacts, including a golden ankh and a silver scarab bead, and a tattered papyrus scroll",
+        "Kerry",
+        "Meg",
+        "Billy",
+        "Lui",
+        "Lyra",
       ],
-      "answer": 2,
+      "answer": 4,
     },
     {
       "question":
-        "What did Maria find next to the golden ankh and the silver scarab bead?",
+        "What does Lyra realize about ballet and human understanding?",
       "options": [
-        "A map of the Valley of the Kings",
-        "A collection of ancient texts",
-        "A tattered papyrus scroll bearing King Tut's own handwriting",
+        "That ballet is just a form of entertainment",
+        "That the true essence of ballet lies in its technical precision",
+        "That the boundaries between art and reality are dissolving, and that the true essence of ballet lies in its capacity to transcend the limits of human understanding",
+        "That ballet is only for professionals",
+        "That ballet has no connection to science",
       ],
       "answer": 2,
     },
     {
-      "question": "What was significant about the discovery that Maria made?",
+      "question": "What does Billy think makes this story great?",
       "options": [
-        "It could rewrite the history of modern Egypt",
-        "It could change our understanding of King Tut's reign",
-        "It revealed secrets that had been lost for millennia",
-        "It found a new hidden passage in the Valley of the Kings",
-      ],
-      "answer": 2,
-    },
-    {
-      "question": "What was Billy's opinion on the novel?",
-      "options": [
-        "He thought it was boring",
-        "He loved how they discovered the hidden passageway to King Tut's tomb",
-        "He didn't like the story at all",
-        "It was okay, but not his favorite",
+        "The technology behind it",
+        "The connection between art and reality",
+        "The struggles of Lyra's character",
+        "The implications of the technology",
+        "None of these options",
       ],
       "answer": 1,
     },
   ],
   "params": {
-    "theme": "Archeology",
-    "flavor": "Mystery",
+    "theme": "Dance",
+    "flavor": "Science Fiction",
     "models": {
       "main": "llama3.1",
       "novel": "llama3.1",
