@@ -2,6 +2,7 @@ import { isVideoDate } from "../data/videoData.ts";
 import { useSignal } from "@preact/signals";
 import { useEffect, useState } from "preact/hooks";
 import { type QuizData } from "../domains/quiz.ts";
+type Timeout = ReturnType<typeof setTimeout>;
 
 export default function Bookshelf(
   { data: dates }: { data: QuizData[] },
@@ -13,7 +14,7 @@ export default function Bookshelf(
     dates.slice(0, 3),
   ].flat());
   const [animate, setAnimate] = useState(false);
-  const timeout = useSignal<number | undefined>(undefined);
+  const timeout = useSignal<Timeout | undefined>(undefined);
   useEffect(() => {
     if (timeout.value) clearTimeout(timeout.value);
     timeout.value = setTimeout(
