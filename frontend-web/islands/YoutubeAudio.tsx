@@ -4,6 +4,7 @@ import { useSignal } from "@preact/signals";
 
 type AudioDataWithId = Extract<AudioData, { id: string }>;
 type AudioDataWithEmbedUrl = Extract<AudioData, { url: string }>;
+type Timeout = ReturnType<typeof setTimeout>;
 
 const STATE = {
   UNSTARTED: -1,
@@ -115,7 +116,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
   }, [YT, player, id, title, date]);
 
   useEffect(() => {
-    let timeout: number | undefined;
+    let timeout: Timeout | undefined;
     if (player.value && state.value === STATE.PLAYING) {
       timeout = setTimeout(() => {
         if (player.value && state.value === STATE.PLAYING) {
@@ -131,7 +132,7 @@ export default function YoutubeAudio({ data }: { data: AudioData }) {
   }, [player, currentTime.value, state.value]);
 
   useEffect(() => {
-    let timeout: number | undefined;
+    let timeout: Timeout | undefined;
     if (player.value && state.value === STATE.PLAYING) {
       timeout = setTimeout(() => {
         const vol = player.value && player.value.getVolume();
