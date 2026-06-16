@@ -1,4 +1,5 @@
 import data20260601 from "./2026-06-01.ts";
+import data20260602 from "./2026-06-02.ts";
 import data20260603 from "./2026-06-03.ts";
 import data20260604 from "./2026-06-04.ts";
 import data20260605 from "./2026-06-05.ts";
@@ -12,6 +13,7 @@ import data20260612 from "./2026-06-12.ts";
 import data20260613 from "./2026-06-13.ts";
 import data20260614 from "./2026-06-14.ts";
 import data20260615 from "./2026-06-15.ts";
+import data20260616 from "./2026-06-16.ts";
 import data20260617 from "./2026-06-17.ts";
 import data20260618 from "./2026-06-18.ts";
 import data20260619 from "./2026-06-19.ts";
@@ -29,6 +31,7 @@ import data20260630 from "./2026-06-30.ts";
 
 const dailyData = {
   "2026-06-01": data20260601,
+  "2026-06-02": data20260602,
   "2026-06-03": data20260603,
   "2026-06-04": data20260604,
   "2026-06-05": data20260605,
@@ -42,6 +45,7 @@ const dailyData = {
   "2026-06-13": data20260613,
   "2026-06-14": data20260614,
   "2026-06-15": data20260615,
+  "2026-06-16": data20260616,
   "2026-06-17": data20260617,
   "2026-06-18": data20260618,
   "2026-06-19": data20260619,
