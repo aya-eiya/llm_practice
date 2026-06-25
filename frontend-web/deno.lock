@@ -33,7 +33,7 @@
     "npm:@babel/preset-react@^7.27.1": "7.29.7_@babel+core@7.29.7",
     "npm:@opentelemetry/api@^1.9.0": "1.9.1",
     "npm:@preact/signals@^2.5.1": "2.9.1_preact@10.29.2",
-    "npm:@preact/signals@^2.9.1": "2.9.1_preact@10.29.2",
+    "npm:@preact/signals@^2.9.0": "2.9.1_preact@10.29.2",
     "npm:@prefresh/vite@^2.4.8": "2.4.12_preact@10.29.2_vite@8.0.16__@types+node@24.2.0__esbuild@0.25.7_esbuild@0.25.7",
     "npm:@remix-run/node-fetch-server@0.12": "0.12.0",
     "npm:@tailwindcss/vite@^4.3.1": "4.3.1_vite@8.0.16__@types+node@24.2.0__esbuild@0.25.7_esbuild@0.25.7",
@@ -45,7 +45,6 @@
     "npm:preact-render-to-string@^6.6.3": "6.7.0_preact@10.29.2",
     "npm:preact@^10.28.2": "10.29.2",
     "npm:preact@^10.29.1": "10.29.2",
-    "npm:preact@^10.29.2": "10.29.2",
     "npm:rollup@^4.55.1": "4.60.3",
     "npm:tailwindcss@4.3.1": "4.3.1",
     "npm:vite@8.0.16": "8.0.16_@types+node@24.2.0_esbuild@0.25.7",
@@ -1491,9 +1490,9 @@
       "jsr:@fresh/core@^2.3.3",
       "jsr:@fresh/plugin-vite@1.1.2",
       "jsr:@std/dotenv@~0.225.7",
-      "npm:@preact/signals@^2.9.1",
+      "npm:@preact/signals@^2.9.0",
       "npm:@tailwindcss/vite@^4.3.1",
-      "npm:preact@^10.29.2",
+      "npm:preact@^10.29.1",
       "npm:tailwindcss@4.3.1",
       "npm:vite@8.0.16"
     ]
