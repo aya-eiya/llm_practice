@@ -1,18 +1,13 @@
 {
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "preact"
-  },
-  "exclude": [
-    "**/_fresh/*"
-  ],
+  "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
+  "exclude": ["**/_fresh/*"],
   "imports": {
     "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@1.1.2",
-    "@preact/signals": "npm:@preact/signals@^2.9.1",
+    "@preact/signals": "npm:@preact/signals@^2.9.0",
     "@std/dotenv": "jsr:@std/dotenv@^0.225.7",
     "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.3.1",
     "fresh": "jsr:@fresh/core@^2.3.3",
-    "preact": "npm:preact@^10.29.2",
+    "preact": "npm:preact@^10.29.1",
     "tailwindcss": "npm:tailwindcss@4.3.1",
     "tailwindcss/": "npm:/tailwindcss@4.3.1/",
     "tailwindcss/plugin": "npm:/tailwindcss@4.3.1/plugin.js",
@@ -20,14 +15,8 @@
   },
   "lint": {
     "rules": {
-      "exclude": [
-        "jsx-no-useless-fragment",
-        "jsx-curly-braces"
-      ],
-      "tags": [
-        "fresh",
-        "recommended"
-      ]
+      "exclude": ["jsx-no-useless-fragment", "jsx-curly-braces"],
+      "tags": ["fresh", "recommended"]
     }
   },
   "nodeModulesDir": "auto",
