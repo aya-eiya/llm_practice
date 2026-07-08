@@ -1381,6 +1381,36 @@ const videoData = {
     "title":
       "[2025-07-20][MyniQ] Clockwork Dreams and Midnight Tears [English Listening Quiz]",
   },
+  "2025-07-21": {
+    "id": "d4Dred6L-80",
+    "title":
+      "[2025-07-21][MyniQ] The Bauhaus School of Dreams [English Listening Quiz]",
+  },
+  "2025-07-22": {
+    "id": "Wqsl_AjhhsA",
+    "title":
+      "[2025-07-22][MyniQ] Sunrise Over the Heart [English Listening Quiz]",
+  },
+  "2026-07-01": {
+    "id": "AxE8R0rG__I",
+    "title": "[2026-07-01][MyniQ] Burning the Net [English Listening Quiz]",
+  },
+  "2026-07-02": {
+    "id": "SB4B-dScyCI",
+    "title": "[2026-07-02][MyniQ] Synthetic Summer [English Listening Quiz]",
+  },
+  "2026-07-03": {
+    "id": "nnsthu4x-gk",
+    "title": "[2026-07-03][MyniQ] Rise from the Ashes [English Listening Quiz]",
+  },
+  "2026-07-04": {
+    "id": "l8WcrMwFkuA",
+    "title": "[2026-07-04][MyniQ] Rise from the Ashes [English Listening Quiz]",
+  },
+  "2026-07-05": {
+    "id": "eBoRnRb5Omo",
+    "title": "[2026-07-05][MyniQ] Lost City of Meroe [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
