@@ -1411,6 +1411,25 @@ const videoData = {
     "id": "eBoRnRb5Omo",
     "title": "[2026-07-05][MyniQ] Lost City of Meroe [English Listening Quiz]",
   },
+  "2026-07-06": {
+    "id": "9J4nSgwsfr0",
+    "title":
+      "[2026-07-06][MyniQ] Betrayal on the Battlefield [English Listening Quiz]",
+  },
+  "2026-07-07": {
+    "id": "9r9bywVZqks",
+    "title": "[2026-07-07][MyniQ] Timeless Rhythm [English Listening Quiz]",
+  },
+  "2026-07-08": {
+    "id": "PxfrPWSjuNU",
+    "title":
+      "[2026-07-08][MyniQ] Shadows on the Silver Screen [English Listening Quiz]",
+  },
+  "2026-07-09": {
+    "id": "t2EZilgwwIQ",
+    "title":
+      "[2026-07-09][MyniQ] Neon Dreams in the City of Stone [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
