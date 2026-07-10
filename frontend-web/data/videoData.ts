@@ -1430,6 +1430,10 @@ const videoData = {
     "title":
       "[2026-07-09][MyniQ] Neon Dreams in the City of Stone [English Listening Quiz]",
   },
+  "2026-07-10": {
+    "id": "-4TwQt0F-Lc",
+    "title": "[2026-07-10][MyniQ] Gears of Ash [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
