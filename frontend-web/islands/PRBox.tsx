@@ -1,5 +1,4 @@
 import { useSignal } from "@preact/signals";
-import { LazyLoadOGP } from "./LazyLoadOGP.tsx";
 import prs from "../pr/index.ts";
 import { useEffect } from "preact/hooks";
 
@@ -9,15 +8,14 @@ export default function PRBox() {
     ads.value = prs;
   }, []);
   return (
-    <aside className="absolute bottom-0 w-[20vw] px-2">
+    <aside className="absolute w-[20vw] px-2">
       <div className="text-xs w-64">
         [PR]
         <hr className="my-1 w-[18vw]" />
       </div>
       <div>
-        <LazyLoadOGP signal={ads} />
         <ul className="flex flex-row flex-wrap">
-          {ads.value.map((pr) => {
+          {ads.value.map((pr) =>
             (pr.provider === "GoogleAds")
               ? (
                 <li
@@ -64,8 +62,8 @@ export default function PRBox() {
                       </a>
                     )}
                 </li>
-              );
-          })}
+              )
+          )}
         </ul>
       </div>
     </aside>
