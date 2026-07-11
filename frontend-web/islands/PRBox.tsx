@@ -31,6 +31,9 @@ export default function PRBox() {
                     data-full-width-responsive="true"
                   >
                   </ins>
+                  <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
                 </li>
               )
               : (
