@@ -1,9 +1,11 @@
 import { Signal } from "@preact/signals";
+import { PR } from "../pr/types.ts";
 
 export function LazyLoadOGP(
-  { signal }: { signal: Signal<{ url: string; image?: string }[]> },
+  { signal }: { signal: Signal<(PR)[]> },
 ) {
   signal.value.forEach(async (pr) => {
+    if (pr.provider === "GoogleAds") return;
     if (pr.image) return;
     try {
       const res = await fetch(pr.url, {
