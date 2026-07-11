@@ -20,7 +20,7 @@ export default function PRBox() {
               ? (
                 <li
                   key={pr.id}
-                  className="mb-2 mr-1 flex justify-center items-center"
+                  className="mb-2 mr-1 flex flex-row flex-wrap w-full"
                 >
                   <ins
                     className="adsbygoogle"
