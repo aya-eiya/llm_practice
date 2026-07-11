@@ -42,6 +42,9 @@ export default function App({ Component, config, url }: PageProps) {
         <OnTranslatedEvent
           url={url}
         />
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
       </body>
     </>
   );

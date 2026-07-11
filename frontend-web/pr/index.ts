@@ -3,20 +3,6 @@ import images from "./base64/images.json" with { type: "json" };
 
 const PRs: PR[] = [
   {
-    id: "A8N001",
-    provider: "A8",
-    url: "https://px.a8.net/svt/ejp?a8mat=3Z6VU2+6KD4PM+3AQG+TVBF6",
-    title: "Study Supplie for Buisiness English",
-    image: images?.["A8N001"],
-  },
-  {
-    id: "A8N002",
-    provider: "A8",
-    title: "my.LunCul.com",
-    url: "https://px.a8.net/svt/ejp?a8mat=3Z6VU2+6F089M+4FL0+BY641",
-    image: images?.["A8N002"],
-  },
-  {
     id: "AMZ001",
     provider: "Amazon",
     title:
@@ -38,6 +24,12 @@ const PRs: PR[] = [
     title: "Audible membership plan 2 months free trial",
     url: "https://amzn.to/4aZwa75",
     image: images?.["AMZ003"],
+  },
+  {
+    id: "GAD001",
+    provider: "GoogleAds",
+    clientId: "ca-pub-4228655180940549",
+    slotId: "3165685588",
   },
 ];
 export default PRs;
