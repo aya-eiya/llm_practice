@@ -1,6 +1,6 @@
 {
   "recommendations": [
-    "donjayamanne.python-environment-manager",
+    "ms-python.vscode-python-envs",
     "ms-python.pylint",
     "ms-python.black-formatter"
   ]

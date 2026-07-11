@@ -17,36 +17,55 @@ export default function PRBox() {
       <div>
         <LazyLoadOGP signal={ads} />
         <ul className="flex flex-row flex-wrap">
-          {ads.value.map((pr) => (
-            <li className="mb-2 mr-1 flex flex-row flex-wrap">
-              {pr.image
-                ? (
-                  <a
-                    href={pr.url}
-                    target="_blank"
-                    rel="nofollow"
-                    className="notranslate block px-1 cursor-pointer"
+          {ads.value.map((pr) => {
+            (pr.provider === "GoogleAds")
+              ? (
+                <li
+                  key={pr.id}
+                  className="mb-2 mr-1 flex justify-center items-center"
+                >
+                  <ins
+                    className="adsbygoogle"
+                    style={{ display: "block" }}
+                    data-ad-client={pr.clientId}
+                    data-ad-slot={pr.slotId}
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"
                   >
-                    <img
-                      src={pr.image}
-                      alt={pr.title}
-                      aria-label={"book image:" + pr.title}
-                      className="max-h-16"
-                    />
-                  </a>
-                )
-                : (
-                  <a
-                    href={pr.url}
-                    target="_blank"
-                    className="notranslate block cursor-pointer text-xs underline max-w-full text-nowrap text-ellipsis overflow-hidden"
-                    rel="nofollow"
-                  >
-                    {pr.title}
-                  </a>
-                )}
-            </li>
-          ))}
+                  </ins>
+                </li>
+              )
+              : (
+                <li key={pr.id} className="mb-2 mr-1 flex flex-row flex-wrap">
+                  {pr.image
+                    ? (
+                      <a
+                        href={pr.url}
+                        target="_blank"
+                        rel="nofollow"
+                        className="notranslate block px-1 cursor-pointer"
+                      >
+                        <img
+                          src={pr.image}
+                          alt={pr.title}
+                          aria-label={"book image:" + pr.title}
+                          className="max-h-16"
+                        />
+                      </a>
+                    )
+                    : (
+                      <a
+                        href={pr.url}
+                        target="_blank"
+                        className="notranslate block cursor-pointer text-xs underline max-w-full text-nowrap text-ellipsis overflow-hidden"
+                        rel="nofollow"
+                      >
+                        {pr.title}
+                      </a>
+                    )}
+                </li>
+              );
+          })}
         </ul>
       </div>
     </aside>
