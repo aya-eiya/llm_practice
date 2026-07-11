@@ -1,10 +1,10 @@
 ds=(
-  '2026-07-01' '2026-07-02' '2026-07-03' '2026-07-04' '2026-07-05' 
-  '2026-07-06' '2026-07-07' '2026-07-08' '2026-07-09' '2026-07-10'
-  '2026-07-11' '2026-07-12' '2026-07-13' '2026-07-14' '2026-07-15'
-  '2026-07-16' '2026-07-17' '2026-07-18' '2026-07-19' '2026-07-20'
-  '2026-07-21' '2026-07-22' '2026-07-23' '2026-07-24' '2026-07-25'
-  '2026-07-26' '2026-07-27' '2026-07-28' '2026-07-29' '2026-07-30' '2026-07-31'
+  #'2026-08-01' '2026-08-02' '2026-08-03' '2026-08-04' '2026-08-05' 
+  #'2026-08-06' '2026-08-07' '2026-08-08' '2026-08-09' '2026-08-10'
+  '2026-08-11' '2026-08-12' '2026-08-13' '2026-08-14' '2026-08-15'
+  '2026-08-16' '2026-08-17' '2026-08-18' '2026-08-19' '2026-08-20'
+  '2026-08-21' '2026-08-22' '2026-08-23' '2026-08-24' '2026-08-25'
+  '2026-08-26' '2026-08-27' '2026-08-28' '2026-08-29' '2026-08-30' '2026-08-31'
 )
 
 themes=(
@@ -70,8 +70,8 @@ themes=(
   "--theme=\"Theater\" --flavor=\"Thriller\""
 )
 
-model="llama3.1"
-novel_model="llama3.1"
+model="gemma4"
+novel_model="gemma4"
 
 export_ts () {
   local json_file="${1}"
@@ -87,6 +87,7 @@ for d in "${ds[@]}" ; do
      [ "$(jq '.body | split(" ") | length | . > 130' "./outputs/${d}.json")" = "true" ] &&
      [ "$(jq '.params.theme != null' "./outputs/${d}.json")" = "true" ]; then
     echo "skip $d"
+    mkdir ../../frontend-web/data/${ts_dir} 1>/dev/null 2>&1
     export_ts ./outputs/${d}.json > ../../frontend-web/data/${ts_dir}/${d}.ts
     continue
   fi
@@ -97,6 +98,7 @@ for d in "${ds[@]}" ; do
 
   bash -c "./scripts/gen_novel.sh --fulldate=${d} ${theme} --model=\"$model\" --novelModel=\"$novel_model\""
   if [ -f "./outputs/${d}.json" ] && [ "$(jq '.body | split(" ") | length | . > 130' "./outputs/${d}.json")" = "true" ]; then
+    mkdir ../../frontend-web/data/${ts_dir} 1>/dev/null 2>&1
     export_ts ./outputs/${d}.json > ../../frontend-web/data/${ts_dir}/${d}.ts
   fi
 done
