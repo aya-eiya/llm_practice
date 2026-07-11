@@ -1,4 +1,5 @@
-import images from "./base64/images.json";
+import type { PR } from "./types.ts";
+import images from "./base64/images.json" with { type: "json" };
 
 const PRs: PR[] = [
   {
