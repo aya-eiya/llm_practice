@@ -1434,6 +1434,10 @@ const videoData = {
     "id": "-4TwQt0F-Lc",
     "title": "[2026-07-10][MyniQ] Gears of Ash [English Listening Quiz]",
   },
+  "2026-07-11": {
+    "id": "oon-i3Xt6lY",
+    "title": "[2026-07-11][MyniQ] The Temples of Time [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
