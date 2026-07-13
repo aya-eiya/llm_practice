@@ -1442,6 +1442,11 @@ const videoData = {
     "id": "GXzxUrT3wNw",
     "title": "[2026-07-12][MyniQ] Murder on Broadway [English Listening Quiz]",
   },
+  "2026-07-13": {
+    "id": "ySbGwibuAZk",
+    "title":
+      "[2026-07-13][MyniQ] Leopard's Roar: Revolutionizing Technology [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
