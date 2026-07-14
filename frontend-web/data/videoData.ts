@@ -1447,6 +1447,11 @@ const videoData = {
     "title":
       "[2026-07-13][MyniQ] Leopard's Roar: Revolutionizing Technology [English Listening Quiz]",
   },
+  "2026-07-14": {
+    "id": "0Op8IPm7YrU",
+    "title":
+      "[2026-07-14][MyniQ] The Altair of Darkness [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
