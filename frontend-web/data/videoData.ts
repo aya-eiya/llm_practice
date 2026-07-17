@@ -1452,6 +1452,20 @@ const videoData = {
     "title":
       "[2026-07-14][MyniQ] The Altair of Darkness [English Listening Quiz]",
   },
+  "2026-07-15": {
+    "id": "K1ZGJNC95es",
+    "title": "[2026-07-15][MyniQ] Stardust and Wonder [English Listening Quiz]",
+  },
+  "2026-07-16": {
+    "id": "47LGvMz0458",
+    "title":
+      "[2026-07-16][MyniQ] The World Wide Web: A Revolution in Communication [English Listening Quiz]",
+  },
+  "2026-07-17": {
+    "id": "mNP0wLPoZzk",
+    "title":
+      "[2026-07-17][MyniQ] Shadows of Destruction [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
