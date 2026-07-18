@@ -1466,6 +1466,11 @@ const videoData = {
     "title":
       "[2026-07-17][MyniQ] Shadows of Destruction [English Listening Quiz]",
   },
+  "2026-07-18": {
+    "id": "fnAkVslOCGk",
+    "title":
+      "[2026-07-18][MyniQ] Shadows of Destruction [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
