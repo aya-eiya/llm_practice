@@ -1480,6 +1480,36 @@ const videoData = {
     "title":
       "[2026-07-20][MyniQ] Shadows of Kodachrome [English Listening Quiz]",
   },
+  "2026-07-21": {
+    "id": "NwvDAkhnIBc",
+    "title":
+      "[2026-07-21][MyniQ] The Shadows of Pompeii [English Listening Quiz]",
+  },
+  "2026-07-22": {
+    "id": "lcfstYmdrXI",
+    "title":
+      "[2026-07-22][MyniQ] Love in the Olympic Glow [English Listening Quiz]",
+  },
+  "2026-07-23": {
+    "id": "pNtVaLQ938Y",
+    "title":
+      "[2026-07-23][MyniQ] Shadows on the Lunar Plate [English Listening Quiz]",
+  },
+  "2026-07-24": {
+    "id": "9qCpFlo8NlY",
+    "title":
+      "[2026-07-24][MyniQ] La Collection de la Liberté [English Listening Quiz]",
+  },
+  "2026-07-25": {
+    "id": "gqopjD-kvzs",
+    "title":
+      "[2026-07-25][MyniQ] Shadows in the Valley of the Kings [English Listening Quiz]",
+  },
+  "2026-07-26": {
+    "id": "1Oa4DUF5z4c",
+    "title":
+      "[2026-07-26][MyniQ] Beneath the Shadows of Silence [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
