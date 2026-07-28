@@ -1510,6 +1510,16 @@ const videoData = {
     "title":
       "[2026-07-26][MyniQ] Beneath the Shadows of Silence [English Listening Quiz]",
   },
+  "2026-07-27": {
+    "id": "S4RqYhiSnQ0",
+    "title":
+      "[2026-07-27][MyniQ] The Evolution of Deceit [English Listening Quiz]",
+  },
+  "2026-07-28": {
+    "id": "HQDhYrbEy_0",
+    "title":
+      "[2026-07-28][MyniQ] Bastille of Betrayal [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
