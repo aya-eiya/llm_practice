@@ -1520,6 +1520,21 @@ const videoData = {
     "title":
       "[2026-07-28][MyniQ] Bastille of Betrayal [English Listening Quiz]",
   },
+  "2026-07-29": {
+    "id": "spr5i-EJS6M",
+    "title":
+      "[2026-07-29][MyniQ] Shadows Dance on the Guillotine [English Listening Quiz]",
+  },
+  "2026-07-30": {
+    "id": "1vG9o610AnM",
+    "title":
+      "[2026-07-30][MyniQ] Shadows of Lost Memories [English Listening Quiz]",
+  },
+  "2026-07-31": {
+    "id": "ovAdORsCBNQ",
+    "title":
+      "[2026-07-31][MyniQ] The Mysterious Tomb of Akhenaten [English Listening Quiz]",
+  },
 } as const;
 
 export type VideoDate = keyof typeof videoData;
