@@ -8,7 +8,7 @@
 
 公開用のサイト
 
-https://https://myniq.aya-eiya.work/
+https://myniq.aya-eiya.work/
 
 主な使用技術: Deno + fresh FW, Typescript
 
