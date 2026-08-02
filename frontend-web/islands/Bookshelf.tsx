@@ -108,7 +108,7 @@ export default function Bookshelf(
             className="block p-2"
             onClick={() => selectedCursor.value = idx}
           >
-            {cursor.value === idx ? "●" : "⚪"}
+            {cursor.value === idx ? "■" : "□"}
           </button>
         ))}
       </div>

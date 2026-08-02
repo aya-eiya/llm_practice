@@ -8,7 +8,7 @@
 
 公開用のサイト
 
-https://daily-ai-generated-quiz.deno.dev/
+https://myniq.aya-eiya.work/
 
 主な使用技術: Deno + fresh FW, Typescript
 
