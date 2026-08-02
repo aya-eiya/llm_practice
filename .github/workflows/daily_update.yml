@@ -1,0 +1,90 @@
+name: Daily Voice List Generation
+
+'on':
+  schedule:
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+
+jobs:
+  voice_data_pipeline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    concurrency:
+      group: daily-voice-update
+      cancel-in-progress: true
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: '2.x'
+
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Create release branch
+        id: release_branch
+        run: |
+          RELEASE_BRANCH="release/voice-update-$(date +'%Y%m%d%H%M')"
+          git fetch origin main
+          git checkout -B "$RELEASE_BRANCH" origin/main
+          echo "branch_name=$RELEASE_BRANCH" >> "$GITHUB_OUTPUT"
+
+      - name: Execute Voice Generation Task
+        run: |
+          cd frontend-web
+          deno task gen:voice_list
+        env:
+          API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+
+      - name: Detect file changes
+        id: change_check
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit changes to release branch
+        if: steps.change_check.outputs.changed == 'true'
+        run: |
+          git add .
+          COMMIT_MSG="chore(release): voice update on $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          git commit -m "$COMMIT_MSG"
+
+      - name: Push release branch
+        if: steps.change_check.outputs.changed == 'true'
+        run: |
+          git push origin "${{ steps.release_branch.outputs.branch_name }}"
+
+      - name: Create pull request
+        if: steps.change_check.outputs.changed == 'true'
+        id: pr_create
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PR_URL="$(gh pr create --base main --head "${{ steps.release_branch.outputs.branch_name }}" --title "chore(release): voice update" --body "Automated voice list update generated from public YouTube data.")"
+          echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
+
+      - name: Wait for DenoDeploy verification and auto-merge
+        if: steps.change_check.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr merge --auto --merge --delete-branch "${{ steps.pr_create.outputs.pr_url }}"
+
+      - name: No-op run
+        if: steps.change_check.outputs.changed != 'true'
+        run: |
+          echo "No tracked file changes after the daily voice list generation task. Skipping PR creation."
+
