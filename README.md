@@ -8,7 +8,7 @@
 
 公開用のサイト
 
-https://daily-ai-generated-quiz.deno.dev/
+https://
 
 主な使用技術: Deno + fresh FW, Typescript
 

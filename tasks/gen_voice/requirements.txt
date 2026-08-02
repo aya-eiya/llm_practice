@@ -1,5 +1,6 @@
 melotts @ git+https://github.com/aya-eiya/MeloTTS
 gen_voice_model @ git+https://github.com/aya-eiya/OpenVoice
 torch==2.7.1
+torchaudio==2.7.1
 pydub
 nltk
